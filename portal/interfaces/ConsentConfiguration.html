@@ -1,0 +1,761 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Sunbird Portal Documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">Sunbird Portal Documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Interfaces</li>
+  <li class="breadcrumb-item"
+  >
+  ConsentConfiguration</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/modules/observation/components/observation-details/observation-details.component.ts</code>
+        </p>
+
+
+
+
+        <section data-compodoc="block-index">
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#tncLink" 
+>
+                                            tncLink
+                                        </a>
+                                </li>
+                                <li>
+                                        <a href="#tncText" 
+>
+                                            tncText
+                                        </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section data-compodoc="block-properties">
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="tncLink"></a>
+                                        <span class="name "><b>tncLink</b>
+                                            <a href="#tncLink">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>tncLink:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="tncText"></a>
+                                        <span class="name "><b>tncText</b>
+                                            <a href="#tncText">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>tncText:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { ObservationService, ObservationUtilService } from &#x27;@sunbird/core&#x27;;
+import { ConfigService, ResourceService, ILoaderMessage, INoResultMessage, LayoutService, ToasterService } from &#x27;@sunbird/shared&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { Location } from &#x27;@angular/common&#x27;;
+import {Editdata} from &#x27;../edit-submission/edit-submission.component&#x27;;
+import _ from &#x27;lodash&#x27;;
+import { catchError } from &#x27;rxjs/operators&#x27;;
+import { throwError } from &#x27;rxjs&#x27;;
+interface ConsentConfiguration{
+  tncLink:string,
+  tncText:string
+}
+@Component({
+  selector: &#x27;app-observation-details&#x27;,
+  templateUrl: &#x27;./observation-details.component.html&#x27;,
+  styleUrls: [&#x27;./observation-details.component.scss&#x27;],
+})
+export class ObservationDetailsComponent implements OnInit {
+  config;
+  entities;
+  programId;
+  solutionId;
+  solution;
+  payload;
+  observationId;
+  selectedEntity: any &#x3D; {};
+  layoutConfiguration: any;
+  submissions;
+  programName;
+  disableAddEntity:boolean &#x3D; true;
+  entityType;
+  actions &#x3D; [{
+    name: this.resourceService.frmelmnts.lbl.edit,
+    icon: &#x27;pencil alternate large icon&#x27;,
+    type: &#x27;edit&#x27;
+  },
+  {
+    name: this.resourceService.frmelmnts.lbl.delete,
+    icon: &#x27;trash  large icon&#x27;,
+    type: &#x27;delete&#x27;
+  }];
+  showDownloadModal &#x3D; false;
+  openEditModal: {
+    show: boolean,
+    data: Editdata|null
+  } &#x3D; {show: false, data: null};
+  showLoader &#x3D; false;
+  public loaderMessage: ILoaderMessage;
+  public noResultMessageForEntity: INoResultMessage &#x3D; {
+    &#x27;messageText&#x27;: &#x27;frmelmnts.msg.noEntityFound&#x27;
+  };
+  courseHierarchy: any &#x3D; {};
+  programJoined:boolean &#x3D; true;
+  joinProgramPopUp:boolean &#x3D; false;
+  openConsentPopUp:boolean;
+  consentConfig:ConsentConfiguration;
+  requestForPIIConsent:boolean;
+  rootOrganisations: any;
+  joinProgramLoader: boolean;
+  consentApplies: any;
+  consentUpdated: boolean;
+  constructor(
+    private observationService: ObservationService,
+    config: ConfigService,
+    private router: Router,
+    private routerParam: ActivatedRoute,
+    public resourceService: ResourceService,
+    public observationUtilService: ObservationUtilService,
+    public layoutService: LayoutService,
+    private location: Location,
+    public toasterService: ToasterService
+    ) {
+    this.config &#x3D; config;
+    routerParam.queryParams.subscribe(data &#x3D;&gt; {
+      this.programId &#x3D; data.programId;
+      this.solutionId &#x3D; data.solutionId;
+      this.observationId &#x3D; data.observationId;
+      this.solution &#x3D; data.solutionName;
+      this.programName &#x3D; data.programName;
+      this.entityType &#x3D; data.entityType;
+    });
+  }
+
+  ngOnInit() {
+    this.layoutConfiguration &#x3D; this.layoutService.initlayoutConfig();
+    this.layoutService.switchableLayout() 
+    .subscribe(layoutConfig &#x3D;&gt; {
+      if (layoutConfig !&#x3D; null) {
+        this.layoutConfiguration &#x3D; layoutConfig.layout;
+      }
+    });
+    this.getProfileData();
+    this.consentConfig &#x3D; { tncLink: _.get(this.resourceService, &#x27;frmelmnts.lbl.privacyPolicy&#x27;), tncText: _.get(this.resourceService, &#x27;frmelmnts.lbl.programConsent&#x27;) };
+  }
+  
+  getAPIParams(url, payload) {
+    const { school, ...payloadToSend } &#x3D; payload;
+    const params &#x3D; {
+      url,
+      data: payloadToSend
+    };
+    return params;
+  }
+  
+  readProgram() {
+    const url &#x3D; &#x60;${this.config.urlConFig.URLS.OBSERVATION.READ_PROGRAM}/${this.programId}&#x60;;
+    const params &#x3D; this.getAPIParams(url, this.payload);
+    
+    this.postAPI(params).subscribe(data &#x3D;&gt; {
+      this.consentApplies &#x3D; data?.result?.requestForPIIConsent;
+      this.consentUpdated &#x3D; data?.result?.consentShared;
+      this.programJoined &#x3D; this.consentApplies ? data.result.programJoined : true;
+      this.requestForPIIConsent &#x3D; data.result.requestForPIIConsent || false;
+      this.rootOrganisations &#x3D; data.result.rootOrganisations || &#x27;&#x27;;
+      if(this.programJoined &amp;&amp; this.consentApplies) this.openConsentPopUp &#x3D; true;
+    });
+  }
+  
+  joinProgram(consentShared &#x3D; false) {
+    this.joinProgramPopUp &#x3D; this.joinProgramLoader &#x3D; true;
+    const url &#x3D; &#x60;${this.config.urlConFig.URLS.OBSERVATION.JOIN_PROGRAM}/${this.programId}&#x60;;
+    const params &#x3D; this.getAPIParams(url, { userRoleInformation: this.payload, consentShared:consentShared });
+    
+    this.postAPI(params).subscribe(_data &#x3D;&gt; {
+      this.joinProgramPopUp &#x3D; this.joinProgramLoader &#x3D; false;
+      this.programJoined &#x3D; true;
+      this.openConsentPopUp &#x3D; this.requestForPIIConsent;
+      if(!this.requestForPIIConsent || this.requestForPIIConsent &amp;&amp; consentShared){
+        this.toasterService.success(_.get(this.resourceService,&#x27;messages.smsg.joinedProgramSuccessfully&#x27;))
+      } 
+    });
+  }
+
+  checkConsent($event){
+    this.consentUpdated &#x3D; $event?.consent
+    this.openConsentPopUp &#x3D; false;
+    if($event?.consent) this.joinProgram($event?.consent)
+  }
+
+  getProfileData() {
+    this.observationUtilService.getProfileDataList().then(data &#x3D;&gt; {
+      this.payload &#x3D; data;
+      this.getEntities();
+      this.readProgram();
+    }, error &#x3D;&gt; {
+    });
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: &#x27;smooth&#x27;,
+    });
+  }
+
+  getEntities() {
+    this.showLoader &#x3D; true;
+    const paramOptions &#x3D; {
+      url: this.config.urlConFig.URLS.OBSERVATION.OBSERVATION_ENTITIES,
+      param: {
+        solutionId: this.solutionId,
+      },
+      data: this.payload,
+    };
+    this.observationService.post(paramOptions).subscribe(data &#x3D;&gt; {
+      this.showLoader &#x3D; false;
+      if (data.result ) {
+        this.disableAddEntity &#x3D; false;
+        this.entities &#x3D; data.result;
+        if (!this.selectedEntity._id &amp;&amp; data.result.entities &amp;&amp; data.result.entities.length) {
+          this.selectedEntity &#x3D; this.entities.entities[0];
+        }
+        this.observationId &#x3D; this.entities._id;
+        this.getObservationForm();
+      } else {
+        this.entities &#x3D; [];
+      }
+
+      if (data.result &amp;&amp; data.result.license) {
+        this.courseHierarchy &#x3D; data.result.license;
+       }
+
+    }, error &#x3D;&gt; {
+      this.toasterService.error(error?.error?.message)
+      this.showLoader &#x3D; false;
+    });
+  }
+
+  getObservationForm() {
+    // this.showLoader &#x3D; true;
+    const paramOptions &#x3D; {
+      url: this.config.urlConFig.URLS.OBSERVATION.GET_OBSERVATION_SUBMISSIONS + &#x60;${this.observationId}?entityId&#x3D;${this.selectedEntity._id}&#x60;,
+      param: {},
+      data: this.payload,
+    };
+    this.observationService.post(paramOptions).subscribe(data &#x3D;&gt; {
+      this.showLoader &#x3D; false;
+      this.submissions &#x3D; data.result;
+      if (!this.submissions.length &amp;&amp; !this.entities.allowMultipleAssessemts) {
+        this.observeAgain();
+      }
+    }, error &#x3D;&gt; {
+      this.showLoader &#x3D; false;
+    });
+  }
+
+ actionOnEntity(event) {
+    if (event.action &#x3D;&#x3D; &#x27;delete&#x27;) {
+      this.delete(event.data);
+    } else if (event.action &#x3D;&#x3D; &#x27;change&#x27;) {
+      this.changeEntity(event.data);
+    }
+  }
+  isConsentUpdated(){
+    if(this.requestForPIIConsent &amp;&amp; !this.consentUpdated){
+      this.openConsentPopUp &#x3D; true;
+      return false;
+    }
+    return true;
+  }
+  addEntity() {
+    if(!this.isConsentUpdated()){
+      return;
+    }
+
+    this.showDownloadModal &#x3D; true;
+  }
+  changeEntity(event) {
+    this.selectedEntity &#x3D; event;
+    this.getObservationForm();
+  }
+  modalClose() {
+    this.showDownloadModal &#x3D; false;
+    this.getEntities();
+  }
+  goBack() {
+   this.location.back();
+  }
+
+  async observeAgainConfirm() {
+    if(!this.isConsentUpdated()){
+      return;
+    }
+
+    const metaData &#x3D; await this.observationUtilService.getAlertMetaData();
+    metaData.content.body.data &#x3D; this.resourceService.frmelmnts.lbl.createObserveAgain;
+    metaData.content.body.type &#x3D; &#x27;text&#x27;;
+    metaData.content.title &#x3D; this.resourceService.frmelmnts.btn.observeAgain;
+    metaData.size &#x3D; &#x27;mini&#x27;;
+    metaData.footer.buttons.push({
+      type: &#x27;cancel&#x27;,
+      returnValue: false,
+      buttonText: this.resourceService.frmelmnts.btn.no
+    });
+    metaData.footer.buttons.push({
+      type: &#x27;accept&#x27;,
+      returnValue: true,
+      buttonText: this.resourceService.frmelmnts.btn.yes
+    });
+    metaData.footer.className &#x3D; &#x27;double-btn&#x27;;
+    const returnData &#x3D; await this.observationUtilService.showPopupAlert(metaData);
+    returnData ? this.observeAgain() : &#x27;&#x27;;
+}
+  observeAgain() {
+      this.showLoader &#x3D; true;
+    const paramOptions &#x3D; {
+      url: this.config.urlConFig.URLS.OBSERVATION.OBSERVATION_SUBMISSION_CREATE + &#x60;${this.observationId}?entityId&#x3D;${this.selectedEntity._id}&#x60;,
+      param: {},
+      data: this.payload,
+    };
+    this.observationService.post(paramOptions).subscribe(data &#x3D;&gt; {
+      this.showLoader &#x3D; false;
+      this.getEntities();
+    }, error &#x3D;&gt; {
+      this.showLoader &#x3D; false;
+    });
+  }
+
+  redirectToQuestions(evidence) {
+    if(!this.isConsentUpdated()){
+      return;
+    }
+    
+    this.router.navigate([&#x60;/questionnaire&#x60;], {
+      queryParams: {
+        observationId: this.observationId,
+        entityId: this.selectedEntity._id,
+        submissionNumber: evidence.submissionNumber,
+        evidenceCode: evidence.code,
+      },
+    });
+  }
+
+  open(sbnum, data) {
+    data.submissionNumber &#x3D; sbnum;
+    this.redirectToQuestions(data);
+  }
+
+  async delete(entity) {
+    const metaData &#x3D; await this.observationUtilService.getAlertMetaData();
+    metaData.content.body.data &#x3D; this.resourceService.frmelmnts.lbl.deleteConfirm;
+    metaData.content.body.type &#x3D; &#x27;text&#x27;;
+    metaData.content.title &#x3D; this.resourceService.frmelmnts.btn.delete;
+    metaData.size &#x3D; &#x27;mini&#x27;;
+    metaData.footer.buttons.push({
+      type: &#x27;cancel&#x27;,
+      returnValue: false,
+      buttonText: this.resourceService.frmelmnts.btn.no
+    });
+    metaData.footer.buttons.push({
+      type: &#x27;accept&#x27;,
+      returnValue: true,
+      buttonText: this.resourceService.frmelmnts.btn.yes
+    });
+    metaData.footer.className &#x3D; &#x27;double-btn&#x27;;
+    const returnData &#x3D; await this.observationUtilService.showPopupAlert(metaData);
+    if (returnData) {
+      this.showLoader &#x3D; true;
+      this.payload.data &#x3D; [
+        entity._id
+      ];
+      const paramOptions &#x3D; {
+        url: this.config.urlConFig.URLS.OBSERVATION.OBSERVATION_UPDATE_ENTITES + this.observationId,
+        param: {},
+        data: this.payload,
+      };
+      if (this.selectedEntity._id &#x3D;&#x3D; entity._id) {
+        this.selectedEntity &#x3D; {};
+      }
+      this.observationService.delete(paramOptions).subscribe(data &#x3D;&gt; {
+        this.showLoader &#x3D; false;
+        this.getEntities();
+      }, error &#x3D;&gt; {
+        this.showLoader &#x3D; false;
+      });
+    }
+  }
+
+  openEditSubmission(event) {
+    this.openEditModal.data &#x3D; {
+      title: this.resourceService.frmelmnts?.lbl?.instanceName,
+      defaultValue: event.title,
+      leftBtnText: this.resourceService.frmelmnts?.btn?.cancel,
+      rightBtnText: this.resourceService.frmelmnts?.btn?.update,
+      action: &#x27;submissionTitleUpdate&#x27;,
+      returnParams : {submissionId: event._id}
+    };
+    this.openEditModal.show &#x3D; true;
+
+  }
+
+  async deleteSubmission(event) {
+    const metaData &#x3D; await this.observationUtilService.getAlertMetaData();
+    metaData.content.body.data &#x3D; this.resourceService.frmelmnts.lbl.deleteSubmission;
+    metaData.content.body.type &#x3D; &#x27;text&#x27;;
+    metaData.content.title &#x3D; this.resourceService.frmelmnts.btn.delete;
+    metaData.size &#x3D; &#x27;mini&#x27;;
+    metaData.footer.buttons.push({
+      type: &#x27;cancel&#x27;,
+      returnValue: false,
+      buttonText: this.resourceService.frmelmnts.btn.no
+    });
+    metaData.footer.buttons.push({
+      type: &#x27;accept&#x27;,
+      returnValue: true,
+      buttonText: this.resourceService.frmelmnts.btn.yes
+    });
+    metaData.footer.className &#x3D; &#x27;double-btn&#x27;;
+    const returnData &#x3D; await this.observationUtilService.showPopupAlert(metaData);
+    if (returnData) {
+      const config &#x3D; {
+        url: this.config.urlConFig.URLS.OBSERVATION.OBSERVATION_SUBMISSION_UPDATE + &#x60;${event._id}&#x60;,
+        param: {},
+        payload: this.payload,
+      };
+      this.observationService.delete(config).subscribe(data &#x3D;&gt; {
+        this.getObservationForm();
+      }, error &#x3D;&gt; {
+        this.toasterService.error(error.error.message);
+      });
+    }
+  }
+
+  closeEditModal(event) {
+    this.openEditModal.show &#x3D; false;
+    if (!event.data) { return; }
+    if (event.action &#x3D;&#x3D;&#x3D; &#x27;submissionTitleUpdate&#x27;) { this.updateSubmission(event); }
+    if (event.action &#x3D;&#x3D;&#x3D; &#x27;markEcmNotApplicable&#x27;) { this.markEcmNotApplicable(event); }
+  }
+
+  updateSubmission(event) {
+    this.showLoader &#x3D; true;
+    this.payload.title &#x3D; event.data;
+    const paramOptions &#x3D; {
+      url: this.config.urlConFig.URLS.OBSERVATION.OBSERVATION_SUBMISSION_UPDATE + event.returnParams.submissionId,
+      param: {},
+      data: this.payload,
+    };
+    this.observationService.post(paramOptions).subscribe(data &#x3D;&gt; {
+      this.showLoader &#x3D; false;
+      this.getEntities();
+    }, error &#x3D;&gt; {
+      this.showLoader &#x3D; false;
+    });
+  }
+
+  actionOnSubmission(event) {
+    if (event.action &#x3D;&#x3D; &#x27;markEcmNotApplicable&#x27;) {
+      this.markEcmNotApplicableRemark(event.data);
+      return;
+    }
+    event.action &#x3D;&#x3D; &#x27;edit&#x27; ? this.openEditSubmission(event.data) : this.deleteSubmission(event.data);
+  }
+  dropDownAction(submission, type) {
+    const data &#x3D; {
+      action: type,
+      data: submission
+    };
+    this.actionOnSubmission(data);
+  }
+  markEcmNotApplicableRemark(e) {
+    if (e.notApplicable) {
+      const metaData &#x3D; this.observationUtilService.getAlertMetaData();
+      metaData.content.body.data &#x3D; this.resourceService.frmelmnts.lbl.allReadyNotApplicable;
+      metaData.content.body.type &#x3D; &#x27;text&#x27;;
+      metaData.content.title &#x3D; this.resourceService.frmelmnts.lbl.allReadyNotApplicableTitle;
+      metaData.size &#x3D; &#x27;small&#x27;;
+      metaData.footer.buttons.push({
+        type: &#x27;cancel&#x27;,
+        returnValue: false,
+        buttonText: &#x27;Go back&#x27;,
+      });
+      metaData.footer.className &#x3D; &#x27;double-btn&#x27;;
+      this.observationUtilService.showPopupAlert(
+        metaData
+      );
+      return;
+    }
+    this.openEditModal.data &#x3D; {
+      title: this.resourceService.frmelmnts?.lbl?.notApplicable,
+      subTitle: this.resourceService.frmelmnts?.lbl?.notApplicableRemark  ,
+      leftBtnText: this.resourceService.frmelmnts?.btn?.goBack,
+      rightBtnText: this.resourceService.frmelmnts?.btn?.save,
+      action: &#x27;markEcmNotApplicable&#x27;,
+      returnParams: {submissionId: e.submissionId, code: e.code}
+    };
+
+    this.openEditModal.show &#x3D; true;
+  }
+ markEcmNotApplicable(event) {
+    let payload &#x3D; {
+      evidence: {},
+    };
+    const evidence &#x3D; {
+      externalId: event.returnParams.code,
+      notApplicable: true,
+      remarks: event.data
+    };
+    payload.evidence &#x3D; evidence;
+    const profile: Object &#x3D; this.observationUtilService.getProfileDataList();
+    if (!profile) {
+      return;
+    }
+   payload &#x3D; { ...profile, ...payload };
+   const submissionId &#x3D; event.returnParams.submissionId;
+      const paramOptions &#x3D; {
+      url:
+        this.config.urlConFig.URLS.OBSERVATION.OBSERVATION_SUBMISSION_UPDATE +
+        &#x60;${submissionId}&#x60;,
+      data: payload,
+      };
+
+     this.observationService.post(paramOptions).subscribe(
+      (data) &#x3D;&gt; {
+        try {
+          this.submissions.find(sub &#x3D;&gt; {
+            if (sub._id &#x3D;&#x3D; event.returnParams.submissionId) {
+              sub.evidencesStatus.find(evidence &#x3D;&gt; {
+                if (evidence.code &#x3D;&#x3D; event.returnParams.code) {
+                  evidence.notApplicable &#x3D; true;
+                  evidence.status &#x3D; &#x27;completed&#x27;;
+                }
+              });
+            }
+          });
+        } catch (error) {
+
+        }
+      },
+      (error) &#x3D;&gt; {
+
+      }
+    );
+
+  }
+  
+  postAPI(params) {
+    return this.observationService.post(params).pipe(
+      catchError((error) &#x3D;&gt; {
+        console.log(&#x27;Error&#x27;, error);
+        this.joinProgramPopUp &#x3D; this.joinProgramLoader &#x3D; false;
+        this.toasterService.error(this.resourceService.frmelmnts?.lbl?.joinProgramError);
+        return throwError(error);
+      })
+    );
+  }
+
+}</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'ConsentConfiguration.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
