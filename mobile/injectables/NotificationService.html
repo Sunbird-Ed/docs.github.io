@@ -1,0 +1,2375 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >NotificationService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/notification.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_notificationId" >_notificationId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_notificationPaylod" >_notificationPaylod</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#appId" >appId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#appName" >appName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#configData" >configData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#contentUrl" >contentUrl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#externalUrl" >externalUrl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Public</span>
+                                <a href="#groupService" >groupService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#identifier" >identifier</a>
+                            </li>
+                            <li>
+                                <a href="#notificationData" >notificationData</a>
+                            </li>
+                            <li>
+                                <a href="#notificationList$" >notificationList$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#selectedLanguage" >selectedLanguage</a>
+                            </li>
+                            <li>
+                                <a href="#showNotificationModel$" >showNotificationModel$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#clearAllNotifications" >clearAllNotifications</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteNotification" >deleteNotification</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#fetchNotificationList" >fetchNotificationList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateClickInteractEvent" >generateClickInteractEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getAppName" >getAppName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#handleNotification" >handleNotification</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#handleNotificationClick" >handleNotificationClick</a>
+                            </li>
+                            <li>
+                                <a href="#redirectNotification" >redirectNotification</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#redirectToActivityDetails" >redirectToActivityDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setLocalNotification" >setLocalNotification</a>
+                            </li>
+                            <li>
+                                <a href="#setNotificationParams" >setNotificationParams</a>
+                            </li>
+                            <li>
+                                <a href="#setTrigerConfig" >setTrigerConfig</a>
+                            </li>
+                            <li>
+                                <a href="#setupLocalNotification" >setupLocalNotification</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#triggerConfig" >triggerConfig</a>
+                            </li>
+                            <li>
+                                <a href="#updateNotification" >updateNotification</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#notificationId" >notificationId</a>
+                                </li>
+                                <li>
+                                    <a href="#notificationPayload" >notificationPayload</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(telemetryService: TelemetryService, notificationServiceV2: <a href="../injectables/NotificationService.html" target="_self">NotificationServiceV2</a>, groupService: GroupService, profileService: ProfileService, contentService: ContentService, utilityService: <a href="../injectables/UtilityService.html" target="_self">UtilityService</a>, formnFrameworkUtilService: <a href="../injectables/FormAndFrameworkUtilService.html" target="_self">FormAndFrameworkUtilService</a>, appVersion: AppVersion, localNotifications: LocalNotifications, splaschreenDeeplinkActionHandlerDelegate: <a href="../injectables/SplaschreenDeeplinkActionHandlerDelegate.html" target="_self">SplaschreenDeeplinkActionHandlerDelegate</a>, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, router: Router, events: <a href="../injectables/Events.html" target="_self">Events</a>, navService: <a href="../injectables/NavigationService.html" target="_self">NavigationService</a>, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/services/notification.service.ts:37</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>telemetryService</td>
+                                                  
+                                                        <td>
+                                                                    <code>TelemetryService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>notificationServiceV2</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NotificationService.html" target="_self" >NotificationServiceV2</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>groupService</td>
+                                                  
+                                                        <td>
+                                                                    <code>GroupService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ProfileService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>contentService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ContentService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilityService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilityService.html" target="_self" >UtilityService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formnFrameworkUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormAndFrameworkUtilService.html" target="_self" >FormAndFrameworkUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appVersion</td>
+                                                  
+                                                        <td>
+                                                                    <code>AppVersion</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>localNotifications</td>
+                                                  
+                                                        <td>
+                                                                    <code>LocalNotifications</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>splaschreenDeeplinkActionHandlerDelegate</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SplaschreenDeeplinkActionHandlerDelegate.html" target="_self" >SplaschreenDeeplinkActionHandlerDelegate</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>events</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >Events</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationService.html" target="_self" >NavigationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearAllNotifications"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>clearAllNotifications</b></span>
+                        <a href="#clearAllNotifications"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>clearAllNotifications(notificationListData?: EventNotification)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="96"
+                            class="link-to-prism">src/services/notification.service.ts:96</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notificationListData</td>
+                                    <td>
+                                            <code>EventNotification</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteNotification"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteNotification</b></span>
+                        <a href="#deleteNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteNotification(notificationData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/services/notification.service.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notificationData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchNotificationList"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>fetchNotificationList</b></span>
+                        <a href="#fetchNotificationList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchNotificationList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="59"
+                            class="link-to-prism">src/services/notification.service.ts:59</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateClickInteractEvent"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateClickInteractEvent</b></span>
+                        <a href="#generateClickInteractEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateClickInteractEvent(valuesMap, interactSubType)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="321"
+                            class="link-to-prism">src/services/notification.service.ts:321</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>valuesMap</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>interactSubType</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAppName"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getAppName</b></span>
+                        <a href="#getAppName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAppName()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="236"
+                            class="link-to-prism">src/services/notification.service.ts:236</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleNotification"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>handleNotification</b></span>
+                        <a href="#handleNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleNotification()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="287"
+                            class="link-to-prism">src/services/notification.service.ts:287</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleNotificationClick"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>handleNotificationClick</b></span>
+                        <a href="#handleNotificationClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleNotificationClick(notificationData: EventNotification)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/services/notification.service.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notificationData</td>
+                                    <td>
+                                            <code>EventNotification</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;void&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectNotification"></a>
+                    <span class="name">
+                        <span ><b>redirectNotification</b></span>
+                        <a href="#redirectNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>redirectNotification(notificationData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="349"
+                            class="link-to-prism">src/services/notification.service.ts:349</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notificationData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectToActivityDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>redirectToActivityDetails</b></span>
+                        <a href="#redirectToActivityDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>redirectToActivityDetails(notificationData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="367"
+                            class="link-to-prism">src/services/notification.service.ts:367</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notificationData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setLocalNotification"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>setLocalNotification</b></span>
+                        <a href="#setLocalNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setLocalNotification(triggerConfig)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="201"
+                            class="link-to-prism">src/services/notification.service.ts:201</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>triggerConfig</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setNotificationParams"></a>
+                    <span class="name">
+                        <span ><b>setNotificationParams</b></span>
+                        <a href="#setNotificationParams"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setNotificationParams(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="240"
+                            class="link-to-prism">src/services/notification.service.ts:240</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setTrigerConfig"></a>
+                    <span class="name">
+                        <span ><b>setTrigerConfig</b></span>
+                        <a href="#setTrigerConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setTrigerConfig(fields)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="146"
+                            class="link-to-prism">src/services/notification.service.ts:146</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fields</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setupLocalNotification"></a>
+                    <span class="name">
+                        <span ><b>setupLocalNotification</b></span>
+                        <a href="#setupLocalNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setupLocalNotification(language?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, payLoad?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="132"
+                            class="link-to-prism">src/services/notification.service.ts:132</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>language</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>payLoad</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="triggerConfig"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>triggerConfig</b></span>
+                        <a href="#triggerConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>triggerConfig(triggerConfig)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="169"
+                            class="link-to-prism">src/services/notification.service.ts:169</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>triggerConfig</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateNotification"></a>
+                    <span class="name">
+                        <span ><b>updateNotification</b></span>
+                        <a href="#updateNotification"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateNotification(notificationData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="335"
+                            class="link-to-prism">src/services/notification.service.ts:335</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>notificationData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_notificationId"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_notificationId</b></span>
+                        <a href="#_notificationId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/services/notification.service.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_notificationPaylod"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_notificationPaylod</b></span>
+                        <a href="#_notificationPaylod"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/services/notification.service.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appId"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>appId</b></span>
+                        <a href="#appId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/services/notification.service.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appName"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>appName</b></span>
+                        <a href="#appName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/services/notification.service.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="configData"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>configData</b></span>
+                        <a href="#configData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/services/notification.service.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="contentUrl"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>contentUrl</b></span>
+                        <a href="#contentUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/services/notification.service.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="externalUrl"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>externalUrl</b></span>
+                        <a href="#externalUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/services/notification.service.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="groupService"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Public</span>
+                        <span ><b>groupService</b></span>
+                        <a href="#groupService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>GroupService</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @Inject(&#x27;GROUP_SERVICE&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/services/notification.service.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="identifier"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>identifier</b></span>
+                        <a href="#identifier"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/services/notification.service.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="notificationData"></a>
+                    <span class="name">
+                        <span ><b>notificationData</b></span>
+                        <a href="#notificationData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/services/notification.service.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="notificationList$"></a>
+                    <span class="name">
+                        <span ><b>notificationList$</b></span>
+                        <a href="#notificationList$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new BehaviorSubject([])</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/services/notification.service.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedLanguage"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>selectedLanguage</b></span>
+                        <a href="#selectedLanguage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/services/notification.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showNotificationModel$"></a>
+                    <span class="name">
+                        <span ><b>showNotificationModel$</b></span>
+                        <a href="#showNotificationModel$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;boolean&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/services/notification.service.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="notificationId"></a>
+                        <span class="name"><b>notificationId</b><a href="#notificationId"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>notificationId()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="116" class="link-to-prism">src/services/notification.service.ts:116</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>notificationId(id)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/services/notification.service.ts:120</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>id</td>
+                                                    
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="notificationPayload"></a>
+                        <span class="name"><b>notificationPayload</b><a href="#notificationPayload"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>notificationPayload()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">src/services/notification.service.ts:124</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>notificationPayload(payload)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">src/services/notification.service.ts:128</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>payload</td>
+                                                    
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+</section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Environment, InteractType, PageId } from &#x27;./telemetry-constants&#x27;;
+import { Inject, Injectable } from &#x27;@angular/core&#x27;;
+import { AppVersion } from &#x27;@ionic-native/app-version/ngx&#x27;;
+import { LocalNotifications } from &#x27;@ionic-native/local-notifications/ngx&#x27;;
+import { UtilityService } from &#x27;./utility-service&#x27;;
+import { ActionType, EventTopics, ProfileConstants, RouterLinks } from &#x27;@app/app/app.constant&#x27;;
+import { SplaschreenDeeplinkActionHandlerDelegate } from &#x27;./sunbird-splashscreen/splaschreen-deeplink-action-handler-delegate&#x27;;
+import { CorReleationDataType, InteractSubtype } from &#x27;.&#x27;;
+import { FormAndFrameworkUtilService } from &#x27;./formandframeworkutil.service&#x27;;
+import { CorrelationData, TelemetryService, GetByIdRequest, CachedItemRequestSourceFrom, GroupService, ProfileService, ContentSearchCriteria, ContentService } from &#x27;@project-sunbird/sunbird-sdk&#x27;;
+import { Events } from &#x27;@app/util/events&#x27;;
+import { EventNotification, SbNotificationService } from &#x27;@project-sunbird/sb-notification&#x27;;
+import { BehaviorSubject, Subject } from &#x27;rxjs&#x27;;
+import { TelemetryGeneratorService } from &#x27;@app/services/telemetry-generator.service&#x27;;
+import { NotificationServiceV2 } from &#x27;@project-sunbird/sunbird-sdk/notification-v2/def/notification-service-v2&#x27;;
+import { NavigationExtras, Router } from &#x27;@angular/router&#x27;;
+import { NavigationService } from &#x27;./navigation-handler.service&#x27;;
+import { CommonUtilService } from &#x27;./common-util.service&#x27;;
+declare const cordova;
+
+@Injectable({
+    providedIn: &#x27;root&#x27;
+})
+export class NotificationService implements SbNotificationService {
+
+    private selectedLanguage: string;
+    private configData: any;
+    private appName: any;
+    private identifier: any;
+    private externalUrl: any;
+    private appId: any;
+    private _notificationId: string;
+    private contentUrl: string;
+    private _notificationPaylod: any;
+    notificationList$ &#x3D; new BehaviorSubject([]);
+    showNotificationModel$ &#x3D; new Subject&lt;boolean&gt;();
+    notificationData: any;
+
+    constructor(
+        @Inject(&#x27;TELEMETRY_SERVICE&#x27;) private telemetryService: TelemetryService,
+        @Inject(&#x27;NOTIFICATION_SERVICE_V2&#x27;) private notificationServiceV2: NotificationServiceV2,
+        @Inject(&#x27;GROUP_SERVICE&#x27;) public groupService: GroupService,
+        @Inject(&#x27;PROFILE_SERVICE&#x27;) private profileService: ProfileService,
+        @Inject(&#x27;CONTENT_SERVICE&#x27;) private contentService: ContentService,
+        private utilityService: UtilityService,
+        private formnFrameworkUtilService: FormAndFrameworkUtilService,
+        private appVersion: AppVersion,
+        private localNotifications: LocalNotifications,
+        private splaschreenDeeplinkActionHandlerDelegate: SplaschreenDeeplinkActionHandlerDelegate,
+        private telemetryGeneratorService: TelemetryGeneratorService,
+        private router: Router,
+        private events: Events,
+        private navService: NavigationService,
+        private commonUtilService: CommonUtilService
+    ) {
+        this.getAppName();
+    }
+
+    async fetchNotificationList() {
+        const profile &#x3D; await this.profileService.getActiveSessionProfile({ requiredFields: ProfileConstants.REQUIRED_FIELDS }).toPromise();
+        return this.notificationServiceV2.notificationRead(profile.uid).toPromise()
+    }
+
+    async handleNotificationClick(notificationData: EventNotification): Promise&lt;void&gt; {
+        console.log(&#x27;service handleNotificationClick&#x27;, notificationData)
+        this.updateNotification(notificationData.data);
+        if (!notificationData || !notificationData.data || !notificationData.data.action) {
+            return;
+        }
+        this.notificationData &#x3D; notificationData.data;
+
+        this.notificationData.isRead &#x3D; 1;
+
+        this.notificationId &#x3D; this.notificationData.id || &#x27;&#x27;;
+        this.setNotificationParams(this.notificationData);
+        this.handleNotification();
+    }
+
+    async deleteNotification(notificationData): Promise&lt;boolean&gt; {
+        console.log(&#x27;service deleteNotification&#x27;, notificationData)
+        const req: any &#x3D; {
+            ids: [notificationData.data.id],
+            userId: notificationData.data.userId,
+            category: notificationData.data.action.category
+        }
+        try {
+            await this.notificationServiceV2.notificationDelete(req).toPromise();
+            this.events.publish(EventTopics.NOTIFICATION_REFRESH);
+            return true;
+        } catch (e) {
+            this.commonUtilService.showToast(&#x27;SOMETHING_WENT_WRONG&#x27;)
+            return false;
+        }
+    }
+
+    async clearAllNotifications(notificationListData?: EventNotification): Promise&lt;boolean&gt; {
+        const ids &#x3D; [];
+        notificationListData.data.forEach(element &#x3D;&gt; {
+            ids.push(element.id)
+        });
+        const req: any &#x3D; {
+            ids: ids,
+            userId: notificationListData.data[0].userId,
+            category: notificationListData.data[0].action.category
+        }
+        try {
+            await this.notificationServiceV2.notificationDelete(req).toPromise();
+            this.events.publish(EventTopics.NOTIFICATION_REFRESH);
+            return true;
+        } catch (e) {
+            this.commonUtilService.showToast(&#x27;SOMETHING_WENT_WRONG&#x27;)
+            return false;
+        }
+    }
+
+    get notificationId(): string {
+        return this._notificationId;
+    }
+
+    set notificationId(id) {
+        this._notificationId &#x3D; id;
+    }
+
+    get notificationPayload() {
+        return this._notificationPaylod;
+    }
+
+    set notificationPayload(payload) {
+        this._notificationPaylod &#x3D; payload;
+    }
+
+    setupLocalNotification(language?: string, payLoad?: any): any {
+        if (language) {
+            this.selectedLanguage &#x3D; language;
+            this.localNotifications.cancelAll();
+        }
+        if (payLoad) {
+            this.setTrigerConfig(payLoad);
+        } else {
+            this.formnFrameworkUtilService.getNotificationFormConfig().then(fields &#x3D;&gt; {
+                this.setTrigerConfig(fields);
+            });
+        }
+    }
+
+    setTrigerConfig(fields) {
+        if (fields &amp;&amp; fields.length) {
+            this.configData &#x3D; (fields.find(field &#x3D;&gt; field.code &#x3D;&#x3D;&#x3D; &#x27;localNotification&#x27;)).config;
+            this.configData.forEach(element &#x3D;&gt; {
+                this.localNotifications.getScheduledIds().then((ids) &#x3D;&gt; {
+                    if (ids.length) {
+                        if (!element.isEnabled &amp;&amp; ids.findIndex(ele &#x3D;&gt; ele &#x3D;&#x3D;&#x3D; element.id) !&#x3D;&#x3D; -1) {
+                            this.localNotifications.cancel(element.id).then(resp &#x3D;&gt; {
+                                console.log(&#x27;Local Notification Disabled for:&#x27; + element.id, resp);
+                            });
+                        } else if (element.isEnabled &amp;&amp; ids.findIndex(ele &#x3D;&gt; ele &#x3D;&#x3D;&#x3D; element.id) &#x3D;&#x3D;&#x3D; -1) {
+                            this.setLocalNotification(element);
+                        }
+                    } else {
+                        if (element.isEnabled) {
+                            this.setLocalNotification(element);
+                        }
+                    }
+                });
+            });
+        }
+    }
+
+    private triggerConfig(triggerConfig) {
+        let tempDate &#x3D; triggerConfig.start;
+        tempDate &#x3D; tempDate.split(&#x27; &#x27;);
+        const hour &#x3D; +tempDate[1].split(&#x27;:&#x27;)[0];
+        const minute &#x3D; +tempDate[1].split(&#x27;:&#x27;)[1];
+        tempDate &#x3D; tempDate[0].split(&#x27;/&#x27;);
+        const trigger: any &#x3D; {};
+
+
+        if (tempDate.length &#x3D;&#x3D;&#x3D; 1) {
+            const every: any &#x3D; {
+                minute: &#x27;&#x27;,
+                hour: &#x27;&#x27;
+            };
+            if (!isNaN(+triggerConfig.interval) &amp;&amp; typeof (+triggerConfig.interval) &#x3D;&#x3D;&#x3D; &#x27;number&#x27;) {
+                every.day &#x3D; +triggerConfig.interval;
+            } else if (typeof (triggerConfig.interval) &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
+                every[triggerConfig.interval] &#x3D; +tempDate[0];
+            }
+            every.hour &#x3D; hour;
+            every.minute &#x3D; minute;
+            trigger.every &#x3D; every;
+        } else if (tempDate.length &#x3D;&#x3D;&#x3D; 3) {
+            trigger.firstAt &#x3D; new Date(triggerConfig.start);
+            trigger.every &#x3D; triggerConfig.interval;
+            if (triggerConfig.occurance) {
+                trigger.count &#x3D; triggerConfig.occurance;
+            }
+        }
+        return trigger;
+    }
+
+    private setLocalNotification(triggerConfig) {
+        try {
+            let title;
+            let message;
+            try {
+                title &#x3D; JSON.parse(triggerConfig.title);
+                message &#x3D; JSON.parse(triggerConfig.msg);
+            } catch (e) {
+                title &#x3D; triggerConfig.title;
+                message &#x3D; triggerConfig.msg;
+                console.log(&#x27;Not a JSON valid string&#x27;);
+            }
+            if (triggerConfig.start) {
+                const trigger &#x3D; this.triggerConfig(triggerConfig);
+                this.localNotifications.schedule({
+                    id: triggerConfig.id,
+                    title: title[this.selectedLanguage] || title[&#x27;en&#x27;],
+                    text: message[this.selectedLanguage] || message[&#x27;en&#x27;],
+                    icon: &#x27;res://icon&#x27;,
+                    smallIcon: &#x27;res://n_icon&#x27;,
+                    trigger
+                });
+            } else {
+                this.localNotifications.schedule({
+                    id: triggerConfig.id,
+                    title: triggerConfig.title,
+                    text: triggerConfig.msg,
+                    foreground: true
+                });
+            }
+        } catch (e) {
+            console.log(&#x27;Error&#x27;, e);
+        }
+    }
+
+    private async getAppName() {
+        this.appName &#x3D; await this.appVersion.getAppName();
+    }
+
+    setNotificationParams(data) {
+        this.notificationPayload &#x3D; data;
+        let type;
+        let actionData;
+        if (this.notificationPayload.actionData &amp;&amp; this.notificationPayload.actionData.actionType) {
+            type &#x3D; this.notificationPayload.actionData.actionType;
+            actionData &#x3D; this.notificationPayload.actionData;
+        } else if (this.notificationPayload.action &amp;&amp; this.notificationPayload.action.type) {
+            type &#x3D; this.notificationPayload.action.type;
+            actionData &#x3D; this.notificationPayload.action.additionalInfo;
+        }
+        switch (type) {
+            case ActionType.EXT_URL:
+                this.externalUrl &#x3D; actionData.deepLink;
+                break;
+            case ActionType.UPDATE_APP:
+                this.utilityService.getBuildConfigValue(&#x27;APPLICATION_ID&#x27;)
+                    .then(value &#x3D;&gt; {
+                        this.appId &#x3D; value;
+                    });
+                break;
+            case ActionType.COURSE_UPDATE:
+            case ActionType.CONTENT_UPDATE:
+            case ActionType.BOOK_UPDATE:
+                this.identifier &#x3D; actionData.identifier;
+                break;
+            case ActionType.CONTENT_URL:
+                this.contentUrl &#x3D; actionData.contentURL;
+                this.telemetryService.updateCampaignParameters([{
+                    type: CorReleationDataType.NOTIFICATION_ID,
+                    id: this.notificationId
+                }] as Array&lt;CorrelationData&gt;);
+                break;
+            case ActionType.SEARCH:
+                const searchFilters &#x3D; actionData.options;
+                (searchFilters[&#x27;searchCriteria&#x27;] as ContentSearchCriteria) &#x3D;
+                this.contentService.formatSearchCriteria({ request: searchFilters.filter });
+                searchFilters[&#x27;facet&#x27;] &#x3D; searchFilters.facets || &#x27;&#x27;;
+                const params &#x3D; {
+                    formField: searchFilters,
+                    fromLibrary: false
+                };
+                this.router.navigate([RouterLinks.CATEGORY_LIST], { state: params });
+                break;
+        }
+    }
+
+    async handleNotification() {
+        let corRelationList: Array&lt;CorrelationData&gt; &#x3D; [];
+        if (this.notificationId) {
+            corRelationList.push({
+                id: this.notificationId,
+                type: CorReleationDataType.NOTIFICATION_ID
+            });
+        const valuesMap &#x3D; corRelationList;
+        valuesMap[&#x27;notificationBody&#x27;] &#x3D; this.notificationData.action;
+        if (this.notificationData.action.deepLink &amp;&amp; this.notificationData.action.deepLink.length) {
+            valuesMap[&#x27;notificationDeepLink&#x27;] &#x3D; this.notificationData.action.deepLink;
+        }
+        this.generateClickInteractEvent(valuesMap, InteractSubtype.NOTIFICATION_READ);
+        }
+        if (this.identifier) {
+            this.splaschreenDeeplinkActionHandlerDelegate.navigateContent(this.identifier, false, null, null, null, corRelationList);
+            this.identifier &#x3D; null;
+        } else if (this.appId) {
+            await this.utilityService.openPlayStore(this.appId);
+            this.appId &#x3D; null;
+        } else if (this.externalUrl) {
+            open(this.externalUrl);
+            this.externalUrl &#x3D; null;
+        } else if (this.contentUrl) {
+            this.splaschreenDeeplinkActionHandlerDelegate.onAction({ url: this.contentUrl }, this);
+            this.contentUrl &#x3D; null;
+        } else if (this.notificationPayload &amp;&amp; this.notificationPayload.action
+            &amp;&amp; this.notificationPayload.action.type &#x3D;&#x3D;&#x3D; ActionType.CERTIFICATE) {
+            console.log(&#x27;ActionType.CERTIFICATE clicked&#x27;)
+            this.events.publish(&#x27;to_profile&#x27;);
+        }
+        this.notificationId &#x3D; undefined;
+    }
+
+    private generateClickInteractEvent(valuesMap, interactSubType) {     
+        const correlationData &#x3D; valuesMap[0]? [valuesMap[0]]:undefined;
+        this.telemetryGeneratorService.generateInteractTelemetry(
+            InteractType.TOUCH,
+            interactSubType,
+            Environment.NOTIFICATION,
+            PageId.NOTIFICATION,
+            undefined,
+            valuesMap,
+            undefined,
+            correlationData
+             );
+    }
+
+    updateNotification(notificationData) {
+        const req &#x3D; {
+            ids: [notificationData.id],
+            userId: notificationData.userId
+        }
+        this.notificationServiceV2.notificationUpdate(req).toPromise()
+        .then((resp) &#x3D;&gt; {
+            this.events.publish(EventTopics.NOTIFICATION_REFRESH);
+        }).catch((err) &#x3D;&gt; {
+            console.log(&#x27;err&#x27;, err)
+        });
+        this.redirectNotification(notificationData)
+    }
+
+    redirectNotification(notificationData) {
+        if(notificationData.action.additionalInfo.group) {
+            if (notificationData.action.type &#x3D;&#x3D;&#x3D; &#x27;group-activity-removed&#x27; ||
+                notificationData.action.type &#x3D;&#x3D;&#x3D; &#x27;member-added&#x27;) 
+            {
+                const navigationExtras: NavigationExtras &#x3D; {
+                    state: {
+                        groupId: notificationData.action.additionalInfo.group.id
+                    }
+                };
+                this.router.navigate([&#x60;/${RouterLinks.MY_GROUPS}/${RouterLinks.MY_GROUP_DETAILS}&#x60;], navigationExtras);
+            } 
+            else if (notificationData.action.type &#x3D;&#x3D;&#x3D; &#x27;group-activity-added&#x27;) {
+                this.redirectToActivityDetails(notificationData)
+            }
+        }
+    }
+
+    private async redirectToActivityDetails(notificationData){
+        const getByIdRequest: GetByIdRequest &#x3D; {
+            from: CachedItemRequestSourceFrom.SERVER,
+            id: notificationData.action.additionalInfo.group.id,
+            userId: notificationData.userId,
+            options: {
+                includeMembers: true,
+                includeActivities: true,
+                groupActivities: true
+            }
+        };
+        try {
+        const groupDetails &#x3D; await this.groupService.getById(getByIdRequest).toPromise();
+        const activity &#x3D; groupDetails.activitiesGrouped.find((g) &#x3D;&gt; g.title &#x3D;&#x3D;&#x3D; notificationData.action.additionalInfo.activity.type)
+                         .items.find((a) &#x3D;&gt; a.id &#x3D;&#x3D;&#x3D; notificationData.action.additionalInfo.activity.id).activityInfo
+        this.navService.navigateToDetailPage(activity, {
+        content: activity,
+        activityData: {
+            group: groupDetails,
+            isGroupCreatorOrAdmin: notificationData.action.additionalInfo.groupRole &#x3D;&#x3D; &#x27;admin&#x27;,
+            activity
+        },
+        corRelation: undefined,
+        });
+        } catch (e) { 
+            console.log(e);
+        }
+    }
+
+}</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'NotificationService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

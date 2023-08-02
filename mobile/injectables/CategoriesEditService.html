@@ -1,0 +1,871 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >CategoriesEditService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/profile/categories-edit/categories-edit.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#location" >location</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#executeUserPostOnboardingSteps" >executeUserPostOnboardingSteps</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#navigateToDistrictMapping" >navigateToDistrictMapping</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#refreshSegmentTags" >refreshSegmentTags</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateServerProfile" >updateServerProfile</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(profileService: ProfileService, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, segmentationTagService: <a href="../injectables/SegmentationTagService.html" target="_self">SegmentationTagService</a>, events: <a href="../injectables/Events.html" target="_self">Events</a>, tncUpdateHandlerService: <a href="../injectables/TncUpdateHandlerService.html" target="_self">TncUpdateHandlerService</a>, formAndFrameworkUtilService: <a href="../injectables/FormAndFrameworkUtilService.html" target="_self">FormAndFrameworkUtilService</a>, location: <a href="../classes/Location.html" target="_self">Location</a>, container: <a href="../injectables/ContainerService.html" target="_self">ContainerService</a>, appGlobalService: <a href="../injectables/AppGlobalService.html" target="_self">AppGlobalService</a>, router: Router, externalIdVerificationService: <a href="../injectables/ExternalIdVerificationService.html" target="_self">ExternalIdVerificationService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/profile/categories-edit/categories-edit.service.ts:16</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ProfileService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>segmentationTagService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SegmentationTagService.html" target="_self" >SegmentationTagService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>events</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >Events</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>tncUpdateHandlerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TncUpdateHandlerService.html" target="_self" >TncUpdateHandlerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formAndFrameworkUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormAndFrameworkUtilService.html" target="_self" >FormAndFrameworkUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Location.html" target="_self" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>container</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContainerService.html" target="_self" >ContainerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appGlobalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppGlobalService.html" target="_self" >AppGlobalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>externalIdVerificationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ExternalIdVerificationService.html" target="_self" >ExternalIdVerificationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="executeUserPostOnboardingSteps"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>executeUserPostOnboardingSteps</b></span>
+                        <a href="#executeUserPostOnboardingSteps"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>executeUserPostOnboardingSteps(isSSOUser, updatedProfile, navigateToCourse?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="100"
+                            class="link-to-prism">src/app/profile/categories-edit/categories-edit.service.ts:100</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isSSOUser</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>updatedProfile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>navigateToCourse</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToDistrictMapping"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>navigateToDistrictMapping</b></span>
+                        <a href="#navigateToDistrictMapping"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>navigateToDistrictMapping(navigateToCourse?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/app/profile/categories-edit/categories-edit.service.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>navigateToCourse</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="refreshSegmentTags"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>refreshSegmentTags</b></span>
+                        <a href="#refreshSegmentTags"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>refreshSegmentTags(profile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/profile/categories-edit/categories-edit.service.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateServerProfile"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>updateServerProfile</b></span>
+                        <a href="#updateServerProfile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateServerProfile(profile, req, showOnlyMandatoryFields, shouldUpdatePreference, hasFilledLocation, noOfStepsToCourseToc)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="34"
+                            class="link-to-prism">src/app/profile/categories-edit/categories-edit.service.ts:34</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>req</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>showOnlyMandatoryFields</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>shouldUpdatePreference</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>hasFilledLocation</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>noOfStepsToCourseToc</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="location"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>location</b></span>
+                        <a href="#location"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Location.html" target="_self" >Location</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/profile/categories-edit/categories-edit.service.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Inject, Injectable } from &quot;@angular/core&quot;;
+import { ProfileConstants, RouterLinks } from &quot;@app/app/app.constant&quot;;
+import { AppGlobalService, CommonUtilService, ContainerService, FormAndFrameworkUtilService } from &quot;@app/services&quot;;
+import { TncUpdateHandlerService } from &quot;@app/services/handlers/tnc-update-handler.service&quot;;
+import { SegmentationTagService, TagPrefixConstants } from &quot;@app/services/segmentation-tag/segmentation-tag.service&quot;;
+import { Events } from &quot;@app/util/events&quot;;
+import { CachedItemRequestSourceFrom, ProfileService, ServerProfileDetailsRequest } from &quot;sunbird-sdk&quot;;
+import { Location } from &#x27;@angular/common&#x27;;
+import { initTabs, LOGIN_TEACHER_TABS } from &quot;@app/app/module.service&quot;;
+import { NavigationExtras, Router } from &quot;@angular/router&quot;;
+import { ExternalIdVerificationService } from &quot;@app/services/externalid-verification.service&quot;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class CategoriesEditService {
+
+  constructor(
+    @Inject(&#x27;PROFILE_SERVICE&#x27;) private profileService: ProfileService,
+    private commonUtilService: CommonUtilService,
+    private segmentationTagService: SegmentationTagService,
+    private events: Events,
+    private tncUpdateHandlerService: TncUpdateHandlerService,
+    private formAndFrameworkUtilService: FormAndFrameworkUtilService,
+    public location: Location,
+    private container: ContainerService,
+    private appGlobalService: AppGlobalService,
+    private router: Router,
+    private externalIdVerificationService: ExternalIdVerificationService
+  ) {
+
+  }
+
+  async updateServerProfile(profile, req, showOnlyMandatoryFields, shouldUpdatePreference, hasFilledLocation, noOfStepsToCourseToc) {
+    this.commonUtilService.showToast(this.commonUtilService.translateMessage(&#x27;PROFILE_UPDATE_SUCCESS&#x27;));
+    this.events.publish(&#x27;loggedInProfile:update&#x27;, req.framework);
+    const isSSOUser &#x3D; await this.tncUpdateHandlerService.isSSOUser(profile);
+    await this.refreshSegmentTags(profile);
+    if (showOnlyMandatoryFields || shouldUpdatePreference) {
+      const reqObj: ServerProfileDetailsRequest &#x3D; {
+        userId: profile.uid,
+        requiredFields: ProfileConstants.REQUIRED_FIELDS,
+        from: CachedItemRequestSourceFrom.SERVER
+      };
+      let updatedProfile;
+      try {
+        updatedProfile &#x3D; await this.profileService.getServerProfilesDetails(reqObj).toPromise();
+      } catch {
+        initTabs(this.container, LOGIN_TEACHER_TABS);
+        if (hasFilledLocation) {
+          this.executeUserPostOnboardingSteps(isSSOUser, updatedProfile, noOfStepsToCourseToc);
+        } else {
+          this.navigateToDistrictMapping(noOfStepsToCourseToc);
+        }
+      }
+
+      await this.formAndFrameworkUtilService.updateLoggedInUser(updatedProfile, profile);
+      if (shouldUpdatePreference) {
+        this.location.back();
+      } else {
+        initTabs(this.container, LOGIN_TEACHER_TABS);
+        if (hasFilledLocation || isSSOUser) {
+          this.executeUserPostOnboardingSteps(isSSOUser, updatedProfile)
+        } else {
+          this.navigateToDistrictMapping();
+        }
+      }
+    } else {
+      this.location.back();
+    }
+  }
+
+  async refreshSegmentTags(profile) {
+    const reqObj: ServerProfileDetailsRequest &#x3D; {
+      userId: profile.uid,
+      requiredFields: ProfileConstants.REQUIRED_FIELDS,
+      from: CachedItemRequestSourceFrom.SERVER
+    };
+    try {
+      const updatedProfile &#x3D; await this.profileService.getServerProfilesDetails(reqObj).toPromise();
+      let segmentDetails &#x3D; JSON.parse(JSON.stringify(updatedProfile.framework));
+      Object.keys(segmentDetails).forEach((key) &#x3D;&gt; {
+        if (key !&#x3D;&#x3D; &#x27;id&#x27; &amp;&amp; Array.isArray(segmentDetails[key])) {
+          segmentDetails[key] &#x3D; segmentDetails[key].map(x &#x3D;&gt; x.replace(/\s/g, &#x27;&#x27;).toLowerCase());
+        }
+      });
+      window[&#x27;segmentation&#x27;].SBTagService.pushTag(segmentDetails, TagPrefixConstants.USER_ATRIBUTE, true);
+      let userLocation &#x3D; [];
+      (updatedProfile[&#x27;userLocations&#x27;] || []).forEach(element &#x3D;&gt; {
+        userLocation.push({ name: element.name, code: element.code });
+      });
+      window[&#x27;segmentation&#x27;].SBTagService.pushTag({ location: userLocation }, TagPrefixConstants.USER_LOCATION, true);
+      window[&#x27;segmentation&#x27;].SBTagService.pushTag(updatedProfile.profileUserType.type, TagPrefixConstants.USER_LOCATION, true);
+      this.segmentationTagService.evalCriteria();
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  private executeUserPostOnboardingSteps(isSSOUser, updatedProfile, navigateToCourse?) {
+    if (!isSSOUser) {
+      this.appGlobalService.showYearOfBirthPopup(updatedProfile);
+    }
+    if (this.appGlobalService.isJoinTraningOnboardingFlow) {
+      window.history.go(-navigateToCourse);
+    } else {
+      this.router.navigate([RouterLinks.TABS]);
+    }
+    this.events.publish(&#x27;update_header&#x27;);
+    this.externalIdVerificationService.showExternalIdVerificationPopup();
+  }
+
+  private navigateToDistrictMapping(navigateToCourse?) {
+    const navigationExtras: NavigationExtras &#x3D; {
+      state: {
+        isShowBackButton: false,
+        noOfStepsToCourseToc: navigateToCourse + 1
+      }
+    };
+    this.router.navigate([RouterLinks.DISTRICT_MAPPING], navigationExtras);
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'CategoriesEditService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

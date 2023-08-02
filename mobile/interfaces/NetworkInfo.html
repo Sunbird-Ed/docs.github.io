@@ -1,0 +1,1044 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Interfaces</li>
+  <li class="breadcrumb-item"
+  >
+  NetworkInfo</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/common-util.service.ts</code>
+        </p>
+
+
+
+
+        <section data-compodoc="block-index">
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#isNetworkAvailable" 
+>
+                                            isNetworkAvailable
+                                        </a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+            <section data-compodoc="block-properties">
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <a name="isNetworkAvailable"></a>
+                                        <span class="name "><b>isNetworkAvailable</b>
+                                            <a href="#isNetworkAvailable">
+                                                <span class="icon ion-ios-link"></span>
+                                            </a>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>isNetworkAvailable:         <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                                        </td>
+                                    </tr>
+
+
+
+
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, NgZone, Inject } from &#x27;@angular/core&#x27;;
+import {
+    ToastController,
+    LoadingController,
+    PopoverController,
+    Platform,
+} from &#x27;@ionic/angular&#x27;;
+import { Events } from &#x27;@app/util/events&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { Network } from &#x27;@ionic-native/network/ngx&#x27;;
+import { WebView } from &#x27;@ionic-native/ionic-webview/ngx&#x27;;
+import {
+    SharedPreferences, ProfileService, Profile, ProfileType,
+    CorrelationData, CachedItemRequestSourceFrom, LocationSearchCriteria, TelemetryService
+} from &#x27;sunbird-sdk&#x27;;
+import {
+    PreferenceKey, ProfileConstants, RouterLinks,
+    appLanguages, Location as loc, MaxAttempt, SwitchableTabsConfig
+} from &#x27;@app/app/app.constant&#x27;;
+import { TelemetryGeneratorService } from &#x27;@app/services/telemetry-generator.service&#x27;;
+import {
+    InteractType, InteractSubtype, PageId, Environment,
+    CorReleationDataType, ImpressionType, ObjectType
+} from &#x27;@app/services/telemetry-constants&#x27;;
+import { SbGenericPopoverComponent } from &#x27;@app/app/components/popups/sb-generic-popover/sb-generic-popover.component&#x27;;
+import { QRAlertCallBack, QRScannerAlert } from &#x27;@app/app/qrscanner-alert/qrscanner-alert.page&#x27;;
+import { Observable, merge } from &#x27;rxjs&#x27;;
+import { distinctUntilChanged, map, share, tap } from &#x27;rxjs/operators&#x27;;
+import { AppVersion } from &#x27;@ionic-native/app-version/ngx&#x27;;
+import { SbPopoverComponent } from &#x27;@app/app/components/popups&#x27;;
+import { AndroidPermissionsStatus } from &#x27;./android-permissions/android-permission&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { AndroidPermissionsService } from &#x27;./android-permissions/android-permissions.service&#x27;;
+import GraphemeSplitter from &#x27;grapheme-splitter&#x27;;
+import { ComingSoonMessageService } from &#x27;./coming-soon-message.service&#x27;;
+
+declare const FCMPlugin;
+export interface NetworkInfo {
+    isNetworkAvailable: boolean;
+}
+@Injectable()
+export class CommonUtilService {
+    public networkAvailability$: Observable&lt;boolean&gt;;
+
+    networkInfo: NetworkInfo &#x3D; {
+        isNetworkAvailable: navigator.onLine
+    };
+
+    private alert?: any;
+    googleCaptchaConfig &#x3D; new Map();
+    private _currentTabName: string;
+    appName: any;
+    private toast: any;
+
+    constructor(
+        @Inject(&#x27;SHARED_PREFERENCES&#x27;) private preferences: SharedPreferences,
+        @Inject(&#x27;PROFILE_SERVICE&#x27;) private profileService: ProfileService,
+        @Inject(&#x27;TELEMETRY_SERVICE&#x27;) private telemetryService: TelemetryService,
+        private translate: TranslateService,
+        private loadingCtrl: LoadingController,
+        private events: Events,
+        private popOverCtrl: PopoverController,
+        private network: Network,
+        private zone: NgZone,
+        private platform: Platform,
+        private telemetryGeneratorService: TelemetryGeneratorService,
+        private webView: WebView,
+        private appVersion: AppVersion,
+        private router: Router,
+        private toastController: ToastController,
+        private permissionService: AndroidPermissionsService,
+        private comingSoonMessageService: ComingSoonMessageService
+    ) {
+        this.networkAvailability$ &#x3D; merge(
+            this.network.onChange().pipe(
+                map((v) &#x3D;&gt; v.type &#x3D;&#x3D;&#x3D; &#x27;online&#x27;),
+            )
+        ).pipe(
+            distinctUntilChanged(),
+            share(),
+            tap((status) &#x3D;&gt; {
+                this.zone.run(() &#x3D;&gt; {
+                    this.networkInfo &#x3D; {
+                        isNetworkAvailable: status
+                    };
+                });
+            })
+        );
+    }
+
+    showToast(translationKey, isInactive?, cssToast?, duration?, position?, fields?: string | any) {
+        if (Boolean(isInactive)) {
+            return;
+        }
+
+        let replaceObject: any &#x3D; &#x27;&#x27;;
+
+        if (typeof (fields) &#x3D;&#x3D;&#x3D; &#x27;object&#x27;) {
+            replaceObject &#x3D; fields;
+        } else {
+            replaceObject &#x3D; { &#x27;%s&#x27;: fields };
+        }
+
+        this.translate.get(translationKey, replaceObject).subscribe(
+            async (translatedMsg: any) &#x3D;&gt; {
+                const toastOptions &#x3D; {
+                    message: translatedMsg,
+                    duration: duration ? duration : 3000,
+                    position: position ? position : &#x27;bottom&#x27;,
+                    cssClass: cssToast ? cssToast : &#x27;&#x27;
+                };
+
+                let toast &#x3D; await this.toastController.create(toastOptions);
+                toast &#x3D; this.addPopupAccessibility(toast, translatedMsg);
+                await toast.present();
+            }
+        );
+    }
+
+    /**
+     * Used to Translate message to current Language
+     * @param messageConst - Message Constant to be translated
+     * @returns translatedMsg - Translated Message
+     */
+    translateMessage(messageConst: string, fields?: string | any): string {
+        let translatedMsg &#x3D; &#x27;&#x27;;
+        let replaceObject: any &#x3D; &#x27;&#x27;;
+
+        if (typeof (fields) &#x3D;&#x3D;&#x3D; &#x27;object&#x27;) {
+            replaceObject &#x3D; fields;
+        } else {
+            replaceObject &#x3D; { &#x27;%s&#x27;: fields };
+        }
+
+        this.translate.get(messageConst, replaceObject).subscribe(
+            (value: any) &#x3D;&gt; {
+                translatedMsg &#x3D; value;
+            }
+        );
+        return translatedMsg;
+    }
+
+    /**
+     * @param translations Stringified object of translations
+     * @param defaultValue Fallback value if does not have translations
+     * @returns Translated values or fallback value
+     */
+    getTranslatedValue(translations: string, defaultValue: string) {
+        const availableTranslation &#x3D; JSON.parse(translations);
+        if (availableTranslation.hasOwnProperty(this.translate.currentLang)) {
+            return availableTranslation[this.translate.currentLang];
+        }
+        return defaultValue;
+    }
+
+    /**
+     * Returns Loading object with default config
+     * @returns Loading object
+     */
+    getLoader(duration?, message?): any {
+        return this.loadingCtrl.create({
+            message,
+            duration: duration ? duration : 30000,
+            spinner: &#x27;crescent&#x27;,
+            cssClass: message ? &#x27;custom-loader-message-class&#x27; : &#x27;custom-loader-class&#x27;
+        });
+    }
+
+    /**
+     * Method to convert Array to Comma separated string
+     */
+    arrayToString(stringArray: Array&lt;string&gt;): string {
+        return stringArray.join(&#x27;, &#x27;);
+    }
+
+    /**
+     * It will change the app language to given code/name if it available locally
+     * @param name Name of the language
+     * @param code language code
+     */
+    changeAppLanguage(name, code?) {
+        if (!Boolean(code)) {
+            const foundValue &#x3D; appLanguages.filter(language &#x3D;&gt; language.name &#x3D;&#x3D;&#x3D; name);
+
+            if (foundValue.length) {
+                code &#x3D; foundValue[0].code;
+            }
+        }
+
+        if (code) {
+            this.translate.use(code);
+            this.preferences.putString(PreferenceKey.SELECTED_LANGUAGE_CODE, code).toPromise().then();
+            this.preferences.putString(PreferenceKey.SELECTED_LANGUAGE, name).toPromise().then();
+        }
+    }
+
+    /**
+     * Show popup with Try Again and Skip button.
+     * @param source Page from alert got called
+     */
+    async showContentComingSoonAlert(source, content?, dialCode?) {
+        let message;
+        if (content) {
+            message &#x3D; await this.comingSoonMessageService.getComingSoonMessage(content);
+        }
+        this.telemetryGeneratorService.generateInteractTelemetry(
+            InteractType.OTHER,
+            InteractSubtype.QR_CODE_COMINGSOON,
+            source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+            source ? source : PageId.HOME
+        );
+        if (source !&#x3D;&#x3D; &#x27;permission&#x27;) {
+            this.afterOnBoardQRErrorAlert(&#x27;ERROR_CONTENT_NOT_FOUND&#x27;, (message || &#x27;CONTENT_IS_BEING_ADDED&#x27;), source,
+                (dialCode ? dialCode : &#x27;&#x27;));
+            return;
+        }
+        let popOver: any;
+        const self &#x3D; this;
+        const callback: QRAlertCallBack &#x3D; {
+            tryAgain() {
+                self.events.publish(&#x27;event:showScanner&#x27;, { pageName: source });
+                popOver.dismiss();
+            },
+            cancel() {
+                popOver.dismiss();
+            }
+        };
+        popOver &#x3D; await this.popOverCtrl.create({
+            component: QRScannerAlert,
+            componentProps: {
+                callback,
+                icon: &#x27;./assets/imgs/ic_coming_soon.png&#x27;,
+                messageKey: &#x27;CONTENT_IS_BEING_ADDED&#x27;,
+                cancelKey: &#x27;hide&#x27;,
+                tryAgainKey: &#x27;TRY_DIFF_QR&#x27;,
+            },
+            cssClass: &#x27;qr-alert-invalid&#x27;
+        });
+        await popOver.present();
+    }
+    /**
+     * Show popup with Close.
+     * @param heading Alert heading
+     * @param message Alert message
+     */
+    async afterOnBoardQRErrorAlert(heading, message, source?, dialCode?) {
+        const qrAlert &#x3D; await this.popOverCtrl.create({
+            component: SbGenericPopoverComponent,
+            componentProps: {
+                sbPopoverHeading: this.translateMessage(heading),
+                sbPopoverMainTitle: this.translateMessage(message),
+                actionsButtons: [
+                    {
+                        btntext: this.translateMessage(&#x27;OKAY&#x27;),
+                        btnClass: &#x27;sb-btn sb-btn-sm  sb-btn-tertiary&#x27;
+                    }
+                ],
+                icon: null
+            },
+            cssClass: &#x27;sb-popover warning&#x27;,
+        });
+        await qrAlert.present();
+        const corRelationList: CorrelationData[] &#x3D; [{
+            id: this.translateMessage(heading) &#x3D;&#x3D;&#x3D; this.translateMessage(&#x27;INVALID_QR&#x27;) ?
+                InteractSubtype.QR_CODE_INVALID : InteractSubtype.QR_NOT_LINKED,
+            type: CorReleationDataType.CHILD_UI
+        }];
+        corRelationList.push({ id: (dialCode ? dialCode : &#x27;&#x27;), type: ObjectType.QR });
+        // generate impression telemetry
+        this.telemetryGeneratorService.generateImpressionTelemetry(
+            InteractType.POPUP_LOADED, &#x27;&#x27;,
+            source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? PageId.SCAN_OR_MANUAL : source,
+            source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+            (dialCode ? dialCode : &#x27;&#x27;),
+            (dialCode ? ObjectType.QR : undefined),
+            undefined,
+            undefined,
+            corRelationList
+        );
+        const { data } &#x3D; await qrAlert.onDidDismiss();
+        // generate interact telemetry for close popup
+        this.telemetryGeneratorService.generateInteractTelemetry(
+            InteractType.SELECT_CLOSE,
+            data ? (data.isLeftButtonClicked ? InteractSubtype.CTA : InteractSubtype.CLOSE_ICON) : InteractSubtype.OUTSIDE,
+            source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+            source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? PageId.SCAN_OR_MANUAL : PageId.HOME,
+            undefined,
+            undefined,
+            undefined,
+            corRelationList
+        );
+    }
+
+    /**
+     * Opens In-app Browser
+     * @param url - URL to open in browser or system apps
+     */
+    openLink(url: string): void {
+        const options
+            &#x3D; &#x27;hardwareback&#x3D;yes,clearcache&#x3D;no,zoom&#x3D;no,toolbar&#x3D;yes,clearsessioncache&#x3D;no,closebuttoncaption&#x3D;Done,disallowoverscroll&#x3D;yes&#x27;;
+
+        (window as any).cordova.InAppBrowser.open(url, &#x27;_system&#x27;, options);
+    }
+
+    /**
+     * @returns App direction &#x27;rtl&#x27; || &#x27;ltr&#x27;
+     */
+    getAppDirection() {
+        return this.platform.isRTL ? &#x27;rtl&#x27; : &#x27;ltr&#x27;;
+    }
+
+    /**
+     * Creates a popup asking whether to exit from app or not
+     */
+    async showExitPopUp(pageId: string, environment: string, isNavBack: boolean) {
+        if (!this.alert) {
+            this.alert &#x3D; await this.popOverCtrl.create({
+                component: SbGenericPopoverComponent,
+                componentProps: {
+                    sbPopoverHeading: this.translateMessage(&#x27;BACK_TO_EXIT&#x27;),
+                    sbPopoverMainTitle: &#x27;&#x27;,
+                    actionsButtons: [
+                        {
+                            btntext: this.translateMessage(&#x27;YES&#x27;),
+                            btnClass: &#x27;sb-btn sb-btn-sm  sb-btn-outline-info&#x27;
+                        }, {
+                            btntext: this.translateMessage(&#x27;NO&#x27;),
+                            btnClass: &#x27;popover-color&#x27;
+                        }
+                    ],
+                    icon: null
+                },
+                cssClass: &#x27;sb-popover&#x27;,
+            });
+            await this.alert.present();
+            const { data } &#x3D; await this.alert.onDidDismiss();
+            if (data &#x3D;&#x3D;&#x3D; undefined) {
+                this.telemetryGeneratorService.generateInteractTelemetry(
+                    InteractType.TOUCH,
+                    InteractSubtype.NO_CLICKED,
+                    environment,
+                    pageId
+                );
+                return;
+            }
+            if (data &amp;&amp; !data.isLeftButtonClicked) {
+                this.telemetryGeneratorService.generateInteractTelemetry(
+                    InteractType.TOUCH,
+                    InteractSubtype.NO_CLICKED,
+                    environment,
+                    pageId
+                );
+            } else {
+                this.telemetryGeneratorService.generateInteractTelemetry(
+                    InteractType.TOUCH,
+                    InteractSubtype.YES_CLICKED,
+                    environment,
+                    pageId
+                );
+                (navigator as any).app.exitApp();
+                this.telemetryGeneratorService.generateEndTelemetry(&#x27;app&#x27;, &#x27;&#x27;, &#x27;&#x27;, environment);
+            }
+            this.telemetryGeneratorService.generateBackClickedTelemetry(pageId, environment, isNavBack);
+            return;
+        } else {
+            this.telemetryGeneratorService.generateBackClickedTelemetry(pageId, environment, isNavBack);
+            await this.alert.dismiss();
+            this.alert &#x3D; undefined;
+        }
+    }
+
+
+    async getAppName() {
+        return this.appVersion.getAppName();
+    }
+
+    openUrlInBrowser(url) {
+        const options &#x3D; &#x27;hardwareback&#x3D;yes,clearcache&#x3D;no,zoom&#x3D;no,toolbar&#x3D;yes,disallowoverscroll&#x3D;yes&#x27;;
+        (window as any).cordova.InAppBrowser.open(url, &#x27;_blank&#x27;, options);
+    }
+
+    fileSizeInMB(bytes) {
+        if (!bytes) {
+            return &#x27;0.00&#x27;;
+        }
+        return (bytes / 1048576).toFixed(2);
+    }
+
+    public deDupe&lt;T&gt;(array: T[], property): T[] {
+        if (!array) {
+            return [];
+        }
+        return array.filter((obj, pos, arr) &#x3D;&gt; {
+            return arr.map(mapObj &#x3D;&gt; mapObj[property]).indexOf(obj[property]) &#x3D;&#x3D;&#x3D; pos;
+        });
+    }
+
+    set currentTabName(tabName: string) {
+        this._currentTabName &#x3D; tabName;
+    }
+
+    get currentTabName() {
+        return this._currentTabName;
+    }
+
+    convertFileSrc(img) {
+        if (img &#x3D;&#x3D;&#x3D; null) {
+            return &#x27;&#x27;;
+        } else {
+            return this.webView.convertFileSrc(img);
+        }
+    }
+
+    setGoogleCaptchaConfig(key, isEnabled) {
+        this.googleCaptchaConfig.set(&#x27;key&#x27;, key);
+        this.googleCaptchaConfig.set(&#x27;isEnabled&#x27;, isEnabled);
+    }
+
+    getGoogleCaptchaConfig() {
+        return this.googleCaptchaConfig;
+    }
+    // return org location details for logged in user
+    getOrgLocation(organisation: any) {
+        const location &#x3D; { &#x27;state&#x27;: &#x27;&#x27;, &#x27;district&#x27;: &#x27;&#x27;, &#x27;block&#x27;: &#x27;&#x27; };
+        if (organisation.locations) {
+            for (let j &#x3D; 0, l &#x3D; organisation.locations.length; j &lt; l; j++) {
+                if (organisation.locations[j]) {
+                    switch (organisation.locations[j].type) {
+                        case &#x27;state&#x27;:
+                            location.state &#x3D; organisation.locations[j];
+                            break;
+
+                        case &#x27;block&#x27;:
+                            location.block &#x3D; organisation.locations[j];
+                            break;
+
+                        case &#x27;district&#x27;:
+                            location.district &#x3D; organisation.locations[j];
+                            break;
+
+                        default:
+                            console.log(&#x27;default&#x27;);
+                    }
+                }
+            }
+        }
+        return location;
+    }
+
+
+    getUserLocation(profile: any) {
+        const userLocation &#x3D; {
+        };
+        if (profile &amp;&amp; profile.userLocations &amp;&amp; profile.userLocations.length) {
+            profile.userLocations.forEach((d) &#x3D;&gt; {
+                userLocation[d.type] &#x3D; d;
+            });
+        }
+
+        return userLocation;
+    }
+
+    isUserLocationAvalable(profile: any, locationMappingConfig): boolean {
+        const location &#x3D; this.getUserLocation(profile.serverProfile ? profile.serverProfile : profile);
+        let isAvailable &#x3D; false;
+        if (locationMappingConfig &amp;&amp; profile &amp;&amp; profile.profileType !&#x3D;&#x3D; ProfileType.NONE) {
+            const requiredFileds &#x3D; this.findAllRequiredFields(locationMappingConfig, profile.profileType);
+            isAvailable &#x3D; requiredFileds.every(key &#x3D;&gt; Object.keys(location).includes(key));
+        }
+        return isAvailable;
+    }
+
+    private findAllRequiredFields(locationMappingConfig, userType) {
+        return locationMappingConfig.find((m) &#x3D;&gt; m.code &#x3D;&#x3D;&#x3D; &#x27;persona&#x27;).children[userType].reduce((acc, config) &#x3D;&gt; {
+            if (config.validations &amp;&amp; config.validations.find((v) &#x3D;&gt; v.type &#x3D;&#x3D;&#x3D; &#x27;required&#x27;)) {
+                acc.push(config.code);
+            }
+            return acc;
+        }, []);
+    }
+
+    async isDeviceLocationAvailable(): Promise&lt;boolean&gt; {
+        const deviceLoc &#x3D; await this.preferences.getString(PreferenceKey.DEVICE_LOCATION).toPromise();
+        return !!deviceLoc;
+    }
+
+    async isIpLocationAvailable(): Promise&lt;boolean&gt; {
+        const deviceLoc &#x3D; await this.preferences.getString(PreferenceKey.IP_LOCATION).toPromise();
+        return !!deviceLoc;
+    }
+
+    handleToTopicBasedNotification() {
+        this.profileService.getActiveSessionProfile({ requiredFields: ProfileConstants.REQUIRED_FIELDS }).toPromise()
+            .then(async (response: Profile) &#x3D;&gt; {
+                const profile &#x3D; response;
+                const subscribeTopic: Array&lt;string&gt; &#x3D; [];
+                subscribeTopic.push(profile.board[0]);
+                subscribeTopic.push(profile.profileType.concat(&#x27;-&#x27;, profile.board[0]));
+                profile.medium.forEach((m) &#x3D;&gt; {
+                    subscribeTopic.push(profile.board[0].concat(&#x27;-&#x27;, m));
+                    profile.grade.forEach((g) &#x3D;&gt; {
+                        subscribeTopic.push(profile.board[0].concat(&#x27;-&#x27;, g));
+                        subscribeTopic.push(profile.board[0].concat(&#x27;-&#x27;, m.concat(&#x27;-&#x27;, g)));
+                    });
+                });
+                await this.preferences.getString(PreferenceKey.DEVICE_LOCATION).subscribe((data) &#x3D;&gt; {
+                    if (data) {
+                        subscribeTopic.push(JSON.parse(data).state.replace(/[^a-zA-Z0-9-_.~%]/gi, &#x27;-&#x27;));
+                        subscribeTopic.push(profile.profileType.concat(&#x27;-&#x27;, JSON.parse(data).state.replace(/[^a-zA-Z0-9-_.~%]/gi, &#x27;-&#x27;)));
+                        subscribeTopic.push(JSON.parse(data).district.replace(/[^a-zA-Z0-9-_.~%]/gi, &#x27;-&#x27;));
+                    }
+                });
+                await this.preferences.getString(PreferenceKey.SUBSCRIBE_TOPICS).toPromise().then(async (data) &#x3D;&gt; {
+                    const previuslySubscribeTopics &#x3D; JSON.parse(data);
+                    await new Promise&lt;undefined&gt;((resolve, reject) &#x3D;&gt; {
+                        FCMPlugin.unsubscribeFromTopic(previuslySubscribeTopics.join(&#x27;,&#x27;), resolve, reject);
+                    });
+                    await new Promise&lt;undefined&gt;((resolve, reject) &#x3D;&gt; {
+                        FCMPlugin.subscribeToTopic(subscribeTopic.join(&#x27;,&#x27;), resolve, reject);
+                    });
+                }).catch(async (err) &#x3D;&gt; {
+                    await new Promise&lt;undefined&gt;((resolve, reject) &#x3D;&gt; {
+                        FCMPlugin.subscribeToTopic(subscribeTopic.join(&#x27;,&#x27;), resolve, reject);
+                    });
+                });
+                await this.preferences.putString(PreferenceKey.CURRENT_USER_PROFILE, JSON.stringify(profile)).toPromise();
+                await this.preferences.putString(PreferenceKey.SUBSCRIBE_TOPICS, JSON.stringify(subscribeTopic)).toPromise();
+            });
+    }
+
+    getFormattedDate(date: string | Date) {
+        const inputDate &#x3D; new Date(date).toDateString();
+        const [, month, day, year] &#x3D; inputDate.split(&#x27; &#x27;);
+        const formattedDate &#x3D; [day, month, year].join(&#x27;-&#x27;);
+        return formattedDate;
+    }
+
+    getContentImg(content) {
+        const defaultImg &#x3D; this.convertFileSrc(&#x27;assets/imgs/ic_launcher.png&#x27;);
+        return this.convertFileSrc(content.courseLogoUrl) ||
+            this.convertFileSrc(content.appIcon) || defaultImg;
+    }
+
+    isAccessibleForNonStudentRole(profileType) {
+        return profileType &#x3D;&#x3D;&#x3D; ProfileType.TEACHER ||
+            profileType &#x3D;&#x3D;&#x3D; ProfileType.STUDENT ||
+            profileType &#x3D;&#x3D;&#x3D; ProfileType.OTHER ||
+            profileType &#x3D;&#x3D;&#x3D; ProfileType.ADMIN ||
+            profileType &#x3D;&#x3D;&#x3D; ProfileType.PARENT;
+    }
+
+    public async getGivenPermissionStatus(permissions): Promise&lt;AndroidPermissionsStatus&gt; {
+        return (
+            await this.permissionService.checkPermissions([permissions]).toPromise()
+        )[permissions];
+    }
+
+    public async showSettingsPageToast(description: string, appName: string, pageId: string, isOnboardingCompleted: boolean) {
+        let toast &#x3D; await this.toastController.create({
+            message: this.translateMessage(description, appName),
+            cssClass: &#x27;permissionSettingToast&#x27;,
+            buttons: [
+                {
+                    text: this.translateMessage(&#x27;SETTINGS&#x27;),
+                    role: &#x27;cancel&#x27;,
+                    handler: () &#x3D;&gt; { }
+                }
+            ],
+            position: &#x27;bottom&#x27;,
+            duration: 3000
+        });
+
+        toast &#x3D; this.addPopupAccessibility(toast, this.translateMessage(description, appName));
+        toast.present();
+
+        toast.onWillDismiss().then((res) &#x3D;&gt; {
+            if (res.role &#x3D;&#x3D;&#x3D; &#x27;cancel&#x27;) {
+                this.telemetryGeneratorService.generateInteractTelemetry(
+                    InteractType.TOUCH,
+                    InteractSubtype.SETTINGS_CLICKED,
+                    isOnboardingCompleted ? Environment.HOME : Environment.ONBOARDING,
+                    pageId);
+                this.router.navigate([&#x60;/${RouterLinks.SETTINGS}/${RouterLinks.PERMISSION}&#x60;], { state: { changePermissionAccess: true } });
+            }
+        });
+    }
+
+    public async buildPermissionPopover(
+        handler: (selectedButton: string) &#x3D;&gt; void,
+        appName: string, whichPermission: string,
+        permissionDescription: string, pageId, isOnboardingCompleted): Promise&lt;HTMLIonPopoverElement&gt; {
+        return this.popOverCtrl.create({
+            component: SbPopoverComponent,
+            componentProps: {
+                isNotShowCloseIcon: false,
+                sbPopoverHeading: this.translateMessage(&#x27;PERMISSION_REQUIRED&#x27;),
+                sbPopoverMainTitle: this.translateMessage(whichPermission),
+                actionsButtons: [
+                    {
+                        btntext: this.translateMessage(&#x27;NOT_NOW&#x27;),
+                        btnClass: &#x27;popover-button-cancel&#x27;,
+                    },
+                    {
+                        btntext: this.translateMessage(&#x27;ALLOW&#x27;),
+                        btnClass: &#x27;popover-button-allow&#x27;,
+                    }
+                ],
+                handler,
+                img: {
+                    path: &#x27;./assets/imgs/ic_folder_open.png&#x27;,
+                },
+                metaInfo: this.translateMessage(permissionDescription, appName),
+            },
+            cssClass: &#x27;sb-popover sb-popover-permissions primary dw-active-downloads-popover&#x27;,
+        }).then((popover) &#x3D;&gt; {
+            this.telemetryGeneratorService.generateImpressionTelemetry(
+                whichPermission &#x3D;&#x3D;&#x3D; &#x27;Camera&#x27; ? ImpressionType.CAMERA : ImpressionType.FILE_MANAGEMENT,
+                pageId,
+                PageId.PERMISSION_POPUP,
+                isOnboardingCompleted ? Environment.HOME : Environment.ONBOARDING
+            );
+            return popover;
+        });
+    }
+
+    async presentToastForOffline(msg: string) {
+        this.toast &#x3D; await this.toastController.create({
+            duration: 3000,
+            message: this.translateMessage(msg),
+            buttons: [
+                {
+                    text: &#x27;X&#x27;,
+                    role: &#x27;cancel&#x27;,
+                    handler: () &#x3D;&gt; { }
+                }
+            ],
+            position: &#x27;top&#x27;,
+            cssClass: [&#x27;toastHeader&#x27;, &#x27;offline&#x27;]
+        });
+        await this.toast.present();
+        this.toast.onDidDismiss(() &#x3D;&gt; {
+            this.toast &#x3D; undefined;
+        });
+    }
+
+    extractInitial(name) {
+        let initial &#x3D; &#x27;&#x27;;
+        if (name) {
+            const splitter &#x3D; new GraphemeSplitter();
+            const split: string[] &#x3D; splitter.splitGraphemes(name.trim());
+            initial &#x3D; split[0];
+        }
+        return initial;
+    }
+
+    async getStateList() {
+        const req: LocationSearchCriteria &#x3D; {
+            from: CachedItemRequestSourceFrom.SERVER,
+            filters: {
+                type: loc.TYPE_STATE
+            }
+        };
+        try {
+            const stateList &#x3D; await this.profileService.searchLocation(req).toPromise();
+            return stateList || [];
+        } catch {
+            return [];
+        }
+    }
+
+    async getDistrictList(id?: string, code?: string) {
+        const req: LocationSearchCriteria &#x3D; {
+            from: CachedItemRequestSourceFrom.SERVER,
+            filters: {
+                type: loc.TYPE_DISTRICT,
+                parentId: id || undefined,
+                code: code || undefined
+            }
+        };
+        try {
+            const districtList &#x3D; await this.profileService.searchLocation(req).toPromise();
+            return districtList || [];
+        } catch {
+            return [];
+        }
+    }
+
+    async handleAssessmentStatus(assessmentStatus) {
+        const maxAttempt: MaxAttempt &#x3D; {
+            limitExceeded: false,
+            isCloseButtonClicked: false,
+            isLastAttempt: false
+        };
+        if (assessmentStatus &amp;&amp; assessmentStatus.isContentDisabled) {
+            maxAttempt.limitExceeded &#x3D; true;
+            this.showToast(&#x27;FRMELMNTS_IMSG_LASTATTMPTEXCD&#x27;);
+            return maxAttempt;
+        }
+        if (assessmentStatus &amp;&amp; assessmentStatus.isLastAttempt) {
+            maxAttempt.isLastAttempt &#x3D; true;
+            return await this.showAssessmentLastAttemptPopup(maxAttempt);
+        }
+        return maxAttempt;
+    }
+
+    async showAssessmentLastAttemptPopup(maxAttempt?: MaxAttempt) {
+        const confirm &#x3D; await this.popOverCtrl.create({
+            component: SbPopoverComponent,
+            componentProps: {
+                sbPopoverMainTitle: this.translateMessage(&#x27;ASSESSMENT_LAST_ATTEMPT_MESSAGE&#x27;),
+                showCloseBtn: true,
+                actionsButtons: [
+                    {
+                        btntext: this.translateMessage(&#x27;CONTINUE&#x27;),
+                        btnClass: &#x27;popover-color&#x27;
+                    },
+                ],
+            },
+            cssClass: &#x27;sb-popover warning&#x27;,
+            backdropDismiss: false
+        });
+        await confirm.present();
+        const { data } &#x3D; await confirm.onDidDismiss();
+        if (data &amp;&amp; data.canDelete) {
+            return maxAttempt;
+        } else {
+            maxAttempt.isCloseButtonClicked &#x3D; true;
+            return maxAttempt;
+        }
+    }
+
+    public async populateGlobalCData() {
+        const currentSelectedTabs &#x3D; await this.preferences.getString(PreferenceKey.SELECTED_SWITCHABLE_TABS_CONFIG).toPromise();
+        const correlationData: CorrelationData &#x3D; {
+        type : &#x27;Tabs&#x27;,
+        id: (!currentSelectedTabs || currentSelectedTabs &#x3D;&#x3D;&#x3D; SwitchableTabsConfig.RESOURCE_COURSE_TABS_CONFIG )?
+        &#x27;Library-Course&#x27; : &#x27;Home-Discover&#x27;
+        };
+        this.telemetryService.populateGlobalCorRelationData([correlationData]);
+    }
+
+    private getPlatformBasedActiveElement(): HTMLElement {
+        if (this.platform.is(&#x27;android&#x27;) &amp;&amp; document.activeElement.shadowRoot !&#x3D; null) {
+            return document.activeElement.shadowRoot.childNodes[0] as HTMLElement;
+        } else {
+            return document.activeElement as HTMLElement;
+        }
+    }
+
+    private popupAccessibilityFocus(element: HTMLElement): void {
+        setTimeout(() &#x3D;&gt; {
+            element.setAttribute(&#x27;tabindex&#x27;, &#x27;0&#x27;);
+            element.focus();
+        }, 0);
+    }
+
+    public addPopupAccessibility (toast, message, id&#x3D;&#x27;sb-generic-toast&#x27;) {
+        if(!toast || !toast.setAttribute){
+            return toast;
+        }
+
+        toast.setAttribute(&#x27;aria-label&#x27;, message);
+        toast.setAttribute(&#x27;id&#x27;, id);
+
+        const toastElement &#x3D; document.getElementById(id) as HTMLElement;
+        const activeElement &#x3D; this.getPlatformBasedActiveElement();
+
+        // set focus on toast
+        toast.addEventListener(&#x27;ionToastWillPresent&#x27;, () &#x3D;&gt; {
+            this.popupAccessibilityFocus(toastElement);
+        });
+
+        // reset focus
+        toast.onDidDismiss().then(() &#x3D;&gt; {
+            this.popupAccessibilityFocus(activeElement);
+        });
+
+        return toast;
+    }
+
+    public setRatingStarAriaLabel(ratingDomTag, slectedStar &#x3D; 0) {
+        if (ratingDomTag &amp;&amp; ratingDomTag.length &amp;&amp; ratingDomTag[0].children &amp;&amp; ratingDomTag[0].children.length) {
+            const ratingStarContainer &#x3D; ratingDomTag[0].children[0];
+            ratingStarContainer.setAttribute(&#x27;aria-label&#x27;, (slectedStar &gt; 0) ? &#x60;Rated ${slectedStar} star out of 5 stars&#x60; : &#x27;Rate stars out of 5 stars&#x27;);
+            ratingStarContainer.setAttribute(&#x27;tabindex&#x27;, &#x27;0&#x27;);
+            if (ratingDomTag[0].children[0].children &amp;&amp; ratingDomTag[0].children[0].children.length) {
+                const ratingStars &#x3D; ratingDomTag[0].children[0].children;
+                for (let index &#x3D; 0; index &lt; ratingStars.length; index++) {
+                    const element &#x3D; ratingStars[index];
+                    if (element &amp;&amp; element.shadowRoot &amp;&amp; element.shadowRoot.querySelector(&#x27;button&#x27;)) {
+                        const starButton &#x3D; element.shadowRoot.querySelector(&#x27;button&#x27;);
+                        starButton.setAttribute(&#x27;aria-label&#x27;, (slectedStar &gt;&#x3D; index + 1 ? &#x27;selected &#x27; : &#x27;&#x27;) + (index + 1) + &#x27;out of five stars&#x27;);
+                        starButton.setAttribute(&#x27;tabindex&#x27;, &#x27;0&#x27;);
+                    }
+                }
+            }
+        }
+    }
+
+    public appendTypeToPrimaryCategory(content, type &#x3D; &quot;detail&quot;): string {
+        const primaryCategory: string &#x3D; content.primaryCategory ? content.primaryCategory : content.contentType ? content.contentType : &#x27;&#x27;;
+        return primaryCategory ? (primaryCategory.replace(/\s/g, &#x27;&#x27;)+&#x27;-&#x27;+type).toLowerCase() : &#x27;&#x27;;
+      }
+
+    public async getGuestUserConfig() {
+        let guestProfile;
+        await this.preferences.getString(PreferenceKey.GUEST_USER_ID_BEFORE_LOGIN).toPromise()
+            .then(async (guestUserId: string) &#x3D;&gt; {
+                const allProfileDetais &#x3D; await this.profileService.getAllProfiles().toPromise();
+                guestProfile &#x3D; allProfileDetais.find(ele &#x3D;&gt; ele.uid &#x3D;&#x3D;&#x3D; guestUserId);
+            });
+        return guestProfile;
+    }
+
+    // Used to convert file to base png, updated function to handle default image in consumption library.
+    public async convertFileToBase64(file): Promise&lt;Observable&lt;string&gt;&gt; {
+        let res &#x3D; await fetch(file);
+        let blob &#x3D; await res.blob();
+        return new Observable(res &#x3D;&gt; {
+            const reader &#x3D; new FileReader();
+            reader.onload &#x3D; () &#x3D;&gt; {
+                res.next(reader.result as string);
+                res.complete();
+            }
+            reader.readAsDataURL(blob);
+        });
+    }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'interface';
+            var COMPODOC_CURRENT_PAGE_URL = 'NetworkInfo.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

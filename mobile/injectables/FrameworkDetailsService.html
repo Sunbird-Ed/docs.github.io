@@ -1,0 +1,939 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >FrameworkDetailsService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/framework-details.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#fetchDistrictCode" >fetchDistrictCode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#fetchStateCode" >fetchStateCode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getBoardList" >getBoardList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getFrameworkDetails" >getFrameworkDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getGradeList" >getGradeList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getMediumList" >getMediumList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getSubjectList" >getSubjectList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(frameworkUtilService: FrameworkUtilService, translate: TranslateService, locationHandler: <a href="../injectables/LocationHandler.html" target="_self">LocationHandler</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="12" class="link-to-prism">src/services/framework-details.service.ts:12</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>frameworkUtilService</td>
+                                                  
+                                                        <td>
+                                                                    <code>FrameworkUtilService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>locationHandler</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LocationHandler.html" target="_self" >LocationHandler</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchDistrictCode"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>fetchDistrictCode</b></span>
+                        <a href="#fetchDistrictCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchDistrictCode(location)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="163"
+                            class="link-to-prism">src/services/framework-details.service.ts:163</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>location</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchStateCode"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>fetchStateCode</b></span>
+                        <a href="#fetchStateCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchStateCode(presetLocation)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="150"
+                            class="link-to-prism">src/services/framework-details.service.ts:150</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>presetLocation</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBoardList"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getBoardList</b></span>
+                        <a href="#getBoardList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getBoardList(guestProfile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/services/framework-details.service.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>guestProfile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFrameworkDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getFrameworkDetails</b></span>
+                        <a href="#getFrameworkDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getFrameworkDetails(guestProfile?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="20"
+                            class="link-to-prism">src/services/framework-details.service.ts:20</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>guestProfile</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGradeList"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getGradeList</b></span>
+                        <a href="#getGradeList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getGradeList(guestProfile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/services/framework-details.service.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>guestProfile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMediumList"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getMediumList</b></span>
+                        <a href="#getMediumList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMediumList(guestProfile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="134"
+                            class="link-to-prism">src/services/framework-details.service.ts:134</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>guestProfile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSubjectList"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getSubjectList</b></span>
+                        <a href="#getSubjectList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSubjectList(guestProfile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/services/framework-details.service.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>guestProfile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Inject, Injectable } from &#x27;@angular/core&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { FrameworkCategoryCode, GetFrameworkCategoryTermsRequest,
+     FrameworkUtilService, LocationSearchResult, CachedItemRequestSourceFrom, LocationSearchCriteria } from &#x27;@project-sunbird/sunbird-sdk&#x27;;
+import { CommonUtilService } from &#x27;.&#x27;;
+import { LocationHandler } from &#x27;./location-handler&#x27;;
+import { Location as LocationType } from &#x27;@app/app/app.constant&#x27;;
+
+@Injectable({
+    providedIn: &#x27;root&#x27;
+})
+export class FrameworkDetailsService {
+
+    constructor(
+        @Inject(&#x27;FRAMEWORK_UTIL_SERVICE&#x27;) private frameworkUtilService: FrameworkUtilService,
+        private translate: TranslateService,
+        private locationHandler: LocationHandler,
+    ) { }
+
+    async getFrameworkDetails(guestProfile?: any) {
+        const framework &#x3D; {};
+        const boardList &#x3D; await this.getBoardList(guestProfile).then((board) &#x3D;&gt; {
+            return board.map(t &#x3D;&gt; ({ name: t.name, code: t.code }));
+        });
+
+        const mediumList &#x3D; await this.getMediumList(guestProfile).then((medium) &#x3D;&gt; {
+            return medium.map(t &#x3D;&gt; ({ name: t.name, code: t.code }));
+        });
+
+        const gradeList &#x3D; await this.getGradeList(guestProfile).then((grade) &#x3D;&gt; {
+            return grade.map(t &#x3D;&gt; ({ name: t.name, code: t.code }));
+        });
+
+        const subjectList &#x3D; await this.getSubjectList(guestProfile).then((subject) &#x3D;&gt; {
+            return subject.map(t &#x3D;&gt; ({ name: t.name, code: t.code }));
+        });
+        framework[&#x27;id&#x27;] &#x3D; guestProfile.syllabus;
+        if (guestProfile.board &amp;&amp; guestProfile.board.length) {
+            const code &#x3D; typeof (guestProfile.board) &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? guestProfile.board : guestProfile.board[0];
+            framework[&#x27;board&#x27;] &#x3D; [boardList.find(board &#x3D;&gt; code &#x3D;&#x3D;&#x3D; board.code).name];
+        }
+        if (guestProfile.medium &amp;&amp; guestProfile.medium.length) {
+            const Names &#x3D; [];
+            guestProfile.medium.forEach(element &#x3D;&gt; {
+                Names.push(mediumList.find(medium &#x3D;&gt; element &#x3D;&#x3D;&#x3D; medium.code).name);
+            });
+            framework[&#x27;medium&#x27;] &#x3D; Names;
+        }
+        if (guestProfile.grade &amp;&amp; guestProfile.grade.length) {
+            const Names &#x3D; [];
+            guestProfile.grade.forEach(element &#x3D;&gt; {
+                Names.push(gradeList.find(grade &#x3D;&gt; element &#x3D;&#x3D;&#x3D; grade.code).name);
+            });
+            framework[&#x27;gradeLevel&#x27;] &#x3D; Names;
+        }
+        if (guestProfile.subject &amp;&amp; guestProfile.subject.length) {
+            const Names &#x3D; [];
+            guestProfile.subject.forEach(element &#x3D;&gt; {
+                Names.push(subjectList.find(subject &#x3D;&gt; element &#x3D;&#x3D;&#x3D; subject.code).name);
+            });
+            framework[&#x27;subject&#x27;] &#x3D; Names;
+        }
+
+        const presetLocation &#x3D; (await this.locationHandler.getAvailableLocation(guestProfile, true))
+            .reduce&lt;{ [code: string]: LocationSearchResult }&gt;((acc, loc) &#x3D;&gt; {
+                if (loc) { acc[loc.type] &#x3D; loc; }
+                return acc;
+            }, {});
+        const state &#x3D; await this.fetchStateCode(presetLocation.state).then((data) &#x3D;&gt; {
+            return data;
+        });
+        const district &#x3D; await this.fetchDistrictCode(presetLocation).then((dis) &#x3D;&gt; {
+            return dis;
+        });
+        const locationCodes &#x3D; [];
+        locationCodes.push({ type: state.type, code: state.code });
+        locationCodes.push({ type: district.type, code: district.code });
+        const req &#x3D; {
+            profileUserTypes: [{
+                type: guestProfile.profileType,
+            }],
+            framework,
+            profileLocation: locationCodes
+        };
+        return req;
+    }
+
+    private getBoardList(guestProfile) {
+        try {
+            const boardCategoryTermsRequet: GetFrameworkCategoryTermsRequest &#x3D; {
+                frameworkId: guestProfile.syllabus,
+                requiredCategories: [FrameworkCategoryCode.BOARD],
+                currentCategoryCode: FrameworkCategoryCode.BOARD,
+                language: this.translate.currentLang
+            };
+            return this.frameworkUtilService.getFrameworkCategoryTerms(boardCategoryTermsRequet).toPromise();
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    private getGradeList(guestProfile) {
+        try {
+            const nextCategoryTermsRequet: GetFrameworkCategoryTermsRequest &#x3D; {
+                frameworkId: guestProfile.syllabus,
+                requiredCategories: [FrameworkCategoryCode.GRADE_LEVEL],
+                prevCategoryCode: FrameworkCategoryCode.MEDIUM,
+                currentCategoryCode: FrameworkCategoryCode.GRADE_LEVEL,
+                language: this.translate.currentLang,
+                selectedTermsCodes: guestProfile.medium
+            };
+            return this.frameworkUtilService.getFrameworkCategoryTerms(nextCategoryTermsRequet).toPromise();
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    private getSubjectList(guestProfile) {
+        try {
+            const subjectTermsRequet: GetFrameworkCategoryTermsRequest &#x3D; {
+                frameworkId: guestProfile.syllabus,
+                requiredCategories: [FrameworkCategoryCode.SUBJECT],
+                prevCategoryCode: FrameworkCategoryCode.GRADE_LEVEL,
+                currentCategoryCode: FrameworkCategoryCode.SUBJECT,
+                language: this.translate.currentLang,
+                selectedTermsCodes: guestProfile.grade
+            };
+            return this.frameworkUtilService.getFrameworkCategoryTerms(subjectTermsRequet).toPromise();
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    private getMediumList(guestProfile) {
+        try {
+            const mediumTermsRequet: GetFrameworkCategoryTermsRequest &#x3D; {
+                frameworkId: guestProfile.syllabus,
+                requiredCategories: [FrameworkCategoryCode.MEDIUM],
+                prevCategoryCode: FrameworkCategoryCode.BOARD,
+                currentCategoryCode: FrameworkCategoryCode.MEDIUM,
+                language: this.translate.currentLang,
+                selectedTermsCodes: guestProfile.board
+            };
+            return this.frameworkUtilService.getFrameworkCategoryTerms(mediumTermsRequet).toPromise();
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    private async fetchStateCode(presetLocation) {
+        const req: LocationSearchCriteria &#x3D; {
+            from: CachedItemRequestSourceFrom.SERVER,
+            filters: {
+                type: LocationType.TYPE_STATE
+            }
+        };
+        return await this.locationHandler.getLocationList(req)
+            .then((response) &#x3D;&gt; {
+                return response.find(d &#x3D;&gt; d.id &#x3D;&#x3D;&#x3D; presetLocation.id);
+            });
+    }
+
+    private async fetchDistrictCode(location) {
+        const req: LocationSearchCriteria &#x3D; {
+            from: CachedItemRequestSourceFrom.SERVER,
+            filters: {
+                type: &#x27;district&#x27;,
+                parentId: location.state.id
+            }
+        };
+        return await this.locationHandler.getLocationList(req)
+            .then((response) &#x3D;&gt; {
+                return response.find(d &#x3D;&gt; d.id &#x3D;&#x3D;&#x3D; location.district.id);
+            });
+    }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'FrameworkDetailsService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

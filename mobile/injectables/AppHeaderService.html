@@ -1,0 +1,1091 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >AppHeaderService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/app-header.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#headerConfig" >headerConfig</a>
+                            </li>
+                            <li>
+                                <a href="#headerConfigEmitted$" >headerConfigEmitted$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#headerEvent" >headerEvent</a>
+                            </li>
+                            <li>
+                                <a href="#headerEventEmitted$" >headerEventEmitted$</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#sideMenuItemEvent" >sideMenuItemEvent</a>
+                            </li>
+                            <li>
+                                <a href="#sideMenuItemEventEmitted$" >sideMenuItemEventEmitted$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getDefaultPageConfig" >getDefaultPageConfig</a>
+                            </li>
+                            <li>
+                                <a href="#hideHeader" >hideHeader</a>
+                            </li>
+                            <li>
+                                <a href="#hideStatusBar" >hideStatusBar</a>
+                            </li>
+                            <li>
+                                <a href="#showHeaderWithBackButton" >showHeaderWithBackButton</a>
+                            </li>
+                            <li>
+                                <a href="#showHeaderWithHomeButton" >showHeaderWithHomeButton</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#showStatusBar" >showStatusBar</a>
+                            </li>
+                            <li>
+                                <a href="#sidebarEvent" >sidebarEvent</a>
+                            </li>
+                            <li>
+                                <a href="#sideMenuItemEvents" >sideMenuItemEvents</a>
+                            </li>
+                            <li>
+                                <a href="#updatePageConfig" >updatePageConfig</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(menuCtrl: MenuController, statusBar: StatusBar, preferences: SharedPreferences, onboardingConfigurationService: <a href="../injectables/OnboardingConfigurationService.html" target="_self">OnboardingConfigurationService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="10" class="link-to-prism">src/services/app-header.service.ts:10</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>menuCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>MenuController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>statusBar</td>
+                                                  
+                                                        <td>
+                                                                    <code>StatusBar</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>preferences</td>
+                                                  
+                                                        <td>
+                                                                    <code>SharedPreferences</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>onboardingConfigurationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OnboardingConfigurationService.html" target="_self" >OnboardingConfigurationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDefaultPageConfig"></a>
+                    <span class="name">
+                        <span ><b>getDefaultPageConfig</b></span>
+                        <a href="#getDefaultPageConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getDefaultPageConfig()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/services/app-header.service.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ showHeader: boolean; showBurgerMenu: boolean; showKebabMenu: boolean; kebabMenuOptions: {}; pageTitle: string; actionButtons: {}; }</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideHeader"></a>
+                    <span class="name">
+                        <span ><b>hideHeader</b></span>
+                        <a href="#hideHeader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hideHeader()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/services/app-header.service.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hideStatusBar"></a>
+                    <span class="name">
+                        <span ><b>hideStatusBar</b></span>
+                        <a href="#hideStatusBar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>hideStatusBar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/services/app-header.service.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showHeaderWithBackButton"></a>
+                    <span class="name">
+                        <span ><b>showHeaderWithBackButton</b></span>
+                        <a href="#showHeaderWithBackButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showHeaderWithBackButton(iconList?, pageTitle?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="57"
+                            class="link-to-prism">src/services/app-header.service.ts:57</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>iconList</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageTitle</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showHeaderWithHomeButton"></a>
+                    <span class="name">
+                        <span ><b>showHeaderWithHomeButton</b></span>
+                        <a href="#showHeaderWithHomeButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showHeaderWithHomeButton(iconList?, pageTitle?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/services/app-header.service.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>iconList</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageTitle</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showStatusBar"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>showStatusBar</b></span>
+                        <a href="#showStatusBar"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showStatusBar()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/services/app-header.service.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sidebarEvent"></a>
+                    <span class="name">
+                        <span ><b>sidebarEvent</b></span>
+                        <a href="#sidebarEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sidebarEvent(name: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="29"
+                            class="link-to-prism">src/services/app-header.service.ts:29</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sideMenuItemEvents"></a>
+                    <span class="name">
+                        <span ><b>sideMenuItemEvents</b></span>
+                        <a href="#sideMenuItemEvents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>sideMenuItemEvents($event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="33"
+                            class="link-to-prism">src/services/app-header.service.ts:33</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updatePageConfig"></a>
+                    <span class="name">
+                        <span ><b>updatePageConfig</b></span>
+                        <a href="#updatePageConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updatePageConfig(config)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/services/app-header.service.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>config</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="headerConfig"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>headerConfig</b></span>
+                        <a href="#headerConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;any&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/services/app-header.service.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="headerConfigEmitted$"></a>
+                    <span class="name">
+                        <span ><b>headerConfigEmitted$</b></span>
+                        <a href="#headerConfigEmitted$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.headerConfig.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/services/app-header.service.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="headerEvent"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>headerEvent</b></span>
+                        <a href="#headerEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;any&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/services/app-header.service.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="headerEventEmitted$"></a>
+                    <span class="name">
+                        <span ><b>headerEventEmitted$</b></span>
+                        <a href="#headerEventEmitted$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.headerEvent.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/services/app-header.service.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sideMenuItemEvent"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>sideMenuItemEvent</b></span>
+                        <a href="#sideMenuItemEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Subject&lt;any&gt;()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/services/app-header.service.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sideMenuItemEventEmitted$"></a>
+                    <span class="name">
+                        <span ><b>sideMenuItemEventEmitted$</b></span>
+                        <a href="#sideMenuItemEventEmitted$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.sideMenuItemEvent.asObservable()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/services/app-header.service.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Inject, Injectable} from &#x27;@angular/core&#x27;;
+import {Subject} from &#x27;rxjs&#x27;;
+import {MenuController} from &#x27;@ionic/angular&#x27;;
+import {StatusBar} from &#x27;@ionic-native/status-bar/ngx&#x27;;
+import {SharedPreferences} from &#x27;sunbird-sdk&#x27;;
+import {AppThemes, StatusBarTheme,AppMode} from &#x27;@app/app/app.constant&#x27;;
+import { OnboardingConfigurationService } from &#x27;.&#x27;;
+
+@Injectable()
+export class AppHeaderService {
+
+    constructor(private menuCtrl: MenuController,
+                private statusBar: StatusBar,
+                @Inject(&#x27;SHARED_PREFERENCES&#x27;) private preferences: SharedPreferences,
+                private onboardingConfigurationService: OnboardingConfigurationService
+    ) {
+    }
+
+    private headerEvent &#x3D; new Subject&lt;any&gt;();
+    headerEventEmitted$ &#x3D; this.headerEvent.asObservable();
+
+    private headerConfig &#x3D; new Subject&lt;any&gt;();
+    headerConfigEmitted$ &#x3D; this.headerConfig.asObservable();
+
+
+    private sideMenuItemEvent &#x3D; new Subject&lt;any&gt;();
+    sideMenuItemEventEmitted$ &#x3D; this.sideMenuItemEvent.asObservable();
+
+    sidebarEvent(name: any) {
+        this.headerEvent.next(name);
+    }
+
+    sideMenuItemEvents($event) {
+        this.sideMenuItemEvent.next($event);
+    }
+
+    getDefaultPageConfig() {
+        const defaultConfig &#x3D; {
+            showHeader: true,
+            showBurgerMenu: true,
+            showKebabMenu: false,
+            kebabMenuOptions: [],
+            pageTitle: &#x27;&#x27;,
+            actionButtons: [&#x27;search&#x27;],
+        };
+        return defaultConfig;
+    }
+
+    hideHeader() {
+        const defaultConfig &#x3D; this.getDefaultPageConfig();
+        defaultConfig.showHeader &#x3D; false;
+        defaultConfig.showBurgerMenu &#x3D; false;
+        this.updatePageConfig(defaultConfig);
+        this.menuCtrl.enable(false);
+    }
+
+    showHeaderWithBackButton(iconList?, pageTitle?) {
+        const defaultConfig &#x3D; this.getDefaultPageConfig();
+        defaultConfig.showHeader &#x3D; true;
+        defaultConfig.showBurgerMenu &#x3D; false;
+        defaultConfig.actionButtons &#x3D; iconList ? iconList : [];
+        defaultConfig.pageTitle &#x3D; pageTitle;
+        this.updatePageConfig(defaultConfig);
+        this.menuCtrl.enable(false);
+    }
+
+    showHeaderWithHomeButton(iconList?, pageTitle?) {
+        const defaultConfig &#x3D; this.getDefaultPageConfig();
+        defaultConfig.showHeader &#x3D; true;
+        defaultConfig.showBurgerMenu &#x3D; true;
+        defaultConfig.actionButtons &#x3D; iconList ? iconList : [];
+        defaultConfig.pageTitle &#x3D; pageTitle;
+        this.updatePageConfig(defaultConfig);
+        this.menuCtrl.enable(true);
+    }
+
+    updatePageConfig(config) {
+        this.headerConfig.next(config);
+    }
+
+    async showStatusBar() {
+        const theme &#x3D; await this.preferences.getString(&#x27;current_selected_theme&#x27;).toPromise();
+        if (theme &#x3D;&#x3D;&#x3D; &#x27;JOYFUL&#x27;) {
+            document.querySelector(&#x27;html&#x27;).setAttribute(&#x27;data-theme&#x27;, AppThemes.JOYFUL);
+            const customTheme &#x3D; this.onboardingConfigurationService.getAppConfig().theme
+            if(customTheme.name){
+                document.querySelector(&#x27;html&#x27;).setAttribute(&#x27;data-color&#x27;, customTheme.name);
+            }
+            document.querySelector(&#x27;html&#x27;).setAttribute(&#x27;device-accessable-theme&#x27;,&#x27;accessible&#x27; );
+            const themeColor &#x3D; getComputedStyle(document.querySelector(&#x27;html&#x27;)).getPropertyValue(&#x27;--app-primary-header&#x27;);
+            this.statusBar.backgroundColorByHexString(themeColor);      
+        }
+        const mode &#x3D; await this.preferences.getString(&#x27;data-mode&#x27;).toPromise();
+        if(mode&#x3D;&#x3D;&#x3D;AppMode.DARKMODE){
+            document.querySelector(&#x27;html&#x27;).setAttribute(&#x27;data-mode&#x27;,AppMode.DARKMODE);
+        }else{
+            document.querySelector(&#x27;html&#x27;).setAttribute(&#x27;data-mode&#x27;,AppMode.DEFAULT);
+        }
+        
+    }
+
+    hideStatusBar() {
+        this.statusBar.backgroundColorByHexString(StatusBarTheme.SET_DEFAULT);
+    }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppHeaderService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

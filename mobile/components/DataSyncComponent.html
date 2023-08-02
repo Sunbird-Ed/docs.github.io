@@ -1,0 +1,1555 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  DataSyncComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/settings/data-sync/data-sync.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-data-sync</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./data-sync.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./data-sync.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#backButtonFunc" >backButtonFunc</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#dataSyncType" >dataSyncType</a>
+                            </li>
+                            <li>
+                                <a href="#headerObservable" >headerObservable</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#lastSyncDateTime" >lastSyncDateTime</a>
+                            </li>
+                            <li>
+                                <a href="#loader" >loader</a>
+                            </li>
+                            <li>
+                                <a href="#OPTIONS" >OPTIONS</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#zone" >zone</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateInteractEvent" >generateInteractEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateSyncTypeInteractTelemetry" >generateSyncTypeInteractTelemetry</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleBackButton" >handleBackButton</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleNavBackButton" >handleNavBackButton</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#init" >init</a>
+                            </li>
+                            <li>
+                                <a href="#ionViewWillEnter" >ionViewWillEnter</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSelected" >onSelected</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#onSyncClick" >onSyncClick</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#shareTelemetry" >shareTelemetry</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(telemetryService: TelemetryService, archiveService: ArchiveService, zone: NgZone, changeDetectionRef: ChangeDetectorRef, social: SocialSharing, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, location: <a href="../classes/Location.html" target="_self">Location</a>, platform: Platform, appHeaderService: <a href="../injectables/AppHeaderService.html" target="_self">AppHeaderService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>telemetryService</td>
+                                                  
+                                                        <td>
+                                                                    <code>TelemetryService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>archiveService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ArchiveService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>zone</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgZone</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>changeDetectionRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>ChangeDetectorRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>social</td>
+                                                  
+                                                        <td>
+                                                                    <code>SocialSharing</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Location.html" target="_self" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>platform</td>
+                                                  
+                                                        <td>
+                                                                    <code>Platform</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appHeaderService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppHeaderService.html" target="_self" >AppHeaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateInteractEvent"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateInteractEvent</b></span>
+                        <a href="#generateInteractEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateInteractEvent(interactType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, subtype: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, size: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="190"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:190</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>interactType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subtype</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>size</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateSyncTypeInteractTelemetry"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateSyncTypeInteractTelemetry</b></span>
+                        <a href="#generateSyncTypeInteractTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateSyncTypeInteractTelemetry(dataSyncType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>dataSyncType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleBackButton"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>handleBackButton</b></span>
+                        <a href="#handleBackButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleBackButton()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="202"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:202</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleNavBackButton"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>handleNavBackButton</b></span>
+                        <a href="#handleNavBackButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleNavBackButton(eventName: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="210"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:210</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>eventName</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="init"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>init</b></span>
+                        <a href="#init"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>init()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="66"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:66</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillEnter"></a>
+                    <span class="name">
+                        <span ><b>ionViewWillEnter</b></span>
+                        <a href="#ionViewWillEnter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewWillEnter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="88"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:88</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSelected"></a>
+                    <span class="name">
+                        <span ><b>onSelected</b></span>
+                        <a href="#onSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSelected()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSyncClick"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>onSyncClick</b></span>
+                        <a href="#onSyncClick"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onSyncClick()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="152"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:152</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shareTelemetry"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>shareTelemetry</b></span>
+                        <a href="#shareTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>shareTelemetry()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="114"
+                            class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:114</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="backButtonFunc"></a>
+                    <span class="name">
+                        <span ><b>backButtonFunc</b></span>
+                        <a href="#backButtonFunc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dataSyncType"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>dataSyncType</b></span>
+                        <a href="#dataSyncType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/enumerations.html#Mode" target="_self" >TelemetryAutoSyncModes</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="headerObservable"></a>
+                    <span class="name">
+                        <span ><b>headerObservable</b></span>
+                        <a href="#headerObservable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="lastSyncDateTime"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>lastSyncDateTime</b></span>
+                        <a href="#lastSyncDateTime"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;string | undefined&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loader"></a>
+                    <span class="name">
+                        <span ><b>loader</b></span>
+                        <a href="#loader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="OPTIONS"></a>
+                    <span class="name">
+                        <span ><b>OPTIONS</b></span>
+                        <a href="#OPTIONS"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>TelemetryAutoSyncModes</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="zone"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>zone</b></span>
+                        <a href="#zone"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>NgZone</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/settings/data-sync/data-sync.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { AppHeaderService } from &#x27;./../../../services/app-header.service&#x27;;
+import { Location } from &#x27;@angular/common&#x27;;
+import { ChangeDetectorRef, Component, Inject, NgZone, OnInit, OnDestroy } from &#x27;@angular/core&#x27;;
+import {
+  CommonUtilService, Environment,
+  ImpressionType,
+  InteractSubtype, InteractType, PageId, TelemetryGeneratorService
+} from &#x27;@app/services&#x27;;
+import { SocialSharing } from &#x27;@ionic-native/social-sharing/ngx&#x27;;
+import { Platform } from &#x27;@ionic/angular&#x27;;
+import { Observable, Subscription } from &#x27;rxjs&#x27;;
+import { map, tap } from &#x27;rxjs/operators&#x27;;
+import {
+  ArchiveObjectType, ArchiveService,
+  ObjectNotFoundError, TelemetryAutoSyncModes, TelemetryImpressionRequest, TelemetryService
+} from &#x27;sunbird-sdk&#x27;;
+
+declare const cordova;
+
+@Component({
+  selector: &#x27;app-data-sync&#x27;,
+  templateUrl: &#x27;./data-sync.component.html&#x27;,
+  styleUrls: [&#x27;./data-sync.component.scss&#x27;],
+})
+
+export class DataSyncComponent implements OnInit, OnDestroy {
+
+  lastSyncDateTime?: Observable&lt;string | undefined&gt;;
+  dataSyncType?: TelemetryAutoSyncModes;
+  OPTIONS &#x3D; TelemetryAutoSyncModes;
+  backButtonFunc: Subscription;
+  loader: any;
+  headerObservable: any;
+
+  constructor(
+    @Inject(&#x27;TELEMETRY_SERVICE&#x27;) private telemetryService: TelemetryService,
+    @Inject(&#x27;ARCHIVE_SERVICE&#x27;) private archiveService: ArchiveService,
+    public zone: NgZone,
+    private changeDetectionRef: ChangeDetectorRef,
+    private social: SocialSharing,
+    private commonUtilService: CommonUtilService,
+    private telemetryGeneratorService: TelemetryGeneratorService,
+    private location: Location,
+    private platform: Platform,
+    private appHeaderService: AppHeaderService
+  ) {
+    this.lastSyncDateTime &#x3D; this.telemetryService.lastSyncedTimestamp().pipe(
+      map((ts) &#x3D;&gt; {
+        if (ts) {
+          return window.dayjs(ts).format(&#x27;DD/MM/YYYY, hh:mm a&#x27;);
+        }
+
+        return undefined;
+      }),
+      tap(() &#x3D;&gt; {
+        this.changeDetectionRef.detectChanges();
+      })
+    );
+  }
+  ngOnDestroy(): void {
+    if (this.headerObservable) {
+      this.headerObservable.unsubscribe();
+    }
+  }
+
+  private async init() {
+    this.zone.run(async () &#x3D;&gt; {
+      this.dataSyncType &#x3D; (
+        await this.telemetryService.autoSync.getSyncMode().toPromise() as TelemetryAutoSyncModes | undefined
+      ) || TelemetryAutoSyncModes.ALWAYS_ON;
+    });
+  }
+
+  ngOnInit() {
+    this.init();
+    const telemetryImpressionRequest &#x3D; new TelemetryImpressionRequest();
+    telemetryImpressionRequest.type &#x3D; ImpressionType.VIEW;
+    telemetryImpressionRequest.pageId &#x3D; PageId.SETTINGS_DATASYNC;
+    telemetryImpressionRequest.env &#x3D; Environment.SETTINGS;
+    this.telemetryGeneratorService.generateImpressionTelemetry(
+      ImpressionType.VIEW, &#x27;&#x27;,
+      PageId.SETTINGS_DATASYNC,
+      Environment.SETTINGS, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;
+    );
+    this.handleBackButton();
+  }
+
+  ionViewWillEnter() {
+    this.headerObservable &#x3D; this.appHeaderService.headerEventEmitted$.subscribe(eventName &#x3D;&gt; {
+      this.handleNavBackButton(eventName);
+    });
+  }
+
+  onSelected() {
+    if (this.dataSyncType) {
+      this.generateSyncTypeInteractTelemetry(this.dataSyncType);
+      this.telemetryService.autoSync.setSyncMode(this.dataSyncType).toPromise();
+    }
+  }
+
+  private generateSyncTypeInteractTelemetry(dataSyncType: string) {
+    const value &#x3D; new Map();
+    value[&#x27;dataSyncType&#x27;] &#x3D; dataSyncType;
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.DATA_SYNC_TYPE,
+      Environment.SETTINGS,
+      PageId.SETTINGS_DATASYNC,
+      undefined,
+      value
+    );
+  }
+
+  async shareTelemetry() {
+    const loader &#x3D; await this.commonUtilService.getLoader();
+    await loader.present();
+    this.telemetryGeneratorService.generateInteractTelemetry(InteractType.TOUCH,
+      InteractSubtype.SHARE_TELEMETRY_CLICKED,
+      Environment.SETTINGS,
+      PageId.SETTINGS_DATASYNC);
+
+    try {
+      await this.telemetryService.sync({
+        ignoreAutoSyncMode: false,
+        ignoreSyncThreshold: true
+      }).toPromise();
+    } catch (e) {
+    }
+    
+    const folderPath &#x3D; this.platform.is(&#x27;ios&#x27;) ? cordova.file.cacheDirectory : cordova.file.externalDataDirectory;
+    return this.archiveService.export(
+      {
+        objects: [{ type: ArchiveObjectType.TELEMETRY }],
+        filePath: folderPath + &#x27;/tmp&#x27;
+      })
+      .toPromise()
+      .then(async (r) &#x3D;&gt; {
+        await loader.dismiss();
+        return this.social.share(&#x27;&#x27;, &#x27;&#x27;, r.filePath, &#x27;&#x27;);
+      })
+      .catch(async (e) &#x3D;&gt; {
+        await loader.dismiss();
+
+        if (e instanceof ObjectNotFoundError) {
+          this.commonUtilService.showToast(&#x27;SHARE_TELEMETRY_NO_DATA_FOUND&#x27;);
+        } else {
+          this.commonUtilService.showToast(&#x27;SHARE_TELEMETRY_FAILED&#x27;);
+        }
+      });
+  }
+
+  async onSyncClick() {
+    this.loader &#x3D; await this.commonUtilService.getLoader();
+    await this.loader.present();
+    this.generateInteractEvent(InteractType.TOUCH, InteractSubtype.SYNC_NOW_CLICKED, null);
+    this.telemetryService.sync({
+      ignoreAutoSyncMode: true,
+      ignoreSyncThreshold: true
+    }).subscribe();
+
+    sbsync.onSyncSucces(async (syncStat) &#x3D;&gt; {
+      if (syncStat.telemetry_error) {
+        if (this.loader) {
+          await this.loader.dismiss();
+        }
+
+        this.commonUtilService.showToast(&#x27;DATA_SYNC_FAILURE&#x27;);
+        return;
+      } else if (!syncStat.syncedEventCount) {
+        if (this.loader) {
+          await this.loader.dismiss();
+        }
+        this.commonUtilService.showToast(&#x27;DATA_SYNC_NOTHING_TO_SYNC&#x27;);
+        return;
+      }
+
+      this.generateInteractEvent(InteractType.OTHER, InteractSubtype.MANUALSYNC_SUCCESS, syncStat.syncedFileSize);
+      if (this.loader) {
+        await this.loader.dismiss();
+      }
+      this.commonUtilService.showToast(&#x27;DATA_SYNC_SUCCESSFUL&#x27;);
+    }, async (error) &#x3D;&gt; {
+      if (this.loader) {
+        await this.loader.dismiss();
+      }
+      this.commonUtilService.showToast(&#x27;DATA_SYNC_FAILURE&#x27;);
+    });
+  }
+
+  private generateInteractEvent(interactType: string, subtype: string, size: number) {
+    /*istanbul ignore else */
+      this.telemetryGeneratorService.generateInteractTelemetry(
+        interactType,
+        subtype,
+        Environment.SETTINGS,
+        PageId.SETTINGS_DATASYNC,
+        undefined,
+        size ? { SizeOfFileInKB: (size / 1000) + &#x27;&#x27; } : undefined
+      );
+  }
+
+  private handleBackButton() {
+    this.backButtonFunc &#x3D; this.platform.backButton.subscribeWithPriority(10, () &#x3D;&gt; {
+      this.telemetryGeneratorService.generateBackClickedTelemetry(PageId.SETTINGS_DATASYNC, Environment.SETTINGS, false);
+      this.location.back();
+      this.backButtonFunc.unsubscribe();
+    });
+  }
+
+  private handleNavBackButton(eventName: any) {
+    if (eventName.name &#x3D;&#x3D;&#x3D; &#x27;back&#x27;) {
+      this.telemetryGeneratorService.generateBackClickedNewTelemetry(false, Environment.SETTINGS, PageId.SETTINGS_DATASYNC);
+      this.location.back();
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content class&#x3D;&quot;ion-padding&quot;&gt;
+
+  &lt;div class&#x3D;&quot;label PT16&quot; role&#x3D;&quot;heading&quot; aria-level&#x3D;&quot;1&quot;&gt;
+    {{ &#x27;AUTOMATIC_SYNC&#x27; | translate }}
+  &lt;/div&gt;
+
+  &lt;ion-list lines&#x3D;&quot;none&quot; (ionChange)&#x3D;&quot;onSelected()&quot;&gt;
+    &lt;ion-radio-group [(ngModel)]&#x3D;&quot;dataSyncType&quot;&gt;
+      &lt;ion-item class&#x3D;&quot;ds-item&quot;&gt;
+        &lt;ion-radio class&#x3D;&quot;ds-m0&quot; [value]&#x3D;&quot;OPTIONS.OFF&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-radio&gt;
+        &lt;ion-label class&#x3D;&quot;ds-m0&quot;&gt;{{ &#x27;OFF&#x27; | translate }}&lt;/ion-label&gt;
+      &lt;/ion-item&gt;
+
+      &lt;ion-item class&#x3D;&quot;ds-item&quot;&gt;
+        &lt;ion-radio class&#x3D;&quot;ds-m0&quot; [value]&#x3D;&quot;OPTIONS.OVER_WIFI&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-radio&gt;
+        &lt;ion-label class&#x3D;&quot;ds-m0&quot;&gt;{{ &#x27;OVER_WIFI&#x27; | translate }}&lt;/ion-label&gt;
+      &lt;/ion-item&gt;
+
+      &lt;ion-item class&#x3D;&quot;ds-item&quot;&gt;
+        &lt;ion-radio class&#x3D;&quot;ds-m0&quot; [value]&#x3D;&quot;OPTIONS.ALWAYS_ON&quot; slot&#x3D;&quot;start&quot;&gt;&lt;/ion-radio&gt;
+        &lt;ion-label class&#x3D;&quot;ds-m0&quot;&gt;{{ &#x27;ALWAYS_ON&#x27; | translate }}&lt;/ion-label&gt;
+      &lt;/ion-item&gt;
+    &lt;/ion-radio-group&gt;
+  &lt;/ion-list&gt;
+
+  &lt;ion-label *ngIf&#x3D;&quot;(lastSyncDateTime | async) as lastSyncDateTime&quot;&gt;
+    {{ &#x27;LAST_SYNC&#x27; | translate }} {{lastSyncDateTime}}
+  &lt;/ion-label&gt;
+  &lt;ion-button expand&#x3D;&quot;block&quot; class&#x3D;&quot;MT16 btn&quot; (click)&#x3D;&quot;onSyncClick()&quot;&gt;
+    {{ &#x27;SYNC_NOW&#x27; | translate }}
+  &lt;/ion-button&gt;
+  &lt;hr&gt;
+  &lt;ion-button (click)&#x3D;&quot;shareTelemetry()&quot; class&#x3D;&quot;ion-no-padding btn&quot; fill&#x3D;&quot;clear&quot;&gt;
+    {{ &#x27;SHARE_TELEMETRY&#x27; | translate }}
+  &lt;/ion-button&gt;
+
+&lt;/ion-content&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./data-sync.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;src/assets/styles/_variables.scss&quot;;
+
+.label {
+    font-size: 0.938rem;
+}
+
+.ds-m0 {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-size: 1rem;
+}
+
+.ds-item{
+    --padding-start: 0px
+}
+
+hr {
+    -webkit-margin-before: 16px;
+    height: 0.125rem;
+    border-width: 0;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    background-color: map-get($colors, medium_gray);
+}
+
+.item-block {
+    min-height: unset;
+    height: 3rem;
+}
+
+.item-radio input[type&#x3D;&quot;radio&quot;] {
+    display: none;
+}
+
+ion-radio {
+    width: 3rem;
+    height: 3rem;
+}
+
+.btn {
+    font-size: 0.875rem;
+}
+
+.item-md {
+    padding: 0 !important;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content class="ion-padding">  <div class="label PT16" role="heading" aria-level="1">    {{ \'AUTOMATIC_SYNC\' | translate }}  </div>  <ion-list lines="none" (ionChange)="onSelected()">    <ion-radio-group [(ngModel)]="dataSyncType">      <ion-item class="ds-item">        <ion-radio class="ds-m0" [value]="OPTIONS.OFF" slot="start"></ion-radio>        <ion-label class="ds-m0">{{ \'OFF\' | translate }}</ion-label>      </ion-item>      <ion-item class="ds-item">        <ion-radio class="ds-m0" [value]="OPTIONS.OVER_WIFI" slot="start"></ion-radio>        <ion-label class="ds-m0">{{ \'OVER_WIFI\' | translate }}</ion-label>      </ion-item>      <ion-item class="ds-item">        <ion-radio class="ds-m0" [value]="OPTIONS.ALWAYS_ON" slot="start"></ion-radio>        <ion-label class="ds-m0">{{ \'ALWAYS_ON\' | translate }}</ion-label>      </ion-item>    </ion-radio-group>  </ion-list>  <ion-label *ngIf="(lastSyncDateTime | async) as lastSyncDateTime">    {{ \'LAST_SYNC\' | translate }} {{lastSyncDateTime}}  </ion-label>  <ion-button expand="block" class="MT16 btn" (click)="onSyncClick()">    {{ \'SYNC_NOW\' | translate }}  </ion-button>  <hr>  <ion-button (click)="shareTelemetry()" class="ion-no-padding btn" fill="clear">    {{ \'SHARE_TELEMETRY\' | translate }}  </ion-button></ion-content></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'accessDiscussion'},{'name': 'AccordionListComponent', 'selector': 'app-accordion-list'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-id-popup'},{'name': 'AcknowledgeResponseComponent', 'selector': 'acknowledge-response'},{'name': 'ActiveDownloadsPage', 'selector': 'app-active-downloads'},{'name': 'ActivityDashboardPage', 'selector': 'activity-dashboard'},{'name': 'ActivityDetailsPage', 'selector': 'app-activity-details'},{'name': 'ActivityTocPage', 'selector': 'activity-toc'},{'name': 'AddActivityToGroupComponent', 'selector': 'add-activity-to-group'},{'name': 'AddActivityToGroupPage', 'selector': 'add-activity-to-group'},{'name': 'AddEntityComponent', 'selector': 'app-add-entity'},{'name': 'AddFilePage', 'selector': 'app-add-file'},{'name': 'AddLinkModalComponent', 'selector': 'app-add-link-modal'},{'name': 'AddMemberToGroupPage', 'selector': 'app-add-member-to-group'},{'name': 'AddProgramsComponent', 'selector': 'app-add-programs'},{'name': 'AdminHomePage', 'selector': 'app-admin-home'},{'name': 'AllEvidenceListComponent', 'selector': 'app-all-evidence-list'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationHeaderComponent', 'selector': 'app-application-header'},{'name': 'ApplicationHeaderKebabMenuComponent', 'selector': 'app-application-header-kebab-menu'},{'name': 'AppRatingAlertComponent', 'selector': 'app-rating-alert'},{'name': 'AttachmentCardComponent', 'selector': 'app-attachment-card'},{'name': 'AttachmentComponent', 'selector': 'attachments'},{'name': 'AttachmentListingPage', 'selector': 'app-attachment-listing'},{'name': 'AttachmentListsComponent', 'selector': 'app-attachment-lists'},{'name': 'BarChartComponent', 'selector': 'bar-chart'},{'name': 'CategoriesEditPage', 'selector': 'app-categories-edit'},{'name': 'CategoryListPage', 'selector': 'app-category-list-page'},{'name': 'CategorySelectComponent', 'selector': 'app-category-select'},{'name': 'CertificateVerificationPopoverComponent', 'selector': 'app-certificate-verification-popover'},{'name': 'CertificateViewPage', 'selector': 'app-certificate-view'},{'name': 'ChapterDetailsPage', 'selector': 'app-chapter-details'},{'name': 'CollectionActionsComponent', 'selector': 'collection-acions'},{'name': 'CollectionChildComponent', 'selector': 'app-collection-child'},{'name': 'CollectionDetailEtbPage', 'selector': 'app-collection-detail-etb'},{'name': 'CommonFormsComponent', 'selector': 'app-common-forms'},{'name': 'CommonHeaderComponent', 'selector': 'app-common-header'},{'name': 'ConfirmAlertComponent', 'selector': 'app-confirm-alert'},{'name': 'ConsentPiiPopupComponent', 'selector': 'app-consent-pii-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentDetailsPage', 'selector': 'app-content-details'},{'name': 'ContentRatingAlertComponent', 'selector': 'app-content-rating-alert'},{'name': 'ContentViewerComponent', 'selector': 'content-viewer'},{'name': 'CopyTraceIdPopoverComponent', 'selector': 'app-copy-trace-id-popover'},{'name': 'CourseBatchesPage', 'selector': 'app-course-batches'},{'name': 'CourseCompletionPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'CoursesPage', 'selector': 'app-courses'},{'name': 'CreateEditGroupPage', 'selector': 'app-create-edit-group'},{'name': 'CreateProjectPage', 'selector': 'app-create-project'},{'name': 'CreateTaskComponent', 'selector': 'app-create-task'},{'name': 'CreateTaskFormComponent', 'selector': 'app-create-task-form'},{'name': 'CurriculumCoursesPage', 'selector': 'app-curriculum-courses'},{'name': 'DashboardComponent', 'selector': 'dashboard-component'},{'name': 'DataSyncComponent', 'selector': 'app-data-sync'},{'name': 'DateTypeInputComponent', 'selector': 'app-date-type-input'},{'name': 'DeeplinkRedirectComponent', 'selector': 'app-deeplink-redirect'},{'name': 'DetailCardComponent', 'selector': 'app-detail-card'},{'name': 'DialogPopupComponent', 'selector': 'app-dialog-popup'},{'name': 'DiscoverComponent', 'selector': 'app-discover'},{'name': 'DistrictMappingPage', 'selector': 'app-district-mapping'},{'name': 'DomainEcmLsitingComponent', 'selector': 'app-domain-ecm-lsiting'},{'name': 'DownloadManagerPage', 'selector': 'app-download-manager'},{'name': 'DownloadShareComponent', 'selector': 'download-share'},{'name': 'DownloadsHeaderComponent', 'selector': 'app-downloads-header'},{'name': 'DownloadsTabComponent', 'selector': 'app-downloads-tab'},{'name': 'DownloadTranscriptPopupComponent', 'selector': 'app-download-transcript-popup'},{'name': 'EcmListingPage', 'selector': 'app-ecm-listing'},{'name': 'EditContactDetailsPopupComponent', 'selector': 'app-edit-contact-details-popup'},{'name': 'EditContactVerifyPopupComponent', 'selector': 'app-edit-contact-verify-popup'},{'name': 'EnrolledCourseDetailsPage', 'selector': 'app-enrolled-course-details-page'},{'name': 'EnrollmentDetailsComponent', 'selector': 'app-enrollment-details'},{'name': 'EntityfilterComponent', 'selector': 'app-entityfilter'},{'name': 'EntitySearchLocalComponent', 'selector': 'app-entity-search-local'},{'name': 'ExpansionPanelComponent', 'selector': 'expansion-panel'},{'name': 'ExpansionTableComponent', 'selector': 'expansion-table'},{'name': 'ExploreBooksPage', 'selector': 'app-explore-books'},{'name': 'ExploreBooksSortComponent', 'selector': 'app-explore-books-sort'},{'name': 'FaqHelpPage', 'selector': 'app-faq-help'},{'name': 'FaqReportIssuePage', 'selector': 'app-faq-report-issue'},{'name': 'FilterModalComponent', 'selector': 'app-filter-modal'},{'name': 'FilteroptionComponent', 'selector': 'app-filteroption'},{'name': 'FiltersPage', 'selector': 'app-filters'},{'name': 'FooterButtonsComponent', 'selector': 'app-footer-buttons'},{'name': 'FrameworkSelectionPage', 'selector': 'app-framework-selection'},{'name': 'GraphCircleComponent', 'selector': 'graph-circle'},{'name': 'GroupDetailsPage', 'selector': 'app-group-details'},{'name': 'GroupGuideLinesPopoverComponent', 'selector': 'app-group-guidelines-popover'},{'name': 'GuestEditPage', 'selector': 'app-guest-edit'},{'name': 'GuestProfilePage', 'selector': 'app-guest-profile'},{'name': 'HintComponent', 'selector': 'app-hint'},{'name': 'ImageListingComponent', 'selector': 'app-image-listing'},{'name': 'ImageUploadComponent', 'selector': 'app-image-upload'},{'name': 'ImportPopoverComponent', 'selector': 'app-import-popover'},{'name': 'ImpSuggestionsPage', 'selector': 'app-imp-suggestions'},{'name': 'ItemListCardComponent', 'selector': 'app-item-list-card'},{'name': 'ItemListHeaderComponent', 'selector': 'app-item-list-header'},{'name': 'JoyfulThemePopupComponent', 'selector': 'app-joyful-theme-popup'},{'name': 'LanguageSettingsPage', 'selector': 'page-language-settings'},{'name': 'LearningResourcesPage', 'selector': 'app-learning-resources'},{'name': 'LicenseCardComponentComponent', 'selector': 'app-license-card-component'},{'name': 'LinkLearningResourcesComponent', 'selector': 'app-link-learning-resources'},{'name': 'ManageUserProfilesPage', 'selector': 'app-manage-user-profiles'},{'name': 'MatrixChartComponent', 'selector': 'matrix-chart'},{'name': 'MatrixModalComponent', 'selector': 'app-matrix-modal'},{'name': 'MatrixTypeInputComponent', 'selector': 'app-matrix-type-input'},{'name': 'MetadataActionsComponent', 'selector': 'app-metadata-actions'},{'name': 'MetadataDetailsComponent', 'selector': 'app-metadata-details'},{'name': 'MultipleTypeInputComponent', 'selector': 'app-multiple-type-input'},{'name': 'MyGroupsPage', 'selector': 'app-my-groups'},{'name': 'MyGroupsPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'NewExperiencePopupComponent', 'selector': 'app-new-experience-popup'},{'name': 'NoDataComponent', 'selector': 'app-no-data'},{'name': 'NoDownloadsComponent', 'selector': 'app-no-downloads'},{'name': 'NotificationItemComponent', 'selector': 'app-notification-item'},{'name': 'NotificationPage', 'selector': 'app-notification'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationHomeComponent', 'selector': 'app-observation-home'},{'name': 'ObservationSolutionEntityListingComponent', 'selector': 'app-observation-solution-entity-listing'},{'name': 'ObservationSolutionListingComponent', 'selector': 'app-observation-solution-listing'},{'name': 'ObservationSubmissionComponent', 'selector': 'app-observation-submission'},{'name': 'OtpPage', 'selector': 'app-otp'},{'name': 'OverflowMenuComponent', 'selector': 'app-overflow-menu'},{'name': 'PageFilterOptionsPage', 'selector': 'app-page-filter-options'},{'name': 'PageFilterPage', 'selector': 'app-page-filter'},{'name': 'PageQuestionsComponent', 'selector': 'app-page-questions'},{'name': 'PbHorizontalComponent', 'selector': 'app-pb-horizontal'},{'name': 'PercentageColumnChartsComponent', 'selector': 'percentage-column-charts'},{'name': 'PermissionComponent', 'selector': 'app-permission'},{'name': 'PersonalDetailsEditPage', 'selector': 'app-personal-details-edit'},{'name': 'PieChartComponent', 'selector': 'pie-chart'},{'name': 'PlayerPage', 'selector': 'app-player'},{'name': 'PopoverComponent', 'selector': 'app-popover'},{'name': 'PrivacyPolicyAndTCComponent', 'selector': 'app-privacy-policy-and-tc'},{'name': 'ProfileAvatarComponent', 'selector': 'app-profile-avatar'},{'name': 'ProfileNameConfirmationPopoverComponent', 'selector': 'app-profile-name-confirmation-popover'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfileSettingsPage', 'selector': 'app-profile-settings'},{'name': 'ProgramListingComponent', 'selector': 'app-program-listing'},{'name': 'ProgressBarComponent', 'selector': 'progress-bar'},{'name': 'ProjectDetailsCardComponent', 'selector': 'app-project-details-card'},{'name': 'ProjectDetailsComponent', 'selector': 'app-project-details'},{'name': 'ProjectEditPage', 'selector': 'app-project-edit'},{'name': 'ProjectListingComponent', 'selector': 'app-project-listing'},{'name': 'ProjectMetadataCardComponent', 'selector': 'app-project-metadata-card'},{'name': 'ProjectOperationPage', 'selector': 'app-project-operation'},{'name': 'ProjectReportComponent', 'selector': 'app-project-report'},{'name': 'ProjectTaskListComponent', 'selector': 'app-project-task-list'},{'name': 'ProjectTemplatePage', 'selector': 'app-project-template'},{'name': 'ProjectTemplateviewPage', 'selector': 'app-project-templateview'},{'name': 'QrcoderesultPage', 'selector': 'app-qrcoderesult'},{'name': 'QRScannerAlert', 'selector': 'app-qrscanner-alert'},{'name': 'QrScannerIOSComponent', 'selector': 'app-qr-scanner-ios'},{'name': 'QuestionHeadingComponent', 'selector': 'app-question-heading'},{'name': 'QuestionMapModalComponent', 'selector': 'app-question-map-modal'},{'name': 'QuestionnairePage', 'selector': 'app-questionnaire'},{'name': 'RadioTypeInputComponent', 'selector': 'app-radio-type-input'},{'name': 'RelevantContentCardComponent', 'selector': 'app-relevant-content-card'},{'name': 'RelevantContentsPage', 'selector': 'app-relevant-contents'},{'name': 'RemarksComponent', 'selector': 'app-remarks'},{'name': 'RemarksModalComponent', 'selector': 'app-remarks-modal'},{'name': 'ReportListComponent', 'selector': 'app-report-list'},{'name': 'ReportModalFilter', 'selector': 'report-modal-filter'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'ReportsListingComponent', 'selector': 'app-reports-listing'},{'name': 'ReportsTextComponent', 'selector': 'reports-text'},{'name': 'ResourcesComponent', 'selector': 'app-resources'},{'name': 'SbAppSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbDownloadPopupComponent', 'selector': 'app-sb-download-popup'},{'name': 'SbGenericFormPopoverComponent', 'selector': 'app-sb-generic-form-popover'},{'name': 'SbGenericPopoverComponent', 'selector': 'app-sb-generic-popover'},{'name': 'SbInsufficientStoragePopupComponent', 'selector': 'sb-insufficient-storage-popup'},{'name': 'SbNoNetworkPopupComponent', 'selector': 'sb-no-network-popup'},{'name': 'SbPopoverComponent', 'selector': 'sb-popover'},{'name': 'SbPreferencePopupComponent', 'selector': 'app-sb-preferences-popup'},{'name': 'SbProgressLoaderPage', 'selector': 'app-sb-progress-loader'},{'name': 'SbSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbSubjectListPopupComponent', 'selector': 'app-sb-subject-list-popup'},{'name': 'SbTutorialPopupComponent', 'selector': 'app-sb-tutorial-popup'},{'name': 'ScatterChartComponent', 'selector': 'scatter-chart'},{'name': 'SearchFilterPage', 'selector': 'app-search-filter.page'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SectionListingPage', 'selector': 'app-section-listing'},{'name': 'SelfDeclaredTeacherEditPage', 'selector': 'app-self-declared-teacher-edit'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'ShowCertificateComponent', 'selector': 'app-show-certificate-component'},{'name': 'ShowVendorAppsComponent', 'selector': 'show-vendor-apps'},{'name': 'SignInCardComponent', 'selector': 'app-sign-in-card'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'SignupBasicInfoPage', 'selector': 'app-signup-basic-info'},{'name': 'SignupEmailPasswordPage', 'selector': 'app-signup-email-password'},{'name': 'SkeletonItemComponent', 'selector': 'app-skeleton-item'},{'name': 'SliderTypeInputComponent', 'selector': 'app-slider-type-input'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'StartImprovementComponent', 'selector': 'app-start-improvement'},{'name': 'StorageSettingsPage', 'selector': 'app-storage-settings'},{'name': 'SubmissionActionsComponent', 'selector': 'app-submission-actions'},{'name': 'SubmissionPreviewPageComponent', 'selector': 'app-submission-preview-page'},{'name': 'SubProfileEditPage', 'selector': 'app-sub-profile-edit'},{'name': 'SupportAcknowledgement', 'selector': 'support-acknowledgement'},{'name': 'SurveyHomeComponent', 'selector': 'app-survey-home'},{'name': 'SurveyMsgComponent', 'selector': 'app-survey-msg'},{'name': 'SyncPage', 'selector': 'app-sync'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TaskCardComponent', 'selector': 'app-task-card'},{'name': 'TaskViewPage', 'selector': 'app-task-view'},{'name': 'TeacherIdVerificationComponent', 'selector': 'app-teacher-id-verification-popup'},{'name': 'TermsAndConditionsPage', 'selector': 'app-terms-and-conditions'},{'name': 'TextBookTocPage', 'selector': 'textbook-toc'},{'name': 'TextbookViewMorePage', 'selector': 'app-textbook-view-more'},{'name': 'TextTypeInputComponent', 'selector': 'app-text-type-input'},{'name': 'ToastNavigationComponent', 'selector': 'app-toast-navigation'},{'name': 'TocHeaderComponent', 'selector': 'app-toc-header'},{'name': 'UpgradePopoverComponent', 'selector': 'app-upgrade-popover'},{'name': 'UserHomePage', 'selector': 'app-user-home'},{'name': 'UserTypeSelectionPage', 'selector': 'page-user-type-selection'},{'name': 'ViewCreditsComponent', 'selector': 'app-view-credits'},{'name': 'ViewDetailComponent', 'selector': 'app-view-detail'},{'name': 'ViewMoreActivityComponent', 'selector': 'app-view-more-activity'},{'name': 'ViewMoreActivityPage', 'selector': 'view-more-activity'},{'name': 'YearOfBirthPopupComponent', 'selector': 'app-year-of-birth-popup'}];
+    var DIRECTIVES = [{'name': 'CustomIonSelectDirective', 'selector': '[appCustomIonSelect]'},{'name': 'HideHeaderFooterDirective', 'selector': '[hide-header-footer]'},{'name': 'ReadMoreDirective', 'selector': '[readMore]'}];
+    var ACTUAL_COMPONENT = {'name': 'DataSyncComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DataSyncComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

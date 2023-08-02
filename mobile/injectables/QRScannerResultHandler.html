@@ -1,0 +1,2207 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >QRScannerResultHandler</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/qrscanresulthandler.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Static</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#CORRELATION_TYPE" >CORRELATION_TYPE</a>
+                            </li>
+                            <li>
+                                <a href="#guestUser" >guestUser</a>
+                            </li>
+                            <li>
+                                <a href="#inAppBrowserRef" >inAppBrowserRef</a>
+                            </li>
+                            <li>
+                                <a href="#permittedUsers" >permittedUsers</a>
+                            </li>
+                            <li>
+                                <a href="#scannedUrlMap" >scannedUrlMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#selectedUserType" >selectedUserType</a>
+                            </li>
+                            <li>
+                                <a href="#source" >source</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#generateEndEvent" >generateEndEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateImpressionEvent" >generateImpressionEvent</a>
+                            </li>
+                            <li>
+                                <a href="#generateQRScanSuccessInteractEvent" >generateQRScanSuccessInteractEvent</a>
+                            </li>
+                            <li>
+                                <a href="#getCorRelationList" >getCorRelationList</a>
+                            </li>
+                            <li>
+                                <a href="#handleCertsQR" >handleCertsQR</a>
+                            </li>
+                            <li>
+                                <a href="#handleContentId" >handleContentId</a>
+                            </li>
+                            <li>
+                                <a href="#handleDialCode" >handleDialCode</a>
+                            </li>
+                            <li>
+                                <a href="#handleInvalidQRCode" >handleInvalidQRCode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#handleRcCertsQR" >handleRcCertsQR</a>
+                            </li>
+                            <li>
+                                <a href="#isContentId" >isContentId</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#manageLearScan" >manageLearScan</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#navigateHandler" >navigateHandler</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToDetailsPage" >navigateToDetailsPage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#parseDialCode" >parseDialCode</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(contentService: ContentService, telemetryService: TelemetryService, pageAssembleService: PageAssembleService, frameworkService: FrameworkService, preferences: SharedPreferences, certificateService: CertificateService, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, router: Router, navCtrl: NavController, events: <a href="../injectables/Events.html" target="_self">Events</a>, appGlobalService: <a href="../injectables/AppGlobalService.html" target="_self">AppGlobalService</a>, formFrameWorkUtilService: <a href="../injectables/FormAndFrameworkUtilService.html" target="_self">FormAndFrameworkUtilService</a>, navService: <a href="../injectables/NavigationService.html" target="_self">NavigationService</a>, popoverCtrl: PopoverController)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/services/qrscanresulthandler.service.ts:54</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>contentService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ContentService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryService</td>
+                                                  
+                                                        <td>
+                                                                    <code>TelemetryService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>pageAssembleService</td>
+                                                  
+                                                        <td>
+                                                                    <code>PageAssembleService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>frameworkService</td>
+                                                  
+                                                        <td>
+                                                                    <code>FrameworkService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>preferences</td>
+                                                  
+                                                        <td>
+                                                                    <code>SharedPreferences</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>certificateService</td>
+                                                  
+                                                        <td>
+                                                                    <code>CertificateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>NavController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>events</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >Events</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appGlobalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppGlobalService.html" target="_self" >AppGlobalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formFrameWorkUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormAndFrameworkUtilService.html" target="_self" >FormAndFrameworkUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationService.html" target="_self" >NavigationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>popoverCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>PopoverController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateEndEvent"></a>
+                    <span class="name">
+                        <span ><b>generateEndEvent</b></span>
+                        <a href="#generateEndEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateEndEvent(pageId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, qrData: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="336"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:336</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>qrData</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateImpressionEvent"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateImpressionEvent</b></span>
+                        <a href="#generateImpressionEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateImpressionEvent(source, dialCode)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="350"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:350</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>source</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>dialCode</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateQRScanSuccessInteractEvent"></a>
+                    <span class="name">
+                        <span ><b>generateQRScanSuccessInteractEvent</b></span>
+                        <a href="#generateQRScanSuccessInteractEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateQRScanSuccessInteractEvent(scannedData, action, dialCode?, certificate?: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="300"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:300</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>scannedData</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>action</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>dialCode</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>certificate</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCorRelationList"></a>
+                    <span class="name">
+                        <span ><b>getCorRelationList</b></span>
+                        <a href="#getCorRelationList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCorRelationList(identifier: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, scannedData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="274"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:274</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>identifier</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scannedData</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Array&lt;CorrelationData&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleCertsQR"></a>
+                    <span class="name">
+                        <span ><b>handleCertsQR</b></span>
+                        <a href="#handleCertsQR"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleCertsQR(source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, scannedData: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="207"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:207</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scannedData</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleContentId"></a>
+                    <span class="name">
+                        <span ><b>handleContentId</b></span>
+                        <a href="#handleContentId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleContentId(source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, scannedData: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="155"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:155</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scannedData</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleDialCode"></a>
+                    <span class="name">
+                        <span ><b>handleDialCode</b></span>
+                        <a href="#handleDialCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleDialCode(source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, scannedData, dialCode: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="122"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:122</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scannedData</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>dialCode</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleInvalidQRCode"></a>
+                    <span class="name">
+                        <span ><b>handleInvalidQRCode</b></span>
+                        <a href="#handleInvalidQRCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleInvalidQRCode(source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, scannedData: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="268"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:268</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>scannedData</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleRcCertsQR"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>handleRcCertsQR</b></span>
+                        <a href="#handleRcCertsQR"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleRcCertsQR(scannedData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="225"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:225</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>scannedData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isContentId"></a>
+                    <span class="name">
+                        <span ><b>isContentId</b></span>
+                        <a href="#isContentId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isContentId(scannedData: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="112"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:112</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>scannedData</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="manageLearScan"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>manageLearScan</b></span>
+                        <a href="#manageLearScan"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>manageLearScan(scannedData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="361"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:361</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>scannedData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateHandler"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>navigateHandler</b></span>
+                        <a href="#navigateHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>navigateHandler(scannedData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="378"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:378</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>scannedData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToDetailsPage"></a>
+                    <span class="name">
+                        <span ><b>navigateToDetailsPage</b></span>
+                        <a href="#navigateToDetailsPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToDetailsPage(content, corRelationList)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="284"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:284</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationList</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="parseDialCode"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>parseDialCode</b></span>
+                        <a href="#parseDialCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>parseDialCode(scannedData: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/services/qrscanresulthandler.service.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>scannedData</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string | undefined&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="CORRELATION_TYPE"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Static</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>CORRELATION_TYPE</b></span>
+                        <a href="#CORRELATION_TYPE"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;qr&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/services/qrscanresulthandler.service.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="guestUser"></a>
+                    <span class="name">
+                        <span ><b>guestUser</b></span>
+                        <a href="#guestUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/services/qrscanresulthandler.service.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="inAppBrowserRef"></a>
+                    <span class="name">
+                        <span ><b>inAppBrowserRef</b></span>
+                        <a href="#inAppBrowserRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/services/qrscanresulthandler.service.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="permittedUsers"></a>
+                    <span class="name">
+                        <span ><b>permittedUsers</b></span>
+                        <a href="#permittedUsers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    &#x27;administrator&#x27;,
+    &#x27;teacher&#x27;
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/services/qrscanresulthandler.service.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scannedUrlMap"></a>
+                    <span class="name">
+                        <span ><b>scannedUrlMap</b></span>
+                        <a href="#scannedUrlMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/services/qrscanresulthandler.service.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedUserType"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>selectedUserType</b></span>
+                        <a href="#selectedUserType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/services/qrscanresulthandler.service.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="source"></a>
+                    <span class="name">
+                        <span ><b>source</b></span>
+                        <a href="#source"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/services/qrscanresulthandler.service.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Inject, Injectable } from &#x27;@angular/core&#x27;;
+import { TelemetryGeneratorService } from &#x27;./telemetry-generator.service&#x27;;
+import {
+  FrameworkService,
+  PageAssembleService,
+  Content,
+  ContentDetailRequest,
+  ContentService,
+  CorrelationData,
+  TelemetryObject,
+  TelemetryService,
+  SharedPreferences,
+  CertificateService
+} from &#x27;sunbird-sdk&#x27;;
+import { EventTopics, RouterLinks, PreferenceKey } from &#x27;../app/app.constant&#x27;;
+
+import { CommonUtilService } from &#x27;./common-util.service&#x27;;
+import {
+  Environment,
+  ImpressionSubtype,
+  ImpressionType,
+  InteractSubtype,
+  InteractType,
+  Mode,
+  PageId,
+  ObjectType,
+  CorReleationDataType,
+} from &#x27;./telemetry-constants&#x27;;
+import { NavigationExtras, Router } from &#x27;@angular/router&#x27;;
+import { NavController, PopoverController } from &#x27;@ionic/angular&#x27;;
+import { Events } from &#x27;@app/util/events&#x27;;
+import { AppGlobalService } from &#x27;./app-global-service.service&#x27;;
+import { FormAndFrameworkUtilService } from &#x27;./formandframeworkutil.service&#x27;;
+import { ContentUtil } from &#x27;@app/util/content-util&#x27;;
+import * as qs from &#x27;qs&#x27;;
+import { NavigationService } from &#x27;./navigation-handler.service&#x27;;
+import { FormConstants } from &#x27;@app/app/form.constants&#x27;;
+import { CertificateVerificationPopoverComponent } from &#x27;@app/app/components/popups/certificate-verification/certificate-verification-popup.component&#x27;;
+
+declare var cordova;
+
+@Injectable()
+export class QRScannerResultHandler {
+  private static readonly CORRELATION_TYPE &#x3D; &#x27;qr&#x27;;
+  source: string;
+  inAppBrowserRef: any;
+  scannedUrlMap: object;
+  selectedUserType?: any;
+  guestUser: boolean &#x3D; false;
+
+  permittedUsers &#x3D; [
+    &#x27;administrator&#x27;,
+    &#x27;teacher&#x27;
+  ]
+  constructor(
+    @Inject(&#x27;CONTENT_SERVICE&#x27;) private contentService: ContentService,
+    @Inject(&#x27;TELEMETRY_SERVICE&#x27;) private telemetryService: TelemetryService,
+    @Inject(&#x27;PAGE_ASSEMBLE_SERVICE&#x27;) private pageAssembleService: PageAssembleService,
+    @Inject(&#x27;FRAMEWORK_SERVICE&#x27;) private frameworkService: FrameworkService,
+    @Inject(&#x27;SHARED_PREFERENCES&#x27;) private preferences: SharedPreferences,
+    @Inject(&#x27;CERTIFICATE_SERVICE&#x27;) private certificateService: CertificateService,
+    private commonUtilService: CommonUtilService,
+    private telemetryGeneratorService: TelemetryGeneratorService,
+    private router: Router,
+    private navCtrl: NavController,
+    private events: Events,
+    private appGlobalService: AppGlobalService,
+    private formFrameWorkUtilService: FormAndFrameworkUtilService,
+    private navService: NavigationService,
+    private popoverCtrl: PopoverController
+  ) {
+  }
+
+  async parseDialCode(scannedData: string): Promise&lt;string | undefined&gt; {
+    const dailCodeRegExpression &#x3D; await this.formFrameWorkUtilService.getDialcodeRegexFormApi();
+    const execArray &#x3D; (new RegExp(dailCodeRegExpression)).exec(scannedData);
+    if (execArray &amp;&amp; execArray.groups) {
+      try {
+        const url: URL &#x3D; new URL(scannedData);
+        const overrideChannelSlug &#x3D; url.searchParams.get(&#x27;channel&#x27;);
+
+        if (overrideChannelSlug) {
+          this.frameworkService.searchOrganization({
+            filters: {
+              slug: overrideChannelSlug,
+              isRootOrg: true
+            } as any
+          }).toPromise().then((result) &#x3D;&gt; {
+            const org: any &#x3D; result.content &amp;&amp; result.content[0];
+
+            if (org) {
+              this.pageAssembleService.setPageAssembleChannel({
+                channelId: org.id
+              });
+
+              setTimeout(() &#x3D;&gt; {
+                this.events.publish(EventTopics.COURSE_PAGE_ASSEMBLE_CHANNEL_CHANGE);
+              }, 500);
+            }
+          });
+        }
+      } catch (e) {
+        console.error(e);
+      }
+
+      this.scannedUrlMap &#x3D; execArray.groups;
+      return execArray.groups[Object.keys(execArray.groups).find((key) &#x3D;&gt; !!execArray.groups[key])];
+    }
+    return undefined;
+  }
+
+  isContentId(scannedData: string): boolean {
+    const results &#x3D; scannedData.split(&#x27;/&#x27;);
+    const type &#x3D; results[results.length - 2];
+    const action &#x3D; results[results.length - 3];
+    const scope &#x3D; results[results.length - 4];
+    return (type &#x3D;&#x3D;&#x3D; &#x27;content&#x27; &amp;&amp; scope &#x3D;&#x3D;&#x3D; &#x27;public&#x27;) ||
+      (action &#x3D;&#x3D;&#x3D; &#x27;play&#x27; &amp;&amp; (type &#x3D;&#x3D;&#x3D; &#x27;collection&#x27; || type &#x3D;&#x3D;&#x3D; &#x27;content&#x27;)) ||
+      (action &#x3D;&#x3D;&#x3D; &#x27;explore-course&#x27; &amp;&amp; type &#x3D;&#x3D;&#x3D; &#x27;course&#x27;);
+  }
+
+  handleDialCode(source: string, scannedData, dialCode: string) {
+    this.source &#x3D; source;
+    this.generateQRScanSuccessInteractEvent(scannedData, &#x27;SearchResult&#x27;, dialCode);
+    const telemetryObject &#x3D; new TelemetryObject(dialCode, &#x27;qr&#x27;, &#x27; &#x27;);
+    const utmUrl &#x3D; scannedData.slice(scannedData.indexOf(&#x27;?&#x27;) + 1);
+    const params: {[param: string]: string} &#x3D; qs.parse(utmUrl);
+    const cData: Array&lt;CorrelationData&gt; &#x3D; [];
+
+    if (utmUrl !&#x3D;&#x3D; scannedData) {
+      ContentUtil.genrateUTMCData(params).forEach((element) &#x3D;&gt; {
+        cData.push(element);
+      });
+    }
+    const corRelationData: CorrelationData[] &#x3D; [{
+      id: CorReleationDataType.SCAN,
+      type: CorReleationDataType.ACCESS_TYPE
+    }];
+    if (cData &amp;&amp; cData.length) {
+      this.telemetryService.updateCampaignParameters(cData);
+      this.telemetryGeneratorService.generateUtmInfoTelemetry(params, PageId.QRCodeScanner, telemetryObject, corRelationData);
+    }
+    const navigationExtras: NavigationExtras &#x3D; {
+      state: {
+        dialCode,
+        corRelation: this.getCorRelationList(dialCode, QRScannerResultHandler.CORRELATION_TYPE, scannedData),
+        source: this.source,
+        shouldGenerateEndTelemetry: true
+      }
+    };
+    this.generateImpressionEvent(this.source, dialCode);
+    this.navCtrl.navigateForward([&#x60;/${RouterLinks.SEARCH}&#x60;], navigationExtras);
+  }
+
+  handleContentId(source: string, scannedData: string) {
+    this.source &#x3D; source;
+    const results &#x3D; scannedData.split(&#x27;/&#x27;);
+    const contentId &#x3D; results[results.length - 1];
+    this.generateQRScanSuccessInteractEvent(scannedData, &#x27;ContentDetail&#x27;, contentId);
+    const utmUrl &#x3D; scannedData.slice(scannedData.indexOf(&#x27;?&#x27;) + 1);
+    const params: {[param: string]: string} &#x3D; qs.parse(utmUrl);
+    const cData: CorrelationData[] &#x3D; [];
+
+    if (utmUrl !&#x3D;&#x3D; scannedData) {
+      ContentUtil.genrateUTMCData(params).forEach((element) &#x3D;&gt; {
+       cData.push(element);
+     });
+   }
+    const request: ContentDetailRequest &#x3D; {
+      contentId
+    };
+    this.contentService.getContentDetails(request).toPromise()
+      .then((content: Content) &#x3D;&gt; {
+        const corRelationData: CorrelationData[] &#x3D; [{
+          id: CorReleationDataType.SCAN,
+          type: CorReleationDataType.ACCESS_TYPE
+        }];
+        if (cData &amp;&amp; cData.length) {
+          this.telemetryService.updateCampaignParameters(cData);
+          this.telemetryGeneratorService.generateUtmInfoTelemetry(params,
+            PageId.QRCodeScanner, ContentUtil.getTelemetryObject(content), corRelationData);
+        }
+
+        this.navigateToDetailsPage(content,
+          this.getCorRelationList(content.identifier, QRScannerResultHandler.CORRELATION_TYPE, scannedData));
+        this.telemetryGeneratorService.generateImpressionTelemetry(
+          ImpressionType.VIEW, ImpressionSubtype.QR_CODE_VALID,
+          PageId.QRCodeScanner,
+          Environment.HOME,
+          contentId, ObjectType.QR, &#x27;&#x27;
+        );
+      }).catch(() &#x3D;&gt; {
+        if (!this.commonUtilService.networkInfo.isNetworkAvailable) {
+          this.commonUtilService.showToast(&#x27;ERROR_NO_INTERNET_MESSAGE&#x27;);
+        } else {
+          this.commonUtilService.showToast(&#x27;UNKNOWN_QR&#x27;);
+          this.telemetryGeneratorService.generateImpressionTelemetry(
+            ImpressionType.VIEW, ImpressionSubtype.INVALID_QR_CODE,
+            PageId.QRCodeScanner,
+            Environment.HOME,
+            contentId, ObjectType.QR, &#x27;&#x27;
+          );
+        }
+      });
+  }
+
+  handleCertsQR(source: string, scannedData: string) {
+    this.generateQRScanSuccessInteractEvent(scannedData, &#x27;OpenBrowser&#x27;, undefined, {
+      certificateId: scannedData.split(&#x27;/certs/&#x27;)[1], scannedFrom: &#x27;mobileApp&#x27;
+    });
+    this.telemetryService.buildContext().subscribe(context &#x3D;&gt; {
+      scannedData &#x3D; scannedData + &#x27;?clientId&#x3D;android&amp;context&#x3D;&#x27; + encodeURIComponent(JSON.stringify(context));
+      this.inAppBrowserRef &#x3D; cordova.InAppBrowser.open(scannedData, &#x27;_blank&#x27;, &#x27;zoom&#x3D;no&#x27;);
+      this.inAppBrowserRef.addEventListener(&#x27;loadstart&#x27;, (event) &#x3D;&gt; {
+        if (event.url) {
+          if (event.url.includes(&#x27;explore-course&#x27;)) {
+            this.inAppBrowserRef.close();
+            this.events.publish(&#x27;return_course&#x27;);
+          }
+        }
+      });
+    });
+  }
+
+  async handleRcCertsQR(scannedData){
+    let encodedData, verifyCertReq;
+    this.generateQRScanSuccessInteractEvent(scannedData, &#x27;OpenBrowser&#x27;, undefined, {
+      certificateId: scannedData.split(&#x27;/certs/&#x27;)[1], scannedFrom: &#x27;mobileApp&#x27;
+    });
+    if(scannedData.includes(&#x27;data&#x3D;&#x27;)){
+      try {
+        encodedData &#x3D; await this.certificateService.getEncodedData(scannedData.split(&#x27;data&#x3D;&#x27;)[1])
+      } catch(e) {
+        console.error(e)
+      }
+    }
+    verifyCertReq &#x3D; {
+      certificateId: scannedData.split(&#x27;certs/&#x27;)[1].split(&#x27;?&#x27;)[0],
+      certificateData: encodedData,
+      schemaName: &#x27;certificate&#x27;,
+    }
+    this.certificateService.verifyCertificate(verifyCertReq).toPromise()
+    .then(async (res) &#x3D;&gt; {
+      if(res.verified) {
+        const qrAlert &#x3D; await this.popoverCtrl.create({
+          component: CertificateVerificationPopoverComponent,
+          componentProps: {
+              certificateData: res.certificateData,
+              actionsButtons: [
+                  {
+                      // btntext: this.translateMessage(&#x27;OKAY&#x27;),
+                      btntext: &#x27;OKAY&#x27;,
+                      btnClass: &#x27;sb-btn sb-btn-sm  sb-btn-tertiary&#x27;
+                  }
+              ],
+          },
+          cssClass: &#x27;sb-popover&#x27;,
+        });
+        await qrAlert.present();
+      } else {
+        this.commonUtilService.afterOnBoardQRErrorAlert(&#x27;INVALID_QR&#x27;, &#x27;CERTIFICATE_VERIFICATION_FAIL&#x27;, this.source, scannedData);
+      }
+    }).catch((err) &#x3D;&gt; {
+      console.log(&#x27;handleCertsQR mobile err&#x27;, err)
+    })
+  }
+
+  handleInvalidQRCode(source: string, scannedData: string) {
+    this.source &#x3D; source;
+    this.generateQRScanSuccessInteractEvent(scannedData, &#x27;UNKNOWN&#x27;);
+    this.generateEndEvent(this.source, scannedData);
+  }
+
+  getCorRelationList(identifier: string, type: string, scannedData): Array&lt;CorrelationData&gt; {
+    const corRelationList: Array&lt;CorrelationData&gt; &#x3D; new Array&lt;CorrelationData&gt;();
+    corRelationList.push({id: identifier, type});
+    corRelationList.push({
+      id: ContentUtil.extractBaseUrl(scannedData),
+      type: CorReleationDataType.SOURCE
+    });
+    return corRelationList;
+  }
+
+  navigateToDetailsPage(content, corRelationList) {
+    const navigationExtras: NavigationExtras &#x3D; {
+      state: {
+        content,
+        corRelation: corRelationList,
+        source: this.source,
+        shouldGenerateEndTelemetry: true
+      }
+    };
+
+    this.navService.navigateToDetailPage(
+      content,
+      navigationExtras.state
+    );
+  }
+
+  generateQRScanSuccessInteractEvent(scannedData, action, dialCode?, certificate?:
+    { certificateId: string, scannedFrom: &#x27;mobileApp&#x27; | &#x27;genericApp&#x27; }) {
+    const values &#x3D; new Map();
+    values[&#x27;networkAvailable&#x27;] &#x3D; this.commonUtilService.networkInfo.isNetworkAvailable ? &#x27;Y&#x27; : &#x27;N&#x27;;
+    values[&#x27;scannedData&#x27;] &#x3D; scannedData;
+    values[&#x27;action&#x27;] &#x3D; action;
+    values[&#x27;compatibile&#x27;] &#x3D; (action &#x3D;&#x3D;&#x3D; &#x27;OpenBrowser&#x27; || action &#x3D;&#x3D;&#x3D; &#x27;SearchResult&#x27; || action &#x3D;&#x3D;&#x3D; &#x27;ContentDetail&#x27;) ? 1 : 0;
+    if (this.scannedUrlMap) {
+      values[&#x27;dialCodeType&#x27;] &#x3D; this.scannedUrlMap[&#x27;sunbird&#x27;] ? &#x27;standard&#x27; : &#x27;non-standard&#x27;;
+    }
+    let telemetryObject: TelemetryObject;
+
+    if (dialCode) {
+      telemetryObject &#x3D; new TelemetryObject(dialCode, &#x27;qr&#x27;, undefined);
+    }
+    if (certificate) {
+      values[&#x27;scannedFrom&#x27;] &#x3D; certificate.scannedFrom;
+      telemetryObject &#x3D; new TelemetryObject(certificate.certificateId, &#x27;certificate&#x27;, undefined);
+    }
+
+    const corRelationList: Array&lt;CorrelationData&gt; &#x3D; [{
+      id: ContentUtil.extractBaseUrl(scannedData),
+      type: CorReleationDataType.SOURCE
+    }];
+
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.OTHER,
+      InteractSubtype.QRCodeScanSuccess,
+      Environment.HOME,
+      PageId.QRCodeScanner, telemetryObject,
+      values,
+      undefined,
+      corRelationList
+    );
+  }
+
+  generateEndEvent(pageId: string, qrData: string) {
+    if (pageId) {
+      const telemetryObject &#x3D; new TelemetryObject(qrData, QRScannerResultHandler.CORRELATION_TYPE, undefined);
+
+      this.telemetryGeneratorService.generateEndTelemetry(
+        QRScannerResultHandler.CORRELATION_TYPE,
+        Mode.PLAY,
+        pageId,
+        Environment.HOME,
+        telemetryObject
+      );
+    }
+  }
+
+  private generateImpressionEvent(source, dialCode) {
+    const corRelationList: Array&lt;CorrelationData&gt; &#x3D; [];
+    corRelationList.push({id: dialCode, type: CorReleationDataType.QR});
+    this.telemetryGeneratorService.generateImpressionTelemetry(
+      ImpressionType.PAGE_REQUEST, &#x27;&#x27;,
+      PageId.QR_BOOK_RESULT,
+      source ? Environment.ONBOARDING : Environment.HOME, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;,
+      undefined,
+      corRelationList);
+  }
+
+  async manageLearScan(scannedData) {
+    this.selectedUserType &#x3D; await this.preferences.getString(PreferenceKey.SELECTED_USER_TYPE).toPromise();
+    if (scannedData.includes(&#x27;/create-project/&#x27;) &amp;&amp; this.permittedUsers.includes(this.selectedUserType.toLowerCase()) ) {
+      this.navigateHandler(scannedData);
+      return;
+    }
+    if (!this.appGlobalService.isUserLoggedIn()) {
+      this.commonUtilService.showToast(&quot;FRMELEMNTS_MSG_PLEASE_LOGIN_HT_OTHER&quot;);
+      return;
+    }
+    if ((scannedData.includes(&#x27;/create-observation/&#x27;)) &amp;&amp; this.permittedUsers.includes(this.selectedUserType.toLowerCase()) ) {
+      this.navigateHandler(scannedData);
+      return;
+    } else {
+      this.commonUtilService.showToast(&#x27;FRMELEMNTS_MSG_CONTENT_NOT_AVAILABLE_FOR_ROLE&#x27;);
+    }
+  }
+  async navigateHandler(scannedData) {
+    const deepLinkUrlConfig: { name: string, code: string, pattern: string, route: string, priority?: number, params?: {} }[] &#x3D;
+      await this.formFrameWorkUtilService.getFormFields(FormConstants.DEEPLINK_CONFIG);
+    let matchedDeeplinkConfig: { name: string, code: string, pattern: string, route: string, priority?: number } &#x3D; null;
+    let urlMatch;
+    deepLinkUrlConfig.forEach(config &#x3D;&gt; {
+      const urlRegexMatch &#x3D; scannedData.match(new RegExp(config.pattern));
+      if (!!urlRegexMatch &amp;&amp; (!matchedDeeplinkConfig)) {
+        if (config.code &#x3D;&#x3D;&#x3D; &#x27;profile&#x27; &amp;&amp; !this.appGlobalService.isUserLoggedIn()) {
+          config.route &#x3D; &#x27;tabs/guest-profile&#x27;;
+        }
+        matchedDeeplinkConfig &#x3D; config;
+        urlMatch &#x3D; urlRegexMatch;
+      }
+    });
+    if (!matchedDeeplinkConfig) {
+      return;
+    }
+    let identifier;
+    if (urlMatch &amp;&amp; urlMatch.groups &amp;&amp; Object.keys(urlMatch.groups).length) {
+      identifier &#x3D; urlMatch.groups.quizId || urlMatch.groups.content_id || urlMatch.groups.course_id;
+    }
+    let extras &#x3D; {};
+    const route &#x3D; matchedDeeplinkConfig.route;
+    extras &#x3D; {
+      state: {
+        data: urlMatch.groups
+      }
+    };
+    this.navCtrl.navigateForward([route], extras);
+  }
+
+  
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'QRScannerResultHandler.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
