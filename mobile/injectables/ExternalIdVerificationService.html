@@ -1,0 +1,686 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >ExternalIdVerificationService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/externalid-verification.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#isCustodianUser$" >isCustodianUser$</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkJoinTraining" >checkJoinTraining</a>
+                            </li>
+                            <li>
+                                <a href="#checkQuizContent" >checkQuizContent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#resetNavigationSource" >resetNavigationSource</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#showExternalIdVerificationPopup" >showExternalIdVerificationPopup</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(profileService: ProfileService, preferences: SharedPreferences, appGlobalService: <a href="../injectables/AppGlobalService.html" target="_self">AppGlobalService</a>, popoverCtrl: PopoverController, formAndFrameworkUtilService: <a href="../injectables/FormAndFrameworkUtilService.html" target="_self">FormAndFrameworkUtilService</a>, splaschreenDeeplinkActionHandlerDelegate: <a href="../injectables/SplaschreenDeeplinkActionHandlerDelegate.html" target="_self">SplaschreenDeeplinkActionHandlerDelegate</a>, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, localCourseService: <a href="../injectables/LocalCourseService.html" target="_self">LocalCourseService</a>, router: Router)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/services/externalid-verification.service.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ProfileService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>preferences</td>
+                                                  
+                                                        <td>
+                                                                    <code>SharedPreferences</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appGlobalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppGlobalService.html" target="_self" >AppGlobalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>popoverCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>PopoverController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formAndFrameworkUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormAndFrameworkUtilService.html" target="_self" >FormAndFrameworkUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>splaschreenDeeplinkActionHandlerDelegate</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SplaschreenDeeplinkActionHandlerDelegate.html" target="_self" >SplaschreenDeeplinkActionHandlerDelegate</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>localCourseService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LocalCourseService.html" target="_self" >LocalCourseService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkJoinTraining"></a>
+                    <span class="name">
+                        <span ><b>checkJoinTraining</b></span>
+                        <a href="#checkJoinTraining"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkJoinTraining()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/services/externalid-verification.service.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkQuizContent"></a>
+                    <span class="name">
+                        <span ><b>checkQuizContent</b></span>
+                        <a href="#checkQuizContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkQuizContent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="113"
+                            class="link-to-prism">src/services/externalid-verification.service.ts:113</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resetNavigationSource"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>resetNavigationSource</b></span>
+                        <a href="#resetNavigationSource"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>resetNavigationSource()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/services/externalid-verification.service.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showExternalIdVerificationPopup"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>showExternalIdVerificationPopup</b></span>
+                        <a href="#showExternalIdVerificationPopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showExternalIdVerificationPopup()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/services/externalid-verification.service.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCustodianUser$"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>isCustodianUser$</b></span>
+                        <a href="#isCustodianUser$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;boolean&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/services/externalid-verification.service.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Router } from &#x27;@angular/router&#x27;;
+import { Injectable, Inject } from &#x27;@angular/core&#x27;;
+import { ProfileService, SharedPreferences } from &#x27;sunbird-sdk&#x27;;
+import { AppGlobalService } from &#x27;./app-global-service.service&#x27;;
+import { Observable } from &#x27;rxjs&#x27;;
+import { PopoverController } from &#x27;@ionic/angular&#x27;;
+import { FormAndFrameworkUtilService } from &#x27;./formandframeworkutil.service&#x27;;
+import {
+    TeacherIdVerificationComponent
+} from &#x27;@app/app/components/popups/teacher-id-verification-popup/teacher-id-verification-popup.component&#x27;;
+import {PreferenceKey, ProfileConstants} from &#x27;@app/app/app.constant&#x27;;
+import { map } from &#x27;rxjs/operators&#x27;;
+import { SplaschreenDeeplinkActionHandlerDelegate } from &#x27;./sunbird-splashscreen/splaschreen-deeplink-action-handler-delegate&#x27;;
+import { CommonUtilService } from &#x27;./common-util.service&#x27;;
+import { LocalCourseService } from &#x27;./local-course.service&#x27;;
+
+@Injectable()
+export class ExternalIdVerificationService {
+    public isCustodianUser$: Observable&lt;boolean&gt;;
+
+    constructor(
+        @Inject(&#x27;PROFILE_SERVICE&#x27;) private profileService: ProfileService,
+        @Inject(&#x27;SHARED_PREFERENCES&#x27;) private preferences: SharedPreferences,
+        private appGlobalService: AppGlobalService,
+        private popoverCtrl: PopoverController,
+        private formAndFrameworkUtilService: FormAndFrameworkUtilService,
+        private splaschreenDeeplinkActionHandlerDelegate: SplaschreenDeeplinkActionHandlerDelegate,
+        private commonUtilService: CommonUtilService,
+        private localCourseService: LocalCourseService,
+        private router: Router
+    ) {
+        this.isCustodianUser$ &#x3D; this.profileService.isDefaultChannelProfile().pipe(
+            map((isDefaultChannelProfile) &#x3D;&gt; isDefaultChannelProfile) as any
+        );
+    }
+
+    async showExternalIdVerificationPopup() {
+        this.appGlobalService.closeSigninOnboardingLoader();
+        if (this.appGlobalService.redirectUrlAfterLogin) {
+            this.router.navigate(
+                [this.appGlobalService.redirectUrlAfterLogin],
+                {
+                    state: {
+                        fromRegistrationFlow: true
+                    },
+                    replaceUrl: true
+                }
+            );
+            this.appGlobalService.redirectUrlAfterLogin &#x3D; &#x27;&#x27;;
+        }
+        if (await this.checkQuizContent()) {
+            await this.resetNavigationSource();
+            return;
+        }
+        const profileSession &#x3D; await this.profileService.getActiveProfileSession().toPromise();
+        if (profileSession.managedSession) {
+            await this.resetNavigationSource();
+            return;
+        }
+        const session &#x3D; await this.appGlobalService.authService.getSession().toPromise();
+        if (!this.commonUtilService.networkInfo.isNetworkAvailable || !session) {
+            await this.resetNavigationSource();
+            return;
+        }
+        const isCustodianUser &#x3D; await this.isCustodianUser$.toPromise();
+        const serverProfile &#x3D; await this.profileService.getServerProfilesDetails({
+            userId: session.userToken,
+            requiredFields: ProfileConstants.REQUIRED_FIELDS,
+        }).toPromise();
+        if (isCustodianUser) {
+            await this.profileService.getUserFeed().toPromise()
+                .then(async (userFeed: any) &#x3D;&gt; {
+                        if (userFeed[0] &amp;&amp; (userFeed[0].category).toLowerCase() &#x3D;&#x3D;&#x3D; &#x27;orgmigrationaction&#x27;) {
+                            let popupLabels &#x3D; {};
+                            let tenantSpecificMessages: any;
+                            if (userFeed[0].data.prospectChannelsIds.length &gt; 1 || !userFeed[0].data.prospectChannelsIds[0].id) {
+                                 tenantSpecificMessages &#x3D; await this.formAndFrameworkUtilService.
+                                getTenantSpecificMessages(serverProfile.rootOrg.rootOrgId);
+                            } else {
+                                tenantSpecificMessages &#x3D; await this.formAndFrameworkUtilService.
+                                getTenantSpecificMessages(userFeed[0].data.prospectChannelsIds[0].id);
+                            }
+                            if (tenantSpecificMessages &amp;&amp; tenantSpecificMessages.length &amp;&amp; tenantSpecificMessages[0].range
+                                &amp;&amp; tenantSpecificMessages[0].range.length) {
+                                popupLabels &#x3D; tenantSpecificMessages[0].range[0];
+                            }
+                            const popover &#x3D; await this.popoverCtrl.create({
+                                component: TeacherIdVerificationComponent,
+                                backdropDismiss: false,
+                                cssClass: &#x27;popover-alert popoverPosition&#x27;,
+                                componentProps: {
+                                    userFeed: userFeed[0], tenantMessages: popupLabels
+                                }
+                            });
+                            await popover.present();
+                        }
+                })
+                .catch((error) &#x3D;&gt; {
+                    console.log(&#x27;error&#x27;, error);
+                });
+        }
+        if (await this.checkJoinTraining()) {
+            await this.resetNavigationSource();
+            return;
+        }
+        const source &#x3D; await this.preferences.getString(PreferenceKey.NAVIGATION_SOURCE).toPromise();
+        if (source &#x3D;&#x3D;&#x3D; &#x27;courses&#x27;) {
+            this.router.navigateByUrl(&#x27;tabs/courses&#x27;);
+        }
+        await this.resetNavigationSource();
+    }
+
+    checkQuizContent(): Promise&lt;boolean&gt; {
+        this.appGlobalService.isSignInOnboardingCompleted &#x3D; true;
+        return new Promise&lt;boolean&gt;(async (resolve) &#x3D;&gt; {
+            const limitedSharingContentId &#x3D; this.appGlobalService.limitedShareQuizContent;
+            if (limitedSharingContentId) {
+                this.appGlobalService.limitedShareQuizContent &#x3D; null;
+                this.splaschreenDeeplinkActionHandlerDelegate.navigateContent(limitedSharingContentId);
+                resolve(true);
+            } else {
+                resolve(false);
+            }
+        });
+    }
+
+    checkJoinTraining() {
+        if (this.appGlobalService.isJoinTraningOnboardingFlow) {
+            return new Promise&lt;boolean&gt;(async (resolve) &#x3D;&gt; {
+                await this.localCourseService.checkCourseRedirect();
+                this.appGlobalService.isJoinTraningOnboardingFlow &#x3D; false;
+                resolve(true);
+            });
+        }
+    }
+
+    private async resetNavigationSource() {
+        await this.preferences.putString(PreferenceKey.NAVIGATION_SOURCE, &#x27;&#x27;).toPromise();
+    }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'ExternalIdVerificationService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

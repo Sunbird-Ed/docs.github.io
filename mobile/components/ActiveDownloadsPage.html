@@ -1,0 +1,2049 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  ActiveDownloadsPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/active-downloads/active-downloads.page.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+                    <code><a href="../interfaces/ActiveDownloadsInterface.html" target="_self" >ActiveDownloadsInterface</a></code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-active-downloads</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./active-downloads.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./active-downloads.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#_appHeaderSubscription" >_appHeaderSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#_downloadProgressSubscription" >_downloadProgressSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_headerConfig" >_headerConfig</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#_networkSubscription" >_networkSubscription</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_toast" >_toast</a>
+                            </li>
+                            <li>
+                                <a href="#activeDownloadRequests$" >activeDownloadRequests$</a>
+                            </li>
+                            <li>
+                                <a href="#defaultImg" >defaultImg</a>
+                            </li>
+                            <li>
+                                <a href="#downloadProgressMap" >downloadProgressMap</a>
+                            </li>
+                            <li>
+                                <a href="#networkFlag" >networkFlag</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#storageDestination" >storageDestination</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cancelAllDownloads" >cancelAllDownloads</a>
+                            </li>
+                            <li>
+                                <a href="#cancelDownload" >cancelDownload</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#checkAvailableSpace" >checkAvailableSpace</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#fetchStorageDestination" >fetchStorageDestination</a>
+                            </li>
+                            <li>
+                                <a href="#getContentDownloadProgress" >getContentDownloadProgress</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleHeaderEvents" >handleHeaderEvents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initAppHeader" >initAppHeader</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initDownloadProgress" >initDownloadProgress</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initNetworkDetection" >initNetworkDetection</a>
+                            </li>
+                            <li>
+                                <a href="#ionViewDidLoad" >ionViewDidLoad</a>
+                            </li>
+                            <li>
+                                <a href="#ionViewWillEnter" >ionViewWillEnter</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#presentPopupForLessStorageSpace" >presentPopupForLessStorageSpace</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#presentPopupForOffline" >presentPopupForOffline</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#showCancelPopUp" >showCancelPopUp</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(popoverCtrl: PopoverController, changeDetectionRef: ChangeDetectorRef, headerService: <a href="../injectables/AppHeaderService.html" target="_self">AppHeaderService</a>, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, location: <a href="../classes/Location.html" target="_self">Location</a>, downloadService: DownloadService, eventsBusService: <a href="../injectables/Events.html" target="_self">EventsBusService</a>, storageService: StorageService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:45</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>popoverCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>PopoverController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>changeDetectionRef</td>
+                                                  
+                                                        <td>
+                                                                    <code>ChangeDetectorRef</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>headerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppHeaderService.html" target="_self" >AppHeaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Location.html" target="_self" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>downloadService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DownloadService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>eventsBusService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >EventsBusService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>storageService</td>
+                                                  
+                                                        <td>
+                                                                    <code>StorageService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelAllDownloads"></a>
+                    <span class="name">
+                        <span ><b>cancelAllDownloads</b></span>
+                        <a href="#cancelAllDownloads"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cancelAllDownloads()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="101"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:101</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancelDownload"></a>
+                    <span class="name">
+                        <span ><b>cancelDownload</b></span>
+                        <a href="#cancelDownload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cancelDownload(downloadRequest: DownloadRequest)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="115"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:115</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>downloadRequest</td>
+                                    <td>
+                                            <code>DownloadRequest</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkAvailableSpace"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>checkAvailableSpace</b></span>
+                        <a href="#checkAvailableSpace"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkAvailableSpace()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="264"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:264</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchStorageDestination"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>fetchStorageDestination</b></span>
+                        <a href="#fetchStorageDestination"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchStorageDestination()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="244"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:244</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getContentDownloadProgress"></a>
+                    <span class="name">
+                        <span ><b>getContentDownloadProgress</b></span>
+                        <a href="#getContentDownloadProgress"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getContentDownloadProgress(contentId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contentId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleHeaderEvents"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>handleHeaderEvents</b></span>
+                        <a href="#handleHeaderEvents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleHeaderEvents(event: literal type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initAppHeader"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initAppHeader</b></span>
+                        <a href="#initAppHeader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initAppHeader()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initDownloadProgress"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initDownloadProgress</b></span>
+                        <a href="#initDownloadProgress"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initDownloadProgress()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initNetworkDetection"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initNetworkDetection</b></span>
+                        <a href="#initNetworkDetection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initNetworkDetection()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="160"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:160</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewDidLoad"></a>
+                    <span class="name">
+                        <span ><b>ionViewDidLoad</b></span>
+                        <a href="#ionViewDidLoad"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewDidLoad()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="95"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:95</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillEnter"></a>
+                    <span class="name">
+                        <span ><b>ionViewWillEnter</b></span>
+                        <a href="#ionViewWillEnter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewWillEnter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presentPopupForLessStorageSpace"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>presentPopupForLessStorageSpace</b></span>
+                        <a href="#presentPopupForLessStorageSpace"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presentPopupForLessStorageSpace()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="248"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:248</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presentPopupForOffline"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>presentPopupForOffline</b></span>
+                        <a href="#presentPopupForOffline"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presentPopupForOffline()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="232"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:232</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showCancelPopUp"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>showCancelPopUp</b></span>
+                        <a href="#showCancelPopUp"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showCancelPopUp(downloadRequest?: DownloadRequest)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="176"
+                            class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:176</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>downloadRequest</td>
+                                    <td>
+                                            <code>DownloadRequest</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_appHeaderSubscription"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>_appHeaderSubscription</b></span>
+                        <a href="#_appHeaderSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_downloadProgressSubscription"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>_downloadProgressSubscription</b></span>
+                        <a href="#_downloadProgressSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_headerConfig"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_headerConfig</b></span>
+                        <a href="#_headerConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    showHeader: true,
+    showBurgerMenu: false,
+    actionButtons: [] as string[]
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_networkSubscription"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>_networkSubscription</b></span>
+                        <a href="#_networkSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_toast"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>_toast</b></span>
+                        <a href="#_toast"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="activeDownloadRequests$"></a>
+                    <span class="name">
+                        <span ><b>activeDownloadRequests$</b></span>
+                        <a href="#activeDownloadRequests$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Observable&lt;ContentDownloadRequest[]&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defaultImg"></a>
+                    <span class="name">
+                        <span ><b>defaultImg</b></span>
+                        <a href="#defaultImg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.commonUtilService.convertFileSrc(&#x27;assets/imgs/ic_launcher.png&#x27;)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="downloadProgressMap"></a>
+                    <span class="name">
+                        <span ><b>downloadProgressMap</b></span>
+                        <a href="#downloadProgressMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="networkFlag"></a>
+                    <span class="name">
+                        <span ><b>networkFlag</b></span>
+                        <a href="#networkFlag"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="storageDestination"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>storageDestination</b></span>
+                        <a href="#storageDestination"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/active-downloads/active-downloads.page.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit } from &#x27;@angular/core&#x27;;
+import { PopoverController } from &#x27;@ionic/angular&#x27;;
+import { ActiveDownloadsInterface } from &#x27;./active-downloads.interface&#x27;;
+import { Observable, Subscription } from &#x27;rxjs&#x27;;
+import { InteractSubtype, Environment, PageId, InteractType } from &#x27;../../services/telemetry-constants&#x27;;
+import {
+  ContentDownloadRequest,
+  DownloadEventType,
+  DownloadProgress,
+  DownloadRequest,
+  DownloadService,
+  EventNamespace,
+  EventsBusService,
+  StorageService,
+  StorageDestination
+} from &#x27;sunbird-sdk&#x27;;
+import { Location } from &#x27;@angular/common&#x27;;
+import { AppHeaderService, CommonUtilService, TelemetryGeneratorService } from &#x27;../../services/index&#x27;;
+import { SbNoNetworkPopupComponent } from &#x27;../components/popups/sb-no-network-popup/sb-no-network-popup.component&#x27;;
+import { SbPopoverComponent } from &#x27;../components/popups/sb-popover/sb-popover.component&#x27;;
+import { featureIdMap } from &#x27;@app/feature-id-map&#x27;;
+import { tap, filter, take } from &#x27;rxjs/operators&#x27;;
+
+@Component({
+  selector: &#x27;app-active-downloads&#x27;,
+  templateUrl: &#x27;./active-downloads.page.html&#x27;,
+  styleUrls: [&#x27;./active-downloads.page.scss&#x27;],
+})
+export class ActiveDownloadsPage implements OnInit, OnDestroy, ActiveDownloadsInterface {
+
+  downloadProgressMap: { [key: string]: number };
+  activeDownloadRequests$: Observable&lt;ContentDownloadRequest[]&gt;;
+  defaultImg &#x3D; this.commonUtilService.convertFileSrc(&#x27;assets/imgs/ic_launcher.png&#x27;);
+
+  private _appHeaderSubscription?: Subscription;
+  private _downloadProgressSubscription?: Subscription;
+  private _networkSubscription?: Subscription;
+  private _headerConfig &#x3D; {
+    showHeader: true,
+    showBurgerMenu: false,
+    actionButtons: [] as string[]
+  };
+  private _toast: any;
+  private storageDestination: any;
+  networkFlag: boolean;
+
+  constructor(
+    private popoverCtrl: PopoverController,
+    private changeDetectionRef: ChangeDetectorRef,
+    private headerService: AppHeaderService,
+    private commonUtilService: CommonUtilService,
+    private telemetryGeneratorService: TelemetryGeneratorService,
+    private location: Location,
+    @Inject(&#x27;DOWNLOAD_SERVICE&#x27;) private downloadService: DownloadService,
+    @Inject(&#x27;EVENTS_BUS_SERVICE&#x27;) private eventsBusService: EventsBusService,
+    @Inject(&#x27;STORAGE_SERVICE&#x27;) private storageService: StorageService
+  ) {
+    this.downloadProgressMap &#x3D; {};
+    // @ts-ignore
+    this.activeDownloadRequests$ &#x3D; this.downloadService.getActiveDownloadRequests().pipe(
+      tap(() &#x3D;&gt; this.changeDetectionRef.detectChanges())
+    );
+  }
+
+  ngOnInit() {
+    this.initDownloadProgress();
+    this.initAppHeader();
+    this.initNetworkDetection();
+    this.telemetryGeneratorService.generatePageViewTelemetry(
+      PageId.ACTIVE_DOWNLOADS,
+      Environment.DOWNLOADS, &#x27;&#x27;);
+  }
+
+  ngOnDestroy() {
+    if (this._downloadProgressSubscription) {
+      this._downloadProgressSubscription.unsubscribe();
+    }
+    if (this._appHeaderSubscription) {
+      this._appHeaderSubscription.unsubscribe();
+    }
+    if (this._networkSubscription) {
+      this._networkSubscription.unsubscribe();
+      if (this._toast) {
+        this._toast.dismiss();
+        this._toast &#x3D; undefined;
+      }
+    }
+  }
+
+  ionViewWillEnter() {
+    this.fetchStorageDestination();
+    this.checkAvailableSpace();
+  }
+
+  ionViewDidLoad() {
+    this.telemetryGeneratorService.generatePageViewTelemetry(
+      PageId.ACTIVE_DOWNLOADS,
+      Environment.DOWNLOADS, &#x27;&#x27;);
+  }
+
+  cancelAllDownloads(): void {
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.DOWNLOAD_CANCEL_ALL_CLICKED,
+      Environment.DOWNLOADS,
+      PageId.ACTIVE_DOWNLOADS,
+      undefined,
+      undefined,
+      undefined,
+      featureIdMap.downloadManager.ACTIVE_DOWNLOADS_CANCEL
+    );
+    this.showCancelPopUp();
+  }
+
+  cancelDownload(downloadRequest: DownloadRequest): void {
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.DOWNLOAD_CANCEL_CLICKED,
+      Environment.DOWNLOADS,
+      PageId.ACTIVE_DOWNLOADS,
+      undefined,
+      undefined,
+      undefined,
+      featureIdMap.downloadManager.ACTIVE_DOWNLOADS_CANCEL
+    );
+    this.showCancelPopUp(downloadRequest);
+  }
+
+  getContentDownloadProgress(contentId: string): number {
+    return this.downloadProgressMap[contentId] &amp;&amp; (this.downloadProgressMap[contentId] &gt; -1) ? this.downloadProgressMap[contentId] : 0;
+  }
+
+  private initDownloadProgress(): void {
+    this._downloadProgressSubscription &#x3D; this.eventsBusService.events(EventNamespace.DOWNLOADS).pipe(
+      filter((event) &#x3D;&gt; event.type &#x3D;&#x3D;&#x3D; DownloadEventType.PROGRESS),
+      tap((event) &#x3D;&gt; {
+        const downloadEvent &#x3D; event as DownloadProgress;
+        this.downloadProgressMap[downloadEvent.payload.identifier] &#x3D; downloadEvent.payload.progress;
+        this.changeDetectionRef.detectChanges();
+      })
+    ).subscribe();
+  }
+
+  private initAppHeader() {
+    this._appHeaderSubscription &#x3D; this.headerService.headerEventEmitted$.subscribe(eventName &#x3D;&gt; {
+      this.handleHeaderEvents(eventName);
+    });
+    this._headerConfig &#x3D; this.headerService.getDefaultPageConfig();
+    this._headerConfig.actionButtons &#x3D; [];
+    this._headerConfig.showBurgerMenu &#x3D; false;
+    this.headerService.updatePageConfig(this._headerConfig);
+  }
+
+  private handleHeaderEvents(event: { name: string }) {
+    if(event.name &#x3D;&#x3D;&#x27;back&#x27;) {
+        this.location.back();
+    }
+  }
+
+  private initNetworkDetection() {
+    this.networkFlag &#x3D; this.commonUtilService.networkInfo.isNetworkAvailable;
+    this._networkSubscription &#x3D; this.commonUtilService.networkAvailability$.subscribe(async (available: boolean) &#x3D;&gt; {
+      if (this.networkFlag !&#x3D;&#x3D; available) {
+        if (this._toast) {
+          await this._toast.dismiss();
+          this._toast &#x3D; undefined;
+        }
+        if (!available) {
+          this.presentPopupForOffline();
+        }
+      }
+      this.networkFlag &#x3D; available;
+    });
+  }
+
+  private async showCancelPopUp(downloadRequest?: DownloadRequest) {
+    this.telemetryGeneratorService.generatePageViewTelemetry(
+      downloadRequest ? PageId.SINGLE_CANCEL_CONFIRMATION_POPUP : PageId.BULK_CANCEL_CONFIRMATION_POPUP,
+      Environment.DOWNLOADS);
+    const popupMessage &#x3D; downloadRequest ? &#x27;CANCEL_DOWNLOAD_MESSAGE&#x27; : &#x27;CANCEL_ALL_DOWNLOAD_MESSAGE&#x27;;
+
+
+    const confirm &#x3D; await this.popoverCtrl.create({
+      component: SbPopoverComponent,
+      componentProps: {
+        sbPopoverHeading: this.commonUtilService.translateMessage(&#x27;CANCEL_DOWNLOAD_TITLE&#x27;),
+        sbPopoverMainTitle: this.commonUtilService.translateMessage(popupMessage),
+        actionsButtons: [
+          {
+            btntext: this.commonUtilService.translateMessage(&#x27;CANCEL_DOWNLOAD&#x27;),
+            btnClass: &#x27;popover-color&#x27;
+          },
+        ],
+        icon: null,
+        // metaInfo: this.content.contentData.name,
+      },
+      cssClass: &#x27;sb-popover danger dw-active-downloads-popover&#x27;,
+    });
+
+    await confirm.present();
+
+    const loader &#x3D; await this.commonUtilService.getLoader();
+
+    const response &#x3D; await confirm.onDidDismiss();
+    if (response.data) {
+      let valuesMap;
+      if (downloadRequest) {
+        valuesMap &#x3D; {
+          count: 1
+        };
+      } else {
+        valuesMap &#x3D; {
+          count: (await this.activeDownloadRequests$.pipe(
+            take(1)).toPromise()).length
+        };
+      }
+      this.telemetryGeneratorService.generateInteractTelemetry(
+        InteractType.TOUCH,
+        InteractSubtype.DOWNLOAD_CANCEL_CLICKED,
+        Environment.DOWNLOADS,
+        PageId.ACTIVE_DOWNLOADS, undefined, valuesMap);
+      loader.present().then(() &#x3D;&gt; {
+        return downloadRequest ?
+          this.downloadService.cancel(downloadRequest).toPromise() :
+          this.downloadService.cancelAll().toPromise();
+      }).then(() &#x3D;&gt; {
+        return loader.dismiss();
+      });
+    }
+  }
+
+  private async presentPopupForOffline() {
+    this._toast &#x3D; await this.popoverCtrl.create({
+      component: SbNoNetworkPopupComponent,
+      componentProps: {
+        sbPopoverHeading: this.commonUtilService.translateMessage(&#x27;INTERNET_CONNECTIVITY_NEEDED&#x27;),
+        sbPopoverMessage: this.commonUtilService.translateMessage(&#x27;OFFLINE_DOWNLOAD_MESSAGE&#x27;),
+      },
+      cssClass: &#x27;sb-popover no-network&#x27;,
+    });
+
+    await this._toast.present();
+  }
+  private async fetchStorageDestination() {
+    this.storageDestination &#x3D; await this.storageService.getStorageDestination().toPromise();
+  }
+
+  private async presentPopupForLessStorageSpace() {
+    this._toast &#x3D; await this.popoverCtrl.create({
+      component: SbNoNetworkPopupComponent,
+      componentProps: {
+        sbPopoverHeading: this.commonUtilService.translateMessage(&#x27;INSUFFICIENT_STORAGE&#x27;),
+        sbPopoverMessage: this.storageDestination &#x3D;&#x3D;&#x3D; StorageDestination.INTERNAL_STORAGE ?
+          this.commonUtilService.translateMessage(&#x27;MOVE_FILES_TO_OTHER_DESTINATION&#x27;, this.commonUtilService.translateMessage(&#x27;SD_CARD&#x27;)) :
+          this.commonUtilService.translateMessage(&#x27;MOVE_FILES_TO_OTHER_DESTINATION&#x27;,
+            this.commonUtilService.translateMessage(&#x27;INTERNAL_MEMORY&#x27;)),
+      },
+      cssClass: &#x27;sb-popover no-network&#x27;,
+    });
+
+    await this._toast.present();
+  }
+
+  private checkAvailableSpace() {
+    this.storageService.getStorageDestinationVolumeInfo().pipe(
+      tap((volumeInfo) &#x3D;&gt; {
+        if (volumeInfo.info.availableSize &lt; 209715200) {
+          this.presentPopupForLessStorageSpace();
+        }
+      })
+    ).subscribe();
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content overflow-scroll&#x3D;&quot;true&quot;&gt;
+  &lt;div class&#x3D;&quot;sb-view-all-container&quot;&gt;
+    &lt;div class&#x3D;&quot;sb-view-all-items&quot;&gt;
+      &lt;ion-grid class&#x3D;&quot;ion-no-padding&quot; *ngIf&#x3D;&quot;(activeDownloadRequests$ | async)?.length&quot;&gt;
+        &lt;ion-row&gt;
+          &lt;ion-col class&#x3D;&quot;ad-pt-4&quot; size&#x3D;&quot;9&quot;&gt;
+            &lt;div class&#x3D;&quot;download-page-heading&quot;&gt;
+              &lt;h6&gt;{{&#x27;ACTIVE_DOWNLOADS&#x27; | translate}}&lt;/h6&gt;
+            &lt;/div&gt;
+            &lt;div class&#x3D;&quot;download-page-info&quot;&gt;
+              {{&#x27;DOWNLOADING_CONTENT&#x27; | translate}} : 1/{{(activeDownloadRequests$ | async)?.length}}
+            &lt;/div&gt;
+          &lt;/ion-col&gt;
+          &lt;ion-col class&#x3D;&quot;ion-no-padding&quot; size&#x3D;&quot;3&quot;&gt;
+            &lt;div class&#x3D;&quot;ion-float-right ion-text-center&quot; role&#x3D;&quot;button&quot; (click)&#x3D;&quot;cancelAllDownloads()&quot;&gt;
+              &lt;ion-icon class&#x3D;&quot;download-cancel-icon&quot; name&#x3D;&quot;close&quot;&gt;&lt;/ion-icon&gt;
+              &lt;div class&#x3D;&quot;download-page-info&quot;&gt;{{&#x27;CANCEL_ALL&#x27; | translate}}&lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+      &lt;/ion-grid&gt;
+      &lt;div class&#x3D;&quot;sb-download-all&quot; *ngIf&#x3D;&quot;!(activeDownloadRequests$ | async)?.length&quot;&gt;
+        &lt;div class&#x3D;&quot;sb-view-all-title&quot;&gt;
+          &lt;span class&#x3D;&quot;page-heading&quot;&gt;{{&#x27;ACTIVE_DOWNLOADS&#x27; | translate}}&lt;/span&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;ng-container *ngIf&#x3D;&quot;(activeDownloadRequests$ | async) as activeDownloadRequests&quot;&gt;
+      &lt;div class&#x3D;&quot;img-mt-88&quot; *ngIf&#x3D;&quot;!activeDownloadRequests.length&quot;&gt;
+        &lt;div class&#x3D;&quot;ion-text-center&quot;&gt;
+          &lt;img src&#x3D;&quot;./assets/imgs/no_downloads.png&quot; alt&#x3D;&quot;no_downloads&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;ion-text-center&quot;&gt;
+          &lt;p&gt;
+            &lt;strong&gt;{{ &#x27;NO_DOWNLOADS&#x27; | translate }}&lt;/strong&gt;
+          &lt;/p&gt;
+          &lt;p&gt;{{ &#x27;NO_DOWNLOADS_INFO&#x27; | translate }}&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div *ngIf&#x3D;&quot;activeDownloadRequests.length&quot;
+        class&#x3D;&quot;sb-card-container sb-card-view-all-container ad-pb-88 ad-no-box-shadow&quot;&gt;
+        &lt;div *ngFor&#x3D;&quot;let activeDownload of activeDownloadRequests; let i &#x3D; index&quot;&gt;
+          &lt;ng-container *ngIf&#x3D;&quot;getContentDownloadProgress(activeDownload.identifier) as downloadProgress; else pending&quot;&gt;
+            &lt;ion-row class&#x3D;&quot;ad-border-bottom-1&quot;&gt;
+              &lt;ion-col class&#x3D;&quot;ion-no-padding&quot; size&#x3D;&quot;10&quot;&gt;
+                &lt;div class&#x3D;&quot;sb-card&quot;&gt;
+                  &lt;div start class&#x3D;&quot;img-container&quot;&gt;
+                    &lt;img [src]&#x3D;&quot;commonUtilService.convertFileSrc(activeDownload.contentMeta.appIcon) || defaultImg&quot;
+                      alt&#x3D;&quot;icon&quot;&gt;
+                  &lt;/div&gt;
+                  &lt;div end class&#x3D;&quot;sb-card-details&quot;&gt;
+                    &lt;div class&#x3D;&quot;title&quot;&gt;{{activeDownload?.contentMeta.name}}&lt;/div&gt;
+                    &lt;div class&#x3D;&quot;info grade_ellipsis&quot;&gt;
+                      &lt;span class&#x3D;&quot;class&quot;&gt;{{activeDownload.contentMeta.subject}}&lt;/span&gt;
+                      &lt;span class&#x3D;&quot;separator-dot&quot;&gt;&lt;/span&gt;
+                      &lt;span class&#x3D;&quot;subject&quot;&gt;{{activeDownload.contentMeta.gradeLevel?.join(&#x27;, &#x27;)}}&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;info&quot;&gt;
+                      &lt;ng-container *ngIf&#x3D;&quot;!downloadProgress || downloadProgress &#x3D;&#x3D;&#x3D; -1&quot;&gt;
+                        {{ &#x27;WAITING_TO_DOWNLOAD&#x27; | translate }}
+                      &lt;/ng-container&gt;
+                      &lt;ng-container *ngIf&#x3D;&quot;downloadProgress &gt;&#x3D; 0 &amp;&amp; downloadProgress &lt; 100&quot;&gt;
+                        {{((downloadProgress / 100) * activeDownload.contentMeta.size) | fileSize}} /
+                        {{activeDownload.contentMeta.size | fileSize}}
+                      &lt;/ng-container&gt;
+                      &lt;ng-container *ngIf&#x3D;&quot;downloadProgress &#x3D;&#x3D;&#x3D; 100&quot;&gt;
+                        {{ &#x27;IMPORTING&#x27; | translate }}
+                      &lt;/ng-container&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class&#x3D;&quot;popover-progress-container ad-ml-8&quot; *ngIf&#x3D;&quot;downloadProgress &gt;&#x3D; 0 &amp;&amp; downloadProgress &lt; 100&quot;&gt;
+                  &lt;div [ngStyle]&#x3D;&quot;{&#x27;left&#x27;: downloadProgress + &#x27;%&#x27;}&quot; class&#x3D;&quot;progress-highlight&quot;&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col size&#x3D;&quot;2&quot;&gt;
+                &lt;button *ngIf&#x3D;&quot;downloadProgress !&#x3D;&#x3D; 100&quot;
+                  class&#x3D;&quot;action-btn float-end delete mr-8 ad-action-btn ion-no-margin ion-margin-right&quot;
+                  (click)&#x3D;&quot;cancelDownload(activeDownload)&quot;&gt;
+                  {{&#x27;CANCEL&#x27; | translate}}
+                &lt;/button&gt;
+              &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+          &lt;/ng-container&gt;
+          &lt;ng-template #pending&gt;
+            &lt;ion-row class&#x3D;&quot;ad-border-bottom-1&quot;&gt;
+              &lt;ion-col class&#x3D;&quot;ion-no-padding&quot; size&#x3D;&quot;10&quot;&gt;
+                &lt;div class&#x3D;&quot;sb-card&quot;&gt;
+                  &lt;div start class&#x3D;&quot;img-container&quot;&gt;
+                    &lt;img [src]&#x3D;&quot;commonUtilService.convertFileSrc(activeDownload.contentMeta.appIcon) || defaultImg&quot;
+                      alt&#x3D;&quot;icon&quot;&gt;
+                  &lt;/div&gt;
+                  &lt;div end class&#x3D;&quot;sb-card-details&quot;&gt;
+                    &lt;div class&#x3D;&quot;title&quot;&gt;{{activeDownload?.contentMeta.name}}&lt;/div&gt;
+                    &lt;div class&#x3D;&quot;info grade_ellipsis&quot;&gt;
+                      &lt;span class&#x3D;&quot;class&quot;&gt;{{activeDownload.contentMeta.subject}}&lt;/span&gt;
+                      &lt;span class&#x3D;&quot;separator-dot&quot;&gt;&lt;/span&gt;
+                      &lt;span class&#x3D;&quot;subject&quot;&gt;{{activeDownload.contentMeta.gradeLevel?.join(&#x27;, &#x27;)}}&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;div class&#x3D;&quot;info&quot;&gt;
+                      {{ &#x27;WAITING_TO_DOWNLOAD&#x27; | translate }}
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/ion-col&gt;
+              &lt;ion-col size&#x3D;&quot;2&quot;&gt;
+                &lt;button class&#x3D;&quot;action-btn float-end delete mr-8 ad-action-btn ion-no-margin ion-margin-right&quot;
+                  (click)&#x3D;&quot;cancelDownload(activeDownload)&quot;&gt;
+                  {{&#x27;CANCEL&#x27; | translate}}
+                &lt;/button&gt;
+              &lt;/ion-col&gt;
+            &lt;/ion-row&gt;
+          &lt;/ng-template&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/ng-container&gt;
+  &lt;/div&gt;
+&lt;/ion-content&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./active-downloads.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;src/assets/styles/base/_variables.scss&quot;;
+@import &quot;src/assets/styles/_custom-mixins.scss&quot;;
+@import &quot;src/assets/styles/_variables.scss&quot;;
+
+// :host {
+    .download-page-heading{
+        color: map-get($colors, white);
+        font-size: $font-size-base + 0.125;
+    }
+
+    .download-page-info{
+        color: map-get($colors, white);
+        font-size: $font-size-base - 0.125;
+    }
+
+    .download-cancel-icon{
+        font-size: $font-size-base * 2;
+        color: map-get($colors, white);
+    }
+
+    .ad-pt-4{
+        padding-top: $base-block-space * 0.5 !important;
+    }
+
+    .img-mt-88{
+        margin-top: $base-block-space * 11;
+    }
+
+    .ad-pb-88{
+        padding-bottom: $base-block-space * 11;        
+    }
+
+    .ad-ml-8{
+        margin-left: $base-block-space;
+    }
+
+    .ad-border-bottom-1{
+        border-bottom: 1px solid map-get($colors, light_grayish_red);
+    }
+
+    .ad-no-box-shadow{
+        box-shadow: none;
+    }
+
+    .ad-action-btn{
+        position: absolute;
+        bottom: 0;
+        border-radius: 0px !important;
+        box-shadow: none !important;
+        height: ($base-block-space * 3);
+        border-top-left-radius: 4px !important;
+        border-top-right-radius: 4px !important;
+        text-transform: capitalize;
+        // @include margin(0, 0, 0, ($base-block-space * 1));
+        @include padding(null, ($base-block-space * 1));
+        background-color: $danger-color;
+        color: $white-color;
+
+        .button-inner {
+            font-size: ($font-size-base - 0.125);
+            line-height: 1.063rem;
+            font-weight: 100;
+            font-style: normal;
+            font-stretch: normal;
+            text-align: center;
+            color:$white-color;
+        }
+    }
+    .popover-progress-container{
+        height: ($base-block-space * 0.5);
+        background-color: $primary-800;
+        position: relative;
+        .progress-highlight{
+            position:absolute; 
+            background:$primary-200; 
+            left:20%; 
+            right:0; 
+            top:0; 
+            bottom:0
+        }
+    }
+// }
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content overflow-scroll="true">  <div class="sb-view-all-container">    <div class="sb-view-all-items">      <ion-grid class="ion-no-padding" *ngIf="(activeDownloadRequests$ | async)?.length">        <ion-row>          <ion-col class="ad-pt-4" size="9">            <div class="download-page-heading">              <h6>{{\'ACTIVE_DOWNLOADS\' | translate}}</h6>            </div>            <div class="download-page-info">              {{\'DOWNLOADING_CONTENT\' | translate}} : 1/{{(activeDownloadRequests$ | async)?.length}}            </div>          </ion-col>          <ion-col class="ion-no-padding" size="3">            <div class="ion-float-right ion-text-center" role="button" (click)="cancelAllDownloads()">              <ion-icon class="download-cancel-icon" name="close"></ion-icon>              <div class="download-page-info">{{\'CANCEL_ALL\' | translate}}</div>            </div>          </ion-col>        </ion-row>      </ion-grid>      <div class="sb-download-all" *ngIf="!(activeDownloadRequests$ | async)?.length">        <div class="sb-view-all-title">          <span class="page-heading">{{\'ACTIVE_DOWNLOADS\' | translate}}</span>        </div>      </div>    </div>    <ng-container *ngIf="(activeDownloadRequests$ | async) as activeDownloadRequests">      <div class="img-mt-88" *ngIf="!activeDownloadRequests.length">        <div class="ion-text-center">          <img src="./assets/imgs/no_downloads.png" alt="no_downloads">        </div>        <div class="ion-text-center">          <p>            <strong>{{ \'NO_DOWNLOADS\' | translate }}</strong>          </p>          <p>{{ \'NO_DOWNLOADS_INFO\' | translate }}</p>        </div>      </div>      <div *ngIf="activeDownloadRequests.length"        class="sb-card-container sb-card-view-all-container ad-pb-88 ad-no-box-shadow">        <div *ngFor="let activeDownload of activeDownloadRequests; let i = index">          <ng-container *ngIf="getContentDownloadProgress(activeDownload.identifier) as downloadProgress; else pending">            <ion-row class="ad-border-bottom-1">              <ion-col class="ion-no-padding" size="10">                <div class="sb-card">                  <div start class="img-container">                    <img [src]="commonUtilService.convertFileSrc(activeDownload.contentMeta.appIcon) || defaultImg"                      alt="icon">                  </div>                  <div end class="sb-card-details">                    <div class="title">{{activeDownload?.contentMeta.name}}</div>                    <div class="info grade_ellipsis">                      <span class="class">{{activeDownload.contentMeta.subject}}</span>                      <span class="separator-dot"></span>                      <span class="subject">{{activeDownload.contentMeta.gradeLevel?.join(\', \')}}</span>                    </div>                    <div class="info">                      <ng-container *ngIf="!downloadProgress || downloadProgress === -1">                        {{ \'WAITING_TO_DOWNLOAD\' | translate }}                      </ng-container>                      <ng-container *ngIf="downloadProgress >= 0 && downloadProgress < 100">                        {{((downloadProgress / 100) * activeDownload.contentMeta.size) | fileSize}} /                        {{activeDownload.contentMeta.size | fileSize}}                      </ng-container>                      <ng-container *ngIf="downloadProgress === 100">                        {{ \'IMPORTING\' | translate }}                      </ng-container>                    </div>                  </div>                </div>                <div class="popover-progress-container ad-ml-8" *ngIf="downloadProgress >= 0 && downloadProgress < 100">                  <div [ngStyle]="{\'left\': downloadProgress + \'%\'}" class="progress-highlight">                  </div>                </div>              </ion-col>              <ion-col size="2">                <button *ngIf="downloadProgress !== 100"                  class="action-btn float-end delete mr-8 ad-action-btn ion-no-margin ion-margin-right"                  (click)="cancelDownload(activeDownload)">                  {{\'CANCEL\' | translate}}                </button>              </ion-col>            </ion-row>          </ng-container>          <ng-template #pending>            <ion-row class="ad-border-bottom-1">              <ion-col class="ion-no-padding" size="10">                <div class="sb-card">                  <div start class="img-container">                    <img [src]="commonUtilService.convertFileSrc(activeDownload.contentMeta.appIcon) || defaultImg"                      alt="icon">                  </div>                  <div end class="sb-card-details">                    <div class="title">{{activeDownload?.contentMeta.name}}</div>                    <div class="info grade_ellipsis">                      <span class="class">{{activeDownload.contentMeta.subject}}</span>                      <span class="separator-dot"></span>                      <span class="subject">{{activeDownload.contentMeta.gradeLevel?.join(\', \')}}</span>                    </div>                    <div class="info">                      {{ \'WAITING_TO_DOWNLOAD\' | translate }}                    </div>                  </div>                </div>              </ion-col>              <ion-col size="2">                <button class="action-btn float-end delete mr-8 ad-action-btn ion-no-margin ion-margin-right"                  (click)="cancelDownload(activeDownload)">                  {{\'CANCEL\' | translate}}                </button>              </ion-col>            </ion-row>          </ng-template>        </div>      </div>    </ng-container>  </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'accessDiscussion'},{'name': 'AccordionListComponent', 'selector': 'app-accordion-list'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-id-popup'},{'name': 'AcknowledgeResponseComponent', 'selector': 'acknowledge-response'},{'name': 'ActiveDownloadsPage', 'selector': 'app-active-downloads'},{'name': 'ActivityDashboardPage', 'selector': 'activity-dashboard'},{'name': 'ActivityDetailsPage', 'selector': 'app-activity-details'},{'name': 'ActivityTocPage', 'selector': 'activity-toc'},{'name': 'AddActivityToGroupComponent', 'selector': 'add-activity-to-group'},{'name': 'AddActivityToGroupPage', 'selector': 'add-activity-to-group'},{'name': 'AddEntityComponent', 'selector': 'app-add-entity'},{'name': 'AddFilePage', 'selector': 'app-add-file'},{'name': 'AddLinkModalComponent', 'selector': 'app-add-link-modal'},{'name': 'AddMemberToGroupPage', 'selector': 'app-add-member-to-group'},{'name': 'AddProgramsComponent', 'selector': 'app-add-programs'},{'name': 'AdminHomePage', 'selector': 'app-admin-home'},{'name': 'AllEvidenceListComponent', 'selector': 'app-all-evidence-list'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationHeaderComponent', 'selector': 'app-application-header'},{'name': 'ApplicationHeaderKebabMenuComponent', 'selector': 'app-application-header-kebab-menu'},{'name': 'AppRatingAlertComponent', 'selector': 'app-rating-alert'},{'name': 'AttachmentCardComponent', 'selector': 'app-attachment-card'},{'name': 'AttachmentComponent', 'selector': 'attachments'},{'name': 'AttachmentListingPage', 'selector': 'app-attachment-listing'},{'name': 'AttachmentListsComponent', 'selector': 'app-attachment-lists'},{'name': 'BarChartComponent', 'selector': 'bar-chart'},{'name': 'CategoriesEditPage', 'selector': 'app-categories-edit'},{'name': 'CategoryListPage', 'selector': 'app-category-list-page'},{'name': 'CategorySelectComponent', 'selector': 'app-category-select'},{'name': 'CertificateVerificationPopoverComponent', 'selector': 'app-certificate-verification-popover'},{'name': 'CertificateViewPage', 'selector': 'app-certificate-view'},{'name': 'ChapterDetailsPage', 'selector': 'app-chapter-details'},{'name': 'CollectionActionsComponent', 'selector': 'collection-acions'},{'name': 'CollectionChildComponent', 'selector': 'app-collection-child'},{'name': 'CollectionDetailEtbPage', 'selector': 'app-collection-detail-etb'},{'name': 'CommonFormsComponent', 'selector': 'app-common-forms'},{'name': 'CommonHeaderComponent', 'selector': 'app-common-header'},{'name': 'ConfirmAlertComponent', 'selector': 'app-confirm-alert'},{'name': 'ConsentPiiPopupComponent', 'selector': 'app-consent-pii-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentDetailsPage', 'selector': 'app-content-details'},{'name': 'ContentRatingAlertComponent', 'selector': 'app-content-rating-alert'},{'name': 'ContentViewerComponent', 'selector': 'content-viewer'},{'name': 'CopyTraceIdPopoverComponent', 'selector': 'app-copy-trace-id-popover'},{'name': 'CourseBatchesPage', 'selector': 'app-course-batches'},{'name': 'CourseCompletionPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'CoursesPage', 'selector': 'app-courses'},{'name': 'CreateEditGroupPage', 'selector': 'app-create-edit-group'},{'name': 'CreateProjectPage', 'selector': 'app-create-project'},{'name': 'CreateTaskComponent', 'selector': 'app-create-task'},{'name': 'CreateTaskFormComponent', 'selector': 'app-create-task-form'},{'name': 'CurriculumCoursesPage', 'selector': 'app-curriculum-courses'},{'name': 'DashboardComponent', 'selector': 'dashboard-component'},{'name': 'DataSyncComponent', 'selector': 'app-data-sync'},{'name': 'DateTypeInputComponent', 'selector': 'app-date-type-input'},{'name': 'DeeplinkRedirectComponent', 'selector': 'app-deeplink-redirect'},{'name': 'DetailCardComponent', 'selector': 'app-detail-card'},{'name': 'DialogPopupComponent', 'selector': 'app-dialog-popup'},{'name': 'DiscoverComponent', 'selector': 'app-discover'},{'name': 'DistrictMappingPage', 'selector': 'app-district-mapping'},{'name': 'DomainEcmLsitingComponent', 'selector': 'app-domain-ecm-lsiting'},{'name': 'DownloadManagerPage', 'selector': 'app-download-manager'},{'name': 'DownloadShareComponent', 'selector': 'download-share'},{'name': 'DownloadsHeaderComponent', 'selector': 'app-downloads-header'},{'name': 'DownloadsTabComponent', 'selector': 'app-downloads-tab'},{'name': 'DownloadTranscriptPopupComponent', 'selector': 'app-download-transcript-popup'},{'name': 'EcmListingPage', 'selector': 'app-ecm-listing'},{'name': 'EditContactDetailsPopupComponent', 'selector': 'app-edit-contact-details-popup'},{'name': 'EditContactVerifyPopupComponent', 'selector': 'app-edit-contact-verify-popup'},{'name': 'EnrolledCourseDetailsPage', 'selector': 'app-enrolled-course-details-page'},{'name': 'EnrollmentDetailsComponent', 'selector': 'app-enrollment-details'},{'name': 'EntityfilterComponent', 'selector': 'app-entityfilter'},{'name': 'EntitySearchLocalComponent', 'selector': 'app-entity-search-local'},{'name': 'ExpansionPanelComponent', 'selector': 'expansion-panel'},{'name': 'ExpansionTableComponent', 'selector': 'expansion-table'},{'name': 'ExploreBooksPage', 'selector': 'app-explore-books'},{'name': 'ExploreBooksSortComponent', 'selector': 'app-explore-books-sort'},{'name': 'FaqHelpPage', 'selector': 'app-faq-help'},{'name': 'FaqReportIssuePage', 'selector': 'app-faq-report-issue'},{'name': 'FilterModalComponent', 'selector': 'app-filter-modal'},{'name': 'FilteroptionComponent', 'selector': 'app-filteroption'},{'name': 'FiltersPage', 'selector': 'app-filters'},{'name': 'FooterButtonsComponent', 'selector': 'app-footer-buttons'},{'name': 'FrameworkSelectionPage', 'selector': 'app-framework-selection'},{'name': 'GraphCircleComponent', 'selector': 'graph-circle'},{'name': 'GroupDetailsPage', 'selector': 'app-group-details'},{'name': 'GroupGuideLinesPopoverComponent', 'selector': 'app-group-guidelines-popover'},{'name': 'GuestEditPage', 'selector': 'app-guest-edit'},{'name': 'GuestProfilePage', 'selector': 'app-guest-profile'},{'name': 'HintComponent', 'selector': 'app-hint'},{'name': 'ImageListingComponent', 'selector': 'app-image-listing'},{'name': 'ImageUploadComponent', 'selector': 'app-image-upload'},{'name': 'ImportPopoverComponent', 'selector': 'app-import-popover'},{'name': 'ImpSuggestionsPage', 'selector': 'app-imp-suggestions'},{'name': 'ItemListCardComponent', 'selector': 'app-item-list-card'},{'name': 'ItemListHeaderComponent', 'selector': 'app-item-list-header'},{'name': 'JoyfulThemePopupComponent', 'selector': 'app-joyful-theme-popup'},{'name': 'LanguageSettingsPage', 'selector': 'page-language-settings'},{'name': 'LearningResourcesPage', 'selector': 'app-learning-resources'},{'name': 'LicenseCardComponentComponent', 'selector': 'app-license-card-component'},{'name': 'LinkLearningResourcesComponent', 'selector': 'app-link-learning-resources'},{'name': 'ManageUserProfilesPage', 'selector': 'app-manage-user-profiles'},{'name': 'MatrixChartComponent', 'selector': 'matrix-chart'},{'name': 'MatrixModalComponent', 'selector': 'app-matrix-modal'},{'name': 'MatrixTypeInputComponent', 'selector': 'app-matrix-type-input'},{'name': 'MetadataActionsComponent', 'selector': 'app-metadata-actions'},{'name': 'MetadataDetailsComponent', 'selector': 'app-metadata-details'},{'name': 'MultipleTypeInputComponent', 'selector': 'app-multiple-type-input'},{'name': 'MyGroupsPage', 'selector': 'app-my-groups'},{'name': 'MyGroupsPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'NewExperiencePopupComponent', 'selector': 'app-new-experience-popup'},{'name': 'NoDataComponent', 'selector': 'app-no-data'},{'name': 'NoDownloadsComponent', 'selector': 'app-no-downloads'},{'name': 'NotificationItemComponent', 'selector': 'app-notification-item'},{'name': 'NotificationPage', 'selector': 'app-notification'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationHomeComponent', 'selector': 'app-observation-home'},{'name': 'ObservationSolutionEntityListingComponent', 'selector': 'app-observation-solution-entity-listing'},{'name': 'ObservationSolutionListingComponent', 'selector': 'app-observation-solution-listing'},{'name': 'ObservationSubmissionComponent', 'selector': 'app-observation-submission'},{'name': 'OtpPage', 'selector': 'app-otp'},{'name': 'OverflowMenuComponent', 'selector': 'app-overflow-menu'},{'name': 'PageFilterOptionsPage', 'selector': 'app-page-filter-options'},{'name': 'PageFilterPage', 'selector': 'app-page-filter'},{'name': 'PageQuestionsComponent', 'selector': 'app-page-questions'},{'name': 'PbHorizontalComponent', 'selector': 'app-pb-horizontal'},{'name': 'PercentageColumnChartsComponent', 'selector': 'percentage-column-charts'},{'name': 'PermissionComponent', 'selector': 'app-permission'},{'name': 'PersonalDetailsEditPage', 'selector': 'app-personal-details-edit'},{'name': 'PieChartComponent', 'selector': 'pie-chart'},{'name': 'PlayerPage', 'selector': 'app-player'},{'name': 'PopoverComponent', 'selector': 'app-popover'},{'name': 'PrivacyPolicyAndTCComponent', 'selector': 'app-privacy-policy-and-tc'},{'name': 'ProfileAvatarComponent', 'selector': 'app-profile-avatar'},{'name': 'ProfileNameConfirmationPopoverComponent', 'selector': 'app-profile-name-confirmation-popover'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfileSettingsPage', 'selector': 'app-profile-settings'},{'name': 'ProgramListingComponent', 'selector': 'app-program-listing'},{'name': 'ProgressBarComponent', 'selector': 'progress-bar'},{'name': 'ProjectDetailsCardComponent', 'selector': 'app-project-details-card'},{'name': 'ProjectDetailsComponent', 'selector': 'app-project-details'},{'name': 'ProjectEditPage', 'selector': 'app-project-edit'},{'name': 'ProjectListingComponent', 'selector': 'app-project-listing'},{'name': 'ProjectMetadataCardComponent', 'selector': 'app-project-metadata-card'},{'name': 'ProjectOperationPage', 'selector': 'app-project-operation'},{'name': 'ProjectReportComponent', 'selector': 'app-project-report'},{'name': 'ProjectTaskListComponent', 'selector': 'app-project-task-list'},{'name': 'ProjectTemplatePage', 'selector': 'app-project-template'},{'name': 'ProjectTemplateviewPage', 'selector': 'app-project-templateview'},{'name': 'QrcoderesultPage', 'selector': 'app-qrcoderesult'},{'name': 'QRScannerAlert', 'selector': 'app-qrscanner-alert'},{'name': 'QrScannerIOSComponent', 'selector': 'app-qr-scanner-ios'},{'name': 'QuestionHeadingComponent', 'selector': 'app-question-heading'},{'name': 'QuestionMapModalComponent', 'selector': 'app-question-map-modal'},{'name': 'QuestionnairePage', 'selector': 'app-questionnaire'},{'name': 'RadioTypeInputComponent', 'selector': 'app-radio-type-input'},{'name': 'RelevantContentCardComponent', 'selector': 'app-relevant-content-card'},{'name': 'RelevantContentsPage', 'selector': 'app-relevant-contents'},{'name': 'RemarksComponent', 'selector': 'app-remarks'},{'name': 'RemarksModalComponent', 'selector': 'app-remarks-modal'},{'name': 'ReportListComponent', 'selector': 'app-report-list'},{'name': 'ReportModalFilter', 'selector': 'report-modal-filter'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'ReportsListingComponent', 'selector': 'app-reports-listing'},{'name': 'ReportsTextComponent', 'selector': 'reports-text'},{'name': 'ResourcesComponent', 'selector': 'app-resources'},{'name': 'SbAppSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbDownloadPopupComponent', 'selector': 'app-sb-download-popup'},{'name': 'SbGenericFormPopoverComponent', 'selector': 'app-sb-generic-form-popover'},{'name': 'SbGenericPopoverComponent', 'selector': 'app-sb-generic-popover'},{'name': 'SbInsufficientStoragePopupComponent', 'selector': 'sb-insufficient-storage-popup'},{'name': 'SbNoNetworkPopupComponent', 'selector': 'sb-no-network-popup'},{'name': 'SbPopoverComponent', 'selector': 'sb-popover'},{'name': 'SbPreferencePopupComponent', 'selector': 'app-sb-preferences-popup'},{'name': 'SbProgressLoaderPage', 'selector': 'app-sb-progress-loader'},{'name': 'SbSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbSubjectListPopupComponent', 'selector': 'app-sb-subject-list-popup'},{'name': 'SbTutorialPopupComponent', 'selector': 'app-sb-tutorial-popup'},{'name': 'ScatterChartComponent', 'selector': 'scatter-chart'},{'name': 'SearchFilterPage', 'selector': 'app-search-filter.page'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SectionListingPage', 'selector': 'app-section-listing'},{'name': 'SelfDeclaredTeacherEditPage', 'selector': 'app-self-declared-teacher-edit'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'ShowCertificateComponent', 'selector': 'app-show-certificate-component'},{'name': 'ShowVendorAppsComponent', 'selector': 'show-vendor-apps'},{'name': 'SignInCardComponent', 'selector': 'app-sign-in-card'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'SignupBasicInfoPage', 'selector': 'app-signup-basic-info'},{'name': 'SignupEmailPasswordPage', 'selector': 'app-signup-email-password'},{'name': 'SkeletonItemComponent', 'selector': 'app-skeleton-item'},{'name': 'SliderTypeInputComponent', 'selector': 'app-slider-type-input'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'StartImprovementComponent', 'selector': 'app-start-improvement'},{'name': 'StorageSettingsPage', 'selector': 'app-storage-settings'},{'name': 'SubmissionActionsComponent', 'selector': 'app-submission-actions'},{'name': 'SubmissionPreviewPageComponent', 'selector': 'app-submission-preview-page'},{'name': 'SubProfileEditPage', 'selector': 'app-sub-profile-edit'},{'name': 'SupportAcknowledgement', 'selector': 'support-acknowledgement'},{'name': 'SurveyHomeComponent', 'selector': 'app-survey-home'},{'name': 'SurveyMsgComponent', 'selector': 'app-survey-msg'},{'name': 'SyncPage', 'selector': 'app-sync'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TaskCardComponent', 'selector': 'app-task-card'},{'name': 'TaskViewPage', 'selector': 'app-task-view'},{'name': 'TeacherIdVerificationComponent', 'selector': 'app-teacher-id-verification-popup'},{'name': 'TermsAndConditionsPage', 'selector': 'app-terms-and-conditions'},{'name': 'TextBookTocPage', 'selector': 'textbook-toc'},{'name': 'TextbookViewMorePage', 'selector': 'app-textbook-view-more'},{'name': 'TextTypeInputComponent', 'selector': 'app-text-type-input'},{'name': 'ToastNavigationComponent', 'selector': 'app-toast-navigation'},{'name': 'TocHeaderComponent', 'selector': 'app-toc-header'},{'name': 'UpgradePopoverComponent', 'selector': 'app-upgrade-popover'},{'name': 'UserHomePage', 'selector': 'app-user-home'},{'name': 'UserTypeSelectionPage', 'selector': 'page-user-type-selection'},{'name': 'ViewCreditsComponent', 'selector': 'app-view-credits'},{'name': 'ViewDetailComponent', 'selector': 'app-view-detail'},{'name': 'ViewMoreActivityComponent', 'selector': 'app-view-more-activity'},{'name': 'ViewMoreActivityPage', 'selector': 'view-more-activity'},{'name': 'YearOfBirthPopupComponent', 'selector': 'app-year-of-birth-popup'}];
+    var DIRECTIVES = [{'name': 'CustomIonSelectDirective', 'selector': '[appCustomIonSelect]'},{'name': 'HideHeaderFooterDirective', 'selector': '[hide-header-footer]'},{'name': 'ReadMoreDirective', 'selector': '[readMore]'}];
+    var ACTUAL_COMPONENT = {'name': 'ActiveDownloadsPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ActiveDownloadsPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

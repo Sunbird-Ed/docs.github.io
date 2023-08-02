@@ -1,0 +1,1525 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >OnboardingConfigurationService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/onboarding-configuration.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#initialOnboardingScreenName" >initialOnboardingScreenName</a>
+                            </li>
+                            <li>
+                                <a href="#onBoardingConfig" >onBoardingConfig</a>
+                            </li>
+                            <li>
+                                <a href="#tabList" >tabList</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#checkInitialScreen" >checkInitialScreen</a>
+                            </li>
+                            <li>
+                                <a href="#findAllTabs" >findAllTabs</a>
+                            </li>
+                            <li>
+                                <a href="#getAppConfig" >getAppConfig</a>
+                            </li>
+                            <li>
+                                <a href="#getCategoryTranslationKey" >getCategoryTranslationKey</a>
+                            </li>
+                            <li>
+                                <a href="#getOnboardingConfig" >getOnboardingConfig</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#guestOnboardingStep" >guestOnboardingStep</a>
+                            </li>
+                            <li>
+                                <a href="#initializedTabs" >initializedTabs</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#isProfileComplete" >isProfileComplete</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#loggedInUserOnboardingStep" >loggedInUserOnboardingStep</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#setDefaultFrameworkDetails" >setDefaultFrameworkDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#setDistrictMappingDetails" >setDistrictMappingDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#skipOnboardingStep" >skipOnboardingStep</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(sharedPreferences: SharedPreferences, profileService: ProfileService, deviceRegisterService: DeviceRegisterService, events: <a href="../injectables/Events.html" target="_self">Events</a>, segmentationTagService: <a href="../injectables/SegmentationTagService.html" target="_self">SegmentationTagService</a>, container: <a href="../injectables/ContainerService.html" target="_self">ContainerService</a>, appGlobalService: <a href="../injectables/AppGlobalService.html" target="_self">AppGlobalService</a>, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/services/onboarding-configuration.service.ts:58</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>sharedPreferences</td>
+                                                  
+                                                        <td>
+                                                                    <code>SharedPreferences</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ProfileService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>deviceRegisterService</td>
+                                                  
+                                                        <td>
+                                                                    <code>DeviceRegisterService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>events</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >Events</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>segmentationTagService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SegmentationTagService.html" target="_self" >SegmentationTagService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>container</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContainerService.html" target="_self" >ContainerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appGlobalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppGlobalService.html" target="_self" >AppGlobalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkInitialScreen"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>checkInitialScreen</b></span>
+                        <a href="#checkInitialScreen"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkInitialScreen()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="findAllTabs"></a>
+                    <span class="name">
+                        <span ><b>findAllTabs</b></span>
+                        <a href="#findAllTabs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>findAllTabs(theme: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, status: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="248"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:248</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>theme</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>status</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAppConfig"></a>
+                    <span class="name">
+                        <span ><b>getAppConfig</b></span>
+                        <a href="#getAppConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAppConfig()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="261"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:261</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCategoryTranslationKey"></a>
+                    <span class="name">
+                        <span ><b>getCategoryTranslationKey</b></span>
+                        <a href="#getCategoryTranslationKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCategoryTranslationKey(category: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="253"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:253</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>category</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOnboardingConfig"></a>
+                    <span class="name">
+                        <span ><b>getOnboardingConfig</b></span>
+                        <a href="#getOnboardingConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOnboardingConfig(page: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">String</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="257"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:257</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>page</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank" >String</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/OnBoardingConfig.html" target="_self" >OnBoardingConfig</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="guestOnboardingStep"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>guestOnboardingStep</b></span>
+                        <a href="#guestOnboardingStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>guestOnboardingStep(config)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="105"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:105</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>config</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializedTabs"></a>
+                    <span class="name">
+                        <span ><b>initializedTabs</b></span>
+                        <a href="#initializedTabs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializedTabs(theme: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, userType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="230"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:230</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>theme</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isProfileComplete"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>isProfileComplete</b></span>
+                        <a href="#isProfileComplete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isProfileComplete(profile?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loggedInUserOnboardingStep"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>loggedInUserOnboardingStep</b></span>
+                        <a href="#loggedInUserOnboardingStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>loggedInUserOnboardingStep(config)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>config</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setDefaultFrameworkDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>setDefaultFrameworkDetails</b></span>
+                        <a href="#setDefaultFrameworkDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setDefaultFrameworkDetails(defaultVal)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="178"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:178</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>defaultVal</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setDistrictMappingDetails"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>setDistrictMappingDetails</b></span>
+                        <a href="#setDistrictMappingDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setDistrictMappingDetails(config)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="217"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:217</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>config</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="skipOnboardingStep"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>skipOnboardingStep</b></span>
+                        <a href="#skipOnboardingStep"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>skipOnboardingStep(currentPage, isUserLoggedIn)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/services/onboarding-configuration.service.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>currentPage</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>isUserLoggedIn</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialOnboardingScreenName"></a>
+                    <span class="name">
+                        <span ><b>initialOnboardingScreenName</b></span>
+                        <a href="#initialOnboardingScreenName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/services/onboarding-configuration.service.ts:57</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onBoardingConfig"></a>
+                    <span class="name">
+                        <span ><b>onBoardingConfig</b></span>
+                        <a href="#onBoardingConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/services/onboarding-configuration.service.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tabList"></a>
+                    <span class="name">
+                        <span ><b>tabList</b></span>
+                        <a href="#tabList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/services/onboarding-configuration.service.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Inject, Injectable } from &quot;@angular/core&quot;;
+import { OnboardingScreenType, PreferenceKey, SwitchableTabsConfig, ProfileConstants } from &quot;@app/app/app.constant&quot;;
+import { GUEST_TEACHER_TABS, initTabs } from &quot;@app/app/module.service&quot;;
+import { Events } from &#x27;@app/util/events&#x27;;
+import { DeviceRegisterService, Profile, ProfileService, ProfileSource, ProfileType, SharedPreferences } from &#x27;sunbird-sdk&#x27;;
+import { AppGlobalService, CommonUtilService, ContainerService } from &quot;.&quot;;
+import onboarding from &#x27;./../assets/configurations/config.json&#x27;;
+import { SegmentationTagService } from &quot;./segmentation-tag/segmentation-tag.service&quot;;
+
+
+interface OnBoardingConfig {
+    name: string;
+    skip: boolean;
+    default: any;
+    data: Array&lt;any&gt;
+    params: { [key: string]: string }
+}
+
+interface Category {
+    code: string;
+    value: string;
+    translation_key: string;
+}
+
+interface ICON {
+    active: string;
+    inactive: string;
+    disabled?: string;
+  }
+interface TabConfig {
+    name: string;
+    root: string;
+    icon?: ICON;
+    label: string;
+    index: number;
+    isSelected?: boolean;
+    status: string;
+    disabled: boolean;
+    theme: string;
+    userTypeAdmin?: string;
+  }
+  interface Theme {
+    name: string;
+  }
+
+@Injectable({
+    providedIn: &#x27;root&#x27;
+})
+export class OnboardingConfigurationService {
+
+    onBoardingConfig: { 
+        overriddenDefaultChannelId: string,
+        theme: Theme
+        onboarding: Array&lt;OnBoardingConfig&gt; ,
+        categories: Array&lt;Category&gt;
+    };
+    initialOnboardingScreenName;
+    tabList: { tab: Array&lt;TabConfig&gt; };
+
+    constructor(
+        @Inject(&#x27;SHARED_PREFERENCES&#x27;) private sharedPreferences: SharedPreferences,
+        @Inject(&#x27;PROFILE_SERVICE&#x27;) private profileService: ProfileService,
+        @Inject(&#x27;DEVICE_REGISTER_SERVICE&#x27;) private deviceRegisterService: DeviceRegisterService,
+        private events: Events,
+        private segmentationTagService: SegmentationTagService,
+        private container: ContainerService,
+        private appGlobalService: AppGlobalService,
+        private commonUtilService: CommonUtilService,
+    ) {
+        this.onBoardingConfig &#x3D; onboarding;
+        this.checkInitialScreen();
+    }
+
+    // checking initial onboarding screen to handle back button
+    private checkInitialScreen() {
+        if (this.initialOnboardingScreenName &#x3D;&#x3D;&#x3D; undefined) {
+            const initialScreen &#x3D; this.onBoardingConfig &amp;&amp; this.onBoardingConfig.onboarding &amp;&amp;
+                this.onBoardingConfig.onboarding.find(obj &#x3D;&gt; (obj &amp;&amp; !obj.skip));
+            if (initialScreen) {
+                this.initialOnboardingScreenName &#x3D; initialScreen.name;
+            }
+        }
+    }
+
+    public async skipOnboardingStep(currentPage, isUserLoggedIn &#x3D; false) {
+        if(!this.onBoardingConfig || !this.onBoardingConfig.onboarding){
+            return false;
+        }
+        this.checkInitialScreen();
+
+        const config &#x3D; this.onBoardingConfig.onboarding.find(obj &#x3D;&gt; {
+            return (obj &amp;&amp; obj.name &#x3D;&#x3D;&#x3D; currentPage);
+        });
+
+        if (!config || !config.skip || !config.default) {
+            return false;
+        }
+        if (isUserLoggedIn) {
+            return await this.loggedInUserOnboardingStep(config);
+        } else {
+            return await this.guestOnboardingStep(config);
+        }
+    }
+
+    private async guestOnboardingStep(config) {
+        let skipOnboarding &#x3D; true;
+
+        switch (config.name) {
+
+            case OnboardingScreenType.LANGUAGE_SETTINGS:
+                const selectedLanguage &#x3D; await this.sharedPreferences.getString(PreferenceKey.SELECTED_LANGUAGE_CODE).toPromise();
+                if (!selectedLanguage) {
+                    this.sharedPreferences.putString(PreferenceKey.SELECTED_LANGUAGE_CODE, config.default.code).toPromise();
+                    this.sharedPreferences.putString(PreferenceKey.SELECTED_LANGUAGE, config.default.label).toPromise();
+                }
+                break;
+
+            case OnboardingScreenType.USER_TYPE_SELECTION:
+                const selectedUser &#x3D; await this.sharedPreferences.getString(PreferenceKey.SELECTED_USER_TYPE).toPromise();
+                if (!selectedUser) {
+                    const profile &#x3D; this.appGlobalService.getCurrentUser();
+                    const profileRequest: Profile &#x3D; {
+                        uid: profile.uid,
+                        handle: &#x27;Guest1&#x27;,
+                        profileType: config.default,
+                        source: ProfileSource.LOCAL
+                    };
+                    await this.profileService.updateProfile(profileRequest).toPromise();
+                    await this.profileService.setActiveSessionForProfile(profileRequest.uid).toPromise();
+                    this.sharedPreferences.putString(PreferenceKey.GUEST_USER_ID_BEFORE_LOGIN, profile.uid).toPromise().then();
+                    this.sharedPreferences.putString(PreferenceKey.SELECTED_USER_TYPE, config.default).toPromise();
+                }
+                break;
+
+            case OnboardingScreenType.PROFILE_SETTINGS:
+                const profile &#x3D; await this.profileService.getActiveSessionProfile({ requiredFields: ProfileConstants.REQUIRED_FIELDS }).toPromise();
+                if (!this.isProfileComplete(profile)) {
+                    await this.setDefaultFrameworkDetails(config.default);
+                }
+                break;
+
+            case OnboardingScreenType.DISTRICT_MAPPING:
+                this.setDistrictMappingDetails(config);
+                break;
+
+            default:
+                skipOnboarding &#x3D; false;
+                break;
+        }
+
+        return skipOnboarding;
+    }
+
+    private async loggedInUserOnboardingStep(config) {
+        let skipOnboarding &#x3D; true;
+
+        switch (config.name) {
+            case OnboardingScreenType.USER_TYPE_SELECTION:
+                //todo
+                break;
+
+            case OnboardingScreenType.PROFILE_SETTINGS:
+                //todo
+                break;
+
+            case OnboardingScreenType.DISTRICT_MAPPING:
+                //todo
+                break;
+
+            default:
+                skipOnboarding &#x3D; false;
+                break;
+        }
+
+        return skipOnboarding;
+    }
+
+    private async setDefaultFrameworkDetails(defaultVal) {
+        const activeSessionProfile &#x3D; await this.profileService.getActiveSessionProfile({
+            requiredFields: ProfileConstants.REQUIRED_FIELDS
+        }).toPromise();
+
+        let profileType;
+        if (activeSessionProfile.profileType) {
+            profileType &#x3D; activeSessionProfile.profileType
+        } else if (!(profileType &#x3D; await this.sharedPreferences.getString(PreferenceKey.SELECTED_USER_TYPE).toPromise())) {
+            profileType &#x3D; ProfileType.NONE;
+        }
+
+        const updateProfileRequest: Profile &#x3D; {
+            ...activeSessionProfile,
+            ...defaultVal,
+            profileType
+        };
+
+        let profile: Profile;
+        profile &#x3D; await this.profileService.updateProfile(updateProfileRequest).toPromise();
+
+        this.segmentationTagService.refreshSegmentTags(profile);
+        initTabs(this.container, GUEST_TEACHER_TABS);
+        this.segmentationTagService.createSegmentTags(profile);
+        await this.commonUtilService.handleToTopicBasedNotification();
+        this.events.publish(&#x27;onboarding-card:completed&#x27;, { isOnBoardingCardCompleted: true });
+        this.events.publish(&#x27;refresh:profile&#x27;);
+        this.appGlobalService.guestUserProfile &#x3D; profile;
+
+    }
+
+    private isProfileComplete(profile?): boolean {
+        return profile
+            &amp;&amp; profile.syllabus &amp;&amp; profile.syllabus[0]
+            &amp;&amp; profile.board &amp;&amp; profile.board.length
+            &amp;&amp; profile.grade &amp;&amp; profile.grade.length
+            &amp;&amp; profile.medium &amp;&amp; profile.medium.length;
+    }
+
+    private setDistrictMappingDetails(config) {
+        const req &#x3D; {
+            userDeclaredLocation: {
+                ...config.default, 
+                declaredOffline: !this.commonUtilService.networkInfo.isNetworkAvailable
+            }
+        };
+        this.deviceRegisterService.registerDevice(req).toPromise();
+        this.sharedPreferences.putString(PreferenceKey.DEVICE_LOCATION, JSON.stringify(req.userDeclaredLocation)).toPromise();
+        this.commonUtilService.handleToTopicBasedNotification();
+        this.appGlobalService.setOnBoardingCompleted();
+    }
+
+    initializedTabs(theme: string, userType: string) {
+        if (userType &#x3D;&#x3D;&#x3D; ProfileType.ADMIN) {
+            return this.tabList &#x3D; onboarding.tabs.filter((tab) &#x3D;&gt; tab &amp;&amp; tab.userTypeAdmin);
+          } else if (theme &#x3D;&#x3D;&#x3D; SwitchableTabsConfig.HOME_DISCOVER_TABS_CONFIG) {
+            if (this.appGlobalService.isUserLoggedIn()) {
+              return this.findAllTabs(&#x27;NEW&#x27;, &#x27;logIn&#x27;);
+            } else {
+              return this.findAllTabs(&#x27;NEW&#x27;, &#x27;guest&#x27;);
+            }
+          } else {
+            if (this.appGlobalService.isUserLoggedIn()) {
+              return this.findAllTabs(&#x27;OLD&#x27;, &#x27;logIn&#x27;);
+            } else {
+              return this.findAllTabs(&#x27;OLD&#x27;, &#x27;guest&#x27;);
+            }
+          }
+    }
+
+    findAllTabs(theme: string, status: string) {
+        return this.tabList &#x3D; onboarding.tabs.filter((tab) &#x3D;&gt;
+        (tab.theme &#x3D;&#x3D;&#x3D; theme || tab.theme &#x3D;&#x3D;&#x3D; &#x27;ALL&#x27;) &amp;&amp; (tab.status &#x3D;&#x3D;&#x3D; &#x27;ALL&#x27; || tab.status &#x3D;&#x3D;&#x3D; status));
+      }
+
+    getCategoryTranslationKey(category: string): string {
+            return this.onBoardingConfig.categories.find((element) &#x3D;&gt; (element.code &#x3D;&#x3D;&#x3D; category)).translation_key
+      }
+
+    getOnboardingConfig(page: String): OnBoardingConfig {
+        return this.onBoardingConfig.onboarding.find((element) &#x3D;&gt; (element.name &#x3D;&#x3D;&#x3D; page))
+    }  
+
+    getAppConfig(): any {
+        return this.onBoardingConfig
+    }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'OnboardingConfigurationService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

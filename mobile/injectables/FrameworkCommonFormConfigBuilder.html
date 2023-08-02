@@ -1,0 +1,932 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >FrameworkCommonFormConfigBuilder</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/common-form-config-builders/framework-common-form-config-builder.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getBoardConfigOptionsBuilder" >getBoardConfigOptionsBuilder</a>
+                            </li>
+                            <li>
+                                <a href="#getGradeConfigOptionsBuilder" >getGradeConfigOptionsBuilder</a>
+                            </li>
+                            <li>
+                                <a href="#getMediumConfigOptionsBuilder" >getMediumConfigOptionsBuilder</a>
+                            </li>
+                            <li>
+                                <a href="#getSubjectConfigOptionsBuilder" >getSubjectConfigOptionsBuilder</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#valueComparator" >valueComparator</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(frameworkService: FrameworkService, frameworkUtilService: FrameworkUtilService, translate: TranslateService, alisaBoard: AliasBoardName)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/services/common-form-config-builders/framework-common-form-config-builder.ts:22</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>frameworkService</td>
+                                                  
+                                                        <td>
+                                                                    <code>FrameworkService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>frameworkUtilService</td>
+                                                  
+                                                        <td>
+                                                                    <code>FrameworkUtilService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alisaBoard</td>
+                                                  
+                                                        <td>
+                                                                    <code>AliasBoardName</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getBoardConfigOptionsBuilder"></a>
+                    <span class="name">
+                        <span ><b>getBoardConfigOptionsBuilder</b></span>
+                        <a href="#getBoardConfigOptionsBuilder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getBoardConfigOptionsBuilder(profile?: Profile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="31"
+                            class="link-to-prism">src/services/common-form-config-builders/framework-common-form-config-builder.ts:31</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+                                    <td>
+                                            <code>Profile</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#FieldConfigOptionsBuilder" target="_self" >FieldConfigOptionsBuilder&lt;literal type&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getGradeConfigOptionsBuilder"></a>
+                    <span class="name">
+                        <span ><b>getGradeConfigOptionsBuilder</b></span>
+                        <a href="#getGradeConfigOptionsBuilder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getGradeConfigOptionsBuilder(profile?: Profile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="143"
+                            class="link-to-prism">src/services/common-form-config-builders/framework-common-form-config-builder.ts:143</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+                                    <td>
+                                            <code>Profile</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#FieldConfigOptionsBuilder" target="_self" >FieldConfigOptionsBuilder&lt;literal type&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMediumConfigOptionsBuilder"></a>
+                    <span class="name">
+                        <span ><b>getMediumConfigOptionsBuilder</b></span>
+                        <a href="#getMediumConfigOptionsBuilder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMediumConfigOptionsBuilder(profile?: Profile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="71"
+                            class="link-to-prism">src/services/common-form-config-builders/framework-common-form-config-builder.ts:71</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+                                    <td>
+                                            <code>Profile</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#FieldConfigOptionsBuilder" target="_self" >FieldConfigOptionsBuilder&lt;literal type&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSubjectConfigOptionsBuilder"></a>
+                    <span class="name">
+                        <span ><b>getSubjectConfigOptionsBuilder</b></span>
+                        <a href="#getSubjectConfigOptionsBuilder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSubjectConfigOptionsBuilder(profile?: Profile, enableOtherAsOption?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="200"
+                            class="link-to-prism">src/services/common-form-config-builders/framework-common-form-config-builder.ts:200</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+                                    <td>
+                                            <code>Profile</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>enableOtherAsOption</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../miscellaneous/typealiases.html#FieldConfigOptionsBuilder" target="_self" >FieldConfigOptionsBuilder&lt;literal type&gt;</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="valueComparator"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>valueComparator</b></span>
+                        <a href="#valueComparator"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>valueComparator(v1: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, v2: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="264"
+                            class="link-to-prism">src/services/common-form-config-builders/framework-common-form-config-builder.ts:264</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>v1</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>v2</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Inject, Injectable} from &#x27;@angular/core&#x27;;
+import {FormControl} from &#x27;@angular/forms&#x27;;
+import {FieldConfigOption, FieldConfigOptionsBuilder} from &#x27;common-form-elements&#x27;;
+import {defer, EMPTY, of} from &#x27;rxjs&#x27;;
+import {catchError, distinctUntilChanged, switchMap, tap} from &#x27;rxjs/operators&#x27;;
+import {TranslateService} from &#x27;@ngx-translate/core&#x27;;
+import {
+  CachedItemRequestSourceFrom,
+  FrameworkCategoryCode,
+  FrameworkCategoryCodesGroup,
+  FrameworkService,
+  FrameworkUtilService,
+  GetFrameworkCategoryTermsRequest,
+  GetSuggestedFrameworksRequest,
+  Profile
+} from &#x27;@project-sunbird/sunbird-sdk&#x27;;
+import {AliasBoardName} from &#x27;@app/pipes/alias-board-name/alias-board-name&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class FrameworkCommonFormConfigBuilder {
+
+  constructor(
+    @Inject(&#x27;FRAMEWORK_SERVICE&#x27;) private frameworkService: FrameworkService,
+    @Inject(&#x27;FRAMEWORK_UTIL_SERVICE&#x27;) private frameworkUtilService: FrameworkUtilService,
+    private translate: TranslateService,
+    private alisaBoard: AliasBoardName
+  ) { }
+
+  getBoardConfigOptionsBuilder(profile?: Profile): FieldConfigOptionsBuilder&lt;{ name: string, code: string, deafult?: any }&gt; {
+     return ((control: FormControl, _, notifyLoading, notifyLoaded) &#x3D;&gt; {
+      return defer(async () &#x3D;&gt; {
+        notifyLoading();
+        const getSuggestedFrameworksRequest: GetSuggestedFrameworksRequest &#x3D; {
+          from: CachedItemRequestSourceFrom.SERVER,
+          language: this.translate.currentLang,
+          requiredCategories: FrameworkCategoryCodesGroup.DEFAULT_FRAMEWORK_CATEGORIES
+        };
+
+        const list &#x3D; await this.frameworkUtilService.getActiveChannelSuggestedFrameworkList(getSuggestedFrameworksRequest).toPromise();
+        const options: FieldConfigOption&lt;{ name: string, code: string }&gt;[] &#x3D; [];
+        list.forEach(element &#x3D;&gt; {
+          const value: FieldConfigOption&lt;{ name: string, code: string }&gt; &#x3D; {
+            label: this.alisaBoard.transform(element.name),
+            value: {
+              name: element.name,
+              code: element.identifier
+            }
+          };
+          options.push(value);
+
+          // assign default value for board [optional]
+          if (profile &amp;&amp; profile.syllabus &amp;&amp; profile.syllabus.length
+            &amp;&amp; profile.syllabus[0] &#x3D;&#x3D;&#x3D; element.identifier) {
+            control.patchValue(value.value);
+          }
+        });
+        notifyLoaded();
+        return options;
+      }).pipe(
+        catchError((e) &#x3D;&gt; {
+          console.error(e);
+          notifyLoaded();
+          return EMPTY;
+        })
+      );
+    });
+  }
+
+  getMediumConfigOptionsBuilder(profile?: Profile): FieldConfigOptionsBuilder&lt;{ name: string, code: string, frameworkCode: string }&gt; {
+    return ((control: FormControl, context: FormControl, notifyLoading, notifyLoaded) &#x3D;&gt; {
+      if (!context) {
+        return of([]);
+      }
+      return context.valueChanges.pipe(
+        distinctUntilChanged((v1, v2) &#x3D;&gt; {
+          return this.valueComparator(v1 &amp;&amp; v1.code, v2 &amp;&amp; v2.code);
+        }),
+        tap(notifyLoading),
+        switchMap((value) &#x3D;&gt; {
+          if (!value) {
+            return of([]);
+          }
+          const userInput: { name: string, code: string } &#x3D; value;
+          return defer(async () &#x3D;&gt; {
+            const framework &#x3D; await this.frameworkService.getFrameworkDetails({
+              from: CachedItemRequestSourceFrom.SERVER,
+              frameworkId: userInput.code,
+              requiredCategories: FrameworkCategoryCodesGroup.DEFAULT_FRAMEWORK_CATEGORIES
+            }).toPromise();
+
+            const boardCategoryTermsRequet: GetFrameworkCategoryTermsRequest &#x3D; {
+              frameworkId: userInput.code,
+              requiredCategories: [FrameworkCategoryCode.BOARD],
+              currentCategoryCode: FrameworkCategoryCode.BOARD,
+              language: this.translate.currentLang
+            };
+
+            const boardTerm &#x3D; (await this.frameworkUtilService.getFrameworkCategoryTerms(boardCategoryTermsRequet).toPromise()).
+              find(b &#x3D;&gt; b.name &#x3D;&#x3D;&#x3D; userInput.name);
+
+            const nextCategoryTermsRequet: GetFrameworkCategoryTermsRequest &#x3D; {
+              frameworkId: framework.code,
+              requiredCategories: [FrameworkCategoryCode.MEDIUM],
+              prevCategoryCode: FrameworkCategoryCode.BOARD,
+              currentCategoryCode: FrameworkCategoryCode.MEDIUM,
+              language: this.translate.currentLang,
+              selectedTermsCodes: [boardTerm.code]
+            };
+
+            const list &#x3D; await this.frameworkUtilService.getFrameworkCategoryTerms(nextCategoryTermsRequet).toPromise();
+            const options: FieldConfigOption&lt;{ name: string, code: string, frameworkCode: string }&gt;[] &#x3D; [];
+            list.forEach(element &#x3D;&gt; {
+              const value: FieldConfigOption&lt;{ name: string, code: string, frameworkCode: string }&gt; &#x3D; {
+                label: element.name,
+                value: {
+                  name: element.name,
+                  code: element.code,
+                  frameworkCode: framework.code
+                }
+              };
+              options.push(value);
+
+              if (!context.dirty &amp;&amp; profile &amp;&amp; profile.medium &amp;&amp; profile.medium.length
+                &amp;&amp; profile.medium[0] &#x3D;&#x3D;&#x3D; element.code) {
+                control.patchValue(value.value);
+              }
+            });
+            return options;
+          });
+        }),
+        tap(notifyLoaded),
+        catchError((e) &#x3D;&gt; {
+          console.error(e);
+          notifyLoaded();
+          return EMPTY;
+        })
+      );
+    });
+  }
+
+  getGradeConfigOptionsBuilder(profile?: Profile): FieldConfigOptionsBuilder&lt;{ name: string, code: string, frameworkCode: string }&gt; {
+    return ((control: FormControl, context: FormControl, notifyLoading, notifyLoaded) &#x3D;&gt; {
+      if (!context) {
+        return of([]);
+      }
+      return context.valueChanges.pipe(
+        distinctUntilChanged((v1, v2) &#x3D;&gt; {
+          return this.valueComparator(v1 &amp;&amp; v1.code, v2 &amp;&amp; v2.code);
+        }),
+        tap(notifyLoading),
+        switchMap((value) &#x3D;&gt; {
+          if (!value) {
+            return of([]);
+          }
+          const userInput: { name: string, code: string, frameworkCode: string } &#x3D; value;
+          return defer(async () &#x3D;&gt; {
+            const nextCategoryTermsRequet: GetFrameworkCategoryTermsRequest &#x3D; {
+              frameworkId: userInput.frameworkCode,
+              requiredCategories: [FrameworkCategoryCode.GRADE_LEVEL],
+              prevCategoryCode: FrameworkCategoryCode.MEDIUM,
+              currentCategoryCode: FrameworkCategoryCode.GRADE_LEVEL,
+              language: this.translate.currentLang,
+              selectedTermsCodes: [context.value.code]
+            };
+
+            const list &#x3D; (await this.frameworkUtilService.getFrameworkCategoryTerms(nextCategoryTermsRequet).toPromise());
+            const options: FieldConfigOption&lt;{ name: string, code: string, frameworkCode: string }&gt;[] &#x3D; [];
+            list.forEach(element &#x3D;&gt; {
+              const value: FieldConfigOption&lt;{ name: string, code: string, frameworkCode: string }&gt; &#x3D; {
+                label: element.name,
+                value: {
+                  name: element.name,
+                  code: element.code,
+                  frameworkCode: userInput.frameworkCode
+                }
+              };
+              options.push(value);
+
+              if (!context.dirty &amp;&amp; profile &amp;&amp; profile.grade &amp;&amp; profile.grade.length
+                &amp;&amp; profile.grade[0] &#x3D;&#x3D;&#x3D; element.code) {
+                control.patchValue(value.value);
+              }
+            });
+            return options;
+          });
+        }),
+        tap(notifyLoaded),
+        catchError((e) &#x3D;&gt; {
+          console.error(e);
+          notifyLoaded();
+          return EMPTY;
+        })
+      );
+
+    });
+  }
+
+  getSubjectConfigOptionsBuilder(profile?: Profile, enableOtherAsOption?: boolean): FieldConfigOptionsBuilder&lt;{ name: string, code: string, frameworkCode: string }&gt; {
+    return ((control: FormControl, context: FormControl, notifyLoading, notifyLoaded) &#x3D;&gt; {
+      if (!context) {
+        return of([]);
+      }
+      return context.valueChanges.pipe(
+          distinctUntilChanged((v1, v2) &#x3D;&gt; {
+            return this.valueComparator(v1 &amp;&amp; v1.code, v2 &amp;&amp; v2.code);
+          }),
+          tap(notifyLoading),
+          switchMap((value) &#x3D;&gt; {
+          if (!value) {
+            return of([]);
+          }
+          const userInput: { name: string, code: string, frameworkCode: string } &#x3D; value;
+          return defer(async () &#x3D;&gt; {
+            const nextCategoryTermsRequet: GetFrameworkCategoryTermsRequest &#x3D; {
+              frameworkId: userInput.frameworkCode,
+              requiredCategories: [FrameworkCategoryCode.SUBJECT],
+              prevCategoryCode: FrameworkCategoryCode.GRADE_LEVEL,
+              currentCategoryCode: FrameworkCategoryCode.SUBJECT,
+              language: this.translate.currentLang,
+              selectedTermsCodes: [context.value.code]
+            };
+
+            const list &#x3D; (await this.frameworkUtilService.getFrameworkCategoryTerms(nextCategoryTermsRequet).toPromise());
+            const options: FieldConfigOption&lt;{ name: string, code: string, frameworkCode: string } | &#x27;other&#x27;&gt;[] &#x3D; [];
+            list.forEach(element &#x3D;&gt; {
+              const value: FieldConfigOption&lt;{ name: string, code: string, frameworkCode: string }&gt; &#x3D; {
+                label: element.name,
+                value: {
+                  name: element.name,
+                  code: element.code,
+                  frameworkCode: userInput.frameworkCode
+                }
+              };
+              options.push(value);
+
+              if (!context.dirty &amp;&amp; profile &amp;&amp; profile.subject &amp;&amp; profile.subject.length
+                  &amp;&amp; profile.subject[0] &#x3D;&#x3D;&#x3D; element.code) {
+                control.patchValue(value.value);
+              }
+            });
+
+            if (enableOtherAsOption) {
+              options.push({
+                label: &#x27;Other&#x27;,
+                value: &#x27;other&#x27;
+              });
+            }
+
+            return options;
+          });
+        }),
+        tap(notifyLoaded),
+        catchError((e) &#x3D;&gt; {
+          console.error(e);
+          notifyLoaded();
+          return EMPTY;
+        })
+      );
+    });
+  }
+
+  private valueComparator(v1: any, v2: any): boolean {
+    if (typeof v1 &#x3D;&#x3D;&#x3D; &#x27;object&#x27; &amp;&amp; typeof v2 &#x3D;&#x3D;&#x3D; &#x27;object&#x27;) {
+      return (JSON.stringify(v1) !&#x3D;&#x3D; JSON.stringify(v2));
+    } else if (v1 &#x3D;&#x3D;&#x3D; v2) {
+      return true;
+    } else if (!v1 &amp;&amp; !v2) {
+      return true;
+    }
+    return false;
+  }
+
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'FrameworkCommonFormConfigBuilder.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

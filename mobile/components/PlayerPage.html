@@ -1,0 +1,3001 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  PlayerPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/player/player.page.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+                    <code><a href="../interfaces/PlayerActionHandlerDelegate.html" target="_self" >PlayerActionHandlerDelegate</a></code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-player</code></td>
+            </tr>
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./player.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#backButtonSubscription" >backButtonSubscription</a>
+                            </li>
+                            <li>
+                                <a href="#config" >config</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#content" >content</a>
+                            </li>
+                            <li>
+                                <a href="#corRelationList" >corRelationList</a>
+                            </li>
+                            <li>
+                                <a href="#course" >course</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#isChildContent" >isChildContent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#isCourse" >isCourse</a>
+                            </li>
+                            <li>
+                                <a href="#isExitPopupShown" >isExitPopupShown</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#navigateBackToContentDetails" >navigateBackToContentDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#navigateBackToTrackableCollection" >navigateBackToTrackableCollection</a>
+                            </li>
+                            <li>
+                                <a href="#nextContentToBePlayed" >nextContentToBePlayed</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#objRollup" >objRollup</a>
+                            </li>
+                            <li>
+                                <a href="#pauseSubscription" >pauseSubscription</a>
+                            </li>
+                            <li>
+                                <a href="#playerConfig" >playerConfig</a>
+                            </li>
+                            <li>
+                                <a href="#playerType" >playerType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                <a href="#previewElement" >previewElement</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#checkIsPlayerEnabled" >checkIsPlayerEnabled</a>
+                            </li>
+                            <li>
+                                <a href="#closeIframe" >closeIframe</a>
+                            </li>
+                            <li>
+                                <a href="#downloadFileIos" >downloadFileIos</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getNewPlayerConfiguration" >getNewPlayerConfiguration</a>
+                            </li>
+                            <li>
+                                <a href="#getNextContent" >getNextContent</a>
+                            </li>
+                            <li>
+                                <a href="#handleDownload" >handleDownload</a>
+                            </li>
+                            <li>
+                                <a href="#handleNavBackButton" >handleNavBackButton</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ionViewWillEnter" >ionViewWillEnter</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ionViewWillLeave" >ionViewWillLeave</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#isJSON" >isJSON</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onContentNotFound" >onContentNotFound</a>
+                            </li>
+                            <li>
+                                <a href="#onUserSwitch" >onUserSwitch</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openPDF" >openPDF</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#playerEvents" >playerEvents</a>
+                            </li>
+                            <li>
+                                <a href="#playerTelemetryEvents" >playerTelemetryEvents</a>
+                            </li>
+                            <li>
+                                <a href="#playNextContent" >playNextContent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#showConfirm" >showConfirm</a>
+                            </li>
+                            <li>
+                                <a href="#toggleDeviceOrientation" >toggleDeviceOrientation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#updateContentState" >updateContentState</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(courseService: CourseService, profileService: ProfileService, contentService: ContentService, playerService: PlayerService, preferences: SharedPreferences, canvasPlayerService: <a href="../injectables/CanvasPlayerService.html" target="_self">CanvasPlayerService</a>, platform: Platform, screenOrientation: <a href="../undefineds/Orientation.html" target="_self">ScreenOrientation</a>, appGlobalService: <a href="../injectables/AppGlobalService.html" target="_self">AppGlobalService</a>, statusBar: StatusBar, events: <a href="../injectables/Events.html" target="_self">Events</a>, alertCtrl: AlertController, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, route: ActivatedRoute, router: Router, location: <a href="../classes/Location.html" target="_self">Location</a>, popoverCtrl: PopoverController, formAndFrameworkUtilService: <a href="../injectables/FormAndFrameworkUtilService.html" target="_self">FormAndFrameworkUtilService</a>, downloadPdfService: <a href="../injectables/DownloadPdfService.html" target="_self">DownloadPdfService</a>, fileOpener: FileOpener, transfer: FileTransfer, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, printPdfService: <a href="../injectables/PrintPdfService.html" target="_self">PrintPdfService</a>, file: File)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/player/player.page.ts:65</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>courseService</td>
+                                                  
+                                                        <td>
+                                                                    <code>CourseService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ProfileService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>contentService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ContentService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>playerService</td>
+                                                  
+                                                        <td>
+                                                                    <code>PlayerService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>preferences</td>
+                                                  
+                                                        <td>
+                                                                    <code>SharedPreferences</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>canvasPlayerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CanvasPlayerService.html" target="_self" >CanvasPlayerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>platform</td>
+                                                  
+                                                        <td>
+                                                                    <code>Platform</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>screenOrientation</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../miscellaneous/enumerations.html#Orientation" target="_self" >ScreenOrientation</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appGlobalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppGlobalService.html" target="_self" >AppGlobalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>statusBar</td>
+                                                  
+                                                        <td>
+                                                                    <code>StatusBar</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>events</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >Events</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>AlertController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>route</td>
+                                                  
+                                                        <td>
+                                                                    <code>ActivatedRoute</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Location.html" target="_self" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>popoverCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>PopoverController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formAndFrameworkUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormAndFrameworkUtilService.html" target="_self" >FormAndFrameworkUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>downloadPdfService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DownloadPdfService.html" target="_self" >DownloadPdfService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fileOpener</td>
+                                                  
+                                                        <td>
+                                                                    <code>FileOpener</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>transfer</td>
+                                                  
+                                                        <td>
+                                                                    <code>FileTransfer</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>printPdfService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/PrintPdfService.html" target="_self" >PrintPdfService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>file</td>
+                                                  
+                                                        <td>
+                                                                    <code>File</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkIsPlayerEnabled"></a>
+                    <span class="name">
+                        <span ><b>checkIsPlayerEnabled</b></span>
+                        <a href="#checkIsPlayerEnabled"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkIsPlayerEnabled(config, playerType)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="653"
+                            class="link-to-prism">src/app/player/player.page.ts:653</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>config</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>playerType</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeIframe"></a>
+                    <span class="name">
+                        <span ><b>closeIframe</b></span>
+                        <a href="#closeIframe"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>closeIframe(content?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="489"
+                            class="link-to-prism">src/app/player/player.page.ts:489</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This will close the player page and will fire some end telemetry events from the player</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="downloadFileIos"></a>
+                    <span class="name">
+                        <span ><b>downloadFileIos</b></span>
+                        <a href="#downloadFileIos"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>downloadFileIos(content)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="390"
+                            class="link-to-prism">src/app/player/player.page.ts:390</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNewPlayerConfiguration"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getNewPlayerConfiguration</b></span>
+                        <a href="#getNewPlayerConfiguration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getNewPlayerConfiguration()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="404"
+                            class="link-to-prism">src/app/player/player.page.ts:404</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getNextContent"></a>
+                    <span class="name">
+                        <span ><b>getNextContent</b></span>
+                        <a href="#getNextContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getNextContent(hierarchyInfo, identifier)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="443"
+                            class="link-to-prism">src/app/player/player.page.ts:443</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>hierarchyInfo</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>identifier</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleDownload"></a>
+                    <span class="name">
+                        <span ><b>handleDownload</b></span>
+                        <a href="#handleDownload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleDownload()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="352"
+                            class="link-to-prism">src/app/player/player.page.ts:352</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleNavBackButton"></a>
+                    <span class="name">
+                        <span ><b>handleNavBackButton</b></span>
+                        <a href="#handleNavBackButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleNavBackButton()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="290"
+                            class="link-to-prism">src/app/player/player.page.ts:290</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillEnter"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ionViewWillEnter</b></span>
+                        <a href="#ionViewWillEnter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ionViewWillEnter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/player/player.page.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillLeave"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ionViewWillLeave</b></span>
+                        <a href="#ionViewWillLeave"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ionViewWillLeave()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="263"
+                            class="link-to-prism">src/app/player/player.page.ts:263</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isJSON"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>isJSON</b></span>
+                        <a href="#isJSON"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isJSON(input)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="644"
+                            class="link-to-prism">src/app/player/player.page.ts:644</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>input</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="283"
+                            class="link-to-prism">src/app/player/player.page.ts:283</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="109"
+                            class="link-to-prism">src/app/player/player.page.ts:109</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onContentNotFound"></a>
+                    <span class="name">
+                        <span ><b>onContentNotFound</b></span>
+                        <a href="#onContentNotFound"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onContentNotFound(identifier: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, hierarchyInfo: <a href="../interfaces/HierarchyInfo.html" target="_self">Array&lt;HierarchyInfo&gt;</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="466"
+                            class="link-to-prism">src/app/player/player.page.ts:466</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This will trigger from player/ iframe when it unable to find consecutive content</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>identifier</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Content Identifier</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>hierarchyInfo</td>
+                                    <td>
+                                                <code><a href="../interfaces/HierarchyInfo.html" target="_self" >Array&lt;HierarchyInfo&gt;</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>Object of content hierarchy</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onUserSwitch"></a>
+                    <span class="name">
+                        <span ><b>onUserSwitch</b></span>
+                        <a href="#onUserSwitch"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onUserSwitch(selectedUser: <a href="../interfaces/User.html" target="_self">User</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="482"
+                            class="link-to-prism">src/app/player/player.page.ts:482</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This is an callback to mobile when player switches user</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>selectedUser</td>
+                                    <td>
+                                                <code><a href="../interfaces/User.html" target="_self" >User</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>User id of the newly selected user by player</p>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openPDF"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>openPDF</b></span>
+                        <a href="#openPDF"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openPDF(url)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="582"
+                            class="link-to-prism">src/app/player/player.page.ts:582</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>url</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playerEvents"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>playerEvents</b></span>
+                        <a href="#playerEvents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>playerEvents(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="294"
+                            class="link-to-prism">src/app/player/player.page.ts:294</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playerTelemetryEvents"></a>
+                    <span class="name">
+                        <span ><b>playerTelemetryEvents</b></span>
+                        <a href="#playerTelemetryEvents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playerTelemetryEvents(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="636"
+                            class="link-to-prism">src/app/player/player.page.ts:636</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playNextContent"></a>
+                    <span class="name">
+                        <span ><b>playNextContent</b></span>
+                        <a href="#playNextContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>playNextContent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="452"
+                            class="link-to-prism">src/app/player/player.page.ts:452</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showConfirm"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>showConfirm</b></span>
+                        <a href="#showConfirm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showConfirm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="528"
+                            class="link-to-prism">src/app/player/player.page.ts:528</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>This will show confirmation box while leaving the player, it will fire some telemetry events from the player.</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleDeviceOrientation"></a>
+                    <span class="name">
+                        <span ><b>toggleDeviceOrientation</b></span>
+                        <a href="#toggleDeviceOrientation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>toggleDeviceOrientation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="253"
+                            class="link-to-prism">src/app/player/player.page.ts:253</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateContentState"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>updateContentState</b></span>
+                        <a href="#updateContentState"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateContentState()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="622"
+                            class="link-to-prism">src/app/player/player.page.ts:622</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="backButtonSubscription"></a>
+                    <span class="name">
+                        <span ><b>backButtonSubscription</b></span>
+                        <a href="#backButtonSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/player/player.page.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="config"></a>
+                    <span class="name">
+                        <span ><b>config</b></span>
+                        <a href="#config"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/player/player.page.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="content"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>content</b></span>
+                        <a href="#content"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Content</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/player/player.page.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="corRelationList"></a>
+                    <span class="name">
+                        <span ><b>corRelationList</b></span>
+                        <a href="#corRelationList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/player/player.page.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="course"></a>
+                    <span class="name">
+                        <span ><b>course</b></span>
+                        <a href="#course"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Course</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/player/player.page.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isChildContent"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>isChildContent</b></span>
+                        <a href="#isChildContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/player/player.page.ts:57</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCourse"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>isCourse</b></span>
+                        <a href="#isCourse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/player/player.page.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isExitPopupShown"></a>
+                    <span class="name">
+                        <span ><b>isExitPopupShown</b></span>
+                        <a href="#isExitPopupShown"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/player/player.page.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateBackToContentDetails"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>navigateBackToContentDetails</b></span>
+                        <a href="#navigateBackToContentDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/player/player.page.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateBackToTrackableCollection"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>navigateBackToTrackableCollection</b></span>
+                        <a href="#navigateBackToTrackableCollection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/player/player.page.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="nextContentToBePlayed"></a>
+                    <span class="name">
+                        <span ><b>nextContentToBePlayed</b></span>
+                        <a href="#nextContentToBePlayed"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Content</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/app/player/player.page.ts:60</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="objRollup"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>objRollup</b></span>
+                        <a href="#objRollup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Rollup</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/player/player.page.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pauseSubscription"></a>
+                    <span class="name">
+                        <span ><b>pauseSubscription</b></span>
+                        <a href="#pauseSubscription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/player/player.page.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playerConfig"></a>
+                    <span class="name">
+                        <span ><b>playerConfig</b></span>
+                        <a href="#playerConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/player/player.page.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playerType"></a>
+                    <span class="name">
+                        <span ><b>playerType</b></span>
+                        <a href="#playerType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/player/player.page.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="previewElement"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                        <span ><b>previewElement</b></span>
+                        <a href="#previewElement"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ElementRef</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;preview&#x27;, {static: false})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/app/player/player.page.ts:65</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { AppOrientation } from &#x27;./../app.constant&#x27;;
+import { ActivatedRoute, Router } from &#x27;@angular/router&#x27;;
+import { CanvasPlayerService } from &#x27;@app/services/canvas-player.service&#x27;;
+import { AppGlobalService } from &#x27;@app/services/app-global-service.service&#x27;;
+import { CommonUtilService } from &#x27;@app/services/common-util.service&#x27;;
+import { Component, OnInit, ViewChild, ElementRef, Inject, OnDestroy } from &#x27;@angular/core&#x27;;
+import { Platform, AlertController, PopoverController } from &#x27;@ionic/angular&#x27;;
+import { Events } from &#x27;@app/util/events&#x27;;
+import { ScreenOrientation } from &#x27;@ionic-native/screen-orientation/ngx&#x27;;
+import { PlayerActionHandlerDelegate, HierarchyInfo, User } from &#x27;./player-action-handler-delegate&#x27;;
+import { StatusBar } from &#x27;@ionic-native/status-bar/ngx&#x27;;
+import { EventTopics, ProfileConstants, RouterLinks, ShareItemType, PreferenceKey } from &#x27;../app.constant&#x27;;
+import { Location } from &#x27;@angular/common&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import {
+  CourseService,
+  Course,
+  Content,
+  Rollup,
+  InteractType,
+  UpdateContentStateTarget,
+  UpdateContentStateRequest,
+  TelemetryErrorCode,
+  ErrorType, SunbirdSdk, ProfileService, ContentService,
+  PlayerService,
+  SharedPreferences
+} from &#x27;sunbird-sdk&#x27;;
+import { Environment, FormAndFrameworkUtilService, InteractSubtype, PageId, TelemetryGeneratorService } from &#x27;@app/services&#x27;;
+import { SbSharePopupComponent } from &#x27;../components/popups/sb-share-popup/sb-share-popup.component&#x27;;
+import { DownloadPdfService } from &#x27;@app/services/download-pdf/download-pdf.service&#x27;;
+import { FileOpener } from &#x27;@ionic-native/file-opener/ngx&#x27;;
+import { FileTransfer, FileTransferObject } from &#x27;@ionic-native/file-transfer/ngx&#x27;;
+import { ContentUtil } from &#x27;@app/util/content-util&#x27;;
+import { PrintPdfService } from &#x27;@app/services/print-pdf/print-pdf.service&#x27;;
+import { FormConstants } from &#x27;../form.constants&#x27;;
+import { File } from &#x27;@ionic-native/file/ngx&#x27;;
+
+declare const cordova;
+
+
+@Component({
+  selector: &#x27;app-player&#x27;,
+  templateUrl: &#x27;./player.page.html&#x27;,
+})
+
+export class PlayerPage implements OnInit, OnDestroy, PlayerActionHandlerDelegate {
+
+  config &#x3D; {};
+  backButtonSubscription: Subscription;
+  course: Course;
+  pauseSubscription: any;
+  private navigateBackToContentDetails: boolean;
+  private navigateBackToTrackableCollection: boolean;
+  corRelationList;
+  private isCourse &#x3D; false;
+  playerConfig: any;
+  private isChildContent: boolean;
+  private content: Content;
+  public objRollup: Rollup;
+  nextContentToBePlayed: Content;
+  playerType: string;
+  isExitPopupShown &#x3D; false;
+
+
+  @ViewChild(&#x27;preview&#x27;, { static: false }) previewElement: ElementRef;
+  constructor(
+    @Inject(&#x27;COURSE_SERVICE&#x27;) private courseService: CourseService,
+    @Inject(&#x27;PROFILE_SERVICE&#x27;) private profileService: ProfileService,
+    @Inject(&#x27;CONTENT_SERVICE&#x27;) private contentService: ContentService,
+    @Inject(&#x27;PLAYER_SERVICE&#x27;) private playerService: PlayerService,
+    @Inject(&#x27;SHARED_PREFERENCES&#x27;) private preferences: SharedPreferences,
+    private canvasPlayerService: CanvasPlayerService,
+    private platform: Platform,
+    private screenOrientation: ScreenOrientation,
+    private appGlobalService: AppGlobalService,
+    private statusBar: StatusBar,
+    private events: Events,
+    private alertCtrl: AlertController,
+    private commonUtilService: CommonUtilService,
+    private route: ActivatedRoute,
+    private router: Router,
+    private location: Location,
+    private popoverCtrl: PopoverController,
+    private formAndFrameworkUtilService: FormAndFrameworkUtilService,
+    private downloadPdfService: DownloadPdfService,
+    private fileOpener: FileOpener,
+    private transfer: FileTransfer,
+    private telemetryGeneratorService: TelemetryGeneratorService,
+    private printPdfService: PrintPdfService,
+    private file: File,
+  ) {
+    this.canvasPlayerService.handleAction();
+
+    // Binding following methods to making it available to content player which is an iframe
+    (window as any).onContentNotFound &#x3D; this.onContentNotFound.bind(this);
+    (window as any).onUserSwitch &#x3D; this.onUserSwitch.bind(this);
+
+    if (this.router.getCurrentNavigation().extras.state) {
+      this.content &#x3D; this.router.getCurrentNavigation().extras.state.contentToPlay;
+      this.config &#x3D; this.router.getCurrentNavigation().extras.state.config;
+      this.course &#x3D; this.router.getCurrentNavigation().extras.state.course;
+      this.navigateBackToContentDetails &#x3D; this.router.getCurrentNavigation().extras.state.navigateBackToContentDetails;
+      this.corRelationList &#x3D; this.router.getCurrentNavigation().extras.state.corRelation;
+      this.isCourse &#x3D; this.router.getCurrentNavigation().extras.state.isCourse;
+      this.isChildContent &#x3D; this.router.getCurrentNavigation().extras.state.childContent;
+    }
+  }
+
+  async ngOnInit() {
+    this.playerConfig &#x3D; await this.formAndFrameworkUtilService.getPdfPlayerConfiguration();
+    if(this.config[&#x27;metadata&#x27;].hierarchyInfo) {
+      await this.getNextContent(this.config[&#x27;metadata&#x27;].hierarchyInfo , this.config[&#x27;metadata&#x27;].identifier)
+    }
+    if (this.config[&#x27;metadata&#x27;][&#x27;mimeType&#x27;] &#x3D;&#x3D;&#x3D; &#x27;application/pdf&#x27; &amp;&amp; this.checkIsPlayerEnabled(this.playerConfig , &#x27;pdfPlayer&#x27;).name &#x3D;&#x3D;&#x3D; &quot;pdfPlayer&quot;) {
+      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+      this.config &#x3D; await this.getNewPlayerConfiguration();
+      this.playerType &#x3D; &#x27;sunbird-pdf-player&#x27;
+    } else if (this.config[&#x27;metadata&#x27;][&#x27;mimeType&#x27;] &#x3D;&#x3D;&#x3D; &quot;application/epub&quot; &amp;&amp; this.checkIsPlayerEnabled(this.playerConfig , &#x27;epubPlayer&#x27;).name &#x3D;&#x3D;&#x3D; &quot;epubPlayer&quot;){ 
+      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+      this.config &#x3D; await this.getNewPlayerConfiguration();
+      this.config[&#x27;config&#x27;].sideMenu.showPrint &#x3D; false;
+      this.playerType &#x3D; &#x27;sunbird-epub-player&#x27;
+    } else if(this.config[&#x27;metadata&#x27;][&#x27;mimeType&#x27;] &#x3D;&#x3D;&#x3D; &quot;application/vnd.sunbird.questionset&quot; &amp;&amp; this.checkIsPlayerEnabled(this.playerConfig , &#x27;qumlPlayer&#x27;).name &#x3D;&#x3D;&#x3D; &quot;qumlPlayer&quot;){
+      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+      this.config &#x3D; await this.getNewPlayerConfiguration();
+      this.config[&#x27;config&#x27;].sideMenu.showDownload &#x3D; false;
+      this.config[&#x27;config&#x27;].sideMenu.showPrint &#x3D; false;
+      this.config[&#x27;config&#x27;].showDeviceOrientation &#x3D; true
+      this.config[&#x27;metadata&#x27;][&#x27;children&#x27;] &#x3D; (await this.contentService.getQuestionSetChildren(this.config[&#x27;metadata&#x27;][&#x27;identifier&#x27;]))
+      this.playerType &#x3D; &#x27;sunbird-quml-player&#x27;;
+    } else if([&quot;video/mp4&quot;, &quot;video/webm&quot;].includes(this.config[&#x27;metadata&#x27;][&#x27;mimeType&#x27;]) &amp;&amp; this.checkIsPlayerEnabled(this.playerConfig , &#x27;videoPlayer&#x27;).name &#x3D;&#x3D;&#x3D; &quot;videoPlayer&quot;){
+      if(!this.platform.is(&#x27;ios&#x27;)){
+        this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+      }
+      this.config &#x3D; await this.getNewPlayerConfiguration();
+      this.config[&#x27;config&#x27;].sideMenu.showPrint &#x3D; false;
+       this.playerType &#x3D; &#x27;sunbird-video-player&#x27;;
+    } else {
+      this.playerType &#x3D; &#x27;sunbird-old-player&#x27;;
+    }
+    this.config[&#x27;context&#x27;].dispatcher &#x3D; {
+      dispatch: function (event) {
+        SunbirdSdk.instance.telemetryService.saveTelemetry(JSON.stringify(event)).subscribe(
+          (res) &#x3D;&gt; console.log(&#x27;response after telemetry&#x27;, res),
+        );
+      }
+    };
+
+    this.pauseSubscription &#x3D; this.platform.pause.subscribe(() &#x3D;&gt; {
+      const iframes &#x3D; window.document.getElementsByTagName(&#x27;iframe&#x27;);
+      if (iframes.length &gt; 0) {
+        iframes[0].contentWindow.postMessage(&#x27;pause.youtube&#x27;, window.parent.origin);
+      }
+    });
+
+    this.isExitPopupShown &#x3D; false;
+  }
+  async ionViewWillEnter() {
+    const playerInterval &#x3D; setInterval(async () &#x3D;&gt; {
+      if (this.playerType &#x3D;&#x3D;&#x3D; &#x27;sunbird-old-player&#x27;) {
+        this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+        this.statusBar.hide();
+        this.config[&#x27;uid&#x27;] &#x3D; this.config[&#x27;context&#x27;].actor.id;
+        this.config[&#x27;metadata&#x27;].basePath &#x3D; &#x27;/_app_file_&#x27; + this.config[&#x27;metadata&#x27;].basePath;
+
+        if (this.config[&#x27;metadata&#x27;].isAvailableLocally) {
+          this.config[&#x27;metadata&#x27;].contentData.streamingUrl &#x3D; &#x27;/_app_file_&#x27; + this.config[&#x27;metadata&#x27;].contentData.streamingUrl;
+        }
+        if (!this.config[&#x27;config&#x27;].whiteListUrl || !this.config[&#x27;config&#x27;].whiteListUrl.length) {
+          const utilityConfigFields &#x3D; await this.formAndFrameworkUtilService.getFormFields(FormConstants.UTILITY_CONFIG);
+          if (utilityConfigFields &amp;&amp; utilityConfigFields.length) {
+            const utilityPlayerConfig &#x3D; utilityConfigFields.find((config) &#x3D;&gt; config.code &#x3D;&#x3D;&#x3D; &#x27;config&#x27;)[&#x27;config&#x27;];
+            if (utilityPlayerConfig &amp;&amp; utilityPlayerConfig.v1 &amp;&amp; utilityPlayerConfig.v1.whitelistUrl
+              &amp;&amp; utilityPlayerConfig.v1.whitelistUrl.length) {
+              this.config[&#x27;config&#x27;][&#x27;whiteListUrl&#x27;] &#x3D; utilityPlayerConfig.v1.whitelistUrl;
+            }
+          }
+        }
+        if (this.previewElement?.nativeElement) {
+          clearInterval(playerInterval);
+          // This is to reload a iframe as iframes reload method not working on cross-origin.
+          const src &#x3D; this.previewElement.nativeElement.src;
+          this.previewElement.nativeElement.src &#x3D; &#x27;&#x27;;
+          this.previewElement.nativeElement.src &#x3D; src;
+          this.previewElement.nativeElement.onload &#x3D; () &#x3D;&gt; {
+            setTimeout(() &#x3D;&gt; {
+              this.previewElement.nativeElement.contentWindow[&#x27;cordova&#x27;] &#x3D; window[&#x27;cordova&#x27;];
+              this.previewElement.nativeElement.contentWindow[&#x27;Media&#x27;] &#x3D; window[&#x27;Media&#x27;];
+              this.previewElement.nativeElement.contentWindow[&#x27;initializePreview&#x27;](this.config);
+              this.previewElement.nativeElement.contentWindow.addEventListener(&#x27;message&#x27;, resp &#x3D;&gt; {
+                if (resp.data &#x3D;&#x3D;&#x3D; &#x27;renderer:question:submitscore&#x27;) {
+                  this.courseService.syncAssessmentEvents().subscribe();
+                } else if (resp.data &#x3D;&#x3D;&#x3D; &#x27;renderer:question:reviewAssessment&#x27;) {
+                  this.courseService.clearAssessments().subscribe();
+                } else if (resp.data &amp;&amp; typeof resp.data &#x3D;&#x3D;&#x3D; &#x27;object&#x27;) {
+                  if (resp.data[&#x27;player.pdf-renderer.error&#x27;]) {
+                    const pdfError &#x3D; resp.data[&#x27;player.pdf-renderer.error&#x27;];
+                    if (pdfError.name &#x3D;&#x3D;&#x3D; &#x27;MissingPDFException&#x27;) {
+                      const downloadUrl &#x3D; this.config[&#x27;metadata&#x27;][&#x27;contentData&#x27;][&#x27;streamingUrl&#x27;] ||
+                        this.config[&#x27;metadata&#x27;][&#x27;contentData&#x27;][&#x27;artifactUrl&#x27;];
+                      this.telemetryGeneratorService.generateInteractTelemetry(
+                        InteractType.TOUCH,
+                        InteractSubtype.DOWNLOAD_PDF_CLICKED,
+                        Environment.PLAYER,
+                        PageId.PLAYER,
+                        ContentUtil.getTelemetryObject(this.config[&#x27;metadata&#x27;][&#x27;contentData&#x27;]),
+                        undefined,
+                        ContentUtil.generateRollUp(this.config[&#x27;metadata&#x27;][&#x27;hierarchyInfo&#x27;], this.config[&#x27;metadata&#x27;][&#x27;identifier&#x27;]));
+                      this.openPDF(downloadUrl);
+                    }
+                  } else if (resp.data &amp;&amp; resp.data.event &#x3D;&#x3D;&#x3D; &#x27;renderer:contentNotComaptible&#x27;
+                    || resp.data &amp;&amp; resp.data.data.event &#x3D;&#x3D;&#x3D; &#x27;renderer:contentNotComaptible&#x27;) {
+                    cordova.plugins.InAppUpdateManager.checkForImmediateUpdate(
+                      () &#x3D;&gt; { },
+                      () &#x3D;&gt; { }
+                    );
+                  } else if (resp.data &amp;&amp; resp.data.event &#x3D;&#x3D;&#x3D; &#x27;renderer:maxLimitExceeded&#x27;) {
+                    this.closeIframe();
+                  }
+                } else if (this.isJSON(resp.data)) {
+                  const response &#x3D; JSON.parse(resp.data);
+                  if (response.event &#x3D;&#x3D;&#x3D; &#x27;renderer:navigate&#x27;) {
+                    this.navigateBackToTrackableCollection &#x3D; true;
+                    this.navigateBackToContentDetails &#x3D; false;
+                    this.closeIframe({
+                      identifier: response.data.identifier
+                    });
+                  }
+                }
+              });
+            }, 1000);
+          };
+        }
+      }
+    }, 500);
+
+    this.backButtonSubscription &#x3D; this.platform.backButton.subscribeWithPriority(10, async () &#x3D;&gt; {
+      const activeAlert &#x3D; await this.alertCtrl.getTop();
+      if (!activeAlert) {
+        this.showConfirm();
+      }
+    });
+
+    this.events.subscribe(&#x27;endGenieCanvas&#x27;, (res) &#x3D;&gt; {
+      if (res.showConfirmBox) {
+        this.showConfirm();
+      } else {
+        this.closeIframe();
+      }
+    });
+  }
+
+  toggleDeviceOrientation() {
+    if (this.screenOrientation.type.includes(AppOrientation.LANDSCAPE.toLocaleLowerCase())) {
+      this.screenOrientation.unlock();
+        this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
+      } else {
+        this.screenOrientation.unlock();
+        this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+    }
+  }
+
+  async ionViewWillLeave() {
+    this.statusBar.show();
+    const currentOrientation &#x3D; await this.preferences.getString(PreferenceKey.ORIENTATION).toPromise();
+    if (currentOrientation &#x3D;&#x3D;&#x3D; AppOrientation.LANDSCAPE) {
+      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.LANDSCAPE);
+    } else {
+      this.screenOrientation.unlock();
+      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT);
+    }
+
+    if (this.events) {
+      this.events.unsubscribe(&#x27;endGenieCanvas&#x27;);
+    }
+
+    if (this.backButtonSubscription) {
+      this.backButtonSubscription.unsubscribe();
+    }
+    window.removeEventListener(&#x27;renderer:question:submitscore&#x27;, () &#x3D;&gt; { });
+  }
+
+  ngOnDestroy() {
+    if (this.pauseSubscription) {
+      this.pauseSubscription.unsubscribe();
+    }
+
+  }
+
+  handleNavBackButton() {
+    this.showConfirm();
+  }
+
+  async playerEvents(event) {
+    if (event.edata) {
+      const userId: string &#x3D; this.appGlobalService.getCurrentUser().uid;
+      const parentId: string &#x3D; (this.content.rollup &amp;&amp; this.content.rollup.l1) ? this.content.rollup.l1 : this.content.identifier;
+      const contentId: string &#x3D; this.content.identifier;
+      if (event.edata[&#x27;type&#x27;] &#x3D;&#x3D;&#x3D; &#x27;END&#x27;) {
+        const saveState: string &#x3D; JSON.stringify(event.metaData);
+        this.playerService.savePlayerState(userId, parentId, contentId, saveState);
+      }
+      if (event.edata[&#x27;type&#x27;] &#x3D;&#x3D;&#x3D; &#x27;END&#x27; &amp;&amp; this.config[&#x27;metadata&#x27;][&#x27;mimeType&#x27;] &#x3D;&#x3D;&#x3D; &quot;application/vnd.sunbird.questionset&quot;) {
+        this.courseService.syncAssessmentEvents().subscribe();
+      } else if (event.edata[&#x27;type&#x27;] &#x3D;&#x3D;&#x3D; &#x27;EXIT&#x27;) {
+        this.playerService.deletePlayerSaveState(userId, parentId, contentId);
+        if (this.config[&#x27;metadata&#x27;][&#x27;mimeType&#x27;] &#x3D;&#x3D;&#x3D; &quot;application/vnd.sunbird.questionset&quot;) {
+          if (!this.isExitPopupShown) {
+            this.showConfirm();
+          }
+        } else {
+          this.location.back();
+        }
+      } else if (event.edata[&#x27;type&#x27;] &#x3D;&#x3D;&#x3D; &#x27;SHARE&#x27;) {
+        const popover &#x3D; await this.popoverCtrl.create({
+          component: SbSharePopupComponent,
+          componentProps: {
+            content: this.content,
+            corRelationList: this.corRelationList,
+            pageId: PageId.PLAYER_PAGE,
+            shareFromPlayer: true,
+            shareItemType: this.isChildContent ? ShareItemType.LEAF_CONTENT : ShareItemType.ROOT_CONTENT
+          },
+          cssClass: &#x27;sb-popover&#x27;,
+        });
+        await popover.present();
+      } else if (event.edata[&#x27;type&#x27;] &#x3D;&#x3D;&#x3D; &#x27;DOWNLOAD&#x27;) {
+        this.handleDownload();
+      } else if (event.edata[&#x27;type&#x27;] &#x3D;&#x3D;&#x3D; &#x27;PRINT&#x27;) {
+        this.printPdfService.printPdf(this.config[&#x27;metadata&#x27;].streamingUrl);
+      } else if(event.edata.type &#x3D;&#x3D;&#x3D; &#x27;NEXT_CONTENT_PLAY&#x27;) {
+           this.playNextContent();
+      } else if (event.edata.type &#x3D;&#x3D;&#x3D; &#x27;compatibility-error&#x27;) {
+        cordova.plugins.InAppUpdateManager.checkForImmediateUpdate(
+          () &#x3D;&gt; {},
+          () &#x3D;&gt; {}
+        );
+      } else if (event.edata.type &#x3D;&#x3D;&#x3D; &#x27;exdata&#x27;) {
+        if (event.edata.currentattempt) {
+          const attemptInfo &#x3D; {
+            isContentDisabled: event.edata.maxLimitExceeded,
+            isLastAttempt: event.edata.isLastAttempt
+          };
+          this.commonUtilService.handleAssessmentStatus(attemptInfo);
+        }
+      } else if (event.edata.type &#x3D;&#x3D;&#x3D; &#x27;DEVICE_ROTATION_CLICKED&#x27;) {
+        this.toggleDeviceOrientation();
+      }
+    }
+  }
+
+  handleDownload() {
+    if (this.content.contentData.downloadUrl) {
+      if (this.platform.is(&#x27;ios&#x27;)) {
+        this.file.checkDir(this.file.documentsDirectory, &#x27;downloads&#x27;)
+        .then(() &#x3D;&gt; {
+          this.file.checkFile(this.file.documentsDirectory, &#x27;downloads/&#x27; + this.content.name + &#x27;.pdf&#x27;)
+          .then(_ &#x3D;&gt; {this.commonUtilService.showToast(&quot;A file with the same name already exists!&quot;)})
+          .catch(() &#x3D;&gt; {
+            this.downloadFileIos(this.content);
+          })
+        }) 
+        .catch(() &#x3D;&gt; {
+          this.file.createDir(this.file.documentsDirectory, &#x27;downloads&#x27;, false)
+          .then(response &#x3D;&gt; {
+            this.downloadFileIos(this.content);
+          })
+          .catch((err) &#x3D;&gt; {
+            this.commonUtilService.showToast(&#x27;Error saving file:  &#x27; + err.message, false, &#x27;redErrorToast&#x27;);
+          })
+        })
+      } else { // android
+        this.downloadPdfService.downloadPdf(this.content).then((res) &#x3D;&gt; {
+          this.commonUtilService.showToast(&#x27;CONTENT_DOWNLOADED&#x27;);
+        }).catch((error) &#x3D;&gt; {
+          if (error.reason &#x3D;&#x3D;&#x3D; &#x27;device-permission-denied&#x27;) {
+            this.commonUtilService.showToast(&#x27;DEVICE_NEEDS_PERMISSION&#x27;);
+          } else if (error.reason &#x3D;&#x3D;&#x3D; &#x27;user-permission-denied&#x27;) {
+            this.commonUtilService.showToast(&#x27;DEVICE_NEEDS_PERMISSION&#x27;);
+          } else if (error.reason &#x3D;&#x3D;&#x3D; &#x27;download-failed&#x27;) {
+            this.commonUtilService.showToast(&#x27;SOMETHING_WENT_WRONG&#x27;);
+          }
+        });
+      }
+    } else {
+      this.commonUtilService.showToast(&#x27;ERROR_CONTENT_NOT_AVAILABLE&#x27;);
+    }
+  }
+
+  downloadFileIos(content) {
+    const path &#x3D; this.file.documentsDirectory;
+    const fileUri &#x3D; content.contentData.downloadUrl;
+    const fileName &#x3D; content.name;
+    setTimeout(() &#x3D;&gt; {
+      const transfer &#x3D; this.transfer.create();
+      transfer.download(fileUri, path + &#x27;downloads/&#x27; + fileName + &#x27;.pdf&#x27;).then(entry &#x3D;&gt; {
+        this.commonUtilService.showToast(&#x27;CONTENT_DOWNLOADED&#x27;);
+      }).catch(err &#x3D;&gt; {
+        this.commonUtilService.showToast(&#x27;SOMETHING_WENT_WRONG&#x27;);
+      });
+    },500)
+  }
+
+  async getNewPlayerConfiguration() {
+      const nextContent &#x3D; this.config[&#x27;metadata&#x27;].hierarchyInfo &amp;&amp; this.nextContentToBePlayed ? { name: this.nextContentToBePlayed.contentData.name, identifier: this.nextContentToBePlayed.contentData.identifier } : undefined;
+      this.config[&#x27;context&#x27;][&#x27;pdata&#x27;][&#x27;pid&#x27;] &#x3D; &#x27;sunbird.app.contentplayer&#x27;;
+      if (this.config[&#x27;metadata&#x27;].isAvailableLocally) {
+        this.config[&#x27;metadata&#x27;].contentData.streamingUrl &#x3D; &#x27;/_app_file_&#x27; + this.config[&#x27;metadata&#x27;].contentData.streamingUrl;
+      }
+      this.config[&#x27;metadata&#x27;][&#x27;contentData&#x27;][&#x27;basePath&#x27;] &#x3D; &#x27;/_app_file_&#x27; + this.config[&#x27;metadata&#x27;].basePath;
+      this.config[&#x27;metadata&#x27;][&#x27;contentData&#x27;][&#x27;isAvailableLocally&#x27;] &#x3D; this.config[&#x27;metadata&#x27;].isAvailableLocally;
+      this.config[&#x27;metadata&#x27;] &#x3D; this.config[&#x27;metadata&#x27;].contentData;
+      this.config[&#x27;data&#x27;] &#x3D; {};
+      this.config[&#x27;config&#x27;] &#x3D; {
+        ...this.config[&#x27;config&#x27;],
+        nextContent,
+        sideMenu: {
+          showShare: true,
+          showDownload: true,
+          showReplay: false,
+          showExit: true,
+          showPrint: true
+        }
+      };
+
+      if(this.config[&#x27;metadata&#x27;][&#x27;mimeType&#x27;] &#x3D;&#x3D;&#x3D; &quot;application/vnd.sunbird.questionset&quot;){
+        let questionSet;
+        try{
+          questionSet &#x3D; await this.contentService.getQuestionSetRead(this.content.identifier, {fields:&#x27;instructions&#x27;}).toPromise();
+        } catch(e){
+          console.log(e);
+        }
+        this.config[&#x27;metadata&#x27;][&#x27;instructions&#x27;] &#x3D; questionSet &amp;&amp; questionSet.questionset.instructions ? questionSet.questionset.instructions : undefined;
+      }
+      const profile &#x3D; await this.profileService.getActiveSessionProfile({ requiredFields: ProfileConstants.REQUIRED_FIELDS }).toPromise();
+      this.config[&#x27;context&#x27;].userData &#x3D; {
+        firstName:  profile &amp;&amp; profile.serverProfile &amp;&amp; profile.serverProfile.firstName ? profile.serverProfile.firstName : profile.handle,
+        lastName: &#x27;&#x27;
+      };
+      return this.config;
+  }
+
+  getNextContent(hierarchyInfo, identifier) {
+    return new Promise((resolve) &#x3D;&gt; {
+      this.contentService.nextContent(hierarchyInfo, identifier).subscribe((res) &#x3D;&gt; {
+        this.nextContentToBePlayed &#x3D; res;
+        resolve(res);
+      })
+    })
+  }
+
+  playNextContent(){
+    const content &#x3D; this.nextContentToBePlayed;
+    this.events.publish(EventTopics.NEXT_CONTENT, {
+      content,
+      course: this.course
+    });
+    this.location.back();
+  }
+
+  /**
+   * This will trigger from player/ iframe when it unable to find consecutive content
+   * @param identifier Content Identifier
+   * @param hierarchyInfo Object of content hierarchy
+   */
+  onContentNotFound(identifier: string, hierarchyInfo: Array&lt;HierarchyInfo&gt;) {
+    const content &#x3D; { identifier, hierarchyInfo };
+
+    setTimeout(() &#x3D;&gt; {
+      this.closeIframe(content);
+    }, 1000);
+    this.events.publish(EventTopics.NEXT_CONTENT, {
+      content,
+      course: this.course
+    });
+  }
+
+  /**
+   * This is an callback to mobile when player switches user
+   * @param selectedUser User id of the newly selected user by player
+   */
+  onUserSwitch(selectedUser: User) {
+    this.appGlobalService.setSelectedUser(selectedUser);
+  }
+
+  /**
+   * This will close the player page and will fire some end telemetry events from the player
+   */
+  closeIframe(content?: any) {
+    const stageId &#x3D; this.previewElement.nativeElement.contentWindow[&#x27;EkstepRendererAPI&#x27;].getCurrentStageId();
+    try {
+      this.previewElement.nativeElement.contentWindow[&#x27;TelemetryService&#x27;].exit(stageId);
+    } catch (err) {
+      console.error(&#x27;End telemetry error:&#x27;, err.message);
+    }
+    this.events.publish(EventTopics.PLAYER_CLOSED, {
+      selectedUser: this.appGlobalService.getSelectedUser()
+    });
+
+    if (this.navigateBackToContentDetails) {
+      window.history.go(-1);
+      this.router.navigate([RouterLinks.CONTENT_DETAILS], {
+        state: {
+          content: content ? content : this.config[&#x27;metadata&#x27;],
+          corRelation: this.corRelationList,
+          shouldNavigateBack: true,
+          isCourse: this.isCourse,
+          course: this.course
+        },
+        replaceUrl: true
+      });
+    }  else if (this.navigateBackToTrackableCollection) {
+      this.router.navigate([RouterLinks.ENROLLED_COURSE_DETAILS], {
+        state: {
+          content
+        },
+        replaceUrl: true
+      });
+    } else {
+      this.location.back();
+    }
+  }
+
+
+  /**
+   * This will show confirmation box while leaving the player, it will fire some telemetry events from the player.
+   */
+  async showConfirm() {
+    this.isExitPopupShown &#x3D; true;
+    let type, stageId;
+    if (this.playerType &#x3D;&#x3D;&#x3D; &#x27;sunbird-old-player&#x27;) {
+      type &#x3D; (this.previewElement.nativeElement.contentWindow[&#x27;Renderer&#x27;]
+        &amp;&amp; !this.previewElement.nativeElement.contentWindow[&#x27;Renderer&#x27;].running) ? &#x27;EXIT_APP&#x27; : &#x27;EXIT_CONTENT&#x27;;
+      stageId &#x3D; this.previewElement.nativeElement.contentWindow[&#x27;EkstepRendererAPI&#x27;].getCurrentStageId();
+      this.previewElement.nativeElement.contentWindow[&#x27;TelemetryService&#x27;].interact(
+        &#x27;TOUCH&#x27;, &#x27;DEVICE_BACK_BTN&#x27;, &#x27;EXIT&#x27;, { type, stageId });
+    } else {
+      this.telemetryGeneratorService.generateBackClickedNewTelemetry(true, Environment.PLAYER, PageId.PLAYER);
+    }
+
+    const alert &#x3D; await this.alertCtrl.create({
+      header: this.commonUtilService.translateMessage(&#x27;CONFIRM&#x27;),
+      message: this.commonUtilService.translateMessage(&#x27;CONTENT_PLAYER_EXIT_PERMISSION&#x27;),
+      buttons: [
+        {
+          text: this.commonUtilService.translateMessage(&#x27;CANCEL&#x27;),
+          role: &#x27;cancel&#x27;,
+          handler: () &#x3D;&gt; {
+            this.isExitPopupShown &#x3D; false;
+            this.telemetryGeneratorService.generateInteractTelemetry(InteractType.TOUCH, 
+              InteractSubtype.CANCEL_CLICKED, 
+              Environment.PLAYER,
+              PageId.PLAYER_PAGE);
+            this.previewElement.nativeElement.contentWindow[&#x27;TelemetryService&#x27;].interact(
+              &#x27;TOUCH&#x27;, &#x27;ALERT_CANCEL&#x27;, &#x27;EXIT&#x27;, { type, stageId });
+          }
+        },
+        {
+          text: this.commonUtilService.translateMessage(&#x27;OKAY&#x27;),
+          handler: async() &#x3D;&gt; {
+            this.telemetryGeneratorService.generateInteractTelemetry(InteractType.TOUCH, 
+              InteractSubtype.OK_CLICKED, 
+              Environment.PLAYER,
+              PageId.PLAYER_PAGE);
+            if (this.playerType &#x3D;&#x3D;&#x3D; &#x27;sunbird-old-player&#x27;) {
+              this.previewElement.nativeElement.contentWindow[&#x27;TelemetryService&#x27;].interact(
+                &#x27;END&#x27;, &#x27;ALERT_OK&#x27;, &#x27;EXIT&#x27;, { type, stageId });
+              this.previewElement.nativeElement.contentWindow[&#x27;TelemetryService&#x27;].interrupt(&#x27;OTHER&#x27;, stageId);
+              this.previewElement.nativeElement.contentWindow[&#x27;EkstepRendererAPI&#x27;].dispatchEvent(&#x27;renderer:telemetry:end&#x27;);
+              this.closeIframe();
+            } else {
+              this.location.back();
+            }
+          }
+        }
+      ],
+      cssClass: &#x27;player-exit-popup&#x27;
+    });
+    await alert.present();
+  }
+
+  async openPDF(url) {
+    if (this.course) {
+      setTimeout(() &#x3D;&gt; {
+        this.updateContentState();
+      }, 1000);
+    }
+    const loader &#x3D; await this.commonUtilService.getLoader(undefined, this.commonUtilService.translateMessage(&#x27;DOWNLOADING_2&#x27;));
+    await loader.present();
+    const fileTransfer: FileTransferObject &#x3D; this.transfer.create();
+    const entry &#x3D; await fileTransfer
+      .download(url, cordova.file.cacheDirectory + url.substring(url.lastIndexOf(&#x27;/&#x27;) + 1))
+      .catch((e) &#x3D;&gt; {
+        this.telemetryGeneratorService.generateErrorTelemetry(Environment.PLAYER,
+          TelemetryErrorCode.ERR_DOWNLOAD_FAILED,
+          ErrorType.SYSTEM,
+          PageId.PLAYER,
+          JSON.stringify(e),
+        );
+      });
+    loader.dismiss();
+    const stageId &#x3D; this.previewElement.nativeElement.contentWindow[&#x27;EkstepRendererAPI&#x27;].getCurrentStageId();
+    try {
+      this.previewElement.nativeElement.contentWindow[&#x27;TelemetryService&#x27;].exit(stageId);
+    } catch (err) {
+      console.error(&#x27;End telemetry error:&#x27;, err.message);
+    }
+
+    if (entry) {
+      const localUrl &#x3D; entry.toURL();
+      this.fileOpener
+        .open(localUrl, &#x27;application/pdf&#x27;)
+        .catch((e) &#x3D;&gt; {
+          console.log(&#x27;Error opening file&#x27;, e);
+          this.commonUtilService.showToast(&#x27;ERROR_TECHNICAL_PROBLEM&#x27;);
+        });
+    }
+    this.location.back();
+
+  }
+
+  private updateContentState() {
+    const updateContentStateRequest: UpdateContentStateRequest &#x3D; {
+      userId: this.config[&#x27;context&#x27;][&#x27;actor&#x27;][&#x27;id&#x27;],
+      contentId: this.config[&#x27;metadata&#x27;][&#x27;identifier&#x27;],
+      courseId: this.course[&#x27;identifier&#x27;] || this.course[&#x27;courseId&#x27;],
+      batchId: this.course[&#x27;batchId&#x27;],
+      status: 2,
+      progress: 100,
+      target: [UpdateContentStateTarget.LOCAL, UpdateContentStateTarget.SERVER]
+    };
+
+    this.courseService.updateContentState(updateContentStateRequest).subscribe();
+  }
+
+  playerTelemetryEvents(event) {
+    if (event) {
+      SunbirdSdk.instance.telemetryService.saveTelemetry(JSON.stringify(event)).subscribe(
+        (res) &#x3D;&gt; console.log(&#x27;response after telemetry&#x27;, res),
+        );
+    }
+  }
+
+  private isJSON(input): boolean {
+    try {
+      JSON.parse(input);
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  checkIsPlayerEnabled(config , playerType) {
+    return config.fields.find(ele &#x3D;&gt;   ele.name &#x3D;&#x3D;&#x3D; playerType &amp;&amp; ele.values[0].isEnabled);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content&gt;
+  &lt;div class&#x3D;&quot;content-player&quot; *ngIf&#x3D;&quot;playerType &#x3D;&#x3D;&#x3D; &#x27;sunbird-old-player&#x27;&quot;&gt;
+    &lt;iframe #preview title&#x3D;&quot;player&quot; id&#x3D;&quot;contentPlayer&quot; src&#x3D;&quot;./content-player/preview.html?isMobile&#x3D;true&quot;
+      style&#x3D;&quot;width:100%;height:100vh;border:none;&quot;&gt;&lt;/iframe&gt;
+  &lt;/div&gt;
+  &lt;div *ngIf&#x3D;&quot;playerType &#x3D;&#x3D;&#x3D; &#x27;sunbird-pdf-player&#x27;&quot; style&#x3D;&quot;height:100vh;width:100%;&quot;&gt;
+    &lt;sunbird-pdf-player [playerConfig]&#x3D;&quot;config&quot; (playerEvent)&#x3D;&quot;playerEvents($event)&quot;
+      (telemetryEvent)&#x3D;&quot;playerTelemetryEvents($event)&quot;&gt;&lt;/sunbird-pdf-player&gt;
+  &lt;/div&gt;
+  &lt;div *ngIf&#x3D;&quot;playerType &#x3D;&#x3D;&#x3D; &#x27;sunbird-epub-player&#x27;&quot; style&#x3D;&quot;height:100vh;width:100%;&quot;&gt;
+    &lt;sunbird-epub-player [playerConfig]&#x3D;&quot;config&quot; (playerEvent)&#x3D;&quot;playerEvents($event)&quot;
+      (telemetryEvent)&#x3D;&quot;playerTelemetryEvents($event)&quot;&gt;&lt;/sunbird-epub-player&gt;
+  &lt;/div&gt;
+  &lt;div *ngIf&#x3D;&quot;playerType &#x3D;&#x3D;&#x3D; &#x27;sunbird-quml-player&#x27;&quot; style&#x3D;&quot;height:100vh;width:100%;background-color: white;&quot;&gt;
+      &lt;quml-main-player [playerConfig]&#x3D;&quot;config&quot; (playerEvent)&#x3D;&quot;playerEvents($event)&quot; 
+      (telemetryEvent)&#x3D;&quot;playerTelemetryEvents($event)&quot;&gt;&lt;/quml-main-player&gt;
+  &lt;/div&gt;
+  &lt;div *ngIf&#x3D;&quot;playerType &#x3D;&#x3D;&#x3D; &#x27;sunbird-video-player&#x27;&quot;  style&#x3D;&quot;height:100vh;width:100%;&quot;&gt;
+    &lt;div class&#x3D;&quot;sb-player-container-ios&quot; *ngIf&#x3D;&quot;platform.is(&#x27;ios&#x27;)&quot; (click)&#x3D;&quot;handleNavBackButton();$event.stopPropagation()&quot;&gt;
+      &lt;div class&#x3D;&quot;sb-circle&quot;&gt;
+        &lt;img src&#x3D;&quot;assets/imgs/ic_back.svg&quot; alt&#x3D;&quot;back&quot; aria-label&#x3D;&quot;back&quot; class&#x3D;&quot;sb-arrow-back&quot; role&#x3D;&quot;button&quot;&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;sunbird-video-player [playerConfig]&#x3D;&quot;config&quot; (playerEvent)&#x3D;&quot;playerEvents($event)&quot;
+      (telemetryEvent)&#x3D;&quot;playerTelemetryEvents($event)&quot;&gt;&lt;/sunbird-video-player&gt;
+  &lt;/div&gt;
+&lt;/ion-content&gt;
+
+</code></pre>
+    </div>
+
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content>  <div class="content-player" *ngIf="playerType === \'sunbird-old-player\'">    <iframe #preview title="player" id="contentPlayer" src="./content-player/preview.html?isMobile=true"      style="width:100%;height:100vh;border:none;"></iframe>  </div>  <div *ngIf="playerType === \'sunbird-pdf-player\'" style="height:100vh;width:100%;">    <sunbird-pdf-player [playerConfig]="config" (playerEvent)="playerEvents($event)"      (telemetryEvent)="playerTelemetryEvents($event)"></sunbird-pdf-player>  </div>  <div *ngIf="playerType === \'sunbird-epub-player\'" style="height:100vh;width:100%;">    <sunbird-epub-player [playerConfig]="config" (playerEvent)="playerEvents($event)"      (telemetryEvent)="playerTelemetryEvents($event)"></sunbird-epub-player>  </div>  <div *ngIf="playerType === \'sunbird-quml-player\'" style="height:100vh;width:100%;background-color: white;">      <quml-main-player [playerConfig]="config" (playerEvent)="playerEvents($event)"       (telemetryEvent)="playerTelemetryEvents($event)"></quml-main-player>  </div>  <div *ngIf="playerType === \'sunbird-video-player\'"  style="height:100vh;width:100%;">    <div class="sb-player-container-ios" *ngIf="platform.is(\'ios\')" (click)="handleNavBackButton();$event.stopPropagation()">      <div class="sb-circle">        <img src="assets/imgs/ic_back.svg" alt="back" aria-label="back" class="sb-arrow-back" role="button">      </div>    </div>    <sunbird-video-player [playerConfig]="config" (playerEvent)="playerEvents($event)"      (telemetryEvent)="playerTelemetryEvents($event)"></sunbird-video-player>  </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'accessDiscussion'},{'name': 'AccordionListComponent', 'selector': 'app-accordion-list'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-id-popup'},{'name': 'AcknowledgeResponseComponent', 'selector': 'acknowledge-response'},{'name': 'ActiveDownloadsPage', 'selector': 'app-active-downloads'},{'name': 'ActivityDashboardPage', 'selector': 'activity-dashboard'},{'name': 'ActivityDetailsPage', 'selector': 'app-activity-details'},{'name': 'ActivityTocPage', 'selector': 'activity-toc'},{'name': 'AddActivityToGroupComponent', 'selector': 'add-activity-to-group'},{'name': 'AddActivityToGroupPage', 'selector': 'add-activity-to-group'},{'name': 'AddEntityComponent', 'selector': 'app-add-entity'},{'name': 'AddFilePage', 'selector': 'app-add-file'},{'name': 'AddLinkModalComponent', 'selector': 'app-add-link-modal'},{'name': 'AddMemberToGroupPage', 'selector': 'app-add-member-to-group'},{'name': 'AddProgramsComponent', 'selector': 'app-add-programs'},{'name': 'AdminHomePage', 'selector': 'app-admin-home'},{'name': 'AllEvidenceListComponent', 'selector': 'app-all-evidence-list'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationHeaderComponent', 'selector': 'app-application-header'},{'name': 'ApplicationHeaderKebabMenuComponent', 'selector': 'app-application-header-kebab-menu'},{'name': 'AppRatingAlertComponent', 'selector': 'app-rating-alert'},{'name': 'AttachmentCardComponent', 'selector': 'app-attachment-card'},{'name': 'AttachmentComponent', 'selector': 'attachments'},{'name': 'AttachmentListingPage', 'selector': 'app-attachment-listing'},{'name': 'AttachmentListsComponent', 'selector': 'app-attachment-lists'},{'name': 'BarChartComponent', 'selector': 'bar-chart'},{'name': 'CategoriesEditPage', 'selector': 'app-categories-edit'},{'name': 'CategoryListPage', 'selector': 'app-category-list-page'},{'name': 'CategorySelectComponent', 'selector': 'app-category-select'},{'name': 'CertificateVerificationPopoverComponent', 'selector': 'app-certificate-verification-popover'},{'name': 'CertificateViewPage', 'selector': 'app-certificate-view'},{'name': 'ChapterDetailsPage', 'selector': 'app-chapter-details'},{'name': 'CollectionActionsComponent', 'selector': 'collection-acions'},{'name': 'CollectionChildComponent', 'selector': 'app-collection-child'},{'name': 'CollectionDetailEtbPage', 'selector': 'app-collection-detail-etb'},{'name': 'CommonFormsComponent', 'selector': 'app-common-forms'},{'name': 'CommonHeaderComponent', 'selector': 'app-common-header'},{'name': 'ConfirmAlertComponent', 'selector': 'app-confirm-alert'},{'name': 'ConsentPiiPopupComponent', 'selector': 'app-consent-pii-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentDetailsPage', 'selector': 'app-content-details'},{'name': 'ContentRatingAlertComponent', 'selector': 'app-content-rating-alert'},{'name': 'ContentViewerComponent', 'selector': 'content-viewer'},{'name': 'CopyTraceIdPopoverComponent', 'selector': 'app-copy-trace-id-popover'},{'name': 'CourseBatchesPage', 'selector': 'app-course-batches'},{'name': 'CourseCompletionPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'CoursesPage', 'selector': 'app-courses'},{'name': 'CreateEditGroupPage', 'selector': 'app-create-edit-group'},{'name': 'CreateProjectPage', 'selector': 'app-create-project'},{'name': 'CreateTaskComponent', 'selector': 'app-create-task'},{'name': 'CreateTaskFormComponent', 'selector': 'app-create-task-form'},{'name': 'CurriculumCoursesPage', 'selector': 'app-curriculum-courses'},{'name': 'DashboardComponent', 'selector': 'dashboard-component'},{'name': 'DataSyncComponent', 'selector': 'app-data-sync'},{'name': 'DateTypeInputComponent', 'selector': 'app-date-type-input'},{'name': 'DeeplinkRedirectComponent', 'selector': 'app-deeplink-redirect'},{'name': 'DetailCardComponent', 'selector': 'app-detail-card'},{'name': 'DialogPopupComponent', 'selector': 'app-dialog-popup'},{'name': 'DiscoverComponent', 'selector': 'app-discover'},{'name': 'DistrictMappingPage', 'selector': 'app-district-mapping'},{'name': 'DomainEcmLsitingComponent', 'selector': 'app-domain-ecm-lsiting'},{'name': 'DownloadManagerPage', 'selector': 'app-download-manager'},{'name': 'DownloadShareComponent', 'selector': 'download-share'},{'name': 'DownloadsHeaderComponent', 'selector': 'app-downloads-header'},{'name': 'DownloadsTabComponent', 'selector': 'app-downloads-tab'},{'name': 'DownloadTranscriptPopupComponent', 'selector': 'app-download-transcript-popup'},{'name': 'EcmListingPage', 'selector': 'app-ecm-listing'},{'name': 'EditContactDetailsPopupComponent', 'selector': 'app-edit-contact-details-popup'},{'name': 'EditContactVerifyPopupComponent', 'selector': 'app-edit-contact-verify-popup'},{'name': 'EnrolledCourseDetailsPage', 'selector': 'app-enrolled-course-details-page'},{'name': 'EnrollmentDetailsComponent', 'selector': 'app-enrollment-details'},{'name': 'EntityfilterComponent', 'selector': 'app-entityfilter'},{'name': 'EntitySearchLocalComponent', 'selector': 'app-entity-search-local'},{'name': 'ExpansionPanelComponent', 'selector': 'expansion-panel'},{'name': 'ExpansionTableComponent', 'selector': 'expansion-table'},{'name': 'ExploreBooksPage', 'selector': 'app-explore-books'},{'name': 'ExploreBooksSortComponent', 'selector': 'app-explore-books-sort'},{'name': 'FaqHelpPage', 'selector': 'app-faq-help'},{'name': 'FaqReportIssuePage', 'selector': 'app-faq-report-issue'},{'name': 'FilterModalComponent', 'selector': 'app-filter-modal'},{'name': 'FilteroptionComponent', 'selector': 'app-filteroption'},{'name': 'FiltersPage', 'selector': 'app-filters'},{'name': 'FooterButtonsComponent', 'selector': 'app-footer-buttons'},{'name': 'FrameworkSelectionPage', 'selector': 'app-framework-selection'},{'name': 'GraphCircleComponent', 'selector': 'graph-circle'},{'name': 'GroupDetailsPage', 'selector': 'app-group-details'},{'name': 'GroupGuideLinesPopoverComponent', 'selector': 'app-group-guidelines-popover'},{'name': 'GuestEditPage', 'selector': 'app-guest-edit'},{'name': 'GuestProfilePage', 'selector': 'app-guest-profile'},{'name': 'HintComponent', 'selector': 'app-hint'},{'name': 'ImageListingComponent', 'selector': 'app-image-listing'},{'name': 'ImageUploadComponent', 'selector': 'app-image-upload'},{'name': 'ImportPopoverComponent', 'selector': 'app-import-popover'},{'name': 'ImpSuggestionsPage', 'selector': 'app-imp-suggestions'},{'name': 'ItemListCardComponent', 'selector': 'app-item-list-card'},{'name': 'ItemListHeaderComponent', 'selector': 'app-item-list-header'},{'name': 'JoyfulThemePopupComponent', 'selector': 'app-joyful-theme-popup'},{'name': 'LanguageSettingsPage', 'selector': 'page-language-settings'},{'name': 'LearningResourcesPage', 'selector': 'app-learning-resources'},{'name': 'LicenseCardComponentComponent', 'selector': 'app-license-card-component'},{'name': 'LinkLearningResourcesComponent', 'selector': 'app-link-learning-resources'},{'name': 'ManageUserProfilesPage', 'selector': 'app-manage-user-profiles'},{'name': 'MatrixChartComponent', 'selector': 'matrix-chart'},{'name': 'MatrixModalComponent', 'selector': 'app-matrix-modal'},{'name': 'MatrixTypeInputComponent', 'selector': 'app-matrix-type-input'},{'name': 'MetadataActionsComponent', 'selector': 'app-metadata-actions'},{'name': 'MetadataDetailsComponent', 'selector': 'app-metadata-details'},{'name': 'MultipleTypeInputComponent', 'selector': 'app-multiple-type-input'},{'name': 'MyGroupsPage', 'selector': 'app-my-groups'},{'name': 'MyGroupsPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'NewExperiencePopupComponent', 'selector': 'app-new-experience-popup'},{'name': 'NoDataComponent', 'selector': 'app-no-data'},{'name': 'NoDownloadsComponent', 'selector': 'app-no-downloads'},{'name': 'NotificationItemComponent', 'selector': 'app-notification-item'},{'name': 'NotificationPage', 'selector': 'app-notification'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationHomeComponent', 'selector': 'app-observation-home'},{'name': 'ObservationSolutionEntityListingComponent', 'selector': 'app-observation-solution-entity-listing'},{'name': 'ObservationSolutionListingComponent', 'selector': 'app-observation-solution-listing'},{'name': 'ObservationSubmissionComponent', 'selector': 'app-observation-submission'},{'name': 'OtpPage', 'selector': 'app-otp'},{'name': 'OverflowMenuComponent', 'selector': 'app-overflow-menu'},{'name': 'PageFilterOptionsPage', 'selector': 'app-page-filter-options'},{'name': 'PageFilterPage', 'selector': 'app-page-filter'},{'name': 'PageQuestionsComponent', 'selector': 'app-page-questions'},{'name': 'PbHorizontalComponent', 'selector': 'app-pb-horizontal'},{'name': 'PercentageColumnChartsComponent', 'selector': 'percentage-column-charts'},{'name': 'PermissionComponent', 'selector': 'app-permission'},{'name': 'PersonalDetailsEditPage', 'selector': 'app-personal-details-edit'},{'name': 'PieChartComponent', 'selector': 'pie-chart'},{'name': 'PlayerPage', 'selector': 'app-player'},{'name': 'PopoverComponent', 'selector': 'app-popover'},{'name': 'PrivacyPolicyAndTCComponent', 'selector': 'app-privacy-policy-and-tc'},{'name': 'ProfileAvatarComponent', 'selector': 'app-profile-avatar'},{'name': 'ProfileNameConfirmationPopoverComponent', 'selector': 'app-profile-name-confirmation-popover'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfileSettingsPage', 'selector': 'app-profile-settings'},{'name': 'ProgramListingComponent', 'selector': 'app-program-listing'},{'name': 'ProgressBarComponent', 'selector': 'progress-bar'},{'name': 'ProjectDetailsCardComponent', 'selector': 'app-project-details-card'},{'name': 'ProjectDetailsComponent', 'selector': 'app-project-details'},{'name': 'ProjectEditPage', 'selector': 'app-project-edit'},{'name': 'ProjectListingComponent', 'selector': 'app-project-listing'},{'name': 'ProjectMetadataCardComponent', 'selector': 'app-project-metadata-card'},{'name': 'ProjectOperationPage', 'selector': 'app-project-operation'},{'name': 'ProjectReportComponent', 'selector': 'app-project-report'},{'name': 'ProjectTaskListComponent', 'selector': 'app-project-task-list'},{'name': 'ProjectTemplatePage', 'selector': 'app-project-template'},{'name': 'ProjectTemplateviewPage', 'selector': 'app-project-templateview'},{'name': 'QrcoderesultPage', 'selector': 'app-qrcoderesult'},{'name': 'QRScannerAlert', 'selector': 'app-qrscanner-alert'},{'name': 'QrScannerIOSComponent', 'selector': 'app-qr-scanner-ios'},{'name': 'QuestionHeadingComponent', 'selector': 'app-question-heading'},{'name': 'QuestionMapModalComponent', 'selector': 'app-question-map-modal'},{'name': 'QuestionnairePage', 'selector': 'app-questionnaire'},{'name': 'RadioTypeInputComponent', 'selector': 'app-radio-type-input'},{'name': 'RelevantContentCardComponent', 'selector': 'app-relevant-content-card'},{'name': 'RelevantContentsPage', 'selector': 'app-relevant-contents'},{'name': 'RemarksComponent', 'selector': 'app-remarks'},{'name': 'RemarksModalComponent', 'selector': 'app-remarks-modal'},{'name': 'ReportListComponent', 'selector': 'app-report-list'},{'name': 'ReportModalFilter', 'selector': 'report-modal-filter'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'ReportsListingComponent', 'selector': 'app-reports-listing'},{'name': 'ReportsTextComponent', 'selector': 'reports-text'},{'name': 'ResourcesComponent', 'selector': 'app-resources'},{'name': 'SbAppSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbDownloadPopupComponent', 'selector': 'app-sb-download-popup'},{'name': 'SbGenericFormPopoverComponent', 'selector': 'app-sb-generic-form-popover'},{'name': 'SbGenericPopoverComponent', 'selector': 'app-sb-generic-popover'},{'name': 'SbInsufficientStoragePopupComponent', 'selector': 'sb-insufficient-storage-popup'},{'name': 'SbNoNetworkPopupComponent', 'selector': 'sb-no-network-popup'},{'name': 'SbPopoverComponent', 'selector': 'sb-popover'},{'name': 'SbPreferencePopupComponent', 'selector': 'app-sb-preferences-popup'},{'name': 'SbProgressLoaderPage', 'selector': 'app-sb-progress-loader'},{'name': 'SbSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbSubjectListPopupComponent', 'selector': 'app-sb-subject-list-popup'},{'name': 'SbTutorialPopupComponent', 'selector': 'app-sb-tutorial-popup'},{'name': 'ScatterChartComponent', 'selector': 'scatter-chart'},{'name': 'SearchFilterPage', 'selector': 'app-search-filter.page'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SectionListingPage', 'selector': 'app-section-listing'},{'name': 'SelfDeclaredTeacherEditPage', 'selector': 'app-self-declared-teacher-edit'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'ShowCertificateComponent', 'selector': 'app-show-certificate-component'},{'name': 'ShowVendorAppsComponent', 'selector': 'show-vendor-apps'},{'name': 'SignInCardComponent', 'selector': 'app-sign-in-card'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'SignupBasicInfoPage', 'selector': 'app-signup-basic-info'},{'name': 'SignupEmailPasswordPage', 'selector': 'app-signup-email-password'},{'name': 'SkeletonItemComponent', 'selector': 'app-skeleton-item'},{'name': 'SliderTypeInputComponent', 'selector': 'app-slider-type-input'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'StartImprovementComponent', 'selector': 'app-start-improvement'},{'name': 'StorageSettingsPage', 'selector': 'app-storage-settings'},{'name': 'SubmissionActionsComponent', 'selector': 'app-submission-actions'},{'name': 'SubmissionPreviewPageComponent', 'selector': 'app-submission-preview-page'},{'name': 'SubProfileEditPage', 'selector': 'app-sub-profile-edit'},{'name': 'SupportAcknowledgement', 'selector': 'support-acknowledgement'},{'name': 'SurveyHomeComponent', 'selector': 'app-survey-home'},{'name': 'SurveyMsgComponent', 'selector': 'app-survey-msg'},{'name': 'SyncPage', 'selector': 'app-sync'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TaskCardComponent', 'selector': 'app-task-card'},{'name': 'TaskViewPage', 'selector': 'app-task-view'},{'name': 'TeacherIdVerificationComponent', 'selector': 'app-teacher-id-verification-popup'},{'name': 'TermsAndConditionsPage', 'selector': 'app-terms-and-conditions'},{'name': 'TextBookTocPage', 'selector': 'textbook-toc'},{'name': 'TextbookViewMorePage', 'selector': 'app-textbook-view-more'},{'name': 'TextTypeInputComponent', 'selector': 'app-text-type-input'},{'name': 'ToastNavigationComponent', 'selector': 'app-toast-navigation'},{'name': 'TocHeaderComponent', 'selector': 'app-toc-header'},{'name': 'UpgradePopoverComponent', 'selector': 'app-upgrade-popover'},{'name': 'UserHomePage', 'selector': 'app-user-home'},{'name': 'UserTypeSelectionPage', 'selector': 'page-user-type-selection'},{'name': 'ViewCreditsComponent', 'selector': 'app-view-credits'},{'name': 'ViewDetailComponent', 'selector': 'app-view-detail'},{'name': 'ViewMoreActivityComponent', 'selector': 'app-view-more-activity'},{'name': 'ViewMoreActivityPage', 'selector': 'view-more-activity'},{'name': 'YearOfBirthPopupComponent', 'selector': 'app-year-of-birth-popup'}];
+    var DIRECTIVES = [{'name': 'CustomIonSelectDirective', 'selector': '[appCustomIonSelect]'},{'name': 'HideHeaderFooterDirective', 'selector': '[hide-header-footer]'},{'name': 'ReadMoreDirective', 'selector': '[readMore]'}];
+    var ACTUAL_COMPONENT = {'name': 'PlayerPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'PlayerPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,2512 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  DownloadManagerPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/download-manager/download-manager.page.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="../interfaces/DownloadManagerPageInterface.html" target="_self" >DownloadManagerPageInterface</a></code>
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-download-manager</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./download-manager.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./download-manager.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_toast" >_toast</a>
+                            </li>
+                            <li>
+                                <a href="#appName" >appName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#commonUtilService" >commonUtilService</a>
+                            </li>
+                            <li>
+                                <a href="#defaultImg" >defaultImg</a>
+                            </li>
+                            <li>
+                                <a href="#deleteAllConfirm" >deleteAllConfirm</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#deletedContentListTitle$" >deletedContentListTitle$</a>
+                            </li>
+                            <li>
+                                <a href="#downloadedContents" >downloadedContents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                <a href="#downloadsTab" >downloadsTab</a>
+                            </li>
+                            <li>
+                                <a href="#headerObservable" >headerObservable</a>
+                            </li>
+                            <li>
+                                <a href="#loader" >loader</a>
+                            </li>
+                            <li>
+                                <a href="#sortCriteria" >sortCriteria</a>
+                            </li>
+                            <li>
+                                <a href="#storageDestination" >storageDestination</a>
+                            </li>
+                            <li>
+                                <a href="#storageInfo" >storageInfo</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#checkAvailableSpace" >checkAvailableSpace</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#closeSelectAllPopup" >closeSelectAllPopup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteAllContents" >deleteAllContents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteContents" >deleteContents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteObservations" >deleteObservations</a>
+                            </li>
+                            <li>
+                                <a href="#deleteProjects" >deleteProjects</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#fetchStorageDestination" >fetchStorageDestination</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateInteractTelemetry" >generateInteractTelemetry</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getAppName" >getAppName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#getAppStorageInfo" >getAppStorageInfo</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getDownloadedContents" >getDownloadedContents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#handleHeaderEvents" >handleHeaderEvents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ionViewWillEnter" >ionViewWillEnter</a>
+                            </li>
+                            <li>
+                                <a href="#ionViewWillLeave" >ionViewWillLeave</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onSortCriteriaChange" >onSortCriteriaChange</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#presentPopupForLessStorageSpace" >presentPopupForLessStorageSpace</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#redirectToActivedownloads" >redirectToActivedownloads</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#redirectToSettings" >redirectToSettings</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#subscribeContentUpdateEvents" >subscribeContentUpdateEvents</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(contentService: ContentService, deviceInfo: DeviceInfo, storageService: StorageService, ngZone: NgZone, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, headerService: <a href="../injectables/AppHeaderService.html" target="_self">AppHeaderService</a>, events: <a href="../injectables/Events.html" target="_self">Events</a>, popoverCtrl: PopoverController, appGlobalService: <a href="../injectables/AppGlobalService.html" target="_self">AppGlobalService</a>, router: Router, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, formAndFrameworkUtilService: <a href="../injectables/FormAndFrameworkUtilService.html" target="_self">FormAndFrameworkUtilService</a>, db: <a href="../injectables/DbService.html" target="_self">DbService</a>, storage: <a href="../injectables/LocalStorageService.html" target="_self">LocalStorageService</a>, utils: <a href="../injectables/UtilsService.html" target="_self">UtilsService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/download-manager/download-manager.page.ts:59</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>contentService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ContentService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>deviceInfo</td>
+                                                  
+                                                        <td>
+                                                                    <code>DeviceInfo</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>storageService</td>
+                                                  
+                                                        <td>
+                                                                    <code>StorageService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ngZone</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgZone</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>headerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppHeaderService.html" target="_self" >AppHeaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>events</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >Events</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>popoverCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>PopoverController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appGlobalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppGlobalService.html" target="_self" >AppGlobalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formAndFrameworkUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormAndFrameworkUtilService.html" target="_self" >FormAndFrameworkUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>db</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DbService.html" target="_self" >DbService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>storage</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LocalStorageService.html" target="_self" >LocalStorageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utils</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilsService.html" target="_self" >UtilsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkAvailableSpace"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>checkAvailableSpace</b></span>
+                        <a href="#checkAvailableSpace"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkAvailableSpace()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="401"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:401</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeSelectAllPopup"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>closeSelectAllPopup</b></span>
+                        <a href="#closeSelectAllPopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>closeSelectAllPopup()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="412"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:412</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteAllContents"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteAllContents</b></span>
+                        <a href="#deleteAllContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteAllContents(emitedContents)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="250"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:250</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>emitedContents</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteContents"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteContents</b></span>
+                        <a href="#deleteContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteContents(emitedContents: <a href="../interfaces/EmitedContents.html" target="_self">EmitedContents</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="207"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:207</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>emitedContents</td>
+                                    <td>
+                                                <code><a href="../interfaces/EmitedContents.html" target="_self" >EmitedContents</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteObservations"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteObservations</b></span>
+                        <a href="#deleteObservations"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteObservations(content)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="433"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:433</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteProjects"></a>
+                    <span class="name">
+                        <span ><b>deleteProjects</b></span>
+                        <a href="#deleteProjects"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteProjects(contents)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="419"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:419</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contents</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchStorageDestination"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>fetchStorageDestination</b></span>
+                        <a href="#fetchStorageDestination"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchStorageDestination()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="381"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:381</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateInteractTelemetry"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateInteractTelemetry</b></span>
+                        <a href="#generateInteractTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateInteractTelemetry(contentCount: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, usedSpace: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, availableSpace: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="199"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:199</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>contentCount</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>usedSpace</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>availableSpace</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAppName"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getAppName</b></span>
+                        <a href="#getAppName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAppName()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="111"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:111</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAppStorageInfo"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>getAppStorageInfo</b></span>
+                        <a href="#getAppStorageInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getAppStorageInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../interfaces/AppStorageInfo.html" target="_self" >Promise&lt;AppStorageInfo&gt;</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDownloadedContents"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getDownloadedContents</b></span>
+                        <a href="#getDownloadedContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDownloadedContents(shouldGenerateTelemetry?, ignoreLoader?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="133"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:133</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>shouldGenerateTelemetry</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>ignoreLoader</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleHeaderEvents"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>handleHeaderEvents</b></span>
+                        <a href="#handleHeaderEvents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>handleHeaderEvents($event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="351"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:351</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillEnter"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ionViewWillEnter</b></span>
+                        <a href="#ionViewWillEnter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ionViewWillEnter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillLeave"></a>
+                    <span class="name">
+                        <span ><b>ionViewWillLeave</b></span>
+                        <a href="#ionViewWillLeave"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewWillLeave()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="335"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:335</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="85"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:85</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSortCriteriaChange"></a>
+                    <span class="name">
+                        <span ><b>onSortCriteriaChange</b></span>
+                        <a href="#onSortCriteriaChange"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSortCriteriaChange(sortAttribute)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="309"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:309</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>sortAttribute</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presentPopupForLessStorageSpace"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>presentPopupForLessStorageSpace</b></span>
+                        <a href="#presentPopupForLessStorageSpace"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presentPopupForLessStorageSpace()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="385"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:385</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectToActivedownloads"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>redirectToActivedownloads</b></span>
+                        <a href="#redirectToActivedownloads"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>redirectToActivedownloads()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="363"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:363</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="redirectToSettings"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>redirectToSettings</b></span>
+                        <a href="#redirectToSettings"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>redirectToSettings()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="372"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:372</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subscribeContentUpdateEvents"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>subscribeContentUpdateEvents</b></span>
+                        <a href="#subscribeContentUpdateEvents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>subscribeContentUpdateEvents()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="342"
+                            class="link-to-prism">src/app/download-manager/download-manager.page.ts:342</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="_toast"></a>
+                    <span class="name">
+                        <span ><b>_toast</b></span>
+                        <a href="#_toast"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/download-manager/download-manager.page.ts:49</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appName"></a>
+                    <span class="name">
+                        <span ><b>appName</b></span>
+                        <a href="#appName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/download-manager/download-manager.page.ts:55</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="commonUtilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>commonUtilService</b></span>
+                        <a href="#commonUtilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/download-manager/download-manager.page.ts:66</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defaultImg"></a>
+                    <span class="name">
+                        <span ><b>defaultImg</b></span>
+                        <a href="#defaultImg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.commonUtilService.convertFileSrc(&#x27;assets/imgs/ic_launcher.png&#x27;)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/app/download-manager/download-manager.page.ts:52</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteAllConfirm"></a>
+                    <span class="name">
+                        <span ><b>deleteAllConfirm</b></span>
+                        <a href="#deleteAllConfirm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/app/download-manager/download-manager.page.ts:54</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deletedContentListTitle$"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>deletedContentListTitle$</b></span>
+                        <a href="#deletedContentListTitle$"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>BehaviorSubject&lt;string&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/app/download-manager/download-manager.page.ts:58</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="downloadedContents"></a>
+                    <span class="name">
+                        <span ><b>downloadedContents</b></span>
+                        <a href="#downloadedContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Content[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/download-manager/download-manager.page.ts:51</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="downloadsTab"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                        <span ><b>downloadsTab</b></span>
+                        <a href="#downloadsTab"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../components/DownloadsTabComponent.html" target="_self" >DownloadsTabComponent</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;downloadsTab&#x27;, {static: false})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/app/download-manager/download-manager.page.ts:59</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="headerObservable"></a>
+                    <span class="name">
+                        <span ><b>headerObservable</b></span>
+                        <a href="#headerObservable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/download-manager/download-manager.page.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loader"></a>
+                    <span class="name">
+                        <span ><b>loader</b></span>
+                        <a href="#loader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/download-manager/download-manager.page.ts:53</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortCriteria"></a>
+                    <span class="name">
+                        <span ><b>sortCriteria</b></span>
+                        <a href="#sortCriteria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ContentSortCriteria[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/download-manager/download-manager.page.ts:56</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="storageDestination"></a>
+                    <span class="name">
+                        <span ><b>storageDestination</b></span>
+                        <a href="#storageDestination"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/app/download-manager/download-manager.page.ts:57</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="storageInfo"></a>
+                    <span class="name">
+                        <span ><b>storageInfo</b></span>
+                        <a href="#storageInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/AppStorageInfo.html" target="_self" >AppStorageInfo</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/download-manager/download-manager.page.ts:50</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Inject, NgZone, ViewChild } from &#x27;@angular/core&#x27;;
+import { PopoverController } from &#x27;@ionic/angular&#x27;;
+import { Events } from &#x27;@app/util/events&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import {
+  Content,
+  ContentDeleteRequest,
+  ContentDeleteResponse,
+  ContentDeleteStatus,
+  ContentRequest,
+  ContentService,
+  ContentSortCriteria,
+  ContentSpaceUsageSummaryRequest,
+  ContentSpaceUsageSummaryResponse,
+  DeviceInfo,
+  Profile,
+  SortOrder,
+  StorageService,
+  StorageDestination
+} from &#x27;sunbird-sdk&#x27;;
+import { AppGlobalService } from &#x27;@app/services/app-global-service.service&#x27;;
+import { AppHeaderService, } from &#x27;@app/services/app-header.service&#x27;;
+import { CommonUtilService, } from &#x27;@app/services/common-util.service&#x27;;
+import { TelemetryGeneratorService } from &#x27;@app/services/telemetry-generator.service&#x27;;
+import { AppStorageInfo, DownloadManagerPageInterface, EmitedContents } from &#x27;./download-manager.interface&#x27;;
+import { RouterLinks, ContentFilterConfig, EventTopics } from &#x27;@app/app/app.constant&#x27;;
+import { SbPopoverComponent } from &#x27;@app/app/components/popups/sb-popover/sb-popover.component&#x27;;
+import { PageId, InteractType, Environment, InteractSubtype } from &#x27;@app/services/telemetry-constants&#x27;;
+import { FormAndFrameworkUtilService } from &#x27;@app/services&#x27;;
+import { featureIdMap } from &#x27;../feature-id-map&#x27;;
+import { BehaviorSubject } from &#x27;rxjs&#x27;;
+import {
+  SbInsufficientStoragePopupComponent
+} from &#x27;@app/app/components/popups/sb-insufficient-storage-popup/sb-insufficient-storage-popup&#x27;;
+import { DownloadsTabComponent } from &#x27;./downloads-tab/downloads-tab.component&#x27;;
+import { finalize, tap, skip, takeWhile } from &#x27;rxjs/operators&#x27;;
+import { ContentUtil } from &#x27;@app/util/content-util&#x27;;
+import { DbService } from &#x27;../manage-learn/core/services/db.service&#x27;;
+import { UtilsService, LocalStorageService } from &#x27;../manage-learn/core&#x27;;
+import { storageKeys } from &#x27;../manage-learn/storageKeys&#x27;;
+
+@Component({
+  selector: &#x27;app-download-manager&#x27;,
+  templateUrl: &#x27;./download-manager.page.html&#x27;,
+  styleUrls: [&#x27;./download-manager.page.scss&#x27;],
+})
+export class DownloadManagerPage implements DownloadManagerPageInterface, OnInit {
+  headerObservable: any;
+  _toast: any;
+  storageInfo: AppStorageInfo;
+  downloadedContents: Content[] &#x3D; [];
+  defaultImg &#x3D; this.commonUtilService.convertFileSrc(&#x27;assets/imgs/ic_launcher.png&#x27;);
+  loader: any;
+  deleteAllConfirm;
+  appName: string;
+  sortCriteria: ContentSortCriteria[];
+  storageDestination: any;
+  private deletedContentListTitle$?: BehaviorSubject&lt;string&gt;;
+  @ViewChild(&#x27;downloadsTab&#x27;, { static: false }) downloadsTab: DownloadsTabComponent;
+
+  constructor(
+    @Inject(&#x27;CONTENT_SERVICE&#x27;) private contentService: ContentService,
+    @Inject(&#x27;DEVICE_INFO&#x27;) private deviceInfo: DeviceInfo,
+    @Inject(&#x27;STORAGE_SERVICE&#x27;) private storageService: StorageService,
+    private ngZone: NgZone,
+    public commonUtilService: CommonUtilService,
+    private headerService: AppHeaderService,
+    private events: Events,
+    private popoverCtrl: PopoverController,
+    private appGlobalService: AppGlobalService,
+    private router: Router,
+    private telemetryGeneratorService: TelemetryGeneratorService,
+    private formAndFrameworkUtilService: FormAndFrameworkUtilService,
+    private db: DbService,
+    private storage: LocalStorageService,
+    private utils: UtilsService
+  ) {
+    this.events.subscribe(EventTopics.LAST_ACCESS_ON, (data) &#x3D;&gt; {
+      if (data) {
+        this.getDownloadedContents();
+      }
+    });
+  }
+
+  async ngOnInit() {
+    this.subscribeContentUpdateEvents();
+    return Promise.all(
+      [this.getDownloadedContents(true),
+      this.getAppName()]
+    );
+  }
+
+  async ionViewWillEnter() {
+    this.events.subscribe(&#x27;update_header&#x27;, () &#x3D;&gt; {
+      this.headerService.showHeaderWithHomeButton([&#x27;download&#x27;, &#x27;settings&#x27;]);
+    });
+    this.headerObservable &#x3D; this.headerService.headerEventEmitted$.subscribe(eventName &#x3D;&gt; {
+      this.handleHeaderEvents(eventName);
+    });
+
+    this.headerService.showHeaderWithHomeButton([&#x27;download&#x27;, &#x27;settings&#x27;]);
+    await this.getAppStorageInfo();
+    this.getDownloadedContents();
+    this.checkAvailableSpace();
+    this.fetchStorageDestination();
+    this.events.subscribe(EventTopics.HAMBURGER_MENU_CLICKED, () &#x3D;&gt; {
+      this.closeSelectAllPopup();
+    });
+  }
+
+  private async getAppName() {
+    return this.commonUtilService.getAppName()
+      .then((appName: any) &#x3D;&gt; {
+        this.appName &#x3D; appName;
+      });
+  }
+
+  private async getAppStorageInfo(): Promise&lt;AppStorageInfo&gt; {
+    const req: ContentSpaceUsageSummaryRequest &#x3D; { paths: [this.storageService.getStorageDestinationDirectoryPath()] };
+    return this.contentService.getContentSpaceUsageSummary(req).toPromise()
+      .then((res: ContentSpaceUsageSummaryResponse[]) &#x3D;&gt; {
+        return this.deviceInfo.getAvailableInternalMemorySize().toPromise()
+          .then((size) &#x3D;&gt; {
+            this.storageInfo &#x3D; {
+              usedSpace: res[0].sizeOnDevice,
+              availableSpace: parseInt(size, 10)
+            };
+            return this.storageInfo;
+          });
+      });
+  }
+
+  async getDownloadedContents(shouldGenerateTelemetry?, ignoreLoader?) {
+    const profile: Profile &#x3D; this.appGlobalService.getCurrentUser();
+
+    const defaultSortCriteria: ContentSortCriteria[] &#x3D; [{
+      sortAttribute: &#x27;sizeOnDevice&#x27;,
+      sortOrder: SortOrder.DESC
+    }];
+    const primaryCategories &#x3D; await this.formAndFrameworkUtilService.getSupportedContentFilterConfig(
+      ContentFilterConfig.NAME_DOWNLOADS);
+    const requestParams: ContentRequest &#x3D; {
+      uid: profile.uid,
+      primaryCategories,
+      audience: [],
+      sortCriteria: this.sortCriteria || defaultSortCriteria
+    };
+    if (shouldGenerateTelemetry) {
+      await this.getAppStorageInfo();
+    }
+    await this.contentService.getContents(requestParams).toPromise()
+      .then(async data &#x3D;&gt; {
+        if (shouldGenerateTelemetry) {
+          this.generateInteractTelemetry(data.length, this.storageInfo.usedSpace, this.storageInfo.availableSpace);
+        }
+        data.forEach((value) &#x3D;&gt; {
+          value.contentData[&#x27;lastUpdatedOn&#x27;] &#x3D; value.lastUpdatedTime;
+          value.contentData.appIcon &#x3D; ContentUtil.getAppIcon(value.contentData.appIcon,
+            value.basePath, this.commonUtilService.networkInfo.isNetworkAvailable);
+        });
+        const query &#x3D; {
+            selector: {
+           downloaded: true,
+          },
+        }; 
+        if(this.db.pdb){
+          let projectData: any &#x3D; await this.db.customQuery(query);
+          if (projectData.docs) {
+            projectData.docs.sort(function (a, b) {
+                return  new Date(b.updatedAt || b.syncedAt).valueOf() - new Date(a.updatedAt || a.syncedAt).valueOf() ;
+              });
+              projectData.docs.map(doc &#x3D;&gt; {
+                doc.contentData &#x3D; { lastUpdatedOn: doc.updatedAt,name:doc.title };
+                doc.type &#x3D; &#x27;project&#x27;
+                doc.identifier&#x3D;doc._id;
+                data.push(doc)
+            })
+          }
+        }
+        this.storage
+        .getLocalStorage(storageKeys.downloadedObservations)
+        .then(resp &#x3D;&gt; {
+          resp.sort(function(a, b) {
+            return ( new Date(b.lastViewedAt).valueOf() - new Date(a.lastViewedAt).valueOf());
+          });
+          resp.map(res &#x3D;&gt; {
+            res.contentData &#x3D; { lastUpdatedOn: res.lastViewedAt, name: res.name, subject:res.programName };
+            res.type &#x3D; &#x27;observation&#x27;;
+            res.identifier &#x3D; res.programId + res.solutionId;
+            data.push(res);
+          });
+        });
+        this.ngZone.run(async () &#x3D;&gt; {
+          this.downloadedContents &#x3D; data;
+        });
+      });
+  }
+
+  private generateInteractTelemetry(contentCount: number, usedSpace: number, availableSpace: number) {
+    const valuesMap &#x3D; {};
+    valuesMap[&#x27;count&#x27;] &#x3D; contentCount;
+    valuesMap[&#x27;spaceTakenByApp&#x27;] &#x3D; this.commonUtilService.fileSizeInMB(usedSpace);
+    valuesMap[&#x27;freeSpace&#x27;] &#x3D; this.commonUtilService.fileSizeInMB(availableSpace);
+    this.telemetryGeneratorService.generateExtraInfoTelemetry(valuesMap, PageId.DOWNLOADS);
+  }
+
+  async deleteContents(emitedContents: EmitedContents) {
+    const projectContents &#x3D; emitedContents.selectedContents.filter((content) &#x3D;&gt; (content[&#x27;type&#x27;] &#x3D;&#x3D; &#x27;project&#x27;));
+    const observationContents &#x3D; emitedContents.selectedContents.filter( content &#x3D;&gt; (content[&#x27;type&#x27;] &#x3D;&#x3D; &#x27;observation&#x27;));
+    emitedContents.selectedContents &#x3D; emitedContents.selectedContents.filter(content &#x3D;&gt; !content[&#x27;type&#x27;] || (content[&#x27;type&#x27;] !&#x3D; &#x27;project&#x27; &amp;&amp; content[&#x27;type&#x27;] !&#x3D; &#x27;observation&#x27;));
+
+    if (!emitedContents.selectedContents.length) {
+      this.deleteProjects(projectContents);
+      this.deleteObservations(observationContents);
+      return;
+    }
+    this.deleteProjects(projectContents)
+    this.deleteObservations(observationContents);
+
+    const contentDeleteRequest: ContentDeleteRequest &#x3D; {
+      contentDeleteList: emitedContents.selectedContents,
+    };
+
+    if (emitedContents.selectedContents.length &gt; 1) {
+      await this.deleteAllContents(emitedContents);
+    } else {
+      this.loader &#x3D; await this.commonUtilService.getLoader();
+      await this.loader.present();
+
+      this.contentService.deleteContent(contentDeleteRequest).toPromise()
+        .then(async (data: ContentDeleteResponse[]) &#x3D;&gt; {
+          await this.loader.dismiss();
+          this.loader &#x3D; undefined;
+          if (data &amp;&amp; data[0].status &#x3D;&#x3D;&#x3D; ContentDeleteStatus.NOT_FOUND) {
+            this.commonUtilService.showToast(this.commonUtilService.translateMessage(&#x27;CONTENT_DELETE_FAILED&#x27;));
+          } else {
+            this.events.publish(&#x27;savedResources:update&#x27;, {
+              update: true
+            });
+            this.commonUtilService.showToast(this.commonUtilService.translateMessage(&#x27;MSG_RESOURCE_DELETED&#x27;));
+          }
+        }).catch(async (error: any) &#x3D;&gt; {
+          await this.loader.dismiss();
+          this.loader &#x3D; undefined;
+          this.commonUtilService.showToast(this.commonUtilService.translateMessage(&#x27;CONTENT_DELETE_FAILED&#x27;));
+        });
+    }
+  }
+
+  private async deleteAllContents(emitedContents) {
+    const valuesMap &#x3D; {};
+    valuesMap[&#x27;size&#x27;] &#x3D; this.commonUtilService.fileSizeInMB(emitedContents.selectedContentsInfo.totalSize);
+    valuesMap[&#x27;count&#x27;] &#x3D; emitedContents.selectedContentsInfo.count;
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.DELETE_CLICKED,
+      Environment.DOWNLOADS,
+      PageId.BULK_DELETE_CONFIRMATION_POPUP, undefined,
+      valuesMap,
+      undefined,
+      featureIdMap.downloadManager.DOWNLOADS_DELETE);
+    const contentDeleteRequest: ContentDeleteRequest &#x3D; {
+      contentDeleteList: emitedContents.selectedContents
+    };
+    this.deletedContentListTitle$ &#x3D; new BehaviorSubject(&#x27;0/&#x27; + contentDeleteRequest.contentDeleteList.length);
+    this.deleteAllConfirm &#x3D; await this.popoverCtrl.create({
+      component: SbPopoverComponent,
+      componentProps: {
+        sbPopoverHeading: this.commonUtilService.translateMessage(&#x27;DELETE_PROGRESS&#x27;),
+        actionsButtons: [
+          {
+            btntext: this.commonUtilService.translateMessage(&#x27;CANCEL&#x27;),
+            btnClass: &#x27;sb-btn sb-btn-sm sb-btn-outline-info cancel-delete&#x27;
+          },
+        ],
+        icon: null,
+        metaInfo: this.commonUtilService.translateMessage(&#x27;FILES_DELETED&#x27;),
+        sbPopoverDynamicMainTitle: this.deletedContentListTitle$
+      },
+      cssClass: &#x27;sb-popover danger sb-popover-cancel-delete&#x27;,
+    });
+    await this.deleteAllConfirm.present();
+
+    this.deleteAllConfirm.onDidDismiss().then((response) &#x3D;&gt; {
+      if (response) {
+        this.contentService.clearContentDeleteQueue().toPromise();
+      }
+    });
+    this.contentService.enqueueContentDelete(contentDeleteRequest).toPromise();
+    this.contentService.getContentDeleteQueue().pipe(
+      skip(1),
+      takeWhile((list) &#x3D;&gt; !!list.length),
+      finalize(async () &#x3D;&gt; {
+        this.deletedContentListTitle$
+          .next(&#x60;${contentDeleteRequest.contentDeleteList.length}/${contentDeleteRequest.contentDeleteList.length}&#x60;);
+
+        this.deleteAllConfirm.dismiss();
+        this.events.publish(&#x27;savedResources:update&#x27;, {
+          update: true
+        });
+      })
+    )
+      .subscribe((list) &#x3D;&gt; {
+        this.deletedContentListTitle$
+          .next(&#x60;${contentDeleteRequest.contentDeleteList.length - list.length}/${contentDeleteRequest.contentDeleteList.length}&#x60;);
+      });
+  }
+
+  onSortCriteriaChange(sortAttribute): void {
+    let sortAttr: string;
+    if (sortAttribute.selectedItem &#x3D;&#x3D;&#x3D; &#x27;CONTENT_SIZE&#x27;) {
+      sortAttr &#x3D; &#x27;sizeOnDevice&#x27;;
+    } else if (sortAttribute.selectedItem &#x3D;&#x3D;&#x3D; &#x27;LAST_VIEWED&#x27;) {
+      sortAttr &#x3D; &#x27;lastUsedOn&#x27;;
+    }
+    const valuesMap &#x3D; {};
+    valuesMap[&#x27;selectedOption&#x27;] &#x3D; sortAttr;
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.SORT_OPTION_SELECTED,
+      Environment.DOWNLOADS,
+      PageId.DOWNLOADS,
+      undefined,
+      valuesMap,
+      undefined,
+      featureIdMap.downloadManager.DOWNLOADS_SORT
+    );
+    this.sortCriteria &#x3D; [{
+      sortOrder: SortOrder.DESC,
+      sortAttribute: sortAttr
+    }];
+    this.getDownloadedContents();
+  }
+
+  ionViewWillLeave(): void {
+    this.events.unsubscribe(&#x27;update_header&#x27;);
+    this.headerObservable.unsubscribe();
+    this.events.unsubscribe(EventTopics.HAMBURGER_MENU_CLICKED);
+    this.events.unsubscribe(EventTopics.LAST_ACCESS_ON);
+  }
+
+  private subscribeContentUpdateEvents() {
+    this.events.subscribe(&#x27;savedResources:update&#x27;, async (res) &#x3D;&gt; {
+      if (res &amp;&amp; res.update) {
+        this.getDownloadedContents(false, true);
+        await this.getAppStorageInfo();
+      }
+    });
+  }
+
+  private handleHeaderEvents($event) {
+    switch ($event.name) {
+      case &#x27;download&#x27;:
+        this.redirectToActivedownloads();
+        break;
+      case &#x27;settings&#x27;:
+        this.closeSelectAllPopup();
+        this.redirectToSettings();
+        break;
+    }
+  }
+  
+  private redirectToActivedownloads() {
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.ACTIVE_DOWNLOADS_CLICKED,
+      Environment.DOWNLOADS,
+      PageId.DOWNLOADS);
+    this.router.navigate([RouterLinks.ACTIVE_DOWNLOADS]);
+  }
+
+  private redirectToSettings() {
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.SETTINGS_CLICKED,
+      Environment.DOWNLOADS,
+      PageId.DOWNLOADS);
+    this.router.navigate([RouterLinks.STORAGE_SETTINGS]);
+  }
+
+  private async fetchStorageDestination() {
+    this.storageDestination &#x3D; await this.storageService.getStorageDestination().toPromise();
+  }
+
+  private async presentPopupForLessStorageSpace() {
+    this._toast &#x3D; await this.popoverCtrl.create({
+      component: SbInsufficientStoragePopupComponent,
+      componentProps: {
+        sbPopoverHeading: this.commonUtilService.translateMessage(&#x27;INSUFFICIENT_STORAGE&#x27;),
+        sbPopoverMessage: this.storageDestination &#x3D;&#x3D;&#x3D; StorageDestination.INTERNAL_STORAGE ?
+          this.commonUtilService.translateMessage(&#x27;MOVE_FILES_TO_OTHER_DESTINATION&#x27;, this.commonUtilService.translateMessage(&#x27;SD_CARD&#x27;)) :
+          this.commonUtilService.translateMessage(&#x27;MOVE_FILES_TO_OTHER_DESTINATION&#x27;, this.commonUtilService.translateMessage(
+            &#x27;INTERNAL_MEMORY&#x27;
+          )),
+      },
+      cssClass: &#x27;sb-popover no-network&#x27;,
+    });
+    await this._toast.present();
+  }
+
+  private checkAvailableSpace() {
+    this.storageService.getStorageDestinationVolumeInfo().pipe(
+      tap((volumeInfo) &#x3D;&gt; {
+        if (volumeInfo.info.availableSize &lt; 209715200) {
+          this.presentPopupForLessStorageSpace();
+        }
+      })
+    )
+      .subscribe();
+  }
+
+  async closeSelectAllPopup() {
+    if (this.downloadsTab &amp;&amp; this.downloadsTab.deleteAllConfirm) {
+      await this.downloadsTab.deleteAllConfirm.dismiss();
+      this.downloadsTab.unSelectAllContents();
+    }
+  }
+
+  deleteProjects(contents) {
+
+    contents.forEach(async (element) &#x3D;&gt; {
+      let project &#x3D; await this.db.getById(element.contentId)
+      project.downloaded &#x3D; false
+      await this.db.delete(project._id, project._rev)
+      this.events.publish(&#x27;savedResources:update&#x27;, {
+        update: true,
+      });
+      this.commonUtilService.showToast(this.commonUtilService.translateMessage(&#x27;MSG_RESOURCE_DELETED&#x27;));
+
+
+    });
+  }
+  async deleteObservations(content) {
+    let downloadedObs &#x3D; await this.storage.getLocalStorage(storageKeys.downloadedObservations);
+    const contentIds &#x3D; content.map(c &#x3D;&gt; c.contentId)
+    downloadedObs &#x3D; downloadedObs.filter(obs &#x3D;&gt; {
+      const shouldDelete &#x3D; contentIds.includes(obs.programId + obs.solutionId)
+      if (shouldDelete) {
+        obs.downloadedSubmission.forEach(async submission &#x3D;&gt; {
+          await this.storage.deleteOneStorage(this.utils.getAssessmentLocalStorageKey(submission));
+        });
+      } 
+      return !shouldDelete
+    })
+    await this.storage.setLocalStorage(storageKeys.downloadedObservations,downloadedObs);
+    this.events.publish(&quot;savedResources:update&quot;, {update: true});
+      this.commonUtilService.showToast(
+        this.commonUtilService.translateMessage(&quot;MSG_RESOURCE_DELETED&quot;)
+      );
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content hide-header-footer overflow-scroll&#x3D;&quot;true&quot; scrollEvents&#x3D;&quot;true&quot;&gt;
+  &lt;div class&#x3D;&quot;sb-view-all-container&quot;&gt;
+    &lt;app-downloads-header [storageInfo]&#x3D;&quot;storageInfo&quot; [appName]&#x3D;&quot;appName&quot;&gt;&lt;/app-downloads-header&gt;
+
+    &lt;app-no-downloads *ngIf&#x3D;&quot;!downloadedContents.length&quot;&gt;&lt;/app-no-downloads&gt;
+
+    &lt;app-downloads-tab #downloadsTab *ngIf&#x3D;&quot;downloadedContents.length&quot; [downloadedContents]&#x3D;&quot;downloadedContents&quot;
+      (deleteContents)&#x3D;&quot;deleteContents($event)&quot; (sortCriteriaChanged)&#x3D;&quot;onSortCriteriaChange($event)&quot;&gt;
+    &lt;/app-downloads-tab&gt;
+  &lt;/div&gt;
+&lt;/ion-content&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./download-manager.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;src/assets/styles/base/_variables.scss&quot;;
+@import &quot;src/assets/styles/_variables.scss&quot;;
+
+    .sb-dw-manager{
+        background-color: #{$light-blue-bg};
+        border-bottom: 2px solid map-get($colors, white);
+    }</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content hide-header-footer overflow-scroll="true" scrollEvents="true">  <div class="sb-view-all-container">    <app-downloads-header [storageInfo]="storageInfo" [appName]="appName"></app-downloads-header>    <app-no-downloads *ngIf="!downloadedContents.length"></app-no-downloads>    <app-downloads-tab #downloadsTab *ngIf="downloadedContents.length" [downloadedContents]="downloadedContents"      (deleteContents)="deleteContents($event)" (sortCriteriaChanged)="onSortCriteriaChange($event)">    </app-downloads-tab>  </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'accessDiscussion'},{'name': 'AccordionListComponent', 'selector': 'app-accordion-list'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-id-popup'},{'name': 'AcknowledgeResponseComponent', 'selector': 'acknowledge-response'},{'name': 'ActiveDownloadsPage', 'selector': 'app-active-downloads'},{'name': 'ActivityDashboardPage', 'selector': 'activity-dashboard'},{'name': 'ActivityDetailsPage', 'selector': 'app-activity-details'},{'name': 'ActivityTocPage', 'selector': 'activity-toc'},{'name': 'AddActivityToGroupComponent', 'selector': 'add-activity-to-group'},{'name': 'AddActivityToGroupPage', 'selector': 'add-activity-to-group'},{'name': 'AddEntityComponent', 'selector': 'app-add-entity'},{'name': 'AddFilePage', 'selector': 'app-add-file'},{'name': 'AddLinkModalComponent', 'selector': 'app-add-link-modal'},{'name': 'AddMemberToGroupPage', 'selector': 'app-add-member-to-group'},{'name': 'AddProgramsComponent', 'selector': 'app-add-programs'},{'name': 'AdminHomePage', 'selector': 'app-admin-home'},{'name': 'AllEvidenceListComponent', 'selector': 'app-all-evidence-list'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationHeaderComponent', 'selector': 'app-application-header'},{'name': 'ApplicationHeaderKebabMenuComponent', 'selector': 'app-application-header-kebab-menu'},{'name': 'AppRatingAlertComponent', 'selector': 'app-rating-alert'},{'name': 'AttachmentCardComponent', 'selector': 'app-attachment-card'},{'name': 'AttachmentComponent', 'selector': 'attachments'},{'name': 'AttachmentListingPage', 'selector': 'app-attachment-listing'},{'name': 'AttachmentListsComponent', 'selector': 'app-attachment-lists'},{'name': 'BarChartComponent', 'selector': 'bar-chart'},{'name': 'CategoriesEditPage', 'selector': 'app-categories-edit'},{'name': 'CategoryListPage', 'selector': 'app-category-list-page'},{'name': 'CategorySelectComponent', 'selector': 'app-category-select'},{'name': 'CertificateVerificationPopoverComponent', 'selector': 'app-certificate-verification-popover'},{'name': 'CertificateViewPage', 'selector': 'app-certificate-view'},{'name': 'ChapterDetailsPage', 'selector': 'app-chapter-details'},{'name': 'CollectionActionsComponent', 'selector': 'collection-acions'},{'name': 'CollectionChildComponent', 'selector': 'app-collection-child'},{'name': 'CollectionDetailEtbPage', 'selector': 'app-collection-detail-etb'},{'name': 'CommonFormsComponent', 'selector': 'app-common-forms'},{'name': 'CommonHeaderComponent', 'selector': 'app-common-header'},{'name': 'ConfirmAlertComponent', 'selector': 'app-confirm-alert'},{'name': 'ConsentPiiPopupComponent', 'selector': 'app-consent-pii-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentDetailsPage', 'selector': 'app-content-details'},{'name': 'ContentRatingAlertComponent', 'selector': 'app-content-rating-alert'},{'name': 'ContentViewerComponent', 'selector': 'content-viewer'},{'name': 'CopyTraceIdPopoverComponent', 'selector': 'app-copy-trace-id-popover'},{'name': 'CourseBatchesPage', 'selector': 'app-course-batches'},{'name': 'CourseCompletionPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'CoursesPage', 'selector': 'app-courses'},{'name': 'CreateEditGroupPage', 'selector': 'app-create-edit-group'},{'name': 'CreateProjectPage', 'selector': 'app-create-project'},{'name': 'CreateTaskComponent', 'selector': 'app-create-task'},{'name': 'CreateTaskFormComponent', 'selector': 'app-create-task-form'},{'name': 'CurriculumCoursesPage', 'selector': 'app-curriculum-courses'},{'name': 'DashboardComponent', 'selector': 'dashboard-component'},{'name': 'DataSyncComponent', 'selector': 'app-data-sync'},{'name': 'DateTypeInputComponent', 'selector': 'app-date-type-input'},{'name': 'DeeplinkRedirectComponent', 'selector': 'app-deeplink-redirect'},{'name': 'DetailCardComponent', 'selector': 'app-detail-card'},{'name': 'DialogPopupComponent', 'selector': 'app-dialog-popup'},{'name': 'DiscoverComponent', 'selector': 'app-discover'},{'name': 'DistrictMappingPage', 'selector': 'app-district-mapping'},{'name': 'DomainEcmLsitingComponent', 'selector': 'app-domain-ecm-lsiting'},{'name': 'DownloadManagerPage', 'selector': 'app-download-manager'},{'name': 'DownloadShareComponent', 'selector': 'download-share'},{'name': 'DownloadsHeaderComponent', 'selector': 'app-downloads-header'},{'name': 'DownloadsTabComponent', 'selector': 'app-downloads-tab'},{'name': 'DownloadTranscriptPopupComponent', 'selector': 'app-download-transcript-popup'},{'name': 'EcmListingPage', 'selector': 'app-ecm-listing'},{'name': 'EditContactDetailsPopupComponent', 'selector': 'app-edit-contact-details-popup'},{'name': 'EditContactVerifyPopupComponent', 'selector': 'app-edit-contact-verify-popup'},{'name': 'EnrolledCourseDetailsPage', 'selector': 'app-enrolled-course-details-page'},{'name': 'EnrollmentDetailsComponent', 'selector': 'app-enrollment-details'},{'name': 'EntityfilterComponent', 'selector': 'app-entityfilter'},{'name': 'EntitySearchLocalComponent', 'selector': 'app-entity-search-local'},{'name': 'ExpansionPanelComponent', 'selector': 'expansion-panel'},{'name': 'ExpansionTableComponent', 'selector': 'expansion-table'},{'name': 'ExploreBooksPage', 'selector': 'app-explore-books'},{'name': 'ExploreBooksSortComponent', 'selector': 'app-explore-books-sort'},{'name': 'FaqHelpPage', 'selector': 'app-faq-help'},{'name': 'FaqReportIssuePage', 'selector': 'app-faq-report-issue'},{'name': 'FilterModalComponent', 'selector': 'app-filter-modal'},{'name': 'FilteroptionComponent', 'selector': 'app-filteroption'},{'name': 'FiltersPage', 'selector': 'app-filters'},{'name': 'FooterButtonsComponent', 'selector': 'app-footer-buttons'},{'name': 'FrameworkSelectionPage', 'selector': 'app-framework-selection'},{'name': 'GraphCircleComponent', 'selector': 'graph-circle'},{'name': 'GroupDetailsPage', 'selector': 'app-group-details'},{'name': 'GroupGuideLinesPopoverComponent', 'selector': 'app-group-guidelines-popover'},{'name': 'GuestEditPage', 'selector': 'app-guest-edit'},{'name': 'GuestProfilePage', 'selector': 'app-guest-profile'},{'name': 'HintComponent', 'selector': 'app-hint'},{'name': 'ImageListingComponent', 'selector': 'app-image-listing'},{'name': 'ImageUploadComponent', 'selector': 'app-image-upload'},{'name': 'ImportPopoverComponent', 'selector': 'app-import-popover'},{'name': 'ImpSuggestionsPage', 'selector': 'app-imp-suggestions'},{'name': 'ItemListCardComponent', 'selector': 'app-item-list-card'},{'name': 'ItemListHeaderComponent', 'selector': 'app-item-list-header'},{'name': 'JoyfulThemePopupComponent', 'selector': 'app-joyful-theme-popup'},{'name': 'LanguageSettingsPage', 'selector': 'page-language-settings'},{'name': 'LearningResourcesPage', 'selector': 'app-learning-resources'},{'name': 'LicenseCardComponentComponent', 'selector': 'app-license-card-component'},{'name': 'LinkLearningResourcesComponent', 'selector': 'app-link-learning-resources'},{'name': 'ManageUserProfilesPage', 'selector': 'app-manage-user-profiles'},{'name': 'MatrixChartComponent', 'selector': 'matrix-chart'},{'name': 'MatrixModalComponent', 'selector': 'app-matrix-modal'},{'name': 'MatrixTypeInputComponent', 'selector': 'app-matrix-type-input'},{'name': 'MetadataActionsComponent', 'selector': 'app-metadata-actions'},{'name': 'MetadataDetailsComponent', 'selector': 'app-metadata-details'},{'name': 'MultipleTypeInputComponent', 'selector': 'app-multiple-type-input'},{'name': 'MyGroupsPage', 'selector': 'app-my-groups'},{'name': 'MyGroupsPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'NewExperiencePopupComponent', 'selector': 'app-new-experience-popup'},{'name': 'NoDataComponent', 'selector': 'app-no-data'},{'name': 'NoDownloadsComponent', 'selector': 'app-no-downloads'},{'name': 'NotificationItemComponent', 'selector': 'app-notification-item'},{'name': 'NotificationPage', 'selector': 'app-notification'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationHomeComponent', 'selector': 'app-observation-home'},{'name': 'ObservationSolutionEntityListingComponent', 'selector': 'app-observation-solution-entity-listing'},{'name': 'ObservationSolutionListingComponent', 'selector': 'app-observation-solution-listing'},{'name': 'ObservationSubmissionComponent', 'selector': 'app-observation-submission'},{'name': 'OtpPage', 'selector': 'app-otp'},{'name': 'OverflowMenuComponent', 'selector': 'app-overflow-menu'},{'name': 'PageFilterOptionsPage', 'selector': 'app-page-filter-options'},{'name': 'PageFilterPage', 'selector': 'app-page-filter'},{'name': 'PageQuestionsComponent', 'selector': 'app-page-questions'},{'name': 'PbHorizontalComponent', 'selector': 'app-pb-horizontal'},{'name': 'PercentageColumnChartsComponent', 'selector': 'percentage-column-charts'},{'name': 'PermissionComponent', 'selector': 'app-permission'},{'name': 'PersonalDetailsEditPage', 'selector': 'app-personal-details-edit'},{'name': 'PieChartComponent', 'selector': 'pie-chart'},{'name': 'PlayerPage', 'selector': 'app-player'},{'name': 'PopoverComponent', 'selector': 'app-popover'},{'name': 'PrivacyPolicyAndTCComponent', 'selector': 'app-privacy-policy-and-tc'},{'name': 'ProfileAvatarComponent', 'selector': 'app-profile-avatar'},{'name': 'ProfileNameConfirmationPopoverComponent', 'selector': 'app-profile-name-confirmation-popover'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfileSettingsPage', 'selector': 'app-profile-settings'},{'name': 'ProgramListingComponent', 'selector': 'app-program-listing'},{'name': 'ProgressBarComponent', 'selector': 'progress-bar'},{'name': 'ProjectDetailsCardComponent', 'selector': 'app-project-details-card'},{'name': 'ProjectDetailsComponent', 'selector': 'app-project-details'},{'name': 'ProjectEditPage', 'selector': 'app-project-edit'},{'name': 'ProjectListingComponent', 'selector': 'app-project-listing'},{'name': 'ProjectMetadataCardComponent', 'selector': 'app-project-metadata-card'},{'name': 'ProjectOperationPage', 'selector': 'app-project-operation'},{'name': 'ProjectReportComponent', 'selector': 'app-project-report'},{'name': 'ProjectTaskListComponent', 'selector': 'app-project-task-list'},{'name': 'ProjectTemplatePage', 'selector': 'app-project-template'},{'name': 'ProjectTemplateviewPage', 'selector': 'app-project-templateview'},{'name': 'QrcoderesultPage', 'selector': 'app-qrcoderesult'},{'name': 'QRScannerAlert', 'selector': 'app-qrscanner-alert'},{'name': 'QrScannerIOSComponent', 'selector': 'app-qr-scanner-ios'},{'name': 'QuestionHeadingComponent', 'selector': 'app-question-heading'},{'name': 'QuestionMapModalComponent', 'selector': 'app-question-map-modal'},{'name': 'QuestionnairePage', 'selector': 'app-questionnaire'},{'name': 'RadioTypeInputComponent', 'selector': 'app-radio-type-input'},{'name': 'RelevantContentCardComponent', 'selector': 'app-relevant-content-card'},{'name': 'RelevantContentsPage', 'selector': 'app-relevant-contents'},{'name': 'RemarksComponent', 'selector': 'app-remarks'},{'name': 'RemarksModalComponent', 'selector': 'app-remarks-modal'},{'name': 'ReportListComponent', 'selector': 'app-report-list'},{'name': 'ReportModalFilter', 'selector': 'report-modal-filter'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'ReportsListingComponent', 'selector': 'app-reports-listing'},{'name': 'ReportsTextComponent', 'selector': 'reports-text'},{'name': 'ResourcesComponent', 'selector': 'app-resources'},{'name': 'SbAppSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbDownloadPopupComponent', 'selector': 'app-sb-download-popup'},{'name': 'SbGenericFormPopoverComponent', 'selector': 'app-sb-generic-form-popover'},{'name': 'SbGenericPopoverComponent', 'selector': 'app-sb-generic-popover'},{'name': 'SbInsufficientStoragePopupComponent', 'selector': 'sb-insufficient-storage-popup'},{'name': 'SbNoNetworkPopupComponent', 'selector': 'sb-no-network-popup'},{'name': 'SbPopoverComponent', 'selector': 'sb-popover'},{'name': 'SbPreferencePopupComponent', 'selector': 'app-sb-preferences-popup'},{'name': 'SbProgressLoaderPage', 'selector': 'app-sb-progress-loader'},{'name': 'SbSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbSubjectListPopupComponent', 'selector': 'app-sb-subject-list-popup'},{'name': 'SbTutorialPopupComponent', 'selector': 'app-sb-tutorial-popup'},{'name': 'ScatterChartComponent', 'selector': 'scatter-chart'},{'name': 'SearchFilterPage', 'selector': 'app-search-filter.page'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SectionListingPage', 'selector': 'app-section-listing'},{'name': 'SelfDeclaredTeacherEditPage', 'selector': 'app-self-declared-teacher-edit'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'ShowCertificateComponent', 'selector': 'app-show-certificate-component'},{'name': 'ShowVendorAppsComponent', 'selector': 'show-vendor-apps'},{'name': 'SignInCardComponent', 'selector': 'app-sign-in-card'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'SignupBasicInfoPage', 'selector': 'app-signup-basic-info'},{'name': 'SignupEmailPasswordPage', 'selector': 'app-signup-email-password'},{'name': 'SkeletonItemComponent', 'selector': 'app-skeleton-item'},{'name': 'SliderTypeInputComponent', 'selector': 'app-slider-type-input'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'StartImprovementComponent', 'selector': 'app-start-improvement'},{'name': 'StorageSettingsPage', 'selector': 'app-storage-settings'},{'name': 'SubmissionActionsComponent', 'selector': 'app-submission-actions'},{'name': 'SubmissionPreviewPageComponent', 'selector': 'app-submission-preview-page'},{'name': 'SubProfileEditPage', 'selector': 'app-sub-profile-edit'},{'name': 'SupportAcknowledgement', 'selector': 'support-acknowledgement'},{'name': 'SurveyHomeComponent', 'selector': 'app-survey-home'},{'name': 'SurveyMsgComponent', 'selector': 'app-survey-msg'},{'name': 'SyncPage', 'selector': 'app-sync'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TaskCardComponent', 'selector': 'app-task-card'},{'name': 'TaskViewPage', 'selector': 'app-task-view'},{'name': 'TeacherIdVerificationComponent', 'selector': 'app-teacher-id-verification-popup'},{'name': 'TermsAndConditionsPage', 'selector': 'app-terms-and-conditions'},{'name': 'TextBookTocPage', 'selector': 'textbook-toc'},{'name': 'TextbookViewMorePage', 'selector': 'app-textbook-view-more'},{'name': 'TextTypeInputComponent', 'selector': 'app-text-type-input'},{'name': 'ToastNavigationComponent', 'selector': 'app-toast-navigation'},{'name': 'TocHeaderComponent', 'selector': 'app-toc-header'},{'name': 'UpgradePopoverComponent', 'selector': 'app-upgrade-popover'},{'name': 'UserHomePage', 'selector': 'app-user-home'},{'name': 'UserTypeSelectionPage', 'selector': 'page-user-type-selection'},{'name': 'ViewCreditsComponent', 'selector': 'app-view-credits'},{'name': 'ViewDetailComponent', 'selector': 'app-view-detail'},{'name': 'ViewMoreActivityComponent', 'selector': 'app-view-more-activity'},{'name': 'ViewMoreActivityPage', 'selector': 'view-more-activity'},{'name': 'YearOfBirthPopupComponent', 'selector': 'app-year-of-birth-popup'}];
+    var DIRECTIVES = [{'name': 'CustomIonSelectDirective', 'selector': '[appCustomIonSelect]'},{'name': 'HideHeaderFooterDirective', 'selector': '[hide-header-footer]'},{'name': 'ReadMoreDirective', 'selector': '[readMore]'}];
+    var ACTUAL_COMPONENT = {'name': 'DownloadManagerPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DownloadManagerPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

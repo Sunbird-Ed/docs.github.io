@@ -1,0 +1,3818 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >TelemetryGeneratorService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/telemetry-generator.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#generateAppLaunchTelemetry" >generateAppLaunchTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateAuditTelemetry" >generateAuditTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateBackClickedNewTelemetry" >generateBackClickedNewTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateBackClickedTelemetry" >generateBackClickedTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateCancelDownloadTelemetry" >generateCancelDownloadTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateContentCancelClickedTelemetry" >generateContentCancelClickedTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateDownloadAllClickTelemetry" >generateDownloadAllClickTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateEndTelemetry" >generateEndTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateErrorTelemetry" >generateErrorTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateExtraInfoTelemetry" >generateExtraInfoTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generatefastLoadingTelemetry" >generatefastLoadingTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateImpressionTelemetry" >generateImpressionTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateInteractTelemetry" >generateInteractTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateInterruptTelemetry" >generateInterruptTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateLogEvent" >generateLogEvent</a>
+                            </li>
+                            <li>
+                                <a href="#generateNewExprienceSwitchTelemetry" >generateNewExprienceSwitchTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateNotificationClickedTelemetry" >generateNotificationClickedTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generatePageLoadedTelemetry" >generatePageLoadedTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generatePageViewTelemetry" >generatePageViewTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateProfilePopulatedTelemetry" >generateProfilePopulatedTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generatePullToRefreshTelemetry" >generatePullToRefreshTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateSpineLoadingTelemetry" >generateSpineLoadingTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateStartTelemetry" >generateStartTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateSummaryTelemetry" >generateSummaryTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#generateUtmInfoTelemetry" >generateUtmInfoTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#genererateAppStartTelemetry" >genererateAppStartTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#isCollection" >isCollection</a>
+                            </li>
+                            <li>
+                                <a href="#readLessOrReadMore" >readLessOrReadMore</a>
+                            </li>
+                            <li>
+                                <a href="#transform" >transform</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(telemetryService: TelemetryService, sbProgressLoader: <a href="../injectables/SbProgressLoader.html" target="_self">SbProgressLoader</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/services/telemetry-generator.service.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>telemetryService</td>
+                                                  
+                                                        <td>
+                                                                    <code>TelemetryService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sbProgressLoader</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SbProgressLoader.html" target="_self" >SbProgressLoader</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateAppLaunchTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateAppLaunchTelemetry</b></span>
+                        <a href="#generateAppLaunchTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateAppLaunchTelemetry(type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, source?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="359"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:359</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateAuditTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateAuditTelemetry</b></span>
+                        <a href="#generateAuditTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateAuditTelemetry(env, currentSate?, updatedProperties?, type?, objId?, objType?, objVer?, correlationData?, objRollup?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="36"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:36</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>env</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>currentSate</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>updatedProperties</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objId</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objType</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objVer</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>correlationData</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objRollup</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateBackClickedNewTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateBackClickedNewTelemetry</b></span>
+                        <a href="#generateBackClickedNewTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateBackClickedNewTelemetry(isDeviceBack, env, pageId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="472"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:472</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isDeviceBack</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateBackClickedTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateBackClickedTelemetry</b></span>
+                        <a href="#generateBackClickedTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateBackClickedTelemetry(pageId, env, isNavBack: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, identifier?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, corRelationList?, objRollup?, telemetryObject?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="247"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:247</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isNavBack</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>identifier</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationList</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objRollup</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>telemetryObject</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateCancelDownloadTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateCancelDownloadTelemetry</b></span>
+                        <a href="#generateCancelDownloadTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateCancelDownloadTelemetry(content: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="284"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:284</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateContentCancelClickedTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateContentCancelClickedTelemetry</b></span>
+                        <a href="#generateContentCancelClickedTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateContentCancelClickedTelemetry(content: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, downloadProgress)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="386"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:386</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>downloadProgress</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateDownloadAllClickTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateDownloadAllClickTelemetry</b></span>
+                        <a href="#generateDownloadAllClickTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateDownloadAllClickTelemetry(pageId, content, downloadingIdentifier, childrenCount, rollup?, corelationList?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="295"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:295</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>downloadingIdentifier</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>childrenCount</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rollup</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corelationList</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateEndTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateEndTelemetry</b></span>
+                        <a href="#generateEndTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateEndTelemetry(type, mode, pageId, env, object?: TelemetryObject, rollup?: Rollup, corRelationList?: Array<CorrelationData>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="130"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:130</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mode</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>object</td>
+                                    <td>
+                                            <code>TelemetryObject</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rollup</td>
+                                    <td>
+                                            <code>Rollup</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationList</td>
+                                    <td>
+                                            <code>Array&lt;CorrelationData&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateErrorTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateErrorTelemetry</b></span>
+                        <a href="#generateErrorTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateErrorTelemetry(env, errCode, errorType, pageId, stackTrace)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="238"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:238</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>env</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>errCode</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>errorType</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>stackTrace</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateExtraInfoTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateExtraInfoTelemetry</b></span>
+                        <a href="#generateExtraInfoTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateExtraInfoTelemetry(values: <a href="../classes/Map.html" target="_self">Map</a>, pageId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="376"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:376</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>values</td>
+                                    <td>
+                                                <code><a href="../classes/Map.html" target="_self" >Map</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generatefastLoadingTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generatefastLoadingTelemetry</b></span>
+                        <a href="#generatefastLoadingTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generatefastLoadingTelemetry(interactSubtype, pageId, telemetryObject?, objRollup?, value?, corRelationList?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="443"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:443</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>interactSubtype</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>telemetryObject</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objRollup</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationList</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateImpressionTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateImpressionTelemetry</b></span>
+                        <a href="#generateImpressionTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateImpressionTelemetry(type, subtype, pageId, env, objectId?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, objectType?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, objectVersion?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, rollup?: Rollup, corRelationList?: Array<CorrelationData>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subtype</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objectId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objectType</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objectVersion</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rollup</td>
+                                    <td>
+                                            <code>Rollup</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationList</td>
+                                    <td>
+                                            <code>Array&lt;CorrelationData&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateInteractTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateInteractTelemetry</b></span>
+                        <a href="#generateInteractTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateInteractTelemetry(interactType, interactSubtype, env, pageId, object?: TelemetryObject, values?: <a href="../classes/Map.html" target="_self">Map</a>, rollup?: Rollup, corRelationList?: Array<CorrelationData>, id?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>interactType</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>interactSubtype</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>object</td>
+                                    <td>
+                                            <code>TelemetryObject</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>values</td>
+                                    <td>
+                                                <code><a href="../classes/Map.html" target="_self" >Map</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rollup</td>
+                                    <td>
+                                            <code>Rollup</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationList</td>
+                                    <td>
+                                            <code>Array&lt;CorrelationData&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateInterruptTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateInterruptTelemetry</b></span>
+                        <a href="#generateInterruptTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateInterruptTelemetry(type, pageId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="231"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:231</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateLogEvent"></a>
+                    <span class="name">
+                        <span ><b>generateLogEvent</b></span>
+                        <a href="#generateLogEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateLogEvent(logLevel, message, env, type, params: Array<any>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="213"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:213</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>logLevel</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>message</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>params</td>
+                                    <td>
+                                            <code>Array&lt;any&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateNewExprienceSwitchTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateNewExprienceSwitchTelemetry</b></span>
+                        <a href="#generateNewExprienceSwitchTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateNewExprienceSwitchTelemetry(pageId, subType, corRelationInfo)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="495"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:495</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subType</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationInfo</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateNotificationClickedTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateNotificationClickedTelemetry</b></span>
+                        <a href="#generateNotificationClickedTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateNotificationClickedTelemetry(type, pageId, value?, corRelationList?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="456"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:456</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationList</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generatePageLoadedTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generatePageLoadedTelemetry</b></span>
+                        <a href="#generatePageLoadedTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generatePageLoadedTelemetry(pageId, env, objId?, objType?, objversion?, rollup?, correlationList?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="481"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:481</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objId</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objType</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>objversion</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rollup</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>correlationList</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generatePageViewTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generatePageViewTelemetry</b></span>
+                        <a href="#generatePageViewTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generatePageViewTelemetry(pageId, env, subType?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="263"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:263</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subType</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateProfilePopulatedTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateProfilePopulatedTelemetry</b></span>
+                        <a href="#generateProfilePopulatedTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateProfilePopulatedTelemetry(pageId, profile, mode, env?, source?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="335"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:335</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>profile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>mode</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>source</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generatePullToRefreshTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generatePullToRefreshTelemetry</b></span>
+                        <a href="#generatePullToRefreshTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generatePullToRefreshTelemetry(pageId, env)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="309"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:309</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateSpineLoadingTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateSpineLoadingTelemetry</b></span>
+                        <a href="#generateSpineLoadingTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateSpineLoadingTelemetry(content: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, isFirstTime)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="269"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:269</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>isFirstTime</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateStartTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateStartTelemetry</b></span>
+                        <a href="#generateStartTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateStartTelemetry(pageId, object?: TelemetryObject, rollup?: Rollup, corRelationList?: Array<CorrelationData>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="156"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:156</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>object</td>
+                                    <td>
+                                            <code>TelemetryObject</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rollup</td>
+                                    <td>
+                                            <code>Rollup</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationList</td>
+                                    <td>
+                                            <code>Array&lt;CorrelationData&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateSummaryTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateSummaryTelemetry</b></span>
+                        <a href="#generateSummaryTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateSummaryTelemetry(type, starttime, endtime, timpespent, pageviews, interactions, env, object?: TelemetryObject, rollup?: Rollup, corRelationList?: Array<CorrelationData>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="182"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:182</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>starttime</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>endtime</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>timpespent</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageviews</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>interactions</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>env</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>object</td>
+                                    <td>
+                                            <code>TelemetryObject</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>rollup</td>
+                                    <td>
+                                            <code>Rollup</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationList</td>
+                                    <td>
+                                            <code>Array&lt;CorrelationData&gt;</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateUtmInfoTelemetry"></a>
+                    <span class="name">
+                        <span ><b>generateUtmInfoTelemetry</b></span>
+                        <a href="#generateUtmInfoTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateUtmInfoTelemetry(values: <a href="../classes/Map.html" target="_self">Map</a>, pageId, object?: TelemetryObject, corRelationData?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="430"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:430</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>values</td>
+                                    <td>
+                                                <code><a href="../classes/Map.html" target="_self" >Map</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>object</td>
+                                    <td>
+                                            <code>TelemetryObject</code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>corRelationData</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="genererateAppStartTelemetry"></a>
+                    <span class="name">
+                        <span ><b>genererateAppStartTelemetry</b></span>
+                        <a href="#genererateAppStartTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>genererateAppStartTelemetry(deviceSpec: DeviceSpecification)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="223"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:223</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>deviceSpec</td>
+                                    <td>
+                                            <code>DeviceSpecification</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isCollection"></a>
+                    <span class="name">
+                        <span ><b>isCollection</b></span>
+                        <a href="#isCollection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isCollection(mimeType)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="426"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:426</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>mimeType</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="readLessOrReadMore"></a>
+                    <span class="name">
+                        <span ><b>readLessOrReadMore</b></span>
+                        <a href="#readLessOrReadMore"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>readLessOrReadMore(param, objRollup, corRelationList, telemetryObject)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="324"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:324</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-description"><p>method generates telemetry on click Read less or Read more</p>
+</div>
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Description</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>param</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>objRollup</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>corRelationList</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                        <p>corelationList</p>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>telemetryObject</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                    <td>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="transform"></a>
+                    <span class="name">
+                        <span ><b>transform</b></span>
+                        <a href="#transform"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>transform(size: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, roundOf: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="402"
+                            class="link-to-prism">src/services/telemetry-generator.service.ts:402</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>size</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>roundOf</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>2</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Inject, Injectable} from &#x27;@angular/core&#x27;;
+import {
+    CorrelationData,
+    Rollup,
+    TelemetryEndRequest,
+    TelemetryErrorRequest,
+    TelemetryImpressionRequest,
+    TelemetryInteractRequest,
+    TelemetryAuditRequest,
+    TelemetryLogRequest,
+    TelemetryObject,
+    TelemetryService,
+    TelemetryStartRequest,
+    TelemetryInterruptRequest,
+    DeviceSpecification,
+    Actor,
+    TelemetrySummaryRequest
+} from &#x27;sunbird-sdk&#x27;;
+import {Map} from &#x27;../app/telemetryutil&#x27;;
+import {
+    Environment, ImpressionType, InteractSubtype, InteractType,
+    Mode, PageId, CorReleationDataType, ID, ImpressionSubtype
+} from &#x27;./telemetry-constants&#x27;;
+import {MimeType} from &#x27;../app/app.constant&#x27;;
+import {ContentUtil} from &#x27;@app/util/content-util&#x27;;
+import {SbProgressLoader} from &#x27;../services/sb-progress-loader.service&#x27;;
+
+@Injectable()
+export class TelemetryGeneratorService {
+    constructor(
+        @Inject(&#x27;TELEMETRY_SERVICE&#x27;) private telemetryService: TelemetryService,
+        private sbProgressLoader: SbProgressLoader,
+    ) {
+    }
+
+    generateAuditTelemetry(env, currentSate?, updatedProperties?, type?, objId?, objType?, objVer?, correlationData?, objRollup?) {
+        const telemetryAuditRequest: TelemetryAuditRequest &#x3D; {
+            env: env ? env : undefined,
+            currentState: currentSate ? currentSate : undefined,
+            updatedProperties: updatedProperties ? updatedProperties : undefined,
+            type: type ? type : undefined,
+            objId: objId ? objId : undefined,
+            objType: objType ? objType : undefined,
+            objVer: objVer ? objVer : undefined,
+            rollUp: objRollup || {},
+            correlationData: correlationData ? correlationData : undefined,
+            actor: new Actor()
+        };
+        this.telemetryService.audit(telemetryAuditRequest).subscribe();
+    }
+
+    generateInteractTelemetry(interactType, interactSubtype, env, pageId, object?: TelemetryObject, values?: Map,
+                              rollup?: Rollup, corRelationList?: Array&lt;CorrelationData&gt;, id?: string) {
+        const hash: string &#x3D;
+            JSON.stringify({ pageId: pageId || undefined });
+        if (
+            Array.from(this.sbProgressLoader.contexts.entries()).some(([_, context]) &#x3D;&gt; {
+                if (context.ignoreTelemetry &amp;&amp; context.ignoreTelemetry.when &amp;&amp; context.ignoreTelemetry.when.interact) {
+                    return !!hash.match(context.ignoreTelemetry.when.interact);
+                }
+                return false;
+            })
+        ) {
+            return;
+        }
+
+        const telemetryInteractRequest &#x3D; new TelemetryInteractRequest();
+        telemetryInteractRequest.type &#x3D; interactType;
+        telemetryInteractRequest.subType &#x3D; interactSubtype;
+        telemetryInteractRequest.pageId &#x3D; pageId;
+        telemetryInteractRequest.id &#x3D; id ? id : pageId;
+        telemetryInteractRequest.env &#x3D; env;
+        if (values !&#x3D;&#x3D; null) {
+            telemetryInteractRequest.valueMap &#x3D; values;
+        }
+        if (rollup !&#x3D;&#x3D; undefined) {
+            telemetryInteractRequest.rollup &#x3D; rollup;
+        }
+        if (corRelationList !&#x3D;&#x3D; undefined) {
+            telemetryInteractRequest.correlationData &#x3D; corRelationList;
+        }
+
+        if (object &amp;&amp; object.id) {
+            telemetryInteractRequest.objId &#x3D; object.id;
+        }
+
+        if (object &amp;&amp; object.type) {
+            telemetryInteractRequest.objType &#x3D; object.type;
+        }
+
+        if (object &amp;&amp; object.version) {
+            telemetryInteractRequest.objVer &#x3D; object.version + &#x27;&#x27;;
+        }
+        this.telemetryService.interact(telemetryInteractRequest).subscribe();
+    }
+
+    generateImpressionTelemetry(type, subtype, pageId, env, objectId?: string, objectType?: string,
+                                objectVersion?: string, rollup?: Rollup, corRelationList?: Array&lt;CorrelationData&gt;) {
+        const hash: string &#x3D;
+            JSON.stringify({ pageId: pageId || undefined });
+        if (
+            Array.from(this.sbProgressLoader.contexts.entries()).some(([_, context]) &#x3D;&gt; {
+                if (context.ignoreTelemetry &amp;&amp; context.ignoreTelemetry.when &amp;&amp; context.ignoreTelemetry.when.impression) {
+                    return !!hash.match(context.ignoreTelemetry.when.impression);
+                }
+                return false;
+            })
+        ) {
+            return;
+        }
+
+        const telemetryImpressionRequest &#x3D; new TelemetryImpressionRequest();
+        telemetryImpressionRequest.type &#x3D; type;
+        telemetryImpressionRequest.subType &#x3D; subtype;
+        telemetryImpressionRequest.pageId &#x3D; pageId || PageId.HOME;
+        telemetryImpressionRequest.env &#x3D; env;
+        telemetryImpressionRequest.objId &#x3D; objectId ? objectId : &#x27;&#x27;;
+        telemetryImpressionRequest.objType &#x3D; objectType ? objectType : &#x27;&#x27;;
+        telemetryImpressionRequest.objVer &#x3D; objectVersion ? objectVersion + &#x27;&#x27; : &#x27;&#x27;;
+
+        if (rollup !&#x3D;&#x3D; undefined) {
+            telemetryImpressionRequest.rollup &#x3D; rollup;
+        }
+        if (corRelationList !&#x3D;&#x3D; undefined) {
+            telemetryImpressionRequest.correlationData &#x3D; corRelationList;
+        }
+        this.telemetryService.impression(telemetryImpressionRequest).subscribe();
+    }
+
+    generateEndTelemetry(type, mode, pageId, env, object?: TelemetryObject, rollup?: Rollup, corRelationList?: Array&lt;CorrelationData&gt;) {
+        const telemetryEndRequest &#x3D; new TelemetryEndRequest();
+        telemetryEndRequest.type &#x3D; type;
+        telemetryEndRequest.pageId &#x3D; pageId;
+        telemetryEndRequest.env &#x3D; env;
+        telemetryEndRequest.mode &#x3D; mode;
+        if (object &amp;&amp; object.id) {
+            telemetryEndRequest.objId &#x3D; object.id;
+        }
+
+        if (object &amp;&amp; object.type) {
+            telemetryEndRequest.objType &#x3D; object.type;
+        }
+
+        if (object &amp;&amp; object.version) {
+            telemetryEndRequest.objVer &#x3D; object.version + &#x27;&#x27;;
+        }
+        if (rollup) {
+            telemetryEndRequest.rollup &#x3D; rollup;
+        }
+        if (corRelationList) {
+            telemetryEndRequest.correlationData &#x3D; corRelationList;
+        }
+        this.telemetryService.end(telemetryEndRequest).subscribe();
+    }
+
+    generateStartTelemetry(pageId, object?: TelemetryObject, rollup?: Rollup, corRelationList?: Array&lt;CorrelationData&gt;) {
+        const telemetryStartRequest &#x3D; new TelemetryStartRequest();
+        telemetryStartRequest.type &#x3D; object.type;
+        telemetryStartRequest.pageId &#x3D; pageId;
+        telemetryStartRequest.mode &#x3D; Mode.PLAY;
+        if (object &amp;&amp; object.id) {
+            telemetryStartRequest.objId &#x3D; object.id;
+        }
+
+        if (object &amp;&amp; object.type) {
+            telemetryStartRequest.objType &#x3D; object.type;
+        }
+
+        if (object &amp;&amp; object.version) {
+            telemetryStartRequest.objVer &#x3D; object.version + &#x27;&#x27;;
+        }
+        if (rollup !&#x3D;&#x3D; undefined) {
+            telemetryStartRequest.rollup &#x3D; rollup;
+        }
+        if (corRelationList !&#x3D;&#x3D; undefined) {
+            telemetryStartRequest.correlationData &#x3D; corRelationList;
+        }
+
+        this.telemetryService.start(telemetryStartRequest).subscribe();
+    }
+
+    generateSummaryTelemetry(type, starttime, endtime, timpespent,
+                             pageviews, interactions, env, object?: TelemetryObject,
+                             rollup?: Rollup, corRelationList?: Array&lt;CorrelationData&gt;) {
+        const telemetrySummaryRequest &#x3D; new TelemetrySummaryRequest();
+        telemetrySummaryRequest.type &#x3D; type;
+        telemetrySummaryRequest.starttime &#x3D; starttime;
+        telemetrySummaryRequest.endtime &#x3D; endtime;
+        telemetrySummaryRequest.timespent &#x3D; timpespent;
+        telemetrySummaryRequest.pageviews &#x3D; pageviews;
+        telemetrySummaryRequest.interactions &#x3D; interactions;
+        telemetrySummaryRequest.mode &#x3D; Mode.PLAY;
+        if (object &amp;&amp; object.id) {
+            telemetrySummaryRequest.objId &#x3D; object.id;
+        }
+
+        if (object &amp;&amp; object.type) {
+            telemetrySummaryRequest.objType &#x3D; object.type;
+        }
+
+        if (object &amp;&amp; object.version) {
+            telemetrySummaryRequest.objVer &#x3D; object.version + &#x27;&#x27;;
+        }
+        if (rollup !&#x3D;&#x3D; undefined) {
+            telemetrySummaryRequest.rollup &#x3D; rollup;
+        }
+        if (corRelationList !&#x3D;&#x3D; undefined) {
+            telemetrySummaryRequest.correlationData &#x3D; corRelationList;
+        }
+        this.telemetryService.summary(telemetrySummaryRequest).subscribe();
+    }
+
+    generateLogEvent(logLevel, message, env, type, params: Array&lt;any&gt;) {
+        const telemetryLogRequest &#x3D; new TelemetryLogRequest();
+        telemetryLogRequest.level &#x3D; logLevel;
+        telemetryLogRequest.message &#x3D; message;
+        telemetryLogRequest.env &#x3D; env;
+        telemetryLogRequest.type &#x3D; type;
+        telemetryLogRequest.params &#x3D; params;
+        this.telemetryService.log(telemetryLogRequest).subscribe();
+    }
+
+    genererateAppStartTelemetry(deviceSpec: DeviceSpecification) {
+        const telemetryStartRequest &#x3D; new TelemetryStartRequest();
+        telemetryStartRequest.type &#x3D; &#x27;app&#x27;;
+        telemetryStartRequest.env &#x3D; &#x27;home&#x27;;
+        telemetryStartRequest.deviceSpecification &#x3D; deviceSpec;
+        this.telemetryService.start(telemetryStartRequest).subscribe();
+    }
+
+    generateInterruptTelemetry(type, pageId) {
+        const telemetryInterruptRequest &#x3D; new TelemetryInterruptRequest();
+        telemetryInterruptRequest.pageId &#x3D; pageId;
+        telemetryInterruptRequest.type &#x3D; type;
+        this.telemetryService.interrupt(telemetryInterruptRequest).subscribe();
+    }
+
+    generateErrorTelemetry(env, errCode, errorType, pageId, stackTrace) {
+        const telemetryErrorRequest &#x3D; new TelemetryErrorRequest();
+        telemetryErrorRequest.errorCode &#x3D; errCode;
+        telemetryErrorRequest.errorType &#x3D; errorType;
+        telemetryErrorRequest.pageId &#x3D; pageId;
+        telemetryErrorRequest.stacktrace &#x3D; stackTrace;
+        this.telemetryService.error(telemetryErrorRequest).subscribe();
+    }
+
+    generateBackClickedTelemetry(pageId, env, isNavBack: boolean, identifier?: string, corRelationList?, objRollup?, telemetryObject?) {
+        const values &#x3D; new Map();
+        if (identifier) {
+            values[&#x27;identifier&#x27;] &#x3D; identifier;
+        }
+        this.generateInteractTelemetry(
+            InteractType.TOUCH,
+            isNavBack ? InteractSubtype.NAV_BACK_CLICKED : InteractSubtype.DEVICE_BACK_CLICKED,
+            env,
+            pageId,
+            telemetryObject,
+            values,
+            objRollup,
+            corRelationList);
+    }
+
+    generatePageViewTelemetry(pageId, env, subType?) {
+        this.generateImpressionTelemetry(ImpressionType.VIEW, subType ? subType : &#x27;&#x27;,
+            pageId,
+            env);
+    }
+
+    generateSpineLoadingTelemetry(content: any, isFirstTime) {
+        const values &#x3D; new Map();
+        values[&#x27;isFirstTime&#x27;] &#x3D; isFirstTime;
+        values[&#x27;size&#x27;] &#x3D; content.size;
+        const telemetryObject &#x3D; ContentUtil.getTelemetryObject(content);
+        this.generateInteractTelemetry(
+            InteractType.OTHER,
+            InteractSubtype.LOADING_SPINE,
+            Environment.HOME,
+            PageId.DOWNLOAD_SPINE,
+            telemetryObject,
+            values,
+            ContentUtil.generateRollUp(undefined, telemetryObject.id));
+    }
+
+    generateCancelDownloadTelemetry(content: any) {
+        const values &#x3D; new Map();
+        this.generateInteractTelemetry(
+            InteractType.TOUCH,
+            InteractSubtype.CANCEL_CLICKED,
+            Environment.HOME,
+            PageId.DOWNLOAD_SPINE,
+            ContentUtil.getTelemetryObject(content),
+            values);
+    }
+
+    generateDownloadAllClickTelemetry(pageId, content, downloadingIdentifier, childrenCount, rollup?, corelationList?) {
+        const values &#x3D; new Map();
+        values[&#x27;downloadingIdentifers&#x27;] &#x3D; downloadingIdentifier;
+        values[&#x27;childrenCount&#x27;] &#x3D; childrenCount;
+        this.generateInteractTelemetry(
+            InteractType.TOUCH,
+            InteractSubtype.DOWNLOAD_ALL_CLICKED,
+            Environment.HOME,
+            pageId,
+            ContentUtil.getTelemetryObject(content),
+            values,
+            rollup, corelationList);
+    }
+
+    generatePullToRefreshTelemetry(pageId, env) {
+        this.generateInteractTelemetry(
+            InteractType.TOUCH,
+            InteractSubtype.PULL_TO_REFRESH,
+            env,
+            pageId
+        );
+    }
+
+    /**
+     * method generates telemetry on click Read less or Read more
+     * @param string param string as read less or read more
+     * @param object objRollup object roll up
+     * @param corRelationList corelationList
+     */
+    readLessOrReadMore(param, objRollup, corRelationList, telemetryObject) {
+        this.generateInteractTelemetry(InteractType.TOUCH,
+            param &#x3D; &#x27;READ_MORE&#x27; &#x3D;&#x3D;&#x3D; param ? InteractSubtype.READ_MORE_CLICKED : InteractSubtype.READ_LESS_CLICKED,
+            Environment.HOME,
+            PageId.COLLECTION_DETAIL,
+            undefined,
+            telemetryObject,
+            objRollup,
+            corRelationList);
+    }
+
+    generateProfilePopulatedTelemetry(pageId, profile, mode, env?, source?) {
+        const values &#x3D; new Map();
+        values[&#x27;board&#x27;] &#x3D; profile.board[0];
+        values[&#x27;medium&#x27;] &#x3D; profile.medium;
+        values[&#x27;grade&#x27;] &#x3D; profile.grade;
+        values[&#x27;mode&#x27;] &#x3D; mode;
+        const corRelationList: Array&lt;CorrelationData&gt; &#x3D; [];
+        corRelationList.push({ id: profile.board ? profile.board.join(&#x27;,&#x27;) : &#x27;&#x27;, type: CorReleationDataType.BOARD });
+        corRelationList.push({ id: profile.medium ? profile.medium.join(&#x27;,&#x27;) : &#x27;&#x27; , type: CorReleationDataType.MEDIUM });
+        corRelationList.push({ id: profile.grade ? profile.grade.join(&#x27;,&#x27;) : &#x27;&#x27;, type: CorReleationDataType.CLASS });
+        corRelationList.push({ id: profile.profileType, type: CorReleationDataType.USERTYPE });
+        if (source) {
+            corRelationList.push({id: source, type: CorReleationDataType.SOURCE});
+        }
+        this.generateInteractTelemetry(
+            InteractType.OTHER,
+            InteractSubtype.PROFILE_ATTRIBUTE_POPULATION,
+            env ? env : Environment.HOME,
+            pageId,
+            undefined,
+            values, undefined,
+            corRelationList);
+    }
+
+    generateAppLaunchTelemetry(type: string, source?: string) {
+        const corRelationList: Array&lt;CorrelationData&gt; &#x3D; [{
+            id: ContentUtil.extractBaseUrl(source),
+            type: CorReleationDataType.SOURCE
+          }];
+        this.generateInteractTelemetry(
+            type,
+            &#x27;&#x27;,
+            Environment.HOME,
+            Environment.HOME,
+            undefined,
+            { source },
+            undefined,
+            corRelationList,
+            ID.APP_LAUNCH);
+    }
+
+    generateExtraInfoTelemetry(values: Map, pageId) {
+        this.generateInteractTelemetry(
+            InteractType.OTHER,
+            InteractSubtype.EXTRA_INFO,
+            Environment.HOME,
+            pageId,
+            undefined,
+            values);
+    }
+
+    generateContentCancelClickedTelemetry(content: any, downloadProgress) {
+        const values &#x3D; new Map();
+        values[&#x27;size&#x27;] &#x3D; this.transform(content.size);
+        if (content.size &amp;&amp; downloadProgress) {
+            const kbsofar &#x3D; (content.size / 100) * Number(downloadProgress);
+            values[&#x27;downloadedSoFar&#x27;] &#x3D; this.transform(kbsofar);
+        }
+        this.generateInteractTelemetry(
+            InteractType.TOUCH,
+            InteractSubtype.CANCEL_CLICKED,
+            Environment.HOME,
+            PageId.CONTENT_DETAIL,
+            ContentUtil.getTelemetryObject(content),
+            values);
+    }
+
+    transform(size: any, roundOf: number &#x3D; 2) {
+        if (size || size &#x3D;&#x3D;&#x3D; 0) {
+            if (isNaN(size)) {
+                size &#x3D; 0;
+            }
+            size /&#x3D; 1024;
+            if (size &lt; 1024) {
+                return size.toFixed(roundOf) + &#x27; KB&#x27;;
+            }
+            size /&#x3D; 1024;
+            if (size &lt; 1024) {
+                return size.toFixed(roundOf) + &#x27; MB&#x27;;
+            }
+            size /&#x3D; 1024;
+            if (size &lt; 1024) {
+                return size.toFixed(roundOf) + &#x27; GB&#x27;;
+            }
+            size /&#x3D; 1024;
+            return size.toFixed(roundOf) + &#x27; TB&#x27;;
+        } else {
+            return &#x27;0 KB&#x27;;
+        }
+    }
+
+    isCollection(mimeType) {
+        return mimeType &#x3D;&#x3D;&#x3D; MimeType.COLLECTION;
+    }
+
+    generateUtmInfoTelemetry(values: Map, pageId, object?: TelemetryObject, corRelationData?) {
+        this.generateInteractTelemetry(
+            InteractType.OTHER,
+            InteractSubtype.UTM_INFO,
+            Environment.HOME,
+            pageId,
+            object,
+            values,
+            undefined,
+            corRelationData);
+    }
+
+    /* Fast loading telemetry generator */
+    generatefastLoadingTelemetry(interactSubtype, pageId, telemetryObject?, objRollup?, value?, corRelationList?) {
+        this.generateInteractTelemetry(
+            InteractType.OTHER,
+            interactSubtype,
+            Environment.HOME,
+            pageId,
+            telemetryObject,
+            value,
+            objRollup,
+            corRelationList
+        );
+    }
+
+    generateNotificationClickedTelemetry(type, pageId, value?, corRelationList?) {
+        this.generateInteractTelemetry(
+            type,
+            &#x27;&#x27;,
+            Environment.HOME,
+            pageId,
+            undefined,
+            value,
+            undefined,
+            corRelationList,
+            ID.NOTIFICATION_CLICKED
+        );
+    }
+
+
+    /* New Telemetry */
+    generateBackClickedNewTelemetry(isDeviceBack, env, pageId) {
+        this.generateInteractTelemetry(
+            InteractType.SELECT_BACK,
+            isDeviceBack ? InteractSubtype.DEVICE : InteractSubtype.UI,
+            env,
+            pageId
+        );
+    }
+
+    generatePageLoadedTelemetry(pageId, env, objId?, objType?, objversion?, rollup?, correlationList?) {
+        this.generateImpressionTelemetry(
+            ImpressionType.PAGE_LOADED,
+            pageId &#x3D;&#x3D;&#x3D; PageId.LOCATION ? ImpressionSubtype.AUTO : &#x27;&#x27;,
+            pageId,
+            env,
+            objId,
+            objType,
+            objversion,
+            rollup,
+            correlationList
+        );
+    }
+
+    generateNewExprienceSwitchTelemetry(pageId, subType, corRelationInfo) {
+        const corRelationList: Array&lt;CorrelationData&gt; &#x3D; [];
+        corRelationList.push({
+            type: CorReleationDataType.FIRST_TIME_USER,
+            id: corRelationInfo[&#x27;isNewUser&#x27;] + &#x27;&#x27;
+        });
+        corRelationList.push({
+            type: CorReleationDataType.USERTYPE,
+            id:  corRelationInfo[&#x27;userType&#x27;]
+        });
+        this.generateInteractTelemetry(
+            InteractType.NEW_EXPERIENCE,
+            subType,
+            Environment.HOME,
+            pageId,
+            undefined,
+            undefined,
+            undefined,
+            corRelationList,
+            ID.SWITCH_CLICKED
+          );
+    }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'TelemetryGeneratorService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

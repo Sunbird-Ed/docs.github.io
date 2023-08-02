@@ -1,0 +1,1907 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  DiscoverComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/discover/discover.page.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+                    <code><a href="../interfaces/OnTabViewWillEnter.html" target="_self" >OnTabViewWillEnter</a></code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-discover</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./discover.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./discover.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#appLabel" >appLabel</a>
+                            </li>
+                            <li>
+                                <a href="#courseCardType" >courseCardType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#displaySections" >displaySections</a>
+                            </li>
+                            <li>
+                                <a href="#userType" >userType</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#clearAllSubscriptions" >clearAllSubscriptions</a>
+                            </li>
+                            <li>
+                                <a href="#doRefresh" >doRefresh</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#fetchDisplayElements" >fetchDisplayElements</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateImpressionTelemetry" >generateImpressionTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#handlePillSelect" >handlePillSelect</a>
+                            </li>
+                            <li>
+                                <a href="#ionViewWillLeave" >ionViewWillLeave</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#mapContentFacteTheme" >mapContentFacteTheme</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#mapPrimaryCategoryTheme" >mapPrimaryCategoryTheme</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToDetailPage" >navigateToDetailPage</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToViewMoreContentsPage" >navigateToViewMoreContentsPage</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#onViewMorePillList" >onViewMorePillList</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openSearchPage" >openSearchPage</a>
+                            </li>
+                            <li>
+                                <a href="#tabViewWillEnter" >tabViewWillEnter</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#hideRefresher" >hideRefresher</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(preferences: SharedPreferences, appVersion: AppVersion, headerService: <a href="../injectables/AppHeaderService.html" target="_self">AppHeaderService</a>, router: Router, events: <a href="../injectables/Events.html" target="_self">Events</a>, formAndFrameworkUtilService: <a href="../injectables/FormAndFrameworkUtilService.html" target="_self">FormAndFrameworkUtilService</a>, contentAggregatorHandler: <a href="../injectables/ContentAggregatorHandler.html" target="_self">ContentAggregatorHandler</a>, navService: <a href="../injectables/NavigationService.html" target="_self">NavigationService</a>, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, popoverCtrl: PopoverController, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, appGlobalService: <a href="../injectables/AppGlobalService.html" target="_self">AppGlobalService</a>, platform: Platform, onboardingConfigurationService: <a href="../injectables/OnboardingConfigurationService.html" target="_self">OnboardingConfigurationService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/discover/discover.page.ts:43</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>preferences</td>
+                                                  
+                                                        <td>
+                                                                    <code>SharedPreferences</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appVersion</td>
+                                                  
+                                                        <td>
+                                                                    <code>AppVersion</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>headerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppHeaderService.html" target="_self" >AppHeaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>events</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >Events</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formAndFrameworkUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormAndFrameworkUtilService.html" target="_self" >FormAndFrameworkUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>contentAggregatorHandler</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContentAggregatorHandler.html" target="_self" >ContentAggregatorHandler</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationService.html" target="_self" >NavigationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>popoverCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>PopoverController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appGlobalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppGlobalService.html" target="_self" >AppGlobalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>platform</td>
+                                                  
+                                                        <td>
+                                                                    <code>Platform</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>onboardingConfigurationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/OnboardingConfigurationService.html" target="_self" >OnboardingConfigurationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section data-compodoc="block-outputs">
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hideRefresher"></a>
+                        <b>hideRefresher</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/components/discover/discover.page.ts:37</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="clearAllSubscriptions"></a>
+                    <span class="name">
+                        <span ><b>clearAllSubscriptions</b></span>
+                        <a href="#clearAllSubscriptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>clearAllSubscriptions()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="249"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:249</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="doRefresh"></a>
+                    <span class="name">
+                        <span ><b>doRefresh</b></span>
+                        <a href="#doRefresh"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>doRefresh(refresher)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="69"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:69</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>refresher</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchDisplayElements"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>fetchDisplayElements</b></span>
+                        <a href="#fetchDisplayElements"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchDisplayElements(refresher?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="74"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:74</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>refresher</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateImpressionTelemetry"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateImpressionTelemetry</b></span>
+                        <a href="#generateImpressionTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateImpressionTelemetry()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="91"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:91</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handlePillSelect"></a>
+                    <span class="name">
+                        <span ><b>handlePillSelect</b></span>
+                        <a href="#handlePillSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handlePillSelect(event, section)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>section</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillLeave"></a>
+                    <span class="name">
+                        <span ><b>ionViewWillLeave</b></span>
+                        <a href="#ionViewWillLeave"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewWillLeave()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="241"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:241</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mapContentFacteTheme"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>mapContentFacteTheme</b></span>
+                        <a href="#mapContentFacteTheme"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>mapContentFacteTheme(displayItems)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="253"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:253</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>displayItems</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mapPrimaryCategoryTheme"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>mapPrimaryCategoryTheme</b></span>
+                        <a href="#mapPrimaryCategoryTheme"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>mapPrimaryCategoryTheme(displayItems)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="267"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:267</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>displayItems</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToDetailPage"></a>
+                    <span class="name">
+                        <span ><b>navigateToDetailPage</b></span>
+                        <a href="#navigateToDetailPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToDetailPage(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="198"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:198</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToViewMoreContentsPage"></a>
+                    <span class="name">
+                        <span ><b>navigateToViewMoreContentsPage</b></span>
+                        <a href="#navigateToViewMoreContentsPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToViewMoreContentsPage(section, pageName?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>section</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>pageName</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="245"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:245</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="62"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:62</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onViewMorePillList"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>onViewMorePillList</b></span>
+                        <a href="#onViewMorePillList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onViewMorePillList(event, section)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="222"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:222</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>section</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openSearchPage"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>openSearchPage</b></span>
+                        <a href="#openSearchPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openSearchPage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="tabViewWillEnter"></a>
+                    <span class="name">
+                        <span ><b>tabViewWillEnter</b></span>
+                        <a href="#tabViewWillEnter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>tabViewWillEnter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="277"
+                            class="link-to-prism">src/app/components/discover/discover.page.ts:277</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appLabel"></a>
+                    <span class="name">
+                        <span ><b>appLabel</b></span>
+                        <a href="#appLabel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/components/discover/discover.page.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="courseCardType"></a>
+                    <span class="name">
+                        <span ><b>courseCardType</b></span>
+                        <a href="#courseCardType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>CourseCardGridTypes</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/components/discover/discover.page.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displaySections"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>displaySections</b></span>
+                        <a href="#displaySections"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/components/discover/discover.page.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userType"></a>
+                    <span class="name">
+                        <span ><b>userType</b></span>
+                        <a href="#userType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/discover/discover.page.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import {Component, EventEmitter, Inject, OnDestroy, OnInit, Output} from &#x27;@angular/core&#x27;;
+import { AppVersion } from &#x27;@ionic-native/app-version/ngx&#x27;;
+import { FormAndFrameworkUtilService } from &#x27;@app/services/formandframeworkutil.service&#x27;;
+import {ContentFilterConfig, PreferenceKey, PrimaryCaregoryMapping, RouterLinks, ViewMore} from &#x27;../../app.constant&#x27;;
+import { NavigationExtras, Router } from &#x27;@angular/router&#x27;;
+import {
+  AppGlobalService,
+  AppHeaderService,
+  CommonUtilService,
+  ContentAggregatorHandler,
+  CorReleationDataType,
+  Environment, ImpressionType, InteractType, OnboardingConfigurationService, PageId, TelemetryGeneratorService
+} from &#x27;@app/services&#x27;;
+import { Platform, PopoverController } from &#x27;@ionic/angular&#x27;;
+import { Events } from &#x27;@app/util/events&#x27;;
+import {
+  CachedItemRequestSourceFrom,
+  ContentAggregatorRequest,
+  ContentSearchCriteria,
+  CorrelationData,
+  SharedPreferences
+} from &#x27;@project-sunbird/sunbird-sdk&#x27;;
+import { AggregatorPageType } from &#x27;@app/services/content/content-aggregator-namespaces&#x27;;
+import { CourseCardGridTypes } from &#x27;@project-sunbird/common-consumption&#x27;;
+import { NavigationService } from &#x27;@app/services/navigation-handler.service&#x27;;
+import { SbSubjectListPopupComponent } from &#x27;@app/app/components/popups/sb-subject-list-popup/sb-subject-list-popup.component&#x27;;
+import { OnTabViewWillEnter } from &#x27;@app/app/tabs/on-tab-view-will-enter&#x27;;
+import { ObjectUtil } from &#x27;@app/util/object.util&#x27;;
+
+@Component({
+  selector: &#x27;app-discover&#x27;,
+  templateUrl: &#x27;./discover.page.html&#x27;,
+  styleUrls: [&#x27;./discover.page.scss&#x27;],
+})
+export class DiscoverComponent implements OnInit, OnDestroy, OnTabViewWillEnter {
+
+  @Output() hideRefresher &#x3D; new EventEmitter();
+  
+
+  appLabel: string;
+  displaySections?: any[];
+  courseCardType &#x3D; CourseCardGridTypes;
+  userType: string;
+
+  constructor(
+    @Inject(&#x27;SHARED_PREFERENCES&#x27;) private preferences: SharedPreferences,
+    private appVersion: AppVersion,
+    private headerService: AppHeaderService,
+    private router: Router,
+    private events: Events,
+    private formAndFrameworkUtilService: FormAndFrameworkUtilService,
+    private contentAggregatorHandler: ContentAggregatorHandler,
+    private navService: NavigationService,
+    private commonUtilService: CommonUtilService,
+    private popoverCtrl: PopoverController,
+    private telemetryGeneratorService: TelemetryGeneratorService,
+    private appGlobalService: AppGlobalService,
+    private platform: Platform,
+    private onboardingConfigurationService: OnboardingConfigurationService
+  ) { }
+
+  ngOnInit() {
+    this.appVersion.getAppName().then((appName: any) &#x3D;&gt; {
+      this.appLabel &#x3D; appName;
+    });
+    this.fetchDisplayElements(this.platform.is(&#x27;ios&#x27;) ? true : false);
+  }
+
+  doRefresh(refresher) {
+    this.hideRefresher.emit(true);
+    this.fetchDisplayElements(refresher);
+  }
+
+  async fetchDisplayElements(refresher?) {
+    const request: ContentAggregatorRequest &#x3D; {
+      interceptSearchCriteria: (contentSearchCriteria: ContentSearchCriteria) &#x3D;&gt; contentSearchCriteria,
+      from: refresher ? CachedItemRequestSourceFrom.SERVER : CachedItemRequestSourceFrom.CACHE
+    };
+
+    let displayItems &#x3D; await this.contentAggregatorHandler.newAggregate(request, AggregatorPageType.DISCOVER, this.onboardingConfigurationService.getAppConfig().overriddenDefaultChannelId);
+    displayItems &#x3D; this.mapContentFacteTheme(displayItems);
+    this.displaySections &#x3D; displayItems;
+    this.hideRefresher.emit(false);
+    if (refresher &amp;&amp; refresher.target) {
+      refresher.target.complete();
+    }
+    this.userType &#x3D; await this.preferences.getString(PreferenceKey.SELECTED_USER_TYPE).toPromise();
+    this.generateImpressionTelemetry();
+  }
+
+  private generateImpressionTelemetry() {
+    if (this.displaySections &amp;&amp; this.displaySections.length) {
+      const corRelationList: Array&lt;CorrelationData&gt; &#x3D; this.displaySections.reduce((acc: Array&lt;CorrelationData&gt;, val) &#x3D;&gt; {
+        if (val.dataSrc &amp;&amp; val.dataSrc.values) {
+          const categories: string[] &#x3D; val.dataSrc.values.map((category: any) &#x3D;&gt;
+            ObjectUtil.isJSON(category.facet) ? JSON.parse(category.facet)[&#x27;en&#x27;] : category.facet);
+          let categoryType &#x3D; CorReleationDataType.CATEGORY_LIST;
+          switch (val.code) {
+            case &#x27;popular_categories&#x27;:
+              categoryType &#x3D; CorReleationDataType.CATEGORY_LIST;
+              break;
+            case &#x27;other_boards&#x27;:
+              categoryType &#x3D; CorReleationDataType.OTHER_BOARDS;
+              break;
+            case &#x27;browse_by_audience&#x27;:
+              categoryType &#x3D; CorReleationDataType.AUDIENCE_LIST;
+              break;
+          }
+          acc.push({
+            type: categoryType,
+            id: categories.join(&#x27;,&#x27;)
+          });
+        }
+        return acc;
+      }, []);
+      corRelationList.push({
+        type: CorReleationDataType.USERTYPE,
+        id: this.userType
+      });
+      this.telemetryGeneratorService.generateImpressionTelemetry(
+        ImpressionType.PAGE_LOADED, PageId.HOME,
+        PageId.SEARCH,
+        Environment.SEARCH, undefined, undefined, undefined, undefined,
+        corRelationList
+      );
+    }
+  }
+
+  async openSearchPage() {
+    const primaryCategories &#x3D; await this.formAndFrameworkUtilService.getSupportedContentFilterConfig(
+      ContentFilterConfig.NAME_COURSE);
+    this.router.navigate([RouterLinks.SEARCH], {
+      state: {
+        primaryCategories,
+        source: PageId.COURSES
+      }
+    });
+  }
+
+  handlePillSelect(event, section) {
+    if (!event || !event.data || !event.data.length) {
+      return;
+    }
+    if(section.dataSrc &amp;&amp; section.dataSrc.params &amp;&amp; section.dataSrc.params.config){
+      const filterConfig &#x3D; section.dataSrc.params.config.find(((facet) &#x3D;&gt; (facet.type &#x3D;&#x3D;&#x3D; &#x27;filter&#x27; &amp;&amp; facet.code &#x3D;&#x3D;&#x3D; section.code)));
+      event.data[0].value[&#x27;primaryFacetFilters&#x27;] &#x3D; filterConfig ? filterConfig.values : undefined;
+
+      if(!event.data[0].value[&#x27;filterIdentifier&#x27;]){
+        const filterIdentifierList &#x3D; section.dataSrc.params.config.find(((facet) &#x3D;&gt; (facet.type &#x3D;&#x3D;&#x3D; &#x27;filterConfigIdentifier&#x27; &amp;&amp; facet.code &#x3D;&#x3D;&#x3D; section.code)));
+        const filterVal &#x3D; filterIdentifierList &amp;&amp; filterIdentifierList.values &amp;&amp; filterIdentifierList.values.find(v&#x3D;&gt;{
+          if(v.code &amp;&amp; event.data[0].name) {
+            return v.code.toLowerCase().replace(/ /g, &#x27;&#x27;) &#x3D;&#x3D;&#x3D; event.data[0].name.toLowerCase().replace(/ /g, &#x27;&#x27;)
+          }
+          return false;
+        });
+        event.data[0].value[&#x27;filterIdentifier&#x27;] &#x3D; filterVal ? filterVal.filterIdentifier : undefined;
+      }
+    }
+    const params &#x3D; {
+      code: section.code,
+      formField: event.data[0].value,
+      fromLibrary: true,
+      title: (section &amp;&amp; section.landingDetails &amp;&amp; section.landingDetails.title) || &#x27;&#x27;,
+      description: (section &amp;&amp; section.landingDetails &amp;&amp; section.landingDetails.description) || &#x27;&#x27;
+    };
+    let corRelationType: string &#x3D; CorReleationDataType.CATEGORY;
+    let interactType: string &#x3D; InteractType.SELECT_CATEGORY;
+    switch (section.code) {
+      case &#x27;popular_categories&#x27;:
+        corRelationType &#x3D; CorReleationDataType.CATEGORY;
+        interactType &#x3D; InteractType.SELECT_CATEGORY;
+        break;
+      case &#x27;other_boards&#x27;:
+        corRelationType &#x3D; CorReleationDataType.BOARD;
+        interactType &#x3D; InteractType.SELECT_BOARD;
+        break;
+      case &#x27;browse_by_audience&#x27;:
+        corRelationType &#x3D; CorReleationDataType.AUDIENCE;
+        interactType &#x3D; InteractType.SELECT_AUDIENCE;
+        break;
+    }
+    const correlationList: Array&lt;CorrelationData&gt; &#x3D; [];
+    correlationList.push({
+      id: event.data[0].name || &#x27;&#x27;,
+      type: corRelationType
+    });
+
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      interactType, &#x27;&#x27;,
+      Environment.SEARCH,
+      PageId.SEARCH, undefined, undefined, undefined,
+      correlationList
+    );
+
+    this.router.navigate([RouterLinks.CATEGORY_LIST], { state: params });
+  }
+
+  navigateToDetailPage(event) {
+    event.data &#x3D; event.data.content ? event.data.content : event.data;
+    const item &#x3D; event.data;
+
+    if (this.commonUtilService.networkInfo.isNetworkAvailable || item.isAvailableLocally) {
+      this.navService.navigateToDetailPage(item, { content: item });
+    } else {
+      this.commonUtilService.presentToastForOffline(&#x27;OFFLINE_WARNING_ETBUI&#x27;);
+    }
+  }
+
+  navigateToViewMoreContentsPage(section, pageName?) {
+    const params: NavigationExtras &#x3D; {
+      state: {
+        requestParams: {
+          request: section.meta.searchCriteria
+        },
+        headerTitle: this.commonUtilService.getTranslatedValue(section.title, &#x27;&#x27;),
+        pageName: ViewMore.PAGE_COURSE_POPULAR
+      }
+    };
+    this.router.navigate([RouterLinks.VIEW_MORE_ACTIVITY], params);
+  }
+
+  async onViewMorePillList(event, section) {
+    if (!event || !event.data) {
+      return;
+    }
+    const subjectListPopover &#x3D; await this.popoverCtrl.create({
+      component: SbSubjectListPopupComponent,
+      componentProps: {
+        subjectList: event.data,
+        title: section &amp;&amp; section.title
+      },
+      backdropDismiss: true,
+      showBackdrop: true,
+      cssClass: &#x27;subject-list-popup&#x27;,
+    });
+    await subjectListPopover.present();
+    const { data } &#x3D; await subjectListPopover.onDidDismiss();
+    this.handlePillSelect(data, section);
+  }
+
+  ionViewWillLeave() {
+    this.clearAllSubscriptions();
+  }
+
+  ngOnDestroy() {
+    this.clearAllSubscriptions();
+  }
+
+  clearAllSubscriptions() {
+    // If any
+  }
+
+  private mapContentFacteTheme(displayItems) {
+    if (displayItems &amp;&amp; displayItems.length) {
+      for (let count &#x3D; 0; count &lt; displayItems.length; count++) {
+        if (!displayItems[count].data) {
+          continue;
+        }
+        if (displayItems[count].dataSrc &amp;&amp; (displayItems[count].dataSrc.type &#x3D;&#x3D;&#x3D; &#x27;SEARCH_CONTENTS_BY_POULAR_CATEGORY&#x27;)) {
+          displayItems[count] &#x3D; this.mapPrimaryCategoryTheme(displayItems[count]);
+        }
+      }
+    }
+    return displayItems;
+  }
+
+  private mapPrimaryCategoryTheme(displayItems) {
+    displayItems.data.forEach(item &#x3D;&gt; {
+      const primaryCaregoryMap &#x3D; item.facet &amp;&amp;
+        PrimaryCaregoryMapping[item.facet.toLowerCase()] ? PrimaryCaregoryMapping[item.facet.toLowerCase()] :
+        PrimaryCaregoryMapping[&#x27;default&#x27;];
+      item.icon &#x3D; item.icon ? item.icon : primaryCaregoryMap.icon;
+    });
+    return displayItems;
+  }
+
+  tabViewWillEnter() {
+    this.fetchDisplayElements();
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-list class&#x3D;&quot;m-n&quot; *ngIf&#x3D;&quot;!displaySections&quot;&gt;
+  &lt;app-skeleton-item height&#x3D;&quot;16px&quot; width&#x3D;&quot;40%&quot; style&#x3D;&quot;padding: 16px;&quot;&gt;&lt;/app-skeleton-item&gt;
+  &lt;ion-item *ngFor&#x3D;&quot;let i of [0,1,2,3,4,5,6,7,8]&quot; class&#x3D;&quot;animation-background&quot;&gt;
+    &lt;ion-avatar item-start&gt;
+      &lt;app-skeleton-item height&#x3D;&quot;72px&quot; width&#x3D;&quot;72px&quot;&gt;&lt;/app-skeleton-item&gt;
+    &lt;/ion-avatar&gt;
+    &lt;ion-label style&#x3D;&quot;padding-left: 40px;&quot;&gt;
+      &lt;app-skeleton-item height&#x3D;&quot;12px&quot; width&#x3D;&quot;67%&quot; style&#x3D;&quot;padding-bottom: 8px;&quot;&gt;&lt;/app-skeleton-item&gt;
+      &lt;app-skeleton-item height&#x3D;&quot;12px&quot; width&#x3D;&quot;47%&quot; style&#x3D;&quot;padding-bottom: 8px;&quot;&gt;&lt;/app-skeleton-item&gt;
+    &lt;/ion-label&gt;
+  &lt;/ion-item&gt;
+&lt;/ion-list&gt;
+
+&lt;div class&#x3D;&quot;form-api-components&quot; *ngIf&#x3D;&quot;displaySections&quot;&gt;
+  &lt;ng-container *ngFor&#x3D;&quot;let section of displaySections&quot;&gt;
+    &lt;div class&#x3D;&quot;heading-label&quot; *ngIf&#x3D;&quot;section?.title &amp;&amp; section?.theme?.component !&#x3D;&#x3D; &#x27;sb-course-cards-hlist&#x27;&quot;&gt;
+      &lt;span role&#x3D;&quot;heading&quot; aria-level&#x3D;&quot;2&quot;&gt;{{section?.title | translateJson}}&lt;/span&gt;
+      &lt;hr&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Pills --&gt;
+    &lt;ng-container *ngIf&#x3D;&quot;section?.theme?.component &#x3D;&#x3D;&#x3D; &#x27;sb-pills-grid&#x27;&quot;&gt;
+      &lt;sb-pills-grid [pillShape]&#x3D;&quot;section?.theme?.inputs?.pillShape&quot;
+          [pillsViewType]&#x3D;&quot;section?.theme?.inputs?.pillsViewType&quot;
+          [selectMode]&#x3D;&quot;section?.theme?.inputs?.selectMode&quot;
+          [minDisplayCount]&#x3D;&quot;section?.theme?.inputs?.minDisplayCount&quot;
+          [viewMoreText]&#x3D;&quot;section?.theme?.inputs?.viewMoreText | translateJson&quot;
+          [viewLessText]&#x3D;&quot;section?.theme?.inputs?.viewLessText | translateJson&quot;
+          [showMoreViewType]&#x3D;&quot;section?.theme?.inputs?.showMoreViewType&quot;
+          [pillsMultiRow]&#x3D;&quot;section?.theme?.inputs?.pillsMultiRow&quot;
+          [pillBorder]&#x3D;&quot;section?.theme?.inputs?.pillBorder&quot;
+          [pillSize]&#x3D;&quot;section?.theme?.inputs?.pillSize&quot;
+          [pillTextElipsis]&#x3D;&quot;section?.theme?.inputs?.pillTextElipsis&quot;
+          [pillBoxShadow]&#x3D;&quot;section?.theme?.inputs?.pillBoxShadow&quot;
+          (viewMorePillList)&#x3D;&quot;onViewMorePillList($event, section)&quot;
+          (select)&#x3D;&quot;handlePillSelect($event, section)&quot;&gt;
+          &lt;sb-pill-item *ngFor&#x3D;&quot;let pillData of section.data; let index&#x3D;index&quot; [name]&#x3D;&quot;pillData?.facet | translateJson | titlecase&quot;
+                        [icon]&#x3D;&quot;{ component: &#x27;sb-pill-item&#x27;, input: &#x27;icon&#x27; } | themeInputsSelector : section?.theme : (pillData?.code || pillData?.facet)&quot;
+                        [theme]&#x3D;&quot;({ component: &#x27;sb-pill-item&#x27;, input: &#x27;theme&#x27; } | themeInputsSelector : section?.theme : pillData?.facet) || (pillData?.facet | randomColorMapPipe: index)&quot;
+                        [value]&#x3D;&quot;pillData&quot;&gt;&lt;/sb-pill-item&gt;
+        &lt;/sb-pills-grid&gt;
+    &lt;/ng-container&gt;
+
+    &lt;ng-container *ngIf&#x3D;&quot;section?.theme?.component &#x3D;&#x3D;&#x3D; &#x27;sb-course-cards-hlist&#x27;&quot;&gt;
+      &lt;ng-container *ngFor&#x3D;&quot;let subSection of section?.data?.sections&quot;&gt;
+        &lt;ng-container *ngIf&#x3D;&quot;subSection?.contents?.length&quot;&gt;
+
+          &lt;sb-course-cards-hlist [title]&#x3D;&quot;(section?.title) | translateJson&quot;
+            [type]&#x3D;&quot;section?.theme?.inputs?.type || courseCardType.COURSE_CARD_GRID&quot; 
+            [hideProgress]&#x3D;&quot;section?.theme?.inputs?.hideProgress || true&quot; 
+            [viewMoreButtonText]&#x3D;&quot;section?.theme?.inputs?.viewMoreButtonText | translateJson&quot;
+            [contentList]&#x3D;&quot;subSection.contents&quot;
+            (viewMoreClick)&#x3D;&quot;navigateToViewMoreContentsPage(section)&quot;
+            (cardClick)&#x3D;&quot;navigateToDetailPage($event)&quot;&gt;
+          &lt;/sb-course-cards-hlist&gt;
+
+        &lt;/ng-container&gt;
+      &lt;/ng-container&gt;
+    &lt;/ng-container&gt;
+
+  &lt;/ng-container&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./discover.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;src/assets/styles/_variables.scss&quot;;
+
+.search-info {
+  display: flex;
+  .title {
+    font-size: 1.5rem;
+  }
+  .description {
+    color: #333333;
+  }
+  .search-img {
+    width: 40%;
+    border-radius: 50%;
+    background-color: #555;
+  }
+}
+
+.search-input {
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #555;
+}
+
+.label {
+  font-size: 1.125rem;
+  font-weight: 700;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-list class="m-n" *ngIf="!displaySections">  <app-skeleton-item height="16px" width="40%" style="padding: 16px;"></app-skeleton-item>  <ion-item *ngFor="let i of [0,1,2,3,4,5,6,7,8]" class="animation-background">    <ion-avatar item-start>      <app-skeleton-item height="72px" width="72px"></app-skeleton-item>    </ion-avatar>    <ion-label style="padding-left: 40px;">      <app-skeleton-item height="12px" width="67%" style="padding-bottom: 8px;"></app-skeleton-item>      <app-skeleton-item height="12px" width="47%" style="padding-bottom: 8px;"></app-skeleton-item>    </ion-label>  </ion-item></ion-list><div class="form-api-components" *ngIf="displaySections">  <ng-container *ngFor="let section of displaySections">    <div class="heading-label" *ngIf="section?.title && section?.theme?.component !== \'sb-course-cards-hlist\'">      <span role="heading" aria-level="2">{{section?.title | translateJson}}</span>      <hr>    </div>    <!-- Pills -->    <ng-container *ngIf="section?.theme?.component === \'sb-pills-grid\'">      <sb-pills-grid [pillShape]="section?.theme?.inputs?.pillShape"          [pillsViewType]="section?.theme?.inputs?.pillsViewType"          [selectMode]="section?.theme?.inputs?.selectMode"          [minDisplayCount]="section?.theme?.inputs?.minDisplayCount"          [viewMoreText]="section?.theme?.inputs?.viewMoreText | translateJson"          [viewLessText]="section?.theme?.inputs?.viewLessText | translateJson"          [showMoreViewType]="section?.theme?.inputs?.showMoreViewType"          [pillsMultiRow]="section?.theme?.inputs?.pillsMultiRow"          [pillBorder]="section?.theme?.inputs?.pillBorder"          [pillSize]="section?.theme?.inputs?.pillSize"          [pillTextElipsis]="section?.theme?.inputs?.pillTextElipsis"          [pillBoxShadow]="section?.theme?.inputs?.pillBoxShadow"          (viewMorePillList)="onViewMorePillList($event, section)"          (select)="handlePillSelect($event, section)">          <sb-pill-item *ngFor="let pillData of section.data; let index=index" [name]="pillData?.facet | translateJson | titlecase"                        [icon]="{ component: \'sb-pill-item\', input: \'icon\' } | themeInputsSelector : section?.theme : (pillData?.code || pillData?.facet)"                        [theme]="({ component: \'sb-pill-item\', input: \'theme\' } | themeInputsSelector : section?.theme : pillData?.facet) || (pillData?.facet | randomColorMapPipe: index)"                        [value]="pillData"></sb-pill-item>        </sb-pills-grid>    </ng-container>    <ng-container *ngIf="section?.theme?.component === \'sb-course-cards-hlist\'">      <ng-container *ngFor="let subSection of section?.data?.sections">        <ng-container *ngIf="subSection?.contents?.length">          <sb-course-cards-hlist [title]="(section?.title) | translateJson"            [type]="section?.theme?.inputs?.type || courseCardType.COURSE_CARD_GRID"             [hideProgress]="section?.theme?.inputs?.hideProgress || true"             [viewMoreButtonText]="section?.theme?.inputs?.viewMoreButtonText | translateJson"            [contentList]="subSection.contents"            (viewMoreClick)="navigateToViewMoreContentsPage(section)"            (cardClick)="navigateToDetailPage($event)">          </sb-course-cards-hlist>        </ng-container>      </ng-container>    </ng-container>  </ng-container></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'accessDiscussion'},{'name': 'AccordionListComponent', 'selector': 'app-accordion-list'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-id-popup'},{'name': 'AcknowledgeResponseComponent', 'selector': 'acknowledge-response'},{'name': 'ActiveDownloadsPage', 'selector': 'app-active-downloads'},{'name': 'ActivityDashboardPage', 'selector': 'activity-dashboard'},{'name': 'ActivityDetailsPage', 'selector': 'app-activity-details'},{'name': 'ActivityTocPage', 'selector': 'activity-toc'},{'name': 'AddActivityToGroupComponent', 'selector': 'add-activity-to-group'},{'name': 'AddActivityToGroupPage', 'selector': 'add-activity-to-group'},{'name': 'AddEntityComponent', 'selector': 'app-add-entity'},{'name': 'AddFilePage', 'selector': 'app-add-file'},{'name': 'AddLinkModalComponent', 'selector': 'app-add-link-modal'},{'name': 'AddMemberToGroupPage', 'selector': 'app-add-member-to-group'},{'name': 'AddProgramsComponent', 'selector': 'app-add-programs'},{'name': 'AdminHomePage', 'selector': 'app-admin-home'},{'name': 'AllEvidenceListComponent', 'selector': 'app-all-evidence-list'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationHeaderComponent', 'selector': 'app-application-header'},{'name': 'ApplicationHeaderKebabMenuComponent', 'selector': 'app-application-header-kebab-menu'},{'name': 'AppRatingAlertComponent', 'selector': 'app-rating-alert'},{'name': 'AttachmentCardComponent', 'selector': 'app-attachment-card'},{'name': 'AttachmentComponent', 'selector': 'attachments'},{'name': 'AttachmentListingPage', 'selector': 'app-attachment-listing'},{'name': 'AttachmentListsComponent', 'selector': 'app-attachment-lists'},{'name': 'BarChartComponent', 'selector': 'bar-chart'},{'name': 'CategoriesEditPage', 'selector': 'app-categories-edit'},{'name': 'CategoryListPage', 'selector': 'app-category-list-page'},{'name': 'CategorySelectComponent', 'selector': 'app-category-select'},{'name': 'CertificateVerificationPopoverComponent', 'selector': 'app-certificate-verification-popover'},{'name': 'CertificateViewPage', 'selector': 'app-certificate-view'},{'name': 'ChapterDetailsPage', 'selector': 'app-chapter-details'},{'name': 'CollectionActionsComponent', 'selector': 'collection-acions'},{'name': 'CollectionChildComponent', 'selector': 'app-collection-child'},{'name': 'CollectionDetailEtbPage', 'selector': 'app-collection-detail-etb'},{'name': 'CommonFormsComponent', 'selector': 'app-common-forms'},{'name': 'CommonHeaderComponent', 'selector': 'app-common-header'},{'name': 'ConfirmAlertComponent', 'selector': 'app-confirm-alert'},{'name': 'ConsentPiiPopupComponent', 'selector': 'app-consent-pii-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentDetailsPage', 'selector': 'app-content-details'},{'name': 'ContentRatingAlertComponent', 'selector': 'app-content-rating-alert'},{'name': 'ContentViewerComponent', 'selector': 'content-viewer'},{'name': 'CopyTraceIdPopoverComponent', 'selector': 'app-copy-trace-id-popover'},{'name': 'CourseBatchesPage', 'selector': 'app-course-batches'},{'name': 'CourseCompletionPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'CoursesPage', 'selector': 'app-courses'},{'name': 'CreateEditGroupPage', 'selector': 'app-create-edit-group'},{'name': 'CreateProjectPage', 'selector': 'app-create-project'},{'name': 'CreateTaskComponent', 'selector': 'app-create-task'},{'name': 'CreateTaskFormComponent', 'selector': 'app-create-task-form'},{'name': 'CurriculumCoursesPage', 'selector': 'app-curriculum-courses'},{'name': 'DashboardComponent', 'selector': 'dashboard-component'},{'name': 'DataSyncComponent', 'selector': 'app-data-sync'},{'name': 'DateTypeInputComponent', 'selector': 'app-date-type-input'},{'name': 'DeeplinkRedirectComponent', 'selector': 'app-deeplink-redirect'},{'name': 'DetailCardComponent', 'selector': 'app-detail-card'},{'name': 'DialogPopupComponent', 'selector': 'app-dialog-popup'},{'name': 'DiscoverComponent', 'selector': 'app-discover'},{'name': 'DistrictMappingPage', 'selector': 'app-district-mapping'},{'name': 'DomainEcmLsitingComponent', 'selector': 'app-domain-ecm-lsiting'},{'name': 'DownloadManagerPage', 'selector': 'app-download-manager'},{'name': 'DownloadShareComponent', 'selector': 'download-share'},{'name': 'DownloadsHeaderComponent', 'selector': 'app-downloads-header'},{'name': 'DownloadsTabComponent', 'selector': 'app-downloads-tab'},{'name': 'DownloadTranscriptPopupComponent', 'selector': 'app-download-transcript-popup'},{'name': 'EcmListingPage', 'selector': 'app-ecm-listing'},{'name': 'EditContactDetailsPopupComponent', 'selector': 'app-edit-contact-details-popup'},{'name': 'EditContactVerifyPopupComponent', 'selector': 'app-edit-contact-verify-popup'},{'name': 'EnrolledCourseDetailsPage', 'selector': 'app-enrolled-course-details-page'},{'name': 'EnrollmentDetailsComponent', 'selector': 'app-enrollment-details'},{'name': 'EntityfilterComponent', 'selector': 'app-entityfilter'},{'name': 'EntitySearchLocalComponent', 'selector': 'app-entity-search-local'},{'name': 'ExpansionPanelComponent', 'selector': 'expansion-panel'},{'name': 'ExpansionTableComponent', 'selector': 'expansion-table'},{'name': 'ExploreBooksPage', 'selector': 'app-explore-books'},{'name': 'ExploreBooksSortComponent', 'selector': 'app-explore-books-sort'},{'name': 'FaqHelpPage', 'selector': 'app-faq-help'},{'name': 'FaqReportIssuePage', 'selector': 'app-faq-report-issue'},{'name': 'FilterModalComponent', 'selector': 'app-filter-modal'},{'name': 'FilteroptionComponent', 'selector': 'app-filteroption'},{'name': 'FiltersPage', 'selector': 'app-filters'},{'name': 'FooterButtonsComponent', 'selector': 'app-footer-buttons'},{'name': 'FrameworkSelectionPage', 'selector': 'app-framework-selection'},{'name': 'GraphCircleComponent', 'selector': 'graph-circle'},{'name': 'GroupDetailsPage', 'selector': 'app-group-details'},{'name': 'GroupGuideLinesPopoverComponent', 'selector': 'app-group-guidelines-popover'},{'name': 'GuestEditPage', 'selector': 'app-guest-edit'},{'name': 'GuestProfilePage', 'selector': 'app-guest-profile'},{'name': 'HintComponent', 'selector': 'app-hint'},{'name': 'ImageListingComponent', 'selector': 'app-image-listing'},{'name': 'ImageUploadComponent', 'selector': 'app-image-upload'},{'name': 'ImportPopoverComponent', 'selector': 'app-import-popover'},{'name': 'ImpSuggestionsPage', 'selector': 'app-imp-suggestions'},{'name': 'ItemListCardComponent', 'selector': 'app-item-list-card'},{'name': 'ItemListHeaderComponent', 'selector': 'app-item-list-header'},{'name': 'JoyfulThemePopupComponent', 'selector': 'app-joyful-theme-popup'},{'name': 'LanguageSettingsPage', 'selector': 'page-language-settings'},{'name': 'LearningResourcesPage', 'selector': 'app-learning-resources'},{'name': 'LicenseCardComponentComponent', 'selector': 'app-license-card-component'},{'name': 'LinkLearningResourcesComponent', 'selector': 'app-link-learning-resources'},{'name': 'ManageUserProfilesPage', 'selector': 'app-manage-user-profiles'},{'name': 'MatrixChartComponent', 'selector': 'matrix-chart'},{'name': 'MatrixModalComponent', 'selector': 'app-matrix-modal'},{'name': 'MatrixTypeInputComponent', 'selector': 'app-matrix-type-input'},{'name': 'MetadataActionsComponent', 'selector': 'app-metadata-actions'},{'name': 'MetadataDetailsComponent', 'selector': 'app-metadata-details'},{'name': 'MultipleTypeInputComponent', 'selector': 'app-multiple-type-input'},{'name': 'MyGroupsPage', 'selector': 'app-my-groups'},{'name': 'MyGroupsPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'NewExperiencePopupComponent', 'selector': 'app-new-experience-popup'},{'name': 'NoDataComponent', 'selector': 'app-no-data'},{'name': 'NoDownloadsComponent', 'selector': 'app-no-downloads'},{'name': 'NotificationItemComponent', 'selector': 'app-notification-item'},{'name': 'NotificationPage', 'selector': 'app-notification'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationHomeComponent', 'selector': 'app-observation-home'},{'name': 'ObservationSolutionEntityListingComponent', 'selector': 'app-observation-solution-entity-listing'},{'name': 'ObservationSolutionListingComponent', 'selector': 'app-observation-solution-listing'},{'name': 'ObservationSubmissionComponent', 'selector': 'app-observation-submission'},{'name': 'OtpPage', 'selector': 'app-otp'},{'name': 'OverflowMenuComponent', 'selector': 'app-overflow-menu'},{'name': 'PageFilterOptionsPage', 'selector': 'app-page-filter-options'},{'name': 'PageFilterPage', 'selector': 'app-page-filter'},{'name': 'PageQuestionsComponent', 'selector': 'app-page-questions'},{'name': 'PbHorizontalComponent', 'selector': 'app-pb-horizontal'},{'name': 'PercentageColumnChartsComponent', 'selector': 'percentage-column-charts'},{'name': 'PermissionComponent', 'selector': 'app-permission'},{'name': 'PersonalDetailsEditPage', 'selector': 'app-personal-details-edit'},{'name': 'PieChartComponent', 'selector': 'pie-chart'},{'name': 'PlayerPage', 'selector': 'app-player'},{'name': 'PopoverComponent', 'selector': 'app-popover'},{'name': 'PrivacyPolicyAndTCComponent', 'selector': 'app-privacy-policy-and-tc'},{'name': 'ProfileAvatarComponent', 'selector': 'app-profile-avatar'},{'name': 'ProfileNameConfirmationPopoverComponent', 'selector': 'app-profile-name-confirmation-popover'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfileSettingsPage', 'selector': 'app-profile-settings'},{'name': 'ProgramListingComponent', 'selector': 'app-program-listing'},{'name': 'ProgressBarComponent', 'selector': 'progress-bar'},{'name': 'ProjectDetailsCardComponent', 'selector': 'app-project-details-card'},{'name': 'ProjectDetailsComponent', 'selector': 'app-project-details'},{'name': 'ProjectEditPage', 'selector': 'app-project-edit'},{'name': 'ProjectListingComponent', 'selector': 'app-project-listing'},{'name': 'ProjectMetadataCardComponent', 'selector': 'app-project-metadata-card'},{'name': 'ProjectOperationPage', 'selector': 'app-project-operation'},{'name': 'ProjectReportComponent', 'selector': 'app-project-report'},{'name': 'ProjectTaskListComponent', 'selector': 'app-project-task-list'},{'name': 'ProjectTemplatePage', 'selector': 'app-project-template'},{'name': 'ProjectTemplateviewPage', 'selector': 'app-project-templateview'},{'name': 'QrcoderesultPage', 'selector': 'app-qrcoderesult'},{'name': 'QRScannerAlert', 'selector': 'app-qrscanner-alert'},{'name': 'QrScannerIOSComponent', 'selector': 'app-qr-scanner-ios'},{'name': 'QuestionHeadingComponent', 'selector': 'app-question-heading'},{'name': 'QuestionMapModalComponent', 'selector': 'app-question-map-modal'},{'name': 'QuestionnairePage', 'selector': 'app-questionnaire'},{'name': 'RadioTypeInputComponent', 'selector': 'app-radio-type-input'},{'name': 'RelevantContentCardComponent', 'selector': 'app-relevant-content-card'},{'name': 'RelevantContentsPage', 'selector': 'app-relevant-contents'},{'name': 'RemarksComponent', 'selector': 'app-remarks'},{'name': 'RemarksModalComponent', 'selector': 'app-remarks-modal'},{'name': 'ReportListComponent', 'selector': 'app-report-list'},{'name': 'ReportModalFilter', 'selector': 'report-modal-filter'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'ReportsListingComponent', 'selector': 'app-reports-listing'},{'name': 'ReportsTextComponent', 'selector': 'reports-text'},{'name': 'ResourcesComponent', 'selector': 'app-resources'},{'name': 'SbAppSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbDownloadPopupComponent', 'selector': 'app-sb-download-popup'},{'name': 'SbGenericFormPopoverComponent', 'selector': 'app-sb-generic-form-popover'},{'name': 'SbGenericPopoverComponent', 'selector': 'app-sb-generic-popover'},{'name': 'SbInsufficientStoragePopupComponent', 'selector': 'sb-insufficient-storage-popup'},{'name': 'SbNoNetworkPopupComponent', 'selector': 'sb-no-network-popup'},{'name': 'SbPopoverComponent', 'selector': 'sb-popover'},{'name': 'SbPreferencePopupComponent', 'selector': 'app-sb-preferences-popup'},{'name': 'SbProgressLoaderPage', 'selector': 'app-sb-progress-loader'},{'name': 'SbSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbSubjectListPopupComponent', 'selector': 'app-sb-subject-list-popup'},{'name': 'SbTutorialPopupComponent', 'selector': 'app-sb-tutorial-popup'},{'name': 'ScatterChartComponent', 'selector': 'scatter-chart'},{'name': 'SearchFilterPage', 'selector': 'app-search-filter.page'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SectionListingPage', 'selector': 'app-section-listing'},{'name': 'SelfDeclaredTeacherEditPage', 'selector': 'app-self-declared-teacher-edit'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'ShowCertificateComponent', 'selector': 'app-show-certificate-component'},{'name': 'ShowVendorAppsComponent', 'selector': 'show-vendor-apps'},{'name': 'SignInCardComponent', 'selector': 'app-sign-in-card'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'SignupBasicInfoPage', 'selector': 'app-signup-basic-info'},{'name': 'SignupEmailPasswordPage', 'selector': 'app-signup-email-password'},{'name': 'SkeletonItemComponent', 'selector': 'app-skeleton-item'},{'name': 'SliderTypeInputComponent', 'selector': 'app-slider-type-input'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'StartImprovementComponent', 'selector': 'app-start-improvement'},{'name': 'StorageSettingsPage', 'selector': 'app-storage-settings'},{'name': 'SubmissionActionsComponent', 'selector': 'app-submission-actions'},{'name': 'SubmissionPreviewPageComponent', 'selector': 'app-submission-preview-page'},{'name': 'SubProfileEditPage', 'selector': 'app-sub-profile-edit'},{'name': 'SupportAcknowledgement', 'selector': 'support-acknowledgement'},{'name': 'SurveyHomeComponent', 'selector': 'app-survey-home'},{'name': 'SurveyMsgComponent', 'selector': 'app-survey-msg'},{'name': 'SyncPage', 'selector': 'app-sync'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TaskCardComponent', 'selector': 'app-task-card'},{'name': 'TaskViewPage', 'selector': 'app-task-view'},{'name': 'TeacherIdVerificationComponent', 'selector': 'app-teacher-id-verification-popup'},{'name': 'TermsAndConditionsPage', 'selector': 'app-terms-and-conditions'},{'name': 'TextBookTocPage', 'selector': 'textbook-toc'},{'name': 'TextbookViewMorePage', 'selector': 'app-textbook-view-more'},{'name': 'TextTypeInputComponent', 'selector': 'app-text-type-input'},{'name': 'ToastNavigationComponent', 'selector': 'app-toast-navigation'},{'name': 'TocHeaderComponent', 'selector': 'app-toc-header'},{'name': 'UpgradePopoverComponent', 'selector': 'app-upgrade-popover'},{'name': 'UserHomePage', 'selector': 'app-user-home'},{'name': 'UserTypeSelectionPage', 'selector': 'page-user-type-selection'},{'name': 'ViewCreditsComponent', 'selector': 'app-view-credits'},{'name': 'ViewDetailComponent', 'selector': 'app-view-detail'},{'name': 'ViewMoreActivityComponent', 'selector': 'app-view-more-activity'},{'name': 'ViewMoreActivityPage', 'selector': 'view-more-activity'},{'name': 'YearOfBirthPopupComponent', 'selector': 'app-year-of-birth-popup'}];
+    var DIRECTIVES = [{'name': 'CustomIonSelectDirective', 'selector': '[appCustomIonSelect]'},{'name': 'HideHeaderFooterDirective', 'selector': '[hide-header-footer]'},{'name': 'ReadMoreDirective', 'selector': '[readMore]'}];
+    var ACTUAL_COMPONENT = {'name': 'DiscoverComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DiscoverComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

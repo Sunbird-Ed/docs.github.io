@@ -1,0 +1,1755 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  CreateEditGroupPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/my-groups/create-edit-group/create-edit-group.page.ts</code>
+</p>
+
+
+
+
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-create-edit-group</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./create-edit-group.page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./create-edit-group.page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#appName" >appName</a>
+                            </li>
+                            <li>
+                                <a href="#backButtonFunc" >backButtonFunc</a>
+                            </li>
+                            <li>
+                                <a href="#corRelationList" >corRelationList</a>
+                            </li>
+                            <li>
+                                <a href="#createGroupForm" >createGroupForm</a>
+                            </li>
+                            <li>
+                                <a href="#createGroupFormSubmitted" >createGroupFormSubmitted</a>
+                            </li>
+                            <li>
+                                <a href="#errorMessages" >errorMessages</a>
+                            </li>
+                            <li>
+                                <a href="#extras" >extras</a>
+                            </li>
+                            <li>
+                                <a href="#groupDetails" >groupDetails</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Public</span>
+                                <a href="#groupService" >groupService</a>
+                            </li>
+                            <li>
+                                <a href="#hasFilledLocation" >hasFilledLocation</a>
+                            </li>
+                            <li>
+                                <a href="#headerObservable" >headerObservable</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#createGroup" >createGroup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#editGroup" >editGroup</a>
+                            </li>
+                            <li>
+                                <a href="#handleBackButtonEvents" >handleBackButtonEvents</a>
+                            </li>
+                            <li>
+                                <a href="#handleHeaderEvents" >handleHeaderEvents</a>
+                            </li>
+                            <li>
+                                <a href="#initializeForm" >initializeForm</a>
+                            </li>
+                            <li>
+                                <a href="#ionViewWillEnter" >ionViewWillEnter</a>
+                            </li>
+                            <li>
+                                <a href="#ionViewWillLeave" >ionViewWillLeave</a>
+                            </li>
+                            <li>
+                                <a href="#onSubmit" >onSubmit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openTermsOfUse" >openTermsOfUse</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Accessors</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#createGroupFormControls" >createGroupFormControls</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(groupService: GroupService, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, fb: FormBuilder, translate: TranslateService, headerService: <a href="../injectables/AppHeaderService.html" target="_self">AppHeaderService</a>, location: <a href="../classes/Location.html" target="_self">Location</a>, platform: Platform, alertCtrl: AlertController, utilityService: <a href="../injectables/UtilityService.html" target="_self">UtilityService</a>, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, router: Router)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:42</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>groupService</td>
+                                                  
+                                                        <td>
+                                                                    <code>GroupService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>fb</td>
+                                                  
+                                                        <td>
+                                                                    <code>FormBuilder</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>headerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppHeaderService.html" target="_self" >AppHeaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Location.html" target="_self" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>platform</td>
+                                                  
+                                                        <td>
+                                                                    <code>Platform</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>AlertController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utilityService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilityService.html" target="_self" >UtilityService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createGroup"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>createGroup</b></span>
+                        <a href="#createGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>createGroup(formVal)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="144"
+                            class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:144</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>formVal</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="editGroup"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>editGroup</b></span>
+                        <a href="#editGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>editGroup(formVal)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="197"
+                            class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:197</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>formVal</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleBackButtonEvents"></a>
+                    <span class="name">
+                        <span ><b>handleBackButtonEvents</b></span>
+                        <a href="#handleBackButtonEvents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleBackButtonEvents()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="handleHeaderEvents"></a>
+                    <span class="name">
+                        <span ><b>handleHeaderEvents</b></span>
+                        <a href="#handleHeaderEvents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>handleHeaderEvents($event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="242"
+                            class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:242</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>$event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeForm"></a>
+                    <span class="name">
+                        <span ><b>initializeForm</b></span>
+                        <a href="#initializeForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>initializeForm()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="117"
+                            class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:117</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillEnter"></a>
+                    <span class="name">
+                        <span ><b>ionViewWillEnter</b></span>
+                        <a href="#ionViewWillEnter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewWillEnter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="65"
+                            class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:65</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillLeave"></a>
+                    <span class="name">
+                        <span ><b>ionViewWillLeave</b></span>
+                        <a href="#ionViewWillLeave"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewWillLeave()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="92"
+                            class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:92</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onSubmit"></a>
+                    <span class="name">
+                        <span ><b>onSubmit</b></span>
+                        <a href="#onSubmit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onSubmit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="129"
+                            class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:129</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openTermsOfUse"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>openTermsOfUse</b></span>
+                        <a href="#openTermsOfUse"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openTermsOfUse()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="227"
+                            class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:227</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appName"></a>
+                    <span class="name">
+                        <span ><b>appName</b></span>
+                        <a href="#appName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:27</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="backButtonFunc"></a>
+                    <span class="name">
+                        <span ><b>backButtonFunc</b></span>
+                        <a href="#backButtonFunc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="corRelationList"></a>
+                    <span class="name">
+                        <span ><b>corRelationList</b></span>
+                        <a href="#corRelationList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;CorrelationData&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:26</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createGroupForm"></a>
+                    <span class="name">
+                        <span ><b>createGroupForm</b></span>
+                        <a href="#createGroupForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>FormGroup</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createGroupFormSubmitted"></a>
+                    <span class="name">
+                        <span ><b>createGroupFormSubmitted</b></span>
+                        <a href="#createGroupFormSubmitted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="errorMessages"></a>
+                    <span class="name">
+                        <span ><b>errorMessages</b></span>
+                        <a href="#errorMessages"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    groupName: {
+      message: &#x27;GROUP_NAME_IS_REQUIRED&#x27;
+    },
+    groupTerms: {
+      message: &#x27;GROUP_TERMS_IS_REQUIRED&#x27;
+    }
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="extras"></a>
+                    <span class="name">
+                        <span ><b>extras</b></span>
+                        <a href="#extras"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="groupDetails"></a>
+                    <span class="name">
+                        <span ><b>groupDetails</b></span>
+                        <a href="#groupDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="groupService"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Public</span>
+                        <span ><b>groupService</b></span>
+                        <a href="#groupService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>GroupService</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @Inject(&#x27;GROUP_SERVICE&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasFilledLocation"></a>
+                    <span class="name">
+                        <span ><b>hasFilledLocation</b></span>
+                        <a href="#hasFilledLocation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="headerObservable"></a>
+                    <span class="name">
+                        <span ><b>headerObservable</b></span>
+                        <a href="#headerObservable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-accessors">
+    <h3 id="accessors">
+        Accessors
+    </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="createGroupFormControls"></a>
+                        <span class="name"><b>createGroupFormControls</b><a href="#createGroupFormControls"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>createGroupFormControls()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="125" class="link-to-prism">src/app/my-groups/create-edit-group/create-edit-group.page.ts:125</a></div>
+                                </td>
+                            </tr>
+
+            </tbody>
+        </table>
+</section>
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Subscription } from &#x27;rxjs&#x27;;
+import { Component, Inject } from &#x27;@angular/core&#x27;;
+import { Platform, AlertController } from &#x27;@ionic/angular&#x27;;
+import { FormBuilder, FormGroup, Validators } from &#x27;@angular/forms&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import {
+  GroupService, GroupCreateRequest, GroupMembershipType,
+  UpdateByIdRequest, CorrelationData
+} from &#x27;sunbird-sdk&#x27;;
+import { CommonUtilService } from &#x27;@app/services/common-util.service&#x27;;
+import { AppHeaderService } from &#x27;@app/services/app-header.service&#x27;;
+import { Location } from &#x27;@angular/common&#x27;;
+import { UtilityService, Environment, ID, ImpressionSubtype,
+  ImpressionType, InteractType, PageId,
+  TelemetryGeneratorService, InteractSubtype } from &#x27;@app/services&#x27;;
+import { RouterLinks, GroupErrorCodes } from &#x27;@app/app/app.constant&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+@Component({
+  selector: &#x27;app-create-edit-group&#x27;,
+  templateUrl: &#x27;./create-edit-group.page.html&#x27;,
+  styleUrls: [&#x27;./create-edit-group.page.scss&#x27;],
+})
+export class CreateEditGroupPage {
+
+  corRelationList: Array&lt;CorrelationData&gt;;
+  appName: string;
+  createGroupFormSubmitted &#x3D; false;
+  createGroupForm: FormGroup;
+  backButtonFunc: Subscription;
+  hasFilledLocation &#x3D; false;
+  errorMessages &#x3D; {
+    groupName: {
+      message: &#x27;GROUP_NAME_IS_REQUIRED&#x27;
+    },
+    groupTerms: {
+      message: &#x27;GROUP_TERMS_IS_REQUIRED&#x27;
+    }
+  };
+  headerObservable: Subscription;
+  extras: any;
+  groupDetails: any;
+
+  constructor(
+    @Inject(&#x27;GROUP_SERVICE&#x27;) public groupService: GroupService,
+    private commonUtilService: CommonUtilService,
+    private fb: FormBuilder,
+    private translate: TranslateService,
+    private headerService: AppHeaderService,
+    private location: Location,
+    private platform: Platform,
+    private alertCtrl: AlertController,
+    private utilityService: UtilityService,
+    private telemetryGeneratorService: TelemetryGeneratorService,
+    private router: Router
+  ) {
+    const extras &#x3D; this.router.getCurrentNavigation().extras.state;
+    if (extras &amp;&amp; extras.groupDetails) {
+      this.groupDetails &#x3D; extras.groupDetails;
+      this.corRelationList &#x3D; extras.corRelation;
+    }
+    this.initializeForm();
+  }
+
+  ionViewWillEnter() {
+    this.headerService.showHeaderWithBackButton();
+
+    this.headerObservable &#x3D; this.headerService.headerEventEmitted$.subscribe(eventName &#x3D;&gt; {
+      this.handleHeaderEvents(eventName);
+    });
+
+    this.handleBackButtonEvents();
+    this.commonUtilService.getAppName().then((res) &#x3D;&gt; { this.appName &#x3D; res; });
+
+    this.telemetryGeneratorService.generateImpressionTelemetry(
+      ImpressionType.VIEW, ImpressionSubtype.CREATE_GROUP_FORM, PageId.CREATE_GROUP, Environment.GROUP,
+      undefined, undefined, undefined, undefined, this.corRelationList);
+
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.INITIATED,
+      &#x27;&#x27;,
+      Environment.GROUP,
+      PageId.CREATE_GROUP,
+      undefined,
+      undefined,
+      undefined,
+      this.corRelationList,
+      ID.CREATE_GROUP
+    );
+  }
+
+  ionViewWillLeave() {
+    this.commonUtilService.getAppName().then((res) &#x3D;&gt; { this.appName &#x3D; res; });
+
+    if (this.headerObservable) {
+      this.headerObservable.unsubscribe();
+    }
+
+    if (this.backButtonFunc) {
+      this.backButtonFunc.unsubscribe();
+    }
+  }
+
+  handleBackButtonEvents() {
+    this.backButtonFunc &#x3D; this.platform.backButton.subscribeWithPriority(0, async () &#x3D;&gt; {
+      const activePortal &#x3D; await this.alertCtrl.getTop();
+      if (activePortal) {
+        activePortal.dismiss();
+      } else {
+        this.telemetryGeneratorService.generateBackClickedTelemetry(PageId.CREATE_GROUP,
+          Environment.GROUP, false, undefined, this.corRelationList);
+        this.location.back();
+      }
+    });
+  }
+
+  initializeForm() {
+    this.createGroupForm &#x3D; this.fb.group({
+      groupName: [(this.groupDetails &amp;&amp; this.groupDetails.name) || &#x27;&#x27;, Validators.required],
+      groupDesc: (this.groupDetails &amp;&amp; this.groupDetails.description) || &#x27;&#x27;,
+      groupTerms: [(this.groupDetails &amp;&amp; true || &#x27;&#x27;), Validators.required]
+    });
+  }
+
+  get createGroupFormControls() {
+    return this.createGroupForm.controls;
+  }
+
+  onSubmit() {
+    this.createGroupFormSubmitted &#x3D; true;
+    const formVal &#x3D; this.createGroupForm.value;
+    if (!formVal.groupTerms) {
+      this.createGroupForm.controls[&#x27;groupTerms&#x27;].setErrors({ incorrect: true });
+    }
+    if (this.createGroupForm.valid) {
+      if (this.groupDetails) {
+        this.editGroup(formVal);
+      } else {
+        this.createGroup(formVal);
+      }
+    }
+  }
+
+  private async createGroup(formVal) {
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.SELECT_CREATE_GROUP,
+      InteractSubtype.CREATE_GROUP_CLICKED,
+      Environment.GROUP, PageId.CREATE_GROUP,
+      undefined, undefined, undefined, this.corRelationList,
+      ID.CREATE_GROUP
+    );
+    if (!this.commonUtilService.networkInfo.isNetworkAvailable) {
+      this.commonUtilService.presentToastForOffline(&#x27;YOU_ARE_NOT_CONNECTED_TO_THE_INTERNET&#x27;);
+      return;
+    }
+
+    const loader &#x3D; await this.commonUtilService.getLoader();
+    await loader.present();
+    const groupCreateRequest: GroupCreateRequest &#x3D; {
+      name: formVal.groupName,
+      description: formVal.groupDesc,
+      membershipType: GroupMembershipType.MODERATED
+    };
+    this.groupService.create(groupCreateRequest).toPromise().then(async (res) &#x3D;&gt; {
+      console.log(&#x27;create suc&#x27;);
+      await loader.dismiss();
+      this.commonUtilService.showToast(&#x27;GROUP_CREATED&#x27;);
+      this.telemetryGeneratorService.generateInteractTelemetry(
+        InteractType.SUCCESS,
+        &#x27;&#x27;,
+        Environment.GROUP,
+        PageId.CREATE_GROUP,
+        undefined, undefined, undefined, this.corRelationList,
+        ID.CREATE_GROUP
+      );
+      this.location.back();
+    }).catch(async (err) &#x3D;&gt; {
+      console.error(err);
+      this.telemetryGeneratorService.generateInteractTelemetry(
+        InteractType.FAILURE,
+        &#x27;&#x27;,
+        Environment.GROUP,
+        PageId.CREATE_GROUP,
+        undefined, undefined, undefined, this.corRelationList,
+        ID.CREATE_GROUP
+      );
+      await loader.dismiss();
+      if (err.response &amp;&amp; err.response.body &amp;&amp; err.response.body.params
+        &amp;&amp; err.response.body.params.status &#x3D;&#x3D;&#x3D; GroupErrorCodes.EXCEEDED_GROUP_MAX_LIMIT) {
+        this.commonUtilService.showToast(&#x27;ERROR_MAXIMUM_GROUP_COUNT_EXCEEDS&#x27;);
+      } else {
+        this.commonUtilService.showToast(&#x27;SOMETHING_WENT_WRONG&#x27;);
+      }
+    });
+  }
+
+  private async editGroup(formVal) {
+    const loader &#x3D; await this.commonUtilService.getLoader();
+    await loader.present();
+    const updateCreateRequest: UpdateByIdRequest &#x3D; {
+      id: this.groupDetails.id,
+      updateRequest: {
+        name: formVal.groupName,
+        description: formVal.groupDesc
+      }
+    };
+    this.groupService.updateById(updateCreateRequest).toPromise().then(async (res) &#x3D;&gt; {
+      await loader.dismiss();
+      this.commonUtilService.showToast(&#x27;GROUP_UPDATE_SUCCESS&#x27;);
+      this.telemetryGeneratorService.generateInteractTelemetry(
+        InteractType.SUCCESS,
+        &#x27;&#x27;,
+        Environment.GROUP,
+        PageId.CREATE_GROUP,
+        undefined,
+        undefined,
+        undefined,
+        this.corRelationList,
+        ID.CREATE_GROUP
+      );
+      this.location.back();
+    }).catch(async (err) &#x3D;&gt; {
+      await loader.dismiss();
+    });
+  }
+
+  async openTermsOfUse() {
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.TERMS_OF_USE_CLICKED,
+      Environment.GROUP,
+      PageId.CREATE_GROUP,
+      undefined, undefined, undefined, this.corRelationList);
+    const baseUrl &#x3D; await this.utilityService.getBuildConfigValue(&#x27;TOU_BASE_URL&#x27;);
+    const url &#x3D; baseUrl + RouterLinks.TERM_OF_USE + &#x27;#groupGuidelines&#x27;;
+    const options
+      &#x3D; &#x27;hardwareback&#x3D;yes,clearcache&#x3D;no,zoom&#x3D;no,toolbar&#x3D;yes,disallowoverscroll&#x3D;yes&#x27;;
+
+    (window as any).cordova.InAppBrowser.open(url, &#x27;_blank&#x27;, options);
+  }
+
+  handleHeaderEvents($event) {
+    if ($event.name &#x3D;&#x3D;&#x3D; &#x27;back&#x27;){
+      this.telemetryGeneratorService.generateBackClickedTelemetry(PageId.CREATE_GROUP,
+        Environment.GROUP, true, undefined, this.corRelationList);
+      this.location.back();
+    }
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content&gt;
+  &lt;form [formGroup]&#x3D;&quot;createGroupForm&quot;&gt;
+    &lt;h4 class&#x3D;&quot;cr-title&quot; *ngIf&#x3D;&quot;!groupDetails&quot;&gt;{{&#x27;CREATE_GROUP&#x27; | translate}}&lt;/h4&gt;
+    &lt;h4 class&#x3D;&quot;cr-title&quot; *ngIf&#x3D;&quot;groupDetails&quot;&gt;{{&#x27;EDIT_GROUP&#x27; | translate}}&lt;/h4&gt;
+    &lt;ion-item class&#x3D;&quot;input-item&quot; 
+    [ngClass]&#x3D;&quot;{&#x27;cr-input-primary&#x27;: !((createGroupFormControls.groupName.touched || createGroupFormSubmitted) &amp;&amp; createGroupFormControls.groupName.errors?.required) ,
+      &#x27;cr-input-error&#x27;: ((createGroupFormControls.groupName.touched || createGroupFormSubmitted) &amp;&amp; createGroupFormControls.groupName.errors?.required)}&quot;&gt;
+      &lt;ion-label position&#x3D;&quot;stacked&quot; class&#x3D;&quot;label-font align-text&quot;&gt;{{&#x27;GROUP_NAME&#x27; | translate }}&lt;sup&gt;*&lt;/sup&gt;&lt;/ion-label&gt;
+      &lt;ion-input formControlName&#x3D;&quot;groupName&quot; maxlength&#x3D;&quot;50&quot; placeholder&#x3D;&quot;{{&#x27;ENTER_GROUP_NAME&#x27; | translate}}&quot;&gt;&lt;/ion-input&gt;
+      &lt;span class&#x3D;&quot;char-info&quot; 
+        [innerHTML]&#x3D;&quot;&#x27;CHARACTERS_REMAINING&#x27; | translate: {&#x27;character_count&#x27;:  50 - createGroupFormControls.groupName.value?.length} &quot;
+        *ngIf&#x3D;&quot;!((createGroupFormControls.groupName.touched || createGroupFormSubmitted) &amp;&amp; createGroupFormControls.groupName.errors?.required)&quot;&gt;
+      &lt;/span&gt;
+      &lt;span *ngIf&#x3D;&quot;(createGroupFormControls.groupName.touched || createGroupFormSubmitted) &amp;&amp; createGroupFormControls.groupName.errors?.required&quot; class&#x3D;&quot;cr-error&quot;&gt;{{ errorMessages.groupName.message | translate }}&lt;/span&gt;
+    &lt;/ion-item&gt;
+    &lt;ion-item class&#x3D;&quot;input-item cr-input-primary&quot;&gt;
+      &lt;ion-label position&#x3D;&quot;stacked&quot; class&#x3D;&quot;label-font align-text&quot;&gt;{{&#x27;GROUP_DESCRIPTION&#x27; | translate }}&lt;/ion-label&gt;
+      &lt;ion-textarea class&#x3D;&quot;cr-desc&quot; formControlName&#x3D;&quot;groupDesc&quot; maxlength&#x3D;&quot;150&quot; rows&#x3D;&quot;4&quot; placeholder&#x3D;&quot;{{&#x27;GROUP_DESCRIPTION_PLACEHOLDER&#x27; | translate}}&quot;&gt;&lt;/ion-textarea&gt;
+      &lt;span class&#x3D;&quot;char-info&quot;
+            [innerHTML]&#x3D;&quot;&#x27;CHARACTERS_REMAINING&#x27; | translate: {&#x27;character_count&#x27;:  150 - createGroupFormControls.groupDesc.value?.length} &quot;
+      &gt;&lt;/span&gt;
+    &lt;/ion-item&gt;
+    &lt;div class&#x3D;&quot;cr-terms-container&quot; *ngIf&#x3D;&quot;!groupDetails&quot;&gt;
+      &lt;div class&#x3D;&quot;input-item cr-input-primary&quot; lines&#x3D;&quot;none&quot;&gt;
+        &lt;ion-checkbox id&#x3D;&quot;cr-term-label-accessible&quot; class&#x3D;&quot;cr-terms-checkbox&quot; formControlName&#x3D;&quot;groupTerms&quot; color&#x3D;&quot;secondary&quot; checked&#x3D;&quot;false&quot;&gt;&lt;/ion-checkbox&gt;
+        &lt;label class&#x3D;&quot;hide&quot; for&#x3D;&quot;cr-term-label-accessible&quot; &gt;{{&#x27;I_AGREE_TO&#x27; | translate: {&#x27;app_name&#x27;: appName} }} checkbox &lt;/label&gt;
+        &lt;p class&#x3D;&quot;cr-terms-checkbox-label&quot;&gt; 
+          &lt;span&gt;{{&#x27;I_AGREE_TO&#x27; | translate: {&#x27;app_name&#x27;: appName} }} &lt;/span&gt;&lt;span class&#x3D;&quot;cr-terms&quot; (click)&#x3D;&quot;openTermsOfUse()&quot;&gt;{{&#x27;GROUP_GUIDELINES&#x27; | translate}}&lt;/span&gt;
+        &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;p
+        *ngIf&#x3D;&quot;(createGroupFormControls.groupTerms.touched || createGroupFormSubmitted) &amp;&amp; createGroupFormControls.groupTerms.invalid&quot;
+        class&#x3D;&quot;cr-error cr-error-checkbox&quot;
+        [innerHTML]&#x3D;&quot;&#x27;GROUP_TERMS_IS_REQUIRED&#x27; | translate:  {&#x27;app_name&#x27;:  appName}&quot; &gt;&lt;/p&gt;
+    &lt;/div&gt;
+    
+  &lt;/form&gt;
+&lt;/ion-content&gt;
+
+&lt;ion-footer&gt;
+    &lt;div class&#x3D;&quot;padding-16&quot; *ngIf&#x3D;&quot;!groupDetails&quot;&gt;
+      &lt;button class&#x3D;&quot;sb-btn-large&quot; expand&#x3D;&quot;block&quot; attr.aria-label&#x3D;&quot;create group {{createGroupForm.invalid ? &#x27;disable&#x27; : &#x27;&#x27;}}&quot; [class.inactive]&#x3D;&quot;createGroupForm.invalid&quot; (click)&#x3D;&quot;onSubmit()&quot;&gt;
+        &lt;img src&#x3D;&quot;assets/imgs/ic_group_add_white.svg&quot; alt&#x3D;&quot;&quot;&gt;
+        {{&#x27;CREATE_GROUP&#x27; | translate}}
+      &lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;padding-16&quot; *ngIf&#x3D;&quot;groupDetails&quot;&gt;
+      &lt;button class&#x3D;&quot;sb-btn-large&quot; expand&#x3D;&quot;block&quot; [class.inactive]&#x3D;&quot;createGroupForm.invalid&quot; (click)&#x3D;&quot;onSubmit()&quot;&gt;
+        &lt;img src&#x3D;&quot;assets/imgs/ic_group_add_white.svg&quot; alt&#x3D;&quot;&quot;&gt;
+        {{&#x27;EDIT_GROUP&#x27; | translate}}
+      &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/ion-footer&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./create-edit-group.page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;src/assets/styles/_variables.scss&quot;;
+:host {
+  .label-font {
+    color: $gray-800 !important;
+    font-family: &quot;Noto Sans&quot;, sans-serif !important;
+    font-size: 1.375rem !important;
+    font-weight: normal;
+  }
+
+  .padding-12 {
+    padding: 12px !important;
+  }
+
+  .cr-error-checkbox{
+    margin: 0;
+  }
+
+  .char-info{
+    display: block;
+    text-align: right;
+    width: 100%;
+    font-size: 0.75rem;
+    padding-top: 4px;
+    color: $gray-300;
+  }
+  
+
+  ion-item {
+    // --border-color: var(--ion-color-danger, #f1453d);
+  }
+
+  .sb-btn-large{
+    &amp;.inactive{
+      background-color: $gray-200;
+    }
+    img{
+      margin-right: 8px;
+      position: relative;
+      bottom: 0.125rem;
+    }
+  }
+
+  .item-label-stacked ion-input {
+    margin-top: 16px;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    font-size: $font-size-base;
+  }
+
+  .item-label-stacked .cr-desc {
+    margin-top: 16px;
+    padding: 0 16px;
+    border: 1px solid $gray-800 !important;
+    border-radius: 2px;
+  }
+  
+
+  .cr-input-primary ion-input{
+    border: 1px solid $gray-800;
+    border-radius: 2px;
+  }
+
+  .cr-input-error ion-input{
+    border: 1px solid $red;
+  }
+
+  ion-item.item-label-stacked {
+    --border-width: 0;
+    --highlight-background: transparent;
+  }
+
+  // .item-select ion-label {
+  //   color: #006de5;
+  // }
+  ion-checkbox{
+    &amp;.cr-terms-checkbox{
+      --ion-color-base: green !important;
+    }
+  }
+  .cr-terms-container{
+    padding: 0 16px;
+    font-size: $font-size-base;
+    .cr-terms-checkbox-label{
+      margin-left: 16px;
+      display: inline-block;
+      vertical-align: bottom;
+      margin-bottom: 0;
+    }
+    .cr-terms{
+      color: $blue;
+    }
+  }
+  ion-label {
+    color: $gray-800;
+    font-family: &quot;Noto Sans&quot;, sans-serif;
+    font-size: $font-size-base;
+    letter-spacing: 0;
+    sup{
+      font-size: 1.375rem;
+      top: 0;
+      margin-left: 4px;
+      color: $red;
+    }
+  }
+
+}
+
+.cr-title{
+  font-size: 1rem;
+  font-weight: bold;
+  color: $blue;
+  margin: 16px 16px 0;
+}
+
+.cr-input-title{
+  color: $gray-800;
+  font-family: &quot;Noto Sans&quot;, sans-serif;
+  font-size: $font-size-base;
+  letter-spacing: 0;
+  line-height: 1.188rem;
+  margin: 16px 0 8px;
+}
+
+.cr-input-box{
+  border: 0.5px solid $gray-800;
+  border-radius: 2px;
+  ion-input{
+    margin: 0 8px;
+  }
+}
+
+.cr-error{
+  margin-top: 8px;
+  display: block;
+  font-size: 0.75rem;
+  color: $red;
+}
+
+.input-item{
+  padding-top: 8px;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content>  <form [formGroup]="createGroupForm">    <h4 class="cr-title" *ngIf="!groupDetails">{{\'CREATE_GROUP\' | translate}}</h4>    <h4 class="cr-title" *ngIf="groupDetails">{{\'EDIT_GROUP\' | translate}}</h4>    <ion-item class="input-item"     [ngClass]="{\'cr-input-primary\': !((createGroupFormControls.groupName.touched || createGroupFormSubmitted) && createGroupFormControls.groupName.errors?.required) ,      \'cr-input-error\': ((createGroupFormControls.groupName.touched || createGroupFormSubmitted) && createGroupFormControls.groupName.errors?.required)}">      <ion-label position="stacked" class="label-font align-text">{{\'GROUP_NAME\' | translate }}<sup>*</sup></ion-label>      <ion-input formControlName="groupName" maxlength="50" placeholder="{{\'ENTER_GROUP_NAME\' | translate}}"></ion-input>      <span class="char-info"         [innerHTML]="\'CHARACTERS_REMAINING\' | translate: {\'character_count\':  50 - createGroupFormControls.groupName.value?.length} "        *ngIf="!((createGroupFormControls.groupName.touched || createGroupFormSubmitted) && createGroupFormControls.groupName.errors?.required)">      </span>      <span *ngIf="(createGroupFormControls.groupName.touched || createGroupFormSubmitted) && createGroupFormControls.groupName.errors?.required" class="cr-error">{{ errorMessages.groupName.message | translate }}</span>    </ion-item>    <ion-item class="input-item cr-input-primary">      <ion-label position="stacked" class="label-font align-text">{{\'GROUP_DESCRIPTION\' | translate }}</ion-label>      <ion-textarea class="cr-desc" formControlName="groupDesc" maxlength="150" rows="4" placeholder="{{\'GROUP_DESCRIPTION_PLACEHOLDER\' | translate}}"></ion-textarea>      <span class="char-info"            [innerHTML]="\'CHARACTERS_REMAINING\' | translate: {\'character_count\':  150 - createGroupFormControls.groupDesc.value?.length} "      ></span>    </ion-item>    <div class="cr-terms-container" *ngIf="!groupDetails">      <div class="input-item cr-input-primary" lines="none">        <ion-checkbox id="cr-term-label-accessible" class="cr-terms-checkbox" formControlName="groupTerms" color="secondary" checked="false"></ion-checkbox>        <label class="hide" for="cr-term-label-accessible" >{{\'I_AGREE_TO\' | translate: {\'app_name\': appName} }} checkbox </label>        <p class="cr-terms-checkbox-label">           <span>{{\'I_AGREE_TO\' | translate: {\'app_name\': appName} }} </span><span class="cr-terms" (click)="openTermsOfUse()">{{\'GROUP_GUIDELINES\' | translate}}</span>        </p>        </div>      <p        *ngIf="(createGroupFormControls.groupTerms.touched || createGroupFormSubmitted) && createGroupFormControls.groupTerms.invalid"        class="cr-error cr-error-checkbox"        [innerHTML]="\'GROUP_TERMS_IS_REQUIRED\' | translate:  {\'app_name\':  appName}" ></p>    </div>      </form></ion-content><ion-footer>    <div class="padding-16" *ngIf="!groupDetails">      <button class="sb-btn-large" expand="block" attr.aria-label="create group {{createGroupForm.invalid ? \'disable\' : \'\'}}" [class.inactive]="createGroupForm.invalid" (click)="onSubmit()">        <img src="assets/imgs/ic_group_add_white.svg" alt="">        {{\'CREATE_GROUP\' | translate}}      </button>    </div>    <div class="padding-16" *ngIf="groupDetails">      <button class="sb-btn-large" expand="block" [class.inactive]="createGroupForm.invalid" (click)="onSubmit()">        <img src="assets/imgs/ic_group_add_white.svg" alt="">        {{\'EDIT_GROUP\' | translate}}      </button>    </div></ion-footer></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'accessDiscussion'},{'name': 'AccordionListComponent', 'selector': 'app-accordion-list'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-id-popup'},{'name': 'AcknowledgeResponseComponent', 'selector': 'acknowledge-response'},{'name': 'ActiveDownloadsPage', 'selector': 'app-active-downloads'},{'name': 'ActivityDashboardPage', 'selector': 'activity-dashboard'},{'name': 'ActivityDetailsPage', 'selector': 'app-activity-details'},{'name': 'ActivityTocPage', 'selector': 'activity-toc'},{'name': 'AddActivityToGroupComponent', 'selector': 'add-activity-to-group'},{'name': 'AddActivityToGroupPage', 'selector': 'add-activity-to-group'},{'name': 'AddEntityComponent', 'selector': 'app-add-entity'},{'name': 'AddFilePage', 'selector': 'app-add-file'},{'name': 'AddLinkModalComponent', 'selector': 'app-add-link-modal'},{'name': 'AddMemberToGroupPage', 'selector': 'app-add-member-to-group'},{'name': 'AddProgramsComponent', 'selector': 'app-add-programs'},{'name': 'AdminHomePage', 'selector': 'app-admin-home'},{'name': 'AllEvidenceListComponent', 'selector': 'app-all-evidence-list'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationHeaderComponent', 'selector': 'app-application-header'},{'name': 'ApplicationHeaderKebabMenuComponent', 'selector': 'app-application-header-kebab-menu'},{'name': 'AppRatingAlertComponent', 'selector': 'app-rating-alert'},{'name': 'AttachmentCardComponent', 'selector': 'app-attachment-card'},{'name': 'AttachmentComponent', 'selector': 'attachments'},{'name': 'AttachmentListingPage', 'selector': 'app-attachment-listing'},{'name': 'AttachmentListsComponent', 'selector': 'app-attachment-lists'},{'name': 'BarChartComponent', 'selector': 'bar-chart'},{'name': 'CategoriesEditPage', 'selector': 'app-categories-edit'},{'name': 'CategoryListPage', 'selector': 'app-category-list-page'},{'name': 'CategorySelectComponent', 'selector': 'app-category-select'},{'name': 'CertificateVerificationPopoverComponent', 'selector': 'app-certificate-verification-popover'},{'name': 'CertificateViewPage', 'selector': 'app-certificate-view'},{'name': 'ChapterDetailsPage', 'selector': 'app-chapter-details'},{'name': 'CollectionActionsComponent', 'selector': 'collection-acions'},{'name': 'CollectionChildComponent', 'selector': 'app-collection-child'},{'name': 'CollectionDetailEtbPage', 'selector': 'app-collection-detail-etb'},{'name': 'CommonFormsComponent', 'selector': 'app-common-forms'},{'name': 'CommonHeaderComponent', 'selector': 'app-common-header'},{'name': 'ConfirmAlertComponent', 'selector': 'app-confirm-alert'},{'name': 'ConsentPiiPopupComponent', 'selector': 'app-consent-pii-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentDetailsPage', 'selector': 'app-content-details'},{'name': 'ContentRatingAlertComponent', 'selector': 'app-content-rating-alert'},{'name': 'ContentViewerComponent', 'selector': 'content-viewer'},{'name': 'CopyTraceIdPopoverComponent', 'selector': 'app-copy-trace-id-popover'},{'name': 'CourseBatchesPage', 'selector': 'app-course-batches'},{'name': 'CourseCompletionPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'CoursesPage', 'selector': 'app-courses'},{'name': 'CreateEditGroupPage', 'selector': 'app-create-edit-group'},{'name': 'CreateProjectPage', 'selector': 'app-create-project'},{'name': 'CreateTaskComponent', 'selector': 'app-create-task'},{'name': 'CreateTaskFormComponent', 'selector': 'app-create-task-form'},{'name': 'CurriculumCoursesPage', 'selector': 'app-curriculum-courses'},{'name': 'DashboardComponent', 'selector': 'dashboard-component'},{'name': 'DataSyncComponent', 'selector': 'app-data-sync'},{'name': 'DateTypeInputComponent', 'selector': 'app-date-type-input'},{'name': 'DeeplinkRedirectComponent', 'selector': 'app-deeplink-redirect'},{'name': 'DetailCardComponent', 'selector': 'app-detail-card'},{'name': 'DialogPopupComponent', 'selector': 'app-dialog-popup'},{'name': 'DiscoverComponent', 'selector': 'app-discover'},{'name': 'DistrictMappingPage', 'selector': 'app-district-mapping'},{'name': 'DomainEcmLsitingComponent', 'selector': 'app-domain-ecm-lsiting'},{'name': 'DownloadManagerPage', 'selector': 'app-download-manager'},{'name': 'DownloadShareComponent', 'selector': 'download-share'},{'name': 'DownloadsHeaderComponent', 'selector': 'app-downloads-header'},{'name': 'DownloadsTabComponent', 'selector': 'app-downloads-tab'},{'name': 'DownloadTranscriptPopupComponent', 'selector': 'app-download-transcript-popup'},{'name': 'EcmListingPage', 'selector': 'app-ecm-listing'},{'name': 'EditContactDetailsPopupComponent', 'selector': 'app-edit-contact-details-popup'},{'name': 'EditContactVerifyPopupComponent', 'selector': 'app-edit-contact-verify-popup'},{'name': 'EnrolledCourseDetailsPage', 'selector': 'app-enrolled-course-details-page'},{'name': 'EnrollmentDetailsComponent', 'selector': 'app-enrollment-details'},{'name': 'EntityfilterComponent', 'selector': 'app-entityfilter'},{'name': 'EntitySearchLocalComponent', 'selector': 'app-entity-search-local'},{'name': 'ExpansionPanelComponent', 'selector': 'expansion-panel'},{'name': 'ExpansionTableComponent', 'selector': 'expansion-table'},{'name': 'ExploreBooksPage', 'selector': 'app-explore-books'},{'name': 'ExploreBooksSortComponent', 'selector': 'app-explore-books-sort'},{'name': 'FaqHelpPage', 'selector': 'app-faq-help'},{'name': 'FaqReportIssuePage', 'selector': 'app-faq-report-issue'},{'name': 'FilterModalComponent', 'selector': 'app-filter-modal'},{'name': 'FilteroptionComponent', 'selector': 'app-filteroption'},{'name': 'FiltersPage', 'selector': 'app-filters'},{'name': 'FooterButtonsComponent', 'selector': 'app-footer-buttons'},{'name': 'FrameworkSelectionPage', 'selector': 'app-framework-selection'},{'name': 'GraphCircleComponent', 'selector': 'graph-circle'},{'name': 'GroupDetailsPage', 'selector': 'app-group-details'},{'name': 'GroupGuideLinesPopoverComponent', 'selector': 'app-group-guidelines-popover'},{'name': 'GuestEditPage', 'selector': 'app-guest-edit'},{'name': 'GuestProfilePage', 'selector': 'app-guest-profile'},{'name': 'HintComponent', 'selector': 'app-hint'},{'name': 'ImageListingComponent', 'selector': 'app-image-listing'},{'name': 'ImageUploadComponent', 'selector': 'app-image-upload'},{'name': 'ImportPopoverComponent', 'selector': 'app-import-popover'},{'name': 'ImpSuggestionsPage', 'selector': 'app-imp-suggestions'},{'name': 'ItemListCardComponent', 'selector': 'app-item-list-card'},{'name': 'ItemListHeaderComponent', 'selector': 'app-item-list-header'},{'name': 'JoyfulThemePopupComponent', 'selector': 'app-joyful-theme-popup'},{'name': 'LanguageSettingsPage', 'selector': 'page-language-settings'},{'name': 'LearningResourcesPage', 'selector': 'app-learning-resources'},{'name': 'LicenseCardComponentComponent', 'selector': 'app-license-card-component'},{'name': 'LinkLearningResourcesComponent', 'selector': 'app-link-learning-resources'},{'name': 'ManageUserProfilesPage', 'selector': 'app-manage-user-profiles'},{'name': 'MatrixChartComponent', 'selector': 'matrix-chart'},{'name': 'MatrixModalComponent', 'selector': 'app-matrix-modal'},{'name': 'MatrixTypeInputComponent', 'selector': 'app-matrix-type-input'},{'name': 'MetadataActionsComponent', 'selector': 'app-metadata-actions'},{'name': 'MetadataDetailsComponent', 'selector': 'app-metadata-details'},{'name': 'MultipleTypeInputComponent', 'selector': 'app-multiple-type-input'},{'name': 'MyGroupsPage', 'selector': 'app-my-groups'},{'name': 'MyGroupsPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'NewExperiencePopupComponent', 'selector': 'app-new-experience-popup'},{'name': 'NoDataComponent', 'selector': 'app-no-data'},{'name': 'NoDownloadsComponent', 'selector': 'app-no-downloads'},{'name': 'NotificationItemComponent', 'selector': 'app-notification-item'},{'name': 'NotificationPage', 'selector': 'app-notification'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationHomeComponent', 'selector': 'app-observation-home'},{'name': 'ObservationSolutionEntityListingComponent', 'selector': 'app-observation-solution-entity-listing'},{'name': 'ObservationSolutionListingComponent', 'selector': 'app-observation-solution-listing'},{'name': 'ObservationSubmissionComponent', 'selector': 'app-observation-submission'},{'name': 'OtpPage', 'selector': 'app-otp'},{'name': 'OverflowMenuComponent', 'selector': 'app-overflow-menu'},{'name': 'PageFilterOptionsPage', 'selector': 'app-page-filter-options'},{'name': 'PageFilterPage', 'selector': 'app-page-filter'},{'name': 'PageQuestionsComponent', 'selector': 'app-page-questions'},{'name': 'PbHorizontalComponent', 'selector': 'app-pb-horizontal'},{'name': 'PercentageColumnChartsComponent', 'selector': 'percentage-column-charts'},{'name': 'PermissionComponent', 'selector': 'app-permission'},{'name': 'PersonalDetailsEditPage', 'selector': 'app-personal-details-edit'},{'name': 'PieChartComponent', 'selector': 'pie-chart'},{'name': 'PlayerPage', 'selector': 'app-player'},{'name': 'PopoverComponent', 'selector': 'app-popover'},{'name': 'PrivacyPolicyAndTCComponent', 'selector': 'app-privacy-policy-and-tc'},{'name': 'ProfileAvatarComponent', 'selector': 'app-profile-avatar'},{'name': 'ProfileNameConfirmationPopoverComponent', 'selector': 'app-profile-name-confirmation-popover'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfileSettingsPage', 'selector': 'app-profile-settings'},{'name': 'ProgramListingComponent', 'selector': 'app-program-listing'},{'name': 'ProgressBarComponent', 'selector': 'progress-bar'},{'name': 'ProjectDetailsCardComponent', 'selector': 'app-project-details-card'},{'name': 'ProjectDetailsComponent', 'selector': 'app-project-details'},{'name': 'ProjectEditPage', 'selector': 'app-project-edit'},{'name': 'ProjectListingComponent', 'selector': 'app-project-listing'},{'name': 'ProjectMetadataCardComponent', 'selector': 'app-project-metadata-card'},{'name': 'ProjectOperationPage', 'selector': 'app-project-operation'},{'name': 'ProjectReportComponent', 'selector': 'app-project-report'},{'name': 'ProjectTaskListComponent', 'selector': 'app-project-task-list'},{'name': 'ProjectTemplatePage', 'selector': 'app-project-template'},{'name': 'ProjectTemplateviewPage', 'selector': 'app-project-templateview'},{'name': 'QrcoderesultPage', 'selector': 'app-qrcoderesult'},{'name': 'QRScannerAlert', 'selector': 'app-qrscanner-alert'},{'name': 'QrScannerIOSComponent', 'selector': 'app-qr-scanner-ios'},{'name': 'QuestionHeadingComponent', 'selector': 'app-question-heading'},{'name': 'QuestionMapModalComponent', 'selector': 'app-question-map-modal'},{'name': 'QuestionnairePage', 'selector': 'app-questionnaire'},{'name': 'RadioTypeInputComponent', 'selector': 'app-radio-type-input'},{'name': 'RelevantContentCardComponent', 'selector': 'app-relevant-content-card'},{'name': 'RelevantContentsPage', 'selector': 'app-relevant-contents'},{'name': 'RemarksComponent', 'selector': 'app-remarks'},{'name': 'RemarksModalComponent', 'selector': 'app-remarks-modal'},{'name': 'ReportListComponent', 'selector': 'app-report-list'},{'name': 'ReportModalFilter', 'selector': 'report-modal-filter'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'ReportsListingComponent', 'selector': 'app-reports-listing'},{'name': 'ReportsTextComponent', 'selector': 'reports-text'},{'name': 'ResourcesComponent', 'selector': 'app-resources'},{'name': 'SbAppSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbDownloadPopupComponent', 'selector': 'app-sb-download-popup'},{'name': 'SbGenericFormPopoverComponent', 'selector': 'app-sb-generic-form-popover'},{'name': 'SbGenericPopoverComponent', 'selector': 'app-sb-generic-popover'},{'name': 'SbInsufficientStoragePopupComponent', 'selector': 'sb-insufficient-storage-popup'},{'name': 'SbNoNetworkPopupComponent', 'selector': 'sb-no-network-popup'},{'name': 'SbPopoverComponent', 'selector': 'sb-popover'},{'name': 'SbPreferencePopupComponent', 'selector': 'app-sb-preferences-popup'},{'name': 'SbProgressLoaderPage', 'selector': 'app-sb-progress-loader'},{'name': 'SbSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbSubjectListPopupComponent', 'selector': 'app-sb-subject-list-popup'},{'name': 'SbTutorialPopupComponent', 'selector': 'app-sb-tutorial-popup'},{'name': 'ScatterChartComponent', 'selector': 'scatter-chart'},{'name': 'SearchFilterPage', 'selector': 'app-search-filter.page'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SectionListingPage', 'selector': 'app-section-listing'},{'name': 'SelfDeclaredTeacherEditPage', 'selector': 'app-self-declared-teacher-edit'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'ShowCertificateComponent', 'selector': 'app-show-certificate-component'},{'name': 'ShowVendorAppsComponent', 'selector': 'show-vendor-apps'},{'name': 'SignInCardComponent', 'selector': 'app-sign-in-card'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'SignupBasicInfoPage', 'selector': 'app-signup-basic-info'},{'name': 'SignupEmailPasswordPage', 'selector': 'app-signup-email-password'},{'name': 'SkeletonItemComponent', 'selector': 'app-skeleton-item'},{'name': 'SliderTypeInputComponent', 'selector': 'app-slider-type-input'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'StartImprovementComponent', 'selector': 'app-start-improvement'},{'name': 'StorageSettingsPage', 'selector': 'app-storage-settings'},{'name': 'SubmissionActionsComponent', 'selector': 'app-submission-actions'},{'name': 'SubmissionPreviewPageComponent', 'selector': 'app-submission-preview-page'},{'name': 'SubProfileEditPage', 'selector': 'app-sub-profile-edit'},{'name': 'SupportAcknowledgement', 'selector': 'support-acknowledgement'},{'name': 'SurveyHomeComponent', 'selector': 'app-survey-home'},{'name': 'SurveyMsgComponent', 'selector': 'app-survey-msg'},{'name': 'SyncPage', 'selector': 'app-sync'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TaskCardComponent', 'selector': 'app-task-card'},{'name': 'TaskViewPage', 'selector': 'app-task-view'},{'name': 'TeacherIdVerificationComponent', 'selector': 'app-teacher-id-verification-popup'},{'name': 'TermsAndConditionsPage', 'selector': 'app-terms-and-conditions'},{'name': 'TextBookTocPage', 'selector': 'textbook-toc'},{'name': 'TextbookViewMorePage', 'selector': 'app-textbook-view-more'},{'name': 'TextTypeInputComponent', 'selector': 'app-text-type-input'},{'name': 'ToastNavigationComponent', 'selector': 'app-toast-navigation'},{'name': 'TocHeaderComponent', 'selector': 'app-toc-header'},{'name': 'UpgradePopoverComponent', 'selector': 'app-upgrade-popover'},{'name': 'UserHomePage', 'selector': 'app-user-home'},{'name': 'UserTypeSelectionPage', 'selector': 'page-user-type-selection'},{'name': 'ViewCreditsComponent', 'selector': 'app-view-credits'},{'name': 'ViewDetailComponent', 'selector': 'app-view-detail'},{'name': 'ViewMoreActivityComponent', 'selector': 'app-view-more-activity'},{'name': 'ViewMoreActivityPage', 'selector': 'view-more-activity'},{'name': 'YearOfBirthPopupComponent', 'selector': 'app-year-of-birth-popup'}];
+    var DIRECTIVES = [{'name': 'CustomIonSelectDirective', 'selector': '[appCustomIonSelect]'},{'name': 'HideHeaderFooterDirective', 'selector': '[hide-header-footer]'},{'name': 'ReadMoreDirective', 'selector': '[readMore]'}];
+    var ACTUAL_COMPONENT = {'name': 'CreateEditGroupPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CreateEditGroupPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

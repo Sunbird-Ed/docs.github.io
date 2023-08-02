@@ -1,0 +1,3945 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >UtilsService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/manage-learn/core/services/utils.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#alert" >alert</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#assessmentBaseUrl" >assessmentBaseUrl</a>
+                            </li>
+                            <li>
+                                    <span class="modifier"></span>
+                                    <span class="modifier">Public</span>
+                                <a href="#authService" >authService</a>
+                            </li>
+                            <li>
+                                <a href="#filters" >filters</a>
+                            </li>
+                            <li>
+                                <a href="#imagePath" >imagePath</a>
+                            </li>
+                            <li>
+                                <a href="#mandatoryFields" >mandatoryFields</a>
+                            </li>
+                            <li>
+                                <a href="#numberTasksCompleted" >numberTasksCompleted</a>
+                            </li>
+                            <li>
+                                <a href="#organisationName" >organisationName</a>
+                            </li>
+                            <li>
+                                <a href="#orgDetails" >orgDetails</a>
+                            </li>
+                            <li>
+                                <a href="#profile" >profile</a>
+                            </li>
+                            <li>
+                                <a href="#profileAlert" >profileAlert</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#projectsBaseUrl" >projectsBaseUrl</a>
+                            </li>
+                            <li>
+                                <a href="#requiredFields" >requiredFields</a>
+                            </li>
+                            <li>
+                                <a href="#sortedTasks" >sortedTasks</a>
+                            </li>
+                            <li>
+                                <a href="#statuses" >statuses</a>
+                            </li>
+                            <li>
+                                <a href="#taskCount" >taskCount</a>
+                            </li>
+                            <li>
+                                <a href="#userId" >userId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#calculateStatus" >calculateStatus</a>
+                            </li>
+                            <li>
+                                <a href="#cameltoNormalCase" >cameltoNormalCase</a>
+                            </li>
+                            <li>
+                                <a href="#checkForDependentVisibility" >checkForDependentVisibility</a>
+                            </li>
+                            <li>
+                                <a href="#checkForProjectCompletion" >checkForProjectCompletion</a>
+                            </li>
+                            <li>
+                                <a href="#checkForTaskCompletion" >checkForTaskCompletion</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#closeProfileAlert" >closeProfileAlert</a>
+                            </li>
+                            <li>
+                                <a href="#encodeQuery" >encodeQuery</a>
+                            </li>
+                            <li>
+                                <a href="#generateFileName" >generateFileName</a>
+                            </li>
+                            <li>
+                                <a href="#getAssessmentLocalStorageKey" >getAssessmentLocalStorageKey</a>
+                            </li>
+                            <li>
+                                <a href="#getCompletedQuestionsCount" >getCompletedQuestionsCount</a>
+                            </li>
+                            <li>
+                                <a href="#getCompletedTaskCount" >getCompletedTaskCount</a>
+                            </li>
+                            <li>
+                                <a href="#getFileExtensions" >getFileExtensions</a>
+                            </li>
+                            <li>
+                                <a href="#getImageNamesForQuestion" >getImageNamesForQuestion</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getMandatoryEntities" >getMandatoryEntities</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getMandatoryEntitiesList" >getMandatoryEntitiesList</a>
+                            </li>
+                            <li>
+                                <a href="#getMetaData" >getMetaData</a>
+                            </li>
+                            <li>
+                                <a href="#getOrgDetails" >getOrgDetails</a>
+                            </li>
+                            <li>
+                                <a href="#getProfileData" >getProfileData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getProfileInfo" >getProfileInfo</a>
+                            </li>
+                            <li>
+                                <a href="#getSchedules" >getSchedules</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getSortTasks" >getSortTasks</a>
+                            </li>
+                            <li>
+                                <a href="#getTabs" >getTabs</a>
+                            </li>
+                            <li>
+                                <a href="#getTaskCount" >getTaskCount</a>
+                            </li>
+                            <li>
+                                <a href="#getTaskSortMeta" >getTaskSortMeta</a>
+                            </li>
+                            <li>
+                                <a href="#getUniqueKey" >getUniqueKey</a>
+                            </li>
+                            <li>
+                                <a href="#isMatrixQuestionComplete" >isMatrixQuestionComplete</a>
+                            </li>
+                            <li>
+                                <a href="#isPageQuestionComplete" >isPageQuestionComplete</a>
+                            </li>
+                            <li>
+                                <a href="#isQuestionComplete" >isQuestionComplete</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#openProfileUpdateAlert" >openProfileUpdateAlert</a>
+                            </li>
+                            <li>
+                                <a href="#processProjectsData" >processProjectsData</a>
+                            </li>
+                            <li>
+                                <a href="#queryUrl" >queryUrl</a>
+                            </li>
+                            <li>
+                                <a href="#setCurrentimageFolderName" >setCurrentimageFolderName</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#setProfileData" >setProfileData</a>
+                            </li>
+                            <li>
+                                <a href="#setStatusForProject" >setStatusForProject</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#storeMandatoryFields" >storeMandatoryFields</a>
+                            </li>
+                            <li>
+                                <a href="#testRegex" >testRegex</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(profileService: ProfileService, authService: AuthService, zone: NgZone, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, kendra: <a href="../injectables/KendraApiService.html" target="_self">KendraApiService</a>, aleryCtrl: AlertController, router: Router, storage: Storage, events: <a href="../injectables/Events.html" target="_self">Events</a>, location: <a href="../classes/Location.html" target="_self">Location</a>, toast: <a href="../injectables/ToastService.html" target="_self">ToastService</a>, translate: TranslateService)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:43</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ProfileService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                    <code>AuthService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>zone</td>
+                                                  
+                                                        <td>
+                                                                    <code>NgZone</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>kendra</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/KendraApiService.html" target="_self" >KendraApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>aleryCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>AlertController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>storage</td>
+                                                  
+                                                        <td>
+                                                                    <code>Storage</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>events</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >Events</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>location</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../classes/Location.html" target="_self" >Location</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toast</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ToastService.html" target="_self" >ToastService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="calculateStatus"></a>
+                    <span class="name">
+                        <span ><b>calculateStatus</b></span>
+                        <a href="#calculateStatus"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>calculateStatus(childArray)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="209"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:209</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>childArray</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cameltoNormalCase"></a>
+                    <span class="name">
+                        <span ><b>cameltoNormalCase</b></span>
+                        <a href="#cameltoNormalCase"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>cameltoNormalCase(word)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>word</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForDependentVisibility"></a>
+                    <span class="name">
+                        <span ><b>checkForDependentVisibility</b></span>
+                        <a href="#checkForDependentVisibility"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkForDependentVisibility(qst, allQuestion)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="288"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:288</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>qst</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>allQuestion</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForProjectCompletion"></a>
+                    <span class="name">
+                        <span ><b>checkForProjectCompletion</b></span>
+                        <a href="#checkForProjectCompletion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkForProjectCompletion(project)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="242"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:242</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>project</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForTaskCompletion"></a>
+                    <span class="name">
+                        <span ><b>checkForTaskCompletion</b></span>
+                        <a href="#checkForTaskCompletion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkForTaskCompletion(task)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="231"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:231</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>task</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="closeProfileAlert"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>closeProfileAlert</b></span>
+                        <a href="#closeProfileAlert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>closeProfileAlert()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="554"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:554</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="encodeQuery"></a>
+                    <span class="name">
+                        <span ><b>encodeQuery</b></span>
+                        <a href="#encodeQuery"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>encodeQuery(data)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="97"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:97</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateFileName"></a>
+                    <span class="name">
+                        <span ><b>generateFileName</b></span>
+                        <a href="#generateFileName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>generateFileName(name: string[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="64"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:64</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>name</td>
+                                    <td>
+                                            <code>string[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>[]</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAssessmentLocalStorageKey"></a>
+                    <span class="name">
+                        <span ><b>getAssessmentLocalStorageKey</b></span>
+                        <a href="#getAssessmentLocalStorageKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAssessmentLocalStorageKey(entityId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="281"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:281</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>entityId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCompletedQuestionsCount"></a>
+                    <span class="name">
+                        <span ><b>getCompletedQuestionsCount</b></span>
+                        <a href="#getCompletedQuestionsCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCompletedQuestionsCount(questions)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="415"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:415</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>questions</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getCompletedTaskCount"></a>
+                    <span class="name">
+                        <span ><b>getCompletedTaskCount</b></span>
+                        <a href="#getCompletedTaskCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getCompletedTaskCount(tasks)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="736"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:736</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>tasks</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ completedTasks: number; progress: number; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getFileExtensions"></a>
+                    <span class="name">
+                        <span ><b>getFileExtensions</b></span>
+                        <a href="#getFileExtensions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getFileExtensions(url)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="271"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:271</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>url</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ type: any; name: any; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getImageNamesForQuestion"></a>
+                    <span class="name">
+                        <span ><b>getImageNamesForQuestion</b></span>
+                        <a href="#getImageNamesForQuestion"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getImageNamesForQuestion(question)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="425"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:425</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>question</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMandatoryEntities"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getMandatoryEntities</b></span>
+                        <a href="#getMandatoryEntities"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMandatoryEntities()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="470"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:470</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMandatoryEntitiesList"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getMandatoryEntitiesList</b></span>
+                        <a href="#getMandatoryEntitiesList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getMandatoryEntitiesList()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="508"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:508</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getMetaData"></a>
+                    <span class="name">
+                        <span ><b>getMetaData</b></span>
+                        <a href="#getMetaData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getMetaData(type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="104"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:104</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ _id: any; status: any; name: string; endDate: string; assignee: string; type: string; attachments: {}; startDate: string; isNew: boolean; isEdit: boolean; children: {}; isDeleted: boolean; isDeletable: boolean; }</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getOrgDetails"></a>
+                    <span class="name">
+                        <span ><b>getOrgDetails</b></span>
+                        <a href="#getOrgDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getOrgDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="591"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:591</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProfileData"></a>
+                    <span class="name">
+                        <span ><b>getProfileData</b></span>
+                        <a href="#getProfileData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getProfileData(fromData: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="609"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:609</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>fromData</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;CACHE&#x27;</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProfileInfo"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getProfileInfo</b></span>
+                        <a href="#getProfileInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getProfileInfo()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="558"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:558</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSchedules"></a>
+                    <span class="name">
+                        <span ><b>getSchedules</b></span>
+                        <a href="#getSchedules"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getSchedules()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="659"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:659</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getSortTasks"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getSortTasks</b></span>
+                        <a href="#getSortTasks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getSortTasks(project: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="689"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:689</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>project</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTabs"></a>
+                    <span class="name">
+                        <span ><b>getTabs</b></span>
+                        <a href="#getTabs"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTabs()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="757"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:757</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTaskCount"></a>
+                    <span class="name">
+                        <span ><b>getTaskCount</b></span>
+                        <a href="#getTaskCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTaskCount(project: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="747"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:747</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>project</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getTaskSortMeta"></a>
+                    <span class="name">
+                        <span ><b>getTaskSortMeta</b></span>
+                        <a href="#getTaskSortMeta"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getTaskSortMeta()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{ past: { label: string; tasks: {}; }; today: { label: string; tasks: {}; }; thisWeek: { label: string; tasks: {}; }; thisMonth: { label: string; tasks: {}; }; thisQuarter: { label: string; tasks: {}; }; upcoming: { ...; }; }</code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getUniqueKey"></a>
+                    <span class="name">
+                        <span ><b>getUniqueKey</b></span>
+                        <a href="#getUniqueKey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getUniqueKey(userData, type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="580"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:580</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isMatrixQuestionComplete"></a>
+                    <span class="name">
+                        <span ><b>isMatrixQuestionComplete</b></span>
+                        <a href="#isMatrixQuestionComplete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isMatrixQuestionComplete(question)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="388"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:388</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>question</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isPageQuestionComplete"></a>
+                    <span class="name">
+                        <span ><b>isPageQuestionComplete</b></span>
+                        <a href="#isPageQuestionComplete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isPageQuestionComplete(question)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="401"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:401</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>question</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isQuestionComplete"></a>
+                    <span class="name">
+                        <span ><b>isQuestionComplete</b></span>
+                        <a href="#isQuestionComplete"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>isQuestionComplete(question)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="354"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:354</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>question</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openProfileUpdateAlert"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>openProfileUpdateAlert</b></span>
+                        <a href="#openProfileUpdateAlert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>openProfileUpdateAlert()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="531"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:531</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="processProjectsData"></a>
+                    <span class="name">
+                        <span ><b>processProjectsData</b></span>
+                        <a href="#processProjectsData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>processProjectsData(projects)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="253"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:253</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>projects</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="queryUrl"></a>
+                    <span class="name">
+                        <span ><b>queryUrl</b></span>
+                        <a href="#queryUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>queryUrl(url, query)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>url</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>query</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setCurrentimageFolderName"></a>
+                    <span class="name">
+                        <span ><b>setCurrentimageFolderName</b></span>
+                        <a href="#setCurrentimageFolderName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setCurrentimageFolderName(evidenceId, schoolId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="284"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:284</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>evidenceId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>schoolId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setProfileData"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>setProfileData</b></span>
+                        <a href="#setProfileData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>setProfileData(type)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="566"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:566</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>unknown</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="setStatusForProject"></a>
+                    <span class="name">
+                        <span ><b>setStatusForProject</b></span>
+                        <a href="#setStatusForProject"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>setStatusForProject(project)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>project</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="storeMandatoryFields"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>storeMandatoryFields</b></span>
+                        <a href="#storeMandatoryFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>storeMandatoryFields(mandatoryEntitiesList?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="447"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:447</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>mandatoryEntitiesList</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="testRegex"></a>
+                    <span class="name">
+                        <span ><b>testRegex</b></span>
+                        <a href="#testRegex"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>testRegex(rege, value)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="410"
+                            class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:410</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>rege</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>value</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="alert"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>alert</b></span>
+                        <a href="#alert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="assessmentBaseUrl"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>assessmentBaseUrl</b></span>
+                        <a href="#assessmentBaseUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="authService"></a>
+                    <span class="name">
+                            <span class="modifier"></span>
+                            <span class="modifier">Public</span>
+                        <span ><b>authService</b></span>
+                        <a href="#authService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>AuthService</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @Inject(&#x27;AUTH_SERVICE&#x27;)<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:46</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filters"></a>
+                    <span class="name">
+                        <span ><b>filters</b></span>
+                        <a href="#filters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="imagePath"></a>
+                    <span class="name">
+                        <span ><b>imagePath</b></span>
+                        <a href="#imagePath"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mandatoryFields"></a>
+                    <span class="name">
+                        <span ><b>mandatoryFields</b></span>
+                        <a href="#mandatoryFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="numberTasksCompleted"></a>
+                    <span class="name">
+                        <span ><b>numberTasksCompleted</b></span>
+                        <a href="#numberTasksCompleted"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="organisationName"></a>
+                    <span class="name">
+                        <span ><b>organisationName</b></span>
+                        <a href="#organisationName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="orgDetails"></a>
+                    <span class="name">
+                        <span ><b>orgDetails</b></span>
+                        <a href="#orgDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="profile"></a>
+                    <span class="name">
+                        <span ><b>profile</b></span>
+                        <a href="#profile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="profileAlert"></a>
+                    <span class="name">
+                        <span ><b>profileAlert</b></span>
+                        <a href="#profileAlert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="projectsBaseUrl"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>projectsBaseUrl</b></span>
+                        <a href="#projectsBaseUrl"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="requiredFields"></a>
+                    <span class="name">
+                        <span ><b>requiredFields</b></span>
+                        <a href="#requiredFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sortedTasks"></a>
+                    <span class="name">
+                        <span ><b>sortedTasks</b></span>
+                        <a href="#sortedTasks"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="statuses"></a>
+                    <span class="name">
+                        <span ><b>statuses</b></span>
+                        <a href="#statuses"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>statuses</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="taskCount"></a>
+                    <span class="name">
+                        <span ><b>taskCount</b></span>
+                        <a href="#taskCount"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>0</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="userId"></a>
+                    <span class="name">
+                        <span ><b>userId</b></span>
+                        <a href="#userId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/manage-learn/core/services/utils.service.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, Inject, NgZone } from &quot;@angular/core&quot;;
+import { v4 as uuidv4 } from &quot;uuid&quot;;
+import * as moment from &quot;moment&quot;;
+import * as _ from &quot;underscore&quot;;
+import { statuses, statusType } from &quot;../../core/constants/statuses.constant&quot;;
+import {
+  ProfileService,
+  AuthService,
+  CachedItemRequestSourceFrom
+} from &quot;sunbird-sdk&quot;;
+import { ProfileConstants, RouterLinks } from &quot;@app/app/app.constant&quot;;
+import { CommonUtilService } from &quot;@app/services/common-util.service&quot;;
+import { KendraApiService } from &quot;./kendra-api.service&quot;;
+import { urlConstants } from &quot;../constants/urlConstants&quot;;
+import { AlertController } from &quot;@ionic/angular&quot;;
+import { Router } from &quot;@angular/router&quot;;
+import { Storage } from &quot;@ionic/storage&quot;;
+import { storageKeys } from &quot;../../storageKeys&quot;;
+import { Events } from &#x27;@app/util/events&#x27;;
+import { Location } from &quot;@angular/common&quot;;
+import { ToastService } from &quot;./toast/toast.service&quot;;
+import { TranslateService } from &quot;@ngx-translate/core&quot;;
+
+@Injectable({
+  providedIn: &quot;root&quot;
+})
+export class UtilsService {
+  private alert?: any;
+  imagePath: string;
+  public assessmentBaseUrl: string;
+  public projectsBaseUrl: string;
+  profile;
+  organisationName;
+  orgDetails;
+  requiredFields;
+  profileAlert;
+  userId;
+  mandatoryFields &#x3D;{};
+  taskCount: number &#x3D; 0;
+  sortedTasks;
+  filters: any &#x3D; {};
+  statuses &#x3D; statuses;
+  numberTasksCompleted &#x3D;0;
+  constructor(
+    @Inject(&quot;PROFILE_SERVICE&quot;) private profileService: ProfileService,
+    @Inject(&quot;AUTH_SERVICE&quot;) public authService: AuthService,
+    private zone: NgZone,
+    private commonUtilService: CommonUtilService,
+    private kendra: KendraApiService,
+    private aleryCtrl: AlertController,
+    private router: Router,
+    private storage: Storage,
+    private events: Events,
+    private location : Location,
+    private toast : ToastService,
+    private translate: TranslateService,
+
+  ) {
+    this.events.subscribe(&quot;loggedInProfile:update&quot;, _ &#x3D;&gt; {
+      this.storeMandatoryFields()
+    });
+  }
+
+  generateFileName(name: string[] &#x3D; []) {
+    const d &#x3D; new Date();
+    const fullTime &#x3D; moment(d).format(&quot;DD-MM-YYYY-hh-mm-ss&quot;);
+
+    name.push(fullTime);
+    return name.join(&quot;_&quot;);
+  }
+
+  cameltoNormalCase(word) {
+    return word.replace(/([A-Z])/g, &quot; $1&quot;).replace(/^./, function(str) {
+      return str.toUpperCase();
+    });
+  }
+
+  //create query url
+  queryUrl(url, query) {
+    query &#x3D; Object.entries(query).reduce(
+      (a, [k, v]) &#x3D;&gt; (v &#x3D;&#x3D; null ? a : ((a[k] &#x3D; v), a)),
+      {}
+    ); // remove null and undefined values
+    if (_.isEmpty(query)) {
+      return url;
+    }
+    query &#x3D; this.encodeQuery(query);
+    url &#x3D; &#x60;${url}?${query}&#x60;;
+    return url;
+  }
+
+  // returns the query string
+  /*
+   Input: {&#x27;website&#x27;:&#x27;unnati&#x27;, &#x27;location&#x27;:&#x27;india&#x27;}
+   Output: website&#x3D;unnati&amp;location&#x3D;india
+   */
+  encodeQuery(data) {
+    let query &#x3D; &quot;&quot;;
+    for (let d in data)
+      query +&#x3D; encodeURIComponent(d) + &quot;&#x3D;&quot; + encodeURIComponent(data[d]) + &quot;&amp;&quot;;
+    return query.slice(0, -1);
+  }
+
+  getMetaData(type) {
+    const obj &#x3D; {
+      _id: uuidv4(),
+      status: statusType.notStarted,
+      name: &quot;&quot;,
+      endDate: &quot;&quot;,
+      assignee: &quot;&quot;,
+      type: &quot;simple&quot;,
+      attachments: [],
+      startDate: &quot;&quot;,
+      isNew: true,
+      isEdit: true,
+      children: [],
+      isDeleted: false,
+      isDeletable: true
+    };
+    switch (type) {
+      case &quot;task&quot;:
+        return obj;
+      case &quot;subTask&quot;:
+        delete obj.children;
+        return obj;
+    }
+  }
+  getTaskSortMeta() {
+    const data &#x3D; {
+      past: {
+        label: &quot;LABELS.PAST&quot;,
+        tasks: []
+      },
+      today: {
+        label: &quot;LABELS.TODAY&quot;,
+        tasks: []
+      },
+      thisWeek: {
+        label: &quot;LABELS.THIS_WEEK&quot;,
+        tasks: []
+      },
+      thisMonth: {
+        label: &quot;LABELS.THIS_MONTH&quot;,
+        tasks: []
+      },
+      thisQuarter: {
+        label: &quot;LABELS.THIS_QUARTER&quot;,
+        tasks: []
+      },
+      upcoming: {
+        label: &quot;LABELS.UPCOMING&quot;,
+        tasks: []
+      }
+    };
+    return data;
+  }
+
+  setStatusForProject(project) {
+    const projectData &#x3D; { ...project };
+    for (const task of projectData.tasks) {
+      const activeSubTask &#x3D; _.filter(task.children, function(el) {
+        return !el.isDeleted;
+      });
+      task.status &#x3D; activeSubTask.length
+        ? this.calculateStatus(task.children)
+        : task.status;
+
+      // added for assessment or observation submission statuses
+      if (task.type &#x3D;&#x3D; &quot;assessment&quot; || task.type &#x3D;&#x3D; &quot;observation&quot;) {
+        if (
+          task.submissionDetails &amp;&amp;
+          task.submissionDetails.status !&#x3D;&#x3D; statusType.completed
+        ) {
+          if (task.status &#x3D;&#x3D; statusType.completed) {
+            task.status &#x3D; statusType.inProgress;
+          }
+        }
+        if (!task.submissionDetails) {
+          if (task.status &#x3D;&#x3D; statusType.completed) {
+            task.status &#x3D; statusType.inProgress;
+          }
+        }
+
+        if (
+          task.submissionDetails &amp;&amp;
+          task.submissionDetails.status &#x3D;&#x3D; statusType.completed &amp;&amp;
+          !task.children.length
+        ) {
+          task.status &#x3D; statusType.completed;
+        }
+        if (!task.submissionDetails &amp;&amp; !task.children.length) {
+          task.status &#x3D; statusType.notStarted;
+        }
+      }
+    }
+    let projectStatus &#x3D; this.calculateStatus(projectData.tasks);
+    if (projectData.status) {
+      if (projectData.status &#x3D;&#x3D; statusType.inProgress &amp;&amp; projectStatus &#x3D;&#x3D; statusType.notStarted) {
+        projectData.status &#x3D; statusType.inProgress;
+      }else{
+        projectData.status &#x3D; projectStatus;
+      }
+    } else {
+      projectData.status &#x3D; statusType.notStarted;
+    }
+    return projectData;
+  }
+
+  calculateStatus(childArray) {
+    let status;
+    const items &#x3D; [...childArray];
+    const completedList &#x3D; _.filter(items, function(el) {
+      return !el.isDeleted &amp;&amp; el.status &#x3D;&#x3D;&#x3D; statusType.completed;
+    });
+    const inProgressList &#x3D; _.filter(items, function(el) {
+      return !el.isDeleted &amp;&amp; el.status &#x3D;&#x3D;&#x3D; statusType.inProgress;
+    });
+    const validchildArray &#x3D; _.filter(items, function (el) {
+      return !el.isDeleted;
+    });
+    if (completedList.length &#x3D;&#x3D;&#x3D; validchildArray.length) {
+      status &#x3D; statusType.completed;
+    } else if (inProgressList.length || completedList.length) {
+      status &#x3D; statusType.inProgress;
+    } else {
+      status &#x3D; statusType.notStarted;
+    }
+    return validchildArray.length ? status : statusType.notStarted;
+  }
+
+  checkForTaskCompletion(task) {
+    let status &#x3D; true;
+    for (const subTask of task.children) {
+      if (subTask.status !&#x3D;&#x3D; statusType.completed) {
+        status &#x3D; false;
+        break;
+      }
+    }
+    return status;
+  }
+
+  checkForProjectCompletion(project) {
+    let completed &#x3D; true;
+    for (const task of project.tasks) {
+      if (task.status !&#x3D;&#x3D; statusType.completed) {
+        completed &#x3D; false;
+        break;
+      }
+    }
+    return completed;
+  }
+
+  processProjectsData(projects) {
+    const projectData &#x3D; [...projects];
+    for (const project of projects) {
+      const categories &#x3D; [];
+      if (project.categories &amp;&amp; project.categories.length) {
+        for (const category of project.categories) {
+          const obj &#x3D; {
+            value: category._id,
+            label: category.name
+          };
+          categories.push(obj);
+        }
+      }
+      project.categories &#x3D; categories;
+    }
+    return projectData;
+  }
+
+  getFileExtensions(url) {
+    let splittedString &#x3D; url.split(&quot;.&quot;);
+    let splittedStringForName &#x3D; url.split(&quot;/&quot;);
+    const obj &#x3D; {
+      type: splittedString[splittedString.length - 1],
+      name: splittedStringForName[splittedStringForName.length - 1]
+    };
+    return obj;
+  }
+
+  getAssessmentLocalStorageKey(entityId) {
+    return &quot;assessmentDetails_&quot; + entityId;
+  }
+  setCurrentimageFolderName(evidenceId, schoolId) {
+    this.imagePath &#x3D; &quot;images_&quot; + evidenceId + &quot;_&quot; + schoolId;
+  }
+
+  checkForDependentVisibility(qst, allQuestion): boolean {
+    let display &#x3D; true;
+    for (const question of allQuestion) {
+      for (const condition of qst.visibleIf) {
+        if (condition._id &#x3D;&#x3D;&#x3D; question._id) {
+          let expression &#x3D; [];
+          if (condition.operator !&#x3D; &quot;&#x3D;&#x3D;&#x3D;&quot;) {
+            if (question.responseType &#x3D;&#x3D;&#x3D; &quot;multiselect&quot;) {
+              for (const parentValue of question.value) {
+                for (const value of condition.value) {
+                  expression.push(
+                    &quot;(&quot;,
+                    &quot;&#x27;&quot; + parentValue + &quot;&#x27;&quot;,
+                    &quot;&#x3D;&#x3D;&#x3D;&quot;,
+                    &quot;&#x27;&quot; + value + &quot;&#x27;&quot;,
+                    &quot;)&quot;,
+                    condition.operator
+                  );
+                }
+              }
+            } else {
+              for (const value of condition.value) {
+                expression.push(
+                  &quot;(&quot;,
+                  &quot;&#x27;&quot; + question.value + &quot;&#x27;&quot;,
+                  &quot;&#x3D;&#x3D;&#x3D;&quot;,
+                  &quot;&#x27;&quot; + value + &quot;&#x27;&quot;,
+                  &quot;)&quot;,
+                  condition.operator
+                );
+              }
+            }
+
+            expression.pop();
+          } else {
+            if (question.responseType &#x3D;&#x3D;&#x3D; &quot;multiselect&quot;) {
+              for (const value of question.value) {
+                expression.push(
+                  &quot;(&quot;,
+                  &quot;&#x27;&quot; + condition.value + &quot;&#x27;&quot;,
+                  &quot;&#x3D;&#x3D;&#x3D;&quot;,
+                  &quot;&#x27;&quot; + value + &quot;&#x27;&quot;,
+                  &quot;)&quot;,
+                  &quot;||&quot;
+                );
+              }
+              expression.pop();
+            } else {
+              expression.push(
+                &quot;(&quot;,
+                &quot;&#x27;&quot; + question.value + &quot;&#x27;&quot;,
+                condition.operator,
+                &quot;&#x27;&quot; + condition.value + &quot;&#x27;&quot;,
+                &quot;)&quot;
+              );
+            }
+          }
+          if (!eval(expression.join(&quot;&quot;))) {
+            return false;
+          }
+        }
+      }
+    }
+    return display;
+  }
+
+  isQuestionComplete(question): boolean {
+    if (
+      question.validation.required &amp;&amp;
+      question.value &#x3D;&#x3D;&#x3D; &quot;&quot; &amp;&amp;
+      question.responseType !&#x3D;&#x3D; &quot;multiselect&quot; &amp;&amp;
+      question.responseType !&#x3D;&#x3D; &#x27;matrix&#x27;
+    ) {
+      return false;
+    }
+    if (
+      question.validation.required &amp;&amp;
+      question.value &amp;&amp;
+      !question.value.length &amp;&amp;
+      question.responseType &#x3D;&#x3D;&#x3D; &quot;multiselect&quot;
+    ) {
+      return false;
+    }
+    if (
+      question.validation.required &amp;&amp;
+      question.responseType &#x3D;&#x3D;&#x3D; &#x27;matrix&#x27;
+    ) {
+      return this.isMatrixQuestionComplete(question);
+    }
+    if (
+      question.validation.regex &amp;&amp;
+      (question.responseType &#x3D;&#x3D;&#x3D; &quot;number&quot; ||
+        question.responseType &#x3D;&#x3D;&#x3D; &quot;text&quot;) &amp;&amp;
+      !this.testRegex(question.validation.regex, question.value)
+    ) {
+      return false;
+    }
+    return true;
+  }
+
+  isMatrixQuestionComplete(question): boolean {
+    if (!question.value.length) {
+      return false;
+    }
+    for (const instance of question.value) {
+      for (const question of instance) {
+        if (!question.isCompleted) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+  isPageQuestionComplete(question) {
+    for (const element of question.pageQuestions) {
+      if (!element.isCompleted) {
+        return false;
+      }
+    }
+    return true;
+  }
+
+  testRegex(rege, value): boolean {
+    const regex &#x3D; new RegExp(rege);
+    return regex.test(value);
+  }
+
+  getCompletedQuestionsCount(questions) {
+    let count &#x3D; 0;
+    for (const question of questions) {
+      if (question.isCompleted) {
+        count++;
+      }
+    }
+    return count;
+  }
+
+  getImageNamesForQuestion(question) {
+    let imageArray &#x3D; [];
+    if (question.responseType &#x3D;&#x3D;&#x3D; &quot;matrix&quot;) {
+      for (const instance of question.value) {
+        for (const qst of instance) {
+          const newArray &#x3D; qst.fileName.length
+            ? imageArray.concat(qst.fileName)
+            : imageArray;
+          imageArray &#x3D; newArray;
+        }
+      }
+      imageArray &#x3D; question.fileName.length ? imageArray.concat(question.fileName) : imageArray;
+    } else {
+      // imageArray &#x3D; [...imageArray, question.fileName]
+      const newArray &#x3D; question.fileName.length
+        ? imageArray.concat(question.fileName)
+        : imageArray;
+      imageArray &#x3D; newArray;
+    }
+    return imageArray;
+  }
+
+  async storeMandatoryFields(mandatoryEntitiesList?) {
+    if(!mandatoryEntitiesList) this.profile &#x3D; await this.getProfileData(&#x27;SERVER&#x27;);
+    if (!this.profile.role) return;
+    let mandatoryFields;
+    try {
+      mandatoryFields &#x3D; await this.storage.get(storageKeys.mandatoryFields)
+      if(!mandatoryFields) mandatoryFields &#x3D; {}
+    } catch {
+      mandatoryFields&#x3D;{}
+    }
+    if (mandatoryFields[this.profile.state] &amp;&amp; mandatoryFields[this.profile.state][this.profile.role]) return;
+
+    try {
+      if(!mandatoryEntitiesList) mandatoryEntitiesList &#x3D; await this.getMandatoryEntitiesList()
+      if (!mandatoryEntitiesList || !mandatoryEntitiesList.length) return
+      if(!mandatoryFields[this.profile.state]) mandatoryFields[this.profile.state]&#x3D;{}
+      mandatoryFields[this.profile.state][this.profile.role] &#x3D; mandatoryEntitiesList
+      await this.storage.set(storageKeys.mandatoryFields, mandatoryFields)
+    } catch{
+
+    }
+  }
+
+  async getMandatoryEntities(): Promise&lt;any&gt; {
+    let data;
+    return new Promise(async (resolve, reject) &#x3D;&gt; {
+      try {
+        const mandatoryFields &#x3D; await this.storage.get(storageKeys.mandatoryFields)
+        if (!mandatoryFields[this.profile.state][this.profile.role]) throw &quot;Mandatory fields locally not found&quot;;
+        data &#x3D; { result: mandatoryFields[this.profile.state][this.profile.role] }
+      } catch {
+        const config &#x3D; {
+          url: urlConstants.API_URLS.MANDATORY_ENTITY_TYPES_FOR_ROLES + &#x60;${this.profile.state}?role&#x3D;${this.profile.role}&#x60;,
+        };
+        data &#x3D; await this.kendra.get(config).toPromise()
+        data &amp;&amp; data.result &amp;&amp; data.result.length &amp;&amp; this.storeMandatoryFields(data.result)
+
+      }
+      if (data.result &amp;&amp; data.result.length) {
+        this.requiredFields &#x3D; data.result;
+        let allFieldsPresent &#x3D; true;
+        for (const field of this.requiredFields) {
+          if (!this.profile[field]) {
+            allFieldsPresent &#x3D; false;
+            break
+          }
+        }
+        if (!allFieldsPresent) {
+          this.openProfileUpdateAlert()
+          resolve(false)
+        } else {
+          resolve(true);
+        }
+      } else {
+        this.openProfileUpdateAlert();
+        resolve(false)
+      }
+    })
+  }
+
+
+  async getMandatoryEntitiesList(): Promise&lt;any&gt; {
+    return new Promise((resolve, reject) &#x3D;&gt; {
+      const config &#x3D; {
+        url:
+          urlConstants.API_URLS.MANDATORY_ENTITY_TYPES_FOR_ROLES +
+          &#x60;${this.profile.state}?role&#x3D;${this.profile.role}&#x60;
+      };
+      this.kendra.get(config).subscribe(
+        data &#x3D;&gt; {
+          if (data.result &amp;&amp; data.result.length) {
+            this.requiredFields &#x3D; data.result;
+            resolve(data.result);
+          } else {
+            resolve(false);
+          }
+        },
+        error &#x3D;&gt; {
+          resolve(false);
+        }
+      );
+    });
+  }
+
+  async openProfileUpdateAlert() {
+    this.profileAlert &#x3D; await this.aleryCtrl.create({
+      header: &quot;Alert&quot;,
+      message: &#x60;Please update   ${this.requiredFields &amp;&amp; this.requiredFields.length
+          ? this.requiredFields + &quot; in&quot;
+          : &quot;&quot;
+        }   your profile to access the feature.&#x60;,
+        cssClass:&#x27;central-alert&#x27;,
+      buttons: [
+        {
+          text: &quot;Update profile&quot;,
+          role: &quot;cancel&quot;,
+          handler: blah &#x3D;&gt; {
+            this.router.navigate([&#x60;${RouterLinks.HOME}&#x60;], {replaceUrl:true});
+            this.router.navigate([&#x60;${RouterLinks.TABS}/${RouterLinks.PROFILE}&#x60;]);
+          }
+        }
+      ],
+      backdropDismiss: false
+    });
+    await this.profileAlert.present();
+  }
+
+  async closeProfileAlert() {
+    this.profileAlert ? await this.profileAlert.dismiss() : null;
+  }
+
+  async getProfileInfo(): Promise&lt;any&gt; {
+    return new Promise(async (resolve, reject) &#x3D;&gt; {
+      this.profile &#x3D; await this.getProfileData();
+      const mandatoryFields &#x3D; await this.getMandatoryEntities();
+      mandatoryFields ? resolve(this.profile) : resolve(null);
+    });
+  }
+
+  async setProfileData(type) {
+    return new Promise(async (resolve, reject) &#x3D;&gt; {
+      let userData;
+      userData &#x3D; await this.getProfileInfo();
+      let data &#x3D; {
+        userData: userData,
+        generatedKey: this.getUniqueKey(userData, type)
+      };
+      resolve(data);
+    });
+  }
+
+  // Generating unique for local storage
+
+  getUniqueKey(userData, type) {
+    let generateKey &#x3D; &quot;&quot;;
+    Object.keys(userData)
+      .sort()
+      .forEach(function(v, i) {
+        generateKey &#x3D; generateKey + userData[v];
+      });
+    generateKey &#x3D; generateKey + type;
+    return generateKey;
+  }
+
+  getOrgDetails() {
+    const orgList &#x3D; [];
+    let orgItemList;
+    orgItemList &#x3D; this.profile.organisations;
+    if (orgItemList.length &gt; 1) {
+      orgItemList.map(org &#x3D;&gt; {
+        if (this.profile.rootOrgId !&#x3D;&#x3D; org.organisationId) {
+          orgList.push(org);
+        }
+      });
+      orgList.sort((orgDate1, orgdate2) &#x3D;&gt;
+        orgDate1.orgjoindate &gt; orgdate2.organisation ? 1 : -1
+      );
+      this.organisationName &#x3D; orgList[0].orgName;
+      this.orgDetails &#x3D; this.commonUtilService.getOrgLocation(orgList[0]);
+    }
+  }
+
+  getProfileData(fromData &#x3D; &#x27;CACHE&#x27;): Promise&lt;any&gt; {
+    return new Promise((resolve, reject) &#x3D;&gt; {
+      this.authService
+        .getSession()
+        .toPromise()
+        .then(session &#x3D;&gt; {
+          if (session &#x3D;&#x3D;&#x3D; null || session &#x3D;&#x3D;&#x3D; undefined) {
+            reject(&quot;session is null&quot;);
+          } else {
+            const serverProfileDetailsRequest &#x3D; {
+              userId: session.userToken,
+              requiredFields: ProfileConstants.REQUIRED_FIELDS,
+              from: CachedItemRequestSourceFrom[fromData],
+            };
+            this.profileService
+              .getServerProfilesDetails(serverProfileDetailsRequest)
+              .toPromise()
+              .then(profileData &#x3D;&gt; {
+                this.zone.run(async () &#x3D;&gt; {
+                  this.userId &#x3D; profileData.userId;
+                  this.profile &#x3D; profileData;
+                  const obj &#x3D; {};
+                  for (const location of profileData[&quot;userLocations&quot;]) {
+                    obj[location.type] &#x3D; location.id;
+                  }
+                  for (const org of profileData[&quot;organisations&quot;]) {
+                    if (org.isSchool) {
+                      obj[&quot;school&quot;] &#x3D; org.externalId;
+                    }
+                  }
+                  const roles &#x3D; [];
+                  for (const userRole of profileData[&#x27;profileUserTypes&#x27;]) {
+                   userRole.subType ? roles.push(userRole.subType.toUpperCase()) : roles.push(userRole.type.toUpperCase());
+                  }
+                  obj[&#x27;role&#x27;] &#x3D; roles.toString();
+                  resolve(obj);
+                });
+              })
+              .catch(err &#x3D;&gt; {
+                this.translate.get(&#x27;FRMELEMENTS_MSG_SOMETHING_WENT_WRONG&#x27;).subscribe((translations) &#x3D;&gt; {
+                  this.toast.openToast(translations);
+                });
+                this.location.back();
+                reject(null);
+              });
+          }
+        });
+    });
+  }
+
+getSchedules(){
+  let data&#x3D;[
+    {
+      title: &quot;FRMELEMNTS_LBL_PAST&quot;,
+      value: &quot;past&quot;,
+    },
+    {
+      title: &quot;FRMELEMNTS_LBL_TODAY&quot;,
+      value: &quot;today&quot;,
+    },
+    {
+      title: &quot;FRMELEMNTS_LBL_THIS_WEEK&quot;,
+      value: &quot;thisWeek&quot;,
+    },
+    {
+      title: &quot;FRMELEMNTS_LBL_THIS_MONTH&quot;,
+      value: &quot;thisMonth&quot;,
+    },
+    {
+      title: &quot;FRMELEMNTS_LBL_THIS_QUARTER&quot;,
+      value: &quot;thisQuarter&quot;,
+    },
+    {
+      title: &quot;FRMELEMNTS_LBL_UPCOMING&quot;,
+      value: &quot;upcoming&quot;,
+    },
+  ];
+  return data;
+}
+
+async getSortTasks(project:any) {
+  this.taskCount &#x3D; 0;
+  let completed &#x3D; 0;
+  let inProgress &#x3D; 0;
+  this.sortedTasks &#x3D; JSON.parse(JSON.stringify(this.getTaskSortMeta()));
+  project.tasks.forEach((task: any) &#x3D;&gt; {
+
+    if (!task.isDeleted &amp;&amp; task.endDate) {
+      this.taskCount &#x3D; this.taskCount + 1;
+      let ed &#x3D; JSON.parse(JSON.stringify(task.endDate));
+      ed &#x3D; moment(ed).format(&quot;YYYY-MM-DD&quot;);
+
+      if (ed &lt; this.filters.today) {
+        this.sortedTasks[&quot;past&quot;].tasks.push(task);
+      } else if (ed &#x3D;&#x3D; this.filters.today) {
+        this.sortedTasks[&quot;today&quot;].tasks.push(task);
+      } else if (ed &gt; this.filters.today &amp;&amp; ed &lt;&#x3D; this.filters.thisWeek) {
+        this.sortedTasks[&quot;thisWeek&quot;].tasks.push(task);
+      } else if (ed &gt; this.filters.thisWeek &amp;&amp; ed &lt;&#x3D; this.filters.thisMonth) {
+        this.sortedTasks[&quot;thisMonth&quot;].tasks.push(task);
+      } else if (ed &gt; this.filters.thisMonth &amp;&amp; ed &lt;&#x3D; this.filters.thisQuarter) {
+        this.sortedTasks[&quot;thisQuarter&quot;].tasks.push(task);
+      }
+      else {
+        this.sortedTasks[&quot;upcoming&quot;].tasks.push(task);
+      }
+    } else if (!task.isDeleted &amp;&amp; !task.endDate) {
+      this.sortedTasks[&quot;upcoming&quot;].tasks.push(task);
+      this.taskCount &#x3D; this.taskCount + 1;
+    }
+    if (!task.isDeleted) {
+      if (task.status &#x3D;&#x3D; this.statuses[1].title) {
+        inProgress &#x3D; inProgress + 1;
+      } else if (task.status &#x3D;&#x3D; this.statuses[2].title) {
+        completed &#x3D; completed + 1;
+      }
+    }
+  });
+  let projectData &#x3D; await this.setStatusForProject(project);
+  let data&#x3D;{
+    project:projectData,
+    sortedTasks:this.sortedTasks,
+    taskCount:this.taskCount
+  }
+  return data;
+}
+
+getCompletedTaskCount(tasks){
+  // const completedList &#x3D; _.filter(tasks, function(el) {
+  //   return !el.isDeleted &amp;&amp; el.status &#x3D;&#x3D;&#x3D; statusType.completed;
+  // });
+  let data &#x3D;{
+    completedTasks : 3,
+    progress: 3 / 7
+  }
+  console.log(data,&quot;data prgress&quot;);
+return data;
+}
+  getTaskCount(project: any) {
+    let taskCount&#x3D;[];
+    if(project?.tasks?.length){
+       taskCount &#x3D; _.filter(project.tasks, function(el) {
+     return !el.isDeleted;
+    });
+    }
+    return taskCount?.length;
+  }
+
+  getTabs(){
+    let tabs &#x3D; [
+      {
+        name: &quot;FRMELEMNTS_LBL_IMAGES&quot;,
+        value: &quot;image&quot;,
+        type: &#x27;image/jpeg&#x27;
+      },
+      {
+        name: &quot;FRMELEMNTS_LBL_VIDEOS&quot;,
+        value: &quot;video&quot;,
+        type: &quot;video/mp4&quot;
+      },
+      {
+        name: &quot;FRMELEMNTS_LBL_FILES&quot;,
+        value: &quot;file&quot;,
+        type: &quot;application/pdf&quot;
+      },
+      {
+        name: &quot;FRMELEMNTS_LBL_LINKS&quot;,
+        value: &quot;link&quot;,
+        type: &quot;link&quot;
+      },
+     
+    ];
+    return tabs;
+  }
+}</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'UtilsService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

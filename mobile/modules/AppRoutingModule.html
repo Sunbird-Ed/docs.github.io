@@ -1,0 +1,315 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content module">
+                   <div class="content-data">
+
+
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">Modules</li>
+    <li class="breadcrumb-item" >AppRoutingModule</li>
+</ol>
+
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+        <a href="#info" 
+            class="nav-link"
+            class="nav-link active"
+            role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+    </li>
+    <li class="nav-item">
+        <a href="#source" 
+            class="nav-link"
+            
+            role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/app-routing.module.ts</code>
+        </p>
+
+
+
+
+
+        <div class="container-fluid module">
+            <div class="row">
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { NgModule } from &#x27;@angular/core&#x27;;
+import { RouterModule, Routes } from &#x27;@angular/router&#x27;;
+import { RouterLinks } from &#x27;./app.constant&#x27;;
+import { HasNotBeenOnboardedGuard } from &#x27;@app/guards/has-not-been-onboarded.guard&#x27;;
+import { HasNotSelectedFrameworkGuard } from &#x27;@app/guards/has-not-selected-framework.guard&#x27;;
+import { HasNotSelectedLanguageGuard } from &#x27;@app/guards/has-not-selected-language.guard&#x27;;
+import { HasNotSelectedUserTypeGuard } from &#x27;@app/guards/has-not-selected-user-type.guard&#x27;;
+import { IsGuestUserGuard } from &#x27;@app/guards/is-guest-user.guard&#x27;;
+import { MlGuard } from &#x27;./manage-learn/core/guards/ml.guard&#x27;;
+
+const routes: Routes &#x3D; [
+  {
+    path: &#x27;&#x27;,
+    redirectTo: &#x60;${&#x27;language-setting&#x27;}&#x60;,
+    pathMatch: &#x27;full&#x27;
+  },
+  {
+    path: &#x60;${&#x27;language-setting&#x27;}/:isFromSettings&#x60;,
+    loadChildren: &#x27;./language-settings/language-settings.module#LanguageSettingsModule&#x27;
+  },
+  {
+    path: &#x60;${&#x27;language-setting&#x27;}&#x60;,
+    loadChildren: &#x27;./language-settings/language-settings.module#LanguageSettingsModule&#x27;,
+    canLoad: [HasNotBeenOnboardedGuard],
+    resolve: { message: HasNotSelectedLanguageGuard }
+  },
+  {
+    path: &#x60;${&#x27;user-type-selection&#x27;}&#x60;,
+    loadChildren: &#x27;./user-type-selection/user-type-selection.module#UserTypeSelectionPageModule&#x27;,
+    canLoad: [HasNotBeenOnboardedGuard],
+    resolve: { message: HasNotSelectedUserTypeGuard }
+  },
+  {
+    path: &#x60;${&#x27;user-type-selection-loggedin&#x27;}&#x60;,
+    loadChildren: &#x27;./user-type-selection/user-type-selection.module#UserTypeSelectionPageModule&#x27;
+  },
+  {
+    path: &#x27;profile-settings&#x27;,
+    loadChildren: &#x27;./profile-settings/profile-settings.module#ProfileSettingsPageModule&#x27;,
+    canLoad: [HasNotBeenOnboardedGuard],
+    resolve: { message: HasNotSelectedFrameworkGuard }
+  },
+  {
+    path: &#x27;tabs&#x27;,
+    loadChildren: &#x27;./tabs/tabs.module#TabsPageModule&#x27;
+  },
+  {
+    path: &#x27;resources&#x27;,
+    loadChildren: &#x27;./resources/resources.module#ResourcesModule&#x27;,
+  },
+  {
+    path: &#x27;home&#x27;,
+    loadChildren: &#x27;./home/home.module#HomePageModule&#x27;
+  },
+  { path: &#x27;view-more-activity&#x27;, loadChildren: &#x27;./view-more-activity/view-more-activity.module#ViewMoreActivityModule&#x27; },
+  { path: &#x27;settings&#x27;, loadChildren: &#x27;./settings/settings.module#SettingsPageModule&#x27; },
+  { path: &#x27;download-manager&#x27;, loadChildren: &#x27;./download-manager/download-manager.module#DownloadManagerPageModule&#x27; },
+  { path: &#x27;storage-settings&#x27;, loadChildren: &#x27;./storage-settings/storage-settings.module#StorageSettingsPageModule&#x27; },
+  { path: &#x27;courses&#x27;, loadChildren: &#x27;./courses/courses.module#CoursesPageModule&#x27; },
+  { path: &#x27;search&#x27;, loadChildren: &#x27;./search/search.module#SearchPageModule&#x27; },
+  { path: &#x27;profile&#x27;, loadChildren: &#x27;./profile/profile.module#ProfilePageModule&#x27; },
+  { path: &#x27;active-downloads&#x27;, loadChildren: &#x27;./active-downloads/active-downloads.module#ActiveDownloadsPageModule&#x27; },
+  { path: &#x27;course-batches&#x27;, loadChildren: &#x27;./course-batches/course-batches.module#CourseBatchesPageModule&#x27; },
+  {
+    path: &#x27;enrolled-course-details&#x27;,
+    loadChildren: &#x27;./enrolled-course-details-page/enrolled-course-details-page.module#EnrolledCourseDetailsPagePageModule&#x27;
+  },
+  { path: &#x27;qrscanner-alert&#x27;, loadChildren: &#x27;./qrscanner-alert/qrscanner-alert.module#QrscannerAlertPageModule&#x27; },
+  {
+    path: &#x27;collection-detail-etb&#x27;,
+    loadChildren: &#x27;./collection-detail-etb/collection-detail-etb.module#CollectionDetailEtbPageModule&#x27;
+  },
+  { path: &#x60;${&#x27;content-details&#x27;}/:id&#x60;, loadChildren: &#x27;./content-details/content-details.module#ContentDetailsPageModule&#x27; },
+  { path: &#x27;content-details&#x27;, loadChildren: &#x27;./content-details/content-details.module#ContentDetailsPageModule&#x27; },
+  { path: &#x27;player&#x27;, loadChildren: &#x27;./player/player.module#PlayerPageModule&#x27; },
+  { path: &#x27;page-filter&#x27;, loadChildren: &#x27;./page-filter/page-filter.module#PageFilterPageModule&#x27; },
+  {
+    path: &#x27;page-filter-options&#x27;,
+    loadChildren: &#x27;./page-filter/page-filter-options/page-filter-options.module#PageFilterOptionsPageModule&#x27;
+  },
+  { path: &#x27;qrcoderesult&#x27;, loadChildren: &#x27;./qrcoderesult/qrcoderesult.module#QrcoderesultPageModule&#x27; },
+  { path: &#x27;notification&#x27;, loadChildren: &#x27;./notification/notification.module#NotificationPageModule&#x27; },
+  { path: &#x27;faq-help&#x27;, loadChildren: &#x27;./faq-help/faq-help.module#FaqHelpPageModule&#x27; },
+  {
+    path: &#x27;terms-and-conditions&#x27;,
+    loadChildren: &#x27;./terms-and-conditions/terms-and-conditions.module#TermsAndConditionsPageModule&#x27;
+  },
+  { path: &#x27;filters&#x27;, loadChildren: &#x27;./search/filters/filters.module#FiltersPageModule&#x27; },
+  { path: &#x27;textbook-view-more&#x27;, loadChildren: &#x27;./textbook-view-more/textbook-view-more.module#TextbookViewMorePageModule&#x27; },
+  { path: &#x27;guest-edit&#x27;, loadChildren: &#x27;./profile/guest-edit/guest-edit.module#GuestEditPageModule&#x27; },
+  { path: &#x27;explore-book&#x27;, loadChildren: &#x27;./resources/explore-books/explore-books.module#ExploreBooksPageModule&#x27; },
+  { path: &#x27;faq-report-issue&#x27;, loadChildren: &#x27;./faq-report-issue/faq-report-issue.module#FaqReportIssuePageModule&#x27; },
+  {
+    path: &#x27;district-mapping&#x27;,
+    loadChildren: &#x27;./district-mapping/district-mapping.module#DistrictMappingPageModule&#x27;
+  },
+  { path: &#x27;my-groups&#x27;, loadChildren: &#x27;./my-groups/my-groups.module#MyGroupsPageModule&#x27; },
+  { path: &#x27;curriculum-courses&#x27;, loadChildren: &#x27;./curriculum-courses/curriculum-courses.module#CurriculumCoursesPageModule&#x27; },
+  { path: &#x27;program&#x27;, loadChildren: &#x27;./manage-learn/programs/programs.module#ProgramsModule&#x27;, canActivate:[MlGuard] },
+  { path: &#x27;survey&#x27;, loadChildren: &#x27;./manage-learn/survey/survey.module#SurveyModule&#x27;, canActivate:[MlGuard] },
+  { path: &#x27;project&#x27;, loadChildren: &#x27;./manage-learn/project/project.module#ProjectModule&#x27;},
+  { path: &quot;reports&quot;, loadChildren: &#x27;./manage-learn/reports/reports.module#ReportsModule&#x27;,canActivate:[MlGuard] },
+  {
+    path: &#x27;questionnaire&#x27;,
+    loadChildren: &#x27;./manage-learn/questionnaire/questionnaire.module#QuestionnairePageModule&#x27;
+  },
+
+  { path: &#x27;observation&#x27;, loadChildren: &#x27;./manage-learn/observation/observation.module#ObservationModule&#x27; , canActivate:[MlGuard]},
+  { path: &#x27;category-list&#x27;, loadChildren: &#x27;./category-list/category-list-page.module#CategoryListPageModule&#x27; },
+  { path: &#x27;guest-profile&#x27;, loadChildren: &#x27;./profile/guest-profile/guest-profile.module#GuestProfilePageModule&#x27; },
+  { path: &#x27;ecm-listing&#x27;, loadChildren: &#x27;./manage-learn/ecm-listing/ecm-listing.module#EcmListingPageModule&#x27; },
+  { path: &#x27;section-listing&#x27;, loadChildren: &#x27;./manage-learn/section-listing/section-listing.module#SectionListingPageModule&#x27; },
+  { path: &#x27;submission_preview&#x27;, loadChildren: &#x27;./manage-learn/submission-preview/submission-preview.module#SubmissionPreviewModule&#x27; },
+  { path: &#x27;image-listing&#x27;, loadChildren: &#x27;./manage-learn/image-listing/image-listing.module#ImageListingModule&#x27; },
+  { path: &#x27;all-evidence&#x27;, loadChildren: &#x27;./manage-learn/all-evidence-list/all-evidence-list.module#AllEvidenceListModule&#x27; },
+  { path: &quot;project-report&quot;, loadChildren: &#x27;./manage-learn/project-report/project-report.module#ProjectReportModule&#x27; },
+  { path: &#x60;${&quot;deeplink-redirect&quot;}/:extra&#x60;, loadChildren: &#x27;./manage-learn/deeplink-redirect/deeplink-redirect.module#DeeplinkRedirectModule&#x27; },
+  { path: &#x27;category-list&#x27;, loadChildren: &#x27;./category-list/category-list-page.module#CategoryListPageModule&#x27;},
+  { path: &#x27;guest-profile&#x27;, loadChildren: &#x27;./profile/guest-profile/guest-profile.module#GuestProfilePageModule&#x27; },
+  { path: &#x27;discussion-forum&#x27;, loadChildren: &#x27;./discussion-forum/discussion-forum.module#DiscussionForumModule&#x27; },
+  { path: &#x27;search-filter&#x27;, loadChildren: &#x27;./search-filter/search-filter.module#SearchFilterPageModule&#x27; },
+  { path: &#x27;generic-report&#x27;, loadChildren: &#x27;./manage-learn/generic-reports/generic-reports.module#GenericReportsModule&#x27; , canActivate:[MlGuard]},
+  { path: &#x27;domain-ecm-listing&#x27;, loadChildren: &#x27;./manage-learn/domain-ecm-listing/domain-ecm-listing.module#DomainEcmListingModule&#x27; },
+  {
+    path: &#x27;imp-suggestions&#x27;,
+    loadChildren:  &#x27;./manage-learn/imp-suggestions/imp-suggestions.module#ImpSuggestionsPageModule&#x27;
+  },
+  { path: &#x27;sign-in&#x27;, loadChildren: &#x27;./sign-in/sign-in.module#SignInPageModule&#x27;},
+  {
+    path: &#x27;signup-basic-info&#x27;,
+    loadChildren: &#x27;./signup/signup-basic-info/signup-basic-info.module#SignupBasicInfoPageModule&#x27;
+  },
+  {
+    path: &#x27;signup-email&#x27;,
+    loadChildren: &#x27;./signup/signup-email-password/signup-email-password.module#SignupEmailPasswordPageModule&#x27;
+  },
+  {
+    path: &#x27;otp&#x27;,
+    loadChildren: &#x27;./signup/otp/otp.module#OtpPageModule&#x27;
+  }
+
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { relativeLinkResolution: &#x27;legacy&#x27; })
+  ],
+  exports: [RouterModule],
+  providers: [
+    HasNotBeenOnboardedGuard,
+    HasNotSelectedLanguageGuard,
+    HasNotSelectedUserTypeGuard,
+    HasNotSelectedFrameworkGuard,
+    IsGuestUserGuard],
+})
+export class AppRoutingModule { }
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'module';
+            var COMPODOC_CURRENT_PAGE_URL = 'AppRoutingModule.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

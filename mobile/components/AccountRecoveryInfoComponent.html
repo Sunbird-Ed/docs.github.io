@@ -1,0 +1,1591 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  AccountRecoveryInfoComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-account-recovery-id-popup</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./account-recovery-id-popup.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./account-recovery-id-popup.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#platform" >platform</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#profile" >profile</a>
+                            </li>
+                            <li>
+                                <a href="#recoveryEmailForm" >recoveryEmailForm</a>
+                            </li>
+                            <li>
+                                <a href="#recoveryIdType" >recoveryIdType</a>
+                            </li>
+                            <li>
+                                <a href="#recoveryPhoneForm" >recoveryPhoneForm</a>
+                            </li>
+                            <li>
+                                <a href="#RecoveryType" >RecoveryType</a>
+                            </li>
+                            <li>
+                                <a href="#sameEmailErr" >sameEmailErr</a>
+                            </li>
+                            <li>
+                                <a href="#samePhoneErr" >samePhoneErr</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#unregisterBackButton" >unregisterBackButton</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#cancel" >cancel</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateRecoveryImpression" >generateRecoveryImpression</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateRecoveryTelemetry" >generateRecoveryTelemetry</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getReqPayload" >getReqPayload</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initializeFormFields" >initializeFormFields</a>
+                            </li>
+                            <li>
+                                <a href="#ionViewWillEnter" >ionViewWillEnter</a>
+                            </li>
+                            <li>
+                                <a href="#ionViewWillLeave" >ionViewWillLeave</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#removeSameRecoveryIdErr" >removeSameRecoveryIdErr</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#submitRecoveryId" >submitRecoveryId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#recoveryEmail" >recoveryEmail</a>
+                            </li>
+                            <li>
+                                <a href="#recoveryPhone" >recoveryPhone</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(profileService: ProfileService, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, appGlobalService: <a href="../injectables/AppGlobalService.html" target="_self">AppGlobalService</a>, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, popOverCtrl: PopoverController, platform: Platform, menuCtrl: MenuController)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ProfileService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appGlobalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppGlobalService.html" target="_self" >AppGlobalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>popOverCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>PopoverController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>platform</td>
+                                                  
+                                                        <td>
+                                                                    <code>Platform</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>menuCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>MenuController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section data-compodoc="block-inputs">
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="recoveryEmail"></a>
+                        <b>recoveryEmail</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:28</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="recoveryPhone"></a>
+                        <b>recoveryPhone</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="cancel"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>cancel</b></span>
+                        <a href="#cancel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>cancel()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="142"
+                            class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:142</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateRecoveryImpression"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateRecoveryImpression</b></span>
+                        <a href="#generateRecoveryImpression"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateRecoveryImpression()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="119"
+                            class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:119</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateRecoveryTelemetry"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateRecoveryTelemetry</b></span>
+                        <a href="#generateRecoveryTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateRecoveryTelemetry(type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getReqPayload"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getReqPayload</b></span>
+                        <a href="#getReqPayload"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getReqPayload(type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="108"
+                            class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:108</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>UpdateServerProfileInfoRequest</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initializeFormFields"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>initializeFormFields</b></span>
+                        <a href="#initializeFormFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>initializeFormFields()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="67"
+                            class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:67</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillEnter"></a>
+                    <span class="name">
+                        <span ><b>ionViewWillEnter</b></span>
+                        <a href="#ionViewWillEnter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewWillEnter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="54"
+                            class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:54</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillLeave"></a>
+                    <span class="name">
+                        <span ><b>ionViewWillLeave</b></span>
+                        <a href="#ionViewWillLeave"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ionViewWillLeave()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="46"
+                            class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:46</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="removeSameRecoveryIdErr"></a>
+                    <span class="name">
+                        <span ><b>removeSameRecoveryIdErr</b></span>
+                        <a href="#removeSameRecoveryIdErr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>removeSameRecoveryIdErr(type: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="submitRecoveryId"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>submitRecoveryId</b></span>
+                        <a href="#submitRecoveryId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>submitRecoveryId(type: <a href="../undefineds/RecoveryType.html" target="_self">RecoveryType</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="76"
+                            class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:76</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type</td>
+                                    <td>
+                                                <code><a href="../miscellaneous/enumerations.html#RecoveryType" target="_self" >RecoveryType</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="platform"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>platform</b></span>
+                        <a href="#platform"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Platform</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="profile"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>profile</b></span>
+                        <a href="#profile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Profile</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recoveryEmailForm"></a>
+                    <span class="name">
+                        <span ><b>recoveryEmailForm</b></span>
+                        <a href="#recoveryEmailForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>FormGroup</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recoveryIdType"></a>
+                    <span class="name">
+                        <span ><b>recoveryIdType</b></span>
+                        <a href="#recoveryIdType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="recoveryPhoneForm"></a>
+                    <span class="name">
+                        <span ><b>recoveryPhoneForm</b></span>
+                        <a href="#recoveryPhoneForm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>FormGroup</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="RecoveryType"></a>
+                    <span class="name">
+                        <span ><b>RecoveryType</b></span>
+                        <a href="#RecoveryType"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>RecoveryType</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sameEmailErr"></a>
+                    <span class="name">
+                        <span ><b>sameEmailErr</b></span>
+                        <a href="#sameEmailErr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="samePhoneErr"></a>
+                    <span class="name">
+                        <span ><b>samePhoneErr</b></span>
+                        <a href="#samePhoneErr"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unregisterBackButton"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>unregisterBackButton</b></span>
+                        <a href="#unregisterBackButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/components/popups/account-recovery-id/account-recovery-id-popup.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Inject, Input } from &#x27;@angular/core&#x27;;
+import { FormGroup, FormControl, Validators } from &#x27;@angular/forms&#x27;;
+import { TelemetryGeneratorService } from &#x27;@app/services/telemetry-generator.service&#x27;;
+import { ImpressionType, Environment, PageId, InteractType } from &#x27;@app/services/telemetry-constants&#x27;;
+import { Profile, ProfileService, UpdateServerProfileInfoRequest } from &#x27;sunbird-sdk&#x27;;
+import { AppGlobalService } from &#x27;@app/services/app-global-service.service&#x27;;
+import { CommonUtilService } from &#x27;@app/services/common-util.service&#x27;;
+import { PopoverController, Platform, MenuController } from &#x27;@ionic/angular&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { finalize } from &#x27;rxjs/operators&#x27;;
+
+enum RecoveryType {
+  PHONE &#x3D; &#x27;phone&#x27;,
+  EMAIL &#x3D; &#x27;email&#x27;
+}
+
+@Component({
+  selector: &#x27;app-account-recovery-id-popup&#x27;,
+  templateUrl: &#x27;./account-recovery-id-popup.component.html&#x27;,
+  styleUrls: [&#x27;./account-recovery-id-popup.component.scss&#x27;]
+})
+export class AccountRecoveryInfoComponent implements OnInit {
+
+  RecoveryType &#x3D; RecoveryType;
+
+  // Data passed in by componentProps
+  @Input() recoveryPhone: string;
+  @Input() recoveryEmail: string;
+
+  recoveryIdType: string;
+  recoveryEmailForm: FormGroup;
+  recoveryPhoneForm: FormGroup;
+  private profile: Profile;
+  private unregisterBackButton: Subscription;
+  sameEmailErr &#x3D; false;
+  samePhoneErr &#x3D; false;
+
+  constructor(@Inject(&#x27;PROFILE_SERVICE&#x27;) private profileService: ProfileService,
+              private telemetryGeneratorService: TelemetryGeneratorService,
+              private appGlobalService: AppGlobalService,
+              private commonUtilService: CommonUtilService,
+              private popOverCtrl: PopoverController,
+              public  platform: Platform,
+              private menuCtrl: MenuController) { }
+
+  ngOnInit() {
+    this.recoveryIdType &#x3D; (this.recoveryPhone.length &gt; 0) ? RecoveryType.PHONE : RecoveryType.EMAIL;
+    this.initializeFormFields();
+    this.profile &#x3D; this.appGlobalService.getCurrentUser();
+    this.generateRecoveryImpression();
+    this.menuCtrl.enable(false);
+  }
+
+  ionViewWillEnter() {
+    this.unregisterBackButton &#x3D; this.platform.backButton.subscribeWithPriority(11, () &#x3D;&gt; {
+      this.popOverCtrl.dismiss();
+    });
+  }
+
+  ionViewWillLeave() {
+    this.menuCtrl.enable(true);
+    if (this.unregisterBackButton) {
+      this.unregisterBackButton.unsubscribe();
+    }
+  }
+
+  private initializeFormFields() {
+    this.recoveryEmailForm &#x3D; new FormGroup({
+      email: new FormControl(&#x27;&#x27;, [Validators.required, Validators.pattern(/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[a-z]{2,4}$/)]),
+    });
+    this.recoveryPhoneForm &#x3D; new FormGroup({
+      phone: new FormControl(&#x27;&#x27;, [Validators.required, Validators.pattern(/^[6-9]\d{9}$/)]),
+    });
+  }
+
+  async submitRecoveryId(type: RecoveryType) {
+    if (this.commonUtilService.networkInfo.isNetworkAvailable) {
+      let loader &#x3D; await this.commonUtilService.getLoader();
+      const req: UpdateServerProfileInfoRequest &#x3D; this.getReqPayload(type);
+      await loader.present();
+      this.profileService.updateServerProfile(req).pipe(
+        finalize(async () &#x3D;&gt; {
+          if (loader) {
+            await loader.dismiss();
+            loader &#x3D; undefined;
+          }
+        })
+      )
+        .subscribe((data: any) &#x3D;&gt; {
+          if (data &amp;&amp; data.response &#x3D;&#x3D;&#x3D; &#x27;SUCCESS&#x27;) {
+            this.popOverCtrl.dismiss({ isEdited: true });
+            this.generateRecoveryTelemetry(type);
+          }
+        }, (error) &#x3D;&gt; {
+          if (error &amp;&amp; error.response &amp;&amp; error.response.body &amp;&amp; error.response.body.params &amp;&amp;
+            error.response.body.params.err &#x3D;&#x3D;&#x3D; &#x27;UOS_USRUPD0062&#x27;) {
+            if (type &#x3D;&#x3D;&#x3D; RecoveryType.EMAIL) { this.sameEmailErr &#x3D; true; }
+            if (type &#x3D;&#x3D;&#x3D; RecoveryType.PHONE) { this.samePhoneErr &#x3D; true; }
+          } else {
+            this.commonUtilService.showToast(&#x27;SOMETHING_WENT_WRONG&#x27;);
+          }
+        });
+    } else {
+      this.commonUtilService.showToast(&#x27;INTERNET_CONNECTIVITY_NEEDED&#x27;);
+    }
+  }
+
+  private getReqPayload(type: string): UpdateServerProfileInfoRequest {
+    const req &#x3D; {
+      userId: this.profile.uid,
+      recoveryEmail: &#x27;&#x27;,
+      recoveryPhone: &#x27;&#x27;
+    };
+    if (type &#x3D;&#x3D;&#x3D; RecoveryType.EMAIL) { req.recoveryEmail &#x3D; this.recoveryEmailForm.value.email.toLowerCase(); }
+    if (type &#x3D;&#x3D;&#x3D; RecoveryType.PHONE) { req.recoveryPhone &#x3D; this.recoveryPhoneForm.value.phone; }
+    return req;
+  }
+
+  private generateRecoveryImpression() {
+    this.telemetryGeneratorService.generateImpressionTelemetry(
+      ImpressionType.VIEW, &#x27;&#x27;,
+      PageId.RECOVERY_ACCOUNT_ID_POPUP,
+      Environment.USER
+    );
+  }
+
+  private generateRecoveryTelemetry(type: string) {
+    const valueMap &#x3D; { recoveryType: type };
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      &#x27;&#x27;,
+      Environment.USER,
+      PageId.RECOVERY_ACCOUNT_ID_POPUP, undefined, valueMap
+    );
+  }
+
+  removeSameRecoveryIdErr(type: string) {
+    if (this.sameEmailErr &amp;&amp; type &#x3D;&#x3D;&#x3D; RecoveryType.EMAIL) { this.sameEmailErr &#x3D; false; }
+    if (this.samePhoneErr &amp;&amp; type &#x3D;&#x3D;&#x3D; RecoveryType.PHONE) { this.samePhoneErr &#x3D; false; }
+  }
+
+  async cancel() {
+    await this.popOverCtrl.dismiss({ isEdited: false });
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content&gt;
+
+    &lt;div class&#x3D;&quot;ar-header ion-text-center&quot;&gt;
+        &lt;h6 class&#x3D;&quot;M0&quot; *ngIf&#x3D;&quot;recoveryEmail?.length || recoveryPhone?.length&quot;&gt;{{&#x27;UPDATE_RECOVERY_ID&#x27; | translate}}&lt;/h6&gt;
+        &lt;h6 class&#x3D;&quot;M0&quot; *ngIf&#x3D;&quot;!recoveryEmail?.length &amp;&amp; !recoveryPhone?.length&quot;&gt;{{&#x27;ADD_RECOVERY_ID&#x27; | translate}}&lt;/h6&gt;
+    &lt;/div&gt;
+
+    &lt;ion-list lines&#x3D;&quot;none&quot;&gt;
+        &lt;ion-radio-group [(ngModel)]&#x3D;&quot;recoveryIdType&quot;&gt;
+
+            &lt;ion-list-header class&#x3D;&quot;recovery-desc&quot;&gt;
+                &lt;ion-label&gt;{{&#x27;RECOVERY_ID_DESCRIPTION&#x27; | translate}}&lt;/ion-label&gt;
+            &lt;/ion-list-header&gt;
+
+            &lt;ion-item&gt;
+                &lt;ion-label&gt;{{&#x27;EMAIL_ID_PLACEHOLDER&#x27; | translate}}&lt;/ion-label&gt;
+                &lt;ion-radio slot&#x3D;&quot;start&quot; value&#x3D;&quot;{{RecoveryType.EMAIL}}&quot;&gt;&lt;/ion-radio&gt;
+            &lt;/ion-item&gt;
+
+            &lt;ion-item&gt;
+                &lt;ion-label&gt;{{&#x27;PHONE_PLACEHOLDER&#x27; | translate}}&lt;/ion-label&gt;
+                &lt;ion-radio slot&#x3D;&quot;start&quot; value&#x3D;&quot;{{RecoveryType.PHONE}}&quot;&gt;&lt;/ion-radio&gt;
+            &lt;/ion-item&gt;
+
+        &lt;/ion-radio-group&gt;
+    &lt;/ion-list&gt;
+
+    &lt;div&gt;
+        &lt;div *ngIf&#x3D;&quot;recoveryIdType &#x3D;&#x3D;&#x3D; RecoveryType.EMAIL&quot;&gt;
+            &lt;form [formGroup]&#x3D;&quot;recoveryEmailForm&quot;&gt;
+                &lt;div class&#x3D;&quot;M16&quot;&gt;
+                    &lt;div class&#x3D;&quot;W100 merged-input-container MT10&quot;&gt;
+                        &lt;ion-input type&#x3D;&quot;text&quot; placeholder&#x3D;&quot;{{&#x27;EMAIL_PLACEHOLDER&#x27; | translate}}&quot;
+                            class&#x3D;&quot;form-control custom&quot; formControlName&#x3D;&quot;email&quot; (input)&#x3D;&quot;removeSameRecoveryIdErr(RecoveryType.EMAIL)&quot;&gt;
+                        &lt;/ion-input&gt;
+                    &lt;/div&gt;
+                    &lt;ion-label class&#x3D;&quot;error&quot;
+                        *ngIf&#x3D;&quot;recoveryEmailForm.controls.email.dirty &amp;&amp; recoveryEmailForm.controls.email.invalid&quot;&gt;
+                        {{&#x27;ERROR_EMAIL_INVALID&#x27; | translate}}
+                    &lt;/ion-label&gt;
+                    &lt;ion-label class&#x3D;&quot;error&quot; *ngIf&#x3D;&quot;sameEmailErr&quot;&gt;
+                        {{&#x27;ERROR_SAME_EMAIL_UPDATED&#x27; | translate}}
+                    &lt;/ion-label&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+
+        &lt;div *ngIf&#x3D;&quot;recoveryIdType &#x3D;&#x3D;&#x3D; RecoveryType.PHONE&quot;&gt;
+            &lt;form [formGroup]&#x3D;&quot;recoveryPhoneForm&quot;&gt;
+                &lt;div class&#x3D;&quot;M16&quot;&gt;
+                    &lt;div class&#x3D;&quot;W100 merged-input-container MT10&quot; style&#x3D;&quot;text-align:start&quot;&gt;
+                        &lt;ion-input type&#x3D;&quot;tel&quot; placeholder&#x3D;&quot;+91 -&quot; class&#x3D;&quot;form-control decorator &quot; value&#x3D;&quot;+91 -&quot;
+                            disabled&gt;
+                        &lt;/ion-input&gt;
+                        &lt;ion-input type&#x3D;&quot;tel&quot; placeholder&#x3D;&quot;{{&#x27;ENTER_PHONE_POPUP_TITLE&#x27; | translate}}&quot; maxlength&#x3D;&quot;10&quot;
+                            minlength&#x3D;&quot;10&quot; required class&#x3D;&quot;form-control custom&quot; formControlName&#x3D;&quot;phone&quot;
+                            (input)&#x3D;&quot;removeSameRecoveryIdErr(RecoveryType.PHONE)&quot;&gt;
+                        &lt;/ion-input&gt;
+                    &lt;/div&gt;
+                    &lt;ion-label class&#x3D;&quot;error&quot;
+                        *ngIf&#x3D;&quot;recoveryPhoneForm.controls.phone.dirty &amp;&amp; recoveryPhoneForm.controls.phone.invalid&quot;&gt;
+                        {{&#x27;ERROR_RECOVERY_ID_PHONE_INVALID&#x27; | translate}}
+                    &lt;/ion-label&gt;
+                    &lt;ion-label class&#x3D;&quot;error&quot; *ngIf&#x3D;&quot;samePhoneErr&quot;&gt;
+                        {{&#x27;ERROR_SAME_PHONE_UPDATED&#x27; | translate}}
+                    &lt;/ion-label&gt;
+                &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;
+        &lt;ion-row class&#x3D;&quot;custom-shadow&quot;&gt;
+            &lt;ion-col class&#x3D;&quot;ion-padding&quot;&gt;
+                &lt;ion-button expand&#x3D;&quot;block&quot; fill&#x3D;&quot;outline&quot; (click)&#x3D;&quot;cancel()&quot;&gt;{{ &#x27;CANCEL&#x27; | translate }} &lt;/ion-button&gt;
+            &lt;/ion-col&gt;
+            &lt;ion-col class&#x3D;&quot;ion-padding&quot;&gt;
+                &lt;ion-button expand&#x3D;&quot;block&quot; type&#x3D;&quot;submit&quot; *ngIf&#x3D;&quot;recoveryIdType &#x3D;&#x3D;&#x3D; RecoveryType.EMAIL&quot;
+                    (click)&#x3D;&quot;submitRecoveryId(RecoveryType.EMAIL)&quot; [disabled]&#x3D;&quot;!recoveryEmailForm.valid&quot;&gt;
+                    {{ &#x27;BTN_SUBMIT&#x27; | translate }}&lt;/ion-button&gt;
+
+                &lt;ion-button expand&#x3D;&quot;block&quot; type&#x3D;&quot;submit&quot; *ngIf&#x3D;&quot;recoveryIdType &#x3D;&#x3D;&#x3D; RecoveryType.PHONE&quot;
+                    (click)&#x3D;&quot;submitRecoveryId(RecoveryType.PHONE)&quot; [disabled]&#x3D;&quot;!recoveryPhoneForm.valid&quot;&gt;
+                    {{ &#x27;BTN_SUBMIT&#x27; | translate }}&lt;/ion-button&gt;
+            &lt;/ion-col&gt;
+        &lt;/ion-row&gt;
+    &lt;/div&gt;
+
+&lt;/ion-content&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./account-recovery-id-popup.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;src/assets/styles/variables&quot;;
+@import &quot;src/assets/styles/_custom-mixins.scss&quot;;
+@import &quot;src/assets/styles/_variables.scss&quot;;
+
+.merged-input-container {
+    border: 1px solid $form-input-border-active-color;
+    display: flex;
+    flex: 1 1 auto;
+    border-radius: 4px;
+    .decorator {
+        display: inline-block;
+        max-width: 3.125rem;
+    }
+    .custom {
+        display: inline-block;
+    }
+}
+
+.ar-submit-btn {
+    padding: 12px 15%;
+}
+
+.ar-btn-dissable-color {
+    background-color: map-get($colors, dark_gray);
+    color: map-get($colors, white);
+}
+
+.ar-btn-enable-color {
+    background-color: map-get($colors, primary);
+    color: map-get($colors, white);
+}
+
+.ar-header {
+    background-color: #{$blue};
+    color: map-get($colors, white);
+    padding: 16px 0;
+}
+
+.recovery-desc{
+    @include padding(null, 16px, null, null);
+    font-size: 1rem;
+}
+
+.custom-shadow {
+    box-shadow: 0 -5px 5px -5px rgba(0, 0, 0, 0.2);
+}
+
+ion-button{
+    --background: #{$blue} !important;
+    color: map-get($colors, white);
+    --background-hover: #{$blue} !important;
+    --background-activated: #{$blue} !important;
+}
+
+ion-button[fill&#x3D;&quot;outline&quot;]{
+    --background: map-get($colors, white) !important;
+    color: #{$blue};
+    --border-color: #{$blue};
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content>    <div class="ar-header ion-text-center">        <h6 class="M0" *ngIf="recoveryEmail?.length || recoveryPhone?.length">{{\'UPDATE_RECOVERY_ID\' | translate}}</h6>        <h6 class="M0" *ngIf="!recoveryEmail?.length && !recoveryPhone?.length">{{\'ADD_RECOVERY_ID\' | translate}}</h6>    </div>    <ion-list lines="none">        <ion-radio-group [(ngModel)]="recoveryIdType">            <ion-list-header class="recovery-desc">                <ion-label>{{\'RECOVERY_ID_DESCRIPTION\' | translate}}</ion-label>            </ion-list-header>            <ion-item>                <ion-label>{{\'EMAIL_ID_PLACEHOLDER\' | translate}}</ion-label>                <ion-radio slot="start" value="{{RecoveryType.EMAIL}}"></ion-radio>            </ion-item>            <ion-item>                <ion-label>{{\'PHONE_PLACEHOLDER\' | translate}}</ion-label>                <ion-radio slot="start" value="{{RecoveryType.PHONE}}"></ion-radio>            </ion-item>        </ion-radio-group>    </ion-list>    <div>        <div *ngIf="recoveryIdType === RecoveryType.EMAIL">            <form [formGroup]="recoveryEmailForm">                <div class="M16">                    <div class="W100 merged-input-container MT10">                        <ion-input type="text" placeholder="{{\'EMAIL_PLACEHOLDER\' | translate}}"                            class="form-control custom" formControlName="email" (input)="removeSameRecoveryIdErr(RecoveryType.EMAIL)">                        </ion-input>                    </div>                    <ion-label class="error"                        *ngIf="recoveryEmailForm.controls.email.dirty && recoveryEmailForm.controls.email.invalid">                        {{\'ERROR_EMAIL_INVALID\' | translate}}                    </ion-label>                    <ion-label class="error" *ngIf="sameEmailErr">                        {{\'ERROR_SAME_EMAIL_UPDATED\' | translate}}                    </ion-label>                </div>            </form>        </div>        <div *ngIf="recoveryIdType === RecoveryType.PHONE">            <form [formGroup]="recoveryPhoneForm">                <div class="M16">                    <div class="W100 merged-input-container MT10" style="text-align:start">                        <ion-input type="tel" placeholder="+91 -" class="form-control decorator " value="+91 -"                            disabled>                        </ion-input>                        <ion-input type="tel" placeholder="{{\'ENTER_PHONE_POPUP_TITLE\' | translate}}" maxlength="10"                            minlength="10" required class="form-control custom" formControlName="phone"                            (input)="removeSameRecoveryIdErr(RecoveryType.PHONE)">                        </ion-input>                    </div>                    <ion-label class="error"                        *ngIf="recoveryPhoneForm.controls.phone.dirty && recoveryPhoneForm.controls.phone.invalid">                        {{\'ERROR_RECOVERY_ID_PHONE_INVALID\' | translate}}                    </ion-label>                    <ion-label class="error" *ngIf="samePhoneErr">                        {{\'ERROR_SAME_PHONE_UPDATED\' | translate}}                    </ion-label>                </div>            </form>        </div>        <ion-row class="custom-shadow">            <ion-col class="ion-padding">                <ion-button expand="block" fill="outline" (click)="cancel()">{{ \'CANCEL\' | translate }} </ion-button>            </ion-col>            <ion-col class="ion-padding">                <ion-button expand="block" type="submit" *ngIf="recoveryIdType === RecoveryType.EMAIL"                    (click)="submitRecoveryId(RecoveryType.EMAIL)" [disabled]="!recoveryEmailForm.valid">                    {{ \'BTN_SUBMIT\' | translate }}</ion-button>                <ion-button expand="block" type="submit" *ngIf="recoveryIdType === RecoveryType.PHONE"                    (click)="submitRecoveryId(RecoveryType.PHONE)" [disabled]="!recoveryPhoneForm.valid">                    {{ \'BTN_SUBMIT\' | translate }}</ion-button>            </ion-col>        </ion-row>    </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'accessDiscussion'},{'name': 'AccordionListComponent', 'selector': 'app-accordion-list'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-id-popup'},{'name': 'AcknowledgeResponseComponent', 'selector': 'acknowledge-response'},{'name': 'ActiveDownloadsPage', 'selector': 'app-active-downloads'},{'name': 'ActivityDashboardPage', 'selector': 'activity-dashboard'},{'name': 'ActivityDetailsPage', 'selector': 'app-activity-details'},{'name': 'ActivityTocPage', 'selector': 'activity-toc'},{'name': 'AddActivityToGroupComponent', 'selector': 'add-activity-to-group'},{'name': 'AddActivityToGroupPage', 'selector': 'add-activity-to-group'},{'name': 'AddEntityComponent', 'selector': 'app-add-entity'},{'name': 'AddFilePage', 'selector': 'app-add-file'},{'name': 'AddLinkModalComponent', 'selector': 'app-add-link-modal'},{'name': 'AddMemberToGroupPage', 'selector': 'app-add-member-to-group'},{'name': 'AddProgramsComponent', 'selector': 'app-add-programs'},{'name': 'AdminHomePage', 'selector': 'app-admin-home'},{'name': 'AllEvidenceListComponent', 'selector': 'app-all-evidence-list'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationHeaderComponent', 'selector': 'app-application-header'},{'name': 'ApplicationHeaderKebabMenuComponent', 'selector': 'app-application-header-kebab-menu'},{'name': 'AppRatingAlertComponent', 'selector': 'app-rating-alert'},{'name': 'AttachmentCardComponent', 'selector': 'app-attachment-card'},{'name': 'AttachmentComponent', 'selector': 'attachments'},{'name': 'AttachmentListingPage', 'selector': 'app-attachment-listing'},{'name': 'AttachmentListsComponent', 'selector': 'app-attachment-lists'},{'name': 'BarChartComponent', 'selector': 'bar-chart'},{'name': 'CategoriesEditPage', 'selector': 'app-categories-edit'},{'name': 'CategoryListPage', 'selector': 'app-category-list-page'},{'name': 'CategorySelectComponent', 'selector': 'app-category-select'},{'name': 'CertificateVerificationPopoverComponent', 'selector': 'app-certificate-verification-popover'},{'name': 'CertificateViewPage', 'selector': 'app-certificate-view'},{'name': 'ChapterDetailsPage', 'selector': 'app-chapter-details'},{'name': 'CollectionActionsComponent', 'selector': 'collection-acions'},{'name': 'CollectionChildComponent', 'selector': 'app-collection-child'},{'name': 'CollectionDetailEtbPage', 'selector': 'app-collection-detail-etb'},{'name': 'CommonFormsComponent', 'selector': 'app-common-forms'},{'name': 'CommonHeaderComponent', 'selector': 'app-common-header'},{'name': 'ConfirmAlertComponent', 'selector': 'app-confirm-alert'},{'name': 'ConsentPiiPopupComponent', 'selector': 'app-consent-pii-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentDetailsPage', 'selector': 'app-content-details'},{'name': 'ContentRatingAlertComponent', 'selector': 'app-content-rating-alert'},{'name': 'ContentViewerComponent', 'selector': 'content-viewer'},{'name': 'CopyTraceIdPopoverComponent', 'selector': 'app-copy-trace-id-popover'},{'name': 'CourseBatchesPage', 'selector': 'app-course-batches'},{'name': 'CourseCompletionPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'CoursesPage', 'selector': 'app-courses'},{'name': 'CreateEditGroupPage', 'selector': 'app-create-edit-group'},{'name': 'CreateProjectPage', 'selector': 'app-create-project'},{'name': 'CreateTaskComponent', 'selector': 'app-create-task'},{'name': 'CreateTaskFormComponent', 'selector': 'app-create-task-form'},{'name': 'CurriculumCoursesPage', 'selector': 'app-curriculum-courses'},{'name': 'DashboardComponent', 'selector': 'dashboard-component'},{'name': 'DataSyncComponent', 'selector': 'app-data-sync'},{'name': 'DateTypeInputComponent', 'selector': 'app-date-type-input'},{'name': 'DeeplinkRedirectComponent', 'selector': 'app-deeplink-redirect'},{'name': 'DetailCardComponent', 'selector': 'app-detail-card'},{'name': 'DialogPopupComponent', 'selector': 'app-dialog-popup'},{'name': 'DiscoverComponent', 'selector': 'app-discover'},{'name': 'DistrictMappingPage', 'selector': 'app-district-mapping'},{'name': 'DomainEcmLsitingComponent', 'selector': 'app-domain-ecm-lsiting'},{'name': 'DownloadManagerPage', 'selector': 'app-download-manager'},{'name': 'DownloadShareComponent', 'selector': 'download-share'},{'name': 'DownloadsHeaderComponent', 'selector': 'app-downloads-header'},{'name': 'DownloadsTabComponent', 'selector': 'app-downloads-tab'},{'name': 'DownloadTranscriptPopupComponent', 'selector': 'app-download-transcript-popup'},{'name': 'EcmListingPage', 'selector': 'app-ecm-listing'},{'name': 'EditContactDetailsPopupComponent', 'selector': 'app-edit-contact-details-popup'},{'name': 'EditContactVerifyPopupComponent', 'selector': 'app-edit-contact-verify-popup'},{'name': 'EnrolledCourseDetailsPage', 'selector': 'app-enrolled-course-details-page'},{'name': 'EnrollmentDetailsComponent', 'selector': 'app-enrollment-details'},{'name': 'EntityfilterComponent', 'selector': 'app-entityfilter'},{'name': 'EntitySearchLocalComponent', 'selector': 'app-entity-search-local'},{'name': 'ExpansionPanelComponent', 'selector': 'expansion-panel'},{'name': 'ExpansionTableComponent', 'selector': 'expansion-table'},{'name': 'ExploreBooksPage', 'selector': 'app-explore-books'},{'name': 'ExploreBooksSortComponent', 'selector': 'app-explore-books-sort'},{'name': 'FaqHelpPage', 'selector': 'app-faq-help'},{'name': 'FaqReportIssuePage', 'selector': 'app-faq-report-issue'},{'name': 'FilterModalComponent', 'selector': 'app-filter-modal'},{'name': 'FilteroptionComponent', 'selector': 'app-filteroption'},{'name': 'FiltersPage', 'selector': 'app-filters'},{'name': 'FooterButtonsComponent', 'selector': 'app-footer-buttons'},{'name': 'FrameworkSelectionPage', 'selector': 'app-framework-selection'},{'name': 'GraphCircleComponent', 'selector': 'graph-circle'},{'name': 'GroupDetailsPage', 'selector': 'app-group-details'},{'name': 'GroupGuideLinesPopoverComponent', 'selector': 'app-group-guidelines-popover'},{'name': 'GuestEditPage', 'selector': 'app-guest-edit'},{'name': 'GuestProfilePage', 'selector': 'app-guest-profile'},{'name': 'HintComponent', 'selector': 'app-hint'},{'name': 'ImageListingComponent', 'selector': 'app-image-listing'},{'name': 'ImageUploadComponent', 'selector': 'app-image-upload'},{'name': 'ImportPopoverComponent', 'selector': 'app-import-popover'},{'name': 'ImpSuggestionsPage', 'selector': 'app-imp-suggestions'},{'name': 'ItemListCardComponent', 'selector': 'app-item-list-card'},{'name': 'ItemListHeaderComponent', 'selector': 'app-item-list-header'},{'name': 'JoyfulThemePopupComponent', 'selector': 'app-joyful-theme-popup'},{'name': 'LanguageSettingsPage', 'selector': 'page-language-settings'},{'name': 'LearningResourcesPage', 'selector': 'app-learning-resources'},{'name': 'LicenseCardComponentComponent', 'selector': 'app-license-card-component'},{'name': 'LinkLearningResourcesComponent', 'selector': 'app-link-learning-resources'},{'name': 'ManageUserProfilesPage', 'selector': 'app-manage-user-profiles'},{'name': 'MatrixChartComponent', 'selector': 'matrix-chart'},{'name': 'MatrixModalComponent', 'selector': 'app-matrix-modal'},{'name': 'MatrixTypeInputComponent', 'selector': 'app-matrix-type-input'},{'name': 'MetadataActionsComponent', 'selector': 'app-metadata-actions'},{'name': 'MetadataDetailsComponent', 'selector': 'app-metadata-details'},{'name': 'MultipleTypeInputComponent', 'selector': 'app-multiple-type-input'},{'name': 'MyGroupsPage', 'selector': 'app-my-groups'},{'name': 'MyGroupsPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'NewExperiencePopupComponent', 'selector': 'app-new-experience-popup'},{'name': 'NoDataComponent', 'selector': 'app-no-data'},{'name': 'NoDownloadsComponent', 'selector': 'app-no-downloads'},{'name': 'NotificationItemComponent', 'selector': 'app-notification-item'},{'name': 'NotificationPage', 'selector': 'app-notification'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationHomeComponent', 'selector': 'app-observation-home'},{'name': 'ObservationSolutionEntityListingComponent', 'selector': 'app-observation-solution-entity-listing'},{'name': 'ObservationSolutionListingComponent', 'selector': 'app-observation-solution-listing'},{'name': 'ObservationSubmissionComponent', 'selector': 'app-observation-submission'},{'name': 'OtpPage', 'selector': 'app-otp'},{'name': 'OverflowMenuComponent', 'selector': 'app-overflow-menu'},{'name': 'PageFilterOptionsPage', 'selector': 'app-page-filter-options'},{'name': 'PageFilterPage', 'selector': 'app-page-filter'},{'name': 'PageQuestionsComponent', 'selector': 'app-page-questions'},{'name': 'PbHorizontalComponent', 'selector': 'app-pb-horizontal'},{'name': 'PercentageColumnChartsComponent', 'selector': 'percentage-column-charts'},{'name': 'PermissionComponent', 'selector': 'app-permission'},{'name': 'PersonalDetailsEditPage', 'selector': 'app-personal-details-edit'},{'name': 'PieChartComponent', 'selector': 'pie-chart'},{'name': 'PlayerPage', 'selector': 'app-player'},{'name': 'PopoverComponent', 'selector': 'app-popover'},{'name': 'PrivacyPolicyAndTCComponent', 'selector': 'app-privacy-policy-and-tc'},{'name': 'ProfileAvatarComponent', 'selector': 'app-profile-avatar'},{'name': 'ProfileNameConfirmationPopoverComponent', 'selector': 'app-profile-name-confirmation-popover'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfileSettingsPage', 'selector': 'app-profile-settings'},{'name': 'ProgramListingComponent', 'selector': 'app-program-listing'},{'name': 'ProgressBarComponent', 'selector': 'progress-bar'},{'name': 'ProjectDetailsCardComponent', 'selector': 'app-project-details-card'},{'name': 'ProjectDetailsComponent', 'selector': 'app-project-details'},{'name': 'ProjectEditPage', 'selector': 'app-project-edit'},{'name': 'ProjectListingComponent', 'selector': 'app-project-listing'},{'name': 'ProjectMetadataCardComponent', 'selector': 'app-project-metadata-card'},{'name': 'ProjectOperationPage', 'selector': 'app-project-operation'},{'name': 'ProjectReportComponent', 'selector': 'app-project-report'},{'name': 'ProjectTaskListComponent', 'selector': 'app-project-task-list'},{'name': 'ProjectTemplatePage', 'selector': 'app-project-template'},{'name': 'ProjectTemplateviewPage', 'selector': 'app-project-templateview'},{'name': 'QrcoderesultPage', 'selector': 'app-qrcoderesult'},{'name': 'QRScannerAlert', 'selector': 'app-qrscanner-alert'},{'name': 'QrScannerIOSComponent', 'selector': 'app-qr-scanner-ios'},{'name': 'QuestionHeadingComponent', 'selector': 'app-question-heading'},{'name': 'QuestionMapModalComponent', 'selector': 'app-question-map-modal'},{'name': 'QuestionnairePage', 'selector': 'app-questionnaire'},{'name': 'RadioTypeInputComponent', 'selector': 'app-radio-type-input'},{'name': 'RelevantContentCardComponent', 'selector': 'app-relevant-content-card'},{'name': 'RelevantContentsPage', 'selector': 'app-relevant-contents'},{'name': 'RemarksComponent', 'selector': 'app-remarks'},{'name': 'RemarksModalComponent', 'selector': 'app-remarks-modal'},{'name': 'ReportListComponent', 'selector': 'app-report-list'},{'name': 'ReportModalFilter', 'selector': 'report-modal-filter'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'ReportsListingComponent', 'selector': 'app-reports-listing'},{'name': 'ReportsTextComponent', 'selector': 'reports-text'},{'name': 'ResourcesComponent', 'selector': 'app-resources'},{'name': 'SbAppSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbDownloadPopupComponent', 'selector': 'app-sb-download-popup'},{'name': 'SbGenericFormPopoverComponent', 'selector': 'app-sb-generic-form-popover'},{'name': 'SbGenericPopoverComponent', 'selector': 'app-sb-generic-popover'},{'name': 'SbInsufficientStoragePopupComponent', 'selector': 'sb-insufficient-storage-popup'},{'name': 'SbNoNetworkPopupComponent', 'selector': 'sb-no-network-popup'},{'name': 'SbPopoverComponent', 'selector': 'sb-popover'},{'name': 'SbPreferencePopupComponent', 'selector': 'app-sb-preferences-popup'},{'name': 'SbProgressLoaderPage', 'selector': 'app-sb-progress-loader'},{'name': 'SbSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbSubjectListPopupComponent', 'selector': 'app-sb-subject-list-popup'},{'name': 'SbTutorialPopupComponent', 'selector': 'app-sb-tutorial-popup'},{'name': 'ScatterChartComponent', 'selector': 'scatter-chart'},{'name': 'SearchFilterPage', 'selector': 'app-search-filter.page'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SectionListingPage', 'selector': 'app-section-listing'},{'name': 'SelfDeclaredTeacherEditPage', 'selector': 'app-self-declared-teacher-edit'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'ShowCertificateComponent', 'selector': 'app-show-certificate-component'},{'name': 'ShowVendorAppsComponent', 'selector': 'show-vendor-apps'},{'name': 'SignInCardComponent', 'selector': 'app-sign-in-card'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'SignupBasicInfoPage', 'selector': 'app-signup-basic-info'},{'name': 'SignupEmailPasswordPage', 'selector': 'app-signup-email-password'},{'name': 'SkeletonItemComponent', 'selector': 'app-skeleton-item'},{'name': 'SliderTypeInputComponent', 'selector': 'app-slider-type-input'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'StartImprovementComponent', 'selector': 'app-start-improvement'},{'name': 'StorageSettingsPage', 'selector': 'app-storage-settings'},{'name': 'SubmissionActionsComponent', 'selector': 'app-submission-actions'},{'name': 'SubmissionPreviewPageComponent', 'selector': 'app-submission-preview-page'},{'name': 'SubProfileEditPage', 'selector': 'app-sub-profile-edit'},{'name': 'SupportAcknowledgement', 'selector': 'support-acknowledgement'},{'name': 'SurveyHomeComponent', 'selector': 'app-survey-home'},{'name': 'SurveyMsgComponent', 'selector': 'app-survey-msg'},{'name': 'SyncPage', 'selector': 'app-sync'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TaskCardComponent', 'selector': 'app-task-card'},{'name': 'TaskViewPage', 'selector': 'app-task-view'},{'name': 'TeacherIdVerificationComponent', 'selector': 'app-teacher-id-verification-popup'},{'name': 'TermsAndConditionsPage', 'selector': 'app-terms-and-conditions'},{'name': 'TextBookTocPage', 'selector': 'textbook-toc'},{'name': 'TextbookViewMorePage', 'selector': 'app-textbook-view-more'},{'name': 'TextTypeInputComponent', 'selector': 'app-text-type-input'},{'name': 'ToastNavigationComponent', 'selector': 'app-toast-navigation'},{'name': 'TocHeaderComponent', 'selector': 'app-toc-header'},{'name': 'UpgradePopoverComponent', 'selector': 'app-upgrade-popover'},{'name': 'UserHomePage', 'selector': 'app-user-home'},{'name': 'UserTypeSelectionPage', 'selector': 'page-user-type-selection'},{'name': 'ViewCreditsComponent', 'selector': 'app-view-credits'},{'name': 'ViewDetailComponent', 'selector': 'app-view-detail'},{'name': 'ViewMoreActivityComponent', 'selector': 'app-view-more-activity'},{'name': 'ViewMoreActivityPage', 'selector': 'view-more-activity'},{'name': 'YearOfBirthPopupComponent', 'selector': 'app-year-of-birth-popup'}];
+    var DIRECTIVES = [{'name': 'CustomIonSelectDirective', 'selector': '[appCustomIonSelect]'},{'name': 'HideHeaderFooterDirective', 'selector': '[hide-header-footer]'},{'name': 'ReadMoreDirective', 'selector': '[readMore]'}];
+    var ACTUAL_COMPONENT = {'name': 'AccountRecoveryInfoComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'AccountRecoveryInfoComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,1801 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >SunbirdQRScanner</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/sunbirdqrscanner.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#appName" >appName</a>
+                            </li>
+                            <li>
+                                <a href="#backButtonFunc" >backButtonFunc</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#isScannerActive" >isScannerActive</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#mQRScannerText" >mQRScannerText</a>
+                            </li>
+                            <li>
+                                <a href="#profile" >profile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#QR_SCANNER_TEXT" >QR_SCANNER_TEXT</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#qrModal" >qrModal</a>
+                            </li>
+                            <li>
+                                <a href="#showButton" >showButton</a>
+                            </li>
+                            <li>
+                                <a href="#source" >source</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateEndEvent" >generateEndEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateImpressionTelemetry" >generateImpressionTelemetry</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateStartEvent" >generateStartEvent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#getProfileSettingConfig" >getProfileSettingConfig</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#showInvalidCodeAlert" >showInvalidCodeAlert</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#showPopover" >showPopover</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#startQRScanner" >startQRScanner</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#startScanner" >startScanner</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#stopScanner" >stopScanner</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(translate: TranslateService, platform: Platform, qrScannerResultHandler: <a href="../injectables/QRScannerResultHandler.html" target="_self">QRScannerResultHandler</a>, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, appGlobalService: <a href="../injectables/AppGlobalService.html" target="_self">AppGlobalService</a>, container: <a href="../injectables/ContainerService.html" target="_self">ContainerService</a>, permission: <a href="../injectables/AndroidPermissionsService.html" target="_self">AndroidPermissionsService</a>, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, appVersion: AppVersion, toastController: ToastController, router: Router, modalCtrl: ModalController, projectCert: <a href="../injectables/ManageLearnCertificateService.html" target="_self">ManageLearnCertificateService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/services/sunbirdqrscanner.service.ts:44</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>platform</td>
+                                                  
+                                                        <td>
+                                                                    <code>Platform</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>qrScannerResultHandler</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/QRScannerResultHandler.html" target="_self" >QRScannerResultHandler</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appGlobalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppGlobalService.html" target="_self" >AppGlobalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>container</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ContainerService.html" target="_self" >ContainerService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>permission</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AndroidPermissionsService.html" target="_self" >AndroidPermissionsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appVersion</td>
+                                                  
+                                                        <td>
+                                                                    <code>AppVersion</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toastController</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>projectCert</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ManageLearnCertificateService.html" target="_self" >ManageLearnCertificateService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateEndEvent"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateEndEvent</b></span>
+                        <a href="#generateEndEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateEndEvent(pageId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, qrData: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="316"
+                            class="link-to-prism">src/services/sunbirdqrscanner.service.ts:316</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>qrData</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateImpressionTelemetry"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateImpressionTelemetry</b></span>
+                        <a href="#generateImpressionTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateImpressionTelemetry(source, dialCode?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="286"
+                            class="link-to-prism">src/services/sunbirdqrscanner.service.ts:286</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>source</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>dialCode</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateStartEvent"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateStartEvent</b></span>
+                        <a href="#generateStartEvent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateStartEvent(pageId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="309"
+                            class="link-to-prism">src/services/sunbirdqrscanner.service.ts:309</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getProfileSettingConfig"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>getProfileSettingConfig</b></span>
+                        <a href="#getProfileSettingConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getProfileSettingConfig()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="179"
+                            class="link-to-prism">src/services/sunbirdqrscanner.service.ts:179</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showInvalidCodeAlert"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>showInvalidCodeAlert</b></span>
+                        <a href="#showInvalidCodeAlert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showInvalidCodeAlert(scannedData)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="330"
+                            class="link-to-prism">src/services/sunbirdqrscanner.service.ts:330</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>scannedData</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showPopover"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>showPopover</b></span>
+                        <a href="#showPopover"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showPopover(pageId: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="110"
+                            class="link-to-prism">src/services/sunbirdqrscanner.service.ts:110</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pageId</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string | undefined&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startQRScanner"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>startQRScanner</b></span>
+                        <a href="#startQRScanner"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>startQRScanner(screenTitle: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, displayText: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, displayTextColor: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, buttonText: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, showButton: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="191"
+                            class="link-to-prism">src/services/sunbirdqrscanner.service.ts:191</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>screenTitle</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>displayText</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>displayTextColor</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>buttonText</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>showButton</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string | undefined&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startScanner"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>startScanner</b></span>
+                        <a href="#startScanner"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>startScanner(source: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, showButton: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, screenTitle, displayText, displayTextColor: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, buttonText)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/services/sunbirdqrscanner.service.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>source</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>showButton</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>screenTitle</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>this.mQRScannerText[&#x27;SCAN_QR_CODE&#x27;]</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>displayText</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>this.mQRScannerText[&#x27;SCAN_QR_INSTRUCTION&#x27;]</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>displayTextColor</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>&#x27;#0b0b0b&#x27;</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>buttonText</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>this.mQRScannerText[&#x27;NO_QR_CODE&#x27;]</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;string | undefined&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="stopScanner"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span ><b>stopScanner</b></span>
+                        <a href="#stopScanner"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>stopScanner()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/services/sunbirdqrscanner.service.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appName"></a>
+                    <span class="name">
+                        <span ><b>appName</b></span>
+                        <a href="#appName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/services/sunbirdqrscanner.service.ts:42</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="backButtonFunc"></a>
+                    <span class="name">
+                        <span ><b>backButtonFunc</b></span>
+                        <a href="#backButtonFunc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>undefined</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/services/sunbirdqrscanner.service.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isScannerActive"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>isScannerActive</b></span>
+                        <a href="#isScannerActive"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/services/sunbirdqrscanner.service.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mQRScannerText"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>mQRScannerText</b></span>
+                        <a href="#mQRScannerText"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/services/sunbirdqrscanner.service.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="profile"></a>
+                    <span class="name">
+                        <span ><b>profile</b></span>
+                        <a href="#profile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Profile</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/services/sunbirdqrscanner.service.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="QR_SCANNER_TEXT"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>QR_SCANNER_TEXT</b></span>
+                        <a href="#QR_SCANNER_TEXT"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    &#x27;SCAN_QR_CODE&#x27;,
+    &#x27;SCAN_QR_INSTRUCTION&#x27;,
+    &#x27;UNKNOWN_QR&#x27;,
+    &#x27;NO_QR_CODE&#x27;,
+    &#x27;CANCEL&#x27;,
+    &#x27;TRY_AGAIN&#x27;,
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/services/sunbirdqrscanner.service.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="qrModal"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>qrModal</b></span>
+                        <a href="#qrModal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>HTMLIonModalElement</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/services/sunbirdqrscanner.service.ts:44</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showButton"></a>
+                    <span class="name">
+                        <span ><b>showButton</b></span>
+                        <a href="#showButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/services/sunbirdqrscanner.service.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="source"></a>
+                    <span class="name">
+                        <span ><b>source</b></span>
+                        <a href="#source"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/services/sunbirdqrscanner.service.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { NavigationExtras, Router } from &#x27;@angular/router&#x27;;
+import { QrScannerIOSComponent } from &#x27;@app/app/components/qr-scanner-ios/qr-scanner-ios.component&#x27;;
+import { GUEST_STUDENT_TABS, GUEST_TEACHER_TABS, initTabs } from &#x27;@app/app/module.service&#x27;;
+import { AppGlobalService, CommonUtilService, QRScannerResultHandler, TelemetryGeneratorService } from &#x27;@app/services/&#x27;;
+import { AndroidPermissionsService } from &#x27;@app/services/android-permissions/android-permissions.service&#x27;;
+import { ContainerService } from &#x27;@app/services/container.services&#x27;;
+import { AppVersion } from &#x27;@ionic-native/app-version/ngx&#x27;;
+import { ModalController, Platform, ToastController } from &#x27;@ionic/angular&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+import { take } from &#x27;rxjs/operators&#x27;;
+import { CorrelationData, Profile, ProfileType, TelemetryObject } from &#x27;sunbird-sdk&#x27;;
+import { AndroidPermission, AndroidPermissionsStatus, PermissionAskedEnum } from &#x27;./android-permissions/android-permission&#x27;;
+import {
+  CorReleationDataType, Environment,
+  ImpressionSubtype,
+  ImpressionType,
+  InteractSubtype,
+  InteractType,
+  Mode,
+  PageId
+} from &#x27;./telemetry-constants&#x27;;
+import { ManageLearnCertificateService } from &#x27;@app/app/manage-learn/core/services/manage-learn-certificate.service&#x27;;
+
+declare const cordova;
+
+@Injectable()
+export class SunbirdQRScanner {
+  profile: Profile;
+  private readonly QR_SCANNER_TEXT &#x3D; [
+    &#x27;SCAN_QR_CODE&#x27;,
+    &#x27;SCAN_QR_INSTRUCTION&#x27;,
+    &#x27;UNKNOWN_QR&#x27;,
+    &#x27;NO_QR_CODE&#x27;,
+    &#x27;CANCEL&#x27;,
+    &#x27;TRY_AGAIN&#x27;,
+  ];
+  private mQRScannerText;
+  backButtonFunc &#x3D; undefined;
+  source: string;
+  showButton &#x3D; false;
+  appName &#x3D; &#x27;&#x27;;
+  private isScannerActive &#x3D; false;
+  private qrModal: HTMLIonModalElement
+  constructor(
+    private translate: TranslateService,
+    private platform: Platform,
+    private qrScannerResultHandler: QRScannerResultHandler,
+    private telemetryGeneratorService: TelemetryGeneratorService,
+    private appGlobalService: AppGlobalService,
+    private container: ContainerService,
+    private permission: AndroidPermissionsService,
+    private commonUtilService: CommonUtilService,
+    private appVersion: AppVersion,
+    private toastController: ToastController,
+    private router: Router,
+    private modalCtrl: ModalController,
+    private projectCert : ManageLearnCertificateService
+  ) {
+    const that &#x3D; this;
+    this.translate.get(this.QR_SCANNER_TEXT).subscribe((data) &#x3D;&gt; {
+      that.mQRScannerText &#x3D; data;
+    });
+
+    this.translate.onLangChange.subscribe(() &#x3D;&gt; {
+      that.mQRScannerText &#x3D; that.translate.instant(that.QR_SCANNER_TEXT);
+    });
+
+    this.appVersion.getAppName().then((appName: any) &#x3D;&gt; this.appName &#x3D; appName);
+  }
+
+  public async startScanner(
+    source: string,
+    showButton: boolean &#x3D; false,
+    screenTitle &#x3D; this.mQRScannerText[&#x27;SCAN_QR_CODE&#x27;],
+    displayText &#x3D; this.mQRScannerText[&#x27;SCAN_QR_INSTRUCTION&#x27;],
+    displayTextColor &#x3D; &#x27;#0b0b0b&#x27;,
+    buttonText &#x3D; this.mQRScannerText[&#x27;NO_QR_CODE&#x27;]
+  ): Promise&lt;string | undefined&gt; {
+    return new Promise&lt;string | undefined&gt;(async (resolve, reject) &#x3D;&gt; {
+      this.source &#x3D; source;
+      this.showButton &#x3D; showButton;
+      
+      this.platform.pause.pipe(
+        take(1)
+      ).subscribe(() &#x3D;&gt; this.stopScanner());
+      this.generateImpressionTelemetry(source);
+      this.generateStartEvent(source);
+      if (this.platform.is(&quot;ios&quot;)) {
+        resolve(this.startQRScanner(screenTitle, displayText, displayTextColor, buttonText, showButton, source));
+      } else {
+        const permissionStatus &#x3D; await this.commonUtilService.getGivenPermissionStatus(AndroidPermission.CAMERA);
+        if (permissionStatus.hasPermission) {
+          resolve(this.startQRScanner(screenTitle, displayText, displayTextColor, buttonText, showButton, source));
+        } else if (permissionStatus.isPermissionAlwaysDenied) {
+          await this.commonUtilService.showSettingsPageToast(&#x27;CAMERA_PERMISSION_DESCRIPTION&#x27;, this.appName, PageId.QRCodeScanner, false);
+        } else {
+          this.showPopover(source).then((result) &#x3D;&gt; {
+            if (result) {
+              resolve(result);
+            } else {
+              resolve(undefined);
+            }
+          });
+        }
+      }
+    });
+  }
+
+  private async showPopover(pageId: string): Promise&lt;string | undefined&gt; {
+    return new Promise&lt;string | undefined&gt;(async (resolve, reject) &#x3D;&gt; {
+      const confirm &#x3D; await this.commonUtilService.buildPermissionPopover(
+        async (whichBtnClicked: string) &#x3D;&gt; {
+          if (whichBtnClicked &#x3D;&#x3D;&#x3D; this.commonUtilService.translateMessage(&#x27;NOT_NOW&#x27;)) {
+            this.telemetryGeneratorService.generateInteractTelemetry(
+                InteractType.TOUCH,
+                InteractSubtype.NOT_NOW_CLICKED,
+                pageId &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+                PageId.PERMISSION_POPUP);
+            await this.commonUtilService.showSettingsPageToast
+            (&#x27;CAMERA_PERMISSION_DESCRIPTION&#x27;, this.appName, PageId.QRCodeScanner, this.appGlobalService.isOnBoardingCompleted);
+          } else {
+            this.telemetryGeneratorService.generateInteractTelemetry(
+                InteractType.TOUCH,
+                InteractSubtype.ALLOW_CLICKED,
+                pageId &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+                PageId.PERMISSION_POPUP);
+            this.appGlobalService.setIsPermissionAsked(PermissionAskedEnum.isCameraAsked, true);
+            this.appGlobalService.isNativePopupVisible &#x3D; true;
+            this.permission.requestPermissions([AndroidPermission.CAMERA]).subscribe((status: AndroidPermissionsStatus) &#x3D;&gt; {
+              if (status &amp;&amp; status.hasPermission) {
+                  this.telemetryGeneratorService.generateInteractTelemetry(
+                      InteractType.TOUCH,
+                      InteractSubtype.ALLOW_CLICKED,
+                      pageId &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+                      PageId.APP_PERMISSION_POPUP
+                  );
+                  this.startScanner(this.source, this.showButton).then((result) &#x3D;&gt; {
+                    if (result) {
+                      resolve(result);
+                    } else {
+                      resolve(undefined);
+                    }
+                    this.appGlobalService.isNativePopupVisible &#x3D; false;
+                  });
+              } else {
+                  this.telemetryGeneratorService.generateInteractTelemetry(
+                      InteractType.TOUCH,
+                      InteractSubtype.DENY_CLICKED,
+                      pageId &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+                      PageId.APP_PERMISSION_POPUP
+                  );
+                  this.commonUtilService.showSettingsPageToast
+                (&#x27;CAMERA_PERMISSION_DESCRIPTION&#x27;, this.appName, PageId.QRCodeScanner, this.appGlobalService.isOnBoardingCompleted);
+                  this.appGlobalService.setNativePopupVisible(false, 1000);
+              }
+            }, (e) &#x3D;&gt; { reject(e); });
+          }
+        }, this.appName, this.commonUtilService.translateMessage(&#x27;CAMERA&#x27;), &#x27;CAMERA_PERMISSION_DESCRIPTION&#x27;, PageId.QRCodeScanner,
+          this.appGlobalService.isOnBoardingCompleted
+      );
+
+      await confirm.present();
+    });
+  }
+
+  public stopScanner() {
+    if (!this.isScannerActive) {
+      return;
+    }
+    if (this.platform.is(&quot;ios&quot;) &amp;&amp; this.qrModal) this.qrModal.dismiss();
+    // to prevent back event propagating up to parent
+    setTimeout(() &#x3D;&gt; {
+      (window as any).qrScanner.stopScanner();
+      this.isScannerActive &#x3D; false;
+    }, 100);
+  }
+
+private getProfileSettingConfig() {
+    this.profile &#x3D; this.appGlobalService.getCurrentUser();
+    if (this.commonUtilService.isAccessibleForNonStudentRole(this.profile.profileType)) {
+      initTabs(this.container, GUEST_TEACHER_TABS);
+    } else if (this.profile.profileType &#x3D;&#x3D;&#x3D; ProfileType.STUDENT) {
+      initTabs(this.container, GUEST_STUDENT_TABS);
+    }
+    this.stopScanner();
+    const navigationExtras: NavigationExtras &#x3D; { state: { loginMode: &#x27;guest&#x27; } };
+    this.router.navigate([&#x27;/tabs&#x27;], navigationExtras);
+  }
+
+  private async startQRScanner(
+    screenTitle: string, displayText: string, displayTextColor: string,
+    buttonText: string, showButton: boolean, source: string): Promise&lt;string | undefined&gt; {
+
+    if (this.isScannerActive) {
+      return;
+    }
+    this.isScannerActive &#x3D; true;
+    if (this.platform.is(&quot;ios&quot;)) {
+      this.qrModal &#x3D; await this.modalCtrl.create({
+        component: QrScannerIOSComponent,
+        cssClass: &#x27;qr-scanner-modal&#x27;,
+        showBackdrop: false,
+        backdropDismiss: true,
+        mode: &#x27;ios&#x27;,
+        swipeToClose: false
+      })
+      await this.qrModal.present();
+      this.qrModal.onWillDismiss().finally(() &#x3D;&gt; {
+        this.stopScanner();
+      });
+    }
+    
+    return new Promise&lt;string | undefined&gt;((resolve, reject) &#x3D;&gt; {
+      (window as any).qrScanner.startScanner(screenTitle, displayText,
+        displayTextColor, buttonText, showButton, this.platform.isRTL, async (scannedData) &#x3D;&gt; {
+          if (scannedData &#x3D;&#x3D;&#x3D; &#x27;skip&#x27;) {
+            this.stopScanner();
+            this.telemetryGeneratorService.generateInteractTelemetry(
+              InteractType.TOUCH,
+              InteractSubtype.NO_QR_CODE_CLICKED,
+              Environment.ONBOARDING,
+              PageId.QRCodeScanner);
+            this.generateEndEvent(source, &#x27;&#x27;);
+          } else {
+            const dialCode &#x3D; await this.qrScannerResultHandler.parseDialCode(scannedData);
+            if (scannedData &#x3D;&#x3D;&#x3D; &#x27;cancel&#x27; ||
+              scannedData &#x3D;&#x3D;&#x3D; &#x27;cancel_hw_back&#x27; ||
+              scannedData &#x3D;&#x3D;&#x3D; &#x27;cancel_nav_back&#x27;) {
+              this.telemetryGeneratorService.generateBackClickedTelemetry(PageId.SCAN,
+                source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+                scannedData &#x3D;&#x3D;&#x3D; &#x27;cancel_nav_back&#x27;);
+              this.telemetryGeneratorService.generateBackClickedNewTelemetry(
+                scannedData &#x3D;&#x3D;&#x3D; &#x27;cancel_hw_back&#x27;,
+                this.appGlobalService.isOnBoardingCompleted ? Environment.HOME : Environment.ONBOARDING,
+                PageId.SCAN
+               );
+              this.telemetryGeneratorService.generateInteractTelemetry(
+                InteractType.OTHER,
+                InteractSubtype.QRCodeScanCancelled,
+                Environment.HOME,
+                PageId.QRCodeScanner);
+              this.generateEndEvent(source, &#x27;&#x27;);
+            } else if (dialCode) {
+              const corRelationList: Array&lt;CorrelationData&gt; &#x3D; [];
+              corRelationList.push({id: dialCode, type: CorReleationDataType.QR});
+              this.telemetryGeneratorService.generateInteractTelemetry(
+                InteractType.QR_CAPTURED,
+                &#x27;&#x27;,
+                source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+                PageId.SCAN,
+                undefined,
+                undefined,
+                undefined,
+                corRelationList);
+              this.generateImpressionTelemetry(source, dialCode);
+              this.qrScannerResultHandler.handleDialCode(source, scannedData, dialCode);
+
+            } else if (this.qrScannerResultHandler.isContentId(scannedData)) {
+              this.qrScannerResultHandler.handleContentId(source, scannedData);
+            } else if(scannedData.includes(&#x27;ProjectCertificate&#x27;)) {
+              this.projectCert.getProjectCertificate(scannedData);
+            } else if(scannedData.includes(&#x27;data&#x3D;&#x27;) || scannedData.includes(&#x27;t&#x3D;URL&#x27;)) {
+              this.qrScannerResultHandler.handleRcCertsQR(scannedData);
+            } else if (scannedData.includes(&#x27;/certs/&#x27;)) {
+              this.qrScannerResultHandler.handleCertsQR(source, scannedData);
+            } else if(scannedData.includes(&#x27;/manage-learn/&#x27;)) {
+              this.qrScannerResultHandler.manageLearScan(scannedData);
+            } else {
+              this.qrScannerResultHandler.handleInvalidQRCode(source, scannedData);
+              this.showInvalidCodeAlert(scannedData);
+            }
+            this.stopScanner();
+          }
+          resolve(scannedData);
+        }, (e) &#x3D;&gt; {
+          reject(e);
+          if (this.platform.is(&quot;ios&quot;) &amp;&amp; [&quot;camera_access_denied&quot;, &quot;camera_access_restricted&quot;].includes(e)) {
+            this.commonUtilService.showSettingsPageToast(&#x27;CAMERA_PERMISSION_DESCRIPTION&#x27;, this.appName, PageId.QRCodeScanner, false)
+          }
+          this.stopScanner();
+        });
+    });
+  }
+
+private generateImpressionTelemetry(source, dialCode?) {
+    if (dialCode) {
+     const corRelationList: Array&lt;CorrelationData&gt; &#x3D; [];
+     corRelationList.push({id: dialCode, type: CorReleationDataType.QR});
+     this.telemetryGeneratorService.generateImpressionTelemetry(
+      ImpressionType.QR_REQUEST, &#x27;&#x27;,
+      PageId.SCAN,
+      source ? Environment.ONBOARDING : Environment.HOME, &#x27;&#x27;, &#x27;&#x27;, &#x27;&#x27;,
+      undefined,
+      corRelationList);
+     } else {
+      this.telemetryGeneratorService.generatePageLoadedTelemetry(
+        PageId.SCAN,
+        source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME
+     );
+      this.telemetryGeneratorService.generateImpressionTelemetry(
+        ImpressionType.VIEW,
+        ImpressionSubtype.QRCodeScanInitiate,
+        source,
+        source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME);
+     }
+  }
+
+private generateStartEvent(pageId: string) {
+    const telemetryObject &#x3D; new TelemetryObject(&#x27;&#x27;, &#x27;qr&#x27;, undefined);
+    this.telemetryGeneratorService.generateStartTelemetry(
+      PageId.QRCodeScanner,
+      telemetryObject);
+  }
+
+private generateEndEvent(pageId: string, qrData: string) {
+    if (pageId) {
+      const telemetryObject: TelemetryObject &#x3D; new TelemetryObject(qrData, &#x27;qr&#x27;, undefined);
+
+      this.telemetryGeneratorService.generateEndTelemetry(
+        &#x27;qr&#x27;,
+        Mode.PLAY,
+        PageId.QRCodeScanner,
+        Environment.HOME,
+        telemetryObject
+      );
+    }
+  }
+
+  private async showInvalidCodeAlert(scannedData) {
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.OTHER,
+      InteractSubtype.QR_CODE_INVALID,
+      this.source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+      this.source
+    );
+    if (this.source !&#x3D;&#x3D; &#x27;permission&#x27;) {
+      const corRelationList: CorrelationData[] &#x3D; [{
+        id: PageId.SCAN,
+        type: CorReleationDataType.CHILD_UI
+      }];
+      this.telemetryGeneratorService.generateImpressionTelemetry(
+          InteractSubtype.QR_CODE_INVALID, &#x27;&#x27;,
+          this.source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? PageId.SCAN_OR_MANUAL : this.source,
+          this.source &#x3D;&#x3D;&#x3D; PageId.ONBOARDING_PROFILE_PREFERENCES ? Environment.ONBOARDING : Environment.HOME,
+          undefined,
+          undefined,
+          undefined,
+          undefined,
+          corRelationList
+      );
+      this.commonUtilService.afterOnBoardQRErrorAlert(&#x27;INVALID_QR&#x27;, &#x27;UNKNOWN_QR&#x27;, this.source, scannedData);
+      return;
+    }
+  }
+}
+export interface QRResultCallback {
+  dialcode(scanResult: string, code: string);
+
+  content(scanResult: string, contentId: string);
+}</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'SunbirdQRScanner.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>
