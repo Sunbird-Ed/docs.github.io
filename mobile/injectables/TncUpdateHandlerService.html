@@ -1,0 +1,1408 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >TncUpdateHandlerService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/services/handlers/tnc-update-handler.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#modal" >modal</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkBmc" >checkBmc</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#checkDistrictMapping" >checkDistrictMapping</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#checkForTncUpdate" >checkForTncUpdate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#dismissTncPage" >dismissTncPage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#hasProfileTncUpdated" >hasProfileTncUpdated</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#isSSOUser" >isSSOUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#navigateToBmc" >navigateToBmc</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#navigateToDistrictMapping" >navigateToDistrictMapping</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#preRequirementToBmcNavigation" >preRequirementToBmcNavigation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#presentTncPage" >presentTncPage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#updateUserAsGuest" >updateUserAsGuest</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(profileService: ProfileService, authService: AuthService, preferences: SharedPreferences, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, formAndFrameworkUtilService: <a href="../injectables/FormAndFrameworkUtilService.html" target="_self">FormAndFrameworkUtilService</a>, modalCtrl: ModalController, router: Router, externalIdVerificationService: <a href="../injectables/ExternalIdVerificationService.html" target="_self">ExternalIdVerificationService</a>, appGlobalService: <a href="../injectables/AppGlobalService.html" target="_self">AppGlobalService</a>, consentService: <a href="../injectables/ConsentService.html" target="_self">ConsentService</a>, frameworkDetailsService: <a href="../injectables/FrameworkDetailsService.html" target="_self">FrameworkDetailsService</a>, events: <a href="../injectables/Events.html" target="_self">Events</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:28</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ProfileService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>authService</td>
+                                                  
+                                                        <td>
+                                                                    <code>AuthService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>preferences</td>
+                                                  
+                                                        <td>
+                                                                    <code>SharedPreferences</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formAndFrameworkUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FormAndFrameworkUtilService.html" target="_self" >FormAndFrameworkUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>externalIdVerificationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ExternalIdVerificationService.html" target="_self" >ExternalIdVerificationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appGlobalService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppGlobalService.html" target="_self" >AppGlobalService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>consentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ConsentService.html" target="_self" >ConsentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>frameworkDetailsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/FrameworkDetailsService.html" target="_self" >FrameworkDetailsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>events</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >Events</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkBmc"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>checkBmc</b></span>
+                        <a href="#checkBmc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkBmc(profile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="90"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:90</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkDistrictMapping"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>checkDistrictMapping</b></span>
+                        <a href="#checkDistrictMapping"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkDistrictMapping(profile, locationMappingConfig, userDetails)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="175"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:175</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>locationMappingConfig</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userDetails</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForTncUpdate"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>checkForTncUpdate</b></span>
+                        <a href="#checkForTncUpdate"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>checkForTncUpdate()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="45"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:45</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dismissTncPage"></a>
+                    <span class="name">
+                        <span class="modifier">Public</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>dismissTncPage</b></span>
+                        <a href="#dismissTncPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>dismissTncPage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="84"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:84</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="hasProfileTncUpdated"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>hasProfileTncUpdated</b></span>
+                        <a href="#hasProfileTncUpdated"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>hasProfileTncUpdated(user: ServerProfile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="80"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:80</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>user</td>
+                                    <td>
+                                            <code>ServerProfile</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isSSOUser"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>isSSOUser</b></span>
+                        <a href="#isSSOUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>isSSOUser(profile: Profile)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="165"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:165</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>profile</td>
+                                    <td>
+                                            <code>Profile</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;boolean&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToBmc"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>navigateToBmc</b></span>
+                        <a href="#navigateToBmc"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>navigateToBmc(serverProfile, userprofile, locationMappingConfig)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="131"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:131</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>serverProfile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>userprofile</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>locationMappingConfig</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToDistrictMapping"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>navigateToDistrictMapping</b></span>
+                        <a href="#navigateToDistrictMapping"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>navigateToDistrictMapping()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="preRequirementToBmcNavigation"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>preRequirementToBmcNavigation</b></span>
+                        <a href="#preRequirementToBmcNavigation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>preRequirementToBmcNavigation(userId, locationMappingConfig)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="117"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:117</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>userId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>locationMappingConfig</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="presentTncPage"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>presentTncPage</b></span>
+                        <a href="#presentTncPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>presentTncPage(navParams: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="72"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:72</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>navParams</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateUserAsGuest"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>updateUserAsGuest</b></span>
+                        <a href="#updateUserAsGuest"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>updateUserAsGuest(guestProfile?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="204"
+                            class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:204</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>guestProfile</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+            <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="modal"></a>
+                    <span class="name">
+                        <span ><b>modal</b></span>
+                        <a href="#modal"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/services/handlers/tnc-update-handler.service.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Inject, Injectable } from &#x27;@angular/core&#x27;;
+import { NavigationExtras, Router } from &#x27;@angular/router&#x27;;
+import { PreferenceKey, ProfileConstants, RouterLinks } from &#x27;@app/app/app.constant&#x27;;
+import { FieldConfig } from &#x27;@app/app/components/common-forms/field-config&#x27;;
+import { FormConstants } from &#x27;@app/app/form.constants&#x27;;
+import { TermsAndConditionsPage } from &#x27;@app/app/terms-and-conditions/terms-and-conditions.page&#x27;;
+import { ModalController } from &#x27;@ionic/angular&#x27;;
+import {
+  AuthService,
+  CachedItemRequestSourceFrom, Profile, ProfileService,
+  ProfileType, ServerProfile, ServerProfileDetailsRequest,
+  SharedPreferences
+} from &#x27;sunbird-sdk&#x27;;
+import { AppGlobalService } from &#x27;../app-global-service.service&#x27;;
+import { CommonUtilService } from &#x27;../common-util.service&#x27;;
+import { ConsentService } from &#x27;../consent-service&#x27;;
+import { ExternalIdVerificationService } from &#x27;../externalid-verification.service&#x27;;
+import { FormAndFrameworkUtilService } from &#x27;../formandframeworkutil.service&#x27;;
+import onboarding from &#x27;../../assets/configurations/config.json&#x27;;
+import { FrameworkDetailsService } from &#x27;../framework-details.service&#x27;;
+import { Events } from &#x27;@app/util/events&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;
+})
+export class TncUpdateHandlerService {
+
+  modal: any;
+
+  constructor(
+    @Inject(&#x27;PROFILE_SERVICE&#x27;) private profileService: ProfileService,
+    @Inject(&#x27;AUTH_SERVICE&#x27;) private authService: AuthService,
+    @Inject(&#x27;SHARED_PREFERENCES&#x27;) private preferences: SharedPreferences,
+    private commonUtilService: CommonUtilService,
+    private formAndFrameworkUtilService: FormAndFrameworkUtilService,
+    private modalCtrl: ModalController,
+    private router: Router,
+    private externalIdVerificationService: ExternalIdVerificationService,
+    private appGlobalService: AppGlobalService,
+    private consentService: ConsentService,
+    private frameworkDetailsService: FrameworkDetailsService,
+    private events: Events
+  ) { }
+
+  public async checkForTncUpdate() {
+    const sessionData &#x3D; await this.authService.getSession().toPromise();
+    if (!sessionData) {
+      return;
+    }
+    const request: ServerProfileDetailsRequest &#x3D; {
+      userId: sessionData.userToken,
+      requiredFields: ProfileConstants.REQUIRED_FIELDS,
+      from: CachedItemRequestSourceFrom.SERVER
+    };
+    this.profileService.getServerProfilesDetails(request).toPromise()
+      .then(async (profile) &#x3D;&gt; {
+        if (this.hasProfileTncUpdated(profile)) {
+          this.presentTncPage({ profile });
+        } else {
+          const userDetails &#x3D; await this.profileService.getActiveSessionProfile({ requiredFields: ProfileConstants.REQUIRED_FIELDS }).toPromise();
+          if (!profile.managedBy &amp;&amp; !await this.isSSOUser(userDetails) &amp;&amp; !profile.dob) {
+              this.router.navigate([RouterLinks.SIGNUP_BASIC]);
+          } else {
+            this.checkBmc(profile);
+          }
+        }
+      }).catch(e &#x3D;&gt; {
+        this.appGlobalService.closeSigninOnboardingLoader();
+      });
+  }
+
+  async presentTncPage(navParams: any) {
+    this.modal &#x3D; await this.modalCtrl.create({
+      component: TermsAndConditionsPage,
+      componentProps: navParams
+    });
+    await this.modal.present();
+  }
+
+  private hasProfileTncUpdated(user: ServerProfile): boolean {
+    return !!(user.promptTnC &amp;&amp; user.tncLatestVersion &amp;&amp; user.tncLatestVersionUrl);
+  }
+
+  public async dismissTncPage() {
+    if (this.modal) {
+      await this.modal.dismiss();
+    }
+  }
+
+  private async checkBmc(profile) {
+    const locationMappingConfig: FieldConfig&lt;any&gt;[] &#x3D; await this.formAndFrameworkUtilService.getFormFields(FormConstants.LOCATION_MAPPING);
+    const userDetails &#x3D; await this.profileService.getActiveSessionProfile({ requiredFields: ProfileConstants.REQUIRED_FIELDS }).toPromise();
+    if (await this.isSSOUser(userDetails)) {
+      await this.consentService.getConsent(userDetails, true);
+    }
+    if ((userDetails &amp;&amp; userDetails.grade &amp;&amp; userDetails.medium &amp;&amp; userDetails.syllabus &amp;&amp;
+      !userDetails.grade.length &amp;&amp; !userDetails.medium.length &amp;&amp; !userDetails.syllabus.length)
+      || ((userDetails.profileType &#x3D;&#x3D;&#x3D; ProfileType.NONE &amp;&amp; userDetails.serverProfile.profileUserType.type &#x3D;&#x3D;&#x3D; ProfileType.NONE) ||
+       (userDetails.profileType &#x3D;&#x3D;&#x3D; ProfileType.OTHER.toUpperCase() &amp;&amp;
+        userDetails.serverProfile.profileUserType.type &#x3D;&#x3D;&#x3D; ProfileType.OTHER.toUpperCase())
+        || userDetails.serverProfile.profileUserType.type &#x3D;&#x3D;&#x3D; ProfileType.OTHER.toUpperCase())) {
+          const guestProfile &#x3D; await this.commonUtilService.getGuestUserConfig().then((profile) &#x3D;&gt; {
+            return profile;
+        });
+      if ( guestProfile.board &amp;&amp; guestProfile.board.length &amp;&amp; onboarding.skipOnboardingForLoginUser &amp;&amp; userDetails.profileType !&#x3D;&#x3D; ProfileType.ADMIN) {
+        await this.updateUserAsGuest(guestProfile);
+      } else {
+        this.preRequirementToBmcNavigation(profile.userId, locationMappingConfig);
+      }
+    } else {
+      if (!onboarding.skipOnboardingForLoginUser) {
+        this.checkDistrictMapping(profile, locationMappingConfig, userDetails);
+      }
+    }
+  }
+
+  private async preRequirementToBmcNavigation(userId, locationMappingConfig) {
+    const serverProfile &#x3D; await this.profileService.getServerProfilesDetails({
+      userId,
+      requiredFields: ProfileConstants.REQUIRED_FIELDS,
+      from: CachedItemRequestSourceFrom.SERVER
+    }).toPromise();
+
+    const userprofile &#x3D; await this.profileService.getActiveSessionProfile({
+      requiredFields: ProfileConstants.REQUIRED_FIELDS
+    }).toPromise();
+
+    this.navigateToBmc(serverProfile, userprofile, locationMappingConfig);
+  }
+
+  private async navigateToBmc(serverProfile, userprofile, locationMappingConfig) {
+    this.formAndFrameworkUtilService.updateLoggedInUser(serverProfile, userprofile)
+      .then((value) &#x3D;&gt; {
+        const categoriesProfileData &#x3D; {
+          hasFilledLocation: this.commonUtilService.isUserLocationAvalable(userprofile, locationMappingConfig),
+          showOnlyMandatoryFields: true,
+          profile: value[&#x27;profile&#x27;],
+          isRootPage: true,
+          noOfStepsToCourseToc: 1
+        };
+        if (userprofile &amp;&amp; userprofile.grade &amp;&amp; userprofile.medium &amp;&amp; userprofile.syllabus &amp;&amp;
+          !userprofile.grade.length &amp;&amp; !userprofile.medium.length &amp;&amp; !userprofile.syllabus.length &amp;&amp;
+          (userprofile.profileType &#x3D;&#x3D;&#x3D; ProfileType.NONE || userprofile.profileType &#x3D;&#x3D;&#x3D; ProfileType.OTHER.toUpperCase()
+              || serverProfile.userType &#x3D;&#x3D;&#x3D; ProfileType.OTHER.toUpperCase())) {
+              this.router.navigate([RouterLinks.USER_TYPE_SELECTION_LOGGEDIN], {
+                state: { categoriesProfileData }
+              });
+        } else if (userprofile.profileType &#x3D;&#x3D;&#x3D; ProfileType.NONE ||
+            userprofile.profileType &#x3D;&#x3D;&#x3D; ProfileType.OTHER.toUpperCase()
+            || serverProfile.userType &#x3D;&#x3D;&#x3D; ProfileType.OTHER.toUpperCase()) {
+          categoriesProfileData[&#x27;status&#x27;] &#x3D; true;
+          categoriesProfileData[&#x27;isUserLocationAvalable&#x27;] &#x3D;
+          this.commonUtilService.isUserLocationAvalable(userprofile, locationMappingConfig);
+          this.router.navigate([RouterLinks.USER_TYPE_SELECTION_LOGGEDIN], {
+            state: { categoriesProfileData }
+          });
+        } else {
+          this.router.navigate([&#x60;/${RouterLinks.PROFILE}/${RouterLinks.CATEGORIES_EDIT}&#x60;], {
+            state: categoriesProfileData
+          });
+        }
+      });
+  }
+
+  async isSSOUser(profile: Profile): Promise&lt;boolean&gt; {
+    const custodianOrgId &#x3D; await this.formAndFrameworkUtilService.getCustodianOrgId();
+    if (profile.serverProfile &amp;&amp; profile.serverProfile.rootOrg &amp;&amp;
+      profile.serverProfile.rootOrg.rootOrgId &#x3D;&#x3D;&#x3D; custodianOrgId) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  private checkDistrictMapping(profile, locationMappingConfig, userDetails) {
+    this.formAndFrameworkUtilService.getCustodianOrgId()
+      .then(async (custodianOrgId: string) &#x3D;&gt; {
+        const isCustodianOrgId &#x3D; profile.rootOrg.rootOrgId &#x3D;&#x3D;&#x3D; custodianOrgId;
+        if (isCustodianOrgId &amp;&amp; !this.commonUtilService.isUserLocationAvalable(userDetails, locationMappingConfig)) {
+          this.navigateToDistrictMapping();
+        } else {
+          if (!(await this.isSSOUser(userDetails))) {
+            this.appGlobalService.showYearOfBirthPopup(userDetails.serverProfile);
+          }
+          this.externalIdVerificationService.showExternalIdVerificationPopup();
+        }
+      })
+      .catch(() &#x3D;&gt; {
+        this.appGlobalService.closeSigninOnboardingLoader();
+        this.externalIdVerificationService.showExternalIdVerificationPopup();
+      });
+  }
+
+  private navigateToDistrictMapping() {
+    const navigationExtras: NavigationExtras &#x3D; {
+      state: {
+        isShowBackButton: false,
+        noOfStepsToCourseToc: 1
+      }
+    };
+    this.router.navigate([&#x27;/&#x27;, RouterLinks.DISTRICT_MAPPING], navigationExtras);
+  }
+
+  private async updateUserAsGuest(guestProfile?: any) {
+    const loader &#x3D; await this.commonUtilService.getLoader();
+    await loader.present();
+    const req &#x3D; await this.frameworkDetailsService.getFrameworkDetails(guestProfile).then((data) &#x3D;&gt; {
+      return data;
+    });
+    const request &#x3D; {
+      ...req,
+      userId: this.appGlobalService.getCurrentUser().uid,
+    };
+    await this.preferences.putString(PreferenceKey.SELECTED_USER_TYPE, request.profileUserTypes[0].type).toPromise();
+    await this.profileService.updateServerProfile(request).toPromise()
+      .then(async (data) &#x3D;&gt; {
+        await loader.dismiss();
+        this.commonUtilService.showToast(
+          this.commonUtilService.translateMessage(&#x27;FRMELEMNTS_MSG_CHANGE_PROFILE&#x27;, {role: req.profileUserTypes[0].type}));
+        this.events.publish(&#x27;refresh:loggedInProfile&#x27;);
+      }).catch(async (e) &#x3D;&gt; {
+        await loader.dismiss();
+        console.log(&#x27;server error for update profile&#x27;, e);
+      });
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'TncUpdateHandlerService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

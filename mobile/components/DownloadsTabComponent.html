@@ -1,0 +1,2039 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  DownloadsTabComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/download-manager/downloads-tab/downloads-tab.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-downloads-tab</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./downloads-tab.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./downloads-tab.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#defaultImg" >defaultImg</a>
+                            </li>
+                            <li>
+                                <a href="#deleteAllConfirm" >deleteAllConfirm</a>
+                            </li>
+                            <li>
+                                <a href="#deleteAllPopupPresent" >deleteAllPopupPresent</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#obsService" >obsService</a>
+                            </li>
+                            <li>
+                                <a href="#selectedContents" >selectedContents</a>
+                            </li>
+                            <li>
+                                <a href="#selectedContentsInfo" >selectedContentsInfo</a>
+                            </li>
+                            <li>
+                                <a href="#selectedFilter" >selectedFilter</a>
+                            </li>
+                            <li>
+                                <a href="#showDeleteButton" >showDeleteButton</a>
+                            </li>
+                            <li>
+                                <a href="#showLoader" >showLoader</a>
+                            </li>
+                            <li>
+                                <a href="#showSelectAll" >showSelectAll</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteAllContents" >deleteAllContents</a>
+                            </li>
+                            <li>
+                                <a href="#deleteContent" >deleteContent</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToDetailsPage" >navigateToDetailsPage</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToObservationDetails" >navigateToObservationDetails</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToProjectDetails" >navigateToProjectDetails</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#selectAllContents" >selectAllContents</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#showDeletePopup" >showDeletePopup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#showObsDeletePopup" >showObsDeletePopup</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#showSortOptions" >showSortOptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#toggleContentSelect" >toggleContentSelect</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#unSelectAllContents" >unSelectAllContents</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#downloadedContents" >downloadedContents</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#deleteContents" >deleteContents</a>
+                            </li>
+                            <li>
+                                <a href="#sortCriteriaChanged" >sortCriteriaChanged</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(popoverCtrl: PopoverController, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, events: <a href="../injectables/Events.html" target="_self">Events</a>, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, navService: <a href="../injectables/NavigationService.html" target="_self">NavigationService</a>, headerService: <a href="../injectables/AppHeaderService.html" target="_self">AppHeaderService</a>, obsService: <a href="../injectables/ObservationService.html" target="_self">ObservationService</a>, router: Router)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>popoverCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>PopoverController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>events</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/Events.html" target="_self" >Events</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationService.html" target="_self" >NavigationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>headerService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppHeaderService.html" target="_self" >AppHeaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>obsService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ObservationService.html" target="_self" >ObservationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section data-compodoc="block-inputs">
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="downloadedContents"></a>
+                        <b>downloadedContents</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Content[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:25</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section data-compodoc="block-outputs">
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="deleteContents"></a>
+                        <b>deleteContents</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:26</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sortCriteriaChanged"></a>
+                        <b>sortCriteriaChanged</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteAllContents"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteAllContents</b></span>
+                        <a href="#deleteAllContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteAllContents()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="217"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:217</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteContent"></a>
+                    <span class="name">
+                        <span ><b>deleteContent</b></span>
+                        <a href="#deleteContent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteContent()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="132"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:132</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToDetailsPage"></a>
+                    <span class="name">
+                        <span ><b>navigateToDetailsPage</b></span>
+                        <a href="#navigateToDetailsPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToDetailsPage(content)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="299"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:299</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>content</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToObservationDetails"></a>
+                    <span class="name">
+                        <span ><b>navigateToObservationDetails</b></span>
+                        <a href="#navigateToObservationDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToObservationDetails(solution)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="336"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:336</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>solution</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToProjectDetails"></a>
+                    <span class="name">
+                        <span ><b>navigateToProjectDetails</b></span>
+                        <a href="#navigateToProjectDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToProjectDetails(project)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="324"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:324</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>project</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectAllContents"></a>
+                    <span class="name">
+                        <span ><b>selectAllContents</b></span>
+                        <a href="#selectAllContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>selectAllContents()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="167"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:167</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showDeletePopup"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>showDeletePopup</b></span>
+                        <a href="#showDeletePopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showDeletePopup(identifier?, type?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="60"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:60</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>identifier</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showObsDeletePopup"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>showObsDeletePopup</b></span>
+                        <a href="#showObsDeletePopup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showObsDeletePopup(identifier)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="354"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:354</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>identifier</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showSortOptions"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>showSortOptions</b></span>
+                        <a href="#showSortOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showSortOptions(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="140"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:140</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="toggleContentSelect"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>toggleContentSelect</b></span>
+                        <a href="#toggleContentSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>toggleContentSelect(event, idx)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="198"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:198</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>idx</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="unSelectAllContents"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>unSelectAllContents</b></span>
+                        <a href="#unSelectAllContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>unSelectAllContents(event?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="181"
+                            class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:181</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defaultImg"></a>
+                    <span class="name">
+                        <span ><b>defaultImg</b></span>
+                        <a href="#defaultImg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>this.commonUtilService.convertFileSrc(&#x27;assets/imgs/ic_launcher.png&#x27;)</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteAllConfirm"></a>
+                    <span class="name">
+                        <span ><b>deleteAllConfirm</b></span>
+                        <a href="#deleteAllConfirm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:34</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteAllPopupPresent"></a>
+                    <span class="name">
+                        <span ><b>deleteAllPopupPresent</b></span>
+                        <a href="#deleteAllPopupPresent"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="obsService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>obsService</b></span>
+                        <a href="#obsService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/ObservationService.html" target="_self" >ObservationService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedContents"></a>
+                    <span class="name">
+                        <span ><b>selectedContents</b></span>
+                        <a href="#selectedContents"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ContentDelete[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedContentsInfo"></a>
+                    <span class="name">
+                        <span ><b>selectedContentsInfo</b></span>
+                        <a href="#selectedContentsInfo"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+    totalSize: 0,
+    count: 0
+  }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedFilter"></a>
+                    <span class="name">
+                        <span ><b>selectedFilter</b></span>
+                        <a href="#selectedFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>MenuOverflow.DOWNLOAD_FILTERS[0]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:33</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showDeleteButton"></a>
+                    <span class="name">
+                        <span ><b>showDeleteButton</b></span>
+                        <a href="#showDeleteButton"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:30</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showLoader"></a>
+                    <span class="name">
+                        <span ><b>showLoader</b></span>
+                        <a href="#showLoader"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showSelectAll"></a>
+                    <span class="name">
+                        <span ><b>showSelectAll</b></span>
+                        <a href="#showSelectAll"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/download-manager/downloads-tab/downloads-tab.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Input, OnInit, Output } from &#x27;@angular/core&#x27;;
+import { MenuOverflow, RouterLinks } from &#x27;@app/app/app.constant&#x27;;
+import { SbPopoverComponent } from &#x27;@app/app/components/popups/sb-popover/sb-popover.component&#x27;;
+import { OverflowMenuComponent } from &#x27;@app/app/profile/overflow-menu/overflow-menu.component&#x27;;
+import { AppHeaderService } from &#x27;@app/services&#x27;;
+import { CommonUtilService } from &#x27;@app/services/common-util.service&#x27;;
+import { NavigationService } from &#x27;@app/services/navigation-handler.service&#x27;;
+import { TelemetryGeneratorService } from &#x27;@app/services/telemetry-generator.service&#x27;;
+import { ContentUtil } from &#x27;@app/util/content-util&#x27;;
+import { PopoverController } from &#x27;@ionic/angular&#x27;;
+import { Events } from &#x27;@app/util/events&#x27;;
+import { Content, ContentDelete, CorrelationData, InteractType, TelemetryObject } from &#x27;sunbird-sdk&#x27;;
+import { ActionButtonType, CorReleationDataType, Environment, InteractSubtype, PageId } from &#x27;../../../services/telemetry-constants&#x27;;
+import { SbGenericPopoverComponent } from &#x27;../../components/popups/sb-generic-popover/sb-generic-popover.component&#x27;;
+import { EmitedContents } from &#x27;../download-manager.interface&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { ObservationService } from &#x27;@app/app/manage-learn/observation/observation.service&#x27;;
+@Component({
+  selector: &#x27;app-downloads-tab&#x27;,
+  templateUrl: &#x27;./downloads-tab.component.html&#x27;,
+  styleUrls: [&#x27;./downloads-tab.component.scss&#x27;],
+})
+export class DownloadsTabComponent implements OnInit {
+
+  @Input() downloadedContents: Content[] &#x3D; [];
+  @Output() deleteContents &#x3D; new EventEmitter();
+  @Output() sortCriteriaChanged &#x3D; new EventEmitter();
+  showLoader &#x3D; false;
+  selectedContents: ContentDelete[] &#x3D; [];
+  showDeleteButton &#x3D; true;
+  deleteAllPopupPresent &#x3D; false;
+  showSelectAll &#x3D; true;
+  selectedFilter: string &#x3D; MenuOverflow.DOWNLOAD_FILTERS[0];
+  deleteAllConfirm;
+  selectedContentsInfo &#x3D; {
+    totalSize: 0,
+    count: 0
+  };
+  defaultImg &#x3D; this.commonUtilService.convertFileSrc(&#x27;assets/imgs/ic_launcher.png&#x27;);
+
+  constructor(
+    private popoverCtrl: PopoverController,
+    private commonUtilService: CommonUtilService,
+    private events: Events,
+    private telemetryGeneratorService: TelemetryGeneratorService,
+    private navService: NavigationService,
+    private headerService: AppHeaderService,
+    public obsService: ObservationService,
+    private router:Router) {
+  }
+
+  ngOnInit(): void {
+    this.headerService.headerEventEmitted$.subscribe(async () &#x3D;&gt; {
+      if (this.deleteAllPopupPresent) {
+        await this.deleteAllConfirm.dismiss();
+      }
+    });
+  }
+
+  async showDeletePopup(identifier?,type?) {
+    if (identifier) {
+      this.telemetryGeneratorService.generateInteractTelemetry(InteractType.TOUCH,
+        InteractSubtype.DELETE_CLICKED,
+        Environment.DOWNLOADS,
+        PageId.DOWNLOADS);
+      const contentDelete: ContentDelete &#x3D; {
+        contentId: identifier,
+        isChildContent: false
+      };
+      contentDelete[&#x27;type&#x27;] &#x3D; (type &#x3D;&#x3D; &#x27;project&#x27; || type &#x3D;&#x3D; &#x27;observation&#x27;) ? type : null
+      this.selectedContents &#x3D; [contentDelete];
+    }
+
+    this.telemetryGeneratorService.generatePageViewTelemetry(
+      identifier ? PageId.SINGLE_DELETE_CONFIRMATION_POPUP : PageId.BULK_DELETE_CONFIRMATION_POPUP, Environment.DOWNLOADS);
+    const deleteConfirm &#x3D; await this.popoverCtrl.create({
+      component: SbPopoverComponent,
+      componentProps: {
+        sbPopoverHeading: this.commonUtilService.translateMessage(&#x27;DELETE_CONTENT&#x27;),
+        actionsButtons: [
+          {
+            btntext: this.commonUtilService.translateMessage(&#x27;REMOVE&#x27;),
+            btnClass: &#x27;popover-color&#x27;
+          },
+        ],
+        icon: null,
+        sbPopoverContent: identifier ? this.commonUtilService.translateMessage(&#x27;DELETE_CONTENT_WARNING&#x27;)
+          : this.commonUtilService.translateMessage(&#x27;DELETE_ALL_CONTENT_WARNING&#x27;)
+      },
+      cssClass: &#x27;sb-popover danger&#x27;,
+    });
+    await deleteConfirm.present();
+    const { data } &#x3D; await deleteConfirm.onDidDismiss();
+    this.showDeleteButton&#x3D;true
+
+    if (data &#x3D;&#x3D;&#x3D; undefined) { // Backdrop clicked
+      if (!identifier) { this.unSelectAllContents(); }
+      this.telemetryGeneratorService.generateInteractTelemetry(
+        InteractType.TOUCH,
+        InteractSubtype.OUTSIDE_POPUP_AREA_CLICKED,
+        Environment.DOWNLOADS,
+        PageId.SINGLE_DELETE_CONFIRMATION_POPUP);
+    } else if (data.closeDeletePopOver) { // Close clicked
+      if (!identifier) { this.unSelectAllContents(); }
+      this.telemetryGeneratorService.generateInteractTelemetry(
+        InteractType.TOUCH,
+        InteractSubtype.CLOSE_CLICKED,
+        Environment.DOWNLOADS,
+        PageId.SINGLE_DELETE_CONFIRMATION_POPUP);
+    } else if (data.canDelete) {
+      const valuesMap &#x3D; {};
+      valuesMap[&#x27;type&#x27;] &#x3D; ActionButtonType.POSITIVE;
+      let telemetryObject: TelemetryObject;
+      if (identifier) {
+        this.downloadedContents.forEach(element &#x3D;&gt; {
+          if (element.identifier &#x3D;&#x3D;&#x3D; identifier) {
+            telemetryObject &#x3D; ContentUtil.getTelemetryObject(element);
+          }
+        });
+      }
+      this.telemetryGeneratorService.generateInteractTelemetry(
+        InteractType.TOUCH,
+        InteractSubtype.ACTION_BUTTON_CLICKED,
+        Environment.DOWNLOADS,
+        identifier ? PageId.SINGLE_DELETE_CONFIRMATION_POPUP : PageId.BULK_DELETE_CONFIRMATION_POPUP,
+        telemetryObject,
+        valuesMap);
+      this.deleteContent();
+    }
+  }
+
+  deleteContent() {
+    const emitedContents: EmitedContents &#x3D; {
+      selectedContentsInfo: this.selectedContentsInfo,
+      selectedContents: this.selectedContents
+    };
+    this.deleteContents.emit(emitedContents);
+  }
+
+  async showSortOptions(event) {
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.SORT_OPTION_CLICKED,
+      Environment.DOWNLOADS,
+      PageId.DOWNLOADS);
+    const sortOptions &#x3D; await this.popoverCtrl.create({
+      component: OverflowMenuComponent,
+      event,
+      componentProps: {
+        list: MenuOverflow.DOWNLOAD_FILTERS
+      },
+      cssClass: &#x27;download-popover&#x27;
+    });
+    await sortOptions.present();
+    const { data } &#x3D; await sortOptions.onDidDismiss();
+    if (data) {
+      if (data.content !&#x3D;&#x3D; this.selectedFilter) {
+        this.selectedFilter &#x3D; data.content;
+        this.sortCriteriaChanged.emit(data);
+      }
+      if (this.deleteAllPopupPresent) {
+        await this.deleteAllConfirm.dismiss({ isLeftButtonClicked: null });
+      }
+    }
+  }
+
+  selectAllContents() {
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.SELECT_ALL_CLICKED,
+      Environment.DOWNLOADS,
+      PageId.DOWNLOADS);
+    this.downloadedContents.forEach(element &#x3D;&gt; {
+      element[&#x27;isSelected&#x27;] &#x3D; true;
+    });
+    this.showDeleteButton &#x3D; false;
+    this.showSelectAll &#x3D; false;
+    this.deleteAllContents();
+  }
+
+  async unSelectAllContents(event?) {
+    this.telemetryGeneratorService.generateInteractTelemetry(
+      InteractType.TOUCH,
+      InteractSubtype.UNSELECT_ALL_CLICKED,
+      Environment.DOWNLOADS,
+      PageId.DOWNLOADS);
+    this.downloadedContents.forEach(element &#x3D;&gt; {
+      element[&#x27;isSelected&#x27;] &#x3D; false;
+    });
+    this.showDeleteButton &#x3D; true;
+    this.showSelectAll &#x3D; true;
+    if (this.deleteAllPopupPresent) {
+      await this.deleteAllConfirm.dismiss({ isLeftButtonClicked: null });
+    }
+    this.selectedContents &#x3D; [];
+  }
+
+  async toggleContentSelect(event, idx) {
+    this.downloadedContents[idx][&#x27;isSelected&#x27;] &#x3D; event.detail.checked;
+    const selectedContents &#x3D; (this.downloadedContents.filter((element) &#x3D;&gt; element[&#x27;isSelected&#x27;]));
+    if (selectedContents.length) {
+      if (selectedContents.length &#x3D;&#x3D;&#x3D; this.downloadedContents.length) {
+        this.showSelectAll &#x3D; false;
+      } else {
+        this.showSelectAll &#x3D; true;
+      }
+      this.showDeleteButton &#x3D; false;
+      this.deleteAllContents();
+    } else {
+      this.showDeleteButton &#x3D; true;
+      if (this.deleteAllPopupPresent) {
+        await this.deleteAllConfirm.dismiss({ isLeftButtonClicked: null });
+      }
+    }
+  }
+
+  async deleteAllContents() {
+    this.selectedContentsInfo &#x3D; {
+      totalSize: 0,
+      count: 0
+    };
+    this.selectedContents &#x3D; [];
+    this.downloadedContents.forEach(element &#x3D;&gt; {
+      if (element[&#x27;isSelected&#x27;]) {
+        const contentDelete: ContentDelete &#x3D; {
+          contentId: element.identifier,
+          isChildContent: false
+        };
+        contentDelete[&#x27;type&#x27;] &#x3D; (element[&#x27;type&#x27;] &#x3D;&#x3D; &#x27;project&#x27; || element[&#x27;type&#x27;] &#x3D;&#x3D; &#x27;observation&#x27;) ? element[&#x27;type&#x27;] : null;
+        this.selectedContentsInfo.totalSize +&#x3D; element.sizeOnDevice;
+        this.selectedContents.push(contentDelete);
+      }
+    });
+    this.selectedContentsInfo.count &#x3D; this.selectedContents.length;
+    this.events.publish(&#x27;selectedContents:changed&#x27;, {
+      selectedContents: this.selectedContentsInfo
+    });
+    if (!this.deleteAllPopupPresent) {
+      this.telemetryGeneratorService.generatePageViewTelemetry(PageId.BULK_DELETE_POPUP, Environment.DOWNLOADS);
+      this.deleteAllPopupPresent &#x3D; true;
+      this.deleteAllConfirm &#x3D; await this.popoverCtrl.create({
+        component: SbGenericPopoverComponent,
+        componentProps: {
+          sbPopoverMainTitle: this.commonUtilService.translateMessage(&#x27;ITEMS_SELECTED&#x27;),
+          selectedContents: this.selectedContentsInfo,
+          actionsButtons: [
+            {
+              btntext: this.commonUtilService.translateMessage(&#x27;CANCEL&#x27;),
+              btnClass: &#x27;sb-btn sb-btn-sm  sb-btn-outline-info&#x27;
+            }, {
+              btntext: this.commonUtilService.translateMessage(&#x27;DELETE&#x27;),
+              btnClass: &#x27;popover-color&#x27;
+            }
+          ],
+          showHeader: false,
+          icon: null
+        },
+        cssClass: &#x27;sb-popover danger sb-dw-delete-popover&#x27;,
+        showBackdrop: false,
+        backdropDismiss: false,
+        animated: true
+      });
+      await this.deleteAllConfirm.present();
+      const { data } &#x3D; await this.deleteAllConfirm.onDidDismiss();
+      this.deleteAllPopupPresent &#x3D; false;
+      const valuesMap &#x3D; {};
+      if (data &amp;&amp; data.isLeftButtonClicked &#x3D;&#x3D;&#x3D; null) {
+        this.unSelectAllContents();
+        this.telemetryGeneratorService.generateInteractTelemetry(
+          InteractType.TOUCH,
+          InteractSubtype.POPUP_DISMISSED,
+          Environment.DOWNLOADS,
+          PageId.BULK_DELETE_POPUP);
+        this.deleteAllConfirm &#x3D; undefined;
+        return;
+      } else if (data.isLeftButtonClicked) {
+        valuesMap[&#x27;type&#x27;] &#x3D; ActionButtonType.NEGATIVE;
+        this.unSelectAllContents();
+      } else {
+        valuesMap[&#x27;type&#x27;] &#x3D; ActionButtonType.POSITIVE;
+        this.telemetryGeneratorService.generateInteractTelemetry(
+          InteractType.TOUCH,
+          InteractSubtype.ACTION_BUTTON_CLICKED,
+          Environment.DOWNLOADS,
+          PageId.BULK_DELETE_POPUP, undefined,
+          valuesMap);
+        this.showDeletePopup();
+      }
+      this.deleteAllConfirm &#x3D; undefined;
+      this.telemetryGeneratorService.generateInteractTelemetry(
+        InteractType.TOUCH,
+        InteractSubtype.ACTION_BUTTON_CLICKED,
+        Environment.DOWNLOADS,
+        PageId.BULK_DELETE_POPUP, undefined,
+        valuesMap);
+    }
+  }
+
+  navigateToDetailsPage(content) {
+    if (content.type &#x3D;&#x3D; &#x27;project&#x27;) {
+      this.navigateToProjectDetails(content)
+      return
+    } else if(content.type &#x3D;&#x3D; &#x27;observation&#x27;){
+      this.navigateToObservationDetails(content)
+      return
+    }
+    const corRelationList: Array&lt;CorrelationData&gt; &#x3D; [{
+        id: CorReleationDataType.DOWNLOADS,
+        type: CorReleationDataType.SECTION
+      }];
+    this.telemetryGeneratorService.generateInteractTelemetry(InteractType.TOUCH,
+      InteractSubtype.CONTENT_CLICKED,
+      Environment.DOWNLOADS,
+      PageId.DOWNLOADS,
+      ContentUtil.getTelemetryObject(content),
+      undefined,
+      ContentUtil.generateRollUp(undefined, content.identifier),
+      corRelationList);
+    this.navService.navigateToDetailPage(
+      content, { content }
+    );
+  }
+
+  navigateToProjectDetails(project) {
+     const selectedFilter &#x3D; project.isAPrivateProgram&#x3D;&#x3D;false ? &#x27;assignedToMe&#x27; : &#x27;createdByMe&#x27;;
+     this.router.navigate([&#x60;${RouterLinks.PROJECT}/${RouterLinks.DETAILS}&#x60;], {
+       queryParams: {
+         projectId: project._id,
+         programId: project.programId,
+         solutionId: project.solutionId,
+         type: selectedFilter,
+       },
+     });
+  }
+
+  navigateToObservationDetails(solution) {
+    let { programId, solutionId, _id: observationId, name: solutionName } &#x3D; solution;
+    this.router.navigate([&#x60;/${RouterLinks.OBSERVATION}/${RouterLinks.OBSERVATION_DETAILS}&#x60;], {
+      queryParams: {
+        programId: programId,
+        solutionId: solutionId,
+        observationId: observationId,
+        solutionName: solutionName,
+      },
+    }).then(success &#x3D;&gt; {
+      this.obsService.obsTraceObj.programId &#x3D; programId;
+      this.obsService.obsTraceObj.solutionId &#x3D; solutionId;
+      this.obsService.obsTraceObj.name &#x3D; solutionName;
+      this.obsService.obsTraceObj.programName &#x3D; solution.programName;
+      this.obsService.obsTraceObj.observationId &#x3D; solution.observationId;
+    });
+ }
+
+ async showObsDeletePopup(identifier){
+  this.telemetryGeneratorService.generatePageViewTelemetry(
+    identifier ? PageId.SINGLE_DELETE_CONFIRMATION_POPUP : PageId.BULK_DELETE_CONFIRMATION_POPUP, Environment.DOWNLOADS);
+  const deleteConfirm &#x3D; await this.popoverCtrl.create({
+    component: SbPopoverComponent,
+    componentProps: {
+      sbPopoverHeading: this.commonUtilService.translateMessage(&#x27;DELETE_CONTENT&#x27;),
+      actionsButtons: [
+        {
+          btntext: this.commonUtilService.translateMessage(&#x27;REMOVE&#x27;),
+          btnClass: &#x27;popover-color&#x27;
+        },
+      ],
+      icon: null,
+      // sbPopoverContent: identifier ? this.commonUtilService.translateMessage(&#x27;DELETE_CONTENT_WARNING&#x27;)
+      //   : this.commonUtilService.translateMessage(&#x27;DELETE_ALL_CONTENT_WARNING&#x27;)
+    },
+    cssClass: &#x27;sb-popover danger&#x27;,
+  });
+  await deleteConfirm.present();
+  const { data } &#x3D; await deleteConfirm.onDidDismiss();
+
+ }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;sb-dw-manager d-flex p-4 width-100&quot;&gt;
+  &lt;div class&#x3D;&quot;pull-left p-4 flex-50&quot;&gt;
+    &lt;span class&#x3D;&quot;selector&quot; *ngIf&#x3D;&quot;showSelectAll&quot; (click)&#x3D;&quot;selectAllContents()&quot;&gt;{{&#x27;SELECT_ALL&#x27; | translate}}&lt;/span&gt;
+    &lt;span class&#x3D;&quot;selector&quot; *ngIf&#x3D;&quot;!showSelectAll&quot;
+      (click)&#x3D;&quot;unSelectAllContents($event)&quot;&gt;{{&#x27;UNSELECT_ALL&#x27; | translate}}&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;p-4 flex-50&quot;&gt;
+    &lt;div class&#x3D;&quot;pull-right&quot; (click)&#x3D;&quot;showSortOptions($event)&quot; role&#x3D;&quot;button&quot; attr.aria-label&#x3D;&quot;Sort By {{selectedFilter | translate}}&quot;&gt;
+      &lt;span class&#x3D;&quot;selector&quot;&gt;{{selectedFilter | translate}}&lt;/span&gt;
+      &lt;span&gt;&lt;img aria-hidden&#x3D;&quot;true&quot; src&#x3D;&quot;./assets/imgs/sort.png&quot; alt&#x3D;&quot;sorting&quot;&gt;&lt;/span&gt;
+      &lt;span role&#x3D;&quot;button&quot; aria-label&#x3D;&quot;sorting&quot;&gt;&lt;ion-icon name&#x3D;&quot;arrow-down&quot; role&#x3D;&quot;button&quot; class&#x3D;&quot;selector&quot;&gt;&lt;/ion-icon&gt;&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;sb-card-container sb-card-download-container&quot; [ngClass]&#x3D;&quot;{&#x27;extra-margin&#x27;:!showDeleteButton}&quot;&gt;
+  &lt;div class&#x3D;&quot;sb-card&quot; *ngFor&#x3D;&quot;let content of downloadedContents; let i &#x3D; index;&quot;
+    [ngClass]&#x3D;&quot;{&#x27;sb-card-active&#x27;: content.isSelected}&quot;&gt;
+    &lt;div class&#x3D;&quot;check-container&quot;&gt;
+      &lt;ion-label&gt;
+        &lt;ion-checkbox (ionChange)&#x3D;&quot;toggleContentSelect($event, i)&quot; [checked]&#x3D;&quot;content.isSelected&quot;&gt;
+        &lt;/ion-checkbox&gt;
+      &lt;/ion-label&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;img-container&quot;&gt;
+      &lt;img alt&#x3D;&quot;content-logo&quot; aria-hidden&#x3D;&quot;true&quot;
+        [src]&#x3D;&quot;commonUtilService.convertFileSrc(content?.contentData?.courseLogoUrl) || commonUtilService.convertFileSrc(content?.contentData?.appIcon) || defaultImg&quot; /&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;sb-card-details&quot;&gt;
+      &lt;div class&#x3D;&quot;sb-card-content&quot; (click)&#x3D;&quot;!content.isSelected &amp;&amp; navigateToDetailsPage(content)&quot;&gt;
+        &lt;div class&#x3D;&quot;title&quot;&gt;{{content.contentData?.name}}&lt;/div&gt;
+        &lt;div class&#x3D;&quot;info grade_ellipsis&quot;&gt;
+          &lt;span class&#x3D;&quot;class&quot;&gt;{{content?.contentData?.subject}}&lt;/span&gt;
+          &lt;span class&#x3D;&quot;separator-dot&quot;&gt;&lt;/span&gt;
+          &lt;span class&#x3D;&quot;subject&quot;&gt;{{content?.contentData?.gradeLevel | csa}}&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;info&quot;&gt; {{ content?.sizeOnDevice | fileSize }}&lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;sb-card-actions&quot;&gt;
+        &lt;button *ngIf&#x3D;&quot;showDeleteButton&quot; attr.aria-label&#x3D;&quot;Delete content {{content.contentData?.name}}&quot; class&#x3D;&quot;action-btn float-end delete mr-8&quot;
+          (click)&#x3D;&quot;showDeletePopup(content.identifier,content.type)&quot;&gt;
+          {{&#x27;DELETE&#x27; | translate}}
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./downloads-tab.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;src/assets/styles/base/_variables.scss&quot;;
+@import &quot;src/assets/styles/mixins/bourbon/library/_clearfix.scss&quot;;
+@import &quot;src/assets/styles/_variables.scss&quot;;
+
+:host {
+  .sb-card-active {
+    background: #{$light-blue-bg} !important;
+  }
+  .sb-dw-manager {
+    @include clearfix;
+    .selector {
+      color: $primary-600;
+      font-size: $font-size-md;
+      vertical-align: middle !important;
+    }
+  }
+
+  ion-checkbox {
+    --border-width: 0.063rem;
+    --border-color: #{map-get($colors, bright_blue_a0)};
+    --background-checked: #{$blue};
+    --border-color-checked: #{$blue};
+    --border-radius: 4px;
+  }
+}
+
+.flex-50{
+  flex: 0 0 50%;
+}
+
+.sb-card-content {
+  width: 65%;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><div class="sb-dw-manager d-flex p-4 width-100">  <div class="pull-left p-4 flex-50">    <span class="selector" *ngIf="showSelectAll" (click)="selectAllContents()">{{\'SELECT_ALL\' | translate}}</span>    <span class="selector" *ngIf="!showSelectAll"      (click)="unSelectAllContents($event)">{{\'UNSELECT_ALL\' | translate}}</span>  </div>  <div class="p-4 flex-50">    <div class="pull-right" (click)="showSortOptions($event)" role="button" attr.aria-label="Sort By {{selectedFilter | translate}}">      <span class="selector">{{selectedFilter | translate}}</span>      <span><img aria-hidden="true" src="./assets/imgs/sort.png" alt="sorting"></span>      <span role="button" aria-label="sorting"><ion-icon name="arrow-down" role="button" class="selector"></ion-icon></span>    </div>  </div></div><div class="sb-card-container sb-card-download-container" [ngClass]="{\'extra-margin\':!showDeleteButton}">  <div class="sb-card" *ngFor="let content of downloadedContents; let i = index;"    [ngClass]="{\'sb-card-active\': content.isSelected}">    <div class="check-container">      <ion-label>        <ion-checkbox (ionChange)="toggleContentSelect($event, i)" [checked]="content.isSelected">        </ion-checkbox>      </ion-label>    </div>    <div class="img-container">      <img alt="content-logo" aria-hidden="true"        [src]="commonUtilService.convertFileSrc(content?.contentData?.courseLogoUrl) || commonUtilService.convertFileSrc(content?.contentData?.appIcon) || defaultImg" />    </div>    <div class="sb-card-details">      <div class="sb-card-content" (click)="!content.isSelected && navigateToDetailsPage(content)">        <div class="title">{{content.contentData?.name}}</div>        <div class="info grade_ellipsis">          <span class="class">{{content?.contentData?.subject}}</span>          <span class="separator-dot"></span>          <span class="subject">{{content?.contentData?.gradeLevel | csa}}</span>        </div>        <div class="info"> {{ content?.sizeOnDevice | fileSize }}</div>      </div>      <div class="sb-card-actions">        <button *ngIf="showDeleteButton" attr.aria-label="Delete content {{content.contentData?.name}}" class="action-btn float-end delete mr-8"          (click)="showDeletePopup(content.identifier,content.type)">          {{\'DELETE\' | translate}}        </button>      </div>    </div>  </div></div></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'accessDiscussion'},{'name': 'AccordionListComponent', 'selector': 'app-accordion-list'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-id-popup'},{'name': 'AcknowledgeResponseComponent', 'selector': 'acknowledge-response'},{'name': 'ActiveDownloadsPage', 'selector': 'app-active-downloads'},{'name': 'ActivityDashboardPage', 'selector': 'activity-dashboard'},{'name': 'ActivityDetailsPage', 'selector': 'app-activity-details'},{'name': 'ActivityTocPage', 'selector': 'activity-toc'},{'name': 'AddActivityToGroupComponent', 'selector': 'add-activity-to-group'},{'name': 'AddActivityToGroupPage', 'selector': 'add-activity-to-group'},{'name': 'AddEntityComponent', 'selector': 'app-add-entity'},{'name': 'AddFilePage', 'selector': 'app-add-file'},{'name': 'AddLinkModalComponent', 'selector': 'app-add-link-modal'},{'name': 'AddMemberToGroupPage', 'selector': 'app-add-member-to-group'},{'name': 'AddProgramsComponent', 'selector': 'app-add-programs'},{'name': 'AdminHomePage', 'selector': 'app-admin-home'},{'name': 'AllEvidenceListComponent', 'selector': 'app-all-evidence-list'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationHeaderComponent', 'selector': 'app-application-header'},{'name': 'ApplicationHeaderKebabMenuComponent', 'selector': 'app-application-header-kebab-menu'},{'name': 'AppRatingAlertComponent', 'selector': 'app-rating-alert'},{'name': 'AttachmentCardComponent', 'selector': 'app-attachment-card'},{'name': 'AttachmentComponent', 'selector': 'attachments'},{'name': 'AttachmentListingPage', 'selector': 'app-attachment-listing'},{'name': 'AttachmentListsComponent', 'selector': 'app-attachment-lists'},{'name': 'BarChartComponent', 'selector': 'bar-chart'},{'name': 'CategoriesEditPage', 'selector': 'app-categories-edit'},{'name': 'CategoryListPage', 'selector': 'app-category-list-page'},{'name': 'CategorySelectComponent', 'selector': 'app-category-select'},{'name': 'CertificateVerificationPopoverComponent', 'selector': 'app-certificate-verification-popover'},{'name': 'CertificateViewPage', 'selector': 'app-certificate-view'},{'name': 'ChapterDetailsPage', 'selector': 'app-chapter-details'},{'name': 'CollectionActionsComponent', 'selector': 'collection-acions'},{'name': 'CollectionChildComponent', 'selector': 'app-collection-child'},{'name': 'CollectionDetailEtbPage', 'selector': 'app-collection-detail-etb'},{'name': 'CommonFormsComponent', 'selector': 'app-common-forms'},{'name': 'CommonHeaderComponent', 'selector': 'app-common-header'},{'name': 'ConfirmAlertComponent', 'selector': 'app-confirm-alert'},{'name': 'ConsentPiiPopupComponent', 'selector': 'app-consent-pii-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentDetailsPage', 'selector': 'app-content-details'},{'name': 'ContentRatingAlertComponent', 'selector': 'app-content-rating-alert'},{'name': 'ContentViewerComponent', 'selector': 'content-viewer'},{'name': 'CopyTraceIdPopoverComponent', 'selector': 'app-copy-trace-id-popover'},{'name': 'CourseBatchesPage', 'selector': 'app-course-batches'},{'name': 'CourseCompletionPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'CoursesPage', 'selector': 'app-courses'},{'name': 'CreateEditGroupPage', 'selector': 'app-create-edit-group'},{'name': 'CreateProjectPage', 'selector': 'app-create-project'},{'name': 'CreateTaskComponent', 'selector': 'app-create-task'},{'name': 'CreateTaskFormComponent', 'selector': 'app-create-task-form'},{'name': 'CurriculumCoursesPage', 'selector': 'app-curriculum-courses'},{'name': 'DashboardComponent', 'selector': 'dashboard-component'},{'name': 'DataSyncComponent', 'selector': 'app-data-sync'},{'name': 'DateTypeInputComponent', 'selector': 'app-date-type-input'},{'name': 'DeeplinkRedirectComponent', 'selector': 'app-deeplink-redirect'},{'name': 'DetailCardComponent', 'selector': 'app-detail-card'},{'name': 'DialogPopupComponent', 'selector': 'app-dialog-popup'},{'name': 'DiscoverComponent', 'selector': 'app-discover'},{'name': 'DistrictMappingPage', 'selector': 'app-district-mapping'},{'name': 'DomainEcmLsitingComponent', 'selector': 'app-domain-ecm-lsiting'},{'name': 'DownloadManagerPage', 'selector': 'app-download-manager'},{'name': 'DownloadShareComponent', 'selector': 'download-share'},{'name': 'DownloadsHeaderComponent', 'selector': 'app-downloads-header'},{'name': 'DownloadsTabComponent', 'selector': 'app-downloads-tab'},{'name': 'DownloadTranscriptPopupComponent', 'selector': 'app-download-transcript-popup'},{'name': 'EcmListingPage', 'selector': 'app-ecm-listing'},{'name': 'EditContactDetailsPopupComponent', 'selector': 'app-edit-contact-details-popup'},{'name': 'EditContactVerifyPopupComponent', 'selector': 'app-edit-contact-verify-popup'},{'name': 'EnrolledCourseDetailsPage', 'selector': 'app-enrolled-course-details-page'},{'name': 'EnrollmentDetailsComponent', 'selector': 'app-enrollment-details'},{'name': 'EntityfilterComponent', 'selector': 'app-entityfilter'},{'name': 'EntitySearchLocalComponent', 'selector': 'app-entity-search-local'},{'name': 'ExpansionPanelComponent', 'selector': 'expansion-panel'},{'name': 'ExpansionTableComponent', 'selector': 'expansion-table'},{'name': 'ExploreBooksPage', 'selector': 'app-explore-books'},{'name': 'ExploreBooksSortComponent', 'selector': 'app-explore-books-sort'},{'name': 'FaqHelpPage', 'selector': 'app-faq-help'},{'name': 'FaqReportIssuePage', 'selector': 'app-faq-report-issue'},{'name': 'FilterModalComponent', 'selector': 'app-filter-modal'},{'name': 'FilteroptionComponent', 'selector': 'app-filteroption'},{'name': 'FiltersPage', 'selector': 'app-filters'},{'name': 'FooterButtonsComponent', 'selector': 'app-footer-buttons'},{'name': 'FrameworkSelectionPage', 'selector': 'app-framework-selection'},{'name': 'GraphCircleComponent', 'selector': 'graph-circle'},{'name': 'GroupDetailsPage', 'selector': 'app-group-details'},{'name': 'GroupGuideLinesPopoverComponent', 'selector': 'app-group-guidelines-popover'},{'name': 'GuestEditPage', 'selector': 'app-guest-edit'},{'name': 'GuestProfilePage', 'selector': 'app-guest-profile'},{'name': 'HintComponent', 'selector': 'app-hint'},{'name': 'ImageListingComponent', 'selector': 'app-image-listing'},{'name': 'ImageUploadComponent', 'selector': 'app-image-upload'},{'name': 'ImportPopoverComponent', 'selector': 'app-import-popover'},{'name': 'ImpSuggestionsPage', 'selector': 'app-imp-suggestions'},{'name': 'ItemListCardComponent', 'selector': 'app-item-list-card'},{'name': 'ItemListHeaderComponent', 'selector': 'app-item-list-header'},{'name': 'JoyfulThemePopupComponent', 'selector': 'app-joyful-theme-popup'},{'name': 'LanguageSettingsPage', 'selector': 'page-language-settings'},{'name': 'LearningResourcesPage', 'selector': 'app-learning-resources'},{'name': 'LicenseCardComponentComponent', 'selector': 'app-license-card-component'},{'name': 'LinkLearningResourcesComponent', 'selector': 'app-link-learning-resources'},{'name': 'ManageUserProfilesPage', 'selector': 'app-manage-user-profiles'},{'name': 'MatrixChartComponent', 'selector': 'matrix-chart'},{'name': 'MatrixModalComponent', 'selector': 'app-matrix-modal'},{'name': 'MatrixTypeInputComponent', 'selector': 'app-matrix-type-input'},{'name': 'MetadataActionsComponent', 'selector': 'app-metadata-actions'},{'name': 'MetadataDetailsComponent', 'selector': 'app-metadata-details'},{'name': 'MultipleTypeInputComponent', 'selector': 'app-multiple-type-input'},{'name': 'MyGroupsPage', 'selector': 'app-my-groups'},{'name': 'MyGroupsPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'NewExperiencePopupComponent', 'selector': 'app-new-experience-popup'},{'name': 'NoDataComponent', 'selector': 'app-no-data'},{'name': 'NoDownloadsComponent', 'selector': 'app-no-downloads'},{'name': 'NotificationItemComponent', 'selector': 'app-notification-item'},{'name': 'NotificationPage', 'selector': 'app-notification'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationHomeComponent', 'selector': 'app-observation-home'},{'name': 'ObservationSolutionEntityListingComponent', 'selector': 'app-observation-solution-entity-listing'},{'name': 'ObservationSolutionListingComponent', 'selector': 'app-observation-solution-listing'},{'name': 'ObservationSubmissionComponent', 'selector': 'app-observation-submission'},{'name': 'OtpPage', 'selector': 'app-otp'},{'name': 'OverflowMenuComponent', 'selector': 'app-overflow-menu'},{'name': 'PageFilterOptionsPage', 'selector': 'app-page-filter-options'},{'name': 'PageFilterPage', 'selector': 'app-page-filter'},{'name': 'PageQuestionsComponent', 'selector': 'app-page-questions'},{'name': 'PbHorizontalComponent', 'selector': 'app-pb-horizontal'},{'name': 'PercentageColumnChartsComponent', 'selector': 'percentage-column-charts'},{'name': 'PermissionComponent', 'selector': 'app-permission'},{'name': 'PersonalDetailsEditPage', 'selector': 'app-personal-details-edit'},{'name': 'PieChartComponent', 'selector': 'pie-chart'},{'name': 'PlayerPage', 'selector': 'app-player'},{'name': 'PopoverComponent', 'selector': 'app-popover'},{'name': 'PrivacyPolicyAndTCComponent', 'selector': 'app-privacy-policy-and-tc'},{'name': 'ProfileAvatarComponent', 'selector': 'app-profile-avatar'},{'name': 'ProfileNameConfirmationPopoverComponent', 'selector': 'app-profile-name-confirmation-popover'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfileSettingsPage', 'selector': 'app-profile-settings'},{'name': 'ProgramListingComponent', 'selector': 'app-program-listing'},{'name': 'ProgressBarComponent', 'selector': 'progress-bar'},{'name': 'ProjectDetailsCardComponent', 'selector': 'app-project-details-card'},{'name': 'ProjectDetailsComponent', 'selector': 'app-project-details'},{'name': 'ProjectEditPage', 'selector': 'app-project-edit'},{'name': 'ProjectListingComponent', 'selector': 'app-project-listing'},{'name': 'ProjectMetadataCardComponent', 'selector': 'app-project-metadata-card'},{'name': 'ProjectOperationPage', 'selector': 'app-project-operation'},{'name': 'ProjectReportComponent', 'selector': 'app-project-report'},{'name': 'ProjectTaskListComponent', 'selector': 'app-project-task-list'},{'name': 'ProjectTemplatePage', 'selector': 'app-project-template'},{'name': 'ProjectTemplateviewPage', 'selector': 'app-project-templateview'},{'name': 'QrcoderesultPage', 'selector': 'app-qrcoderesult'},{'name': 'QRScannerAlert', 'selector': 'app-qrscanner-alert'},{'name': 'QrScannerIOSComponent', 'selector': 'app-qr-scanner-ios'},{'name': 'QuestionHeadingComponent', 'selector': 'app-question-heading'},{'name': 'QuestionMapModalComponent', 'selector': 'app-question-map-modal'},{'name': 'QuestionnairePage', 'selector': 'app-questionnaire'},{'name': 'RadioTypeInputComponent', 'selector': 'app-radio-type-input'},{'name': 'RelevantContentCardComponent', 'selector': 'app-relevant-content-card'},{'name': 'RelevantContentsPage', 'selector': 'app-relevant-contents'},{'name': 'RemarksComponent', 'selector': 'app-remarks'},{'name': 'RemarksModalComponent', 'selector': 'app-remarks-modal'},{'name': 'ReportListComponent', 'selector': 'app-report-list'},{'name': 'ReportModalFilter', 'selector': 'report-modal-filter'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'ReportsListingComponent', 'selector': 'app-reports-listing'},{'name': 'ReportsTextComponent', 'selector': 'reports-text'},{'name': 'ResourcesComponent', 'selector': 'app-resources'},{'name': 'SbAppSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbDownloadPopupComponent', 'selector': 'app-sb-download-popup'},{'name': 'SbGenericFormPopoverComponent', 'selector': 'app-sb-generic-form-popover'},{'name': 'SbGenericPopoverComponent', 'selector': 'app-sb-generic-popover'},{'name': 'SbInsufficientStoragePopupComponent', 'selector': 'sb-insufficient-storage-popup'},{'name': 'SbNoNetworkPopupComponent', 'selector': 'sb-no-network-popup'},{'name': 'SbPopoverComponent', 'selector': 'sb-popover'},{'name': 'SbPreferencePopupComponent', 'selector': 'app-sb-preferences-popup'},{'name': 'SbProgressLoaderPage', 'selector': 'app-sb-progress-loader'},{'name': 'SbSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbSubjectListPopupComponent', 'selector': 'app-sb-subject-list-popup'},{'name': 'SbTutorialPopupComponent', 'selector': 'app-sb-tutorial-popup'},{'name': 'ScatterChartComponent', 'selector': 'scatter-chart'},{'name': 'SearchFilterPage', 'selector': 'app-search-filter.page'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SectionListingPage', 'selector': 'app-section-listing'},{'name': 'SelfDeclaredTeacherEditPage', 'selector': 'app-self-declared-teacher-edit'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'ShowCertificateComponent', 'selector': 'app-show-certificate-component'},{'name': 'ShowVendorAppsComponent', 'selector': 'show-vendor-apps'},{'name': 'SignInCardComponent', 'selector': 'app-sign-in-card'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'SignupBasicInfoPage', 'selector': 'app-signup-basic-info'},{'name': 'SignupEmailPasswordPage', 'selector': 'app-signup-email-password'},{'name': 'SkeletonItemComponent', 'selector': 'app-skeleton-item'},{'name': 'SliderTypeInputComponent', 'selector': 'app-slider-type-input'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'StartImprovementComponent', 'selector': 'app-start-improvement'},{'name': 'StorageSettingsPage', 'selector': 'app-storage-settings'},{'name': 'SubmissionActionsComponent', 'selector': 'app-submission-actions'},{'name': 'SubmissionPreviewPageComponent', 'selector': 'app-submission-preview-page'},{'name': 'SubProfileEditPage', 'selector': 'app-sub-profile-edit'},{'name': 'SupportAcknowledgement', 'selector': 'support-acknowledgement'},{'name': 'SurveyHomeComponent', 'selector': 'app-survey-home'},{'name': 'SurveyMsgComponent', 'selector': 'app-survey-msg'},{'name': 'SyncPage', 'selector': 'app-sync'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TaskCardComponent', 'selector': 'app-task-card'},{'name': 'TaskViewPage', 'selector': 'app-task-view'},{'name': 'TeacherIdVerificationComponent', 'selector': 'app-teacher-id-verification-popup'},{'name': 'TermsAndConditionsPage', 'selector': 'app-terms-and-conditions'},{'name': 'TextBookTocPage', 'selector': 'textbook-toc'},{'name': 'TextbookViewMorePage', 'selector': 'app-textbook-view-more'},{'name': 'TextTypeInputComponent', 'selector': 'app-text-type-input'},{'name': 'ToastNavigationComponent', 'selector': 'app-toast-navigation'},{'name': 'TocHeaderComponent', 'selector': 'app-toc-header'},{'name': 'UpgradePopoverComponent', 'selector': 'app-upgrade-popover'},{'name': 'UserHomePage', 'selector': 'app-user-home'},{'name': 'UserTypeSelectionPage', 'selector': 'page-user-type-selection'},{'name': 'ViewCreditsComponent', 'selector': 'app-view-credits'},{'name': 'ViewDetailComponent', 'selector': 'app-view-detail'},{'name': 'ViewMoreActivityComponent', 'selector': 'app-view-more-activity'},{'name': 'ViewMoreActivityPage', 'selector': 'view-more-activity'},{'name': 'YearOfBirthPopupComponent', 'selector': 'app-year-of-birth-popup'}];
+    var DIRECTIVES = [{'name': 'CustomIonSelectDirective', 'selector': '[appCustomIonSelect]'},{'name': 'HideHeaderFooterDirective', 'selector': '[hide-header-footer]'},{'name': 'ReadMoreDirective', 'selector': '[readMore]'}];
+    var ACTUAL_COMPONENT = {'name': 'DownloadsTabComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'DownloadsTabComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

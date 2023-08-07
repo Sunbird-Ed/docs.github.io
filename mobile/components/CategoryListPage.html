@@ -1,0 +1,3596 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  CategoryListPage</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/category-list/category-list-page.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+                <code>OnDestroy</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-category-list-page</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./category-list-page.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./category-list-page.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#appName" >appName</a>
+                            </li>
+                            <li>
+                                <a href="#categoryDescription" >categoryDescription</a>
+                            </li>
+                            <li>
+                                <a href="#categoryTitle" >categoryTitle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#commonUtilService" >commonUtilService</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#corRelationList" >corRelationList</a>
+                            </li>
+                            <li>
+                                <a href="#defaultImage" >defaultImage</a>
+                            </li>
+                            <li>
+                                <a href="#defaultImg" >defaultImg</a>
+                            </li>
+                            <li>
+                                <a href="#displayFacetFilters" >displayFacetFilters</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#env" >env</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#existingSearchFilters" >existingSearchFilters</a>
+                            </li>
+                            <li>
+                                <a href="#facetFilters" >facetFilters</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#filterCriteria" >filterCriteria</a>
+                            </li>
+                            <li>
+                                <a href="#filterFields" >filterFields</a>
+                            </li>
+                            <li>
+                                <a href="#filterIdentifier" >filterIdentifier</a>
+                            </li>
+                            <li>
+                                <a href="#filterPillList" >filterPillList</a>
+                            </li>
+                            <li>
+                                <a href="#formAPIFacets" >formAPIFacets</a>
+                            </li>
+                            <li>
+                                <a href="#formField" >formField</a>
+                            </li>
+                            <li>
+                                <a href="#fromLibrary" >fromLibrary</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#fromPage" >fromPage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#imageSrcMap" >imageSrcMap</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#initialFacetFilters" >initialFacetFilters</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#initialFilterCriteria" >initialFilterCriteria</a>
+                            </li>
+                            <li>
+                                <a href="#layoutConfiguration" >layoutConfiguration</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#pageId" >pageId</a>
+                            </li>
+                            <li>
+                                <a href="#PillBorder" >PillBorder</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#preFetchedFilterCriteria" >preFetchedFilterCriteria</a>
+                            </li>
+                            <li>
+                                <a href="#primaryFacetFilters" >primaryFacetFilters</a>
+                            </li>
+                            <li>
+                                <a href="#primaryFacetFiltersFormGroup" >primaryFacetFiltersFormGroup</a>
+                            </li>
+                            <li>
+                                <a href="#primaryFacetFiltersTemplateOptions" >primaryFacetFiltersTemplateOptions</a>
+                            </li>
+                            <li>
+                                <a href="#profile" >profile</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#resentFilterCriteria" >resentFilterCriteria</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#searchCriteria" >searchCriteria</a>
+                            </li>
+                            <li>
+                                <a href="#sectionCode" >sectionCode</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Optional</span>
+                                <a href="#sectionGroup" >sectionGroup</a>
+                            </li>
+                            <li>
+                                <a href="#selectedFilterPill" >selectedFilterPill</a>
+                            </li>
+                            <li>
+                                <a href="#selectedPillTheme" >selectedPillTheme</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#shouldGenerateImpressionTelemetry" >shouldGenerateImpressionTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#showSheenAnimation" >showSheenAnimation</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#subscriptions" >subscriptions</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Optional</span>
+                                <a href="#supportedFacets" >supportedFacets</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#supportedUserTypesConfig" >supportedUserTypesConfig</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#applyFilter" >applyFilter</a>
+                            </li>
+                            <li>
+                                <a href="#deduceFilterCriteria" >deduceFilterCriteria</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Async</span>
+                                <a href="#fetchAndSortData" >fetchAndSortData</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#generateImpressionTelemetry" >generateImpressionTelemetry</a>
+                            </li>
+                            <li>
+                                <a href="#getExistingFilters" >getExistingFilters</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ionViewWillEnter" >ionViewWillEnter</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToDetailPage" >navigateToDetailPage</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#navigateToFilterFormPage" >navigateToFilterFormPage</a>
+                            </li>
+                            <li>
+                                <a href="#navigateToViewMorePage" >navigateToViewMorePage</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnDestroy" >ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#onPrimaryFacetFilterSelect" >onPrimaryFacetFilterSelect</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#pillFilterHandler" >pillFilterHandler</a>
+                            </li>
+                            <li>
+                                <a href="#reloadDropdown" >reloadDropdown</a>
+                            </li>
+                            <li>
+                                <a href="#scrollToSection" >scrollToSection</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(contentService: ContentService, formService: FormService, courseService: CourseService, profileService: ProfileService, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>, router: Router, appHeaderService: <a href="../injectables/AppHeaderService.html" target="_self">AppHeaderService</a>, navService: <a href="../injectables/NavigationService.html" target="_self">NavigationService</a>, telemetryGeneratorService: <a href="../injectables/TelemetryGeneratorService.html" target="_self">TelemetryGeneratorService</a>, scrollService: <a href="../injectables/ScrollToService.html" target="_self">ScrollToService</a>, searchFilterService: <a href="../injectables/SearchFilterService.html" target="_self">SearchFilterService</a>, modalController: ModalController)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="118" class="link-to-prism">src/app/category-list/category-list-page.ts:118</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>contentService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ContentService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>formService</td>
+                                                  
+                                                        <td>
+                                                                    <code>FormService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>courseService</td>
+                                                  
+                                                        <td>
+                                                                    <code>CourseService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>profileService</td>
+                                                  
+                                                        <td>
+                                                                    <code>ProfileService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appHeaderService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppHeaderService.html" target="_self" >AppHeaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>navService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NavigationService.html" target="_self" >NavigationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>telemetryGeneratorService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TelemetryGeneratorService.html" target="_self" >TelemetryGeneratorService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>scrollService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ScrollToService.html" target="_self" >ScrollToService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>searchFilterService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SearchFilterService.html" target="_self" >SearchFilterService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalController</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="applyFilter"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>applyFilter</b></span>
+                        <a href="#applyFilter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>applyFilter(appliedFilterCriteria: <a href="../classes/Search.html" target="_self">ContentSearchCriteria</a>, refreshPillFilter, onSelectedFilter?, filterKey?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="517"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:517</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>appliedFilterCriteria</td>
+                                    <td>
+                                                <code><a href="../classes/Search.html" target="_self" >ContentSearchCriteria</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>refreshPillFilter</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>onSelectedFilter</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>filterKey</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deduceFilterCriteria"></a>
+                    <span class="name">
+                        <span ><b>deduceFilterCriteria</b></span>
+                        <a href="#deduceFilterCriteria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deduceFilterCriteria(isDataEmpty?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="548"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:548</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>isDataEmpty</td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="../classes/Search.html" target="_self" >ContentSearchCriteria</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fetchAndSortData"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span class="modifier">Async</span>
+                        <span ><b>fetchAndSortData</b></span>
+                        <a href="#fetchAndSortData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>fetchAndSortData(searchCriteria, isInitialCall: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, refreshPillFilter, onSelectedFilter?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, filterKey?)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="206"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:206</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>searchCriteria</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>isInitialCall</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>refreshPillFilter</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>true</code>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>onSelectedFilter</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>filterKey</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="generateImpressionTelemetry"></a>
+                    <span class="name">
+                        <span class="modifier">Private</span>
+                        <span ><b>generateImpressionTelemetry</b></span>
+                        <a href="#generateImpressionTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>generateImpressionTelemetry()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="337"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:337</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getExistingFilters"></a>
+                    <span class="name">
+                        <span ><b>getExistingFilters</b></span>
+                        <a href="#getExistingFilters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getExistingFilters(formFields)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="560"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:560</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>formFields</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ionViewWillEnter"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ionViewWillEnter</b></span>
+                        <a href="#ionViewWillEnter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ionViewWillEnter()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="191"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:191</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToDetailPage"></a>
+                    <span class="name">
+                        <span ><b>navigateToDetailPage</b></span>
+                        <a href="#navigateToDetailPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToDetailPage(event, sectionName)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="440"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:440</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>sectionName</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToFilterFormPage"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>navigateToFilterFormPage</b></span>
+                        <a href="#navigateToFilterFormPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>navigateToFilterFormPage()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="475"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:475</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="navigateToViewMorePage"></a>
+                    <span class="name">
+                        <span ><b>navigateToViewMorePage</b></span>
+                        <a href="#navigateToViewMorePage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>navigateToViewMorePage(items, subject, totalCount)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="414"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:414</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>items</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>subject</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>totalCount</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnDestroy"></a>
+                    <span class="name">
+                        <span ><b>ngOnDestroy</b></span>
+                        <a href="#ngOnDestroy"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnDestroy()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="579"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:579</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="171"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:171</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onPrimaryFacetFilterSelect"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>onPrimaryFacetFilterSelect</b></span>
+                        <a href="#onPrimaryFacetFilterSelect"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>onPrimaryFacetFilterSelect(primaryFacetFilter: literal type, toApply: FilterValue[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="501"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:501</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>primaryFacetFilter</td>
+                                    <td>
+                                            <code>literal type</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>toApply</td>
+                                    <td>
+                                            <code>FilterValue[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pillFilterHandler"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>pillFilterHandler</b></span>
+                        <a href="#pillFilterHandler"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>pillFilterHandler(pill)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="534"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:534</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>pill</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="reloadDropdown"></a>
+                    <span class="name">
+                        <span ><b>reloadDropdown</b></span>
+                        <a href="#reloadDropdown"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>reloadDropdown(index, item)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="575"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:575</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>item</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scrollToSection"></a>
+                    <span class="name">
+                        <span ><b>scrollToSection</b></span>
+                        <a href="#scrollToSection"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>scrollToSection(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="468"
+                            class="link-to-prism">src/app/category-list/category-list-page.ts:468</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="appName"></a>
+                    <span class="name">
+                        <span ><b>appName</b></span>
+                        <a href="#appName"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/app/category-list/category-list-page.ts:96</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="categoryDescription"></a>
+                    <span class="name">
+                        <span ><b>categoryDescription</b></span>
+                        <a href="#categoryDescription"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/app/category-list/category-list-page.ts:97</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="categoryTitle"></a>
+                    <span class="name">
+                        <span ><b>categoryTitle</b></span>
+                        <a href="#categoryTitle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="98" class="link-to-prism">src/app/category-list/category-list-page.ts:98</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="commonUtilService"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>commonUtilService</b></span>
+                        <a href="#commonUtilService"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="125" class="link-to-prism">src/app/category-list/category-list-page.ts:125</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="corRelationList"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>corRelationList</b></span>
+                        <a href="#corRelationList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/app/category-list/category-list-page.ts:109</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defaultImage"></a>
+                    <span class="name">
+                        <span ><b>defaultImage</b></span>
+                        <a href="#defaultImage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/app/category-list/category-list-page.ts:95</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="defaultImg"></a>
+                    <span class="name">
+                        <span ><b>defaultImg</b></span>
+                        <a href="#defaultImg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/app/category-list/category-list-page.ts:62</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="displayFacetFilters"></a>
+                    <span class="name">
+                        <span ><b>displayFacetFilters</b></span>
+                        <a href="#displayFacetFilters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/category-list/category-list-page.ts:70</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="env"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>env</b></span>
+                        <a href="#env"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>Environment.SEARCH</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/app/category-list/category-list-page.ts:112</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="existingSearchFilters"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>existingSearchFilters</b></span>
+                        <a href="#existingSearchFilters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/app/category-list/category-list-page.ts:117</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="facetFilters"></a>
+                    <span class="name">
+                        <span ><b>facetFilters</b></span>
+                        <a href="#facetFilters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/category-list/category-list-page.ts:67</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterCriteria"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>filterCriteria</b></span>
+                        <a href="#filterCriteria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Search.html" target="_self" >ContentSearchCriteria</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/app/category-list/category-list-page.ts:87</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterFields"></a>
+                    <span class="name">
+                        <span ><b>filterFields</b></span>
+                        <a href="#filterFields"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{}</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/app/category-list/category-list-page.ts:84</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterIdentifier"></a>
+                    <span class="name">
+                        <span ><b>filterIdentifier</b></span>
+                        <a href="#filterIdentifier"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="118" class="link-to-prism">src/app/category-list/category-list-page.ts:118</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="filterPillList"></a>
+                    <span class="name">
+                        <span ><b>filterPillList</b></span>
+                        <a href="#filterPillList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/app/category-list/category-list-page.ts:100</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formAPIFacets"></a>
+                    <span class="name">
+                        <span ><b>formAPIFacets</b></span>
+                        <a href="#formAPIFacets"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="106" class="link-to-prism">src/app/category-list/category-list-page.ts:106</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="formField"></a>
+                    <span class="name">
+                        <span ><b>formField</b></span>
+                        <a href="#formField"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/category-list/category-list-page.ts:48</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fromLibrary"></a>
+                    <span class="name">
+                        <span ><b>fromLibrary</b></span>
+                        <a href="#fromLibrary"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>false</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/app/category-list/category-list-page.ts:81</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="fromPage"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>fromPage</b></span>
+                        <a href="#fromPage"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>PageId.SEARCH</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/app/category-list/category-list-page.ts:111</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="imageSrcMap"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>imageSrcMap</b></span>
+                        <a href="#imageSrcMap"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>new Map()</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/category-list/category-list-page.ts:61</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialFacetFilters"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>initialFacetFilters</b></span>
+                        <a href="#initialFacetFilters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/app/category-list/category-list-page.ts:73</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initialFilterCriteria"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>initialFilterCriteria</b></span>
+                        <a href="#initialFilterCriteria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Search.html" target="_self" >ContentSearchCriteria</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="113" class="link-to-prism">src/app/category-list/category-list-page.ts:113</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="layoutConfiguration"></a>
+                    <span class="name">
+                        <span ><b>layoutConfiguration</b></span>
+                        <a href="#layoutConfiguration"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+        layout: &#x27;v4&#x27;
+    }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/app/category-list/category-list-page.ts:92</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="pageId"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>pageId</b></span>
+                        <a href="#pageId"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>PageId.CATEGORY_RESULTS</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">src/app/category-list/category-list-page.ts:110</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="PillBorder"></a>
+                    <span class="name">
+                        <span ><b>PillBorder</b></span>
+                        <a href="#PillBorder"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>PillBorder</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/category-list/category-list-page.ts:99</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="preFetchedFilterCriteria"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>preFetchedFilterCriteria</b></span>
+                        <a href="#preFetchedFilterCriteria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Search.html" target="_self" >ContentSearchCriteria</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="115" class="link-to-prism">src/app/category-list/category-list-page.ts:115</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="primaryFacetFilters"></a>
+                    <span class="name">
+                        <span ><b>primaryFacetFilters</b></span>
+                        <a href="#primaryFacetFilters"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>literal type[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/category-list/category-list-page.ts:76</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="primaryFacetFiltersFormGroup"></a>
+                    <span class="name">
+                        <span ><b>primaryFacetFiltersFormGroup</b></span>
+                        <a href="#primaryFacetFiltersFormGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>FormGroup</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/category-list/category-list-page.ts:83</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="primaryFacetFiltersTemplateOptions"></a>
+                    <span class="name">
+                        <span ><b>primaryFacetFiltersTemplateOptions</b></span>
+                        <a href="#primaryFacetFiltersTemplateOptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank" >object</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+        cssClass: &#x27;select-box&#x27;
+    }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/category-list/category-list-page.ts:64</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="profile"></a>
+                    <span class="name">
+                        <span ><b>profile</b></span>
+                        <a href="#profile"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Profile</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="116" class="link-to-prism">src/app/category-list/category-list-page.ts:116</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="resentFilterCriteria"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>resentFilterCriteria</b></span>
+                        <a href="#resentFilterCriteria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Search.html" target="_self" >ContentSearchCriteria</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/app/category-list/category-list-page.ts:114</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="searchCriteria"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Readonly</span>
+                        <span ><b>searchCriteria</b></span>
+                        <a href="#searchCriteria"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../classes/Search.html" target="_self" >ContentSearchCriteria</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/app/category-list/category-list-page.ts:86</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sectionCode"></a>
+                    <span class="name">
+                        <span ><b>sectionCode</b></span>
+                        <a href="#sectionCode"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>&#x27;&#x27;</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/app/category-list/category-list-page.ts:82</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sectionGroup"></a>
+                    <span class="name">
+                            <span class="modifier">Optional</span>
+                        <span ><b>sectionGroup</b></span>
+                        <a href="#sectionGroup"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>ContentsGroupedByPageSection</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/category-list/category-list-page.ts:47</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedFilterPill"></a>
+                    <span class="name">
+                        <span ><b>selectedFilterPill</b></span>
+                        <a href="#selectedFilterPill"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/app/category-list/category-list-page.ts:101</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="selectedPillTheme"></a>
+                    <span class="name">
+                        <span ><b>selectedPillTheme</b></span>
+                        <a href="#selectedPillTheme"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>PillsColorTheme</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>{
+        pillBgColor: getComputedStyle(document.querySelector(&#x27;html&#x27;)).getPropertyValue(&#x27;--app-primary&#x27;),
+        pillTextColor: getComputedStyle(document.querySelector(&#x27;html&#x27;)).getPropertyValue(&#x27;--app-white&#x27;)
+    }</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/app/category-list/category-list-page.ts:102</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shouldGenerateImpressionTelemetry"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>shouldGenerateImpressionTelemetry</b></span>
+                        <a href="#shouldGenerateImpressionTelemetry"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="108" class="link-to-prism">src/app/category-list/category-list-page.ts:108</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showSheenAnimation"></a>
+                    <span class="name">
+                        <span ><b>showSheenAnimation</b></span>
+                        <a href="#showSheenAnimation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>true</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/category-list/category-list-page.ts:63</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="subscriptions"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>subscriptions</b></span>
+                        <a href="#subscriptions"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/app/category-list/category-list-page.ts:91</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="supportedFacets"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                            <span class="modifier">Optional</span>
+                        <span ><b>supportedFacets</b></span>
+                        <a href="#supportedFacets"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/app/category-list/category-list-page.ts:90</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="supportedUserTypesConfig"></a>
+                    <span class="name">
+                            <span class="modifier">Private</span>
+                        <span ><b>supportedUserTypesConfig</b></span>
+                        <a href="#supportedUserTypesConfig"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Array&lt;any&gt;</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/app/category-list/category-list-page.ts:89</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, Inject, OnDestroy, OnInit } from &#x27;@angular/core&#x27;;
+import {
+    AppHeaderService,
+    CommonUtilService,
+    CorReleationDataType,
+    Environment,
+    SearchFilterService,
+    ImpressionType,
+    InteractSubtype,
+    InteractType,
+    PageId,
+    TelemetryGeneratorService
+} from &#x27;@app/services&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import {
+    ContentService,
+    ContentsGroupedByPageSection,
+    CourseService,
+    FilterValue,
+    FormService,
+    ProfileService,
+    ContentData,
+    ContentSearchCriteria,
+    SearchType,
+    CorrelationData,
+    Profile
+} from &#x27;sunbird-sdk&#x27;;
+import { AggregatorConfigField, ContentAggregation } from &#x27;sunbird-sdk/content/handlers/content-aggregator&#x27;;
+import { ContentUtil } from &#x27;@app/util/content-util&#x27;;
+import { ProfileConstants, RouterLinks } from &#x27;@app/app/app.constant&#x27;;
+import { NavigationService } from &#x27;@app/services/navigation-handler.service&#x27;;
+import { ScrollToService } from &#x27;@app/services/scroll-to.service&#x27;;
+import { ModalController } from &#x27;@ionic/angular&#x27;;
+import { SearchFilterPage } from &#x27;@app/app/search-filter/search-filter.page&#x27;;
+import { FormControl, FormGroup } from &#x27;@angular/forms&#x27;;
+import { Subscription } from &#x27;rxjs&#x27;;
+import { PillBorder, PillsColorTheme } from &#x27;@project-sunbird/common-consumption&#x27;;
+import { ObjectUtil } from &#x27;@app/util/object.util&#x27;;
+
+@Component({
+    selector: &#x27;app-category-list-page&#x27;,
+    templateUrl: &#x27;./category-list-page.html&#x27;,
+    styleUrls: [&#x27;./category-list-page.scss&#x27;],
+})
+export class CategoryListPage implements OnInit, OnDestroy {
+
+    sectionGroup?: ContentsGroupedByPageSection;
+    formField: {
+        facet: string;
+        searchCriteria: ContentSearchCriteria;
+        aggregate: {
+            sortBy?: {
+                [field in keyof ContentData]: &#x27;asc&#x27; | &#x27;desc&#x27;;
+            }[];
+            groupBy?: keyof ContentData;
+            groupSortBy?: any
+        };
+        showNavigationPill?: boolean;
+        filterPillBy?: string;
+    };
+    public imageSrcMap &#x3D; new Map();
+    defaultImg: string;
+    showSheenAnimation &#x3D; true;
+    primaryFacetFiltersTemplateOptions &#x3D; {
+        cssClass: &#x27;select-box&#x27;
+    };
+    facetFilters: {
+        [code: string]: FilterValue[]
+    } &#x3D; {};
+    displayFacetFilters: {
+        [code: string]: FilterValue[]
+    } &#x3D; {};
+    initialFacetFilters?: {
+        [code: string]: FilterValue[]
+    };
+    primaryFacetFilters: {
+        code: string,
+        translations: string,
+        sort: boolean
+    }[];
+    fromLibrary &#x3D; false;
+    sectionCode &#x3D; &#x27;&#x27;;
+    primaryFacetFiltersFormGroup: FormGroup;
+    filterFields: {[k: string]: any} &#x3D; {};
+
+    private readonly searchCriteria: ContentSearchCriteria;
+    private readonly filterCriteria: ContentSearchCriteria;
+
+    private supportedUserTypesConfig: Array&lt;any&gt;;
+    private supportedFacets?: string[];
+    private subscriptions: Subscription[] &#x3D; [];
+    layoutConfiguration &#x3D; {
+        layout: &#x27;v4&#x27;
+    };
+    defaultImage &#x3D; &#x27;&#x27;;
+    appName &#x3D; &#x27;&#x27;;
+    categoryDescription &#x3D; &#x27;&#x27;;
+    categoryTitle &#x3D; &#x27;&#x27;;
+    PillBorder &#x3D; PillBorder;
+    filterPillList &#x3D; [];
+    selectedFilterPill;
+    selectedPillTheme: PillsColorTheme &#x3D; {
+        pillBgColor: getComputedStyle(document.querySelector(&#x27;html&#x27;)).getPropertyValue(&#x27;--app-primary&#x27;),
+        pillTextColor: getComputedStyle(document.querySelector(&#x27;html&#x27;)).getPropertyValue(&#x27;--app-white&#x27;)
+    }
+    formAPIFacets;
+
+    private shouldGenerateImpressionTelemetry &#x3D; true;
+    private corRelationList &#x3D; [];
+    private pageId: string &#x3D; PageId.CATEGORY_RESULTS;
+    private fromPage: string &#x3D; PageId.SEARCH;
+    private env: string &#x3D; Environment.SEARCH;
+    private initialFilterCriteria: ContentSearchCriteria;
+    private resentFilterCriteria: ContentSearchCriteria;
+    private preFetchedFilterCriteria: ContentSearchCriteria;
+    profile: Profile;
+    private existingSearchFilters &#x3D; {};
+    filterIdentifier: any;
+
+    constructor(
+        @Inject(&#x27;CONTENT_SERVICE&#x27;) private contentService: ContentService,
+        @Inject(&#x27;FORM_SERVICE&#x27;) private formService: FormService,
+        @Inject(&#x27;COURSE_SERVICE&#x27;) private courseService: CourseService,
+        @Inject(&#x27;PROFILE_SERVICE&#x27;) private profileService: ProfileService,
+        public commonUtilService: CommonUtilService,
+        private router: Router,
+        private appHeaderService: AppHeaderService,
+        private navService: NavigationService,
+        private telemetryGeneratorService: TelemetryGeneratorService,
+        private scrollService: ScrollToService,
+        private searchFilterService: SearchFilterService,
+        private modalController: ModalController
+    ) {
+        const extrasState &#x3D; this.router.getCurrentNavigation().extras.state;
+        if (extrasState) {
+            this.formField &#x3D; extrasState.formField;
+            this.sectionCode &#x3D; extrasState.code;
+            this.searchCriteria &#x3D; JSON.parse(JSON.stringify(extrasState.formField.searchCriteria));
+            if (this.formField &amp;&amp; this.formField.facet &amp;&amp; this.formField.facet.toLowerCase() &#x3D;&#x3D;&#x3D; &#x27;course&#x27;) {
+                if (!this.searchCriteria.impliedFiltersMap) {
+                    this.searchCriteria.impliedFiltersMap &#x3D; [];
+                }
+                this.searchCriteria.impliedFiltersMap &#x3D; this.searchCriteria.impliedFiltersMap.concat([{
+                    &#x27;batches.enrollmentType&#x27;: &#x27;open&#x27;
+                }, {
+                    &#x27;batches.status&#x27;: 1
+                }
+                ]);
+            }
+            this.filterIdentifier &#x3D; extrasState.formField.filterIdentifier;
+            this.primaryFacetFilters &#x3D; extrasState.formField.primaryFacetFilters;
+            this.formField.facet &#x3D; this.formField.facet.replace(/(^\w|\s\w)/g, m &#x3D;&gt; m.toUpperCase());
+            this.categoryDescription &#x3D; extrasState.description || &#x27;&#x27;;
+            this.categoryTitle &#x3D; extrasState.title || &#x27;&#x27;;
+            if (this.primaryFacetFilters) {
+                this.primaryFacetFiltersFormGroup &#x3D; this.primaryFacetFilters.reduce&lt;FormGroup&gt;((acc, filter) &#x3D;&gt; {
+                    const facetFilterControl &#x3D; new FormControl();
+                    this.subscriptions.push(
+                        facetFilterControl.valueChanges.subscribe((v) &#x3D;&gt; {
+                            this.onPrimaryFacetFilterSelect(filter, v);
+                        })
+                    );
+                    acc.addControl(filter.code, facetFilterControl);
+                    return acc;
+                }, new FormGroup({}));
+            }
+            this.existingSearchFilters &#x3D; this.getExistingFilters(extrasState.formField);
+        }
+    }
+
+    async ngOnInit() {
+        this.appName &#x3D; await this.commonUtilService.getAppName();
+        if (!this.supportedFacets) {
+            this.formAPIFacets &#x3D; await this.searchFilterService.fetchFacetFilterFormConfig(this.filterIdentifier);
+            this.supportedFacets &#x3D; this.formAPIFacets.reduce((acc, filterConfig) &#x3D;&gt; {
+                    acc.push(filterConfig.code);
+                    return acc;
+                }, []);
+        }
+
+        await this.fetchAndSortData({
+            ...this.searchCriteria,
+            facets: this.supportedFacets,
+            searchType: SearchType.SEARCH,
+        }, true);
+        (await this.commonUtilService.convertFileToBase64(&#x27;assets/imgs/ic_launcher.png&#x27;)).subscribe((img) &#x3D;&gt; {
+            this.defaultImage &#x3D; img;
+        });
+    }
+
+    async ionViewWillEnter() {
+        this.appHeaderService.showHeaderWithBackButton();
+
+        const corRelationList: Array&lt;CorrelationData&gt; &#x3D; [];
+        corRelationList.push({ id: this.formField.facet, type: CorReleationDataType.FORM_PAGE });
+        this.telemetryGeneratorService.generateImpressionTelemetry(
+            ImpressionType.PAGE_LOADED,
+            &#x27;&#x27;,
+            PageId.CATEGORY_RESULTS,
+            Environment.HOME,
+            undefined, undefined, undefined, undefined,
+            corRelationList
+        );
+    }
+
+    private async fetchAndSortData(searchCriteria, isInitialCall: boolean, refreshPillFilter &#x3D; true, onSelectedFilter?: any, filterKey?) {
+        this.showSheenAnimation &#x3D; true;
+        this.profile &#x3D; await this.profileService.getActiveSessionProfile({ requiredFields: ProfileConstants.REQUIRED_FIELDS }).toPromise();
+        if (onSelectedFilter) {
+            const selectedData &#x3D; [];
+            onSelectedFilter.forEach((selectedFilter) &#x3D;&gt; {
+                selectedData.push(selectedFilter.name);
+            });
+            if (filterKey) {
+                this.filterFields &#x3D; this.filterFields ? this.filterFields : {};
+                this.filterFields[filterKey] &#x3D; selectedData;
+            }
+            if (this.formField.aggregate &amp;&amp; this.formField.aggregate.groupSortBy &amp;&amp; this.formField.aggregate.groupSortBy.length) {
+                this.formField.aggregate.groupSortBy.forEach((data) &#x3D;&gt; {
+                    let applyFilters &#x3D; [];
+                    Object.keys(this.filterFields).forEach((e) &#x3D;&gt; {
+                        if (this.filterFields[e].length) {
+                            applyFilters &#x3D; applyFilters.concat(this.filterFields[e]);
+                        }
+                    });
+                    if (data.name &amp;&amp; data.name.preference &amp;&amp; data.name.preference.length) {
+                        data.name.preference.push(selectedData);
+                    } else {
+                        data.name.preference &#x3D; selectedData;
+                    }
+                });
+            }
+        }
+
+        if (this.profile.subject.length &gt;&#x3D; 1) {
+            if (this.formField.aggregate &amp;&amp; this.formField.aggregate.groupSortBy &amp;&amp; this.formField.aggregate.groupSortBy.length) {
+                this.formField.aggregate.groupSortBy.forEach((sortData) &#x3D;&gt; {
+                    if (sortData.name.preference) {
+                        sortData.name.preference.push(this.profile.subject);
+                    }
+                });
+            }
+        }
+        const temp &#x3D; ((await this.contentService.buildContentAggregator
+            (this.formService, this.courseService, this.profileService)
+            .aggregate({
+                interceptSearchCriteria: () &#x3D;&gt; (searchCriteria),
+                userPreferences: {
+                    board: this.profile.board,
+                    medium: this.profile.medium,
+                    gradeLevel: this.profile.grade,
+                    subject: this.profile.subject,
+                  }
+            },
+                [], null, [{
+                    dataSrc: {
+                        type: &#x27;CONTENTS&#x27;,
+                        request: {
+                            type: &#x27;POST&#x27;,
+                            path: &#x27;/api/content/v1/search&#x27;,
+                            withBearerToken: true
+                        },
+                        mapping: [{
+                            aggregate: this.formField.aggregate
+                        }]
+                    },
+                    sections: [
+                        {
+                            index: 0,
+                            title: this.formField.facet,
+                            theme: {}
+                        }
+                    ],
+                } as AggregatorConfigField&lt;&#x27;CONTENTS&#x27;&gt;]).toPromise()).result);
+        (this as any)[&#x27;filterCriteria&#x27;] &#x3D; temp[0].meta.filterCriteria;
+
+        if(this.filterCriteria &amp;&amp; this.filterCriteria.facetFilters){
+            this.filterCriteria.facetFilters &#x3D;
+            await this.searchFilterService.reformFilterValues(this.filterCriteria.facetFilters, this.formAPIFacets);
+        }
+
+        this.facetFilters &#x3D; (this.filterCriteria.facetFilters || []).reduce((acc, f) &#x3D;&gt; {
+            acc[f.name] &#x3D; f.values;
+            return acc;
+        }, {});
+
+        if(this.facetFilters){
+            this.displayFacetFilters &#x3D; JSON.parse(JSON.stringify(this.facetFilters));
+        }
+        if (isInitialCall) {
+            this.initialFilterCriteria &#x3D; JSON.parse(JSON.stringify(this.filterCriteria));
+        }
+
+        if (!this.initialFacetFilters) {
+            this.initialFacetFilters &#x3D; JSON.parse(JSON.stringify(this.facetFilters));
+        }
+
+        if (this.primaryFacetFiltersFormGroup) {
+            this.primaryFacetFiltersFormGroup.patchValue(
+                this.primaryFacetFilters.reduce((acc, p) &#x3D;&gt; {
+                    if (p.sort) {
+                        this.displayFacetFilters[p.code].sort((a, b) &#x3D;&gt; a.name &gt; b.name &amp;&amp; 1 || -1);
+                    }
+                    acc[p.code] &#x3D; this.facetFilters[p.code]
+                        .filter(v &#x3D;&gt; v.apply)
+                        .map(v &#x3D;&gt; {
+                            return this.displayFacetFilters[p.code].find(i &#x3D;&gt; (i.name &#x3D;&#x3D;&#x3D; v.name));
+                        });
+                    return acc;
+                }, {}),
+                { emitEvent: false }
+            );
+        }
+
+        if (this.formField.filterPillBy) {
+            if (refreshPillFilter) {
+                this.filterPillList &#x3D; [];
+                setTimeout(() &#x3D;&gt; {
+                    this.filterPillList &#x3D; (this.facetFilters[this.formField.filterPillBy] &amp;&amp; JSON.parse(JSON.stringify(this.facetFilters[this.formField.filterPillBy]))) || [];
+                    if (this.filterPillList.length) {
+                        this.preFetchedFilterCriteria &#x3D; JSON.parse(JSON.stringify(this.filterCriteria));
+                        if (this.filterPillList.length &#x3D;&#x3D;&#x3D; 1) {
+                            this.selectedFilterPill &#x3D; this.filterPillList[0];
+                        } else {
+                            this.pillFilterHandler(this.filterPillList[0]);
+                        }
+                    }
+                }, 0);
+            }
+        }
+
+        this.sectionGroup &#x3D; (temp[0] as ContentAggregation&lt;&#x27;CONTENTS&#x27;&gt;).data;
+        this.showSheenAnimation &#x3D; false;
+        this.generateImpressionTelemetry();
+    }
+
+    private generateImpressionTelemetry() {
+        if (!this.shouldGenerateImpressionTelemetry) {
+            return;
+        }
+        const facet &#x3D; this.formField.facet;
+        const selectedFacet &#x3D; facet &amp;&amp; ObjectUtil.isJSON(facet) ? JSON.parse(facet)[&#x27;en&#x27;] : facet;
+        switch (this.sectionCode) {
+            case &#x27;popular_categories&#x27;:
+                this.corRelationList.push({
+                    type: CorReleationDataType.CATEGORY,
+                    id: selectedFacet
+                });
+                this.pageId &#x3D; PageId.CATEGORY_RESULTS;
+                this.fromPage &#x3D; PageId.SEARCH;
+                this.env &#x3D; Environment.SEARCH;
+                break;
+            case &#x27;other_boards&#x27;:
+                this.corRelationList.push({
+                    type: CorReleationDataType.BOARD,
+                    id: selectedFacet
+                });
+                this.pageId &#x3D; PageId.BOARD_RESULTS;
+                this.fromPage &#x3D; PageId.SEARCH;
+                this.env &#x3D; Environment.SEARCH;
+                break;
+            case &#x27;browse_by_subject&#x27;:
+                this.corRelationList.push({
+                    type: CorReleationDataType.SUBJECT,
+                    id: selectedFacet
+                });
+                this.pageId &#x3D; PageId.SUBJECT_RESULTS;
+                this.fromPage &#x3D; PageId.HOME;
+                this.env &#x3D; Environment.HOME;
+                break;
+            case &#x27;browse_by_category&#x27;:
+                this.corRelationList.push({
+                    type: CorReleationDataType.CATEGORY,
+                    id: selectedFacet
+                });
+                this.pageId &#x3D; PageId.CATEGORY_RESULTS;
+                this.fromPage &#x3D; PageId.HOME;
+                this.env &#x3D; Environment.HOME;
+                break;
+            case &#x27;browse_by_audience&#x27;:
+                this.corRelationList.push({
+                    type: CorReleationDataType.AUDIENCE,
+                    id: selectedFacet
+                });
+                this.pageId &#x3D; PageId.AUDIENCE_RESULTS;
+                this.fromPage &#x3D; PageId.SEARCH;
+                this.env &#x3D; Environment.SEARCH;
+                break;
+        }
+
+        this.corRelationList.push({
+            type: CorReleationDataType.FROM_PAGE,
+            id: this.fromPage
+        });
+        let upDatedCorRelationList &#x3D; [];
+        if (this.sectionGroup &amp;&amp; this.sectionGroup.sections &amp;&amp; this.sectionGroup.sections.length) {
+            const categoryResultCount &#x3D; this.sectionGroup.sections.reduce((acc, curr) &#x3D;&gt; {
+                return acc + curr.count;
+            }, 0);
+            upDatedCorRelationList &#x3D; this.corRelationList.concat([{
+                type: CorReleationDataType.COUNT_CONTENT,
+                id: categoryResultCount + &#x27;&#x27;
+            }]);
+        }
+        this.shouldGenerateImpressionTelemetry &#x3D; false;
+        this.telemetryGeneratorService.generateImpressionTelemetry(
+            ImpressionType.PAGE_LOADED, &#x27;&#x27;,
+            this.pageId,
+            this.env, undefined, undefined, undefined, undefined,
+            upDatedCorRelationList
+        );
+    }
+
+    navigateToViewMorePage(items, subject, totalCount) {
+        this.telemetryGeneratorService.generateInteractTelemetry(InteractType.TOUCH,
+            InteractSubtype.VIEW_MORE_CLICKED,
+            Environment.HOME,
+            PageId.LIBRARY,
+            ContentUtil.getTelemetryObject(items));
+        if (this.commonUtilService.networkInfo.isNetworkAvailable || items.isAvailableLocally) {
+            const corRelationList &#x3D; [
+                { id: subject || &#x27;&#x27;, type: CorReleationDataType.SECTION },
+                { id: this.sectionCode || &#x27;&#x27;, type: CorReleationDataType.ROOT_SECTION },
+                { id: this.formField || &#x27;&#x27;, type: CorReleationDataType.CONTENT}
+            ];
+            this.router.navigate([RouterLinks.TEXTBOOK_VIEW_MORE], {
+                state: {
+                    contentList: items,
+                    subjectName: subject,
+                    corRelation: corRelationList,
+                    supportedFacets: this.supportedFacets,
+                    totalCount
+                }
+            });
+        } else {
+            this.commonUtilService.presentToastForOffline(&#x27;OFFLINE_WARNING_ETBUI&#x27;).then();
+        }
+    }
+
+    navigateToDetailPage(event, sectionName) {
+        event.data &#x3D; event.data.content ? event.data.content : event.data;
+        const item &#x3D; event.data;
+        const index &#x3D; event.index;
+        const identifier &#x3D; item.contentId || item.identifier;
+        const corRelationList &#x3D; [
+            { id: sectionName || &#x27;&#x27;, type: CorReleationDataType.SECTION },
+            { id: this.sectionCode || &#x27;&#x27;, type: CorReleationDataType.ROOT_SECTION }
+        ];
+        const values &#x3D; {};
+        values[&#x27;sectionName&#x27;] &#x3D; sectionName;
+        values[&#x27;positionClicked&#x27;] &#x3D; index;
+        this.telemetryGeneratorService.generateInteractTelemetry(
+            InteractType.SELECT_CONTENT,
+            &#x27;&#x27;,
+            this.env,
+            this.pageId,
+            ContentUtil.getTelemetryObject(item),
+            values,
+            ContentUtil.generateRollUp(undefined, identifier),
+            this.corRelationList);
+        if (this.commonUtilService.networkInfo.isNetworkAvailable || item.isAvailableLocally) {
+            this.navService.navigateToDetailPage(item, { content: item, corRelation: corRelationList });
+        } else {
+            this.commonUtilService.presentToastForOffline(&#x27;OFFLINE_WARNING_ETBUI&#x27;).then();
+        }
+    }
+
+    scrollToSection(id: string) {
+        this.scrollService.scrollTo(id, {
+            block: &#x27;center&#x27;,
+            behavior: &#x27;smooth&#x27;
+        });
+    }
+
+    async navigateToFilterFormPage() {
+        this.telemetryGeneratorService.generateInteractTelemetry(InteractType.TOUCH,
+            InteractSubtype.FILTER_BUTTON_CLICKED,
+            Environment.COURSE,
+            PageId.COURSE_PAGE_FILTER
+            );
+        const isDataEmpty &#x3D; (this.sectionGroup &amp;&amp; this.sectionGroup.sections &amp;&amp; this.sectionGroup.sections.length) ? false : true;
+        const inputFilterCriteria: ContentSearchCriteria &#x3D; this.deduceFilterCriteria(isDataEmpty);
+        const openFiltersPage &#x3D; await this.modalController.create({
+            component: SearchFilterPage,
+            componentProps: {
+                initialFilterCriteria: inputFilterCriteria,
+                defaultFilterCriteria: JSON.parse(JSON.stringify(this.initialFilterCriteria)),
+                existingSearchFilters: this.existingSearchFilters,
+                formAPIFacets: this.formAPIFacets
+            }
+        });
+        await openFiltersPage.present();
+        openFiltersPage.onDidDismiss().then(async (result) &#x3D;&gt; {
+            if (result &amp;&amp; result.data) {
+                this.resentFilterCriteria &#x3D; result.data.appliedFilterCriteria;
+                await this.applyFilter(result.data.appliedFilterCriteria);
+            }
+        });
+    }
+
+    async onPrimaryFacetFilterSelect(primaryFacetFilter: { code: string }, toApply: FilterValue[]) {
+        const appliedFilterCriteria: ContentSearchCriteria &#x3D; this.deduceFilterCriteria();
+        const facetFilter &#x3D; appliedFilterCriteria.facetFilters.find(f &#x3D;&gt; f.name &#x3D;&#x3D;&#x3D; primaryFacetFilter.code);
+        if (facetFilter) {
+            facetFilter.values.forEach(facetFilterValue &#x3D;&gt; {
+                if (toApply.find(apply &#x3D;&gt; facetFilterValue.name &#x3D;&#x3D;&#x3D; apply.name)) {
+                    facetFilterValue.apply &#x3D; true;
+                } else {
+                    facetFilterValue.apply &#x3D; false;
+                }
+            });
+
+            await this.applyFilter(appliedFilterCriteria, true, toApply, primaryFacetFilter.code);
+        }
+    }
+
+    private async applyFilter(appliedFilterCriteria: ContentSearchCriteria, refreshPillFilter &#x3D; true, onSelectedFilter?, filterKey?) {
+        const tempSearchCriteria: ContentSearchCriteria &#x3D; {
+            ...appliedFilterCriteria,
+            mode: &#x27;hard&#x27;,
+            facets: this.supportedFacets,
+            searchType: SearchType.FILTER
+        };
+        tempSearchCriteria.facetFilters.forEach(facet &#x3D;&gt; {
+            if (facet.values &amp;&amp; facet.values.length &gt; 0) {
+                if (facet.name &#x3D;&#x3D;&#x3D; &#x27;audience&#x27; &amp;&amp; this.supportedUserTypesConfig) {
+                    facet.values &#x3D; ContentUtil.getAudienceFilter(facet, this.supportedUserTypesConfig);
+                }
+            }
+        });
+        await this.fetchAndSortData(tempSearchCriteria, false, refreshPillFilter, onSelectedFilter, filterKey);
+    }
+
+    async pillFilterHandler(pill){
+        if(!pill){
+            return;
+        }
+        const appliedFilterCriteria: ContentSearchCriteria &#x3D; this.deduceFilterCriteria();
+        const facetFilter &#x3D; appliedFilterCriteria.facetFilters.find(f &#x3D;&gt; f.name &#x3D;&#x3D;&#x3D; this.formField.filterPillBy);
+        if (facetFilter) {
+            pill.apply &#x3D; true;
+            facetFilter.values &#x3D; [pill];
+            this.selectedFilterPill &#x3D; pill
+        }
+        await this.applyFilter(appliedFilterCriteria, false);
+    }
+
+    deduceFilterCriteria(isDataEmpty?) {
+        let filterCriteriaData: ContentSearchCriteria;
+        if (isDataEmpty &amp;&amp; this.resentFilterCriteria) {
+            filterCriteriaData &#x3D; JSON.parse(JSON.stringify(this.resentFilterCriteria));
+        } else if (this.filterPillList.length &amp;&amp; this.formField.filterPillBy &amp;&amp; this.preFetchedFilterCriteria) {
+            filterCriteriaData &#x3D; JSON.parse(JSON.stringify(this.preFetchedFilterCriteria));
+        } else {
+            filterCriteriaData &#x3D; JSON.parse(JSON.stringify(this.filterCriteria))
+        }
+        return filterCriteriaData;
+    }
+
+    getExistingFilters(formFields){
+        const existingSearchFilters &#x3D; {};
+        if(formFields){
+            if(formFields.filterPillBy){
+                existingSearchFilters[formFields.filterPillBy] &#x3D; true;
+            }
+            if(formFields.primaryFacetFilters){
+                formFields.primaryFacetFilters.forEach(facets &#x3D;&gt; {
+                    existingSearchFilters[facets.code] &#x3D; true;
+                });
+            }
+        }
+        return existingSearchFilters;
+    }
+
+    reloadDropdown(index, item){
+        return item;
+    }
+
+    ngOnDestroy() {
+        this.subscriptions.forEach(s &#x3D;&gt; s.unsubscribe());
+    }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-content&gt;
+    &lt;div class&#x3D;&quot;container-focus&quot;&gt;
+        &lt;div class&#x3D;&quot;px-16 pb-2&quot;&gt;
+            &lt;h3 *ngIf&#x3D;&quot;categoryTitle&quot; class&#x3D;&quot;mt-4&quot;
+                style&#x3D;&quot;font-weight: 600;&quot;&gt;{{(categoryTitle | translateJson: {&#x27;%category&#x27;: (formField.facet | translateJson), &#x27;%appName&#x27;: appName} ) | translate }}&lt;/h3&gt;
+            &lt;p *ngIf&#x3D;&quot;categoryDescription&quot;&gt;{{(categoryDescription | translateJson: {&#x27;%category&#x27;: (formField.facet | translateJson), &#x27;%appName&#x27;: appName} ) | translate }}&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;!-- filter from discover search page--&gt;
+        &lt;form [formGroup]&#x3D;&quot;primaryFacetFiltersFormGroup&quot; *ngIf&#x3D;&quot;primaryFacetFiltersFormGroup&quot;&gt;
+            &lt;ion-grid class&#x3D;&quot;filter-container&quot;&gt;
+                &lt;ion-row&gt;
+                    &lt;ion-col size&#x3D;&quot;5&quot; *ngFor&#x3D;&quot;let primaryFacetFilter of primaryFacetFilters&quot;&gt;
+                        &lt;ion-item class&#x3D;&quot;filter-items&quot;&gt;
+                            &lt;ion-label position&#x3D;&quot;stacked&quot; class&#x3D;&quot;hide-label&quot;&gt;
+                                {{primaryFacetFilter.translations | translateJson}}
+                            &lt;/ion-label&gt;
+                            &lt;ion-select class&#x3D;&quot;ion-text-capitalize&quot;
+                                        [interfaceOptions]&#x3D;&quot;primaryFacetFiltersTemplateOptions&quot;
+                                        [formControlName]&#x3D;&quot;primaryFacetFilter.code&quot;
+                                        okText&#x3D;&quot;{{&#x27;BTN_SUBMIT&#x27; | translate}}&quot;
+                                        cancelText&#x3D;&quot;{{&#x27;CANCEL&#x27; | translate}}&quot;
+                                        multiple&#x3D;&quot;true&quot;
+                                        placeholder&#x3D;&quot;{{primaryFacetFilter.translations | translateJson}}&quot;&gt;
+                                &lt;ion-select-option
+                                        *ngFor&#x3D;&quot;let facet of ((displayFacetFilters &amp;&amp; displayFacetFilters[primaryFacetFilter.code]) || []); trackBy:reloadDropdown&quot;
+                                        [value]&#x3D;&quot;facet&quot;
+                                        class&#x3D;&quot;ion-text-capitalize&quot;&gt;
+                                    {{facet.name | titlecase }}
+                                &lt;/ion-select-option&gt;
+                            &lt;/ion-select&gt;
+                        &lt;/ion-item&gt;
+                    &lt;/ion-col&gt;
+
+                    &lt;ion-col size&#x3D;&quot;2&quot;&gt;
+                        &lt;button class&#x3D;&quot;filter-button&quot; (click)&#x3D;&quot;navigateToFilterFormPage()&quot;&gt;
+                            &lt;img src&#x3D;&quot;./assets/imgs/filter.svg&quot; alt&#x3D;&quot;filter&quot;&gt;
+                        &lt;/button&gt;
+                    &lt;/ion-col&gt;
+                &lt;/ion-row&gt;
+            &lt;/ion-grid&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;p-8 sticky-header-pills&quot;&gt;
+        &lt;ng-container *ngIf&#x3D;&quot;!showSheenAnimation&quot;&gt;
+            &lt;sb-pills-grid *ngIf&#x3D;&quot;sectionGroup?.sections &amp;&amp; formField?.aggregate &amp;&amp; formField?.showNavigationPill&quot; [pillShape]&#x3D;&quot;&#x27;default&#x27;&quot;
+                           [pillsViewType]&#x3D;&quot;&#x27;scroll&#x27;&quot;
+                           [pillBorder]&#x3D;&quot;PillBorder.SEMI_ROUND&quot;&gt;
+                &lt;sb-pill-item (click)&#x3D;&quot;scrollToSection(sectionGroup.name + &#x27;_&#x27;+ section.name)&quot;
+                              *ngFor&#x3D;&quot;let section of sectionGroup?.sections&quot; [name]&#x3D;&quot;section?.name&quot;&gt;&lt;/sb-pill-item&gt;
+            &lt;/sb-pills-grid&gt;
+        &lt;/ng-container&gt;
+
+        &lt;ng-container *ngIf&#x3D;&quot;sectionGroup?.sections &amp;&amp; formField?.filterPillBy &amp;&amp; filterPillList &amp;&amp; filterPillList.length&quot;&gt;
+            &lt;sb-pills-grid [pillShape]&#x3D;&quot;&#x27;default&#x27;&quot;
+                           [pillsViewType]&#x3D;&quot;&#x27;scroll&#x27;&quot;
+                           [pillBorder]&#x3D;&quot;PillBorder.SEMI_ROUND&quot;&gt;
+                &lt;sb-pill-item *ngFor&#x3D;&quot;let pill of (filterPillList || [])&quot; [name]&#x3D;&quot;pill?.name | titlecase&quot;
+                    (click)&#x3D;&quot;pillFilterHandler(pill)&quot; [theme]&#x3D;&quot;(pill?.name &#x3D;&#x3D;&#x3D; selectedFilterPill?.name) &amp;&amp; selectedPillTheme&quot;&gt;&lt;/sb-pill-item&gt;
+            &lt;/sb-pills-grid&gt;
+        &lt;/ng-container&gt;
+    &lt;/div&gt;
+
+    &lt;ion-list class&#x3D;&quot;m-n&quot; *ngIf&#x3D;&quot;showSheenAnimation&quot;&gt;
+        &lt;app-skeleton-item height&#x3D;&quot;16px&quot; width&#x3D;&quot;40%&quot; style&#x3D;&quot;padding: 16px;&quot;&gt;&lt;/app-skeleton-item&gt;
+        &lt;ion-item *ngFor&#x3D;&quot;let i of [0,1,2,3,4,5,6,7,8]&quot; class&#x3D;&quot;animation-background&quot;&gt;
+            &lt;ion-avatar item-start&gt;
+                &lt;app-skeleton-item height&#x3D;&quot;72px&quot; width&#x3D;&quot;72px&quot;&gt;&lt;/app-skeleton-item&gt;
+            &lt;/ion-avatar&gt;
+            &lt;ion-label style&#x3D;&quot;padding-left: 40px;&quot;&gt;
+                &lt;app-skeleton-item height&#x3D;&quot;12px&quot; width&#x3D;&quot;67%&quot; style&#x3D;&quot;padding-bottom: 8px;&quot;&gt;&lt;/app-skeleton-item&gt;
+                &lt;app-skeleton-item height&#x3D;&quot;12px&quot; width&#x3D;&quot;47%&quot; style&#x3D;&quot;padding-bottom: 8px;&quot;&gt;&lt;/app-skeleton-item&gt;
+            &lt;/ion-label&gt;
+        &lt;/ion-item&gt;
+    &lt;/ion-list&gt;
+
+    &lt;div *ngIf&#x3D;&quot;!showSheenAnimation&quot;&gt;
+        &lt;div *ngFor&#x3D;&quot;let section of sectionGroup?.sections&quot;&gt;
+            &lt;div [id]&#x3D;&quot;sectionGroup.name + &#x27;_&#x27;+ section.name&quot;
+                 *ngIf&#x3D;&quot;section?.contents &amp;&amp; section?.contents?.length&quot; class&#x3D;&quot;pb-8&quot;&gt;
+                &lt;sb-library-cards-stack [title]&#x3D;&quot;section?.name&quot; [contentList]&#x3D;&quot;section?.contents&quot;
+                                        [viewMoreButtonText]&#x3D;&quot;&#x27;VIEW_MORE&#x27; | translate&quot; [maxCardCount]&#x3D;&quot;3&quot;
+                                        [layoutConfig]&#x3D;&quot;layoutConfiguration&quot;
+                                        (viewMoreClick)&#x3D;&quot;navigateToViewMorePage(section?.contents, section.name, section?.totalCount)&quot;
+                                        (cardClick)&#x3D;&quot;navigateToDetailPage($event, section.name)&quot;
+                                        [defaultImage]&#x3D;&quot;defaultImage&quot;&gt;
+                &lt;/sb-library-cards-stack&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;no-result-found&quot; *ngIf&#x3D;&quot;!sectionGroup?.sections?.length&quot;&gt;
+            {{ &#x27;EMPTY_SEARCH_RESULTS&#x27; | translate }}
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/ion-content&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./category-list-page.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">@import &quot;../../assets/styles/variables&quot;;
+.animation-background {
+  padding: 0 8px 0 8px;
+  background-color: map-get($colors, white_f2);
+}
+
+.sticky-header-pills{
+  position: sticky;
+  top: 1rem;
+  z-index: 9;
+  background-color: var(--app-primary-background);
+}
+
+.ios .sticky-header-pills {
+  top: 0
+}
+
+.filter-items{
+  height: 70%;
+  ion-select{
+    border: none !important;
+  }
+  border-radius: 2rem;
+  .hide-label{
+    display: none;
+  }
+}
+
+.container-focus {
+  padding-bottom: 0 !important;
+}
+
+.filter-button {
+  width: 100%;
+  height: 70%;
+  box-shadow: 0 0 50px 0 rgba(0,0,0,0.1) !important;
+  background-color: var(--app-primary-header-light);
+}
+
+.no-result-found{
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 2rem;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-content>    <div class="container-focus">        <div class="px-16 pb-2">            <h3 *ngIf="categoryTitle" class="mt-4"                style="font-weight: 600;">{{(categoryTitle | translateJson: {\'%category\': (formField.facet | translateJson), \'%appName\': appName} ) | translate }}</h3>            <p *ngIf="categoryDescription">{{(categoryDescription | translateJson: {\'%category\': (formField.facet | translateJson), \'%appName\': appName} ) | translate }}</p>        </div>        <!-- filter from discover search page-->        <form [formGroup]="primaryFacetFiltersFormGroup" *ngIf="primaryFacetFiltersFormGroup">            <ion-grid class="filter-container">                <ion-row>                    <ion-col size="5" *ngFor="let primaryFacetFilter of primaryFacetFilters">                        <ion-item class="filter-items">                            <ion-label position="stacked" class="hide-label">                                {{primaryFacetFilter.translations | translateJson}}                            </ion-label>                            <ion-select class="ion-text-capitalize"                                        [interfaceOptions]="primaryFacetFiltersTemplateOptions"                                        [formControlName]="primaryFacetFilter.code"                                        okText="{{\'BTN_SUBMIT\' | translate}}"                                        cancelText="{{\'CANCEL\' | translate}}"                                        multiple="true"                                        placeholder="{{primaryFacetFilter.translations | translateJson}}">                                <ion-select-option                                        *ngFor="let facet of ((displayFacetFilters && displayFacetFilters[primaryFacetFilter.code]) || []); trackBy:reloadDropdown"                                        [value]="facet"                                        class="ion-text-capitalize">                                    {{facet.name | titlecase }}                                </ion-select-option>                            </ion-select>                        </ion-item>                    </ion-col>                    <ion-col size="2">                        <button class="filter-button" (click)="navigateToFilterFormPage()">                            <img src="./assets/imgs/filter.svg" alt="filter">                        </button>                    </ion-col>                </ion-row>            </ion-grid>        </form>    </div>    <div class="p-8 sticky-header-pills">        <ng-container *ngIf="!showSheenAnimation">            <sb-pills-grid *ngIf="sectionGroup?.sections && formField?.aggregate && formField?.showNavigationPill" [pillShape]="\'default\'"                           [pillsViewType]="\'scroll\'"                           [pillBorder]="PillBorder.SEMI_ROUND">                <sb-pill-item (click)="scrollToSection(sectionGroup.name + \'_\'+ section.name)"                              *ngFor="let section of sectionGroup?.sections" [name]="section?.name"></sb-pill-item>            </sb-pills-grid>        </ng-container>        <ng-container *ngIf="sectionGroup?.sections && formField?.filterPillBy && filterPillList && filterPillList.length">            <sb-pills-grid [pillShape]="\'default\'"                           [pillsViewType]="\'scroll\'"                           [pillBorder]="PillBorder.SEMI_ROUND">                <sb-pill-item *ngFor="let pill of (filterPillList || [])" [name]="pill?.name | titlecase"                    (click)="pillFilterHandler(pill)" [theme]="(pill?.name === selectedFilterPill?.name) && selectedPillTheme"></sb-pill-item>            </sb-pills-grid>        </ng-container>    </div>    <ion-list class="m-n" *ngIf="showSheenAnimation">        <app-skeleton-item height="16px" width="40%" style="padding: 16px;"></app-skeleton-item>        <ion-item *ngFor="let i of [0,1,2,3,4,5,6,7,8]" class="animation-background">            <ion-avatar item-start>                <app-skeleton-item height="72px" width="72px"></app-skeleton-item>            </ion-avatar>            <ion-label style="padding-left: 40px;">                <app-skeleton-item height="12px" width="67%" style="padding-bottom: 8px;"></app-skeleton-item>                <app-skeleton-item height="12px" width="47%" style="padding-bottom: 8px;"></app-skeleton-item>            </ion-label>        </ion-item>    </ion-list>    <div *ngIf="!showSheenAnimation">        <div *ngFor="let section of sectionGroup?.sections">            <div [id]="sectionGroup.name + \'_\'+ section.name"                 *ngIf="section?.contents && section?.contents?.length" class="pb-8">                <sb-library-cards-stack [title]="section?.name" [contentList]="section?.contents"                                        [viewMoreButtonText]="\'VIEW_MORE\' | translate" [maxCardCount]="3"                                        [layoutConfig]="layoutConfiguration"                                        (viewMoreClick)="navigateToViewMorePage(section?.contents, section.name, section?.totalCount)"                                        (cardClick)="navigateToDetailPage($event, section.name)"                                        [defaultImage]="defaultImage">                </sb-library-cards-stack>            </div>        </div>        <div class="no-result-found" *ngIf="!sectionGroup?.sections?.length">            {{ \'EMPTY_SEARCH_RESULTS\' | translate }}        </div>    </div></ion-content></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'accessDiscussion'},{'name': 'AccordionListComponent', 'selector': 'app-accordion-list'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-id-popup'},{'name': 'AcknowledgeResponseComponent', 'selector': 'acknowledge-response'},{'name': 'ActiveDownloadsPage', 'selector': 'app-active-downloads'},{'name': 'ActivityDashboardPage', 'selector': 'activity-dashboard'},{'name': 'ActivityDetailsPage', 'selector': 'app-activity-details'},{'name': 'ActivityTocPage', 'selector': 'activity-toc'},{'name': 'AddActivityToGroupComponent', 'selector': 'add-activity-to-group'},{'name': 'AddActivityToGroupPage', 'selector': 'add-activity-to-group'},{'name': 'AddEntityComponent', 'selector': 'app-add-entity'},{'name': 'AddFilePage', 'selector': 'app-add-file'},{'name': 'AddLinkModalComponent', 'selector': 'app-add-link-modal'},{'name': 'AddMemberToGroupPage', 'selector': 'app-add-member-to-group'},{'name': 'AddProgramsComponent', 'selector': 'app-add-programs'},{'name': 'AdminHomePage', 'selector': 'app-admin-home'},{'name': 'AllEvidenceListComponent', 'selector': 'app-all-evidence-list'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationHeaderComponent', 'selector': 'app-application-header'},{'name': 'ApplicationHeaderKebabMenuComponent', 'selector': 'app-application-header-kebab-menu'},{'name': 'AppRatingAlertComponent', 'selector': 'app-rating-alert'},{'name': 'AttachmentCardComponent', 'selector': 'app-attachment-card'},{'name': 'AttachmentComponent', 'selector': 'attachments'},{'name': 'AttachmentListingPage', 'selector': 'app-attachment-listing'},{'name': 'AttachmentListsComponent', 'selector': 'app-attachment-lists'},{'name': 'BarChartComponent', 'selector': 'bar-chart'},{'name': 'CategoriesEditPage', 'selector': 'app-categories-edit'},{'name': 'CategoryListPage', 'selector': 'app-category-list-page'},{'name': 'CategorySelectComponent', 'selector': 'app-category-select'},{'name': 'CertificateVerificationPopoverComponent', 'selector': 'app-certificate-verification-popover'},{'name': 'CertificateViewPage', 'selector': 'app-certificate-view'},{'name': 'ChapterDetailsPage', 'selector': 'app-chapter-details'},{'name': 'CollectionActionsComponent', 'selector': 'collection-acions'},{'name': 'CollectionChildComponent', 'selector': 'app-collection-child'},{'name': 'CollectionDetailEtbPage', 'selector': 'app-collection-detail-etb'},{'name': 'CommonFormsComponent', 'selector': 'app-common-forms'},{'name': 'CommonHeaderComponent', 'selector': 'app-common-header'},{'name': 'ConfirmAlertComponent', 'selector': 'app-confirm-alert'},{'name': 'ConsentPiiPopupComponent', 'selector': 'app-consent-pii-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentDetailsPage', 'selector': 'app-content-details'},{'name': 'ContentRatingAlertComponent', 'selector': 'app-content-rating-alert'},{'name': 'ContentViewerComponent', 'selector': 'content-viewer'},{'name': 'CopyTraceIdPopoverComponent', 'selector': 'app-copy-trace-id-popover'},{'name': 'CourseBatchesPage', 'selector': 'app-course-batches'},{'name': 'CourseCompletionPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'CoursesPage', 'selector': 'app-courses'},{'name': 'CreateEditGroupPage', 'selector': 'app-create-edit-group'},{'name': 'CreateProjectPage', 'selector': 'app-create-project'},{'name': 'CreateTaskComponent', 'selector': 'app-create-task'},{'name': 'CreateTaskFormComponent', 'selector': 'app-create-task-form'},{'name': 'CurriculumCoursesPage', 'selector': 'app-curriculum-courses'},{'name': 'DashboardComponent', 'selector': 'dashboard-component'},{'name': 'DataSyncComponent', 'selector': 'app-data-sync'},{'name': 'DateTypeInputComponent', 'selector': 'app-date-type-input'},{'name': 'DeeplinkRedirectComponent', 'selector': 'app-deeplink-redirect'},{'name': 'DetailCardComponent', 'selector': 'app-detail-card'},{'name': 'DialogPopupComponent', 'selector': 'app-dialog-popup'},{'name': 'DiscoverComponent', 'selector': 'app-discover'},{'name': 'DistrictMappingPage', 'selector': 'app-district-mapping'},{'name': 'DomainEcmLsitingComponent', 'selector': 'app-domain-ecm-lsiting'},{'name': 'DownloadManagerPage', 'selector': 'app-download-manager'},{'name': 'DownloadShareComponent', 'selector': 'download-share'},{'name': 'DownloadsHeaderComponent', 'selector': 'app-downloads-header'},{'name': 'DownloadsTabComponent', 'selector': 'app-downloads-tab'},{'name': 'DownloadTranscriptPopupComponent', 'selector': 'app-download-transcript-popup'},{'name': 'EcmListingPage', 'selector': 'app-ecm-listing'},{'name': 'EditContactDetailsPopupComponent', 'selector': 'app-edit-contact-details-popup'},{'name': 'EditContactVerifyPopupComponent', 'selector': 'app-edit-contact-verify-popup'},{'name': 'EnrolledCourseDetailsPage', 'selector': 'app-enrolled-course-details-page'},{'name': 'EnrollmentDetailsComponent', 'selector': 'app-enrollment-details'},{'name': 'EntityfilterComponent', 'selector': 'app-entityfilter'},{'name': 'EntitySearchLocalComponent', 'selector': 'app-entity-search-local'},{'name': 'ExpansionPanelComponent', 'selector': 'expansion-panel'},{'name': 'ExpansionTableComponent', 'selector': 'expansion-table'},{'name': 'ExploreBooksPage', 'selector': 'app-explore-books'},{'name': 'ExploreBooksSortComponent', 'selector': 'app-explore-books-sort'},{'name': 'FaqHelpPage', 'selector': 'app-faq-help'},{'name': 'FaqReportIssuePage', 'selector': 'app-faq-report-issue'},{'name': 'FilterModalComponent', 'selector': 'app-filter-modal'},{'name': 'FilteroptionComponent', 'selector': 'app-filteroption'},{'name': 'FiltersPage', 'selector': 'app-filters'},{'name': 'FooterButtonsComponent', 'selector': 'app-footer-buttons'},{'name': 'FrameworkSelectionPage', 'selector': 'app-framework-selection'},{'name': 'GraphCircleComponent', 'selector': 'graph-circle'},{'name': 'GroupDetailsPage', 'selector': 'app-group-details'},{'name': 'GroupGuideLinesPopoverComponent', 'selector': 'app-group-guidelines-popover'},{'name': 'GuestEditPage', 'selector': 'app-guest-edit'},{'name': 'GuestProfilePage', 'selector': 'app-guest-profile'},{'name': 'HintComponent', 'selector': 'app-hint'},{'name': 'ImageListingComponent', 'selector': 'app-image-listing'},{'name': 'ImageUploadComponent', 'selector': 'app-image-upload'},{'name': 'ImportPopoverComponent', 'selector': 'app-import-popover'},{'name': 'ImpSuggestionsPage', 'selector': 'app-imp-suggestions'},{'name': 'ItemListCardComponent', 'selector': 'app-item-list-card'},{'name': 'ItemListHeaderComponent', 'selector': 'app-item-list-header'},{'name': 'JoyfulThemePopupComponent', 'selector': 'app-joyful-theme-popup'},{'name': 'LanguageSettingsPage', 'selector': 'page-language-settings'},{'name': 'LearningResourcesPage', 'selector': 'app-learning-resources'},{'name': 'LicenseCardComponentComponent', 'selector': 'app-license-card-component'},{'name': 'LinkLearningResourcesComponent', 'selector': 'app-link-learning-resources'},{'name': 'ManageUserProfilesPage', 'selector': 'app-manage-user-profiles'},{'name': 'MatrixChartComponent', 'selector': 'matrix-chart'},{'name': 'MatrixModalComponent', 'selector': 'app-matrix-modal'},{'name': 'MatrixTypeInputComponent', 'selector': 'app-matrix-type-input'},{'name': 'MetadataActionsComponent', 'selector': 'app-metadata-actions'},{'name': 'MetadataDetailsComponent', 'selector': 'app-metadata-details'},{'name': 'MultipleTypeInputComponent', 'selector': 'app-multiple-type-input'},{'name': 'MyGroupsPage', 'selector': 'app-my-groups'},{'name': 'MyGroupsPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'NewExperiencePopupComponent', 'selector': 'app-new-experience-popup'},{'name': 'NoDataComponent', 'selector': 'app-no-data'},{'name': 'NoDownloadsComponent', 'selector': 'app-no-downloads'},{'name': 'NotificationItemComponent', 'selector': 'app-notification-item'},{'name': 'NotificationPage', 'selector': 'app-notification'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationHomeComponent', 'selector': 'app-observation-home'},{'name': 'ObservationSolutionEntityListingComponent', 'selector': 'app-observation-solution-entity-listing'},{'name': 'ObservationSolutionListingComponent', 'selector': 'app-observation-solution-listing'},{'name': 'ObservationSubmissionComponent', 'selector': 'app-observation-submission'},{'name': 'OtpPage', 'selector': 'app-otp'},{'name': 'OverflowMenuComponent', 'selector': 'app-overflow-menu'},{'name': 'PageFilterOptionsPage', 'selector': 'app-page-filter-options'},{'name': 'PageFilterPage', 'selector': 'app-page-filter'},{'name': 'PageQuestionsComponent', 'selector': 'app-page-questions'},{'name': 'PbHorizontalComponent', 'selector': 'app-pb-horizontal'},{'name': 'PercentageColumnChartsComponent', 'selector': 'percentage-column-charts'},{'name': 'PermissionComponent', 'selector': 'app-permission'},{'name': 'PersonalDetailsEditPage', 'selector': 'app-personal-details-edit'},{'name': 'PieChartComponent', 'selector': 'pie-chart'},{'name': 'PlayerPage', 'selector': 'app-player'},{'name': 'PopoverComponent', 'selector': 'app-popover'},{'name': 'PrivacyPolicyAndTCComponent', 'selector': 'app-privacy-policy-and-tc'},{'name': 'ProfileAvatarComponent', 'selector': 'app-profile-avatar'},{'name': 'ProfileNameConfirmationPopoverComponent', 'selector': 'app-profile-name-confirmation-popover'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfileSettingsPage', 'selector': 'app-profile-settings'},{'name': 'ProgramListingComponent', 'selector': 'app-program-listing'},{'name': 'ProgressBarComponent', 'selector': 'progress-bar'},{'name': 'ProjectDetailsCardComponent', 'selector': 'app-project-details-card'},{'name': 'ProjectDetailsComponent', 'selector': 'app-project-details'},{'name': 'ProjectEditPage', 'selector': 'app-project-edit'},{'name': 'ProjectListingComponent', 'selector': 'app-project-listing'},{'name': 'ProjectMetadataCardComponent', 'selector': 'app-project-metadata-card'},{'name': 'ProjectOperationPage', 'selector': 'app-project-operation'},{'name': 'ProjectReportComponent', 'selector': 'app-project-report'},{'name': 'ProjectTaskListComponent', 'selector': 'app-project-task-list'},{'name': 'ProjectTemplatePage', 'selector': 'app-project-template'},{'name': 'ProjectTemplateviewPage', 'selector': 'app-project-templateview'},{'name': 'QrcoderesultPage', 'selector': 'app-qrcoderesult'},{'name': 'QRScannerAlert', 'selector': 'app-qrscanner-alert'},{'name': 'QrScannerIOSComponent', 'selector': 'app-qr-scanner-ios'},{'name': 'QuestionHeadingComponent', 'selector': 'app-question-heading'},{'name': 'QuestionMapModalComponent', 'selector': 'app-question-map-modal'},{'name': 'QuestionnairePage', 'selector': 'app-questionnaire'},{'name': 'RadioTypeInputComponent', 'selector': 'app-radio-type-input'},{'name': 'RelevantContentCardComponent', 'selector': 'app-relevant-content-card'},{'name': 'RelevantContentsPage', 'selector': 'app-relevant-contents'},{'name': 'RemarksComponent', 'selector': 'app-remarks'},{'name': 'RemarksModalComponent', 'selector': 'app-remarks-modal'},{'name': 'ReportListComponent', 'selector': 'app-report-list'},{'name': 'ReportModalFilter', 'selector': 'report-modal-filter'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'ReportsListingComponent', 'selector': 'app-reports-listing'},{'name': 'ReportsTextComponent', 'selector': 'reports-text'},{'name': 'ResourcesComponent', 'selector': 'app-resources'},{'name': 'SbAppSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbDownloadPopupComponent', 'selector': 'app-sb-download-popup'},{'name': 'SbGenericFormPopoverComponent', 'selector': 'app-sb-generic-form-popover'},{'name': 'SbGenericPopoverComponent', 'selector': 'app-sb-generic-popover'},{'name': 'SbInsufficientStoragePopupComponent', 'selector': 'sb-insufficient-storage-popup'},{'name': 'SbNoNetworkPopupComponent', 'selector': 'sb-no-network-popup'},{'name': 'SbPopoverComponent', 'selector': 'sb-popover'},{'name': 'SbPreferencePopupComponent', 'selector': 'app-sb-preferences-popup'},{'name': 'SbProgressLoaderPage', 'selector': 'app-sb-progress-loader'},{'name': 'SbSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbSubjectListPopupComponent', 'selector': 'app-sb-subject-list-popup'},{'name': 'SbTutorialPopupComponent', 'selector': 'app-sb-tutorial-popup'},{'name': 'ScatterChartComponent', 'selector': 'scatter-chart'},{'name': 'SearchFilterPage', 'selector': 'app-search-filter.page'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SectionListingPage', 'selector': 'app-section-listing'},{'name': 'SelfDeclaredTeacherEditPage', 'selector': 'app-self-declared-teacher-edit'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'ShowCertificateComponent', 'selector': 'app-show-certificate-component'},{'name': 'ShowVendorAppsComponent', 'selector': 'show-vendor-apps'},{'name': 'SignInCardComponent', 'selector': 'app-sign-in-card'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'SignupBasicInfoPage', 'selector': 'app-signup-basic-info'},{'name': 'SignupEmailPasswordPage', 'selector': 'app-signup-email-password'},{'name': 'SkeletonItemComponent', 'selector': 'app-skeleton-item'},{'name': 'SliderTypeInputComponent', 'selector': 'app-slider-type-input'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'StartImprovementComponent', 'selector': 'app-start-improvement'},{'name': 'StorageSettingsPage', 'selector': 'app-storage-settings'},{'name': 'SubmissionActionsComponent', 'selector': 'app-submission-actions'},{'name': 'SubmissionPreviewPageComponent', 'selector': 'app-submission-preview-page'},{'name': 'SubProfileEditPage', 'selector': 'app-sub-profile-edit'},{'name': 'SupportAcknowledgement', 'selector': 'support-acknowledgement'},{'name': 'SurveyHomeComponent', 'selector': 'app-survey-home'},{'name': 'SurveyMsgComponent', 'selector': 'app-survey-msg'},{'name': 'SyncPage', 'selector': 'app-sync'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TaskCardComponent', 'selector': 'app-task-card'},{'name': 'TaskViewPage', 'selector': 'app-task-view'},{'name': 'TeacherIdVerificationComponent', 'selector': 'app-teacher-id-verification-popup'},{'name': 'TermsAndConditionsPage', 'selector': 'app-terms-and-conditions'},{'name': 'TextBookTocPage', 'selector': 'textbook-toc'},{'name': 'TextbookViewMorePage', 'selector': 'app-textbook-view-more'},{'name': 'TextTypeInputComponent', 'selector': 'app-text-type-input'},{'name': 'ToastNavigationComponent', 'selector': 'app-toast-navigation'},{'name': 'TocHeaderComponent', 'selector': 'app-toc-header'},{'name': 'UpgradePopoverComponent', 'selector': 'app-upgrade-popover'},{'name': 'UserHomePage', 'selector': 'app-user-home'},{'name': 'UserTypeSelectionPage', 'selector': 'page-user-type-selection'},{'name': 'ViewCreditsComponent', 'selector': 'app-view-credits'},{'name': 'ViewDetailComponent', 'selector': 'app-view-detail'},{'name': 'ViewMoreActivityComponent', 'selector': 'app-view-more-activity'},{'name': 'ViewMoreActivityPage', 'selector': 'view-more-activity'},{'name': 'YearOfBirthPopupComponent', 'selector': 'app-year-of-birth-popup'}];
+    var DIRECTIVES = [{'name': 'CustomIonSelectDirective', 'selector': '[appCustomIonSelect]'},{'name': 'HideHeaderFooterDirective', 'selector': '[hide-header-footer]'},{'name': 'ReadMoreDirective', 'selector': '[readMore]'}];
+    var ACTUAL_COMPONENT = {'name': 'CategoryListPage'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CategoryListPage.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

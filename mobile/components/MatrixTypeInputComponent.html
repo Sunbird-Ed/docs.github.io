@@ -1,0 +1,1737 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Components</li>
+  <li class="breadcrumb-item"
+  >
+  MatrixTypeInputComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" class="nav-link"
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li class="nav-item">
+            <a href="#templateData" class="nav-link"
+                role="tab" id="templateData-tab" data-bs-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li class="nav-item">
+            <a href="#styleData" class="nav-link"
+                role="tab" id="styleData-tab" data-bs-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li class="nav-item">
+            <a href="#tree" class="nav-link"
+                role="tab" id="tree-tab" data-bs-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code>OnInit</code>
+    </p>
+
+
+<section data-compodoc="block-metadata">
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-matrix-type-input</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./matrix-type-input.component.scss</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./matrix-type-input.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#initilaData" >initilaData</a>
+                            </li>
+                            <li>
+                                <a href="#mainInstance" >mainInstance</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#addInstances" >addInstances</a>
+                            </li>
+                            <li>
+                                <a href="#back" >back</a>
+                            </li>
+                            <li>
+                                <a href="#checkCompletionOfInstance" >checkCompletionOfInstance</a>
+                            </li>
+                            <li>
+                                <a href="#checkForValidation" >checkForValidation</a>
+                            </li>
+                            <li>
+                                <a href="#deleteInstance" >deleteInstance</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#deleteInstanceAlert" >deleteInstanceAlert</a>
+                            </li>
+                            <li>
+                                <a href="#getLastModified" >getLastModified</a>
+                            </li>
+                            <li>
+                                <a href="#next" >next</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#updateInstance" >updateInstance</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#viewInstance" >viewInstance</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#data" >data</a>
+                            </li>
+                            <li>
+                                <a href="#enableGps" >enableGps</a>
+                            </li>
+                            <li>
+                                <a href="#enableQuestionReadOut" >enableQuestionReadOut</a>
+                            </li>
+                            <li>
+                                <a href="#evidenceId" >evidenceId</a>
+                            </li>
+                            <li>
+                                <a href="#generalQuestion" >generalQuestion</a>
+                            </li>
+                            <li>
+                                <a href="#imageLocalCopyId" >imageLocalCopyId</a>
+                            </li>
+                            <li>
+                                <a href="#inputIndex" >inputIndex</a>
+                            </li>
+                            <li>
+                                <a href="#isFirst" >isFirst</a>
+                            </li>
+                            <li>
+                                <a href="#isLast" >isLast</a>
+                            </li>
+                            <li>
+                                <a href="#schoolId" >schoolId</a>
+                            </li>
+                            <li>
+                                <a href="#submissionId" >submissionId</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#nextCallBack" >nextCallBack</a>
+                            </li>
+                            <li>
+                                <a href="#previousCallBack" >previousCallBack</a>
+                            </li>
+                            <li>
+                                <a href="#updateLocalData" >updateLocalData</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(modalCtrl: ModalController, translate: TranslateService, alertCtrl: AlertController, utils: <a href="../injectables/UtilsService.html" target="_self">UtilsService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>modalCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>translate</td>
+                                                  
+                                                        <td>
+                                                                    <code>TranslateService</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>alertCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>AlertController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utils</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilsService.html" target="_self" >UtilsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section data-compodoc="block-inputs">
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="data"></a>
+                        <b>data</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:14</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="enableGps"></a>
+                        <b>enableGps</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:26</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="enableQuestionReadOut"></a>
+                        <b>enableQuestionReadOut</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="evidenceId"></a>
+                        <b>evidenceId</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:20</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="generalQuestion"></a>
+                        <b>generalQuestion</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:23</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="imageLocalCopyId"></a>
+                        <b>imageLocalCopyId</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:22</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="inputIndex"></a>
+                        <b>inputIndex</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:25</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isFirst"></a>
+                        <b>isFirst</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:16</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="isLast"></a>
+                        <b>isLast</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:15</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="schoolId"></a>
+                        <b>schoolId</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:21</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submissionId"></a>
+                        <b>submissionId</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:24</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section data-compodoc="block-outputs">
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="nextCallBack"></a>
+                        <b>nextCallBack</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:17</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="previousCallBack"></a>
+                        <b>previousCallBack</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:18</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateLocalData"></a>
+                        <b>updateLocalData</b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>EventEmitter</code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:19</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="addInstances"></a>
+                    <span class="name">
+                        <span ><b>addInstances</b></span>
+                        <a href="#addInstances"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>addInstances()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="back"></a>
+                    <span class="name">
+                        <span ><b>back</b></span>
+                        <a href="#back"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>back()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkCompletionOfInstance"></a>
+                    <span class="name">
+                        <span ><b>checkCompletionOfInstance</b></span>
+                        <a href="#checkCompletionOfInstance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkCompletionOfInstance(data, gpsLocation)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="123"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:123</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>data</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>gpsLocation</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="checkForValidation"></a>
+                    <span class="name">
+                        <span ><b>checkForValidation</b></span>
+                        <a href="#checkForValidation"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>checkForValidation()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="151"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:151</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteInstance"></a>
+                    <span class="name">
+                        <span ><b>deleteInstance</b></span>
+                        <a href="#deleteInstance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>deleteInstance(instanceIndex)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="141"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:141</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>instanceIndex</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="deleteInstanceAlert"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>deleteInstanceAlert</b></span>
+                        <a href="#deleteInstanceAlert"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>deleteInstanceAlert(index)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="158"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:158</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>index</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getLastModified"></a>
+                    <span class="name">
+                        <span ><b>getLastModified</b></span>
+                        <a href="#getLastModified"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getLastModified(instance)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="185"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:185</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>instance</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="next"></a>
+                    <span class="name">
+                        <span ><b>next</b></span>
+                        <a href="#next"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>next(status?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="42"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:42</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>status</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="37"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:37</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="updateInstance"></a>
+                    <span class="name">
+                        <span ><b>updateInstance</b></span>
+                        <a href="#updateInstance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>updateInstance(instanceIndex, instanceValue, gpsLocation?: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>instanceIndex</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>instanceValue</td>
+                                    <td>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>gpsLocation</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        Yes
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="viewInstance"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>viewInstance</b></span>
+                        <a href="#viewInstance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>viewInstance(i)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="58"
+                            class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:58</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>i</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section data-compodoc="block-properties">
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="initilaData"></a>
+                    <span class="name">
+                        <span ><b>initilaData</b></span>
+                        <a href="#initilaData"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="mainInstance"></a>
+                    <span class="name">
+                        <span ><b>mainInstance</b></span>
+                        <a href="#mainInstance"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/manage-learn/shared/components/matrix-type-input/matrix-type-input.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, Input, Output, EventEmitter } from &#x27;@angular/core&#x27;;
+import { UtilsService } from &#x27;@app/app/manage-learn/core&#x27;;
+import { MatrixModalComponent } from &#x27;@app/app/manage-learn/questionnaire/matrix-modal/matrix-modal.component&#x27;;
+import { AlertController, ModalController } from &#x27;@ionic/angular&#x27;;
+import { TranslateService } from &#x27;@ngx-translate/core&#x27;;
+
+@Component({
+  selector: &#x27;app-matrix-type-input&#x27;,
+  templateUrl: &#x27;./matrix-type-input.component.html&#x27;,
+  styleUrls: [&#x27;./matrix-type-input.component.scss&#x27;],
+})
+export class MatrixTypeInputComponent implements OnInit {
+
+  @Input() data: any;
+  @Input() isLast: boolean;
+  @Input() isFirst: boolean;
+  @Output() nextCallBack &#x3D; new EventEmitter();
+  @Output() previousCallBack &#x3D; new EventEmitter();
+  @Output() updateLocalData &#x3D; new EventEmitter();
+  @Input() evidenceId: string;
+  @Input() schoolId: string;
+  @Input() imageLocalCopyId: string;
+  @Input() generalQuestion: boolean;
+  @Input() submissionId: string;
+  @Input() inputIndex;
+  @Input() enableGps;
+  @Input() enableQuestionReadOut: boolean;
+  mainInstance: any;
+  initilaData;
+
+  constructor(
+    private modalCtrl: ModalController,
+    private translate: TranslateService,
+    private alertCtrl: AlertController,
+    private utils: UtilsService) { }
+
+  ngOnInit() {
+    this.data.startTime &#x3D; this.data.startTime ? this.data.startTime : Date.now();
+    this.initilaData &#x3D; JSON.parse(JSON.stringify(this.data));
+  }
+
+  next(status?: any) {
+    this.data.isCompleted &#x3D; this.utils.isMatrixQuestionComplete(this.data);
+    this.nextCallBack.emit(status);
+  }
+
+  back() {
+    this.data.isCompleted &#x3D; this.utils.isMatrixQuestionComplete(this.data);
+    this.previousCallBack.emit(&#x27;previous&#x27;);
+  }
+
+  addInstances(): void {
+    this.data.value &#x3D; this.data.value ? this.data.value : [];
+    this.data.value.push(JSON.parse(JSON.stringify(this.data.instanceQuestions)));
+    this.checkForValidation();
+  }
+
+  async viewInstance(i) {
+    const obj &#x3D; {
+      selectedIndex: i,
+      data: JSON.parse(JSON.stringify(this.data)),
+      evidenceId: this.evidenceId,
+      schoolId: this.schoolId,
+      generalQuestion: this.generalQuestion,
+      submissionId: this.submissionId,
+      questionIndex: this.inputIndex,
+      enableQuestionReadOut: this.enableQuestionReadOut
+    }
+    let matrixModal &#x3D; await this.modalCtrl.create({
+      component: MatrixModalComponent,
+      componentProps: obj
+    });
+
+    await matrixModal.present();
+
+    const { data } &#x3D; await matrixModal.onDidDismiss()
+    this.updateInstance(i, data)
+    // matrixModal.onDidDismiss(instanceValue &#x3D;&gt; {
+    //   if (this.enableGps) {
+    //     this.checkForGpsLocation(i, instanceValue)
+    //   } else {
+    //     this.updateInstance(i, instanceValue)
+    //   }
+    // })
+  }
+
+  // checkForGpsLocation(instanceIndex, instanceValue) {
+  //   if (JSON.stringify(instanceValue) !&#x3D;&#x3D; JSON.stringify(this.data.value[instanceIndex]) &amp;&amp; this.checkCompletionOfInstance(instanceValue, null)) {
+  //     this.utils.startLoader();
+  //     this.ngps.getGpsStatus().then(success &#x3D;&gt; {
+  //       this.utils.stopLoader();
+  //       this.updateInstance(instanceIndex, instanceValue, success)
+  //     }).catch(error &#x3D;&gt; {
+  //       this.utils.stopLoader();
+  //       this.utils.openToast(&quot;Please try again.&quot;);
+  //     })
+  //   } else {
+  //     this.updateInstance(instanceIndex, instanceValue)
+  //   }
+  // }
+
+  updateInstance(instanceIndex, instanceValue, gpsLocation?: any) {
+    if (instanceValue) {
+      this.data.completedInstance &#x3D; this.data.completedInstance ? this.data.completedInstance : [];
+      this.data.value[instanceIndex] &#x3D; instanceValue;
+      let instanceCompletion &#x3D; this.checkCompletionOfInstance(this.data.value[instanceIndex], gpsLocation);
+      if (instanceCompletion) {
+        this.data.value[instanceIndex].isInstanceCompleted &#x3D; true
+        if (this.data.completedInstance.indexOf(instanceIndex) &lt; 0) {
+          this.data.completedInstance.push(instanceIndex);
+        }
+      } else {
+       this.data.value[instanceIndex].isInstanceCompleted &#x3D; false
+        const index &#x3D; this.data.completedInstance.indexOf(instanceIndex);
+        if (index &gt;&#x3D; 0) {
+          this.data.completedInstance.splice(index, 1);
+        }
+      }
+      this.checkForValidation();
+    }
+  }
+
+  checkCompletionOfInstance(data, gpsLocation): boolean {
+    let isCompleted &#x3D; true;
+    if (data) {
+      for (const question of data) {
+        question.gpsLocation &#x3D; gpsLocation ? gpsLocation : &quot;&quot;;
+        if (!question.isCompleted) {
+          isCompleted &#x3D; false;
+          return false
+        }
+      }
+    } else {
+      isCompleted &#x3D; false
+    }
+
+    return isCompleted
+
+  }
+
+  deleteInstance(instanceIndex): void {
+    this.data.value.splice(instanceIndex, 1);
+    if (this.data.completedInstance &amp;&amp; this.data.completedInstance.length &amp;&amp; this.data.completedInstance.indexOf(instanceIndex) &gt;&#x3D; 0) {
+      this.data.completedInstance.splice(instanceIndex, 1);
+    }
+    this.checkForValidation();
+
+    // }
+  }
+
+  checkForValidation(): void {
+    this.data.isCompleted &#x3D; this.utils.isMatrixQuestionComplete(this.data);
+    this.data.endTime &#x3D; this.data.isCompleted ? Date.now() : &quot;&quot;;
+    this.updateLocalData.emit();
+  }
+
+
+  async deleteInstanceAlert(index) {
+    let translateObject;
+    this.translate.get([&#x27;FRMELEMNTS_LBL_COFIRMATION_DELETE&#x27;, &#x27;FRMELEMNTS_LBL_COFIRMATION_DELETE_INSTANCE&#x27;, &#x27;NO&#x27;, &#x27;YES&#x27;]).subscribe(translations &#x3D;&gt; {
+      translateObject &#x3D; translations;
+    })
+    let alert &#x3D; await this.alertCtrl.create({
+      header: translateObject[&#x27;FRMELEMNTS_LBL_COFIRMATION_DELETE&#x27;],
+      message: translateObject[&#x27;FRMELEMNTS_LBL_COFIRMATION_DELETE_INSTANCE&#x27;],
+      cssClass:&#x27;attachment-delete-alert&#x27;,
+      buttons: [
+        {
+          text: translateObject[&#x27;NO&#x27;],
+          role: &#x27;cancel&#x27;,
+          handler: () &#x3D;&gt; {
+          }
+        },
+        {
+          text: translateObject[&#x27;YES&#x27;],
+          handler: () &#x3D;&gt; {
+            this.deleteInstance(index);
+          }
+        }
+      ]
+    });
+    await alert.present();
+  }
+
+  getLastModified(instance) {
+    let lastModifiedAt &#x3D; 0;
+    for (const question of instance) {
+      if (question.startTime &gt; lastModifiedAt) {
+        lastModifiedAt &#x3D; question.startTime;
+      }
+    }
+    return lastModifiedAt
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;ion-card class&#x3D;&quot;_cardBg ion-padding&quot;&gt;
+  &lt;ion-col class&#x3D;&quot;_flex-box _justify-content-center _flex-direction-column &quot;&gt;
+    &lt;h4
+      [ngClass]&#x3D;&quot;{&#x27;_validQuestion&#x27;: data?.completedInstance?.length &amp;&amp; (data?.completedInstance?.length &#x3D;&#x3D;&#x3D; data?.value?.length)}&quot;&gt;
+      &lt;app-question-heading [inputIndex]&#x3D;&quot;inputIndex&quot; [data]&#x3D;&quot;data&quot; [enableQuestionReadOut]&#x3D;&quot;enableQuestionReadOut&quot;&gt;
+      &lt;/app-question-heading&gt;
+    &lt;/h4&gt;
+  &lt;/ion-col&gt;
+  &lt;div class&#x3D;&quot;_tip _flex-box &quot;&gt; {{data?.tip}}&lt;/div&gt;
+  &lt;div class&#x3D;&quot;_flex-box alignBtn&quot;&gt;
+    &lt;button class&#x3D;&quot;btn-block px-10 sb-bg-color-primary&quot; (click)&#x3D;&quot;addInstances()&quot;&gt;{{&#x27;FRMELEMENTS_BTN_ADD&#x27;|
+      translate}} {{data.instanceIdentifier | lowercase}}&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;ion-list class&#x3D;&quot;ion-margin-top ion-text-wrap&quot; *ngIf&#x3D;&quot;data?.value?.length&quot;&gt;
+    &lt;ion-item text-capitalize class&#x3D;&quot;_flex-box&quot; *ngFor&#x3D;&quot;let instance of data?.value; let i &#x3D; index&quot;&gt;
+      &lt;div class&#x3D;&quot;_flex-box conatiner&quot; (click)&#x3D;&quot;viewInstance(i)&quot;&gt;
+          &lt;span [ngClass]&#x3D;&quot;{&#x27;_validQuestion&#x27;: instance?.isInstanceCompleted}&quot; style&#x3D;&quot;flex:1&quot;&gt;
+          {{data?.instanceIdentifier}} {{i+1}}&lt;/span&gt;
+        &lt;span class&#x3D;&quot;modified&quot; *ngIf&#x3D;&quot;getLastModified(instance)&quot;&gt;Last Modified
+          {{getLastModified(instance)|date:&#x27;shortTime&#x27;}} {{getLastModified(instance)|date:&#x27;mediumDate&#x27;}} &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;ion-icon name&#x3D;&quot;trash&quot; class&#x3D;&quot;deletOption ion-margin-right&quot; item-end (click)&#x3D;&quot;deleteInstanceAlert(i)&quot;&gt;&lt;/ion-icon&gt;
+    &lt;/ion-item&gt;
+  &lt;/ion-list&gt;
+  &lt;app-image-upload
+    [submissionId]&#x3D;&quot;submissionId&quot;
+    [data]&#x3D;&quot;data&quot;
+    [generalQuestion]&#x3D;&quot;generalQuestion&quot;
+    [imageLocalCopyId]&#x3D;&quot;imageLocalCopyId&quot;
+    [evidenceId]&#x3D;&quot;evidenceId&quot;
+    [schoolId]&#x3D;&quot;schoolId&quot;
+  &gt;&lt;/app-image-upload&gt;
+&lt;/ion-card&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="styleData">
+                <p class="comment">
+                    <code>./matrix-type-input.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">ion-fab {
+    bottom: 5rem !important;
+    position: fixed;
+    z-index: 1;
+}
+.deletOption {
+    color:  #808080;
+}
+.modified {
+    color:  #808080;
+    font-size: 0.813rem;
+    margin-top: 5px;
+}
+.conatiner{
+    flex-direction: column; 
+    align-items:flex-start; 
+    flex:1
+}
+
+.alignBtn {
+    justify-content: flex-end;
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><ion-card class="_cardBg ion-padding">  <ion-col class="_flex-box _justify-content-center _flex-direction-column ">    <h4      [ngClass]="{\'_validQuestion\': data?.completedInstance?.length && (data?.completedInstance?.length === data?.value?.length)}">      <app-question-heading [inputIndex]="inputIndex" [data]="data" [enableQuestionReadOut]="enableQuestionReadOut">      </app-question-heading>    </h4>  </ion-col>  <div class="_tip _flex-box "> {{data?.tip}}</div>  <div class="_flex-box alignBtn">    <button class="btn-block px-10 sb-bg-color-primary" (click)="addInstances()">{{\'FRMELEMENTS_BTN_ADD\'|      translate}} {{data.instanceIdentifier | lowercase}}</button>  </div>  <ion-list class="ion-margin-top ion-text-wrap" *ngIf="data?.value?.length">    <ion-item text-capitalize class="_flex-box" *ngFor="let instance of data?.value; let i = index">      <div class="_flex-box conatiner" (click)="viewInstance(i)">          <span [ngClass]="{\'_validQuestion\': instance?.isInstanceCompleted}" style="flex:1">          {{data?.instanceIdentifier}} {{i+1}}</span>        <span class="modified" *ngIf="getLastModified(instance)">Last Modified          {{getLastModified(instance)|date:\'shortTime\'}} {{getLastModified(instance)|date:\'mediumDate\'}} </span>      </div>      <ion-icon name="trash" class="deletOption ion-margin-right" item-end (click)="deleteInstanceAlert(i)"></ion-icon>    </ion-item>  </ion-list>  <app-image-upload    [submissionId]="submissionId"    [data]="data"    [generalQuestion]="generalQuestion"    [imageLocalCopyId]="imageLocalCopyId"    [evidenceId]="evidenceId"    [schoolId]="schoolId"  ></app-image-upload></ion-card></div>'
+    var COMPONENTS = [{'name': 'AboutUsComponent', 'selector': 'app-about-us'},{'name': 'AccessDiscussionComponent', 'selector': 'accessDiscussion'},{'name': 'AccordionListComponent', 'selector': 'app-accordion-list'},{'name': 'AccountRecoveryInfoComponent', 'selector': 'app-account-recovery-id-popup'},{'name': 'AcknowledgeResponseComponent', 'selector': 'acknowledge-response'},{'name': 'ActiveDownloadsPage', 'selector': 'app-active-downloads'},{'name': 'ActivityDashboardPage', 'selector': 'activity-dashboard'},{'name': 'ActivityDetailsPage', 'selector': 'app-activity-details'},{'name': 'ActivityTocPage', 'selector': 'activity-toc'},{'name': 'AddActivityToGroupComponent', 'selector': 'add-activity-to-group'},{'name': 'AddActivityToGroupPage', 'selector': 'add-activity-to-group'},{'name': 'AddEntityComponent', 'selector': 'app-add-entity'},{'name': 'AddFilePage', 'selector': 'app-add-file'},{'name': 'AddLinkModalComponent', 'selector': 'app-add-link-modal'},{'name': 'AddMemberToGroupPage', 'selector': 'app-add-member-to-group'},{'name': 'AddProgramsComponent', 'selector': 'app-add-programs'},{'name': 'AdminHomePage', 'selector': 'app-admin-home'},{'name': 'AllEvidenceListComponent', 'selector': 'app-all-evidence-list'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ApplicationHeaderComponent', 'selector': 'app-application-header'},{'name': 'ApplicationHeaderKebabMenuComponent', 'selector': 'app-application-header-kebab-menu'},{'name': 'AppRatingAlertComponent', 'selector': 'app-rating-alert'},{'name': 'AttachmentCardComponent', 'selector': 'app-attachment-card'},{'name': 'AttachmentComponent', 'selector': 'attachments'},{'name': 'AttachmentListingPage', 'selector': 'app-attachment-listing'},{'name': 'AttachmentListsComponent', 'selector': 'app-attachment-lists'},{'name': 'BarChartComponent', 'selector': 'bar-chart'},{'name': 'CategoriesEditPage', 'selector': 'app-categories-edit'},{'name': 'CategoryListPage', 'selector': 'app-category-list-page'},{'name': 'CategorySelectComponent', 'selector': 'app-category-select'},{'name': 'CertificateVerificationPopoverComponent', 'selector': 'app-certificate-verification-popover'},{'name': 'CertificateViewPage', 'selector': 'app-certificate-view'},{'name': 'ChapterDetailsPage', 'selector': 'app-chapter-details'},{'name': 'CollectionActionsComponent', 'selector': 'collection-acions'},{'name': 'CollectionChildComponent', 'selector': 'app-collection-child'},{'name': 'CollectionDetailEtbPage', 'selector': 'app-collection-detail-etb'},{'name': 'CommonFormsComponent', 'selector': 'app-common-forms'},{'name': 'CommonHeaderComponent', 'selector': 'app-common-header'},{'name': 'ConfirmAlertComponent', 'selector': 'app-confirm-alert'},{'name': 'ConsentPiiPopupComponent', 'selector': 'app-consent-pii-popup'},{'name': 'ContentActionsComponent', 'selector': 'app-content-actions'},{'name': 'ContentDetailsPage', 'selector': 'app-content-details'},{'name': 'ContentRatingAlertComponent', 'selector': 'app-content-rating-alert'},{'name': 'ContentViewerComponent', 'selector': 'content-viewer'},{'name': 'CopyTraceIdPopoverComponent', 'selector': 'app-copy-trace-id-popover'},{'name': 'CourseBatchesPage', 'selector': 'app-course-batches'},{'name': 'CourseCompletionPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'CoursesPage', 'selector': 'app-courses'},{'name': 'CreateEditGroupPage', 'selector': 'app-create-edit-group'},{'name': 'CreateProjectPage', 'selector': 'app-create-project'},{'name': 'CreateTaskComponent', 'selector': 'app-create-task'},{'name': 'CreateTaskFormComponent', 'selector': 'app-create-task-form'},{'name': 'CurriculumCoursesPage', 'selector': 'app-curriculum-courses'},{'name': 'DashboardComponent', 'selector': 'dashboard-component'},{'name': 'DataSyncComponent', 'selector': 'app-data-sync'},{'name': 'DateTypeInputComponent', 'selector': 'app-date-type-input'},{'name': 'DeeplinkRedirectComponent', 'selector': 'app-deeplink-redirect'},{'name': 'DetailCardComponent', 'selector': 'app-detail-card'},{'name': 'DialogPopupComponent', 'selector': 'app-dialog-popup'},{'name': 'DiscoverComponent', 'selector': 'app-discover'},{'name': 'DistrictMappingPage', 'selector': 'app-district-mapping'},{'name': 'DomainEcmLsitingComponent', 'selector': 'app-domain-ecm-lsiting'},{'name': 'DownloadManagerPage', 'selector': 'app-download-manager'},{'name': 'DownloadShareComponent', 'selector': 'download-share'},{'name': 'DownloadsHeaderComponent', 'selector': 'app-downloads-header'},{'name': 'DownloadsTabComponent', 'selector': 'app-downloads-tab'},{'name': 'DownloadTranscriptPopupComponent', 'selector': 'app-download-transcript-popup'},{'name': 'EcmListingPage', 'selector': 'app-ecm-listing'},{'name': 'EditContactDetailsPopupComponent', 'selector': 'app-edit-contact-details-popup'},{'name': 'EditContactVerifyPopupComponent', 'selector': 'app-edit-contact-verify-popup'},{'name': 'EnrolledCourseDetailsPage', 'selector': 'app-enrolled-course-details-page'},{'name': 'EnrollmentDetailsComponent', 'selector': 'app-enrollment-details'},{'name': 'EntityfilterComponent', 'selector': 'app-entityfilter'},{'name': 'EntitySearchLocalComponent', 'selector': 'app-entity-search-local'},{'name': 'ExpansionPanelComponent', 'selector': 'expansion-panel'},{'name': 'ExpansionTableComponent', 'selector': 'expansion-table'},{'name': 'ExploreBooksPage', 'selector': 'app-explore-books'},{'name': 'ExploreBooksSortComponent', 'selector': 'app-explore-books-sort'},{'name': 'FaqHelpPage', 'selector': 'app-faq-help'},{'name': 'FaqReportIssuePage', 'selector': 'app-faq-report-issue'},{'name': 'FilterModalComponent', 'selector': 'app-filter-modal'},{'name': 'FilteroptionComponent', 'selector': 'app-filteroption'},{'name': 'FiltersPage', 'selector': 'app-filters'},{'name': 'FooterButtonsComponent', 'selector': 'app-footer-buttons'},{'name': 'FrameworkSelectionPage', 'selector': 'app-framework-selection'},{'name': 'GraphCircleComponent', 'selector': 'graph-circle'},{'name': 'GroupDetailsPage', 'selector': 'app-group-details'},{'name': 'GroupGuideLinesPopoverComponent', 'selector': 'app-group-guidelines-popover'},{'name': 'GuestEditPage', 'selector': 'app-guest-edit'},{'name': 'GuestProfilePage', 'selector': 'app-guest-profile'},{'name': 'HintComponent', 'selector': 'app-hint'},{'name': 'ImageListingComponent', 'selector': 'app-image-listing'},{'name': 'ImageUploadComponent', 'selector': 'app-image-upload'},{'name': 'ImportPopoverComponent', 'selector': 'app-import-popover'},{'name': 'ImpSuggestionsPage', 'selector': 'app-imp-suggestions'},{'name': 'ItemListCardComponent', 'selector': 'app-item-list-card'},{'name': 'ItemListHeaderComponent', 'selector': 'app-item-list-header'},{'name': 'JoyfulThemePopupComponent', 'selector': 'app-joyful-theme-popup'},{'name': 'LanguageSettingsPage', 'selector': 'page-language-settings'},{'name': 'LearningResourcesPage', 'selector': 'app-learning-resources'},{'name': 'LicenseCardComponentComponent', 'selector': 'app-license-card-component'},{'name': 'LinkLearningResourcesComponent', 'selector': 'app-link-learning-resources'},{'name': 'ManageUserProfilesPage', 'selector': 'app-manage-user-profiles'},{'name': 'MatrixChartComponent', 'selector': 'matrix-chart'},{'name': 'MatrixModalComponent', 'selector': 'app-matrix-modal'},{'name': 'MatrixTypeInputComponent', 'selector': 'app-matrix-type-input'},{'name': 'MetadataActionsComponent', 'selector': 'app-metadata-actions'},{'name': 'MetadataDetailsComponent', 'selector': 'app-metadata-details'},{'name': 'MultipleTypeInputComponent', 'selector': 'app-multiple-type-input'},{'name': 'MyGroupsPage', 'selector': 'app-my-groups'},{'name': 'MyGroupsPopoverComponent', 'selector': 'app-my-groups-popover'},{'name': 'NewExperiencePopupComponent', 'selector': 'app-new-experience-popup'},{'name': 'NoDataComponent', 'selector': 'app-no-data'},{'name': 'NoDownloadsComponent', 'selector': 'app-no-downloads'},{'name': 'NotificationItemComponent', 'selector': 'app-notification-item'},{'name': 'NotificationPage', 'selector': 'app-notification'},{'name': 'ObservationDetailComponent', 'selector': 'app-observation-detail'},{'name': 'ObservationHomeComponent', 'selector': 'app-observation-home'},{'name': 'ObservationSolutionEntityListingComponent', 'selector': 'app-observation-solution-entity-listing'},{'name': 'ObservationSolutionListingComponent', 'selector': 'app-observation-solution-listing'},{'name': 'ObservationSubmissionComponent', 'selector': 'app-observation-submission'},{'name': 'OtpPage', 'selector': 'app-otp'},{'name': 'OverflowMenuComponent', 'selector': 'app-overflow-menu'},{'name': 'PageFilterOptionsPage', 'selector': 'app-page-filter-options'},{'name': 'PageFilterPage', 'selector': 'app-page-filter'},{'name': 'PageQuestionsComponent', 'selector': 'app-page-questions'},{'name': 'PbHorizontalComponent', 'selector': 'app-pb-horizontal'},{'name': 'PercentageColumnChartsComponent', 'selector': 'percentage-column-charts'},{'name': 'PermissionComponent', 'selector': 'app-permission'},{'name': 'PersonalDetailsEditPage', 'selector': 'app-personal-details-edit'},{'name': 'PieChartComponent', 'selector': 'pie-chart'},{'name': 'PlayerPage', 'selector': 'app-player'},{'name': 'PopoverComponent', 'selector': 'app-popover'},{'name': 'PrivacyPolicyAndTCComponent', 'selector': 'app-privacy-policy-and-tc'},{'name': 'ProfileAvatarComponent', 'selector': 'app-profile-avatar'},{'name': 'ProfileNameConfirmationPopoverComponent', 'selector': 'app-profile-name-confirmation-popover'},{'name': 'ProfilePage', 'selector': 'app-profile'},{'name': 'ProfileSettingsPage', 'selector': 'app-profile-settings'},{'name': 'ProgramListingComponent', 'selector': 'app-program-listing'},{'name': 'ProgressBarComponent', 'selector': 'progress-bar'},{'name': 'ProjectDetailsCardComponent', 'selector': 'app-project-details-card'},{'name': 'ProjectDetailsComponent', 'selector': 'app-project-details'},{'name': 'ProjectEditPage', 'selector': 'app-project-edit'},{'name': 'ProjectListingComponent', 'selector': 'app-project-listing'},{'name': 'ProjectMetadataCardComponent', 'selector': 'app-project-metadata-card'},{'name': 'ProjectOperationPage', 'selector': 'app-project-operation'},{'name': 'ProjectReportComponent', 'selector': 'app-project-report'},{'name': 'ProjectTaskListComponent', 'selector': 'app-project-task-list'},{'name': 'ProjectTemplatePage', 'selector': 'app-project-template'},{'name': 'ProjectTemplateviewPage', 'selector': 'app-project-templateview'},{'name': 'QrcoderesultPage', 'selector': 'app-qrcoderesult'},{'name': 'QRScannerAlert', 'selector': 'app-qrscanner-alert'},{'name': 'QrScannerIOSComponent', 'selector': 'app-qr-scanner-ios'},{'name': 'QuestionHeadingComponent', 'selector': 'app-question-heading'},{'name': 'QuestionMapModalComponent', 'selector': 'app-question-map-modal'},{'name': 'QuestionnairePage', 'selector': 'app-questionnaire'},{'name': 'RadioTypeInputComponent', 'selector': 'app-radio-type-input'},{'name': 'RelevantContentCardComponent', 'selector': 'app-relevant-content-card'},{'name': 'RelevantContentsPage', 'selector': 'app-relevant-contents'},{'name': 'RemarksComponent', 'selector': 'app-remarks'},{'name': 'RemarksModalComponent', 'selector': 'app-remarks-modal'},{'name': 'ReportListComponent', 'selector': 'app-report-list'},{'name': 'ReportModalFilter', 'selector': 'report-modal-filter'},{'name': 'ReportsComponent', 'selector': 'app-reports'},{'name': 'ReportsListingComponent', 'selector': 'app-reports-listing'},{'name': 'ReportsTextComponent', 'selector': 'reports-text'},{'name': 'ResourcesComponent', 'selector': 'app-resources'},{'name': 'SbAppSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbDownloadPopupComponent', 'selector': 'app-sb-download-popup'},{'name': 'SbGenericFormPopoverComponent', 'selector': 'app-sb-generic-form-popover'},{'name': 'SbGenericPopoverComponent', 'selector': 'app-sb-generic-popover'},{'name': 'SbInsufficientStoragePopupComponent', 'selector': 'sb-insufficient-storage-popup'},{'name': 'SbNoNetworkPopupComponent', 'selector': 'sb-no-network-popup'},{'name': 'SbPopoverComponent', 'selector': 'sb-popover'},{'name': 'SbPreferencePopupComponent', 'selector': 'app-sb-preferences-popup'},{'name': 'SbProgressLoaderPage', 'selector': 'app-sb-progress-loader'},{'name': 'SbSharePopupComponent', 'selector': 'app-sb-share-popup'},{'name': 'SbSubjectListPopupComponent', 'selector': 'app-sb-subject-list-popup'},{'name': 'SbTutorialPopupComponent', 'selector': 'app-sb-tutorial-popup'},{'name': 'ScatterChartComponent', 'selector': 'scatter-chart'},{'name': 'SearchFilterPage', 'selector': 'app-search-filter.page'},{'name': 'SearchPage', 'selector': 'app-search'},{'name': 'SectionListingPage', 'selector': 'app-section-listing'},{'name': 'SelfDeclaredTeacherEditPage', 'selector': 'app-self-declared-teacher-edit'},{'name': 'SettingsPage', 'selector': 'app-settings'},{'name': 'ShowCertificateComponent', 'selector': 'app-show-certificate-component'},{'name': 'ShowVendorAppsComponent', 'selector': 'show-vendor-apps'},{'name': 'SignInCardComponent', 'selector': 'app-sign-in-card'},{'name': 'SignInPage', 'selector': 'app-sign-in'},{'name': 'SignupBasicInfoPage', 'selector': 'app-signup-basic-info'},{'name': 'SignupEmailPasswordPage', 'selector': 'app-signup-email-password'},{'name': 'SkeletonItemComponent', 'selector': 'app-skeleton-item'},{'name': 'SliderTypeInputComponent', 'selector': 'app-slider-type-input'},{'name': 'SolutionListingComponent', 'selector': 'app-solution-listing'},{'name': 'StartImprovementComponent', 'selector': 'app-start-improvement'},{'name': 'StorageSettingsPage', 'selector': 'app-storage-settings'},{'name': 'SubmissionActionsComponent', 'selector': 'app-submission-actions'},{'name': 'SubmissionPreviewPageComponent', 'selector': 'app-submission-preview-page'},{'name': 'SubProfileEditPage', 'selector': 'app-sub-profile-edit'},{'name': 'SupportAcknowledgement', 'selector': 'support-acknowledgement'},{'name': 'SurveyHomeComponent', 'selector': 'app-survey-home'},{'name': 'SurveyMsgComponent', 'selector': 'app-survey-msg'},{'name': 'SyncPage', 'selector': 'app-sync'},{'name': 'TabsPage', 'selector': 'app-tabs'},{'name': 'TaskCardComponent', 'selector': 'app-task-card'},{'name': 'TaskViewPage', 'selector': 'app-task-view'},{'name': 'TeacherIdVerificationComponent', 'selector': 'app-teacher-id-verification-popup'},{'name': 'TermsAndConditionsPage', 'selector': 'app-terms-and-conditions'},{'name': 'TextBookTocPage', 'selector': 'textbook-toc'},{'name': 'TextbookViewMorePage', 'selector': 'app-textbook-view-more'},{'name': 'TextTypeInputComponent', 'selector': 'app-text-type-input'},{'name': 'ToastNavigationComponent', 'selector': 'app-toast-navigation'},{'name': 'TocHeaderComponent', 'selector': 'app-toc-header'},{'name': 'UpgradePopoverComponent', 'selector': 'app-upgrade-popover'},{'name': 'UserHomePage', 'selector': 'app-user-home'},{'name': 'UserTypeSelectionPage', 'selector': 'page-user-type-selection'},{'name': 'ViewCreditsComponent', 'selector': 'app-view-credits'},{'name': 'ViewDetailComponent', 'selector': 'app-view-detail'},{'name': 'ViewMoreActivityComponent', 'selector': 'app-view-more-activity'},{'name': 'ViewMoreActivityPage', 'selector': 'view-more-activity'},{'name': 'YearOfBirthPopupComponent', 'selector': 'app-year-of-birth-popup'}];
+    var DIRECTIVES = [{'name': 'CustomIonSelectDirective', 'selector': '[appCustomIonSelect]'},{'name': 'HideHeaderFooterDirective', 'selector': '[hide-header-footer]'},{'name': 'ReadMoreDirective', 'selector': '[readMore]'}];
+    var ACTUAL_COMPONENT = {'name': 'MatrixTypeInputComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'MatrixTypeInputComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

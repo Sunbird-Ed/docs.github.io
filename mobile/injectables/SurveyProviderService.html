@@ -1,0 +1,970 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="../" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item">Injectables</li>
+  <li class="breadcrumb-item" >SurveyProviderService</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a href="#info" 
+                class="nav-link"
+                class="nav-link active"
+                role="tab" id="info-tab" data-bs-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li class="nav-item">
+            <a href="#source" 
+                class="nav-link"
+                
+                role="tab" id="source-tab" data-bs-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/manage-learn/core/services/survey-provider.service.ts</code>
+        </p>
+
+
+
+
+
+            <section data-compodoc="block-index">
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#createExpiryMsg" >createExpiryMsg</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getDetailsById" >getDetailsById</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getDetailsByLink" >getDetailsByLink</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#showMsg" >showMsg</a>
+                            </li>
+                            <li>
+                                <a href="#storeSurvey" >storeSurvey</a>
+                            </li>
+                            <li>
+                                <a href="#viewAllAns" >viewAllAns</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+            <section data-compodoc="block-constructor">
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(localStorage: <a href="../injectables/LocalStorageService.html" target="_self">LocalStorageService</a>, ulsdp: <a href="../injectables/UpdateLocalSchoolDataService.html" target="_self">UpdateLocalSchoolDataService</a>, utils: <a href="../injectables/UtilsService.html" target="_self">UtilsService</a>, httpClient: HttpClient, loader: <a href="../injectables/LoaderService.html" target="_self">LoaderService</a>, assessmentService: <a href="../injectables/AssessmentApiService.html" target="_self">AssessmentApiService</a>, router: Router, modalCtrl: ModalController, dhiti: <a href="../injectables/DhitiApiService.html" target="_self">DhitiApiService</a>, toast: ToastController, commonUtilService: <a href="../injectables/CommonUtilService.html" target="_self">CommonUtilService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/manage-learn/core/services/survey-provider.service.ts:19</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>localStorage</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LocalStorageService.html" target="_self" >LocalStorageService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>ulsdp</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UpdateLocalSchoolDataService.html" target="_self" >UpdateLocalSchoolDataService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>utils</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/UtilsService.html" target="_self" >UtilsService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>httpClient</td>
+                                                  
+                                                        <td>
+                                                                    <code>HttpClient</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>loader</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/LoaderService.html" target="_self" >LoaderService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>assessmentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AssessmentApiService.html" target="_self" >AssessmentApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                    <code>Router</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>modalCtrl</td>
+                                                  
+                                                        <td>
+                                                                    <code>ModalController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dhiti</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/DhitiApiService.html" target="_self" >DhitiApiService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>toast</td>
+                                                  
+                                                        <td>
+                                                                    <code>ToastController</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>commonUtilService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/CommonUtilService.html" target="_self" >CommonUtilService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+            <section data-compodoc="block-methods">
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createExpiryMsg"></a>
+                    <span class="name">
+                        <span ><b>createExpiryMsg</b></span>
+                        <a href="#createExpiryMsg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createExpiryMsg(survey)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="149"
+                            class="link-to-prism">src/app/manage-learn/core/services/survey-provider.service.ts:149</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>survey</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDetailsById"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getDetailsById</b></span>
+                        <a href="#getDetailsById"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDetailsById(surveyId, solutionId)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/manage-learn/core/services/survey-provider.service.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>surveyId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>solutionId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getDetailsByLink"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>getDetailsByLink</b></span>
+                        <a href="#getDetailsByLink"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getDetailsByLink(link)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="51"
+                            class="link-to-prism">src/app/manage-learn/core/services/survey-provider.service.ts:51</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>link</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showMsg"></a>
+                    <span class="name">
+                        <span class="modifier">Async</span>
+                        <span ><b>showMsg</b></span>
+                        <a href="#showMsg"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>showMsg(option, popToRoot)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="118"
+                            class="link-to-prism">src/app/manage-learn/core/services/survey-provider.service.ts:118</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                    <td>Default value</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>option</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>popToRoot</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+                                    <td>
+                                        <code>false</code>
+                                    </td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="storeSurvey"></a>
+                    <span class="name">
+                        <span ><b>storeSurvey</b></span>
+                        <a href="#storeSurvey"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>storeSurvey(submissionId, survey)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/app/manage-learn/core/services/survey-provider.service.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>submissionId</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>survey</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="viewAllAns"></a>
+                    <span class="name">
+                        <span ><b>viewAllAns</b></span>
+                        <a href="#viewAllAns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>viewAllAns(payload)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="127"
+                            class="link-to-prism">src/app/manage-learn/core/services/survey-provider.service.ts:127</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>payload</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { HttpClient } from &#x27;@angular/common/http&#x27;;
+import { Injectable } from &#x27;@angular/core&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+import { ModalController, ToastController } from &#x27;@ionic/angular&#x27;;
+import { rejects } from &#x27;assert&#x27;;
+import { LoaderService, LocalStorageService, UtilsService } from &#x27;..&#x27;;
+import { urlConstants } from &#x27;../constants/urlConstants&#x27;;
+import { AssessmentApiService } from &#x27;./assessment-api.service&#x27;;
+import { UpdateLocalSchoolDataService } from &#x27;./update-local-school-data.service&#x27;;
+import { SurveyMsgComponent } from &#x27;../../shared/components/survey-msg/survey-msg.component&#x27;;
+import { storageKeys } from &#x27;../../storageKeys&#x27;;
+import { DhitiApiService } from &#x27;./dhiti-api.service&#x27;;
+import * as moment from &#x27;moment&#x27;;
+import { CommonUtilService } from &#x27;@app/services&#x27;;
+
+@Injectable({
+  providedIn: &#x27;root&#x27;,
+})
+export class SurveyProviderService {
+  constructor(
+    private localStorage: LocalStorageService,
+    private ulsdp: UpdateLocalSchoolDataService,
+    private utils: UtilsService,
+    private httpClient: HttpClient,
+    private loader: LoaderService,
+    private assessmentService: AssessmentApiService,
+    private router: Router,
+    private modalCtrl: ModalController,
+    private dhiti: DhitiApiService,
+    private toast: ToastController,
+    private commonUtilService: CommonUtilService
+  ) {}
+
+  // get all list
+  // getSurveyListing(): Promise&lt;any&gt; {
+  //   const url &#x3D; AppConfigs.surveyFeedback.surveyListing;
+  //   return new Promise((resolve, reject) &#x3D;&gt; {
+  //     this.apiProvider.httpGet(
+  //       url,
+  //       (success) &#x3D;&gt; {
+  //         resolve(success.result);
+  //       },
+  //       (err) &#x3D;&gt; {
+  //         reject(err);
+  //       }
+  //     );
+  //   });
+  // }
+
+  // pass the link which is present in deeplink(deeplink last param)
+  async getDetailsByLink(link): Promise&lt;any&gt; {
+    let payload &#x3D; await this.utils.getProfileInfo();
+    const config &#x3D; {
+      url: urlConstants.API_URLS.SURVEY_FEEDBACK.GET_DETAILS_BY_ID + &#x27;/&#x27; + link,
+      payload: payload,
+    };
+
+    return new Promise((resolve, reject) &#x3D;&gt; {
+      this.assessmentService.post(config).subscribe(
+        (success) &#x3D;&gt; {
+          resolve(success);
+        },
+        (error) &#x3D;&gt; {
+          rejects(error);
+        }
+      );
+    });
+  }
+
+  async getDetailsById(surveyId, solutionId): Promise&lt;any&gt; {
+    let payload &#x3D; await this.utils.getProfileInfo();
+    let url &#x3D; urlConstants.API_URLS.SURVEY_FEEDBACK.GET_DETAILS_BY_ID;
+    if (surveyId) {
+      url &#x3D; &#x60;${url}/${surveyId}&#x60;;
+    }
+    url &#x3D; url + &#x60;?solutionId&#x3D;${solutionId}&#x60;;
+    const config &#x3D; {
+      url: url,
+      payload: payload,
+    };
+
+    return new Promise((resolve, reject) &#x3D;&gt; {
+      this.assessmentService.post(config).subscribe(
+        (success) &#x3D;&gt; {
+          resolve(success);
+        },
+        (error) &#x3D;&gt; {
+          rejects(error);
+        }
+      );
+    });
+  }
+
+  storeSurvey(submissionId, survey) {
+    return this.localStorage
+      .getLocalStorage(storageKeys.submissionIdArray)
+      .then((submissionArr) &#x3D;&gt; {
+        const x &#x3D; submissionArr.includes(submissionId);
+        if (!x) {
+          survey[&#x27;assessment&#x27;][&#x27;evidences&#x27;][0].startTime &#x3D; Date.now();
+          survey[&#x27;survey&#x27;] &#x3D; true;
+          this.localStorage.setLocalStorage(this.utils.getAssessmentLocalStorageKey(submissionId), survey);
+          this.ulsdp.updateSubmissionIdArr(submissionId);
+          return survey;
+        } else {
+          return survey;
+        }
+      })
+      .catch((err) &#x3D;&gt; {
+        survey[&#x27;assessment&#x27;][&#x27;evidences&#x27;][0].startTime &#x3D; Date.now();
+        survey[&#x27;survey&#x27;] &#x3D; true;
+        this.localStorage.setLocalStorage(this.utils.getAssessmentLocalStorageKey(submissionId), survey);
+        this.ulsdp.updateSubmissionIdArr(submissionId);
+        return survey;
+      });
+  }
+
+  async showMsg(option, popToRoot &#x3D; false) {
+    popToRoot ? this.router.navigate([&#x27;&#x27;]) : null;
+    const modal &#x3D; await this.modalCtrl.create({
+      component: SurveyMsgComponent,
+      componentProps: { option: option },
+    });
+    await modal.present();
+  }
+
+  viewAllAns(payload) {
+    this.loader.startLoader();
+    let url &#x3D; urlConstants.API_URLS.SURVEY_FEEDBACK.GET_ALL_ANSWERS;
+    const config &#x3D; {
+      url: url,
+      payload: payload,
+    };
+    return new Promise((resolve, reject) &#x3D;&gt; {
+      this.dhiti.post(config).subscribe(
+        (success) &#x3D;&gt; {
+          this.loader.stopLoader();
+          resolve(success);
+        },
+        (error) &#x3D;&gt; {
+          this.toast.create(error.message);
+          this.loader.stopLoader();
+          reject();
+        }
+      );
+    });
+  }
+
+  createExpiryMsg(survey) {
+    const format &#x3D; &#x27;Do MMM YY&#x27;;
+    const today &#x3D; Date.now();
+    const expiryDate:any &#x3D; new Date(survey.endDate);
+    const diffTime &#x3D; expiryDate - today;
+    const diff &#x3D; Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+    if (diff &#x3D;&#x3D; 1)
+      return (survey.generatedExpMsg &#x3D; this.commonUtilService.translateMessage(&#x27;FRMELEMENTS_MSG_EXPIRE_IN_ONE_DAY&#x27;));
+    if (diff &#x3D;&#x3D; 2)
+      return (survey.generatedExpMsg &#x3D; this.commonUtilService.translateMessage(&#x27;FRMELEMENTS_MSG_EXPIRE_IN_TWO_DAY&#x27;));
+    if (diff &gt; 2)
+      return (survey.generatedExpMsg &#x3D;
+        this.commonUtilService.translateMessage(&#x27;FRMELEMENTS_MSG_VALID_TILL&#x27;) + &#x27; &#x27; + moment(survey.endDate).format(format));
+    if (diff &lt;&#x3D; 0)
+      return (survey.generatedExpMsg &#x3D;
+        this.commonUtilService.translateMessage(&#x27;FRMELEMENTS_MSG_EXPIRED_ON&#x27;) + &#x27; &#x27; + moment(survey.endDate).format(format));
+  }
+}
+</code></pre>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'injectable';
+            var COMPODOC_CURRENT_PAGE_URL = 'SurveyProviderService.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

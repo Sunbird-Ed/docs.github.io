@@ -1,9 +1,348 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html class="no-js" lang="">
     <head>
-        <title>Sunbird-ED Portal</title>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>sunbirded-mobile-app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+	   <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/dark.css">
     </head>
     <body>
-        <h1>Sunbird-ED Portal</h1>
+
+        <div class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+            <a href="./" class="navbar-brand">sunbirded-mobile-app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content getting-started">
+                   <div class="content-data">
+
+<p>Recommended Branch - release-4.9.0</p>
+<p>Kindly mail back to sunbird to get the starter kit Which consists of two files:
+a) google-services.json - To be Copied at the root of the project
+b) sunbird.properties.  - To be Copied into buildConfig/ folder</p>
+<p><strong>Dependencies:</strong><br>NPM Version - above 6<br>Node Version - 14 (Recommended)
+Cordova Version - 9 (Recommended)</p>
+<p><strong>1. Ionic-Android build Setup</strong><br>    - <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">Install java</a><br>    - <a href="https://gradle.org/install/">Install Gradle</a><br>    - <a href="https://developer.android.com/studio/">Install Android Studio</a><br>    - After Android studio installation, install SDK<br>    - Open Android studio and goto <code>settings/appearance and behavior/system settings/Android SDK</code><br>    - Install appropriate Android sdk platform package.<br>    - Add environment variables in <code>~/.bashrc</code> or <code>~/.bash_profile</code> as follows<br>        <code>export ANDROID_SDK_ROOT=path_to_sdk</code><br>        <code>export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin</code><br>        <code>export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools</code><br>    - Reference: <a href="https://ionicframework.com/docs/installation/android">https://ionicframework.com/docs/installation/android</a>    </p>
+<div><pre class="line-numbers"><code class="language-none">CLI Setup    
+- `npm install -g ionic`   
+- `npm install -g cordova`   </code></pre></div><p><strong>2. Project Setup</strong><br>    - git clone the repo(<a href="https://github.com/Sunbird-Ed/SunbirdEd-mobile-app">https://github.com/Sunbird-Ed/SunbirdEd-mobile-app</a>).<br>    - Rename <code>sunbird.properties.example</code> file to <code>sunbird.properties</code> and put all the valid credentials and api endpoint.<br>    - Run <code>./build.sh</code>    </p>
+<p><strong>3. Onboarding/Tabs Configuration</strong>
+    Onboarding steps and Tabs can be configured via this configuration settings.</p>
+<p><strong>Onboarding Configurations</strong></p>
+<table class="table table-bordered compodoc-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Language Selection</td>
+<td>User should select their prefered language</td>
+<td>To skip language selection, set skip as false and provide default values</td>
+</tr>
+<tr>
+<td>User Role Selection</td>
+<td>User should select their role</td>
+<td>If want to skip User Type selection, set skip as false and provide default user type</td>
+</tr>
+<tr>
+<td>Profile Settings</td>
+<td>User should set their profile by choosing their framework fields</td>
+<td>Provide deafult profile values to skip profile settings page</td>
+</tr>
+<tr>
+<td>District Maping</td>
+<td>Here user need to provide details related to their location</td>
+<td>To skip this page deafult location values are required</td>
+</tr>
+</tbody>
+</table>
+<h4>Language Selection</h4>
+<div><pre class="line-numbers"><code class="language-none">{
+  &quot;onboarding&quot;: [
+    {
+      &quot;name&quot;: &quot;language-setting&quot;,
+      &quot;skip&quot;: false,
+      &quot;default&quot;: {
+        &quot;code&quot;: &quot;en&quot;,
+        &quot;label&quot;: &quot;English&quot;
+      }
+    }
+  ]
+}</code></pre></div><h4>User Role Selection</h4>
+<div><pre class="line-numbers"><code class="language-none">{
+  &quot;onboarding&quot;: [
+    {
+      &quot;name&quot;: &quot;user-type-selection&quot;,
+      &quot;skip&quot;: false,
+      &quot;default&quot;: &quot;teacher&quot;
+    }
+  ]
+}</code></pre></div><h4>Profile Settings</h4>
+<div><pre class="line-numbers"><code class="language-none">{
+  &quot;onboarding&quot;: [
+    {
+      &quot;name&quot;: &quot;profile-settings&quot;,
+      &quot;skip&quot;: false,
+      &quot;default&quot;: {
+        &quot;syllabus&quot;: [
+          &quot;CBSE&quot;
+        ],
+        &quot;board&quot;: [
+          &quot;cbse&quot;
+        ],
+        &quot;medium&quot;: [
+          &quot;english&quot;
+        ],
+        &quot;grade&quot;: [
+          &quot;class5&quot;,
+          &quot;class6&quot;
+        ]
+      }
+    }
+  ]
+}</code></pre></div><h4>District Maping</h4>
+<div><pre class="line-numbers"><code class="language-none">{
+  &quot;onboarding&quot;: [
+    {
+      &quot;name&quot;: &quot;district-mapping&quot;,
+      &quot;skip&quot;: false,
+      &quot;default&quot;: {
+        &quot;state&quot;: &quot;Andaman &amp; Nicobar Islands&quot;,
+        &quot;stateId&quot;: &quot;83h3u832ui4&quot;,
+        &quot;district&quot;: &quot;Nicobars&quot;,
+        &quot;districtId&quot;: &quot;aef899d41&quot;
+      }
+    }
+  ]
+}</code></pre></div><p><strong>Tabs Page COnfigurations</strong></p>
+<p>Configure the tabs page according to the requirement. Fllowing are the configurable settings for tabs.</p>
+<div><pre class="line-numbers"><code class="language-none">{
+  &quot;tabs&quot;: [
+    {
+      &quot;root&quot;: &quot;home&quot;,
+      &quot;name&quot;: &quot;home&quot;,
+      &quot;icon&quot;: {
+        &quot;active&quot;: &quot;assets/imgs/tab_home_selected.svg&quot;,
+        &quot;inactive&quot;: &quot;assets/imgs/tab_home.svg&quot;,
+        &quot;disabled&quot;: &quot;assets/imgs/ic_home.png&quot;
+      },
+      &quot;label&quot;: &quot;TAB_HOME&quot;,
+      &quot;index&quot;: 2,
+      &quot;isSelected&quot;: true,
+      &quot;is_visable&quot;: true,
+      &quot;disabled&quot;: false,
+      &quot;theme&quot;: &quot;NEW&quot;,
+      &quot;status&quot;: &quot;ALL&quot;,
+      &quot;userTypeAdmin&quot;: true
+    }
+  ]
+}</code></pre></div><table class="table table-bordered compodoc-table">
+<thead>
+<tr>
+<th>Property</th>
+<th>Description</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>root</code></td>
+<td>On which page the tab should be shown.</td>
+<td><code>home</code></td>
+</tr>
+<tr>
+<td><code>name</code></td>
+<td>Name given to the tab</td>
+<td><code>home</code></td>
+</tr>
+<tr>
+<td><code>icon</code></td>
+<td>Different icons for respective events. i.e when the tab is selected, not seleted and disabled.</td>
+<td>Object with path to the respectivr icons</td>
+</tr>
+<tr>
+<td><code>label</code></td>
+<td>Label name to displayed for the tab</td>
+<td>&#39;TAB_NAME&#39;</td>
+</tr>
+<tr>
+<td><code>index</code></td>
+<td>At which position the tab should be displayed</td>
+<td>numeric value ex: <code>2</code> shows at 2 position in order</td>
+</tr>
+<tr>
+<td><code>isSelected</code></td>
+<td>Wheather the tab should be selected by deafult</td>
+<td>Boolean value ex: <code>true</code> default selected</td>
+</tr>
+<tr>
+<td><code>is_visable</code></td>
+<td>To display the tab or not</td>
+<td>Boolean value</td>
+</tr>
+<tr>
+<td><code>disabled</code></td>
+<td>If <code>true</code>, tab is displayed, but can&#39;t select</td>
+<td>Boolean.</td>
+</tr>
+<tr>
+<td><code>is_visable</code></td>
+<td>To display the tab or not</td>
+<td>Boolean value</td>
+</tr>
+<tr>
+<td><code>theme</code></td>
+<td>Theme on which the tab should be displayed(If there are multiple theme for the app available)</td>
+<td>name of theme for which tab has to be displayed</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>To display to a spefic user criteria</td>
+<td>ex: &#39;logIn&#39; will show to logged in users only</td>
+</tr>
+<tr>
+<td><code>userTypeAdmin</code></td>
+<td>Wheather to show for only Admin users</td>
+<td>Boolean value</td>
+</tr>
+</tbody>
+</table>
+<p><strong>4. How to build apk</strong><br>    - To check attached devices do <code>adb devices</code><br>    - <code>npm run ionic-build</code> (Make sure you have attached device)<br>    - <code>ionic cordova run android --prod</code><br>    - Apk location <code>project_folder/platforms/android/app/build/outputs/apk/staging/debug/apk_name.apk</code>    </p>
+<p><strong>5. How to debug apk</strong><br>    - Open chrome and enter <code>chrome://inspect</code><br>    - Select app    </p>
+<hr>
+<h1>IOS Development setup</h1>
+<h2>Prerequisites</h2>
+<div><pre class="line-numbers"><code class="language-none">1. Node js version 10.18.1
+2. Ionic 5.4.16 using `npm i ionic&#64;5.4.16 -g`
+3. Cordova 9.0.0  using `npm i cordova&#64;9.0.0 -g`
+4. cordova-res 0.15.3 - using `npm install -g cordova-res`
+5. ios-deploy  1.11.4 - using `brew install ios-deploy`
+all of the above should be installed globally
+Xcode 12.4 Build version 12D4e or above
+
+NOTE: For M1 chipset users please go through FAQ section for ROSETA 2 compatibility and usage.</code></pre></div><h2>Steps</h2>
+<div><pre class="line-numbers"><code class="language-none">1. Checkout sunbird-mobile-app repo from https://github.com/shikshalokam/SunbirdEd-mobile-app with branch release-3.9.0-ios
+2. Add `GoogleService-Info.plist` file
+3. cd to &lt;sunbird-mobile-app&gt; local path
+4. Rename `sunbird.properties.example` file to `sunbird.properties` and put all the valid credentials and api endpoint.
+5. RUN ./build-ios.sh
+6. RUN cordova emulate ios</code></pre></div><h2>FAQ</h2>
+<ol>
+<li>error: Value for SWIFT_VERSION cannot be empty. (in target &#39;Sunbird&#39; from project &#39;Sunbird&#39;) or Duplicate GoogleService-Info.plist file error
+  open platforms/ios/Sunbird.xcworkspace 
+  Select Sunbird 
+  Build setting Project, targets
+  update Swift language version to 4 
+  Inside Tagets -&gt; Build phases -&gt; Copy Bundle Resources -&gt; remove duplicate GoogleService-Info.plist if present
+  and close Xcode then rerun the <strong>cordova emulate ios</strong></li>
+<li>M1 Chipset users - Turn off ROSETA for XCODE 
+  Open Applications -&gt; Right Click Xcode -&gt; Click on Get Info -&gt; Unchek Open with Roseta
+  Once <code>build-ios.sh</code> is completed, open platforms/ios/Sunbird.xcworkspace and run the application by clicking on Play button</li>
+<li>Install Java on Mac
+  Check if JAVA is already insalled or not by running following command in terminal
+  <code>javac --version</code> if you get the verdetails then it&#39;s installed already
+  Check the installation path in <code>/Library/Java/JavaVirtualMachines</code>
+  Check is JAVA_HOME is set by runnig <code>echo $JAVA_HOME</code>, if you get the installation path as output then JAVA_HOME is set
+  For Further details follow the link - <a href="https://stackoverflow.com/a/50683158/4259981">https://stackoverflow.com/a/50683158/4259981</a></li>
+<li>(iOS Setup only) POD installation - <a href="https://cocoapods.org/">https://cocoapods.org/</a></li>
+<li>(Android Setup only) Gradle installation - <a href="https://gradle.org/install/">https://gradle.org/install/</a></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 0;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'getting-started';
+            var COMPODOC_CURRENT_PAGE_URL = 'index.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="./js/libs/custom-elements.min.js"></script>
+       <script src="./js/libs/lit-html.js"></script>
+
+       <script src="./js/menu-wc.js" defer></script>
+       <script nomodule src="./js/menu-wc_es5.js" defer></script>
+
+       <script src="./js/libs/bootstrap-native.js"></script>
+
+       <script src="./js/libs/es6-shim.min.js"></script>
+       <script src="./js/libs/EventDispatcher.js"></script>
+       <script src="./js/libs/promise.min.js"></script>
+       <script src="./js/libs/zepto.min.js"></script>
+
+       <script src="./js/compodoc.js"></script>
+
+       <script src="./js/tabs.js"></script>
+       <script src="./js/menu.js"></script>
+       <script src="./js/libs/clipboard.min.js"></script>
+       <script src="./js/libs/prism.js"></script>
+       <script src="./js/sourceCode.js"></script>
+          <script src="./js/search/search.js"></script>
+          <script src="./js/search/lunr.min.js"></script>
+          <script src="./js/search/search-lunr.js"></script>
+          <script src="./js/search/search_index.js"></script>
+       <script src="./js/lazy-load-graphs.js"></script>
+
+
     </body>
 </html>
